@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 		<title>Miniakent</title>
+		<!--
+		Miniakent yükleme ekranı (kullanıcı, 2026-10-20): Godot'un yükleme ekranı yerine logo ve kullanıcının
+		tasarladığı ada çubuğu; ev, yükleme ilerledikçe sağa ilerler. Ziyaretçinin saatine göre 07:00–19:00
+		gündüz, kalanı gece görseli. Çubuk parçaları ve logolar Web_Deneme'de (yukleme_*.webp). Oyun ilk kez
+		çizilince (main.gd -> window.miniakentHazir) ekran kaybolur. Bu dosya export_presets.cfg'de
+		html/custom_html_shell olarak verilir.
+		-->
 		<style>
 html, body, #canvas {
 	margin: 0;
@@ -13,9 +20,13 @@ html, body, #canvas {
 
 body {
 	color: white;
-	background-color: black;
+	background-color: #ffffff;
 	overflow: hidden;
 	touch-action: none;
+}
+
+body.gece {
+	background-color: #121a2e;
 }
 
 #canvas {
@@ -26,57 +37,90 @@ body {
 	outline: none;
 }
 
-#status, #status-splash, #status-progress {
+#yukleme {
 	position: absolute;
-	left: 0;
-	right: 0;
-}
-
-#status, #status-splash {
-	top: 0;
-	bottom: 0;
-}
-
-#status {
-	background-color: #242424;
+	inset: 0;
+	z-index: 10;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
-	visibility: hidden;
+	justify-content: center;
+	gap: 3vh;
+	background-color: inherit;
+	transition: opacity 0.6s ease;
 }
 
-#status-splash {
-	max-height: 100%;
-	max-width: 100%;
-	margin: auto;
+#yukleme.bitti {
+	opacity: 0;
+	pointer-events: none;
 }
 
-#status-splash.show-image--false {
-	display: none;
-}
-
-#status-splash.fullsize--true {
-	height: 100%;
-	width: 100%;
+#yukleme-logo {
+	width: min(72vw, 420px);
+	max-height: 46vh;
 	object-fit: contain;
 }
 
-#status-splash.use-filter--false {
-	image-rendering: pixelated;
+#yukleme-cubuk {
+	position: relative;
+	width: min(88vw, 640px);
+	aspect-ratio: 1275 / 174;
 }
 
-#status-progress, #status-notice {
-	display: none;
+#yukleme-cubuk img {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	pointer-events: none;
+	user-select: none;
 }
 
-#status-progress {
-	bottom: 10%;
-	width: 50%;
-	margin: 0 auto;
+#cubuk-bos, #cubuk-dolu {
+	left: 0;
+	width: 100%;
+}
+
+#cubuk-dolu {
+	clip-path: inset(0 81% 0 0);
+	transition: clip-path 0.45s ease-out;
+}
+
+#cubuk-ev {
+	width: 12.94%;
+	left: 14.7%;
+	transition: left 0.45s ease-out;
+	animation: sallan 1.6s ease-in-out infinite;
+}
+
+@keyframes sallan {
+	0%, 100% { transform: translateY(0); }
+	50% { transform: translateY(-3%); }
+}
+
+#yukleme-yazi {
+	position: absolute;
+	bottom: 2.5vh;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+	font-size: 12px;
+	letter-spacing: 0.02em;
+	color: #a9a9a9;
+}
+
+body.gece #yukleme-yazi {
+	color: #5f6b85;
 }
 
 #status-notice {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 11;
 	background-color: #5b3943;
 	border-radius: 0.5rem;
 	border: 1px solid #9b3943;
@@ -87,7 +131,6 @@ body {
 	overflow: hidden;
 	padding: 1rem;
 	text-align: center;
-	z-index: 1;
 }
 		</style>
 		<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
@@ -103,50 +146,77 @@ body {
 			Your browser does not support JavaScript.
 		</noscript>
 
-		<div id="status">
-			<img id="status-splash" class="show-image--true fullsize--true use-filter--true" src="index.png" alt="">
-			<progress id="status-progress"></progress>
-			<div id="status-notice"></div>
+		<div id="yukleme">
+			<img id="yukleme-logo" alt="Miniakent">
+			<div id="yukleme-cubuk">
+				<img id="cubuk-bos" alt="">
+				<img id="cubuk-dolu" alt="">
+				<img id="cubuk-ev" alt="">
+			</div>
+			<div id="yukleme-yazi">Made with Godot Engine</div>
 		</div>
+		<div id="status-notice"></div>
 
+		<script>
+(function () {
+	// Gündüz mü gece mi: ziyaretçinin kendi saati (07:00–19:00 gündüz)
+	const h = new Date().getHours();
+	const zaman = (h >= 7 && h < 19) ? 'gunduz' : 'gece';
+	if (zaman === 'gece') {
+		document.body.classList.add('gece');
+	}
+	document.getElementById('yukleme-logo').src = 'yukleme_logo_' + zaman + '.webp';
+	document.getElementById('cubuk-bos').src = 'yukleme_bos_' + zaman + '.webp';
+	document.getElementById('cubuk-dolu').src = 'yukleme_dolu_' + zaman + '.webp';
+	document.getElementById('cubuk-ev').src = 'yukleme_ev_' + zaman + '.webp';
+}());
+		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","mainPack":"index-v202610201623.pck","experimentalVK":false,"fileSizes":{"index-v202610201623.pck":4132976,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","mainPack":"index-v202610201702.pck","experimentalVK":false,"fileSizes":{"index-v202610201702.pck":4490560,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
 (function () {
-	const statusOverlay = document.getElementById('status');
-	const statusProgress = document.getElementById('status-progress');
+	const yukleme = document.getElementById('yukleme');
+	const dolu = document.getElementById('cubuk-dolu');
+	const ev = document.getElementById('cubuk-ev');
 	const statusNotice = document.getElementById('status-notice');
+	// Çubuk 1700 birim: ev parçası 220 birim; solu 250'den 1380'e ilerler, dolu kısım evin altına kadar görünür.
+	let shown = 0;
 
-	let initializing = true;
-	let statusMode = '';
-
-	function setStatusMode(mode) {
-		if (statusMode === mode || !initializing) {
-			return;
-		}
-		if (mode === 'hidden') {
-			statusOverlay.remove();
-			initializing = false;
-			return;
-		}
-		statusOverlay.style.visibility = 'visible';
-		statusProgress.style.display = mode === 'progress' ? 'block' : 'none';
-		statusNotice.style.display = mode === 'notice' ? 'block' : 'none';
-		statusMode = mode;
+	function ilerle(p) {
+		p = Math.max(shown, Math.min(1, p));
+		shown = p;
+		const x = 250 + p * 1130;
+		ev.style.left = (x / 17) + '%';
+		dolu.style.clipPath = 'inset(0 ' + (100 - (x + 60) / 17) + '% 0 0)';
 	}
+
+	let bitti = false;
+	function kapat() {
+		if (bitti) {
+			return;
+		}
+		bitti = true;
+		ilerle(1);
+		setTimeout(function () {
+			yukleme.classList.add('bitti');
+			setTimeout(function () { yukleme.remove(); }, 700);
+		}, 450);
+	}
+	// main.gd şehir ilk kez çizilince çağırır
+	window.miniakentHazir = kapat;
 
 	function setStatusNotice(text) {
 		while (statusNotice.lastChild) {
 			statusNotice.removeChild(statusNotice.lastChild);
 		}
-		const lines = text.split('\n');
-		lines.forEach((line) => {
+		text.split('\n').forEach((line) => {
 			statusNotice.appendChild(document.createTextNode(line));
 			statusNotice.appendChild(document.createElement('br'));
 		});
+		statusNotice.style.display = 'block';
 	}
 
 	function displayFailureNotice(err) {
@@ -158,8 +228,6 @@ const engine = new Engine(GODOT_CONFIG);
 		} else {
 			setStatusNotice('An unknown error occurred.');
 		}
-		setStatusMode('notice');
-		initializing = false;
 	}
 
 	const missing = Engine.getMissingFeatures({
@@ -174,7 +242,6 @@ const engine = new Engine(GODOT_CONFIG);
 			} catch (err) {
 				serviceWorkerRegistrationPromise = Promise.reject(new Error('Service worker registration failed.'));
 			}
-			// There's a chance that installing the service worker would fix the issue
 			Promise.race([
 				serviceWorkerRegistrationPromise.then((registration) => {
 					if (registration != null) {
@@ -182,35 +249,29 @@ const engine = new Engine(GODOT_CONFIG);
 					}
 					return registration;
 				}).then(() => engine.installServiceWorker()),
-				// For some reason, `getRegistration()` can stall
 				new Promise((resolve) => {
 					setTimeout(() => resolve(), 2000);
 				}),
 			]).then(() => {
-				// Reload if there was no error.
 				window.location.reload();
 			}).catch((err) => {
 				console.error('Error while registering service worker:', err);
 			});
 		} else {
-			// Display the message as usual
 			const missingMsg = 'Error\nThe following features required to run Godot projects on the Web are missing:\n';
 			displayFailureNotice(missingMsg + missing.join('\n'));
 		}
 	} else {
-		setStatusMode('progress');
+		ilerle(0);
 		engine.startGame({
 			'onProgress': function (current, total) {
 				if (current > 0 && total > 0) {
-					statusProgress.value = current;
-					statusProgress.max = total;
-				} else {
-					statusProgress.removeAttribute('value');
-					statusProgress.removeAttribute('max');
+					ilerle(0.88 * current / total);  // indirme; kalan pay motorun açılışı ve şehrin kurulması
 				}
 			},
 		}).then(() => {
-			setStatusMode('hidden');
+			ilerle(0.94);
+			setTimeout(kapat, 15000);  // oyundan haber gelmezse de kalkar
 		}, displayFailureNotice);
 	}
 }());
