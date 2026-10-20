@@ -80,15 +80,33 @@ body.gece {
 	width: 100%;
 }
 
+/* Dolu kısım ve ev yalnız transform ile kayar: oyun motoru açılırken sayfa betiği dursa da tarayıcı bu
+   hareketleri çizmeye devam eder (ev yolun ortasında takılmasın). */
+#dolu-kap {
+	position: absolute;
+	inset: 0;
+	overflow: hidden;
+	transform: translateX(-100%);
+	will-change: transform;
+}
+
 #cubuk-dolu {
-	clip-path: inset(0 81% 0 0);
-	transition: clip-path 0.45s ease-out;
+	transform: translateX(100%);
+	will-change: transform;
 }
 
 #cubuk-ev {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 12.94%;
-	left: 14.7%;
-	transition: left 0.45s ease-out;
+	height: 100%;
+	will-change: transform;
+}
+
+#ev-resim {
+	left: 0;
+	width: 100%;
 	animation: sallan 1.6s ease-in-out infinite;
 }
 
@@ -150,8 +168,8 @@ body.gece #yukleme-yazi {
 			<img id="yukleme-logo" alt="Miniakent">
 			<div id="yukleme-cubuk">
 				<img id="cubuk-bos" alt="">
-				<img id="cubuk-dolu" alt="">
-				<img id="cubuk-ev" alt="">
+				<div id="dolu-kap"><img id="cubuk-dolu" alt=""></div>
+				<div id="cubuk-ev"><img id="ev-resim" alt=""></div>
 			</div>
 			<div id="yukleme-yazi">Made with Godot Engine</div>
 		</div>
@@ -168,42 +186,90 @@ body.gece #yukleme-yazi {
 	document.getElementById('yukleme-logo').src = 'yukleme_logo_' + zaman + '.webp';
 	document.getElementById('cubuk-bos').src = 'yukleme_bos_' + zaman + '.webp';
 	document.getElementById('cubuk-dolu').src = 'yukleme_dolu_' + zaman + '.webp';
-	document.getElementById('cubuk-ev').src = 'yukleme_ev_' + zaman + '.webp';
+	document.getElementById('ev-resim').src = 'yukleme_ev_' + zaman + '.webp';
 }());
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","mainPack":"index-v202610201702.pck","experimentalVK":false,"fileSizes":{"index-v202610201702.pck":4490560,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","mainPack":"index-v202610201724.pck","experimentalVK":false,"fileSizes":{"index-v202610201724.pck":4490560,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
 (function () {
 	const yukleme = document.getElementById('yukleme');
+	const cubuk = document.getElementById('yukleme-cubuk');
+	const kap = document.getElementById('dolu-kap');
 	const dolu = document.getElementById('cubuk-dolu');
 	const ev = document.getElementById('cubuk-ev');
 	const statusNotice = document.getElementById('status-notice');
-	// Çubuk 1700 birim: ev parçası 220 birim; solu 250'den 1380'e ilerler, dolu kısım evin altına kadar görünür.
-	let shown = 0;
+	// Çubuk 1700 birim: ev parçası 220 birim; solu 250'den 1450'ye (çubuğun ucu) ilerler, dolu kısım evin
+	// altına kadar görünür. İndirme sürerken her karede yerleştirilir; indirme bitince kalan yol tarayıcının
+	// kendi animasyonuna verilir (motor açılırken sayfa betiği dursa da ev ilerlemeye devam eder).
+	let hedef = 0;    // ulaşılması gereken ilerleme
+	let gorunen = 0;  // ekrandaki ilerleme, hedefe yumuşakça yaklaşır
+	let son = false;  // indirme bitti: hareket tarayıcı animasyonunda
+	let anims = [];
+	let bitti = false;
 
-	function ilerle(p) {
-		p = Math.max(shown, Math.min(1, p));
-		shown = p;
-		const x = 250 + p * 1130;
-		ev.style.left = (x / 17) + '%';
-		dolu.style.clipPath = 'inset(0 ' + (100 - (x + 60) / 17) + '% 0 0)';
+	function konum(g) {
+		const w = cubuk.clientWidth;
+		const x = 250 + g * 1200;
+		const gizli = w - (x + 60) / 1700 * w;
+		return [
+			'translateX(' + (x / 1700 * w) + 'px)',
+			'translateX(' + (-gizli) + 'px)',
+			'translateX(' + gizli + 'px)',
+		];
 	}
 
-	let bitti = false;
+	function kay(g0, g1, ms) {
+		const a = konum(g0);
+		const b = konum(g1);
+		const opt = { duration: ms, easing: 'cubic-bezier(0.25, 0.6, 0.35, 1)', fill: 'forwards' };
+		anims = [ev, kap, dolu].map((el, i) => el.animate([{ transform: a[i] }, { transform: b[i] }], opt));
+		return Promise.all(anims.map((an) => an.finished));
+	}
+
+	function ilerle(p) {
+		hedef = Math.max(hedef, Math.min(1, p));
+	}
+
+	function ciz() {
+		if (son || !yukleme.isConnected) {
+			return;
+		}
+		gorunen += (hedef - gorunen) * 0.08;
+		if (hedef - gorunen < 0.001) {
+			gorunen = hedef;
+		}
+		const k = konum(gorunen);
+		ev.style.transform = k[0];
+		kap.style.transform = k[1];
+		dolu.style.transform = k[2];
+		requestAnimationFrame(ciz);
+	}
+	requestAnimationFrame(ciz);
+
+	// İndirme bitti: ev kalan yolun çoğunu motor açılırken yavaşça alır.
+	function sonaDogru() {
+		if (son) {
+			return;
+		}
+		son = true;
+		kay(gorunen, 0.96, 9000);
+	}
+
 	function kapat() {
 		if (bitti) {
 			return;
 		}
 		bitti = true;
-		ilerle(1);
-		setTimeout(function () {
-			yukleme.classList.add('bitti');
+		sonaDogru();
+		anims.forEach((an) => an.updatePlaybackRate(6));
+		Promise.all(anims.map((an) => an.finished)).then(() => kay(0.96, 1, 350)).then(() => {
+			yukleme.classList.add('bitti');  // ev çubuğun ucuna varınca ekran kaybolur
 			setTimeout(function () { yukleme.remove(); }, 700);
-		}, 450);
+		});
 	}
 	// main.gd şehir ilk kez çizilince çağırır
 	window.miniakentHazir = kapat;
@@ -266,11 +332,14 @@ const engine = new Engine(GODOT_CONFIG);
 		engine.startGame({
 			'onProgress': function (current, total) {
 				if (current > 0 && total > 0) {
-					ilerle(0.88 * current / total);  // indirme; kalan pay motorun açılışı ve şehrin kurulması
+					ilerle(0.8 * current / total);  // indirme; kalan pay motorun açılışı ve şehrin kurulması
+					if (current >= 0.97 * total) {  // son parça: motor birazdan açılır, sayfa betiği durabilir
+						sonaDogru();
+					}
 				}
 			},
 		}).then(() => {
-			ilerle(0.94);
+			sonaDogru();
 			setTimeout(kapat, 15000);  // oyundan haber gelmezse de kalkar
 		}, displayFailureNotice);
 	}
