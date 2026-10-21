@@ -1,5 +1,5 @@
 {
- "updated": 1792618735,
+ "updated": 1792618815,
  "trains": [
   1792617600
  ],
@@ -130,12 +130,12 @@
    "home": "Defne Sokağı No 4, Daire 5",
    "home_from": 1792648800,
    "job": [
-    "Bulaşıkçı",
-    "Grand Miniakent Oteli",
-    "hotel",
+    "Balık Kamyonu Şoförü",
+    "Soğuk Hava Deposu · Balıkçı Koyu",
+    "none",
     ""
    ],
-   "wp": "otel",
+   "wp": "koy",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0
