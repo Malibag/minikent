@@ -1,5 +1,5 @@
 {
- "updated": 1792615212,
+ "updated": 1792615609,
  "residents": [
   {
    "handle": "@ertugrul._.i",
@@ -263,12 +263,12 @@
    "home": "Defne Sokağı No 6, Daire 2",
    "home_from": 1792648800,
    "job": [
-    "Hareket Memuru",
-    "Merkez İstasyonu",
-    "station",
+    "Resepsiyonist",
+    "Grand Miniakent Oteli",
+    "hotel",
     ""
    ],
-   "wp": "gar",
+   "wp": "otel",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -314,12 +314,12 @@
    "home": "Çınar Sokağı No 3, Daire 4",
    "home_from": 1792648800,
    "job": [
-    "Puantör",
-    "Miniakent Yapı Mühendislik A.Ş. · Miniakent Plaza 2 şantiyesi",
+    "Balıkçı",
+    "Miniakent İskelesi",
     "area",
-    "site"
+    "pier"
    ],
-   "wp": "santiye",
+   "wp": "iskele",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -440,6 +440,23 @@
    ],
    "wp": "saglik",
    "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@pelinenonu",
+   "arrive": 1792616400,
+   "move": 1792648800,
+   "home": "Çınar Sokağı No 3, Daire 7",
+   "home_from": 1792648800,
+   "job": [
+    "Modacı",
+    "Miniakent Tasarım Stüdyosu · Miniakent Plaza, Kat 8",
+    "office",
+    "plaza"
+   ],
+   "wp": "tasarim",
+   "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0
   }
