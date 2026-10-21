@@ -1,5 +1,5 @@
 {
- "updated": 1792619273,
+ "updated": 1792622392,
  "trains": [
   1792617600
  ],
@@ -165,9 +165,9 @@
    "home_from": 1792648800,
    "job": [
     "Cankurtaran",
-    "Miniakent Plajı",
+    "Cankurtaran Kulesi · Miniakent Plajı",
     "area",
-    "beach"
+    "tower"
    ],
    "wp": "plaj",
    "hobby": "Kitap okumak",
