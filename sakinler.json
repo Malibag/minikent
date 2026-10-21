@@ -1,5 +1,5 @@
 {
- "updated": 1792617872,
+ "updated": 1792618610,
  "trains": [
   1792617600
  ],
@@ -198,12 +198,12 @@
    "home": "Fener Caddesi No 6, Daire 5",
    "home_from": 1792648800,
    "job": [
-    "Mimar",
-    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
-    "office",
-    "plaza"
+    "Doğaçlama Tiyatrocu",
+    "Miniakent Parkı",
+    "area",
+    "park"
    ],
-   "wp": "mimarlik",
+   "wp": "park",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0
