@@ -1,5 +1,5 @@
 {
- "updated": 1792618610,
+ "updated": 1792618735,
  "trains": [
   1792617600
  ],
@@ -164,12 +164,12 @@
    "home": "Defne Sokağı No 4, Daire 1",
    "home_from": 1792648800,
    "job": [
-    "Garson",
-    "Miniakent Kafe",
-    "shop",
-    "cafe"
+    "Cankurtaran",
+    "Miniakent Plajı",
+    "area",
+    "beach"
    ],
-   "wp": "cafe",
+   "wp": "plaj",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0
@@ -232,12 +232,12 @@
    "home": "Defne Sokağı No 4, Daire 3",
    "home_from": 1792648800,
    "job": [
-    "Cankurtaran",
-    "Miniakent Plajı",
-    "area",
-    "beach"
+    "Mimar",
+    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
+    "office",
+    "plaza"
    ],
-   "wp": "plaj",
+   "wp": "mimarlik",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0
