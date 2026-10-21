@@ -1,5 +1,5 @@
 {
- "updated": 1792617296,
+ "updated": 1792617872,
  "trains": [
   1792617600
  ],
@@ -249,12 +249,12 @@
    "home": "Çınar Sokağı No 3, Daire 3",
    "home_from": 1792648800,
    "job": [
-    "Plaj Temizlik Görevlisi",
-    "Miniakent Plajı",
-    "area",
-    "beach"
+    "Yazılımcı",
+    "Miniakent Alfa Yazılım A.Ş. · Miniakent Plaza, Kat 7",
+    "office",
+    "plaza"
    ],
-   "wp": "plaj",
+   "wp": "yazilim",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -425,12 +425,12 @@
    "home": "Çınar Sokağı No 3, Daire 3",
    "home_from": 1792648800,
    "job": [
-    "Demirci",
-    "Miniakent Yapı Mühendislik A.Ş. · Miniakent Plaza 2 şantiyesi",
-    "area",
-    "site"
+    "Grafik Tasarımcı",
+    "Miniakent Tasarım Stüdyosu · Miniakent Plaza, Kat 8",
+    "office",
+    "plaza"
    ],
-   "wp": "santiye",
+   "wp": "tasarim",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
