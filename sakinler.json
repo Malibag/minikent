@@ -1,5 +1,5 @@
 {
- "updated": 1792618815,
+ "updated": 1792619037,
  "trains": [
   1792617600
  ],
@@ -352,12 +352,12 @@
    "home": "Martı Caddesi No 7",
    "home_from": 1792648800,
    "job": [
-    "Sokak Temizlik Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Aşçı",
+    "Miniakent Lokantası",
+    "restaurant",
+    "lokanta"
    ],
-   "wp": "sehir",
+   "wp": "lokanta",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
