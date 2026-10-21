@@ -1,9 +1,12 @@
 {
- "updated": 1792615860,
+ "updated": 1792617145,
+ "trains": [
+  1792617600
+ ],
  "residents": [
   {
    "handle": "@ertugrul._.i",
-   "arrive": 1792616400,
+   "arrive": 1792617600,
    "move": 1792648800,
    "home": "Lale Sokağı No 2",
    "home_from": 1792648800,
@@ -20,7 +23,7 @@
   },
   {
    "handle": "@s2gonsg0wq",
-   "arrive": 1792616400,
+   "arrive": 1792617600,
    "move": 1792648800,
    "home": "Fener Caddesi No 6, Daire 4",
    "home_from": 1792648800,
@@ -37,7 +40,7 @@
   },
   {
    "handle": "@tunahan_karaosman",
-   "arrive": 1792616400,
+   "arrive": 1792617600,
    "move": 1792648800,
    "home": "Çınar Sokağı No 7, Daire 4",
    "home_from": 1792648800,
@@ -54,7 +57,7 @@
   },
   {
    "handle": "@toprakcrc10",
-   "arrive": 1792616400,
+   "arrive": 1792617600,
    "move": 1792648800,
    "home": "Çınar Sokağı No 3, Daire 6",
    "home_from": 1792648800,
@@ -71,7 +74,7 @@
   },
   {
    "handle": "@onur.berk16",
-   "arrive": 1792616400,
+   "arrive": 1792617600,
    "move": 1792648800,
    "home": "Fener Caddesi No 6, Daire 9",
    "home_from": 1792648800,
@@ -88,7 +91,7 @@
   },
   {
    "handle": "@berat_mehdi9565",
-   "arrive": 1792616400,
+   "arrive": 1792617600,
    "move": 1792648800,
    "home": "Lale Sokağı No 6",
    "home_from": 1792648800,
@@ -105,7 +108,7 @@
   },
   {
    "handle": "@pullipulli000",
-   "arrive": 1792616400,
+   "arrive": 1792617600,
    "move": 1792648800,
    "home": "Sahil Caddesi No 2",
    "home_from": 1792648800,
@@ -122,7 +125,7 @@
   },
   {
    "handle": "@boraberkbora",
-   "arrive": 1792616400,
+   "arrive": 1792617600,
    "move": 1792648800,
    "home": "Defne Sokağı No 4, Daire 5",
    "home_from": 1792648800,
@@ -139,7 +142,7 @@
   },
   {
    "handle": "@maliaksu_16",
-   "arrive": 1792616400,
+   "arrive": 1792617600,
    "move": 1792648800,
    "home": "Defne Sokağı No 8",
    "home_from": 1792648800,
@@ -156,7 +159,7 @@
   },
   {
    "handle": "@ozturk_hkn",
-   "arrive": 1792616400,
+   "arrive": 1792617600,
    "move": 1792648800,
    "home": "Defne Sokağı No 4, Daire 1",
    "home_from": 1792648800,
@@ -173,7 +176,7 @@
   },
   {
    "handle": "@fur_iko2700",
-   "arrive": 1792616400,
+   "arrive": 1792617600,
    "move": 1792648800,
    "home": "Fener Caddesi No 6, Daire 6",
    "home_from": 1792648800,
@@ -190,7 +193,7 @@
   },
   {
    "handle": "@muhammedhakandogan",
-   "arrive": 1792616400,
+   "arrive": 1792617600,
    "move": 1792648800,
    "home": "Fener Caddesi No 6, Daire 5",
    "home_from": 1792648800,
@@ -207,7 +210,7 @@
   },
   {
    "handle": "@nesliiiiiihan",
-   "arrive": 1792616400,
+   "arrive": 1792617600,
    "move": 1792648800,
    "home": "Fener Caddesi No 4",
    "home_from": 1792648800,
@@ -224,7 +227,7 @@
   },
   {
    "handle": "@ananem.oruyor",
-   "arrive": 1792616400,
+   "arrive": 1792617600,
    "move": 1792648800,
    "home": "Defne Sokağı No 4, Daire 3",
    "home_from": 1792648800,
@@ -241,7 +244,7 @@
   },
   {
    "handle": "@serhatoptas",
-   "arrive": 1792616400,
+   "arrive": 1792617600,
    "move": 1792648800,
    "home": "Çınar Sokağı No 3, Daire 3",
    "home_from": 1792648800,
@@ -259,7 +262,7 @@
   },
   {
    "handle": "@niyanbas",
-   "arrive": 1792616400,
+   "arrive": 1792617600,
    "move": 1792648800,
    "home": "Defne Sokağı No 6, Daire 2",
    "home_from": 1792648800,
@@ -276,7 +279,7 @@
   },
   {
    "handle": "@gulcangurartul",
-   "arrive": 1792616400,
+   "arrive": 1792617600,
    "move": 1792648800,
    "home": "Defne Sokağı No 4, Daire 6",
    "home_from": 1792648800,
@@ -293,7 +296,7 @@
   },
   {
    "handle": "@emineari_h_k_g",
-   "arrive": 1792616400,
+   "arrive": 1792617600,
    "move": 1792648800,
    "home": "Defne Sokağı No 4, Daire 2",
    "home_from": 1792648800,
@@ -310,7 +313,7 @@
   },
   {
    "handle": "@ayakl_adam",
-   "arrive": 1792616400,
+   "arrive": 1792617600,
    "move": 1792648800,
    "home": "Çınar Sokağı No 3, Daire 4",
    "home_from": 1792648800,
@@ -327,7 +330,7 @@
   },
   {
    "handle": "@mercancicekevi",
-   "arrive": 1792616400,
+   "arrive": 1792617600,
    "move": 1792648800,
    "home": "Çınar Sokağı No 7, Daire 6",
    "home_from": 1792648800,
@@ -344,7 +347,7 @@
   },
   {
    "handle": "@yemek.sokagii",
-   "arrive": 1792616400,
+   "arrive": 1792617600,
    "move": 1792648800,
    "home": "Martı Caddesi No 7",
    "home_from": 1792648800,
@@ -361,7 +364,7 @@
   },
   {
    "handle": "@kece.masalim",
-   "arrive": 1792616400,
+   "arrive": 1792617600,
    "move": 1792648800,
    "home": "Bahçe Caddesi No 1",
    "home_from": 1792648800,
@@ -378,7 +381,7 @@
   },
   {
    "handle": "@sssiiinnneeemm",
-   "arrive": 1792616400,
+   "arrive": 1792617600,
    "move": 1792648800,
    "home": "Fener Caddesi No 6, Daire 8",
    "home_from": 1792648800,
@@ -400,7 +403,7 @@
   },
   {
    "handle": "@curio_turkce",
-   "arrive": 1792616400,
+   "arrive": 1792617600,
    "move": 1792648800,
    "home": "Fener Caddesi No 6, Daire 1",
    "home_from": 1792648800,
@@ -417,7 +420,7 @@
   },
   {
    "handle": "@mrvetooptas",
-   "arrive": 1792616400,
+   "arrive": 1792617600,
    "move": 1792648800,
    "home": "Çınar Sokağı No 3, Daire 3",
    "home_from": 1792648800,
@@ -435,7 +438,7 @@
   },
   {
    "handle": "@nurettinnusta",
-   "arrive": 1792616400,
+   "arrive": 1792617600,
    "move": 1792648800,
    "home": "Bahçe Caddesi No 3",
    "home_from": 1792648800,
@@ -452,7 +455,7 @@
   },
   {
    "handle": "@pelinenonu",
-   "arrive": 1792616400,
+   "arrive": 1792617600,
    "move": 1792648800,
    "home": "Çınar Sokağı No 3, Daire 7",
    "home_from": 1792648800,
