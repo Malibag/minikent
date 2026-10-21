@@ -1,0 +1,447 @@
+{
+ "updated": 1792615212,
+ "residents": [
+  {
+   "handle": "@ertugrul._.i",
+   "arrive": 1792616400,
+   "move": 1792648800,
+   "home": "Lale Sokağı No 2",
+   "home_from": 1792648800,
+   "job": [
+    "Psikolog",
+    "Miniakent Sağlık Merkezi · Miniakent Plaza, Kat 2",
+    "office",
+    "plaza"
+   ],
+   "wp": "saglik",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@s2gonsg0wq",
+   "arrive": 1792616400,
+   "move": 1792648800,
+   "home": "Fener Caddesi No 6, Daire 4",
+   "home_from": 1792648800,
+   "job": [
+    "Yazılım Test Uzmanı",
+    "Miniakent Alfa Yazılım A.Ş. · Miniakent Plaza, Kat 7",
+    "office",
+    "plaza"
+   ],
+   "wp": "yazilim",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@tunahan_karaosman",
+   "arrive": 1792616400,
+   "move": 1792648800,
+   "home": "Çınar Sokağı No 7, Daire 4",
+   "home_from": 1792648800,
+   "job": [
+    "İç Mimar",
+    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
+    "office",
+    "plaza"
+   ],
+   "wp": "mimarlik",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@toprakcrc10",
+   "arrive": 1792616400,
+   "move": 1792648800,
+   "home": "Çınar Sokağı No 3, Daire 6",
+   "home_from": 1792648800,
+   "job": [
+    "Endüstri Mühendisi",
+    "Miniakent Enerji A.Ş. · Miniakent Plaza, Kat 9",
+    "office",
+    "plaza"
+   ],
+   "wp": "enerji",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@onur.berk16",
+   "arrive": 1792616400,
+   "move": 1792648800,
+   "home": "Fener Caddesi No 6, Daire 9",
+   "home_from": 1792648800,
+   "job": [
+    "Reklamcı",
+    "Miniakent Tasarım Stüdyosu · Miniakent Plaza, Kat 8",
+    "office",
+    "plaza"
+   ],
+   "wp": "tasarim",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@berat_mehdi9565",
+   "arrive": 1792616400,
+   "move": 1792648800,
+   "home": "Lale Sokağı No 6",
+   "home_from": 1792648800,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Balıkçısı",
+    "shop",
+    "fish"
+   ],
+   "wp": "fish",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@pullipulli000",
+   "arrive": 1792616400,
+   "move": 1792648800,
+   "home": "Sahil Caddesi No 2",
+   "home_from": 1792648800,
+   "job": [
+    "Bilgi İşlem Uzmanı",
+    "Miniakent Ticaret A.Ş. · Miniakent Plaza, Kat 10",
+    "office",
+    "plaza"
+   ],
+   "wp": "ticaret",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@boraberkbora",
+   "arrive": 1792616400,
+   "move": 1792648800,
+   "home": "Defne Sokağı No 4, Daire 5",
+   "home_from": 1792648800,
+   "job": [
+    "Bulaşıkçı",
+    "Grand Miniakent Oteli",
+    "hotel",
+    ""
+   ],
+   "wp": "otel",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@maliaksu_16",
+   "arrive": 1792616400,
+   "move": 1792648800,
+   "home": "Defne Sokağı No 8",
+   "home_from": 1792648800,
+   "job": [
+    "Çöp Toplama Görevlisi",
+    "Miniakent Belediyesi",
+    "none",
+    ""
+   ],
+   "wp": "sehir",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ozturk_hkn",
+   "arrive": 1792616400,
+   "move": 1792648800,
+   "home": "Defne Sokağı No 4, Daire 1",
+   "home_from": 1792648800,
+   "job": [
+    "Garson",
+    "Miniakent Kafe",
+    "shop",
+    "cafe"
+   ],
+   "wp": "cafe",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@fur_iko2700",
+   "arrive": 1792616400,
+   "move": 1792648800,
+   "home": "Fener Caddesi No 6, Daire 6",
+   "home_from": 1792648800,
+   "job": [
+    "Yazılım Test Uzmanı",
+    "Miniakent Alfa Yazılım A.Ş. · Miniakent Plaza, Kat 7",
+    "office",
+    "plaza"
+   ],
+   "wp": "yazilim",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@muhammedhakandogan",
+   "arrive": 1792616400,
+   "move": 1792648800,
+   "home": "Fener Caddesi No 6, Daire 5",
+   "home_from": 1792648800,
+   "job": [
+    "Mimar",
+    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
+    "office",
+    "plaza"
+   ],
+   "wp": "mimarlik",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@nesliiiiiihan",
+   "arrive": 1792616400,
+   "move": 1792648800,
+   "home": "Fener Caddesi No 4",
+   "home_from": 1792648800,
+   "job": [
+    "Spor Salonu Resepsiyonisti",
+    "Miniakent Spor Salonu · Miniakent Plaza, Kat 1",
+    "office",
+    "plaza"
+   ],
+   "wp": "spor",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ananem.oruyor",
+   "arrive": 1792616400,
+   "move": 1792648800,
+   "home": "Defne Sokağı No 4, Daire 3",
+   "home_from": 1792648800,
+   "job": [
+    "Cankurtaran",
+    "Miniakent Plajı",
+    "area",
+    "beach"
+   ],
+   "wp": "plaj",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@serhatoptas",
+   "arrive": 1792616400,
+   "move": 1792648800,
+   "home": "Çınar Sokağı No 3, Daire 3",
+   "home_from": 1792648800,
+   "job": [
+    "Plaj Temizlik Görevlisi",
+    "Miniakent Plajı",
+    "area",
+    "beach"
+   ],
+   "wp": "plaj",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@niyanbas",
+   "arrive": 1792616400,
+   "move": 1792648800,
+   "home": "Defne Sokağı No 6, Daire 2",
+   "home_from": 1792648800,
+   "job": [
+    "Hareket Memuru",
+    "Merkez İstasyonu",
+    "station",
+    ""
+   ],
+   "wp": "gar",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@gulcangurartul",
+   "arrive": 1792616400,
+   "move": 1792648800,
+   "home": "Defne Sokağı No 4, Daire 6",
+   "home_from": 1792648800,
+   "job": [
+    "Zabıta",
+    "Miniakent Belediyesi",
+    "none",
+    ""
+   ],
+   "wp": "sehir",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@emineari_h_k_g",
+   "arrive": 1792616400,
+   "move": 1792648800,
+   "home": "Defne Sokağı No 4, Daire 2",
+   "home_from": 1792648800,
+   "job": [
+    "Psikolog",
+    "Miniakent Sağlık Merkezi · Miniakent Plaza, Kat 2",
+    "office",
+    "plaza"
+   ],
+   "wp": "saglik",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ayakl_adam",
+   "arrive": 1792616400,
+   "move": 1792648800,
+   "home": "Çınar Sokağı No 3, Daire 4",
+   "home_from": 1792648800,
+   "job": [
+    "Puantör",
+    "Miniakent Yapı Mühendislik A.Ş. · Miniakent Plaza 2 şantiyesi",
+    "area",
+    "site"
+   ],
+   "wp": "santiye",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@mercancicekevi",
+   "arrive": 1792616400,
+   "move": 1792648800,
+   "home": "Çınar Sokağı No 7, Daire 6",
+   "home_from": 1792648800,
+   "job": [
+    "Çiçekçi",
+    "Miniakent Çiçekçisi",
+    "shop",
+    "florist"
+   ],
+   "wp": "cicekci",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@yemek.sokagii",
+   "arrive": 1792616400,
+   "move": 1792648800,
+   "home": "Martı Caddesi No 7",
+   "home_from": 1792648800,
+   "job": [
+    "Sokak Temizlik Görevlisi",
+    "Miniakent Belediyesi",
+    "none",
+    ""
+   ],
+   "wp": "sehir",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@kece.masalim",
+   "arrive": 1792616400,
+   "move": 1792648800,
+   "home": "Bahçe Caddesi No 1",
+   "home_from": 1792648800,
+   "job": [
+    "Hukuk Danışmanı",
+    "Miniakent Hukuk Bürosu · Miniakent Plaza, Kat 6",
+    "office",
+    "plaza"
+   ],
+   "wp": "hukuk",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@sssiiinnneeemm",
+   "arrive": 1792616400,
+   "move": 1792648800,
+   "home": "Fener Caddesi No 6, Daire 8",
+   "home_from": 1792648800,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Muhasebe · Miniakent Plaza, Kat 4",
+    "office",
+    "plaza"
+   ],
+   "wp": "muhasebe",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@curio_turkce",
+   "arrive": 1792616400,
+   "move": 1792648800,
+   "home": "Fener Caddesi No 6, Daire 1",
+   "home_from": 1792648800,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Yapı Mühendislik A.Ş. · Miniakent Plaza 2 şantiyesi",
+    "area",
+    "site"
+   ],
+   "wp": "santiye",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@mrvetooptas",
+   "arrive": 1792616400,
+   "move": 1792648800,
+   "home": "Çınar Sokağı No 3, Daire 5",
+   "home_from": 1792648800,
+   "job": [
+    "Demirci",
+    "Miniakent Yapı Mühendislik A.Ş. · Miniakent Plaza 2 şantiyesi",
+    "area",
+    "site"
+   ],
+   "wp": "santiye",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@nurettinnusta",
+   "arrive": 1792616400,
+   "move": 1792648800,
+   "home": "Bahçe Caddesi No 3",
+   "home_from": 1792648800,
+   "job": [
+    "Fizyoterapist",
+    "Miniakent Sağlık Merkezi · Miniakent Plaza, Kat 2",
+    "office",
+    "plaza"
+   ],
+   "wp": "saglik",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  }
+ ]
+}
