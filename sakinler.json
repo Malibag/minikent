@@ -1,5 +1,5 @@
 {
- "updated": 1792615758,
+ "updated": 1792615860,
  "residents": [
   {
    "handle": "@ertugrul._.i",
@@ -254,7 +254,8 @@
    "wp": "plaj",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "partner": "@mrvetooptas"
   },
   {
    "handle": "@niyanbas",
@@ -390,7 +391,12 @@
    "wp": "muhasebe",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    0
+   ],
+   "partner": "@mali_bagci"
   },
   {
    "handle": "@curio_turkce",
@@ -413,7 +419,7 @@
    "handle": "@mrvetooptas",
    "arrive": 1792616400,
    "move": 1792648800,
-   "home": "Çınar Sokağı No 3, Daire 5",
+   "home": "Çınar Sokağı No 3, Daire 3",
    "home_from": 1792648800,
    "job": [
     "Demirci",
@@ -424,7 +430,8 @@
    "wp": "santiye",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "partner": "@serhatoptas"
   },
   {
    "handle": "@nurettinnusta",
