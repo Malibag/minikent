@@ -1,5 +1,5 @@
 {
- "updated": 1792617145,
+ "updated": 1792617296,
  "trains": [
   1792617600
  ],
@@ -467,6 +467,23 @@
    ],
    "wp": "tasarim",
    "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@cananblky",
+   "arrive": 1792617600,
+   "move": 1792648800,
+   "home": "Çınar Sokağı No 3, Daire 5",
+   "home_from": 1792648800,
+   "job": [
+    "Gişe Görevlisi",
+    "Merkez İstasyonu",
+    "station",
+    ""
+   ],
+   "wp": "gar",
+   "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0
   }
