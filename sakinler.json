@@ -127,7 +127,7 @@
    "handle": "@boraberkbora",
    "arrive": 1792617600,
    "move": 1792648800,
-   "home": "Defne Sokağı No 4, Daire 5",
+   "home": "Balıkçı Koyu No 1",
    "home_from": 1792648800,
    "job": [
     "Balık Kamyonu Şoförü",
@@ -223,7 +223,11 @@
    "wp": "spor",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    0
+   ]
   },
   {
    "handle": "@ananem.oruyor",
@@ -240,7 +244,11 @@
    "wp": "mimarlik",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    0
+   ]
   },
   {
    "handle": "@serhatoptas",
@@ -275,7 +283,11 @@
    "wp": "otel",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@gulcangurartul",
@@ -292,7 +304,11 @@
    "wp": "sehir",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@emineari_h_k_g",
@@ -309,21 +325,25 @@
    "wp": "saglik",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@ayakl_adam",
    "arrive": 1792617600,
    "move": 1792648800,
-   "home": "Çınar Sokağı No 3, Daire 4",
+   "home": "Balıkçı Koyu No 2",
    "home_from": 1792648800,
    "job": [
     "Balıkçı",
-    "Miniakent İskelesi",
-    "area",
-    "pier"
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "0"
    ],
-   "wp": "iskele",
+   "wp": "koy",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -343,7 +363,11 @@
    "wp": "cicekci",
    "hobby": "Balık tutmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@yemek.sokagii",
@@ -434,7 +458,11 @@
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
-   "partner": "@serhatoptas"
+   "partner": "@serhatoptas",
+   "look": [
+    1,
+    0
+   ]
   },
   {
    "handle": "@nurettinnusta",
@@ -468,7 +496,11 @@
    "wp": "tasarim",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@cananblky",
@@ -485,7 +517,11 @@
    "wp": "gar",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   }
  ]
 }
