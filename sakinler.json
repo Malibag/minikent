@@ -1,6 +1,6 @@
 {
  "elektrik_yok": true,
- "updated": 1792730392,
+ "updated": 1792730734,
  "trains": [],
  "residents": [
   {
@@ -1799,12 +1799,12 @@
    "home": "Manolya Sokağı No 4, Daire 11",
    "home_from": 1792735200,
    "job": [
-    "Depo Görevlisi",
-    "Miniakent Fabrikası 2 · Sanayi Bölgesi",
-    "shop",
-    "fabrika_b"
+    "Polis",
+    "",
+    "patrol_all",
+    ""
    ],
-   "wp": "fabrika_b",
+   "wp": "",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -4517,11 +4517,11 @@
    "home_from": 1792735200,
    "job": [
     "Bekçi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Miniakent Plajı",
+    "area",
+    "beach"
    ],
-   "wp": "sehir",
+   "wp": "plaj",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -6304,12 +6304,12 @@
    "home": "Zeytin Sokağı No 4, Daire 11",
    "home_from": 1792735200,
    "job": [
-    "Arşiv Görevlisi",
-    "Miniakent Ticaret A.Ş. · Miniakent Plaza, Kat 10",
-    "office",
-    "plaza"
+    "Polis",
+    "",
+    "patrol_all",
+    ""
    ],
-   "wp": "ticaret",
+   "wp": "",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -8530,10 +8530,10 @@
    "home": "Akasya Sokağı No 6, Daire 7",
    "home_from": 1792735200,
    "job": [
-    "Sekreter",
+    "Profesyonel Boğulan",
     "Miniakent Belediyesi",
-    "none",
-    ""
+    "shop",
+    "belediye"
    ],
    "wp": "sehir",
    "hobby": "Satranç",
@@ -9885,12 +9885,12 @@
    "home": "Manolya Sokağı No 1, Daire 4",
    "home_from": 1792735200,
    "job": [
-    "Zabıta",
-    "Miniakent Belediyesi",
-    "none",
+    "Polis",
+    "",
+    "patrol_all",
     ""
    ],
-   "wp": "sehir",
+   "wp": "",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -10305,12 +10305,12 @@
    "home": "Manolya Sokağı No 3, Daire 1",
    "home_from": 1792735200,
    "job": [
-    "Zabıta",
-    "Miniakent Belediyesi",
-    "none",
+    "Polis",
+    "",
+    "patrol_all",
     ""
    ],
-   "wp": "sehir",
+   "wp": "",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -17805,12 +17805,12 @@
    "home": "Manolya Sokağı No 7, Daire 7",
    "home_from": 1792735200,
    "job": [
-    "Satın Alma Sorumlusu",
-    "Miniakent Market",
-    "shop",
-    "market"
+    "Polis",
+    "",
+    "patrol_all",
+    ""
    ],
-   "wp": "market",
+   "wp": "",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
