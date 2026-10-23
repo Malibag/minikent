@@ -1,6 +1,6 @@
 {
  "elektrik_yok": true,
- "updated": 1792718812,
+ "updated": 1792729574,
  "trains": [],
  "residents": [
   {
@@ -2569,15 +2569,15 @@
    "handle": "@burakk.akcalii",
    "arrive": 1792702800,
    "move": 1792735200,
-   "home": "Akasya Sokağı No 1, Daire 9",
+   "home": "Balıkçı Koyu No 6",
    "home_from": 1792735200,
    "job": [
-    "Yazılımcı",
-    "Miniakent Alfa Yazılım A.Ş. · Miniakent Plaza, Kat 7",
-    "office",
-    "plaza"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "1"
    ],
-   "wp": "yazilim",
+   "wp": "koy",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -2638,7 +2638,7 @@
     "Balıkçı",
     "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
     "boat",
-    "1"
+    "2"
    ],
    "wp": "iskele",
    "hobby": "Bisiklete binmek",
@@ -4372,7 +4372,7 @@
     "Balıkçı",
     "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
     "boat",
-    "2"
+    "3"
    ],
    "wp": "iskele",
    "hobby": "Gitar çalmak",
@@ -12294,15 +12294,15 @@
    "handle": "@rpqueeng",
    "arrive": 1792702800,
    "move": 1792735200,
-   "home": "Akasya Sokağı No 5, Daire 10",
+   "home": "Balıkçı Koyu No 7",
    "home_from": 1792735200,
    "job": [
-    "Bekçi",
-    "Miniakent Yapı Mühendislik A.Ş. · Miniakent Plaza 2 şantiyesi",
-    "area",
-    "site"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "4"
    ],
-   "wp": "santiye",
+   "wp": "koy",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
@@ -12925,7 +12925,7 @@
     "Balıkçı",
     "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
     "boat",
-    "3"
+    "5"
    ],
    "wp": "iskele",
    "hobby": "Fotoğraf çekmek",
@@ -18196,15 +18196,15 @@
    "handle": "@batuhanbuyukduman",
    "arrive": 1792704900,
    "move": 1792735200,
-   "home": "Akasya Sokağı No 6, Daire 7",
+   "home": "Balıkçı Koyu No 8",
    "home_from": 1792735200,
    "job": [
-    "Bilgi İşlem Uzmanı",
-    "Miniakent Ticaret A.Ş. · Miniakent Plaza, Kat 10",
-    "office",
-    "plaza"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "6"
    ],
-   "wp": "ticaret",
+   "wp": "koy",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
