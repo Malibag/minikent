@@ -19418,6 +19418,27 @@
    "hobby": "Yemek yapmak",
    "queue": 417,
    "left": 0
+  },
+  {
+   "handle": "@ledoryantal",
+   "arrive": 1792702800,
+   "move": 1792735200,
+   "home": "Sahil Caddesi No 2",
+   "home_from": 1792735200,
+   "job": [
+    "Enerji Sorumlusu - Oryantal Dans Hocası",
+    "Oryantal Dans Stüdyosu · Miniakent Plaza, Kat 3",
+    "office",
+    "plaza"
+   ],
+   "wp": "",
+   "hobby": "Dans etmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   }
  ]
 }
