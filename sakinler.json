@@ -587,12 +587,12 @@
    "home": "Zeytin Sokağı No 5, Daire 21",
    "home_from": 1792735200,
    "job": [
-    "Cankurtaran",
-    "Miniakent Plajı",
-    "area",
-    "beach"
+    "Zabıta",
+    "Miniakent Belediyesi",
+    "none",
+    ""
    ],
-   "wp": "plaj",
+   "wp": "sehir",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -2824,12 +2824,12 @@
    "home": "Akasya Sokağı No 2, Daire 16",
    "home_from": 1792735200,
    "job": [
-    "Cankurtaran",
-    "Miniakent Plajı",
-    "area",
-    "beach"
+    "Zabıta",
+    "Miniakent Belediyesi",
+    "none",
+    ""
    ],
-   "wp": "plaj",
+   "wp": "sehir",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
