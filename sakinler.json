@@ -1,6 +1,6 @@
 {
  "elektrik_yok": true,
- "updated": 1792808377,
+ "updated": 1792814808,
  "trains": [
   1792796820
  ],
@@ -539,7 +539,7 @@
    "wp": "dershane",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     1,
     1
@@ -665,7 +665,7 @@
    "wp": "spor",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     2,
     1
@@ -1107,7 +1107,7 @@
    "wp": "gayrimenkul",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     4,
     0
@@ -1149,7 +1149,7 @@
    "wp": "turizm",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     3,
     0
@@ -1418,7 +1418,7 @@
    "wp": "dershane",
    "hobby": "Balık tutmak",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     0,
     0
@@ -1523,7 +1523,7 @@
    "wp": "enerji",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     3,
     0
@@ -2670,7 +2670,7 @@
    "wp": "iskele",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     2,
     0
@@ -2880,7 +2880,7 @@
    "wp": "muhasebe",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     0,
     0
@@ -3364,7 +3364,7 @@
    "wp": "lojistik",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     4,
     0
@@ -3591,7 +3591,7 @@
    "wp": "dershane",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     4,
     0
@@ -3772,7 +3772,7 @@
    "wp": "yazilim",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     0,
     0
@@ -3814,7 +3814,7 @@
    "wp": "oyun",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     1,
     0
@@ -4108,7 +4108,7 @@
    "wp": "santiye",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     0,
     0
@@ -4414,7 +4414,7 @@
     "Balıkçı",
     "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
     "boat",
-    "3"
+    "2"
    ],
    "wp": "iskele",
    "hobby": "Gitar çalmak",
@@ -4524,7 +4524,7 @@
    "wp": "plaza_hizmet",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     3,
     0
@@ -4692,7 +4692,7 @@
    "wp": "mimarlik",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     0,
     0
@@ -5171,7 +5171,7 @@
    "wp": "muhendislik",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     0,
     0
@@ -5402,7 +5402,7 @@
    "wp": "gar",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     4,
     0
@@ -6058,7 +6058,7 @@
    "wp": "fabrika_b",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     0,
     0
@@ -6180,7 +6180,7 @@
    "wp": "eticaret",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     2,
     0
@@ -6953,7 +6953,7 @@
    "wp": "medya",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     3,
     0
@@ -7197,7 +7197,7 @@
    "wp": "dershane",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     3,
     0
@@ -7365,7 +7365,7 @@
    "wp": "telekom",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     3,
     0
@@ -7634,7 +7634,7 @@
    "wp": "otel",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     4,
     0
@@ -7823,7 +7823,7 @@
    "wp": "turizm",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     4,
     0
@@ -7928,7 +7928,7 @@
    "wp": "dershane",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     0,
     0
@@ -8411,7 +8411,7 @@
    "wp": "otel",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     0,
     0
@@ -8571,7 +8571,7 @@
    "wp": "otel",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     0,
     0
@@ -9302,7 +9302,7 @@
    "wp": "otel",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     3,
     0
@@ -9554,7 +9554,7 @@
    "wp": "otel",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     2,
     1
@@ -9638,7 +9638,7 @@
    "wp": "spor",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 1792789200
   },
   {
    "handle": "@mrssaturnworld",
@@ -10180,7 +10180,7 @@
    "wp": "yayinevi",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     2,
     0
@@ -10285,7 +10285,7 @@
    "wp": "otel",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     0,
     0
@@ -10432,7 +10432,7 @@
    "wp": "fabrika_b",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     0,
     0
@@ -11222,7 +11222,7 @@
    "wp": "otel",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     3,
     0
@@ -13297,7 +13297,7 @@
     "Balıkçı",
     "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
     "boat",
-    "4"
+    "3"
    ],
    "wp": "koy",
    "hobby": "Bahçe işleri",
@@ -13386,7 +13386,7 @@
    "wp": "sigorta",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     4,
     0
@@ -13928,7 +13928,7 @@
     "Balıkçı",
     "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
     "boat",
-    "5"
+    "4"
    ],
    "wp": "iskele",
    "hobby": "Fotoğraf çekmek",
@@ -15021,7 +15021,7 @@
    "wp": "sigorta",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     3,
     0
@@ -15395,7 +15395,7 @@
    "wp": "fish",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     3,
     0
@@ -15454,7 +15454,7 @@
    "wp": "otel",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     3,
     0
@@ -15597,7 +15597,7 @@
    "wp": "otel",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     3,
     0
@@ -15996,7 +15996,7 @@
    "wp": "muhasebe",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     0,
     0
@@ -16206,7 +16206,7 @@
    "wp": "otel",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     3,
     0
@@ -16437,7 +16437,7 @@
    "wp": "otel",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     4,
     0
@@ -16479,7 +16479,7 @@
    "wp": "arge",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     3,
     0
@@ -16668,7 +16668,7 @@
    "wp": "arge",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     3,
     0
@@ -17231,7 +17231,7 @@
    "wp": "dershane",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     2,
     0
@@ -17794,7 +17794,7 @@
    "wp": "fabrika_b",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     3,
     0
@@ -18025,7 +18025,7 @@
    "wp": "arge",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     0,
     0
@@ -18505,7 +18505,7 @@
    "wp": "danismanlik",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 1792789200
   },
   {
    "handle": "@zeki_gdk",
@@ -19321,7 +19321,7 @@
    "wp": "otel",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 1792789200
   },
   {
    "handle": "@iznikmilliyetcisi16",
@@ -19918,7 +19918,7 @@
    "wp": "yazilim",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0
+   "left": 1792789200
   },
   {
    "handle": "@kocyildirarda",
@@ -20040,7 +20040,7 @@
     "Balıkçı",
     "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
     "boat",
-    "6"
+    "5"
    ],
    "wp": "koy",
    "hobby": "Kitap okumak",
@@ -20666,7 +20666,7 @@
    "wp": "otel",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0
+   "left": 1792789200
   },
   {
    "handle": "@cukulatalipasta6767",
@@ -20759,7 +20759,7 @@
    "wp": "otel",
    "hobby": "Balık tutmak",
    "queue": 0,
-   "left": 0,
+   "left": 1792789200,
    "look": [
     4,
     0
@@ -21307,7 +21307,7 @@
    "wp": "otel",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 1792789200
   },
   {
    "handle": "@astin.611",
@@ -21528,7 +21528,7 @@
    "wp": "dershane",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 1792789200
   },
   {
    "handle": "@ulusbar2",
