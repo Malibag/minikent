@@ -189,9 +189,44 @@ body.gece #yukleme-yazi {
 	document.getElementById('ev-resim').src = 'yukleme_ev_' + zaman + '.webp';
 }());
 		</script>
+		<script type="module">
+// Çevrimiçi ve günlük ziyaretçi (kullanıcı, 2026-10-25): Firebase Realtime Database (proje miniakent, europe-west1).
+// Her ziyaretçi cevrimici/<kimlik> yazar, sekme kapanınca silinir; oyun sayıyı window.miniakentCevrimici'den okur.
+// gunluk/<Türkiye tarihi> her tarayıcıda günde bir kez 1 artar. Bağlantı kurulamazsa oyun etkilenmez.
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getDatabase, ref, set, onDisconnect, onValue, runTransaction, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+try {
+	const app = initializeApp({
+		apiKey: "AIzaSyCC0HI_bln18UBMEDHdAO7CmtMEM3JtM5I",
+		authDomain: "miniakent.firebaseapp.com",
+		databaseURL: "https://miniakent-default-rtdb.europe-west1.firebasedatabase.app",
+		projectId: "miniakent",
+		appId: "1:591368262283:web:65292bb355bc8c55287a8e",
+	});
+	const db = getDatabase(app);
+	const id = crypto.randomUUID ? crypto.randomUUID() : String(Math.random()).slice(2) + "-" + Date.now();
+	const ben = ref(db, "cevrimici/" + id);
+	onValue(ref(db, ".info/connected"), (s) => {
+		if (s.val() === true) {
+			onDisconnect(ben).remove().then(() => set(ben, serverTimestamp()));
+		}
+	});
+	onValue(ref(db, "cevrimici"), (s) => { window.miniakentCevrimici = s.size; });
+	const gun = new Date(Date.now() + 3 * 3600 * 1000).toISOString().slice(0, 10);
+	let sayildi = null;
+	try { sayildi = localStorage.getItem("miniakent_gun"); } catch (e) {}
+	if (sayildi !== gun) {
+		runTransaction(ref(db, "gunluk/" + gun), (v) => (v || 0) + 1).then(() => {
+			try { localStorage.setItem("miniakent_gun", gun); } catch (e) {}
+		});
+	}
+} catch (e) {
+	console.warn("Firebase", e);
+}
+		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202610251551.pck","fileSizes":{"index-v202610251551.pck":6207132,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202610251640.pck","fileSizes":{"index-v202610251640.pck":6207852,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
