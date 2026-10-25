@@ -20,7 +20,11 @@
    "wp": "saglik",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@s2gonsg0wq",
@@ -37,7 +41,11 @@
    "wp": "yazilim",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@tunahan_karaosman",
@@ -54,7 +62,11 @@
    "wp": "mimarlik",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@toprakcrc10",
@@ -71,7 +83,11 @@
    "wp": "enerji",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@onur.berk16",
@@ -88,7 +104,11 @@
    "wp": "tasarim",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@berat_mehdi9565",
@@ -105,7 +125,11 @@
    "wp": "fish",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@pullipulli000",
@@ -139,7 +163,11 @@
    "wp": "koy",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@maliaksu_16",
@@ -156,7 +184,11 @@
    "wp": "sehir",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@ozturk_hkn",
@@ -173,7 +205,11 @@
    "wp": "",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@fur_iko2700",
@@ -190,7 +226,11 @@
    "wp": "yazilim",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@muhammedhakandogan",
@@ -207,7 +247,11 @@
    "wp": "park",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@nesliiiiiihan",
@@ -227,7 +271,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -248,7 +292,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -267,7 +311,11 @@
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
-   "partner": "@mrvetooptas"
+   "partner": "@mrvetooptas",
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@niyanbas",
@@ -347,7 +395,11 @@
    "wp": "koy",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@mercancicekevi",
@@ -366,8 +418,8 @@
    "queue": 0,
    "left": 0,
    "look": [
-    2,
-    1
+    3,
+    0
    ]
   },
   {
@@ -402,7 +454,11 @@
    "wp": "hukuk",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@sssiiinnneeemm",
@@ -462,7 +518,7 @@
    "partner": "@serhatoptas",
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -480,7 +536,11 @@
    "wp": "saglik",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@pelinenonu",
@@ -563,7 +623,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -748,7 +808,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -853,7 +913,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -916,7 +976,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -934,7 +994,11 @@
    "wp": "otel",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@thefrutshop000",
@@ -1030,7 +1094,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -1170,7 +1234,11 @@
    "wp": "hukuk",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@jojomon_tr",
@@ -1358,7 +1426,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -1547,7 +1615,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -1652,7 +1720,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -1795,7 +1863,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -2026,7 +2094,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -2278,7 +2346,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -2567,8 +2635,8 @@
    "queue": 0,
    "left": 0,
    "look": [
-    3,
-    0
+    2,
+    1
    ]
   },
   {
@@ -2631,7 +2699,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -2673,7 +2741,7 @@
    "left": 1792789200,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -2946,7 +3014,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -3069,7 +3137,11 @@
    "wp": "saglik",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@nurann.topcu",
@@ -3107,7 +3179,11 @@
    "wp": "fabrika_b",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@maratirmi",
@@ -3145,7 +3221,11 @@
    "wp": "muhasebe",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@hvnz.0",
@@ -3165,7 +3245,7 @@
    "left": 1792875600,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -3347,7 +3427,11 @@
    "wp": "mimarlik",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@yuzarsif_sd",
@@ -3654,7 +3738,11 @@
    "wp": "ticaret",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@_.1907.l",
@@ -3733,7 +3821,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -3817,7 +3905,7 @@
    "left": 1792789200,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -3859,7 +3947,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -3943,7 +4031,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -3985,7 +4073,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -4191,7 +4279,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -4506,7 +4594,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -5006,7 +5094,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -5216,7 +5304,7 @@
    "left": 1792875600,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -5612,7 +5700,11 @@
    "wp": "ticaret",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@bakugombeyfendi",
@@ -5852,7 +5944,11 @@
    "wp": "sehir",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@ononcanavari",
@@ -5935,7 +6031,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -6145,7 +6241,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -6183,7 +6279,7 @@
    "left": 1792789200,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -6308,8 +6404,8 @@
    "queue": 0,
    "left": 0,
    "look": [
-    4,
-    0
+    1,
+    1
    ]
   },
   {
@@ -6414,7 +6510,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -6519,7 +6615,7 @@
    "left": 1792875600,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -6851,7 +6947,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -7305,7 +7401,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -7449,7 +7545,11 @@
    "wp": "sigorta",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@lalxgyu",
@@ -7805,7 +7905,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -8078,7 +8178,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -8742,7 +8842,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -8948,7 +9048,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -9137,7 +9237,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -9658,7 +9758,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -9763,7 +9863,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -9910,7 +10010,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -10036,7 +10136,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -10183,7 +10283,7 @@
    "left": 1792789200,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -10846,8 +10946,8 @@
    "queue": 0,
    "left": 0,
    "look": [
-    3,
-    0
+    2,
+    1
    ]
   },
   {
@@ -11099,7 +11199,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -11830,7 +11930,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -12452,7 +12552,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -13011,7 +13111,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -13451,8 +13551,8 @@
    "queue": 0,
    "left": 0,
    "look": [
-    3,
-    0
+    2,
+    1
    ]
   },
   {
@@ -13536,7 +13636,7 @@
    "left": 1792875600,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -13809,7 +13909,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -13893,7 +13993,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ],
    "partner": "@ozcnnkemal"
   },
@@ -13978,7 +14078,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -14104,7 +14204,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -14398,7 +14498,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -14545,7 +14645,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -14856,7 +14956,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -14919,7 +15019,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -15083,7 +15183,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -15104,7 +15204,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -15188,7 +15288,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -15435,8 +15535,8 @@
    "queue": 0,
    "left": 0,
    "look": [
-    3,
-    0
+    2,
+    1
    ]
   },
   {
@@ -16062,7 +16162,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -16167,7 +16267,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -16293,7 +16393,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -16817,8 +16917,8 @@
    "queue": 0,
    "left": 0,
    "look": [
-    0,
-    0
+    1,
+    1
    ]
   },
   {
@@ -17150,7 +17250,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -17234,7 +17334,7 @@
    "left": 1792789200,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -17401,7 +17501,7 @@
    "queue": 0,
    "left": 0,
    "look": [
-    1,
+    0,
     0
    ]
   },
@@ -17507,7 +17607,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -17629,7 +17729,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -17776,7 +17876,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -17902,7 +18002,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -17943,8 +18043,8 @@
    "queue": 0,
    "left": 0,
    "look": [
-    3,
-    0
+    2,
+    1
    ]
   },
   {
@@ -18046,7 +18146,11 @@
    "wp": "lojistik",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@efeekaan15",
@@ -18097,7 +18201,11 @@
    "wp": "sigorta",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@yusuw_55",
@@ -18131,7 +18239,11 @@
    "wp": "",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@silaltok",
@@ -18148,7 +18260,11 @@
    "wp": "sigorta",
    "hobby": "Balık tutmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@yigit_ozk1",
@@ -18165,7 +18281,11 @@
    "wp": "arge",
    "hobby": "Balık tutmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@erol78229",
@@ -18182,7 +18302,11 @@
    "wp": "telekom",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@a.c.koluman",
@@ -18216,7 +18340,11 @@
    "wp": "muhendislik",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@holydemeter",
@@ -18267,7 +18395,11 @@
    "wp": "otel",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@_theahmets",
@@ -18284,7 +18416,11 @@
    "wp": "oyun",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@cinarkamcez",
@@ -18301,7 +18437,11 @@
    "wp": "telekom",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@beraterensahin",
@@ -18318,7 +18458,11 @@
    "wp": "muhendislik",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@zenthxbext",
@@ -18352,7 +18496,11 @@
    "wp": "sigorta",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@myusuf.mys_",
@@ -18369,7 +18517,11 @@
    "wp": "eticaret",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@eylul_1724",
@@ -18386,7 +18538,11 @@
    "wp": "spor",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@turkishlava16",
@@ -18437,7 +18593,11 @@
    "wp": "danismanlik",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@klamoritam",
@@ -18488,7 +18648,11 @@
    "wp": "otel",
    "hobby": "Balık tutmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@nicomediaa41",
@@ -18522,7 +18686,11 @@
    "wp": "sigorta",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@arasliblendz",
@@ -18539,7 +18707,11 @@
    "wp": "oyun",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@_furkan_enver_",
@@ -18556,7 +18728,11 @@
    "wp": "otel",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@modeon.mdn",
@@ -18607,7 +18783,11 @@
    "wp": "oyun",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@muhsincanyildirim",
@@ -18624,7 +18804,11 @@
    "wp": "spor",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@lilithraw.jpg",
@@ -18709,7 +18893,11 @@
    "wp": "medya",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@hamster_dursun_sevenler",
@@ -18743,7 +18931,11 @@
    "wp": "santiye",
    "hobby": "Balık tutmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@canaviche.tr",
@@ -18828,7 +19020,11 @@
    "wp": "lojistik",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@oguzh8ng",
@@ -18845,7 +19041,11 @@
    "wp": "lojistik",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@nzm.celik",
@@ -18981,7 +19181,11 @@
    "wp": "muhendislik",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@bilgic_ahmet0",
@@ -18998,7 +19202,11 @@
    "wp": "lojistik",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@mertrzgr0",
@@ -19015,7 +19223,11 @@
    "wp": "dershane",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@erenalp67_",
@@ -19032,7 +19244,11 @@
    "wp": "eticaret",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@ber4tklcc",
@@ -19100,7 +19316,11 @@
    "wp": "otel",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@kemalbloodzv2",
@@ -19117,7 +19337,11 @@
    "wp": "lojistik",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@alimm.tas",
@@ -19151,7 +19375,11 @@
    "wp": "gayrimenkul",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@kerem.1319",
@@ -19168,7 +19396,11 @@
    "wp": "arge",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@grknylmzz",
@@ -19219,7 +19451,11 @@
    "wp": "otel",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@isiloskiii",
@@ -19236,7 +19472,11 @@
    "wp": "oyun",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@t.n.oguz",
@@ -19253,7 +19493,11 @@
    "wp": "turizm",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@yusuf_emirkaraman",
@@ -19270,7 +19514,11 @@
    "wp": "otel",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@efeni.g",
@@ -19355,7 +19603,11 @@
    "wp": "eticaret",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@tallhaozcan",
@@ -19423,7 +19675,11 @@
    "wp": "fabrika_b",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@huseyin_emirkarahan",
@@ -19440,7 +19696,11 @@
    "wp": "lojistik",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@bugra_akdemir51",
@@ -19457,7 +19717,11 @@
    "wp": "spor",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@ramazan_baygara38",
@@ -19664,7 +19928,11 @@
    "wp": "hukuk",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@yiigiits",
@@ -19740,7 +20008,11 @@
    "wp": "fabrika_a",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@itsmejinxsz0",
@@ -19816,7 +20088,11 @@
    "wp": "santiye",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@egee3407",
@@ -19867,7 +20143,11 @@
    "wp": "otel",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@_eymenl",
@@ -19884,7 +20164,11 @@
    "wp": "sehir",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@caglaadnmzz",
@@ -19901,7 +20185,11 @@
    "wp": "hukuk",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@alperne.35",
@@ -20108,7 +20396,11 @@
    "wp": "",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@____hamzq.exe",
@@ -20327,7 +20619,11 @@
    "wp": "gayrimenkul",
    "hobby": "Balık tutmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@0namnam",
@@ -20458,7 +20754,11 @@
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@youtube_roblox_wqx8",
@@ -20513,7 +20813,11 @@
    "wp": "medya",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@pyrz__2854",
@@ -20581,7 +20885,11 @@
    "wp": "muhendislik",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@burakefe0935",
@@ -20598,7 +20906,11 @@
    "wp": "eticaret",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@cun8emir",
@@ -20615,7 +20927,11 @@
    "wp": "danismanlik",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@furkannilyas",
@@ -20632,7 +20948,11 @@
    "wp": "medya",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@miray62518",
@@ -20704,7 +21024,11 @@
    "wp": "medya",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@zuzurraffa",
@@ -20797,7 +21121,11 @@
    "wp": "otel",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@bekir44556",
@@ -20814,7 +21142,11 @@
    "wp": "arge",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@_nicomediaa41",
@@ -20865,7 +21197,11 @@
    "wp": "turizm",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@ahmet_vehbioz",
@@ -20882,7 +21218,11 @@
    "wp": "turizm",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@ecrinngrgn",
@@ -20899,7 +21239,11 @@
    "wp": "eticaret",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@fargon35_",
@@ -20933,7 +21277,11 @@
    "wp": "danismanlik",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@anlttmdrdimevltlarma_",
@@ -20967,7 +21315,11 @@
    "wp": "",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@murtazaw1907",
@@ -21001,7 +21353,11 @@
    "wp": "telekom",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@ali.ygc01",
@@ -21018,7 +21374,11 @@
    "wp": "medya",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@wacinsdeanlarlar",
@@ -21052,7 +21412,11 @@
    "wp": "medya",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@m.yagizcesmebasi",
@@ -21069,7 +21433,11 @@
    "wp": "fabrika_a",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@bartubuyruk",
@@ -21120,7 +21488,11 @@
    "wp": "lojistik",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@iremm_nissa",
@@ -21137,7 +21509,11 @@
    "wp": "arge",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@salih_gunes._",
@@ -21154,7 +21530,11 @@
    "wp": "muhendislik",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@redbull.peachh",
@@ -21205,7 +21585,11 @@
    "wp": "medya",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@chezzaritz",
@@ -21290,7 +21674,11 @@
    "wp": "oyun",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@melihkavalci",
@@ -21375,7 +21763,11 @@
    "wp": "yayinevi",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@06.y4lciinnn",
@@ -21426,7 +21818,11 @@
    "wp": "otel",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@ttozbay",
@@ -21477,7 +21873,11 @@
    "wp": "telekom",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@deniz.yilmaz07",
@@ -21511,7 +21911,11 @@
    "wp": "muhendislik",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@barboros.__",
@@ -21562,7 +21966,11 @@
    "wp": "gayrimenkul",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@legalpasaport",
@@ -21613,7 +22021,11 @@
    "wp": "fabrika_a",
    "hobby": "Balık tutmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@toygara_",
@@ -21747,7 +22159,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -22034,7 +22446,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -22824,7 +23236,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -22883,7 +23295,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -23174,7 +23586,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -24108,7 +24520,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -24353,7 +24765,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -24547,7 +24959,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -24932,7 +25344,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -25333,7 +25745,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -25727,7 +26139,11 @@
    "wp": "",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@whenth3sunhits",
@@ -26432,7 +26848,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -26647,7 +27063,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -26905,7 +27321,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -27133,7 +27549,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -27302,7 +27718,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -27340,7 +27756,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -27509,7 +27925,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -27568,7 +27984,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -27711,7 +28127,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -27855,7 +28271,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -28319,7 +28735,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -28758,7 +29174,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -29337,7 +29753,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -29473,7 +29889,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -29672,7 +30088,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -30070,7 +30486,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -30349,7 +30765,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -30505,7 +30921,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -30961,7 +31377,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -31489,7 +31905,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -32719,7 +33135,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -32757,7 +33173,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -32795,7 +33211,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -33877,7 +34293,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -33953,7 +34369,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -34456,7 +34872,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -34764,7 +35180,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -35182,7 +35598,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -36048,7 +36464,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -36724,7 +37140,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -36913,7 +37329,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -37080,8 +37496,8 @@
    "queue": 0,
    "left": 0,
    "look": [
-    0,
-    0
+    1,
+    1
    ]
   },
   {
@@ -37270,7 +37686,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -37417,7 +37833,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -37501,7 +37917,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -37606,7 +38022,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -38005,7 +38421,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -38047,7 +38463,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -38068,7 +38484,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -38383,7 +38799,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -38509,7 +38925,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -38572,7 +38988,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -38614,7 +39030,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -38719,7 +39135,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -38761,7 +39177,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -38782,7 +39198,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -38803,7 +39219,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -39223,7 +39639,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -39286,7 +39702,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -39454,7 +39870,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -39874,7 +40290,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -40021,7 +40437,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -40084,7 +40500,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -40189,7 +40605,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -40378,7 +40794,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -40525,7 +40941,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -40987,7 +41403,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -41239,7 +41655,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -41407,7 +41823,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -41428,7 +41844,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -41995,7 +42411,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -42016,7 +42432,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -42205,7 +42621,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -42373,7 +42789,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -42478,7 +42894,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -42562,7 +42978,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -42604,7 +43020,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -42688,7 +43104,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -42814,7 +43230,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -42982,7 +43398,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -43003,7 +43419,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -43276,7 +43692,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -43549,7 +43965,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -43675,7 +44091,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -43780,7 +44196,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -43969,7 +44385,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -43990,7 +44406,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -44137,7 +44553,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -44998,7 +45414,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -45019,7 +45435,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -45817,7 +46233,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -46006,7 +46422,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -46405,7 +46821,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -46846,7 +47262,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -47140,7 +47556,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -47329,7 +47745,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -47434,7 +47850,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -47644,7 +48060,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -47686,7 +48102,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -47707,7 +48123,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -47728,7 +48144,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -48043,7 +48459,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -48631,7 +49047,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -48736,7 +49152,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -48820,7 +49236,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -49177,7 +49593,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -49366,7 +49782,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -49702,7 +50118,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -49870,7 +50286,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -50101,7 +50517,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -50143,7 +50559,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -50227,7 +50643,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -50605,7 +51021,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -50647,7 +51063,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -50710,7 +51126,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -50941,7 +51357,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -51319,7 +51735,7 @@
    "left": 0,
    "look": [
     2,
-    0
+    1
    ]
   },
   {
@@ -52201,7 +52617,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -52222,7 +52638,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -52348,7 +52764,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
