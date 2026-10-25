@@ -11169,15 +11169,15 @@
    "handle": "@atagorkemkumkaya",
    "arrive": 1792702800,
    "move": 1792735200,
-   "home": "Zeytin Sokağı No 1, Daire 2",
-   "home_from": 1792735200,
+   "home": "Bahçeli Köy Evleri No 3",
+   "home_from": 1792908000,
    "job": [
-    "Temizlik Görevlisi",
-    "Grand Miniakent Oteli",
-    "hotel",
-    ""
+    "Çiftçi",
+    "Bahçeli Köy Evleri",
+    "area",
+    "koy_tarla"
    ],
-   "wp": "otel",
+   "wp": "",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -17475,12 +17475,12 @@
    "home": "Bahçeli Köy Evleri No 1",
    "home_from": 1792908000,
    "job": [
-    "Değerleme Uzmanı",
-    "Miniakent Gayrimenkul · Miniakent Plaza 2, Kat 9",
-    "office",
-    "plaza2"
+    "Çiftçi",
+    "Bahçeli Köy Evleri",
+    "area",
+    "koy_tarla"
    ],
-   "wp": "gayrimenkul",
+   "wp": "",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -18123,12 +18123,12 @@
    "home": "Kıyı Caddesi No 10, Daire 6",
    "home_from": 1792821600,
    "job": [
-    "Veri Bilimci",
-    "Miniakent Ar-Ge Merkezi · Miniakent Plaza, Kat 12",
-    "office",
-    "plaza"
+    "Müteahhit Adayı",
+    "Miniakent Belediyesi önü",
+    "area",
+    "protesto_karsi"
    ],
-   "wp": "arge",
+   "wp": "",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -24994,7 +24994,7 @@
    "home_from": 1792821600,
    "job": [
     "Kokoreççi",
-    "Seyyar Kokoreççi · Batı Mahallesi Sahili",
+    "Kokariç · Batı Mahallesi Sahili",
     "area",
     "kokorec"
    ],
