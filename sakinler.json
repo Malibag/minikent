@@ -5734,12 +5734,12 @@
    "home": "Zeytin Sokağı No 5, Daire 24",
    "home_from": 1792735200,
    "job": [
-    "Sokak Temizlik Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Ressam",
+    "Batı Mahallesi Parkı",
+    "area",
+    "ressam"
    ],
-   "wp": "sehir",
+   "wp": "",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
