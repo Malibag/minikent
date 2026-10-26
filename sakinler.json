@@ -66,7 +66,8 @@
    "look": [
     0,
     0
-   ]
+   ],
+   "protest": 10
   },
   {
    "handle": "@toprakcrc10",
@@ -9070,7 +9071,8 @@
    "look": [
     4,
     0
-   ]
+   ],
+   "protest": 14
   },
   {
    "handle": "@mustafa.acg",
@@ -21513,7 +21515,8 @@
    "look": [
     1,
     1
-   ]
+   ],
+   "protest": 13
   },
   {
    "handle": "@salih_gunes._",
@@ -22565,7 +22568,8 @@
    "look": [
     3,
     0
-   ]
+   ],
+   "protest": 3
   },
   {
    "handle": "@terzi.muhammedd",
@@ -30089,7 +30093,8 @@
    "look": [
     1,
     1
-   ]
+   ],
+   "protest": 11
   },
   {
    "handle": "@alperkyoruk95",
@@ -32616,7 +32621,8 @@
    "wp": "danismanlik",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "protest": 4
   },
   {
    "handle": "@berkay.inan",
@@ -33702,7 +33708,8 @@
    "wp": "muhendislik",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "protest": 7
   },
   {
    "handle": "@cinmustafagoktug",
@@ -39670,12 +39677,12 @@
    "home": "Doğu Banliyö B Blok, Daire 13",
    "home_from": 1792908000,
    "job": [
-    "İş Analisti",
-    "Miniakent Danışmanlık · Miniakent Plaza 2, Kat 12",
+    "Haber Spikeri",
+    "Miniakent Haber · Miniakent Plaza, Kat 11",
     "office",
-    "plaza2"
+    "plaza"
    ],
-   "wp": "danismanlik",
+   "wp": "haber",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
@@ -49909,7 +49916,8 @@
    "look": [
     4,
     0
-   ]
+   ],
+   "protest": 9
   },
   {
    "handle": "@arjjmiel3_",
@@ -50602,7 +50610,8 @@
    "look": [
     1,
     1
-   ]
+   ],
+   "protest": 15
   },
   {
    "handle": "@camel.8361242",
@@ -62222,7 +62231,8 @@
    "wp": "spor",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "protest": 16
   },
   {
    "handle": "@zeynep88710",
@@ -62845,12 +62855,12 @@
    "home": "Doğu Banliyö B Blok, Daire 67",
    "home_from": 1792994400,
    "job": [
-    "Emlak Danışmanı",
-    "Miniakent Gayrimenkul · Miniakent Plaza 2, Kat 9",
+    "Spor Hocası",
+    "Miniakent Spor Salonu · Miniakent Plaza, Kat 1",
     "office",
-    "plaza2"
+    "plaza"
    ],
-   "wp": "gayrimenkul",
+   "wp": "spor",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -63985,7 +63995,8 @@
    "look": [
     2,
     1
-   ]
+   ],
+   "protest": 12
   },
   {
    "handle": "@rain_ngyvaa",
@@ -67752,7 +67763,8 @@
    "wp": "muhasebe",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "protest": 8
   },
   {
    "handle": "@subay_3460",
@@ -68927,7 +68939,8 @@
    "look": [
     3,
     0
-   ]
+   ],
+   "protest": 6
   },
   {
    "handle": "@can_kaya135",
@@ -69151,7 +69164,8 @@
    "look": [
     4,
     0
-   ]
+   ],
+   "protest": 5
   },
   {
    "handle": "@oykuxelysian",
@@ -70762,7 +70776,8 @@
    "look": [
     1,
     1
-   ]
+   ],
+   "protest": 1
   },
   {
    "handle": "@nano_tasiyici",
@@ -70806,15 +70821,15 @@
    "handle": "@mert92589",
    "arrive": 1792971000,
    "move": 1792994400,
-   "home": "Doğu Banliyö C Blok, Daire 81",
+   "home": "Balıkçı Koyu No 9",
    "home_from": 1792994400,
    "job": [
-    "Grafik Tasarımcı",
-    "Miniakent Tasarım Stüdyosu · Miniakent Plaza, Kat 8",
-    "office",
-    "plaza"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "6"
    ],
-   "wp": "tasarim",
+   "wp": "koy",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
@@ -71075,7 +71090,8 @@
    "look": [
     0,
     0
-   ]
+   ],
+   "protest": 2
   },
   {
    "handle": "@maybetterthan_",
@@ -71498,7 +71514,8 @@
    "look": [
     3,
     0
-   ]
+   ],
+   "protest": 0
   },
   {
    "handle": "@osman.aggah.19",
