@@ -481,7 +481,8 @@
     1,
     0
    ],
-   "partner": "@mali_bagci"
+   "partner": "@mali_bagci",
+   "is_protest": 1
   },
   {
    "handle": "@curio_turkce",
@@ -5369,7 +5370,8 @@
    "look": [
     2,
     1
-   ]
+   ],
+   "partner": "@rsurmen"
   },
   {
    "handle": "@omrrcinn",
@@ -15793,7 +15795,7 @@
    "handle": "@hilmizkn",
    "arrive": 1792702800,
    "move": 1792735200,
-   "home": "Defne Sokağı No 6, Daire 8",
+   "home": "Doğu Banliyö C Blok, Daire 83",
    "home_from": 1792735200,
    "job": [
     "Yazılım Test Uzmanı",
@@ -23671,7 +23673,12 @@
    "wp": "lojistik",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ],
+   "is_protest": 5
   },
   {
    "handle": "@hasanlio._",
@@ -26147,7 +26154,8 @@
    "look": [
     2,
     1
-   ]
+   ],
+   "is_protest": 6
   },
   {
    "handle": "@whenth3sunhits",
@@ -36472,7 +36480,8 @@
    "look": [
     1,
     1
-   ]
+   ],
+   "protest": 17
   },
   {
    "handle": "@hasanefekol61",
@@ -40256,7 +40265,8 @@
    "look": [
     1,
     1
-   ]
+   ],
+   "is_protest": 0
   },
   {
    "handle": "@fdtrxec544",
@@ -63700,7 +63710,8 @@
    "look": [
     2,
     1
-   ]
+   ],
+   "is_protest": 3
   },
   {
    "handle": "@enes_cevjk",
@@ -63755,7 +63766,8 @@
    "wp": "medya",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "is_protest": 4
   },
   {
    "handle": "@onllyvenuss",
@@ -65598,7 +65610,12 @@
    "wp": "eticaret",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ],
+   "is_protest": 2
   },
   {
    "handle": "@by.j4nsetnb",
@@ -70948,7 +70965,7 @@
    "handle": "@rsurmen",
    "arrive": 1792971000,
    "move": 1792994400,
-   "home": "Doğu Banliyö C Blok, Daire 83",
+   "home": "Defne Sokağı No 6, Daire 8",
    "home_from": 1792994400,
    "job": [
     "İç Mimar",
@@ -70959,7 +70976,12 @@
    "wp": "mimarlik",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ],
+   "partner": "@dilaygurlersurmen"
   },
   {
    "handle": "@berat_wp4652",
