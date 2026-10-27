@@ -1565,12 +1565,12 @@
    "home": "Zeytin Sokağı No 3, Daire 11",
    "home_from": 1792735200,
    "job": [
-    "Masör",
-    "Grand Miniakent Oteli",
-    "hotel",
-    ""
+    "Başhekim",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "otel",
+   "wp": "veteriner",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
