@@ -12268,7 +12268,8 @@
    "wp": "santiye",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "is_protest": 11
   },
   {
    "handle": "@ahmad_5_tarhan",
@@ -12958,19 +12959,20 @@
    "home": "Akasya Sokağı No 2, Daire 18",
    "home_from": 1792735200,
    "job": [
-    "Zabıta",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "İnşaat Mühendisi",
+    "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
+    "office",
+    "plaza2"
    ],
-   "wp": "sehir",
+   "wp": "muhendislik",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
    "look": [
     1,
     1
-   ]
+   ],
+   "beton": 1
   },
   {
    "handle": "@gormus.ege75",
@@ -26433,19 +26435,20 @@
    "home": "Mimoza Sokağı No 3, Daire 4",
    "home_from": 1792821600,
    "job": [
-    "Yönetim Danışmanı",
-    "Miniakent Danışmanlık · Miniakent Plaza 2, Kat 12",
-    "office",
-    "plaza2"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "danismanlik",
+   "wp": "emniyet",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
    "look": [
     0,
     0
-   ]
+   ],
+   "nobet": 6
   },
   {
    "handle": "@verschrobenth",
@@ -36059,7 +36062,8 @@
    "look": [
     4,
     0
-   ]
+   ],
+   "beton": 0
   },
   {
    "handle": "@tekediy",
@@ -36453,12 +36457,12 @@
    "home": "Begonvil Sokağı No 15, Daire 2",
    "home_from": 1792821600,
    "job": [
-    "E-Ticaret Uzmanı",
-    "Miniakent E-Ticaret A.Ş. · Miniakent Plaza 2, Kat 8",
+    "İnşaat Mühendisi",
+    "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
     "office",
     "plaza2"
    ],
-   "wp": "eticaret",
+   "wp": "muhendislik",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
@@ -36466,7 +36470,7 @@
     1,
     1
    ],
-   "protest": 17
+   "beton": 3
   },
   {
    "handle": "@hasanefekol61",
@@ -53061,12 +53065,12 @@
    "home": "Doğu Banliyö A Blok, Daire 4",
    "home_from": 1792994400,
    "job": [
-    "Muhasebeci",
-    "Miniakent Muhasebe · Miniakent Plaza, Kat 4",
-    "office",
-    "plaza"
+    "Savcı",
+    "Miniakent Adliyesi",
+    "shop",
+    "adliye"
    ],
-   "wp": "muhasebe",
+   "wp": "adliye",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0
@@ -55017,7 +55021,8 @@
    "look": [
     1,
     1
-   ]
+   ],
+   "is_protest": 10
   },
   {
    "handle": "@a_yaz4347",
@@ -62218,16 +62223,16 @@
    "home": "Doğu Banliyö B Blok, Daire 56",
    "home_from": 1792994400,
    "job": [
-    "Spor Hocası",
-    "Miniakent Spor Salonu · Miniakent Plaza, Kat 1",
+    "İnşaat Mühendisi",
+    "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
     "office",
-    "plaza"
+    "plaza2"
    ],
-   "wp": "spor",
+   "wp": "muhendislik",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
-   "protest": 16
+   "beton": 4
   },
   {
    "handle": "@zeynep88710",
@@ -63887,7 +63892,8 @@
    "look": [
     0,
     0
-   ]
+   ],
+   "is_protest": 9
   },
   {
    "handle": "@azra_bstn1907",
@@ -64010,7 +64016,8 @@
    "wp": "dershane",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "is_protest": 12
   },
   {
    "handle": "@sabrivriv",
@@ -70757,7 +70764,8 @@
    "wp": "danismanlik",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "is_protest": 8
   },
   {
    "handle": "@mervenur_ers",
@@ -71569,15 +71577,16 @@
    "home": "Doğu Banliyö A Blok, Daire 19",
    "home_from": 1793080800,
    "job": [
-    "Yazılım Test Uzmanı",
-    "Miniakent Alfa Yazılım A.Ş. · Miniakent Plaza, Kat 7",
-    "office",
-    "plaza"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "yazilim",
+   "wp": "emniyet",
    "hobby": "Balık tutmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "nobet": 7
   },
   {
    "handle": "@alsibakuninn",
@@ -71586,15 +71595,16 @@
    "home": "Doğu Banliyö A Blok, Daire 31",
    "home_from": 1793080800,
    "job": [
-    "Avukat",
-    "Miniakent Hukuk Bürosu · Miniakent Plaza, Kat 6",
-    "office",
-    "plaza"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "hukuk",
+   "wp": "emniyet",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "nobet": 8
   },
   {
    "handle": "@eylulcelikates",
@@ -71603,19 +71613,20 @@
    "home": "Doğu Banliyö A Blok, Daire 68",
    "home_from": 1793080800,
    "job": [
-    "Mimar",
-    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
-    "office",
-    "plaza"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "mimarlik",
+   "wp": "emniyet",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
    "look": [
     2,
     1
-   ]
+   ],
+   "nobet": 9
   },
   {
    "handle": "@erman_sahinbas",
@@ -71624,19 +71635,20 @@
    "home": "Doğu Banliyö A Blok, Daire 71",
    "home_from": 1793080800,
    "job": [
-    "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
-    "office",
-    "plaza2"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "banka",
+   "wp": "emniyet",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
    "look": [
     4,
     0
-   ]
+   ],
+   "nobet": 10
   },
   {
    "handle": "@the_yusufiiijjj",
@@ -71645,19 +71657,20 @@
    "home": "Doğu Banliyö A Blok, Daire 84",
    "home_from": 1793080800,
    "job": [
-    "Oyun Tasarımcısı",
-    "Miniakent Oyun Stüdyosu · Miniakent Plaza 2, Kat 5",
-    "office",
-    "plaza2"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "oyun",
+   "wp": "emniyet",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
    "look": [
     0,
     0
-   ]
+   ],
+   "nobet": 11
   },
   {
    "handle": "@onsra34",
@@ -71666,15 +71679,16 @@
    "home": "Doğu Banliyö B Blok, Daire 10",
    "home_from": 1793080800,
    "job": [
-    "Oyun Tasarımcısı",
-    "Miniakent Oyun Stüdyosu · Miniakent Plaza 2, Kat 5",
-    "office",
-    "plaza2"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "oyun",
+   "wp": "emniyet",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "nobet": 12
   },
   {
    "handle": "@slaaaballl",
@@ -71683,15 +71697,16 @@
    "home": "Doğu Banliyö B Blok, Daire 28",
    "home_from": 1793080800,
    "job": [
-    "Hemşire",
-    "Miniakent Sağlık Merkezi · Miniakent Plaza, Kat 2",
-    "office",
-    "plaza"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "saglik",
+   "wp": "emniyet",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "nobet": 13
   },
   {
    "handle": "@llseda_k",
@@ -71700,19 +71715,20 @@
    "home": "Doğu Banliyö B Blok, Daire 28",
    "home_from": 1793080800,
    "job": [
-    "Müşteri Temsilcisi",
-    "Miniakent Ticaret A.Ş. · Miniakent Plaza, Kat 10",
-    "office",
-    "plaza"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "ticaret",
+   "wp": "emniyet",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
    "look": [
     1,
     1
-   ]
+   ],
+   "nobet": 14
   },
   {
    "handle": "@halil_merts",
@@ -71733,7 +71749,8 @@
    "look": [
     4,
     0
-   ]
+   ],
+   "protest": 26
   },
   {
    "handle": "@selahatdinkrbyk",
@@ -71742,19 +71759,20 @@
    "home": "Doğu Banliyö B Blok, Daire 37",
    "home_from": 1793080800,
    "job": [
-    "Teknik Servis Görevlisi",
-    "Miniakent Plaza",
-    "office",
-    "plaza"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "plaza_hizmet",
+   "wp": "emniyet",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
    "look": [
     0,
     0
-   ]
+   ],
+   "nobet": 16
   },
   {
    "handle": "@marjinalsushi",
@@ -71763,15 +71781,16 @@
    "home": "Doğu Banliyö B Blok, Daire 50",
    "home_from": 1793080800,
    "job": [
-    "Sigorta Uzmanı",
-    "Miniakent Sigorta A.Ş. · Miniakent Plaza 2, Kat 2",
-    "office",
-    "plaza2"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "sigorta",
+   "wp": "emniyet",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "nobet": 17
   },
   {
    "handle": "@iremirzam",
@@ -71780,19 +71799,20 @@
    "home": "Doğu Banliyö B Blok, Daire 117",
    "home_from": 1793080800,
    "job": [
-    "Laboratuvar Teknisyeni",
-    "Miniakent Ar-Ge Merkezi · Miniakent Plaza, Kat 12",
-    "office",
-    "plaza"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "arge",
+   "wp": "emniyet",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
    "look": [
     2,
     1
-   ]
+   ],
+   "nobet": 18
   },
   {
    "handle": "@aimron_wx1",
@@ -71801,15 +71821,16 @@
    "home": "Doğu Banliyö B Blok, Daire 124",
    "home_from": 1793080800,
    "job": [
-    "3B Sanatçı",
-    "Miniakent Oyun Stüdyosu · Miniakent Plaza 2, Kat 5",
-    "office",
-    "plaza2"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "oyun",
+   "wp": "emniyet",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "nobet": 19
   },
   {
    "handle": "@pizzzza.mwahh",
@@ -71818,15 +71839,16 @@
    "home": "Doğu Banliyö C Blok, Daire 2",
    "home_from": 1793080800,
    "job": [
-    "Yazılım Test Uzmanı",
-    "Miniakent Alfa Yazılım A.Ş. · Miniakent Plaza, Kat 7",
-    "office",
-    "plaza"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "yazilim",
+   "wp": "emniyet",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "nobet": 20
   },
   {
    "handle": "@egehan.mp4",
@@ -71835,19 +71857,20 @@
    "home": "Doğu Banliyö C Blok, Daire 36",
    "home_from": 1793080800,
    "job": [
-    "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
-    "office",
-    "plaza2"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "banka",
+   "wp": "emniyet",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
    "look": [
     4,
     0
-   ]
+   ],
+   "nobet": 21
   },
   {
    "handle": "@fatbekonline",
@@ -71856,19 +71879,20 @@
    "home": "Doğu Banliyö C Blok, Daire 56",
    "home_from": 1793080800,
    "job": [
-    "Lojistik Uzmanı",
-    "Miniakent Lojistik A.Ş. · Miniakent Plaza 2, Kat 3",
-    "office",
-    "plaza2"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "lojistik",
+   "wp": "emniyet",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
    "look": [
     0,
     0
-   ]
+   ],
+   "nobet": 22
   },
   {
    "handle": "@llll.ad4.llll",
@@ -71877,15 +71901,16 @@
    "home": "Doğu Banliyö C Blok, Daire 67",
    "home_from": 1793080800,
    "job": [
-    "Mali Müşavir",
-    "Miniakent Muhasebe · Miniakent Plaza, Kat 4",
-    "office",
-    "plaza"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "muhasebe",
+   "wp": "emniyet",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "nobet": 23
   },
   {
    "handle": "@iroinnwonderland",
@@ -71894,19 +71919,20 @@
    "home": "Doğu Banliyö C Blok, Daire 81",
    "home_from": 1793080800,
    "job": [
-    "Muhasebeci",
-    "Miniakent Muhasebe · Miniakent Plaza, Kat 4",
-    "office",
-    "plaza"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "muhasebe",
+   "wp": "emniyet",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
    "look": [
     2,
     1
-   ]
+   ],
+   "nobet": 24
   },
   {
    "handle": "@elfooa_",
@@ -71915,19 +71941,20 @@
    "home": "Doğu Banliyö C Blok, Daire 91",
    "home_from": 1793080800,
    "job": [
-    "Değerleme Uzmanı",
-    "Miniakent Gayrimenkul · Miniakent Plaza 2, Kat 9",
-    "office",
-    "plaza2"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "gayrimenkul",
+   "wp": "emniyet",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
    "look": [
     2,
     1
-   ]
+   ],
+   "nobet": 25
   },
   {
    "handle": "@yetim_kundakcisi36",
@@ -71936,15 +71963,16 @@
    "home": "Doğu Banliyö C Blok, Daire 94",
    "home_from": 1793080800,
    "job": [
-    "Yoga Eğitmeni",
-    "Miniakent Spor Salonu · Miniakent Plaza, Kat 1",
-    "office",
-    "plaza"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "spor",
+   "wp": "emniyet",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "nobet": 26
   },
   {
    "handle": "@benimaptalhayatimm",
@@ -71953,15 +71981,16 @@
    "home": "Doğu Banliyö C Blok, Daire 95",
    "home_from": 1793080800,
    "job": [
-    "Rehber Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "dershane",
+   "wp": "emniyet",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "nobet": 27
   },
   {
    "handle": "@sudeprrlk",
@@ -71970,19 +71999,20 @@
    "home": "Doğu Banliyö C Blok, Daire 95",
    "home_from": 1793080800,
    "job": [
-    "Mali Müşavir",
-    "Miniakent Muhasebe · Miniakent Plaza, Kat 4",
-    "office",
-    "plaza"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "muhasebe",
+   "wp": "emniyet",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
    "look": [
     1,
     1
-   ]
+   ],
+   "nobet": 28
   },
   {
    "handle": "@5hidroksitriptamiin",
@@ -71991,15 +72021,16 @@
    "home": "Doğu Banliyö C Blok, Daire 95",
    "home_from": 1793080800,
    "job": [
-    "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
-    "office",
-    "plaza2"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "banka",
+   "wp": "emniyet",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "nobet": 29
   },
   {
    "handle": "@mustf.cng",
@@ -72008,19 +72039,20 @@
    "home": "Doğu Banliyö C Blok, Daire 96",
    "home_from": 1793080800,
    "job": [
-    "Sigorta Uzmanı",
-    "Miniakent Ticaret A.Ş. · Miniakent Plaza, Kat 10",
-    "office",
-    "plaza"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "ticaret",
+   "wp": "emniyet",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
    "look": [
     3,
     0
-   ]
+   ],
+   "nobet": 30
   },
   {
    "handle": "@berayyy_3",
@@ -72029,19 +72061,20 @@
    "home": "Doğu Banliyö C Blok, Daire 96",
    "home_from": 1793080800,
    "job": [
-    "3B Sanatçı",
-    "Miniakent Oyun Stüdyosu · Miniakent Plaza 2, Kat 5",
-    "office",
-    "plaza2"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "oyun",
+   "wp": "emniyet",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
    "look": [
     2,
     1
-   ]
+   ],
+   "nobet": 31
   },
   {
    "handle": "@nazsenlikk",
@@ -72050,19 +72083,20 @@
    "home": "Doğu Banliyö C Blok, Daire 96",
    "home_from": 1793080800,
    "job": [
-    "Yönetim Danışmanı",
-    "Miniakent Danışmanlık · Miniakent Plaza 2, Kat 12",
-    "office",
-    "plaza2"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "danismanlik",
+   "wp": "emniyet",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
    "look": [
     1,
     1
-   ]
+   ],
+   "nobet": 32
   },
   {
    "handle": "@onwr.w",
@@ -72071,19 +72105,20 @@
    "home": "Doğu Banliyö C Blok, Daire 97",
    "home_from": 1793080800,
    "job": [
-    "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
-    "office",
-    "plaza2"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "banka",
+   "wp": "emniyet",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
    "look": [
     3,
     0
-   ]
+   ],
+   "nobet": 33
   },
   {
    "handle": "@rub4r4n",
@@ -72092,19 +72127,20 @@
    "home": "Doğu Banliyö C Blok, Daire 97",
    "home_from": 1793080800,
    "job": [
-    "Makine Mühendisi",
-    "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
-    "office",
-    "plaza2"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "muhendislik",
+   "wp": "emniyet",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
    "look": [
     0,
     0
-   ]
+   ],
+   "nobet": 34
   },
   {
    "handle": "@mete_emanet",
@@ -72113,19 +72149,20 @@
    "home": "Doğu Banliyö C Blok, Daire 97",
    "home_from": 1793080800,
    "job": [
-    "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
-    "office",
-    "plaza2"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "medya",
+   "wp": "emniyet",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
    "look": [
     0,
     0
-   ]
+   ],
+   "nobet": 4
   },
   {
    "handle": "@ilov3r4in",
@@ -72134,15 +72171,16 @@
    "home": "Doğu Banliyö C Blok, Daire 98",
    "home_from": 1793080800,
    "job": [
-    "Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "dershane",
+   "wp": "emniyet",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "nobet": 35
   },
   {
    "handle": "@m.enesvrl",
@@ -72151,19 +72189,20 @@
    "home": "Doğu Banliyö C Blok, Daire 98",
    "home_from": 1793080800,
    "job": [
-    "Mimar",
-    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
-    "office",
-    "plaza"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "mimarlik",
+   "wp": "emniyet",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
    "look": [
     0,
     0
-   ]
+   ],
+   "nobet": 36
   },
   {
    "handle": "@ali55yetkin",
@@ -72172,19 +72211,20 @@
    "home": "Doğu Banliyö C Blok, Daire 98",
    "home_from": 1793080800,
    "job": [
-    "Müşteri Temsilcisi",
-    "Miniakent Sigorta A.Ş. · Miniakent Plaza 2, Kat 2",
-    "office",
-    "plaza2"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "sigorta",
+   "wp": "emniyet",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
    "look": [
     3,
     0
-   ]
+   ],
+   "nobet": 37
   },
   {
    "handle": "@berat_ozkn.0",
@@ -72193,19 +72233,20 @@
    "home": "Doğu Banliyö C Blok, Daire 99",
    "home_from": 1793080800,
    "job": [
-    "Değerleme Uzmanı",
-    "Miniakent Gayrimenkul · Miniakent Plaza 2, Kat 9",
-    "office",
-    "plaza2"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "gayrimenkul",
+   "wp": "emniyet",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
    "look": [
     4,
     0
-   ]
+   ],
+   "nobet": 38
   },
   {
    "handle": "@f1rd3vs_",
@@ -72214,19 +72255,20 @@
    "home": "Doğu Banliyö C Blok, Daire 99",
    "home_from": 1793080800,
    "job": [
-    "Elektrik-Elektronik Mühendisi",
-    "Miniakent Enerji A.Ş. · Miniakent Plaza, Kat 9",
-    "office",
-    "plaza"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "enerji",
+   "wp": "emniyet",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
    "look": [
     2,
     1
-   ]
+   ],
+   "nobet": 39
   },
   {
    "handle": "@ayaz2_0111",
@@ -72235,19 +72277,20 @@
    "home": "Doğu Banliyö C Blok, Daire 99",
    "home_from": 1793080800,
    "job": [
-    "Emlak Danışmanı",
-    "Miniakent Gayrimenkul · Miniakent Plaza 2, Kat 9",
-    "office",
-    "plaza2"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "gayrimenkul",
+   "wp": "emniyet",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
    "look": [
     4,
     0
-   ]
+   ],
+   "nobet": 40
   },
   {
    "handle": "@limons_1453",
@@ -72256,15 +72299,16 @@
    "home": "Doğu Banliyö C Blok, Daire 100",
    "home_from": 1793080800,
    "job": [
-    "Tur Rehberi",
-    "Miniakent Turizm · Miniakent Plaza 2, Kat 7",
-    "office",
-    "plaza2"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "turizm",
+   "wp": "emniyet",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "nobet": 41
   },
   {
    "handle": "@enginhacibiyik",
@@ -72285,7 +72329,8 @@
    "look": [
     0,
     0
-   ]
+   ],
+   "protest": 24
   },
   {
    "handle": "@selinaladagg",
@@ -72294,19 +72339,20 @@
    "home": "Doğu Banliyö C Blok, Daire 100",
    "home_from": 1793080800,
    "job": [
-    "Çevirmen",
-    "Miniakent Ticaret A.Ş. · Miniakent Plaza, Kat 10",
-    "office",
-    "plaza"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "ticaret",
+   "wp": "emniyet",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
    "look": [
     1,
     1
-   ]
+   ],
+   "nobet": 43
   },
   {
    "handle": "@ipekn_mutlu",
@@ -72315,19 +72361,20 @@
    "home": "Doğu Banliyö C Blok, Daire 101",
    "home_from": 1793080800,
    "job": [
-    "Mimar",
-    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
-    "office",
-    "plaza"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "mimarlik",
+   "wp": "emniyet",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
    "look": [
     1,
     1
-   ]
+   ],
+   "nobet": 44
   },
   {
    "handle": "@havineyssanceri",
@@ -72336,19 +72383,20 @@
    "home": "Doğu Banliyö C Blok, Daire 101",
    "home_from": 1793080800,
    "job": [
-    "Araştırmacı",
-    "Miniakent Ar-Ge Merkezi · Miniakent Plaza, Kat 12",
-    "office",
-    "plaza"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "arge",
+   "wp": "emniyet",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
    "look": [
     1,
     1
-   ]
+   ],
+   "nobet": 45
   },
   {
    "handle": "@yagizdenli",
@@ -72357,19 +72405,20 @@
    "home": "Doğu Banliyö C Blok, Daire 101",
    "home_from": 1793080800,
    "job": [
-    "Eğitim Danışmanı",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "dershane",
+   "wp": "emniyet",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
    "look": [
     4,
     0
-   ]
+   ],
+   "nobet": 46
   },
   {
    "handle": "@eeeylulsr",
@@ -72378,19 +72427,20 @@
    "home": "Doğu Banliyö C Blok, Daire 102",
    "home_from": 1793080800,
    "job": [
-    "İş Analisti",
-    "Miniakent Danışmanlık · Miniakent Plaza 2, Kat 12",
-    "office",
-    "plaza2"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "danismanlik",
+   "wp": "emniyet",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
    "look": [
     2,
     1
-   ]
+   ],
+   "nobet": 47
   },
   {
    "handle": "@ulusoy_selcuk",
@@ -72399,19 +72449,20 @@
    "home": "Doğu Banliyö C Blok, Daire 102",
    "home_from": 1793080800,
    "job": [
-    "Yazılımcı",
-    "Miniakent Alfa Yazılım A.Ş. · Miniakent Plaza, Kat 7",
-    "office",
-    "plaza"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "yazilim",
+   "wp": "emniyet",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
    "look": [
     4,
     0
-   ]
+   ],
+   "nobet": 48
   },
   {
    "handle": "@selcukhantras_",
@@ -72420,19 +72471,20 @@
    "home": "Doğu Banliyö C Blok, Daire 102",
    "home_from": 1793080800,
    "job": [
-    "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
-    "office",
-    "plaza2"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "banka",
+   "wp": "emniyet",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
    "look": [
     3,
     0
-   ]
+   ],
+   "nobet": 49
   },
   {
    "handle": "@jax_rosie_blink",
@@ -72441,19 +72493,20 @@
    "home": "Doğu Banliyö C Blok, Daire 103",
    "home_from": 1793080800,
    "job": [
-    "Hasar Uzmanı",
-    "Miniakent Sigorta A.Ş. · Miniakent Plaza 2, Kat 2",
-    "office",
-    "plaza2"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "sigorta",
+   "wp": "emniyet",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
    "look": [
     2,
     1
-   ]
+   ],
+   "nobet": 15
   },
   {
    "handle": "@thecoachsami",
@@ -72462,19 +72515,20 @@
    "home": "Doğu Banliyö C Blok, Daire 103",
    "home_from": 1793080800,
    "job": [
-    "Satış Uzmanı",
-    "Miniakent Ticaret A.Ş. · Miniakent Plaza, Kat 10",
-    "office",
-    "plaza"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "ticaret",
+   "wp": "emniyet",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
    "look": [
     4,
     0
-   ]
+   ],
+   "nobet": 42
   },
   {
    "handle": "@incionr_",
@@ -73422,19 +73476,20 @@
    "home": "Doğu Banliyö C Blok, Daire 119",
    "home_from": 1793080800,
    "job": [
-    "Veri Bilimci",
-    "Miniakent Ar-Ge Merkezi · Miniakent Plaza, Kat 12",
-    "office",
-    "plaza"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "arge",
+   "wp": "emniyet",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
    "look": [
     2,
     1
-   ]
+   ],
+   "nobet": 3
   },
   {
    "handle": "@melwkorg",
@@ -75474,19 +75529,20 @@
    "home": "Doğu Banliyö D Blok, Daire 9",
    "home_from": 1793080800,
    "job": [
-    "Değerleme Uzmanı",
-    "Miniakent Gayrimenkul · Miniakent Plaza 2, Kat 9",
+    "İnşaat Mühendisi",
+    "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
     "office",
     "plaza2"
    ],
-   "wp": "gayrimenkul",
+   "wp": "muhendislik",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
    "look": [
     2,
     1
-   ]
+   ],
+   "beton": 2
   },
   {
    "handle": "@adolfhikmet",
@@ -76072,7 +76128,8 @@
    "look": [
     1,
     1
-   ]
+   ],
+   "protest": 23
   },
   {
    "handle": "@aysegulunaaal",
@@ -76472,7 +76529,8 @@
    "wp": "turizm",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "protest": 22
   },
   {
    "handle": "@furkannnckr",
@@ -76510,7 +76568,8 @@
    "wp": "yazilim",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "protest": 21
   },
   {
    "handle": "@suhedafiskiracaktopragisiksans",
@@ -76531,7 +76590,8 @@
    "look": [
     1,
     1
-   ]
+   ],
+   "protest": 27
   },
   {
    "handle": "@mert_kahramanogluu",
@@ -77903,7 +77963,8 @@
    "look": [
     2,
     1
-   ]
+   ],
+   "protest": 20
   },
   {
    "handle": "@tayfunngzr",
@@ -79062,7 +79123,8 @@
    "look": [
     2,
     1
-   ]
+   ],
+   "protest": 19
   },
   {
    "handle": "@simpabxbee",
@@ -79850,19 +79912,20 @@
    "home": "Doğu Banliyö D Blok, Daire 82",
    "home_from": 1793080800,
    "job": [
-    "Hukuk Danışmanı",
-    "Miniakent Hukuk Bürosu · Miniakent Plaza, Kat 6",
-    "office",
-    "plaza"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "hukuk",
+   "wp": "emniyet",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
    "look": [
     1,
     1
-   ]
+   ],
+   "nobet": 0
   },
   {
    "handle": "@muzaffer_cakmakci",
@@ -79871,19 +79934,20 @@
    "home": "Doğu Banliyö D Blok, Daire 83",
    "home_from": 1793080800,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
-    "office",
-    "plaza2"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "muhendislik",
+   "wp": "emniyet",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
    "look": [
     3,
     0
-   ]
+   ],
+   "nobet": 2
   },
   {
    "handle": "@nevroz.crcoglu_",
@@ -80132,7 +80196,8 @@
    "wp": "ticaret",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "protest": 18
   },
   {
    "handle": "@isott25m",
@@ -80807,19 +80872,20 @@
    "home": "Doğu Banliyö D Blok, Daire 99",
    "home_from": 1793080800,
    "job": [
-    "Mimar",
-    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
-    "office",
-    "plaza"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "mimarlik",
+   "wp": "emniyet",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
    "look": [
     0,
     0
-   ]
+   ],
+   "nobet": 5
   },
   {
    "handle": "@irmak_micc4",
@@ -81080,7 +81146,8 @@
    "look": [
     1,
     1
-   ]
+   ],
+   "is_protest": 7
   },
   {
    "handle": "@oziy3ch",
@@ -81620,15 +81687,16 @@
    "home": "Doğu Banliyö D Blok, Daire 112",
    "home_from": 1793080800,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
-    "office",
-    "plaza2"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "muhendislik",
+   "wp": "emniyet",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "nobet": 1
   },
   {
    "handle": "@seherrvaktiim",
