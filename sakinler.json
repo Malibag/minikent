@@ -232,7 +232,8 @@
    "look": [
     3,
     0
-   ]
+   ],
+   "protest": 36
   },
   {
    "handle": "@muhammedhakandogan",
@@ -7406,7 +7407,8 @@
    "look": [
     1,
     1
-   ]
+   ],
+   "protest": 16
   },
   {
    "handle": "@een3ws.1",
@@ -7763,7 +7765,8 @@
    "look": [
     0,
     0
-   ]
+   ],
+   "protest": 57
   },
   {
    "handle": "@tolgacann.06",
@@ -8969,7 +8972,8 @@
    "look": [
     4,
     0
-   ]
+   ],
+   "protest": 55
   },
   {
    "handle": "@burcinn.g",
@@ -9327,7 +9331,8 @@
    "look": [
     4,
     0
-   ]
+   ],
+   "protest": 25
   },
   {
    "handle": "@x6vela",
@@ -10520,7 +10525,8 @@
    "look": [
     3,
     0
-   ]
+   ],
+   "protest": 28
   },
   {
    "handle": "@can_atss",
@@ -30869,7 +30875,8 @@
    "wp": "fabrika_b",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "protest": 34
   },
   {
    "handle": "@niiili",
@@ -30987,7 +30994,8 @@
    "wp": "mimarlik",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "is_protest": 14
   },
   {
    "handle": "@blnfurkann",
@@ -32390,7 +32398,8 @@
    "look": [
     0,
     0
-   ]
+   ],
+   "protest": 65
   },
   {
    "handle": "@efecpm81",
@@ -33502,7 +33511,8 @@
    "look": [
     0,
     0
-   ]
+   ],
+   "protest": 52
   },
   {
    "handle": "@emiralp797",
@@ -34441,7 +34451,8 @@
    "look": [
     0,
     0
-   ]
+   ],
+   "protest": 29
   },
   {
    "handle": "@06buno",
@@ -37361,7 +37372,8 @@
    "look": [
     4,
     0
-   ]
+   ],
+   "protest": 56
   },
   {
    "handle": "@silaaea",
@@ -40849,7 +40861,8 @@
    "look": [
     4,
     0
-   ]
+   ],
+   "protest": 38
   },
   {
    "handle": "@cagantoprakervus",
@@ -41605,7 +41618,8 @@
    "look": [
     0,
     0
-   ]
+   ],
+   "protest": 37
   },
   {
    "handle": "@berat.celik45",
@@ -43705,7 +43719,8 @@
    "look": [
     1,
     1
-   ]
+   ],
+   "protest": 43
   },
   {
    "handle": "@batuhanksgl18",
@@ -43915,7 +43930,8 @@
    "look": [
     4,
     0
-   ]
+   ],
+   "protest": 59
   },
   {
    "handle": "@ch1covalentino",
@@ -44566,7 +44582,8 @@
    "look": [
     1,
     1
-   ]
+   ],
+   "protest": 46
   },
   {
    "handle": "@serhanntutarr_",
@@ -45028,7 +45045,8 @@
    "look": [
     0,
     0
-   ]
+   ],
+   "protest": 63
   },
   {
    "handle": "@tamameyvallahpasam",
@@ -46519,7 +46537,8 @@
    "look": [
     3,
     0
-   ]
+   ],
+   "protest": 54
   },
   {
    "handle": "@ertakus0",
@@ -46981,7 +47000,8 @@
    "look": [
     1,
     1
-   ]
+   ],
+   "protest": 44
   },
   {
    "handle": "@w3nxeirrr",
@@ -47191,7 +47211,8 @@
    "look": [
     0,
     0
-   ]
+   ],
+   "protest": 40
   },
   {
    "handle": "@aydoganenesege",
@@ -48619,7 +48640,8 @@
    "look": [
     3,
     0
-   ]
+   ],
+   "protest": 53
   },
   {
    "handle": "@mehm3tcaglar_",
@@ -52359,7 +52381,8 @@
    "look": [
     0,
     0
-   ]
+   ],
+   "protest": 30
   },
   {
    "handle": "@cgrgncglnn",
@@ -52380,7 +52403,8 @@
    "look": [
     0,
     0
-   ]
+   ],
+   "protest": 64
   },
   {
    "handle": "@eray_burdami",
@@ -54267,7 +54291,8 @@
    "wp": "banka",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "protest": 45
   },
   {
    "handle": "@spacensa_4",
@@ -56139,7 +56164,8 @@
    "wp": "plaza_hizmet",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "protest": 35
   },
   {
    "handle": "@beyzabozkurt___",
@@ -57313,7 +57339,8 @@
    "wp": "mimarlik",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "beton": 6
   },
   {
    "handle": "@0kan_1gk",
@@ -57347,7 +57374,8 @@
    "wp": "eticaret",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "protest": 39
   },
   {
    "handle": "@aysencnck01",
@@ -58543,7 +58571,8 @@
    "wp": "medya",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "protest": 50
   },
   {
    "handle": "@georgemirr63",
@@ -59182,7 +59211,8 @@
    "wp": "lojistik",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "protest": 33
   },
   {
    "handle": "@elchavodokan",
@@ -59483,7 +59513,8 @@
    "wp": "gayrimenkul",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "beton": 5
   },
   {
    "handle": "@zeyynepunlu",
@@ -62450,7 +62481,8 @@
    "wp": "oyun",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "protest": 31
   },
   {
    "handle": "@kaan.duran111",
@@ -63478,7 +63510,8 @@
    "wp": "medya",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "protest": 62
   },
   {
    "handle": "@meryyyeeyy",
@@ -64547,7 +64580,8 @@
    "wp": "muhendislik",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "protest": 48
   },
   {
    "handle": "@arici_bedirhan61",
@@ -64585,7 +64619,8 @@
    "wp": "turizm",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "protest": 42
   },
   {
    "handle": "@kadir.ez16",
@@ -66666,7 +66701,8 @@
    "wp": "hukuk",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "protest": 49
   },
   {
    "handle": "@alibaha5454",
@@ -67906,7 +67942,8 @@
    "wp": "saglik",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "protest": 41
   },
   {
    "handle": "@varlikolaninsan",
@@ -73452,7 +73489,8 @@
    "look": [
     1,
     1
-   ]
+   ],
+   "is_protest": 13
   },
   {
    "handle": "@burcuu_aydemirr",
@@ -75273,7 +75311,8 @@
    "look": [
     1,
     1
-   ]
+   ],
+   "protest": 17
   },
   {
    "handle": "@buse_ee_ee",
@@ -75505,7 +75544,8 @@
    "look": [
     2,
     1
-   ]
+   ],
+   "protest": 32
   },
   {
    "handle": "@n.urrnur.r",
@@ -75687,7 +75727,8 @@
    "look": [
     3,
     0
-   ]
+   ],
+   "protest": 61
   },
   {
    "handle": "@cemalikilicofficiall",
@@ -76295,7 +76336,8 @@
    "look": [
     1,
     1
-   ]
+   ],
+   "protest": 58
   },
   {
    "handle": "@nazlissiim",
@@ -77132,7 +77174,8 @@
    "wp": "yazilim",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "protest": 51
   },
   {
    "handle": "@mefed_setup",
@@ -77523,7 +77566,8 @@
    "wp": "muhendislik",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "protest": 60
   },
   {
    "handle": "@berat.efe07",
@@ -78846,7 +78890,8 @@
    "wp": "lojistik",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "protest": 66
   },
   {
    "handle": "@esat.cymz1",
@@ -81351,7 +81396,8 @@
    "wp": "dershane",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "protest": 47
   },
   {
    "handle": "@grkemtaha",
