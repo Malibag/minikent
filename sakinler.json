@@ -6235,12 +6235,12 @@
    "home": "Zeytin Sokağı No 5, Daire 2",
    "home_from": 1792735200,
    "job": [
-    "Üretim Mühendisi",
-    "Miniakent Fabrikası 2 · Sanayi Bölgesi",
-    "shop",
-    "fabrika_b"
+    "Protez Tırnak Uzmanı",
+    "Miniakent Güzellik Salonu · Miniakent Plaza, Kat 3",
+    "office",
+    "plaza"
    ],
-   "wp": "fabrika_b",
+   "wp": "",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -19433,7 +19433,11 @@
    "wp": "yayinevi",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@mugiwara_erme",
@@ -75468,15 +75472,19 @@
    "home": "Doğu Banliyö D Blok, Daire 7",
    "home_from": 1793080800,
    "job": [
-    "Diş Teknisyeni",
-    "Miniakent Sağlık Merkezi · Miniakent Plaza, Kat 2",
+    "Elektrik-Elektronik Mühendisi",
+    "Miniakent Enerji A.Ş. · Miniakent Plaza, Kat 9",
     "office",
     "plaza"
    ],
-   "wp": "saglik",
+   "wp": "enerji",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@_llhiraa",
