@@ -5592,12 +5592,12 @@
    "home": "Defne Sokağı No 4, Daire 5",
    "home_from": 1792735200,
    "job": [
-    "Plaj Temizlik Görevlisi",
-    "Miniakent Plajı",
-    "area",
-    "beach"
+    "Avukat",
+    "Miniakent Hukuk Bürosu · Miniakent Plaza, Kat 6",
+    "office",
+    "plaza"
    ],
-   "wp": "plaj",
+   "wp": "hukuk",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -74733,12 +74733,12 @@
    "home": "Doğu Banliyö C Blok, Daire 139",
    "home_from": 1793080800,
    "job": [
-    "Avukat",
-    "Miniakent Hukuk Bürosu · Miniakent Plaza, Kat 6",
-    "office",
-    "plaza"
+    "Çöp Toplama Görevlisi",
+    "Miniakent Plajı",
+    "area",
+    "beach"
    ],
-   "wp": "hukuk",
+   "wp": "plaj",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -85043,12 +85043,12 @@
    "home": "Doğu Banliyö E Blok, Daire 33",
    "home_from": 1793167200,
    "job": [
-    "Değerleme Uzmanı",
-    "Miniakent Gayrimenkul · Miniakent Plaza 2, Kat 9",
+    "Kuaför",
+    "Miniakent Güzellik Salonu · Miniakent Plaza, Kat 3",
     "office",
-    "plaza2"
+    "plaza"
    ],
-   "wp": "gayrimenkul",
+   "wp": "",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -93785,12 +93785,12 @@
    "home": "Doğu Banliyö F Blok, Daire 64",
    "home_from": 1793253600,
    "job": [
-    "Hasar Uzmanı",
-    "Miniakent Sigorta A.Ş. · Miniakent Plaza 2, Kat 2",
+    "Protez Tırnak Uzmanı",
+    "Miniakent Güzellik Salonu · Miniakent Plaza, Kat 3",
     "office",
-    "plaza2"
+    "plaza"
    ],
-   "wp": "sigorta",
+   "wp": "",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
