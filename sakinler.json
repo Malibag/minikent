@@ -327,12 +327,12 @@
    "home": "Defne Sokağı No 6, Daire 2",
    "home_from": 1792648800,
    "job": [
-    "Otel Koordinatörü",
-    "Grand Miniakent Oteli",
-    "hotel",
-    ""
+    "Kafe Sahibi",
+    "Niyan Kafe · Begonvil Sokağı No 7",
+    "shop",
+    "niyan_kafe"
    ],
-   "wp": "otel",
+   "wp": "",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -7186,9 +7186,9 @@
    "home_from": 1792821600,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
@@ -7818,9 +7818,9 @@
    "home_from": 1792821600,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Satranç",
@@ -7944,9 +7944,9 @@
    "home_from": 1792821600,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
@@ -8756,9 +8756,9 @@
    "home_from": 1792821600,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
@@ -9216,9 +9216,9 @@
    "home_from": 1792821600,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
@@ -9237,9 +9237,9 @@
    "home_from": 1792821600,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
@@ -9321,9 +9321,9 @@
    "home_from": 1792821600,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
@@ -9864,9 +9864,9 @@
    "home_from": 1792821600,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
@@ -10117,9 +10117,9 @@
    "home_from": 1792821600,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Kitap okumak",
@@ -10138,9 +10138,9 @@
    "home_from": 1792821600,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
@@ -16524,9 +16524,9 @@
    "home_from": 1792821600,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Kitap okumak",
@@ -17986,9 +17986,9 @@
    "home_from": 1792821600,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
@@ -20767,9 +20767,9 @@
    "home_from": 1792821600,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
@@ -22138,9 +22138,9 @@
    "home_from": 1792821600,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Satranç",
@@ -22518,9 +22518,9 @@
    "home_from": 1792821600,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
@@ -23351,9 +23351,9 @@
    "home_from": 1792821600,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
@@ -23448,9 +23448,9 @@
    "home_from": 1792821600,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
@@ -23486,9 +23486,9 @@
    "home_from": 1792821600,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
@@ -24357,9 +24357,9 @@
    "home_from": 1792821600,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
@@ -25236,9 +25236,9 @@
    "home_from": 1792821600,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
@@ -25840,9 +25840,9 @@
    "home_from": 1792821600,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
@@ -25992,9 +25992,9 @@
    "home_from": 1792821600,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
@@ -26624,9 +26624,9 @@
    "home_from": 1792821600,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Satranç",
@@ -26831,9 +26831,9 @@
    "home_from": 1792821600,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
@@ -27072,9 +27072,9 @@
    "home_from": 1792821600,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Satranç",
@@ -27807,9 +27807,9 @@
    "home_from": 1792821600,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
@@ -27879,9 +27879,9 @@
    "home_from": 1792821600,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Satranç",
@@ -27972,9 +27972,9 @@
    "home_from": 1792821600,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
@@ -28157,9 +28157,9 @@
    "home_from": 1792821600,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
@@ -28563,9 +28563,9 @@
    "home_from": 1792821600,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
@@ -28858,9 +28858,9 @@
    "home_from": 1792821600,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
@@ -29027,9 +29027,9 @@
    "home_from": 1792821600,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
@@ -29428,9 +29428,9 @@
    "home_from": 1792821600,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
@@ -29479,9 +29479,9 @@
    "home_from": 1792821600,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
@@ -29800,9 +29800,9 @@
    "home_from": 1792821600,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
@@ -30025,9 +30025,9 @@
    "home_from": 1792821600,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
@@ -30445,9 +30445,9 @@
    "home_from": 1792821600,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
@@ -30911,9 +30911,9 @@
    "home_from": 1792821600,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
@@ -31220,9 +31220,9 @@
    "home_from": 1792821600,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
@@ -31410,9 +31410,9 @@
    "home_from": 1792821600,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Satranç",
@@ -32010,9 +32010,9 @@
    "home_from": 1792821600,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Bahçe işleri",
@@ -32929,9 +32929,9 @@
    "home_from": 1792821600,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
@@ -33267,9 +33267,9 @@
    "home_from": 1792821600,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
@@ -33326,9 +33326,9 @@
    "home_from": 1792821600,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Bahçe işleri",
@@ -33364,9 +33364,9 @@
    "home_from": 1792821600,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
@@ -34389,9 +34389,9 @@
    "home_from": 1792821600,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
@@ -35273,9 +35273,9 @@
    "home_from": 1792821600,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
@@ -35315,9 +35315,9 @@
    "home_from": 1792821600,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
@@ -35640,9 +35640,9 @@
    "home_from": 1792821600,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
@@ -36338,9 +36338,9 @@
    "home_from": 1792821600,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
@@ -37330,8 +37330,8 @@
    "home": "Doğu Banliyö A Blok, Daire 12",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -37814,8 +37814,8 @@
    "home": "Doğu Banliyö A Blok, Daire 35",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -37836,7 +37836,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -37877,8 +37877,8 @@
    "home": "Doğu Banliyö A Blok, Daire 38",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -37898,8 +37898,8 @@
    "home": "Doğu Banliyö A Blok, Daire 39",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Müdürü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -37982,8 +37982,8 @@
    "home": "Doğu Banliyö A Blok, Daire 43",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -38003,8 +38003,8 @@
    "home": "Doğu Banliyö A Blok, Daire 44",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -38130,9 +38130,9 @@
    "home_from": 1792908000,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
@@ -38192,8 +38192,8 @@
    "home": "Doğu Banliyö A Blok, Daire 53",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -38319,7 +38319,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -38634,7 +38634,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -38655,7 +38655,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -38843,8 +38843,8 @@
    "home": "Doğu Banliyö A Blok, Daire 84",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -38949,7 +38949,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -39053,8 +39053,8 @@
    "home": "Doğu Banliyö A Blok, Daire 94",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -39179,8 +39179,8 @@
    "home": "Doğu Banliyö A Blok, Daire 100",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -39200,8 +39200,8 @@
    "home": "Doğu Banliyö A Blok, Daire 101",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -39495,8 +39495,8 @@
    "home": "Doğu Banliyö B Blok, Daire 3",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -39537,8 +39537,8 @@
    "home": "Doğu Banliyö B Blok, Daire 5",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -39579,8 +39579,8 @@
    "home": "Doğu Banliyö B Blok, Daire 7",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -39621,8 +39621,8 @@
    "home": "Doğu Banliyö B Blok, Daire 9",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -39747,8 +39747,8 @@
    "home": "Doğu Banliyö B Blok, Daire 15",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -39768,8 +39768,8 @@
    "home": "Doğu Banliyö B Blok, Daire 16",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -39811,7 +39811,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -39915,8 +39915,8 @@
    "home": "Doğu Banliyö B Blok, Daire 23",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -39978,8 +39978,8 @@
    "home": "Doğu Banliyö B Blok, Daire 26",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -40104,8 +40104,8 @@
    "home": "Doğu Banliyö B Blok, Daire 32",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -40230,8 +40230,8 @@
    "home": "Doğu Banliyö B Blok, Daire 38",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -40272,8 +40272,8 @@
    "home": "Doğu Banliyö B Blok, Daire 40",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -40295,7 +40295,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -40336,8 +40336,8 @@
    "home": "Doğu Banliyö B Blok, Daire 43",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -40357,8 +40357,8 @@
    "home": "Doğu Banliyö B Blok, Daire 44",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -40609,8 +40609,8 @@
    "home": "Doğu Banliyö B Blok, Daire 56",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -40630,8 +40630,8 @@
    "home": "Doğu Banliyö B Blok, Daire 57",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -40651,8 +40651,8 @@
    "home": "Doğu Banliyö B Blok, Daire 58",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -40693,8 +40693,8 @@
    "home": "Doğu Banliyö B Blok, Daire 60",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -40861,8 +40861,8 @@
    "home": "Doğu Banliyö B Blok, Daire 68",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -40925,8 +40925,8 @@
    "home": "Doğu Banliyö B Blok, Daire 71",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -40946,8 +40946,8 @@
    "home": "Doğu Banliyö B Blok, Daire 72",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -41009,8 +41009,8 @@
    "home": "Doğu Banliyö B Blok, Daire 75",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -41093,8 +41093,8 @@
    "home": "Doğu Banliyö B Blok, Daire 79",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -41135,8 +41135,8 @@
    "home": "Doğu Banliyö B Blok, Daire 81",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -41177,8 +41177,8 @@
    "home": "Doğu Banliyö B Blok, Daire 83",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -41366,8 +41366,8 @@
    "home": "Doğu Banliyö B Blok, Daire 92",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -41555,8 +41555,8 @@
    "home": "Doğu Banliyö B Blok, Daire 101",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -41683,7 +41683,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -41788,7 +41788,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -41830,7 +41830,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -41934,8 +41934,8 @@
    "home": "Doğu Banliyö B Blok, Daire 119",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -41976,8 +41976,8 @@
    "home": "Doğu Banliyö B Blok, Daire 121",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -41998,7 +41998,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -42250,7 +42250,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -42501,8 +42501,8 @@
    "home": "Doğu Banliyö C Blok, Daire 18",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -42669,8 +42669,8 @@
    "home": "Doğu Banliyö C Blok, Daire 26",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -42795,8 +42795,8 @@
    "home": "Doğu Banliyö C Blok, Daire 32",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -42837,8 +42837,8 @@
    "home": "Doğu Banliyö C Blok, Daire 34",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -42858,8 +42858,8 @@
    "home": "Doğu Banliyö C Blok, Daire 35",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -42921,8 +42921,8 @@
    "home": "Doğu Banliyö C Blok, Daire 38",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -43027,7 +43027,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -43195,7 +43195,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -43257,8 +43257,8 @@
    "home": "Doğu Banliyö C Blok, Daire 54",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -43321,7 +43321,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -43404,8 +43404,8 @@
    "home": "Doğu Banliyö C Blok, Daire 61",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -43784,7 +43784,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -43825,8 +43825,8 @@
    "home": "Doğu Banliyö C Blok, Daire 81",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -43846,8 +43846,8 @@
    "home": "Doğu Banliyö C Blok, Daire 82",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -43952,8 +43952,8 @@
    "home": "Doğu Banliyö C Blok, Daire 87",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -44058,7 +44058,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -44078,8 +44078,8 @@
    "home": "Doğu Banliyö C Blok, Daire 93",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -44141,8 +44141,8 @@
    "home": "Doğu Banliyö C Blok, Daire 96",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -44330,8 +44330,8 @@
    "home": "Doğu Banliyö C Blok, Daire 105",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -44540,8 +44540,8 @@
    "home": "Doğu Banliyö C Blok, Daire 115",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -44561,8 +44561,8 @@
    "home": "Doğu Banliyö C Blok, Daire 116",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -44646,8 +44646,8 @@
    "home": "Doğu Banliyö C Blok, Daire 120",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -44751,8 +44751,8 @@
    "home": "Doğu Banliyö C Blok, Daire 125",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -44856,8 +44856,8 @@
    "home": "Doğu Banliyö C Blok, Daire 130",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -44961,8 +44961,8 @@
    "home": "Doğu Banliyö C Blok, Daire 135",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -45088,8 +45088,8 @@
    "home": "Doğu Banliyö C Blok, Daire 141",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -45172,8 +45172,8 @@
    "home": "Doğu Banliyö D Blok, Daire 1",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -45214,8 +45214,8 @@
    "home": "Doğu Banliyö D Blok, Daire 3",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -45235,8 +45235,8 @@
    "home": "Doğu Banliyö D Blok, Daire 4",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -45256,8 +45256,8 @@
    "home": "Doğu Banliyö D Blok, Daire 5",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -45277,8 +45277,8 @@
    "home": "Doğu Banliyö D Blok, Daire 6",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -45319,8 +45319,8 @@
    "home": "Doğu Banliyö D Blok, Daire 8",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -45341,7 +45341,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -45487,8 +45487,8 @@
    "home": "Doğu Banliyö D Blok, Daire 16",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -45550,8 +45550,8 @@
    "home": "Doğu Banliyö D Blok, Daire 19",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -45718,8 +45718,8 @@
    "home": "Doğu Banliyö D Blok, Daire 27",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -45781,8 +45781,8 @@
    "home": "Doğu Banliyö D Blok, Daire 30",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -45907,8 +45907,8 @@
    "home": "Doğu Banliyö D Blok, Daire 36",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -45928,8 +45928,8 @@
    "home": "Doğu Banliyö D Blok, Daire 37",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -45992,7 +45992,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -46013,7 +46013,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -46054,8 +46054,8 @@
    "home": "Doğu Banliyö D Blok, Daire 43",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -46117,8 +46117,8 @@
    "home": "Doğu Banliyö D Blok, Daire 46",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -46138,8 +46138,8 @@
    "home": "Doğu Banliyö D Blok, Daire 47",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -46180,8 +46180,8 @@
    "home": "Doğu Banliyö D Blok, Daire 49",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -46348,8 +46348,8 @@
    "home": "Doğu Banliyö D Blok, Daire 57",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -46369,8 +46369,8 @@
    "home": "Doğu Banliyö D Blok, Daire 58",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -46411,8 +46411,8 @@
    "home": "Doğu Banliyö D Blok, Daire 60",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -46623,7 +46623,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -46664,8 +46664,8 @@
    "home": "Doğu Banliyö D Blok, Daire 72",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -46685,8 +46685,8 @@
    "home": "Doğu Banliyö D Blok, Daire 73",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -46706,8 +46706,8 @@
    "home": "Doğu Banliyö D Blok, Daire 74",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -46728,7 +46728,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -46748,8 +46748,8 @@
    "home": "Doğu Banliyö D Blok, Daire 76",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -46770,7 +46770,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -46790,8 +46790,8 @@
    "home": "Doğu Banliyö D Blok, Daire 78",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -46811,8 +46811,8 @@
    "home": "Doğu Banliyö D Blok, Daire 79",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -46832,8 +46832,8 @@
    "home": "Doğu Banliyö D Blok, Daire 80",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -46853,8 +46853,8 @@
    "home": "Doğu Banliyö D Blok, Daire 81",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -46895,8 +46895,8 @@
    "home": "Doğu Banliyö D Blok, Daire 83",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -46938,7 +46938,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47000,8 +47000,8 @@
    "home": "Doğu Banliyö D Blok, Daire 88",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47044,7 +47044,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47086,7 +47086,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47106,8 +47106,8 @@
    "home": "Doğu Banliyö D Blok, Daire 93",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47148,8 +47148,8 @@
    "home": "Doğu Banliyö D Blok, Daire 95",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47169,8 +47169,8 @@
    "home": "Doğu Banliyö D Blok, Daire 96",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47191,7 +47191,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47233,8 +47233,8 @@
    "home": "Doğu Banliyö D Blok, Daire 99",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47254,8 +47254,8 @@
    "home": "Doğu Banliyö D Blok, Daire 100",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47276,7 +47276,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47296,8 +47296,8 @@
    "home": "Doğu Banliyö D Blok, Daire 102",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47317,8 +47317,8 @@
    "home": "Doğu Banliyö D Blok, Daire 103",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47338,8 +47338,8 @@
    "home": "Doğu Banliyö D Blok, Daire 104",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47380,8 +47380,8 @@
    "home": "Doğu Banliyö D Blok, Daire 106",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47401,8 +47401,8 @@
    "home": "Doğu Banliyö D Blok, Daire 107",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47422,8 +47422,8 @@
    "home": "Doğu Banliyö D Blok, Daire 108",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47443,8 +47443,8 @@
    "home": "Doğu Banliyö D Blok, Daire 109",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47465,7 +47465,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47485,8 +47485,8 @@
    "home": "Doğu Banliyö D Blok, Daire 111",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47506,8 +47506,8 @@
    "home": "Doğu Banliyö D Blok, Daire 112",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47527,8 +47527,8 @@
    "home": "Doğu Banliyö D Blok, Daire 113",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47548,8 +47548,8 @@
    "home": "Doğu Banliyö D Blok, Daire 114",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47569,8 +47569,8 @@
    "home": "Doğu Banliyö D Blok, Daire 115",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47590,8 +47590,8 @@
    "home": "Doğu Banliyö D Blok, Daire 116",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47611,8 +47611,8 @@
    "home": "Doğu Banliyö D Blok, Daire 117",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47653,8 +47653,8 @@
    "home": "Doğu Banliyö D Blok, Daire 119",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47674,8 +47674,8 @@
    "home": "Doğu Banliyö D Blok, Daire 120",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47695,8 +47695,8 @@
    "home": "Doğu Banliyö D Blok, Daire 121",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47716,8 +47716,8 @@
    "home": "Doğu Banliyö D Blok, Daire 122",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47737,8 +47737,8 @@
    "home": "Doğu Banliyö D Blok, Daire 123",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47758,8 +47758,8 @@
    "home": "Doğu Banliyö D Blok, Daire 124",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47779,8 +47779,8 @@
    "home": "Doğu Banliyö D Blok, Daire 125",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47800,8 +47800,8 @@
    "home": "Doğu Banliyö D Blok, Daire 126",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47821,8 +47821,8 @@
    "home": "Doğu Banliyö D Blok, Daire 127",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47842,8 +47842,8 @@
    "home": "Doğu Banliyö D Blok, Daire 128",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47863,8 +47863,8 @@
    "home": "Doğu Banliyö E Blok, Daire 1",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47884,8 +47884,8 @@
    "home": "Doğu Banliyö E Blok, Daire 2",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47905,8 +47905,8 @@
    "home": "Doğu Banliyö E Blok, Daire 3",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47926,8 +47926,8 @@
    "home": "Doğu Banliyö E Blok, Daire 4",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47947,8 +47947,8 @@
    "home": "Doğu Banliyö E Blok, Daire 5",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47969,7 +47969,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -47990,7 +47990,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48010,8 +48010,8 @@
    "home": "Doğu Banliyö E Blok, Daire 8",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48031,8 +48031,8 @@
    "home": "Doğu Banliyö E Blok, Daire 9",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48053,7 +48053,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48073,8 +48073,8 @@
    "home": "Doğu Banliyö E Blok, Daire 11",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48094,8 +48094,8 @@
    "home": "Doğu Banliyö E Blok, Daire 12",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48115,8 +48115,8 @@
    "home": "Doğu Banliyö E Blok, Daire 13",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48136,8 +48136,8 @@
    "home": "Doğu Banliyö E Blok, Daire 14",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48157,8 +48157,8 @@
    "home": "Doğu Banliyö E Blok, Daire 15",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48178,8 +48178,8 @@
    "home": "Doğu Banliyö E Blok, Daire 16",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48199,8 +48199,8 @@
    "home": "Doğu Banliyö E Blok, Daire 17",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48220,8 +48220,8 @@
    "home": "Doğu Banliyö E Blok, Daire 18",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48242,7 +48242,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48263,7 +48263,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48283,8 +48283,8 @@
    "home": "Doğu Banliyö E Blok, Daire 21",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48304,8 +48304,8 @@
    "home": "Doğu Banliyö E Blok, Daire 22",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48325,8 +48325,8 @@
    "home": "Doğu Banliyö E Blok, Daire 23",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48347,7 +48347,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48368,7 +48368,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48389,7 +48389,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48409,8 +48409,8 @@
    "home": "Doğu Banliyö E Blok, Daire 27",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48430,8 +48430,8 @@
    "home": "Doğu Banliyö E Blok, Daire 28",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48451,8 +48451,8 @@
    "home": "Doğu Banliyö E Blok, Daire 29",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48493,8 +48493,8 @@
    "home": "Doğu Banliyö E Blok, Daire 31",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48515,7 +48515,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48535,8 +48535,8 @@
    "home": "Doğu Banliyö E Blok, Daire 33",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48556,8 +48556,8 @@
    "home": "Doğu Banliyö E Blok, Daire 34",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48577,8 +48577,8 @@
    "home": "Doğu Banliyö E Blok, Daire 35",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48598,8 +48598,8 @@
    "home": "Doğu Banliyö E Blok, Daire 36",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48620,7 +48620,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48640,8 +48640,8 @@
    "home": "Doğu Banliyö E Blok, Daire 38",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48662,8 +48662,8 @@
    "home": "Doğu Banliyö E Blok, Daire 39",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48683,8 +48683,8 @@
    "home": "Doğu Banliyö E Blok, Daire 40",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48704,8 +48704,8 @@
    "home": "Doğu Banliyö E Blok, Daire 41",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48725,8 +48725,8 @@
    "home": "Doğu Banliyö E Blok, Daire 42",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48746,8 +48746,8 @@
    "home": "Doğu Banliyö E Blok, Daire 43",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48767,8 +48767,8 @@
    "home": "Doğu Banliyö E Blok, Daire 44",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48788,8 +48788,8 @@
    "home": "Doğu Banliyö E Blok, Daire 45",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48809,8 +48809,8 @@
    "home": "Doğu Banliyö E Blok, Daire 46",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48831,7 +48831,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48851,8 +48851,8 @@
    "home": "Doğu Banliyö E Blok, Daire 48",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48872,8 +48872,8 @@
    "home": "Doğu Banliyö E Blok, Daire 49",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48893,8 +48893,8 @@
    "home": "Doğu Banliyö E Blok, Daire 50",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48915,7 +48915,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48935,8 +48935,8 @@
    "home": "Doğu Banliyö E Blok, Daire 52",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48957,7 +48957,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48977,8 +48977,8 @@
    "home": "Doğu Banliyö E Blok, Daire 54",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -48998,8 +48998,8 @@
    "home": "Doğu Banliyö E Blok, Daire 55",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49019,8 +49019,8 @@
    "home": "Doğu Banliyö E Blok, Daire 56",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49040,8 +49040,8 @@
    "home": "Doğu Banliyö E Blok, Daire 57",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49061,8 +49061,8 @@
    "home": "Doğu Banliyö E Blok, Daire 58",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49082,8 +49082,8 @@
    "home": "Doğu Banliyö E Blok, Daire 59",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49103,8 +49103,8 @@
    "home": "Doğu Banliyö E Blok, Daire 60",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49124,8 +49124,8 @@
    "home": "Doğu Banliyö E Blok, Daire 61",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49146,7 +49146,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49166,8 +49166,8 @@
    "home": "Doğu Banliyö E Blok, Daire 63",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49187,8 +49187,8 @@
    "home": "Doğu Banliyö E Blok, Daire 64",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49209,7 +49209,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49229,8 +49229,8 @@
    "home": "Doğu Banliyö E Blok, Daire 66",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49250,8 +49250,8 @@
    "home": "Doğu Banliyö E Blok, Daire 67",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49271,8 +49271,8 @@
    "home": "Doğu Banliyö E Blok, Daire 68",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49292,8 +49292,8 @@
    "home": "Doğu Banliyö E Blok, Daire 69",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49313,8 +49313,8 @@
    "home": "Doğu Banliyö E Blok, Daire 70",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49335,7 +49335,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49355,8 +49355,8 @@
    "home": "Doğu Banliyö E Blok, Daire 72",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49376,8 +49376,8 @@
    "home": "Doğu Banliyö E Blok, Daire 73",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49397,8 +49397,8 @@
    "home": "Doğu Banliyö E Blok, Daire 74",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49418,8 +49418,8 @@
    "home": "Doğu Banliyö E Blok, Daire 75",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49439,8 +49439,8 @@
    "home": "Doğu Banliyö E Blok, Daire 76",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49460,8 +49460,8 @@
    "home": "Doğu Banliyö E Blok, Daire 77",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49481,8 +49481,8 @@
    "home": "Doğu Banliyö E Blok, Daire 78",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49502,8 +49502,8 @@
    "home": "Doğu Banliyö E Blok, Daire 79",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49523,8 +49523,8 @@
    "home": "Doğu Banliyö E Blok, Daire 80",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49544,8 +49544,8 @@
    "home": "Doğu Banliyö E Blok, Daire 81",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49566,7 +49566,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49587,7 +49587,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49608,7 +49608,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49628,8 +49628,8 @@
    "home": "Doğu Banliyö E Blok, Daire 85",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49649,8 +49649,8 @@
    "home": "Doğu Banliyö E Blok, Daire 86",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49670,8 +49670,8 @@
    "home": "Doğu Banliyö E Blok, Daire 87",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49691,8 +49691,8 @@
    "home": "Doğu Banliyö E Blok, Daire 88",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49712,8 +49712,8 @@
    "home": "Doğu Banliyö E Blok, Daire 89",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49733,8 +49733,8 @@
    "home": "Doğu Banliyö E Blok, Daire 90",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49754,8 +49754,8 @@
    "home": "Doğu Banliyö E Blok, Daire 91",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49775,8 +49775,8 @@
    "home": "Doğu Banliyö E Blok, Daire 92",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49796,8 +49796,8 @@
    "home": "Doğu Banliyö E Blok, Daire 93",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49817,8 +49817,8 @@
    "home": "Doğu Banliyö E Blok, Daire 94",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49838,8 +49838,8 @@
    "home": "Doğu Banliyö E Blok, Daire 95",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49859,8 +49859,8 @@
    "home": "Doğu Banliyö E Blok, Daire 96",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49880,8 +49880,8 @@
    "home": "Doğu Banliyö E Blok, Daire 97",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49901,8 +49901,8 @@
    "home": "Doğu Banliyö E Blok, Daire 98",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49922,8 +49922,8 @@
    "home": "Doğu Banliyö E Blok, Daire 99",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49943,8 +49943,8 @@
    "home": "Doğu Banliyö E Blok, Daire 100",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49966,7 +49966,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -49986,8 +49986,8 @@
    "home": "Doğu Banliyö E Blok, Daire 102",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50008,7 +50008,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50028,8 +50028,8 @@
    "home": "Doğu Banliyö E Blok, Daire 104",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50049,8 +50049,8 @@
    "home": "Doğu Banliyö E Blok, Daire 105",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50071,7 +50071,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50091,8 +50091,8 @@
    "home": "Doğu Banliyö E Blok, Daire 107",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50112,8 +50112,8 @@
    "home": "Doğu Banliyö E Blok, Daire 108",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50133,8 +50133,8 @@
    "home": "Doğu Banliyö E Blok, Daire 109",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50154,8 +50154,8 @@
    "home": "Doğu Banliyö E Blok, Daire 110",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50175,8 +50175,8 @@
    "home": "Doğu Banliyö E Blok, Daire 111",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50196,8 +50196,8 @@
    "home": "Doğu Banliyö E Blok, Daire 112",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50217,8 +50217,8 @@
    "home": "Doğu Banliyö F Blok, Daire 1",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50239,7 +50239,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50259,8 +50259,8 @@
    "home": "Doğu Banliyö F Blok, Daire 3",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50280,8 +50280,8 @@
    "home": "Doğu Banliyö F Blok, Daire 4",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50302,7 +50302,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50323,7 +50323,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50343,8 +50343,8 @@
    "home": "Doğu Banliyö F Blok, Daire 7",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50364,8 +50364,8 @@
    "home": "Doğu Banliyö F Blok, Daire 8",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50385,8 +50385,8 @@
    "home": "Doğu Banliyö F Blok, Daire 9",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50407,7 +50407,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50427,8 +50427,8 @@
    "home": "Doğu Banliyö F Blok, Daire 11",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50449,7 +50449,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50469,8 +50469,8 @@
    "home": "Doğu Banliyö F Blok, Daire 13",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50490,8 +50490,8 @@
    "home": "Doğu Banliyö F Blok, Daire 14",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50511,8 +50511,8 @@
    "home": "Doğu Banliyö F Blok, Daire 15",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50532,8 +50532,8 @@
    "home": "Doğu Banliyö F Blok, Daire 16",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50553,8 +50553,8 @@
    "home": "Doğu Banliyö F Blok, Daire 17",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50574,8 +50574,8 @@
    "home": "Doğu Banliyö F Blok, Daire 18",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50595,8 +50595,8 @@
    "home": "Doğu Banliyö F Blok, Daire 19",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50616,8 +50616,8 @@
    "home": "Doğu Banliyö F Blok, Daire 20",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50637,8 +50637,8 @@
    "home": "Doğu Banliyö F Blok, Daire 21",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50660,7 +50660,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50680,8 +50680,8 @@
    "home": "Doğu Banliyö F Blok, Daire 23",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50701,8 +50701,8 @@
    "home": "Doğu Banliyö F Blok, Daire 24",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50722,8 +50722,8 @@
    "home": "Doğu Banliyö F Blok, Daire 25",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50743,8 +50743,8 @@
    "home": "Doğu Banliyö F Blok, Daire 26",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50764,8 +50764,8 @@
    "home": "Doğu Banliyö F Blok, Daire 27",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50785,8 +50785,8 @@
    "home": "Doğu Banliyö F Blok, Daire 28",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50807,7 +50807,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50827,8 +50827,8 @@
    "home": "Doğu Banliyö F Blok, Daire 30",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50848,8 +50848,8 @@
    "home": "Doğu Banliyö F Blok, Daire 31",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50869,8 +50869,8 @@
    "home": "Doğu Banliyö F Blok, Daire 32",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50890,8 +50890,8 @@
    "home": "Doğu Banliyö F Blok, Daire 33",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50911,8 +50911,8 @@
    "home": "Doğu Banliyö F Blok, Daire 34",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50932,8 +50932,8 @@
    "home": "Doğu Banliyö F Blok, Daire 35",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50953,8 +50953,8 @@
    "home": "Doğu Banliyö F Blok, Daire 36",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50975,7 +50975,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -50995,8 +50995,8 @@
    "home": "Doğu Banliyö F Blok, Daire 38",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51016,8 +51016,8 @@
    "home": "Doğu Banliyö F Blok, Daire 39",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51037,8 +51037,8 @@
    "home": "Doğu Banliyö F Blok, Daire 40",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51058,8 +51058,8 @@
    "home": "Doğu Banliyö F Blok, Daire 41",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51079,8 +51079,8 @@
    "home": "Doğu Banliyö F Blok, Daire 42",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51100,8 +51100,8 @@
    "home": "Doğu Banliyö F Blok, Daire 43",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51121,8 +51121,8 @@
    "home": "Doğu Banliyö F Blok, Daire 44",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51143,7 +51143,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51164,7 +51164,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51184,8 +51184,8 @@
    "home": "Doğu Banliyö F Blok, Daire 47",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51205,8 +51205,8 @@
    "home": "Doğu Banliyö F Blok, Daire 48",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51226,8 +51226,8 @@
    "home": "Doğu Banliyö F Blok, Daire 49",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51247,8 +51247,8 @@
    "home": "Doğu Banliyö F Blok, Daire 50",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51268,8 +51268,8 @@
    "home": "Doğu Banliyö F Blok, Daire 51",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51289,8 +51289,8 @@
    "home": "Doğu Banliyö F Blok, Daire 52",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51311,7 +51311,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51331,8 +51331,8 @@
    "home": "Doğu Banliyö F Blok, Daire 54",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51352,8 +51352,8 @@
    "home": "Doğu Banliyö F Blok, Daire 55",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51373,8 +51373,8 @@
    "home": "Doğu Banliyö F Blok, Daire 56",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51394,8 +51394,8 @@
    "home": "Doğu Banliyö F Blok, Daire 57",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51415,8 +51415,8 @@
    "home": "Doğu Banliyö F Blok, Daire 58",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51436,8 +51436,8 @@
    "home": "Doğu Banliyö F Blok, Daire 59",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51457,8 +51457,8 @@
    "home": "Doğu Banliyö F Blok, Daire 60",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51478,8 +51478,8 @@
    "home": "Doğu Banliyö F Blok, Daire 61",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51499,8 +51499,8 @@
    "home": "Doğu Banliyö F Blok, Daire 62",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51520,8 +51520,8 @@
    "home": "Doğu Banliyö F Blok, Daire 63",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51541,8 +51541,8 @@
    "home": "Doğu Banliyö F Blok, Daire 64",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51562,8 +51562,8 @@
    "home": "Doğu Banliyö F Blok, Daire 65",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51583,8 +51583,8 @@
    "home": "Doğu Banliyö F Blok, Daire 66",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51604,8 +51604,8 @@
    "home": "Doğu Banliyö F Blok, Daire 67",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51626,7 +51626,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51646,8 +51646,8 @@
    "home": "Doğu Banliyö F Blok, Daire 69",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51667,8 +51667,8 @@
    "home": "Doğu Banliyö F Blok, Daire 70",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51688,8 +51688,8 @@
    "home": "Doğu Banliyö F Blok, Daire 71",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51709,8 +51709,8 @@
    "home": "Doğu Banliyö F Blok, Daire 72",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51731,7 +51731,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51751,8 +51751,8 @@
    "home": "Doğu Banliyö F Blok, Daire 74",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51773,7 +51773,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51793,8 +51793,8 @@
    "home": "Doğu Banliyö F Blok, Daire 76",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51814,8 +51814,8 @@
    "home": "Doğu Banliyö F Blok, Daire 77",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51835,8 +51835,8 @@
    "home": "Doğu Banliyö F Blok, Daire 78",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51856,8 +51856,8 @@
    "home": "Doğu Banliyö F Blok, Daire 79",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51877,8 +51877,8 @@
    "home": "Doğu Banliyö F Blok, Daire 80",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51898,8 +51898,8 @@
    "home": "Doğu Banliyö F Blok, Daire 81",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51919,8 +51919,8 @@
    "home": "Doğu Banliyö F Blok, Daire 82",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51941,7 +51941,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51961,8 +51961,8 @@
    "home": "Doğu Banliyö F Blok, Daire 84",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -51982,8 +51982,8 @@
    "home": "Doğu Banliyö F Blok, Daire 85",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52004,7 +52004,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52024,8 +52024,8 @@
    "home": "Doğu Banliyö F Blok, Daire 87",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52045,8 +52045,8 @@
    "home": "Doğu Banliyö F Blok, Daire 88",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52066,8 +52066,8 @@
    "home": "Doğu Banliyö F Blok, Daire 89",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52088,7 +52088,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52108,8 +52108,8 @@
    "home": "Doğu Banliyö F Blok, Daire 91",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52129,8 +52129,8 @@
    "home": "Doğu Banliyö F Blok, Daire 92",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52151,7 +52151,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52171,8 +52171,8 @@
    "home": "Doğu Banliyö F Blok, Daire 94",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52192,8 +52192,8 @@
    "home": "Doğu Banliyö F Blok, Daire 95",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52234,8 +52234,8 @@
    "home": "Doğu Banliyö F Blok, Daire 97",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52255,8 +52255,8 @@
    "home": "Doğu Banliyö F Blok, Daire 98",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52277,7 +52277,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52297,8 +52297,8 @@
    "home": "Doğu Banliyö F Blok, Daire 100",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52318,8 +52318,8 @@
    "home": "Doğu Banliyö F Blok, Daire 101",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52339,8 +52339,8 @@
    "home": "Doğu Banliyö F Blok, Daire 102",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52360,8 +52360,8 @@
    "home": "Doğu Banliyö F Blok, Daire 103",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52381,8 +52381,8 @@
    "home": "Doğu Banliyö F Blok, Daire 104",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52403,8 +52403,8 @@
    "home": "Doğu Banliyö F Blok, Daire 105",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52425,8 +52425,8 @@
    "home": "Doğu Banliyö F Blok, Daire 106",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52446,8 +52446,8 @@
    "home": "Doğu Banliyö F Blok, Daire 107",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52467,8 +52467,8 @@
    "home": "Doğu Banliyö F Blok, Daire 108",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52488,8 +52488,8 @@
    "home": "Doğu Banliyö F Blok, Daire 109",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52509,8 +52509,8 @@
    "home": "Doğu Banliyö F Blok, Daire 110",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52530,8 +52530,8 @@
    "home": "Doğu Banliyö F Blok, Daire 111",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52552,7 +52552,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52572,8 +52572,8 @@
    "home": "Doğu Banliyö F Blok, Daire 113",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52593,8 +52593,8 @@
    "home": "Doğu Banliyö F Blok, Daire 114",
    "home_from": 1792908000,
    "job": [
-    "İnşaat İşçisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52614,8 +52614,8 @@
    "home": "Doğu Banliyö F Blok, Daire 115",
    "home_from": 1792908000,
    "job": [
-    "Beton Ustası",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Palamar Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52635,8 +52635,8 @@
    "home": "Doğu Banliyö F Blok, Daire 116",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52656,8 +52656,8 @@
    "home": "Doğu Banliyö F Blok, Daire 117",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52677,8 +52677,8 @@
    "home": "Doğu Banliyö F Blok, Daire 118",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52698,8 +52698,8 @@
    "home": "Doğu Banliyö F Blok, Daire 119",
    "home_from": 1792908000,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Konteyner Planlama Uzmanı",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52719,8 +52719,8 @@
    "home": "Doğu Banliyö F Blok, Daire 120",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52741,7 +52741,7 @@
    "home_from": 1792908000,
    "job": [
     "Forklift Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52761,8 +52761,8 @@
    "home": "Doğu Banliyö F Blok, Daire 122",
    "home_from": 1792908000,
    "job": [
-    "Kalıpçı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Depo Görevlisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52782,8 +52782,8 @@
    "home": "Doğu Banliyö F Blok, Daire 123",
    "home_from": 1792908000,
    "job": [
-    "Vinç Operatörü",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Rıhtım Vinci Operatörü",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52804,7 +52804,7 @@
    "home_from": 1792908000,
    "job": [
     "İş Güvenliği Uzmanı",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52824,8 +52824,8 @@
    "home": "Doğu Banliyö F Blok, Daire 125",
    "home_from": 1792908000,
    "job": [
-    "Şantiye Şefi",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Gümrük Memuru",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52845,8 +52845,8 @@
    "home": "Doğu Banliyö F Blok, Daire 126",
    "home_from": 1792908000,
    "job": [
-    "Demirci",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman İşçisi",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -52866,8 +52866,8 @@
    "home": "Doğu Banliyö F Blok, Daire 127",
    "home_from": 1792908000,
    "job": [
-    "Dalgıç",
-    "Miniakent Limanı İnşaatı · Liman",
+    "Liman Pilotu",
+    "Miniakent Limanı",
     "area",
     "liman"
    ],
@@ -53015,9 +53015,9 @@
    "home_from": 1792994400,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
@@ -53036,9 +53036,9 @@
    "home_from": 1792994400,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Bahçe işleri",
@@ -53674,9 +53674,9 @@
    "home_from": 1792994400,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
@@ -53945,9 +53945,9 @@
    "home_from": 1792994400,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
@@ -54296,9 +54296,9 @@
    "home_from": 1792994400,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Satranç",
@@ -54904,12 +54904,12 @@
    "home": "Doğu Banliyö A Blok, Daire 36",
    "home_from": 1792994400,
    "job": [
-    "İç Mimar",
-    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
-    "office",
-    "plaza"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "mimarlik",
+   "wp": "emniyet",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0
@@ -55793,9 +55793,9 @@
    "home_from": 1792994400,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
@@ -55827,9 +55827,9 @@
    "home_from": 1792994400,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
@@ -56084,9 +56084,9 @@
    "home_from": 1792994400,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
@@ -56436,9 +56436,9 @@
    "home_from": 1792994400,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
@@ -57099,9 +57099,9 @@
    "home_from": 1792994400,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Kitap okumak",
@@ -57671,9 +57671,9 @@
    "home_from": 1792994400,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Satranç",
@@ -58462,9 +58462,9 @@
    "home_from": 1792994400,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
@@ -58844,9 +58844,9 @@
    "home_from": 1792994400,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
@@ -59234,9 +59234,9 @@
    "home_from": 1792994400,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
@@ -61500,9 +61500,9 @@
    "home_from": 1792994400,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
@@ -62160,9 +62160,9 @@
    "home_from": 1792994400,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
@@ -63788,9 +63788,9 @@
    "home_from": 1792994400,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
@@ -64328,9 +64328,9 @@
    "home_from": 1792994400,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
@@ -64345,9 +64345,9 @@
    "home_from": 1792994400,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Bahçe işleri",
@@ -65782,9 +65782,9 @@
    "home_from": 1792994400,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
@@ -65955,9 +65955,9 @@
    "home_from": 1792994400,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
@@ -66941,9 +66941,9 @@
    "home_from": 1792994400,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
@@ -68116,9 +68116,9 @@
    "home_from": 1792994400,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
@@ -68775,9 +68775,9 @@
    "home_from": 1792994400,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
@@ -68910,9 +68910,9 @@
    "home_from": 1792994400,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
@@ -69207,9 +69207,9 @@
    "home_from": 1792994400,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
@@ -69246,9 +69246,9 @@
    "home_from": 1792994400,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
@@ -69664,9 +69664,9 @@
    "home_from": 1792994400,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Satranç",
@@ -70493,9 +70493,9 @@
    "home_from": 1792994400,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
@@ -70510,9 +70510,9 @@
    "home_from": 1792994400,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Kitap okumak",
@@ -70670,12 +70670,12 @@
    "home": "Doğu Banliyö C Blok, Daire 77",
    "home_from": 1792994400,
    "job": [
-    "Rezervasyon Uzmanı",
-    "Miniakent Turizm · Miniakent Plaza 2, Kat 7",
+    "Ormancı",
+    "Miniakent Ar-Ge Merkezi · Miniakent Plaza, Kat 12",
     "office",
-    "plaza2"
+    "plaza"
    ],
-   "wp": "turizm",
+   "wp": "arge",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0
@@ -70726,9 +70726,9 @@
    "home_from": 1792994400,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
@@ -70918,9 +70918,9 @@
    "home_from": 1792994400,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
@@ -71178,9 +71178,9 @@
    "home_from": 1792994400,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Kitap okumak",
@@ -72684,9 +72684,9 @@
    "home_from": 1793080800,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
@@ -72781,9 +72781,9 @@
    "home_from": 1793080800,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
@@ -73261,9 +73261,9 @@
    "home_from": 1793080800,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
@@ -74004,9 +74004,9 @@
    "home_from": 1793080800,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
@@ -74476,9 +74476,9 @@
    "home_from": 1793080800,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
@@ -74535,9 +74535,9 @@
    "home_from": 1793080800,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
@@ -74844,9 +74844,9 @@
    "home_from": 1793080800,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
@@ -74962,9 +74962,9 @@
    "home_from": 1793080800,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
@@ -75282,9 +75282,9 @@
    "home_from": 1793080800,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Kitap okumak",
@@ -75901,9 +75901,9 @@
    "home_from": 1793080800,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
@@ -75956,9 +75956,9 @@
    "home_from": 1793080800,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
@@ -76231,9 +76231,9 @@
    "home_from": 1793080800,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
@@ -76875,9 +76875,9 @@
    "home_from": 1793080800,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
@@ -77111,9 +77111,9 @@
    "home_from": 1793080800,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
@@ -77174,9 +77174,9 @@
    "home_from": 1793080800,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
@@ -77499,9 +77499,9 @@
    "home_from": 1793080800,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
@@ -78048,9 +78048,9 @@
    "home_from": 1793080800,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Satranç",
@@ -78264,9 +78264,9 @@
    "home_from": 1793080800,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
@@ -78828,9 +78828,9 @@
    "home_from": 1793080800,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
@@ -79210,9 +79210,9 @@
    "home_from": 1793080800,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
@@ -79446,9 +79446,9 @@
    "home_from": 1793080800,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
@@ -79581,9 +79581,9 @@
    "home_from": 1793080800,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
@@ -79787,9 +79787,9 @@
    "home_from": 1793080800,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
@@ -80033,9 +80033,9 @@
    "home_from": 1793080800,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
@@ -80189,9 +80189,9 @@
    "home_from": 1793080800,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
@@ -80322,9 +80322,9 @@
    "home_from": 1793080800,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
@@ -80554,9 +80554,9 @@
    "home_from": 1793080800,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
@@ -81170,9 +81170,9 @@
    "home_from": 1793080800,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
@@ -81234,9 +81234,9 @@
    "home_from": 1793080800,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
@@ -81686,9 +81686,9 @@
    "home_from": 1793080800,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
@@ -81727,12 +81727,12 @@
    "home": "Doğu Banliyö D Blok, Daire 112",
    "home_from": 1793080800,
    "job": [
-    "Eğitim Danışmanı",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
+    "Kuaför",
+    "Miniakent Güzellik Salonu · Miniakent Plaza, Kat 3",
     "office",
-    "plaza2"
+    "plaza"
    ],
-   "wp": "dershane",
+   "wp": "",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -81907,9 +81907,9 @@
    "home_from": 1793080800,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
@@ -82576,9 +82576,9 @@
    "home_from": 1793080800,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
@@ -83527,9 +83527,9 @@
    "home_from": 1793080800,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
@@ -83932,9 +83932,9 @@
    "home_from": 1793167200,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Satranç",
@@ -84266,9 +84266,9 @@
    "home_from": 1793167200,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
@@ -84448,9 +84448,9 @@
    "home_from": 1793167200,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
@@ -85144,7 +85144,8 @@
    "look": [
     4,
     0
-   ]
+   ],
+   "protest": 67
   },
   {
    "handle": "@6zgun",
@@ -85154,9 +85155,9 @@
    "home_from": 1793167200,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Satranç",
@@ -86159,9 +86160,9 @@
    "home_from": 1793167200,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
@@ -86201,9 +86202,9 @@
    "home_from": 1793167200,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
@@ -86307,9 +86308,9 @@
    "home_from": 1793167200,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
@@ -86463,9 +86464,9 @@
    "home_from": 1793167200,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Bahçe işleri",
@@ -86887,9 +86888,9 @@
    "home_from": 1793167200,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
@@ -87032,9 +87033,9 @@
    "home_from": 1793167200,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
@@ -87783,9 +87784,9 @@
    "home_from": 1793167200,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
@@ -88178,9 +88179,9 @@
    "home_from": 1793167200,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
@@ -90044,9 +90045,9 @@
    "home_from": 1793167200,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
@@ -90201,9 +90202,9 @@
    "home_from": 1793167200,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
@@ -90531,9 +90532,9 @@
    "home_from": 1793167200,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Satranç",
@@ -90916,9 +90917,9 @@
    "home_from": 1793253600,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
@@ -91284,9 +91285,9 @@
    "home_from": 1793253600,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
@@ -91834,9 +91835,9 @@
    "home_from": 1793253600,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
@@ -91872,9 +91873,9 @@
    "home_from": 1793253600,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Bahçe işleri",
@@ -92673,9 +92674,9 @@
    "home_from": 1793253600,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Bahçe işleri",
@@ -93392,9 +93393,9 @@
    "home_from": 1793253600,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
@@ -93489,9 +93490,9 @@
    "home_from": 1793253600,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
@@ -93557,9 +93558,9 @@
    "home_from": 1793253600,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
@@ -93599,9 +93600,9 @@
    "home_from": 1793253600,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Kitap okumak",
@@ -93806,9 +93807,9 @@
    "home_from": 1793253600,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
@@ -93895,9 +93896,9 @@
    "home_from": 1793253600,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
@@ -94203,12 +94204,12 @@
    "home": "Doğu Banliyö F Blok, Daire 72",
    "home_from": 1793253600,
    "job": [
-    "Hukuk Danışmanı",
-    "Miniakent Hukuk Bürosu · Miniakent Plaza, Kat 6",
-    "office",
-    "plaza"
+    "Savcı",
+    "Miniakent Adliyesi",
+    "shop",
+    "adliye"
    ],
-   "wp": "hukuk",
+   "wp": "adliye",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -94474,9 +94475,9 @@
    "home_from": 1793253600,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
@@ -94508,9 +94509,9 @@
    "home_from": 1793253600,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
@@ -94588,9 +94589,9 @@
    "home_from": 1793253600,
    "job": [
     "Müşteri Temsilcisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
@@ -94934,12 +94935,12 @@
    "home": "Doğu Banliyö F Blok, Daire 85",
    "home_from": 1793253600,
    "job": [
-    "Pilates Eğitmeni",
-    "Miniakent Spor Salonu · Miniakent Plaza, Kat 1",
-    "office",
-    "plaza"
+    "Rezervasyon Görevlisi",
+    "Grand Miniakent Oteli",
+    "hotel",
+    ""
    ],
-   "wp": "spor",
+   "wp": "otel",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -94952,9 +94953,9 @@
    "home_from": 1793253600,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
@@ -95206,9 +95207,9 @@
    "home_from": 1793253600,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Satranç",
@@ -95256,12 +95257,12 @@
    "home": "Doğu Banliyö F Blok, Daire 91",
    "home_from": 1793253600,
    "job": [
-    "Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "İş Güvenliği Uzmanı",
+    "Miniakent Limanı",
+    "area",
+    "liman"
    ],
-   "wp": "dershane",
+   "wp": "liman",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0
@@ -95311,12 +95312,12 @@
    "home": "Doğu Banliyö F Blok, Daire 92",
    "home_from": 1793253600,
    "job": [
-    "İç Mimar",
-    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
+    "Avukat",
+    "Miniakent Hukuk Bürosu · Miniakent Plaza, Kat 6",
     "office",
     "plaza"
    ],
-   "wp": "mimarlik",
+   "wp": "hukuk",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -95452,9 +95453,9 @@
    "home_from": 1793253600,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
@@ -95545,9 +95546,9 @@
    "home_from": 1793253600,
    "job": [
     "Banka Memuru",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
@@ -95710,9 +95711,9 @@
    "home_from": 1793253600,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
@@ -95858,9 +95859,9 @@
    "home_from": 1793253600,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
@@ -96221,12 +96222,12 @@
    "home": "Doğu Banliyö F Blok, Daire 108",
    "home_from": 1793253600,
    "job": [
-    "Yönetim Danışmanı",
-    "Miniakent Danışmanlık · Miniakent Plaza 2, Kat 12",
+    "Siber Güvenlik Uzmanı",
+    "Miniakent Alfa Yazılım A.Ş. · Miniakent Plaza, Kat 7",
     "office",
-    "plaza2"
+    "plaza"
    ],
-   "wp": "danismanlik",
+   "wp": "yazilim",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0
@@ -97151,12 +97152,12 @@
    "home": "Doğu Banliyö F Blok, Daire 125",
    "home_from": 1793253600,
    "job": [
-    "Çevirmen",
-    "Miniakent Yayınevi · Miniakent Plaza, Kat 11",
-    "office",
-    "plaza"
+    "Kantinci",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "yayinevi",
+   "wp": "hastane",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -97406,9 +97407,9 @@
    "home_from": 1793253600,
    "job": [
     "Kredi Uzmanı",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
@@ -97566,9 +97567,9 @@
    "home_from": 1793253600,
    "job": [
     "Gişe Görevlisi",
-    "Miniakent Bankası · Miniakent Plaza 2, Kat 1",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
