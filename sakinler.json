@@ -11411,12 +11411,12 @@
    "home": "Zeytin Sokağı No 1, Daire 13",
    "home_from": 1792735200,
    "job": [
-    "Çöp Toplama Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
    ],
-   "wp": "sehir",
+   "wp": "banka",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -26775,12 +26775,12 @@
    "home": "Mimoza Sokağı No 5, Daire 3",
    "home_from": 1792821600,
    "job": [
-    "Tur Rehberi",
-    "Miniakent Turizm · Miniakent Plaza 2, Kat 7",
+    "Banka Müdürü",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
-   "wp": "turizm",
+   "wp": "banka",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -32538,12 +32538,12 @@
    "home": "Lavanta Sokağı No 6, Daire 2",
    "home_from": 1792821600,
    "job": [
-    "Emlak Danışmanı",
-    "Miniakent Gayrimenkul · Miniakent Plaza 2, Kat 9",
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
-   "wp": "gayrimenkul",
+   "wp": "banka",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -36811,12 +36811,12 @@
    "home": "Begonvil Sokağı No 4, Daire 5",
    "home_from": 1792821600,
    "job": [
-    "Elektrik-Elektronik Mühendisi",
-    "Miniakent Enerji A.Ş. · Miniakent Plaza, Kat 9",
+    "Banka Memuru",
+    "Miniakent Bankası",
     "office",
-    "plaza"
+    "banka"
    ],
-   "wp": "enerji",
+   "wp": "banka",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0
@@ -45045,12 +45045,12 @@
    "home": "Doğu Banliyö C Blok, Daire 139",
    "home_from": 1792908000,
    "job": [
-    "Aşçı",
-    "Grand Miniakent Oteli",
-    "hotel",
-    ""
+    "Makine Mühendisi",
+    "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
+    "office",
+    "plaza2"
    ],
-   "wp": "otel",
+   "wp": "muhendislik",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -54295,7 +54295,7 @@
    "home": "Doğu Banliyö A Blok, Daire 25",
    "home_from": 1792994400,
    "job": [
-    "Müşteri Temsilcisi",
+    "Borsa Brokeri",
     "Miniakent Bankası",
     "office",
     "banka"
@@ -74219,8 +74219,8 @@
    "queue": 0,
    "left": 0,
    "look": [
-    4,
-    0
+    2,
+    1
    ]
   },
   {
@@ -86471,7 +86471,11 @@
    "wp": "banka",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@cakcakgotesaplak",
@@ -94432,12 +94436,12 @@
    "home": "Doğu Banliyö F Blok, Daire 76",
    "home_from": 1793253600,
    "job": [
-    "Sigorta Uzmanı",
-    "Miniakent Ticaret A.Ş. · Miniakent Plaza, Kat 10",
+    "Banka Memuru",
+    "Miniakent Bankası",
     "office",
-    "plaza"
+    "banka"
    ],
-   "wp": "ticaret",
+   "wp": "banka",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
