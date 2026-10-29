@@ -596,11 +596,11 @@
    "home_from": 1792821600,
    "job": [
     "Rehber Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 1792789200,
@@ -1483,11 +1483,11 @@
    "home_from": 1792821600,
    "job": [
     "Rehber Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 1792789200,
@@ -3672,11 +3672,11 @@
    "home_from": 1792821600,
    "job": [
     "Rehber Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 1792789200,
@@ -7207,11 +7207,11 @@
    "home_from": 1792821600,
    "job": [
     "Rehber Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -7291,11 +7291,11 @@
    "home_from": 1792821600,
    "job": [
     "Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 1792789200,
@@ -7860,11 +7860,11 @@
    "home_from": 1792821600,
    "job": [
     "Rehber Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -8007,11 +8007,11 @@
    "home_from": 1792821600,
    "job": [
     "Rehber Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -8028,11 +8028,11 @@
    "home_from": 1792821600,
    "job": [
     "Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 1792789200,
@@ -9406,11 +9406,11 @@
    "home_from": 1792821600,
    "job": [
     "Güvenlik Görevlisi",
-    "Grand Miniakent Oteli",
-    "hotel",
-    ""
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "otel",
+   "wp": "kolej",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -15561,12 +15561,12 @@
    "home": "Lavanta Sokağı No 4, Daire 6",
    "home_from": 1792821600,
    "job": [
-    "Komi",
-    "Grand Miniakent Oteli",
-    "hotel",
-    ""
+    "Hizmetli",
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "otel",
+   "wp": "kolej",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 1792789200,
@@ -16544,12 +16544,12 @@
    "home": "Mimoza Sokağı No 1, Daire 2",
    "home_from": 1792821600,
    "job": [
-    "Komi",
-    "Grand Miniakent Oteli",
-    "hotel",
-    ""
+    "Hizmetli",
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "otel",
+   "wp": "kolej",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 1792789200,
@@ -17255,11 +17255,11 @@
    "home_from": 1792821600,
    "job": [
     "Rehber Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -17339,11 +17339,11 @@
    "home_from": 1792821600,
    "job": [
     "Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 1792789200,
@@ -18736,12 +18736,12 @@
    "home": "Begonvil Sokağı No 13, Daire 1",
    "home_from": 1792821600,
    "job": [
-    "Temizlik Görevlisi",
-    "Grand Miniakent Oteli",
-    "hotel",
-    ""
+    "Hizmetli",
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "otel",
+   "wp": "kolej",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
@@ -18758,11 +18758,11 @@
    "home_from": 1792821600,
    "job": [
     "Rehber Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0
@@ -18995,11 +18995,11 @@
    "home_from": 1792821600,
    "job": [
     "Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -19232,11 +19232,11 @@
    "home_from": 1792821600,
    "job": [
     "Rehber Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -19308,11 +19308,11 @@
    "home_from": 1792821600,
    "job": [
     "Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0
@@ -19367,11 +19367,11 @@
    "home_from": 1792821600,
    "job": [
     "Rehber Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 1792962000
@@ -21947,11 +21947,11 @@
    "home_from": 1792821600,
    "job": [
     "Rehber Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0
@@ -21984,12 +21984,12 @@
    "home": "Yasemin Sokağı No 6, Daire 4",
    "home_from": 1792821600,
    "job": [
-    "Temizlik Görevlisi",
-    "Grand Miniakent Oteli",
-    "hotel",
-    ""
+    "Hizmetli",
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "otel",
+   "wp": "kolej",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -22324,11 +22324,11 @@
    "home_from": 1792821600,
    "job": [
     "Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -23178,11 +23178,11 @@
    "home_from": 1792821600,
    "job": [
     "Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -24484,11 +24484,11 @@
    "home_from": 1792821600,
    "job": [
     "Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -25329,11 +25329,11 @@
    "home_from": 1792821600,
    "job": [
     "Rehber Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 1792875600
@@ -25823,11 +25823,11 @@
    "home_from": 1792821600,
    "job": [
     "Rehber Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0
@@ -26238,11 +26238,11 @@
    "home_from": 1792821600,
    "job": [
     "Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 1792962000
@@ -27457,11 +27457,11 @@
    "home_from": 1792821600,
    "job": [
     "Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -27478,11 +27478,11 @@
    "home_from": 1792821600,
    "job": [
     "Rehber Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -28951,11 +28951,11 @@
    "home_from": 1792821600,
    "job": [
     "Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0
@@ -29061,11 +29061,11 @@
    "home_from": 1792821600,
    "job": [
     "Güvenlik Görevlisi",
-    "Grand Miniakent Oteli",
-    "hotel",
-    ""
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "otel",
+   "wp": "kolej",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -30733,11 +30733,11 @@
    "home_from": 1792821600,
    "job": [
     "Rehber Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
@@ -31161,11 +31161,11 @@
    "home_from": 1792821600,
    "job": [
     "Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -32209,11 +32209,11 @@
    "home_from": 1792821600,
    "job": [
     "Rehber Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0
@@ -32781,11 +32781,11 @@
    "home_from": 1792821600,
    "job": [
     "Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0
@@ -34601,11 +34601,11 @@
    "home_from": 1792821600,
    "job": [
     "Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 1792875600
@@ -35104,11 +35104,11 @@
    "home_from": 1792821600,
    "job": [
     "Rehber Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -35581,11 +35581,11 @@
    "home_from": 1792821600,
    "job": [
     "Rehber Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -36037,11 +36037,11 @@
    "home_from": 1792821600,
    "job": [
     "Rehber Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -36508,11 +36508,11 @@
    "home_from": 1792821600,
    "job": [
     "Rehber Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "dershane",
+   "wp": "kolej",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
