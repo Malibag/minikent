@@ -255,7 +255,8 @@
    "look": [
     3,
     0
-   ]
+   ],
+   "partner": "@esra.dogann_"
   },
   {
    "handle": "@nesliiiiiihan",
@@ -16164,8 +16165,8 @@
    "handle": "@nyxelitta",
    "arrive": 1792702800,
    "move": 1792735200,
-   "home": "Fener Caddesi No 6, Daire 5",
-   "home_from": 1792735200,
+   "home": "Doğu Banliyö F Blok, Daire 9",
+   "home_from": 1793371928,
    "job": [
     "Yazılım Test Uzmanı",
     "Miniakent Alfa Yazılım A.Ş. · Miniakent Plaza, Kat 7",
@@ -83385,12 +83386,12 @@
    "home": "Doğu Banliyö E Blok, Daire 11",
    "home_from": 1793080800,
    "job": [
-    "Müşteri Temsilcisi",
-    "Miniakent Sigorta A.Ş. · Miniakent Plaza 2, Kat 2",
+    "IT Uzmanı",
+    "Miniakent Bankası",
     "office",
-    "plaza2"
+    "banka"
    ],
-   "wp": "sigorta",
+   "wp": "banka",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -89996,8 +89997,8 @@
    "handle": "@esra.dogann_",
    "arrive": 1793136600,
    "move": 1793167200,
-   "home": "Doğu Banliyö F Blok, Daire 9",
-   "home_from": 1793167200,
+   "home": "Fener Caddesi No 6, Daire 5",
+   "home_from": 1793371928,
    "job": [
     "Müşteri Temsilcisi",
     "Miniakent Sigorta A.Ş. · Miniakent Plaza 2, Kat 2",
@@ -90011,7 +90012,8 @@
    "look": [
     2,
     1
-   ]
+   ],
+   "partner": "@muhammedhakandogan"
   },
   {
    "handle": "@zeuss.2521",
