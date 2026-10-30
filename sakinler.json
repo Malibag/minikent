@@ -211,7 +211,8 @@
     4,
     0
    ],
-   "kayip": 1
+   "kayip": 1,
+   "partner": "@turkoglu_pnr"
   },
   {
    "handle": "@fur_iko2700",
@@ -16121,8 +16122,8 @@
    "handle": "@abdullah.ozkan.71",
    "arrive": 1792702800,
    "move": 1792735200,
-   "home": "Defne Sokağı No 4, Daire 1",
-   "home_from": 1792735200,
+   "home": "Doğu Banliyö C Blok, Daire 25",
+   "home_from": 1793343500,
    "job": [
     "Yazılımcı",
     "Miniakent Alfa Yazılım A.Ş. · Miniakent Plaza, Kat 7",
@@ -26641,8 +26642,8 @@
    "handle": "@1_yiigit",
    "arrive": 1792796820,
    "move": 1792821600,
-   "home": "Lavanta Sokağı No 6, Daire 6",
-   "home_from": 1792821600,
+   "home": "Lavanta Sokağı No 4, Daire 6",
+   "home_from": 1793343391,
    "job": [
     "Reklamcı",
     "Miniakent Tasarım Stüdyosu · Miniakent Plaza, Kat 8",
@@ -67716,18 +67717,23 @@
    "handle": "@turkoglu_pnr",
    "arrive": 1792971000,
    "move": 1792994400,
-   "home": "Doğu Banliyö C Blok, Daire 25",
-   "home_from": 1792994400,
+   "home": "Defne Sokağı No 4, Daire 1",
+   "home_from": 1793343500,
    "job": [
-    "Yazılımcı",
-    "Miniakent Alfa Yazılım A.Ş. · Miniakent Plaza, Kat 7",
-    "office",
-    "plaza"
+    "Okul Öncesi Öğretmeni",
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "yazilim",
+   "wp": "kolej",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "partner": "@ozturk_hkn",
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@saghecafiero",
@@ -101007,18 +101013,29 @@
    "handle": "@beyazterzi",
    "arrive": 1793323080,
    "move": 1793340000,
-   "home": "Lavanta Sokağı No 4, Daire 6",
-   "home_from": 1793340000,
+   "home": "Lavanta Sokağı No 6, Daire 6",
+   "home_from": 1793343391,
    "job": [
-    "İş Analisti",
-    "Miniakent Danışmanlık · Miniakent Plaza 2, Kat 12",
-    "office",
-    "plaza2"
+    "Terzi ve Eğitmen",
+    "Beyaz Terzi · Lavanta Sokağı No 6",
+    "shop",
+    "beyaz_terzi"
    ],
-   "wp": "danismanlik",
+   "wp": "",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    1
+   ],
+   "kiyafet": {
+    "ust": "#c8102e",
+    "alt": "ten",
+    "kol": "ten",
+    "ayakkabi": "#f4b6c8",
+    "sac": "#3a2418"
+   }
   },
   {
    "handle": "@ahsn_111",
