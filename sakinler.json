@@ -101026,7 +101026,7 @@
    "queue": 0,
    "left": 0,
    "look": [
-    3,
+    1,
     1
    ],
    "kiyafet": {
@@ -101034,7 +101034,8 @@
     "alt": "ten",
     "kol": "ten",
     "ayakkabi": "#f4b6c8",
-    "sac": "#3a2418"
+    "sac": "#8e3b1f",
+    "cilt": "#f6dfcf"
    }
   },
   {
