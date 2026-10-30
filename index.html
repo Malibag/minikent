@@ -151,6 +151,56 @@ body.gece #yukleme-yazi {
 	text-align: center;
 }
 		</style>
+		<!-- Google Analytics (kullanıcı, 2026-10-30: reklam verenlere sunulacak istatistikler). KVKK: ziyaretçi "Kabul et"
+		     demeden çerez yazılmaz (onay modu); seçim tarayıcıda saklanır. Oyun olayları window.miniakentOlay ile gelir. -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-8871X5M15R"></script>
+		<script>
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+(function () {
+	let secim = null;
+	try { secim = localStorage.getItem("miniakent_cerez"); } catch (e) {}
+	gtag("consent", "default", {analytics_storage: secim === "evet" ? "granted" : "denied",
+		ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied"});
+	gtag("js", new Date());
+	gtag("config", "G-8871X5M15R");
+	window.miniakentOlay = function (ad, bilgi) {
+		try { gtag("event", ad, bilgi || {}); } catch (e) {}
+	};
+	if (secim === "evet" || secim === "hayir") {
+		return;
+	}
+	// çerez bildirimi (kullanıcının onayladığı metin): sayfanın altında, arama kutusunun üstünde küçük şerit
+	window.addEventListener("DOMContentLoaded", function () {
+		const s = document.createElement("div");
+		s.id = "mk-cerez";
+		const tel = "ontouchstart" in window;
+		s.style.cssText = "position:fixed;left:50%;transform:translateX(-50%);z-index:20;bottom:" + (tel ? "66px" : "96px") + ";" +
+			"width:min(520px,calc(100vw - 20px));box-sizing:border-box;display:flex;align-items:center;gap:10px;flex-wrap:wrap;" +
+			"padding:10px 12px;background:rgba(250,245,235,.97);color:#2a2620;border-radius:14px;" +
+			"box-shadow:0 4px 18px rgba(61,46,26,.18);font:13px/1.35 system-ui,-apple-system,sans-serif";
+		const yazi = document.createElement("span");
+		yazi.style.cssText = "flex:1 1 220px";
+		yazi.textContent = "Miniakent, ziyaret istatistiklerini (ziyaretçi sayısı, süre, cihaz türü) ölçmek için çerez kullanır.";
+		s.appendChild(yazi);
+		[["Kabul et", "evet", "#2a2620", "#faf5eb"], ["Reddet", "hayir", "#ece4d6", "#2a2620"]].forEach(function (d) {
+			const b = document.createElement("button");
+			b.type = "button";
+			b.textContent = d[0];
+			b.style.cssText = "border:0;border-radius:10px;padding:6px 12px;font-size:13px;cursor:pointer;background:" + d[2] + ";color:" + d[3];
+			b.addEventListener("click", function () {
+				try { localStorage.setItem("miniakent_cerez", d[1]); } catch (e) {}
+				if (d[1] === "evet") {
+					gtag("consent", "update", {analytics_storage: "granted"});
+				}
+				s.remove();
+			});
+			s.appendChild(b);
+		});
+		document.body.appendChild(s);
+	});
+}());
+		</script>
 		<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
 <link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
 
@@ -226,7 +276,7 @@ try {
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202610300416.pck","fileSizes":{"index-v202610300416.pck":4738128,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202610300925.pck","fileSizes":{"index-v202610300925.pck":4742624,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
