@@ -118,12 +118,12 @@
    "home": "Lale Sokağı No 6",
    "home_from": 1792648800,
    "job": [
-    "Temizlik Görevlisi",
-    "Miniakent Balıkçısı",
+    "Paramedik",
+    "Miniakent Devlet Hastanesi",
     "shop",
-    "fish"
+    "hastane"
    ],
-   "wp": "fish",
+   "wp": "hastane",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -1858,12 +1858,12 @@
    "home": "Zeytin Sokağı No 1, Daire 7",
    "home_from": 1792735200,
    "job": [
-    "Mimar",
-    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
-    "office",
-    "plaza"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "mimarlik",
+   "wp": "hastane",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -1879,12 +1879,12 @@
    "home": "Zeytin Sokağı No 1, Daire 23",
    "home_from": 1792735200,
    "job": [
-    "Bilgi İşlem Uzmanı",
-    "Miniakent Ticaret A.Ş. · Miniakent Plaza, Kat 10",
-    "office",
-    "plaza"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "ticaret",
+   "wp": "hastane",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -8862,12 +8862,12 @@
    "home": "Mimoza Sokağı No 3, Daire 7",
    "home_from": 1792821600,
    "job": [
-    "İş Analisti",
-    "Miniakent Danışmanlık · Miniakent Plaza 2, Kat 12",
-    "office",
-    "plaza2"
+    "Acil Tıp Teknisyeni",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "danismanlik",
+   "wp": "hastane",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -10517,12 +10517,12 @@
    "home": "Begonvil Sokağı No 6, Daire 8",
    "home_from": 1792821600,
    "job": [
-    "Pilates Eğitmeni",
-    "Miniakent Spor Salonu · Miniakent Plaza, Kat 1",
-    "office",
-    "plaza"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "spor",
+   "wp": "hastane",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -12102,12 +12102,12 @@
    "home": "Zeytin Sokağı No 1, Daire 22",
    "home_from": 1792735200,
    "job": [
-    "Kalite Kontrol Uzmanı",
-    "Miniakent Fabrikası 1 · Sanayi Bölgesi",
+    "Eczacı",
+    "Miniakent Devlet Hastanesi",
     "shop",
-    "fabrika_a"
+    "hastane"
    ],
-   "wp": "fabrika_a",
+   "wp": "hastane",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
@@ -15937,12 +15937,12 @@
    "home": "Zeytin Sokağı No 3, Daire 22",
    "home_from": 1792735200,
    "job": [
-    "Sigorta Uzmanı",
-    "Miniakent Ticaret A.Ş. · Miniakent Plaza, Kat 10",
-    "office",
-    "plaza"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "ticaret",
+   "wp": "hastane",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -15958,12 +15958,12 @@
    "home": "Lale Sokağı No 2",
    "home_from": 1792735200,
    "job": [
-    "Makine Operatörü",
-    "Miniakent Fabrikası 1 · Sanayi Bölgesi",
+    "Tıbbi Sekreter",
+    "Miniakent Devlet Hastanesi",
     "shop",
-    "fabrika_a"
+    "hastane"
    ],
-   "wp": "fabrika_a",
+   "wp": "hastane",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -16147,12 +16147,12 @@
    "home": "Fener Caddesi No 6, Daire 6",
    "home_from": 1792735200,
    "job": [
-    "Muhasebeci",
-    "Miniakent Muhasebe · Miniakent Plaza, Kat 4",
-    "office",
-    "plaza"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "muhasebe",
+   "wp": "hastane",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -17882,12 +17882,12 @@
    "home": "Kıyı Caddesi No 6, Daire 4",
    "home_from": 1792821600,
    "job": [
-    "Pilates Eğitmeni",
-    "Miniakent Spor Salonu · Miniakent Plaza, Kat 1",
-    "office",
-    "plaza"
+    "Psikiyatrist",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "spor",
+   "wp": "hastane",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -18092,12 +18092,12 @@
    "home": "Begonvil Sokağı No 5, Daire 2",
    "home_from": 1792821600,
    "job": [
-    "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
-    "office",
-    "plaza2"
+    "Fizyoterapist",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "medya",
+   "wp": "hastane",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -20899,12 +20899,12 @@
    "home": "Rüzgâr Sokağı No 1",
    "home_from": 1792821600,
    "job": [
-    "Proje Uzmanı",
-    "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
-    "office",
-    "plaza2"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "muhendislik",
+   "wp": "hastane",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -22464,12 +22464,12 @@
    "home": "Zeytin Sokağı No 5, Daire 25",
    "home_from": 1792821600,
    "job": [
-    "E-Ticaret Uzmanı",
-    "Miniakent E-Ticaret A.Ş. · Miniakent Plaza 2, Kat 8",
-    "office",
-    "plaza2"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "eticaret",
+   "wp": "hastane",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -23044,12 +23044,12 @@
    "home": "Kıyı Caddesi No 8, Daire 1",
    "home_from": 1792821600,
    "job": [
-    "Editör",
-    "Miniakent Yayınevi · Miniakent Plaza, Kat 11",
-    "office",
-    "plaza"
+    "Eczacı",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "yayinevi",
+   "wp": "hastane",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -23787,12 +23787,12 @@
    "home": "Kıyı Caddesi No 14, Daire 5",
    "home_from": 1792821600,
    "job": [
-    "İç Mimar",
-    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
-    "office",
-    "plaza"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "mimarlik",
+   "wp": "hastane",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -24658,12 +24658,12 @@
    "home": "Yasemin Sokağı No 3, Daire 6",
    "home_from": 1792821600,
    "job": [
-    "Masör",
-    "Grand Miniakent Oteli",
-    "hotel",
-    ""
+    "Hemşire",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "otel",
+   "wp": "hastane",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0
@@ -25368,12 +25368,12 @@
    "home": "Lavanta Sokağı No 1, Daire 4",
    "home_from": 1792821600,
    "job": [
-    "Tur Rehberi",
-    "Miniakent Turizm · Miniakent Plaza 2, Kat 7",
-    "office",
-    "plaza2"
+    "Paramedik",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "turizm",
+   "wp": "hastane",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0
@@ -26511,12 +26511,12 @@
    "home": "Mimoza Sokağı No 3, Daire 7",
    "home_from": 1792821600,
    "job": [
-    "Mübaşir",
-    "Miniakent Adliyesi",
+    "Eczacı",
+    "Miniakent Devlet Hastanesi",
     "shop",
-    "adliye"
+    "hastane"
    ],
-   "wp": "adliye",
+   "wp": "hastane",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0
@@ -28053,12 +28053,12 @@
    "home": "Akasya Sokağı No 2, Daire 27",
    "home_from": 1792821600,
    "job": [
-    "Veri Bilimci",
-    "Miniakent Ar-Ge Merkezi · Miniakent Plaza, Kat 12",
-    "office",
-    "plaza"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "arge",
+   "wp": "hastane",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -28281,12 +28281,12 @@
    "home": "Zeytin Sokağı No 1, Daire 29",
    "home_from": 1792821600,
    "job": [
-    "Değerleme Uzmanı",
-    "Miniakent Gayrimenkul · Miniakent Plaza 2, Kat 9",
-    "office",
-    "plaza2"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "gayrimenkul",
+   "wp": "hastane",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -29028,12 +29028,12 @@
    "home": "Kıyı Caddesi No 8, Daire 2",
    "home_from": 1792821600,
    "job": [
-    "Müşteri Temsilcisi",
-    "Miniakent Bankası",
-    "office",
-    "banka"
+    "Adli Psikolog",
+    "Miniakent Adliyesi",
+    "shop",
+    "adliye"
    ],
-   "wp": "banka",
+   "wp": "adliye",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -30234,12 +30234,12 @@
    "home": "Begonvil Sokağı No 2, Daire 5",
    "home_from": 1792821600,
    "job": [
-    "Spor Salonu Resepsiyonisti",
-    "Miniakent Spor Salonu · Miniakent Plaza, Kat 1",
-    "office",
-    "plaza"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "spor",
+   "wp": "hastane",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0
@@ -31652,12 +31652,12 @@
    "home": "Yasemin Sokağı No 8, Daire 1",
    "home_from": 1792821600,
    "job": [
-    "Lojistik Uzmanı",
-    "Miniakent Lojistik A.Ş. · Miniakent Plaza 2, Kat 3",
-    "office",
-    "plaza2"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "lojistik",
+   "wp": "hastane",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -33454,12 +33454,12 @@
    "home": "Lavanta Sokağı No 14, Daire 1",
    "home_from": 1792821600,
    "job": [
-    "Mimar",
-    "Miniakent Yapı Mühendislik A.Ş. · Miniakent Plaza 3 şantiyesi",
-    "area",
-    "site"
+    "Kadın Doğum Doktoru",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "santiye",
+   "wp": "hastane",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -34170,12 +34170,12 @@
    "home": "Rüzgâr Sokağı No 5",
    "home_from": 1792821600,
    "job": [
-    "Hasar Uzmanı",
-    "Miniakent Sigorta A.Ş. · Miniakent Plaza 2, Kat 2",
-    "office",
-    "plaza2"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "sigorta",
+   "wp": "hastane",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0
@@ -35223,12 +35223,12 @@
    "home": "Begonvil Sokağı No 1, Daire 5",
    "home_from": 1792821600,
    "job": [
-    "Spor Hocası",
-    "Miniakent Spor Salonu · Miniakent Plaza, Kat 1",
-    "office",
-    "plaza"
+    "Kimyager",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "spor",
+   "wp": "hastane",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -38761,12 +38761,12 @@
    "home": "Doğu Banliyö A Blok, Daire 80",
    "home_from": 1792908000,
    "job": [
-    "Memur",
-    "Miniakent Postanesi · Doğu Mahallesi",
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
     "shop",
-    "postane"
+    "hastane"
    ],
-   "wp": "postane_memur",
+   "wp": "hastane",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -40317,12 +40317,12 @@
    "home": "Doğu Banliyö B Blok, Daire 42",
    "home_from": 1792908000,
    "job": [
-    "Vardiya Amiri",
-    "Miniakent Fabrikası 2 · Sanayi Bölgesi",
+    "Stajyer Hemşire",
+    "Miniakent Devlet Hastanesi",
     "shop",
-    "fabrika_b"
+    "hastane"
    ],
-   "wp": "fabrika_b",
+   "wp": "hastane",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -43721,12 +43721,12 @@
    "home": "Doğu Banliyö C Blok, Daire 76",
    "home_from": 1792908000,
    "job": [
-    "Üretim İşçisi",
-    "Miniakent Fabrikası 2 · Sanayi Bölgesi",
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
     "shop",
-    "fabrika_b"
+    "hastane"
    ],
-   "wp": "fabrika_b",
+   "wp": "hastane",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -43869,12 +43869,12 @@
    "home": "Doğu Banliyö C Blok, Daire 83",
    "home_from": 1792908000,
    "job": [
-    "Konsiyerj",
-    "Grand Miniakent Oteli",
-    "hotel",
-    ""
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "otel",
+   "wp": "hastane",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
@@ -43975,12 +43975,12 @@
    "home": "Doğu Banliyö C Blok, Daire 88",
    "home_from": 1792908000,
    "job": [
-    "Bakım Teknisyeni",
-    "Miniakent Fabrikası 2 · Sanayi Bölgesi",
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
     "shop",
-    "fabrika_b"
+    "hastane"
    ],
-   "wp": "fabrika_b",
+   "wp": "hastane",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -44437,12 +44437,12 @@
    "home": "Doğu Banliyö C Blok, Daire 110",
    "home_from": 1792908000,
    "job": [
-    "Reklam ve Pazarlama Personeli",
-    "Grand Miniakent Oteli",
-    "hotel",
-    ""
+    "Psikolog",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "otel",
+   "wp": "hastane",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
@@ -44584,12 +44584,12 @@
    "home": "Doğu Banliyö C Blok, Daire 117",
    "home_from": 1792908000,
    "job": [
-    "Depo Görevlisi",
-    "Miniakent Fabrikası 2 · Sanayi Bölgesi",
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
     "shop",
-    "fabrika_b"
+    "hastane"
    ],
-   "wp": "fabrika_b",
+   "wp": "hastane",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -44690,12 +44690,12 @@
    "home": "Doğu Banliyö C Blok, Daire 122",
    "home_from": 1792908000,
    "job": [
-    "Paketleme Görevlisi",
-    "Miniakent Fabrikası 1 · Sanayi Bölgesi",
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
     "shop",
-    "fabrika_a"
+    "hastane"
    ],
-   "wp": "fabrika_a",
+   "wp": "hastane",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -45699,12 +45699,12 @@
    "home": "Doğu Banliyö D Blok, Daire 26",
    "home_from": 1792908000,
    "job": [
-    "Kaynakçı",
-    "Miniakent Fabrikası 1 · Sanayi Bölgesi",
+    "Psikolog",
+    "Miniakent Devlet Hastanesi",
     "shop",
-    "fabrika_a"
+    "hastane"
    ],
-   "wp": "fabrika_a",
+   "wp": "hastane",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -45783,12 +45783,12 @@
    "home": "Doğu Banliyö D Blok, Daire 30",
    "home_from": 1792908000,
    "job": [
-    "Konteyner Planlama Uzmanı",
-    "Miniakent Limanı",
-    "area",
-    "liman"
+    "Cerrah",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "liman",
+   "wp": "hastane",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -46266,12 +46266,12 @@
    "home": "Doğu Banliyö D Blok, Daire 53",
    "home_from": 1792908000,
    "job": [
-    "Kalite Kontrol Uzmanı",
-    "Miniakent Fabrikası 1 · Sanayi Bölgesi",
+    "Hemşire",
+    "Miniakent Devlet Hastanesi",
     "shop",
-    "fabrika_a"
+    "hastane"
    ],
-   "wp": "fabrika_a",
+   "wp": "hastane",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -47256,12 +47256,12 @@
    "home": "Doğu Banliyö D Blok, Daire 100",
    "home_from": 1792908000,
    "job": [
-    "Liman İşçisi",
-    "Miniakent Limanı",
-    "area",
-    "liman"
+    "Hemşire",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "liman",
+   "wp": "hastane",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -48832,12 +48832,12 @@
    "home": "Doğu Banliyö E Blok, Daire 47",
    "home_from": 1792908000,
    "job": [
-    "Forklift Operatörü",
-    "Miniakent Limanı",
-    "area",
-    "liman"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "liman",
+   "wp": "hastane",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -49294,12 +49294,12 @@
    "home": "Doğu Banliyö E Blok, Daire 69",
    "home_from": 1792908000,
    "job": [
-    "Liman Pilotu",
-    "Miniakent Limanı",
-    "area",
-    "liman"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "liman",
+   "wp": "hastane",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -49630,12 +49630,12 @@
    "home": "Doğu Banliyö E Blok, Daire 85",
    "home_from": 1792908000,
    "job": [
-    "Liman İşçisi",
-    "Miniakent Limanı",
-    "area",
-    "liman"
+    "Cerrah",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "liman",
+   "wp": "hastane",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -50009,12 +50009,12 @@
    "home": "Doğu Banliyö E Blok, Daire 103",
    "home_from": 1792908000,
    "job": [
-    "Forklift Operatörü",
-    "Miniakent Limanı",
-    "area",
-    "liman"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "liman",
+   "wp": "hastane",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -50324,12 +50324,12 @@
    "home": "Doğu Banliyö F Blok, Daire 6",
    "home_from": 1792908000,
    "job": [
-    "Forklift Operatörü",
-    "Miniakent Limanı",
-    "area",
-    "liman"
+    "Cerrah",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "liman",
+   "wp": "hastane",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -54166,12 +54166,12 @@
    "home": "Doğu Banliyö A Blok, Daire 23",
    "home_from": 1792994400,
    "job": [
-    "Araştırmacı",
-    "Miniakent Ar-Ge Merkezi · Miniakent Plaza, Kat 12",
-    "office",
-    "plaza"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "arge",
+   "wp": "hastane",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -55054,12 +55054,12 @@
    "home": "Doğu Banliyö A Blok, Daire 39",
    "home_from": 1792994400,
    "job": [
-    "Lojistik Uzmanı",
-    "Miniakent Lojistik A.Ş. · Miniakent Plaza 2, Kat 3",
-    "office",
-    "plaza2"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "lojistik",
+   "wp": "hastane",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -55515,12 +55515,12 @@
    "home": "Doğu Banliyö A Blok, Daire 46",
    "home_from": 1792994400,
    "job": [
-    "Endüstri Mühendisi",
-    "Miniakent Enerji A.Ş. · Miniakent Plaza, Kat 9",
-    "office",
-    "plaza"
+    "Psikolog",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "enerji",
+   "wp": "hastane",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0
@@ -55570,12 +55570,12 @@
    "home": "Doğu Banliyö A Blok, Daire 47",
    "home_from": 1792994400,
    "job": [
-    "Diyetisyen",
-    "Miniakent Sağlık Merkezi · Miniakent Plaza, Kat 2",
-    "office",
-    "plaza"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "saglik",
+   "wp": "hastane",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -55693,12 +55693,12 @@
    "home": "Doğu Banliyö A Blok, Daire 50",
    "home_from": 1792994400,
    "job": [
-    "Yönetim Danışmanı",
-    "Miniakent Danışmanlık · Miniakent Plaza 2, Kat 12",
-    "office",
-    "plaza2"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "danismanlik",
+   "wp": "hastane",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0
@@ -56085,12 +56085,12 @@
    "home": "Doğu Banliyö A Blok, Daire 56",
    "home_from": 1792994400,
    "job": [
-    "Müşteri Temsilcisi",
-    "Miniakent Bankası",
-    "office",
-    "banka"
+    "Hemşire Yardımcısı",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "banka",
+   "wp": "hastane",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -56119,12 +56119,12 @@
    "home": "Doğu Banliyö A Blok, Daire 57",
    "home_from": 1792994400,
    "job": [
-    "Emlak Danışmanı",
-    "Miniakent Gayrimenkul · Miniakent Plaza 2, Kat 9",
-    "office",
-    "plaza2"
+    "Kalp Cerrahı",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "gayrimenkul",
+   "wp": "hastane",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -56188,12 +56188,12 @@
    "home": "Doğu Banliyö A Blok, Daire 58",
    "home_from": 1792994400,
    "job": [
-    "Hasar Uzmanı",
-    "Miniakent Sigorta A.Ş. · Miniakent Plaza 2, Kat 2",
-    "office",
-    "plaza2"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "sigorta",
+   "wp": "hastane",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
@@ -56454,12 +56454,12 @@
    "home": "Doğu Banliyö A Blok, Daire 63",
    "home_from": 1792994400,
    "job": [
-    "Diş Teknisyeni",
-    "Miniakent Sağlık Merkezi · Miniakent Plaza, Kat 2",
-    "office",
-    "plaza"
+    "Beyin Cerrahı",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "saglik",
+   "wp": "hastane",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -56703,12 +56703,12 @@
    "home": "Yasemin Sokağı No 4, Daire 3",
    "home_from": 1793297956,
    "job": [
-    "Öğretmen",
-    "Miniakent Koleji",
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
     "shop",
-    "kolej"
+    "hastane"
    ],
-   "wp": "kolej",
+   "wp": "hastane",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -56724,12 +56724,12 @@
    "home": "Doğu Banliyö A Blok, Daire 67",
    "home_from": 1792994400,
    "job": [
-    "Araştırmacı",
-    "Miniakent Ar-Ge Merkezi · Miniakent Plaza, Kat 12",
-    "office",
-    "plaza"
+    "Hemşire",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "arge",
+   "wp": "hastane",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0
@@ -57290,12 +57290,12 @@
    "home": "Doğu Banliyö A Blok, Daire 77",
    "home_from": 1792994400,
    "job": [
-    "Proje Uzmanı",
-    "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
-    "office",
-    "plaza2"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "muhendislik",
+   "wp": "hastane",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -57634,12 +57634,12 @@
    "home": "Doğu Banliyö A Blok, Daire 83",
    "home_from": 1792994400,
    "job": [
-    "Operasyon Uzmanı",
-    "Miniakent Lojistik A.Ş. · Miniakent Plaza 2, Kat 3",
-    "office",
-    "plaza2"
+    "Ambulans Şoförü",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "lojistik",
+   "wp": "hastane",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
@@ -57981,12 +57981,12 @@
    "home": "Doğu Banliyö A Blok, Daire 90",
    "home_from": 1792994400,
    "job": [
-    "Ürün Fotoğrafçısı",
-    "Miniakent E-Ticaret A.Ş. · Miniakent Plaza 2, Kat 8",
-    "office",
-    "plaza2"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "eticaret",
+   "wp": "hastane",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -59120,12 +59120,12 @@
    "home": "Doğu Banliyö A Blok, Daire 110",
    "home_from": 1792994400,
    "job": [
-    "Planlama Uzmanı",
-    "Miniakent Lojistik A.Ş. · Miniakent Plaza 2, Kat 3",
-    "office",
-    "plaza2"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "lojistik",
+   "wp": "hastane",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0
@@ -59588,12 +59588,12 @@
    "home": "Doğu Banliyö B Blok, Daire 7",
    "home_from": 1792994400,
    "job": [
-    "Tur Rehberi",
-    "Miniakent Turizm · Miniakent Plaza 2, Kat 7",
-    "office",
-    "plaza2"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "turizm",
+   "wp": "hastane",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0
@@ -59664,12 +59664,12 @@
    "home": "Doğu Banliyö B Blok, Daire 8",
    "home_from": 1792994400,
    "job": [
-    "Sekreter",
-    "Miniakent Ticaret A.Ş. · Miniakent Plaza, Kat 10",
-    "office",
-    "plaza"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "ticaret",
+   "wp": "hastane",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -60091,12 +60091,12 @@
    "home": "Doğu Banliyö B Blok, Daire 16",
    "home_from": 1792994400,
    "job": [
-    "Operasyon Uzmanı",
-    "Miniakent Lojistik A.Ş. · Miniakent Plaza 2, Kat 3",
-    "office",
-    "plaza2"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "lojistik",
+   "wp": "hastane",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0
@@ -60197,12 +60197,12 @@
    "home": "Doğu Banliyö B Blok, Daire 18",
    "home_from": 1792994400,
    "job": [
-    "Rezervasyon Uzmanı",
-    "Miniakent Turizm · Miniakent Plaza 2, Kat 7",
-    "office",
-    "plaza2"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "turizm",
+   "wp": "hastane",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0
@@ -60988,12 +60988,12 @@
    "home": "Doğu Banliyö B Blok, Daire 32",
    "home_from": 1792994400,
    "job": [
-    "Proje Uzmanı",
-    "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
-    "office",
-    "plaza2"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "muhendislik",
+   "wp": "hastane",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0
@@ -61466,12 +61466,12 @@
    "home": "Doğu Banliyö B Blok, Daire 41",
    "home_from": 1792994400,
    "job": [
-    "Veri Bilimci",
-    "Miniakent Ar-Ge Merkezi · Miniakent Plaza, Kat 12",
-    "office",
-    "plaza"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "arge",
+   "wp": "hastane",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -61535,12 +61535,12 @@
    "home": "Doğu Banliyö B Blok, Daire 42",
    "home_from": 1792994400,
    "job": [
-    "Değerleme Uzmanı",
-    "Miniakent Gayrimenkul · Miniakent Plaza 2, Kat 9",
-    "office",
-    "plaza2"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "gayrimenkul",
+   "wp": "hastane",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -62679,12 +62679,12 @@
    "home": "Doğu Banliyö B Blok, Daire 63",
    "home_from": 1792994400,
    "job": [
-    "Müşteri Temsilcisi",
-    "Miniakent Sigorta A.Ş. · Miniakent Plaza 2, Kat 2",
-    "office",
-    "plaza2"
+    "Göz Doktoru",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "sigorta",
+   "wp": "hastane",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -63212,12 +63212,12 @@
    "home": "Doğu Banliyö B Blok, Daire 72",
    "home_from": 1792994400,
    "job": [
-    "Spor Salonu Resepsiyonisti",
-    "Miniakent Spor Salonu · Miniakent Plaza, Kat 1",
-    "office",
-    "plaza"
+    "Hemşire",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "spor",
+   "wp": "hastane",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -65863,12 +65863,12 @@
    "home": "Doğu Banliyö B Blok, Daire 119",
    "home_from": 1792994400,
    "job": [
-    "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
-    "office",
-    "plaza2"
+    "Cerrah",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "medya",
+   "wp": "hastane",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -66799,12 +66799,12 @@
    "home": "Doğu Banliyö C Blok, Daire 8",
    "home_from": 1792994400,
    "job": [
-    "Redaktör",
-    "Miniakent Yayınevi · Miniakent Plaza, Kat 11",
-    "office",
-    "plaza"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "yayinevi",
+   "wp": "hastane",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -67832,12 +67832,12 @@
    "home": "Doğu Banliyö C Blok, Daire 27",
    "home_from": 1792994400,
    "job": [
-    "Muhasebeci",
-    "Miniakent Muhasebe · Miniakent Plaza, Kat 4",
-    "office",
-    "plaza"
+    "Acil Doktoru",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "muhasebe",
+   "wp": "hastane",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -69455,12 +69455,12 @@
    "home": "Doğu Banliyö C Blok, Daire 55",
    "home_from": 1792994400,
    "job": [
-    "Müşteri Hizmetleri Uzmanı",
-    "Miniakent E-Ticaret A.Ş. · Miniakent Plaza 2, Kat 8",
-    "office",
-    "plaza2"
+    "Psikiyatrist",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "eticaret",
+   "wp": "hastane",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -69759,12 +69759,12 @@
    "home": "Doğu Banliyö C Blok, Daire 61",
    "home_from": 1792994400,
    "job": [
-    "İş Analisti",
-    "Miniakent Danışmanlık · Miniakent Plaza 2, Kat 12",
-    "office",
-    "plaza2"
+    "Acil Doktoru",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "danismanlik",
+   "wp": "hastane",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -70186,12 +70186,12 @@
    "home": "Doğu Banliyö C Blok, Daire 68",
    "home_from": 1792994400,
    "job": [
-    "Veri Bilimci",
-    "Miniakent Ar-Ge Merkezi · Miniakent Plaza, Kat 12",
-    "office",
-    "plaza"
+    "Paramedik",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "arge",
+   "wp": "hastane",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -71455,12 +71455,12 @@
    "home": "Doğu Banliyö C Blok, Daire 91",
    "home_from": 1792994400,
    "job": [
-    "İş Analisti",
-    "Miniakent Danışmanlık · Miniakent Plaza 2, Kat 12",
-    "office",
-    "plaza2"
+    "Ebe",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "danismanlik",
+   "wp": "hastane",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0
@@ -71946,12 +71946,12 @@
    "home": "Doğu Banliyö C Blok, Daire 56",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
-    "Miniakent Emniyet Müdürlüğü",
+    "Psikolog",
+    "Miniakent Devlet Hastanesi",
     "shop",
-    "emniyet"
+    "hastane"
    ],
-   "wp": "emniyet",
+   "wp": "hastane",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -72604,12 +72604,12 @@
    "home": "Doğu Banliyö C Blok, Daire 103",
    "home_from": 1793080800,
    "job": [
-    "Mali Müşavir",
-    "Miniakent Muhasebe · Miniakent Plaza, Kat 4",
-    "office",
-    "plaza"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "muhasebe",
+   "wp": "hastane",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -73250,12 +73250,12 @@
    "home": "Doğu Banliyö C Blok, Daire 114",
    "home_from": 1793080800,
    "job": [
-    "Müşteri Hizmetleri Uzmanı",
-    "Miniakent E-Ticaret A.Ş. · Miniakent Plaza 2, Kat 8",
-    "office",
-    "plaza2"
+    "Diş Hekimi",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "eticaret",
+   "wp": "hastane",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0
@@ -73503,12 +73503,12 @@
    "home": "Doğu Banliyö C Blok, Daire 118",
    "home_from": 1793080800,
    "job": [
-    "İş Analisti",
-    "Miniakent Danışmanlık · Miniakent Plaza 2, Kat 12",
-    "office",
-    "plaza2"
+    "Cerrah",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "danismanlik",
+   "wp": "hastane",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -73589,12 +73589,12 @@
    "home": "Doğu Banliyö C Blok, Daire 119",
    "home_from": 1793080800,
    "job": [
-    "Muhasebeci",
-    "Miniakent Muhasebe · Miniakent Plaza, Kat 4",
-    "office",
-    "plaza"
+    "Psikolog",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "muhasebe",
+   "wp": "hastane",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -74136,12 +74136,12 @@
    "home": "Doğu Banliyö C Blok, Daire 128",
    "home_from": 1793080800,
    "job": [
-    "Avukat",
-    "Miniakent Hukuk Bürosu · Miniakent Plaza, Kat 6",
-    "office",
-    "plaza"
+    "Hemşire",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "hukuk",
+   "wp": "hastane",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -74296,12 +74296,12 @@
    "home": "Doğu Banliyö C Blok, Daire 131",
    "home_from": 1793080800,
    "job": [
-    "Endüstri Mühendisi",
-    "Miniakent Enerji A.Ş. · Miniakent Plaza, Kat 9",
-    "office",
-    "plaza"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "enerji",
+   "wp": "hastane",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
@@ -74376,12 +74376,12 @@
    "home": "Doğu Banliyö C Blok, Daire 132",
    "home_from": 1793080800,
    "job": [
-    "Değerleme Uzmanı",
-    "Miniakent Gayrimenkul · Miniakent Plaza 2, Kat 9",
-    "office",
-    "plaza2"
+    "Paramedik",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "gayrimenkul",
+   "wp": "hastane",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0
@@ -74503,12 +74503,12 @@
    "home": "Doğu Banliyö C Blok, Daire 135",
    "home_from": 1793080800,
    "job": [
-    "Oyun Tasarımcısı",
-    "Miniakent Oyun Stüdyosu · Miniakent Plaza 2, Kat 5",
-    "office",
-    "plaza2"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "oyun",
+   "wp": "hastane",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -74698,12 +74698,12 @@
    "home": "Doğu Banliyö C Blok, Daire 138",
    "home_from": 1793080800,
    "job": [
-    "Oyun Geliştirici",
-    "Miniakent Oyun Stüdyosu · Miniakent Plaza 2, Kat 5",
-    "office",
-    "plaza2"
+    "Fizyoterapist",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "oyun",
+   "wp": "hastane",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -74871,12 +74871,12 @@
    "home": "Doğu Banliyö C Blok, Daire 141",
    "home_from": 1793080800,
    "job": [
-    "Doktor",
-    "Miniakent Sağlık Merkezi · Miniakent Plaza, Kat 2",
-    "office",
-    "plaza"
+    "Psikolog",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "saglik",
+   "wp": "hastane",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -75086,12 +75086,12 @@
    "home": "Doğu Banliyö C Blok, Daire 144",
    "home_from": 1793080800,
    "job": [
-    "Oyun Tasarımcısı",
-    "Miniakent Oyun Stüdyosu · Miniakent Plaza 2, Kat 5",
-    "office",
-    "plaza2"
+    "Paramedik",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "oyun",
+   "wp": "hastane",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -75326,12 +75326,12 @@
    "home": "Doğu Banliyö D Blok, Daire 4",
    "home_from": 1793080800,
    "job": [
-    "Teknik Destek Uzmanı",
-    "Miniakent Telekom · Miniakent Plaza 2, Kat 11",
-    "office",
-    "plaza2"
+    "Psikiyatrist",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "telekom",
+   "wp": "hastane",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
@@ -75563,12 +75563,12 @@
    "home": "Doğu Banliyö D Blok, Daire 8",
    "home_from": 1793080800,
    "job": [
-    "Ürün Fotoğrafçısı",
-    "Miniakent E-Ticaret A.Ş. · Miniakent Plaza 2, Kat 8",
-    "office",
-    "plaza2"
+    "Diş Hekimi",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "eticaret",
+   "wp": "hastane",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
@@ -76004,12 +76004,12 @@
    "home": "Doğu Banliyö D Blok, Daire 16",
    "home_from": 1793080800,
    "job": [
-    "Bilgi İşlem Uzmanı",
-    "Miniakent Ticaret A.Ş. · Miniakent Plaza, Kat 10",
-    "office",
-    "plaza"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "ticaret",
+   "wp": "hastane",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -76258,12 +76258,12 @@
    "home": "Doğu Banliyö D Blok, Daire 20",
    "home_from": 1793080800,
    "job": [
-    "Veri Bilimci",
-    "Miniakent Ar-Ge Merkezi · Miniakent Plaza, Kat 12",
-    "office",
-    "plaza"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "arge",
+   "wp": "hastane",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -77589,12 +77589,12 @@
    "home": "Doğu Banliyö D Blok, Daire 42",
    "home_from": 1793080800,
    "job": [
-    "İnşaat Mühendisi",
-    "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
-    "office",
-    "plaza2"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "muhendislik",
+   "wp": "hastane",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -78548,12 +78548,12 @@
    "home": "Doğu Banliyö D Blok, Daire 58",
    "home_from": 1793080800,
    "job": [
-    "Diş Hekimi",
-    "Miniakent Sağlık Merkezi · Miniakent Plaza, Kat 2",
-    "office",
-    "plaza"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "saglik",
+   "wp": "hastane",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -79629,12 +79629,12 @@
    "home": "Doğu Banliyö D Blok, Daire 76",
    "home_from": 1793080800,
    "job": [
-    "Oyun Tasarımcısı",
-    "Miniakent Oyun Stüdyosu · Miniakent Plaza 2, Kat 5",
-    "office",
-    "plaza2"
+    "Psikolog",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "oyun",
+   "wp": "hastane",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -79936,12 +79936,12 @@
    "home": "Doğu Banliyö D Blok, Daire 81",
    "home_from": 1793080800,
    "job": [
-    "Veri Bilimci",
-    "Miniakent Ar-Ge Merkezi · Miniakent Plaza, Kat 12",
-    "office",
-    "plaza"
+    "Psikolog",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "arge",
+   "wp": "hastane",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -80674,12 +80674,12 @@
    "home": "Doğu Banliyö D Blok, Daire 94",
    "home_from": 1793080800,
    "job": [
-    "Spor Hocası",
-    "Miniakent Spor Salonu · Miniakent Plaza, Kat 1",
-    "office",
-    "plaza"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "spor",
+   "wp": "hastane",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -81197,12 +81197,12 @@
    "home": "Doğu Banliyö D Blok, Daire 103",
    "home_from": 1793080800,
    "job": [
-    "Müşteri Hizmetleri Uzmanı",
-    "Miniakent E-Ticaret A.Ş. · Miniakent Plaza 2, Kat 8",
-    "office",
-    "plaza2"
+    "Anestezi Teknikeri",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "eticaret",
+   "wp": "hastane",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -83575,12 +83575,12 @@
    "home": "Doğu Banliyö E Blok, Daire 14",
    "home_from": 1793080800,
    "job": [
-    "Yazılım Test Uzmanı",
-    "Miniakent Alfa Yazılım A.Ş. · Miniakent Plaza, Kat 7",
-    "office",
-    "plaza"
+    "Diyetisyen",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "yazilim",
+   "wp": "hastane",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -83617,12 +83617,12 @@
    "home": "Doğu Banliyö E Blok, Daire 14",
    "home_from": 1793080800,
    "job": [
-    "Eğitim Danışmanı",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Biyolog",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "dershane",
+   "wp": "hastane",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -84010,12 +84010,12 @@
    "home": "Doğu Banliyö D Blok, Daire 60",
    "home_from": 1793167200,
    "job": [
-    "Ürün Fotoğrafçısı",
-    "Miniakent E-Ticaret A.Ş. · Miniakent Plaza 2, Kat 8",
-    "office",
-    "plaza2"
+    "Psikolog",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "eticaret",
+   "wp": "hastane",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -84593,12 +84593,12 @@
    "home": "Doğu Banliyö E Blok, Daire 25",
    "home_from": 1793167200,
    "job": [
-    "Çevirmen",
-    "Miniakent Yayınevi · Miniakent Plaza, Kat 11",
-    "office",
-    "plaza"
+    "Hemşire",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "yayinevi",
+   "wp": "hastane",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0
@@ -85942,12 +85942,12 @@
    "home": "Doğu Banliyö E Blok, Daire 48",
    "home_from": 1793167200,
    "job": [
-    "Yazılım Test Uzmanı",
-    "Miniakent Alfa Yazılım A.Ş. · Miniakent Plaza, Kat 7",
-    "office",
-    "plaza"
+    "Paramedik",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "yazilim",
+   "wp": "hastane",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0
@@ -86512,12 +86512,12 @@
    "home": "Doğu Banliyö E Blok, Daire 58",
    "home_from": 1793167200,
    "job": [
-    "İçerik Yazarı",
-    "Miniakent Tasarım Stüdyosu · Miniakent Plaza, Kat 8",
-    "office",
-    "plaza"
+    "Hemşire",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "tasarim",
+   "wp": "hastane",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -87140,12 +87140,12 @@
    "home": "Doğu Banliyö E Blok, Daire 69",
    "home_from": 1793167200,
    "job": [
-    "Oyun Geliştirici",
-    "Miniakent Oyun Stüdyosu · Miniakent Plaza 2, Kat 5",
-    "office",
-    "plaza2"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "oyun",
+   "wp": "hastane",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0
@@ -87488,12 +87488,12 @@
    "home": "Doğu Banliyö E Blok, Daire 76",
    "home_from": 1793167200,
    "job": [
-    "İçerik Yazarı",
-    "Miniakent Tasarım Stüdyosu · Miniakent Plaza, Kat 8",
-    "office",
-    "plaza"
+    "Hemşire",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "tasarim",
+   "wp": "hastane",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -87598,12 +87598,12 @@
    "home": "Doğu Banliyö E Blok, Daire 78",
    "home_from": 1793167200,
    "job": [
-    "Editör",
-    "Miniakent Yayınevi · Miniakent Plaza, Kat 11",
-    "office",
-    "plaza"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "yayinevi",
+   "wp": "hastane",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -88776,12 +88776,12 @@
    "home": "Doğu Banliyö E Blok, Daire 99",
    "home_from": 1793167200,
    "job": [
-    "İş Analisti",
-    "Miniakent Danışmanlık · Miniakent Plaza 2, Kat 12",
-    "office",
-    "plaza2"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "danismanlik",
+   "wp": "hastane",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -89053,12 +89053,12 @@
    "home": "Doğu Banliyö E Blok, Daire 104",
    "home_from": 1793167200,
    "job": [
-    "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
-    "office",
-    "plaza2"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "medya",
+   "wp": "hastane",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -89400,12 +89400,12 @@
    "home": "Doğu Banliyö E Blok, Daire 110",
    "home_from": 1793167200,
    "job": [
-    "Endüstri Mühendisi",
-    "Miniakent Enerji A.Ş. · Miniakent Plaza, Kat 9",
-    "office",
-    "plaza"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "enerji",
+   "wp": "hastane",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0
@@ -90598,12 +90598,12 @@
    "home": "Doğu Banliyö B Blok, Daire 33",
    "home_from": 1793253600,
    "job": [
-    "İş Analisti",
-    "Miniakent Danışmanlık · Miniakent Plaza 2, Kat 12",
-    "office",
-    "plaza2"
+    "Kantinci",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "danismanlik",
+   "wp": "hastane",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -90708,12 +90708,12 @@
    "home": "Doğu Banliyö B Blok, Daire 122",
    "home_from": 1793253600,
    "job": [
-    "Müşteri Temsilcisi",
-    "Miniakent Sigorta A.Ş. · Miniakent Plaza 2, Kat 2",
-    "office",
-    "plaza2"
+    "Güvenlik Görevlisi",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "sigorta",
+   "wp": "hastane",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -91368,12 +91368,12 @@
    "home": "Doğu Banliyö F Blok, Daire 21",
    "home_from": 1793253600,
    "job": [
-    "İş Analisti",
-    "Miniakent Danışmanlık · Miniakent Plaza 2, Kat 12",
-    "office",
-    "plaza2"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "danismanlik",
+   "wp": "hastane",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -91977,12 +91977,12 @@
    "home": "Doğu Banliyö F Blok, Daire 32",
    "home_from": 1793253600,
    "job": [
-    "Endüstri Mühendisi",
-    "Miniakent Enerji A.Ş. · Miniakent Plaza, Kat 9",
-    "office",
-    "plaza"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "enerji",
+   "wp": "hastane",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -93746,12 +93746,12 @@
    "home": "Doğu Banliyö F Blok, Daire 63",
    "home_from": 1793253600,
    "job": [
-    "Finans Uzmanı",
-    "Miniakent Muhasebe · Miniakent Plaza, Kat 4",
-    "office",
-    "plaza"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "muhasebe",
+   "wp": "hastane",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -94279,12 +94279,12 @@
    "home": "Doğu Banliyö F Blok, Daire 73",
    "home_from": 1793253600,
    "job": [
-    "Çağrı Merkezi Görevlisi",
-    "Miniakent Telekom · Miniakent Plaza 2, Kat 11",
-    "office",
-    "plaza2"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "telekom",
+   "wp": "hastane",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -96500,12 +96500,12 @@
    "home": "Doğu Banliyö F Blok, Daire 113",
    "home_from": 1793253600,
    "job": [
-    "Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Eczacı",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "dershane",
+   "wp": "hastane",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0
@@ -97261,12 +97261,12 @@
    "home": "Doğu Banliyö F Blok, Daire 126",
    "home_from": 1793253600,
    "job": [
-    "Hasar Uzmanı",
-    "Miniakent Sigorta A.Ş. · Miniakent Plaza 2, Kat 2",
-    "office",
-    "plaza2"
+    "Çocuk Doktoru",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "sigorta",
+   "wp": "hastane",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0
@@ -97561,12 +97561,12 @@
    "home": "Zeytin Sokağı No 3, Daire 27",
    "home_from": 1793253600,
    "job": [
-    "Psikolog",
-    "Miniakent Sağlık Merkezi · Miniakent Plaza, Kat 2",
-    "office",
-    "plaza"
+    "Paramedik",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "saglik",
+   "wp": "hastane",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -97760,12 +97760,12 @@
    "home": "Doğu Banliyö A Blok, Daire 87",
    "home_from": 1793340000,
    "job": [
-    "Spor Hocası",
-    "Miniakent Spor Salonu · Miniakent Plaza, Kat 1",
-    "office",
-    "plaza"
+    "Psikolog",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "spor",
+   "wp": "hastane",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0
@@ -98302,12 +98302,12 @@
    "home": "Doğu Banliyö F Blok, Daire 54",
    "home_from": 1793340000,
    "job": [
-    "Proje Uzmanı",
-    "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
-    "office",
-    "plaza2"
+    "Diyetisyen",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "muhendislik",
+   "wp": "hastane",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -98480,12 +98480,12 @@
    "home": "Zeytin Sokağı No 3, Daire 6",
    "home_from": 1793340000,
    "job": [
-    "Avukat",
-    "Miniakent Hukuk Bürosu · Miniakent Plaza, Kat 6",
-    "office",
-    "plaza"
+    "Psikolog",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "hukuk",
+   "wp": "hastane",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -98869,12 +98869,12 @@
    "home": "Lavanta Sokağı No 16, Daire 3",
    "home_from": 1793340000,
    "job": [
-    "Satın Alma Sorumlusu",
-    "Miniakent Bankası",
-    "office",
-    "banka"
+    "Psikolog",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "banka",
+   "wp": "hastane",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -99702,12 +99702,12 @@
    "home": "Zeytin Sokağı No 5, Daire 12",
    "home_from": 1793340000,
    "job": [
-    "Pilates Eğitmeni",
-    "Miniakent Spor Salonu · Miniakent Plaza, Kat 1",
-    "office",
-    "plaza"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "spor",
+   "wp": "hastane",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0
@@ -103541,12 +103541,12 @@
    "home": "Begonvil Sokağı No 5, Daire 1",
    "home_from": 1793340000,
    "job": [
-    "Pazarlama Uzmanı",
-    "Miniakent Bankası",
-    "office",
-    "banka"
+    "Psikolog",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "banka",
+   "wp": "hastane",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0
@@ -104121,12 +104121,12 @@
    "home": "Kıyı Caddesi No 14, Daire 3",
    "home_from": 1793340000,
    "job": [
-    "Reklamcı",
-    "Miniakent Bankası",
-    "office",
-    "banka"
+    "Cerrah",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "banka",
+   "wp": "hastane",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0
@@ -105709,12 +105709,12 @@
    "home": "Doğu Banliyö C Blok, Daire 138",
    "home_from": 1793426400,
    "job": [
-    "Mali Müşavir",
-    "Miniakent Muhasebe · Miniakent Plaza, Kat 4",
-    "office",
-    "plaza"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "muhasebe",
+   "wp": "hastane",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -107441,12 +107441,12 @@
    "home": "Lavanta Sokağı No 7, Daire 3",
    "home_from": 1793426400,
    "job": [
-    "Banka Memuru",
-    "Miniakent Bankası",
-    "office",
-    "banka"
+    "Cerrah",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "banka",
+   "wp": "hastane",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -109993,12 +109993,12 @@
    "home": "Rüzgâr Sokağı No 3",
    "home_from": 1793426400,
    "job": [
-    "Halkla İlişkiler Uzmanı",
-    "Miniakent Bankası",
-    "office",
-    "banka"
+    "Çocuk Doktoru",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "banka",
+   "wp": "hastane",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
@@ -111918,12 +111918,12 @@
    "home": "",
    "home_from": 0,
    "job": [
-    "Pazarlama Uzmanı",
-    "Miniakent Bankası",
-    "office",
-    "banka"
+    "Hemşire",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "banka",
+   "wp": "hastane",
    "hobby": "Bisiklete binmek",
    "queue": 89,
    "left": 0,
@@ -113286,12 +113286,12 @@
    "home": "",
    "home_from": 0,
    "job": [
-    "Temizlik Görevlisi",
-    "Miniakent Bankası",
-    "office",
-    "banka"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "banka",
+   "wp": "hastane",
    "hobby": "Kuşları izlemek",
    "queue": 161,
    "left": 0,
@@ -113932,12 +113932,12 @@
    "home": "",
    "home_from": 0,
    "job": [
-    "Pazarlama Uzmanı",
-    "Miniakent Bankası",
-    "office",
-    "banka"
+    "Ambulans Şoförü",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "banka",
+   "wp": "hastane",
    "hobby": "Balık tutmak",
    "queue": 195,
    "left": 0
@@ -115153,12 +115153,12 @@
    "home": "",
    "home_from": 0,
    "job": [
-    "Pazarlama Uzmanı",
-    "Miniakent Bankası",
-    "office",
-    "banka"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "banka",
+   "wp": "hastane",
    "hobby": "Gitar çalmak",
    "queue": 256,
    "left": 0,
@@ -115545,12 +115545,12 @@
    "home": "",
    "home_from": 0,
    "job": [
-    "Çağrı Merkezi Görevlisi",
-    "Miniakent Bankası",
-    "office",
-    "banka"
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "banka",
+   "wp": "hastane",
    "hobby": "Uçurtma uçurmak",
    "queue": 276,
    "left": 0,
