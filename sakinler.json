@@ -276,7 +276,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -297,7 +297,7 @@
    "left": 0,
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -329,12 +329,12 @@
    "home": "Defne Sokağı No 6, Daire 2",
    "home_from": 1792648800,
    "job": [
-    "Otel Koordinatörü",
-    "Grand Miniakent Oteli",
-    "hotel",
-    ""
+    "Kafe Sahibi",
+    "Niyan Kafe · Begonvil Sokağı No 7",
+    "shop",
+    "niyan_kafe"
    ],
-   "wp": "otel",
+   "wp": "",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -423,8 +423,8 @@
    "queue": 0,
    "left": 0,
    "look": [
-    2,
-    1
+    3,
+    0
    ]
   },
   {
@@ -524,7 +524,7 @@
    "partner": "@serhatoptas",
    "look": [
     1,
-    0
+    1
    ]
   },
   {
@@ -71958,8 +71958,7 @@
    "look": [
     0,
     0
-   ],
-   "nobet": 22
+   ]
   },
   {
    "handle": "@llll.ad4.llll",
