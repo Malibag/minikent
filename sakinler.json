@@ -1,8 +1,8 @@
 {
  "elektrik_yok": false,
- "updated": 1793323106,
+ "updated": 1793404803,
  "trains": [
-  1793323080
+  1793404800
  ],
  "residents": [
   {
@@ -276,7 +276,7 @@
    "left": 0,
    "look": [
     1,
-    1
+    0
    ]
   },
   {
@@ -297,7 +297,7 @@
    "left": 0,
    "look": [
     1,
-    1
+    0
    ]
   },
   {
@@ -423,8 +423,8 @@
    "queue": 0,
    "left": 0,
    "look": [
-    3,
-    0
+    2,
+    1
    ]
   },
   {
@@ -524,7 +524,7 @@
    "partner": "@serhatoptas",
    "look": [
     1,
-    1
+    0
    ]
   },
   {
@@ -4076,7 +4076,7 @@
    "wp": "plaj",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     2,
     1
@@ -5476,7 +5476,7 @@
    "wp": "mimarlik",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     0,
     0
@@ -6266,7 +6266,7 @@
    "wp": "tasarim",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0
+   "left": 1793394000
   },
   {
    "handle": "@ureyen_gul777",
@@ -9415,7 +9415,7 @@
    "wp": "kolej",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     3,
     0
@@ -12338,7 +12338,7 @@
    "wp": "otel",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     3,
     0
@@ -15533,7 +15533,7 @@
    "wp": "tasarim",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0
+   "left": 1793394000
   },
   {
    "handle": "@bilgin_1490",
@@ -17180,7 +17180,7 @@
    "wp": "turizm",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     4,
     0
@@ -19718,7 +19718,7 @@
    "wp": "lojistik",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     3,
     0
@@ -23339,7 +23339,7 @@
    "wp": "adliye",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     3,
     0
@@ -26315,7 +26315,7 @@
    "wp": "medya",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 1793394000
   },
   {
    "handle": "@arda05tan",
@@ -27719,7 +27719,7 @@
    "wp": "gayrimenkul",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0
+   "left": 1793394000
   },
   {
    "handle": "@cansu_clskn",
@@ -28791,7 +28791,7 @@
    "wp": "gayrimenkul",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     0,
     0
@@ -29865,7 +29865,7 @@
    "wp": "sigorta",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     0,
     0
@@ -31681,7 +31681,7 @@
    "wp": "turizm",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 1793394000
   },
   {
    "handle": "@burhangultekinn",
@@ -31912,7 +31912,7 @@
    ]
   },
   {
-   "handle": "@nisa_zd08",
+   "handle": "@nisa_zahided",
    "arrive": 1792796820,
    "move": 1792821600,
    "home": "Lavanta Sokağı No 7, Daire 5",
@@ -35480,7 +35480,7 @@
    "wp": "muhasebe",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     0,
     0
@@ -36004,7 +36004,7 @@
    "wp": "lojistik",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     0,
     0
@@ -37572,7 +37572,7 @@
    "wp": "fabrika_a",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     3,
     0
@@ -39757,7 +39757,7 @@
    "wp": "liman",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     4,
     0
@@ -42217,7 +42217,7 @@
    "wp": "turizm",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     4,
     0
@@ -44319,7 +44319,7 @@
    "wp": "fabrika_b",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     4,
     0
@@ -44453,8 +44453,8 @@
   },
   {
    "handle": "@rock.man_7",
-   "arrive": 1792898400,
-   "move": 1792908000,
+   "arrive": 1793394000,
+   "move": 1793426400,
    "home": "Doğu Banliyö C Blok, Daire 111",
    "home_from": 1792908000,
    "job": [
@@ -44466,7 +44466,7 @@
    "wp": "fabrika_a",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 1793307600,
+   "left": 0,
    "look": [
     3,
     0
@@ -49288,7 +49288,7 @@
    ]
   },
   {
-   "handle": "@yigitogluyigit45",
+   "handle": "@yigitingoooo",
    "arrive": 1792898400,
    "move": 1792908000,
    "home": "Doğu Banliyö E Blok, Daire 69",
@@ -51089,7 +51089,7 @@
    "wp": "liman",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     0,
     0
@@ -51320,7 +51320,7 @@
    "wp": "liman",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     2,
     1
@@ -53189,7 +53189,7 @@
    "wp": "gayrimenkul",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0
+   "left": 1793394000
   },
   {
    "handle": "@selimordusuyt",
@@ -54914,7 +54914,7 @@
    "wp": "emniyet",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 1793394000
   },
   {
    "handle": "@ortasahamahmut",
@@ -55451,7 +55451,7 @@
    "wp": "mimarlik",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     4,
     0
@@ -58061,7 +58061,7 @@
    "wp": "yazilim",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 1793394000
   },
   {
    "handle": "@itsegenayir",
@@ -58513,7 +58513,7 @@
    "wp": "gayrimenkul",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 1793394000
   },
   {
    "handle": "@erva0729",
@@ -58671,7 +58671,7 @@
    "wp": "dershane",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 1793394000
   },
   {
    "handle": "@bglwmm_",
@@ -61051,7 +61051,7 @@
    "wp": "hukuk",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     2,
     1
@@ -61581,7 +61581,7 @@
    "wp": "ticaret",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     0,
     0
@@ -62410,7 +62410,7 @@
    "left": 0
   },
   {
-   "handle": "@esuesuezl",
+   "handle": "@ezelululu",
    "arrive": 1792971000,
    "move": 1792994400,
    "home": "Doğu Banliyö B Blok, Daire 58",
@@ -63564,7 +63564,7 @@
    "wp": "hukuk",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 1793394000
   },
   {
    "handle": "@benolmusumanime",
@@ -69039,8 +69039,8 @@
   },
   {
    "handle": "@tunavrg1",
-   "arrive": 1792971000,
-   "move": 1792994400,
+   "arrive": 1793394000,
+   "move": 1793426400,
    "home": "Doğu Banliyö C Blok, Daire 48",
    "home_from": 1792994400,
    "job": [
@@ -69052,7 +69052,7 @@
    "wp": "ticaret",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 1793221200,
+   "left": 0,
    "look": [
     4,
     0
@@ -69311,7 +69311,7 @@
    "wp": "gayrimenkul",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     4,
     0
@@ -71336,7 +71336,7 @@
    "wp": "muhasebe",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 1793394000
   },
   {
    "handle": "@aapo._1",
@@ -71616,7 +71616,7 @@
    "wp": "telekom",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     0,
     0
@@ -73372,7 +73372,7 @@
    "wp": "muhendislik",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     4,
     0
@@ -73639,7 +73639,7 @@
    "wp": "medya",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     2,
     1
@@ -73841,7 +73841,7 @@
    "wp": "medya",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 1793394000
   },
   {
    "handle": "@g.ebes_kaplumbaa",
@@ -74591,7 +74591,7 @@
    "wp": "hukuk",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     2,
     1
@@ -76126,7 +76126,7 @@
    "wp": "yayinevi",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     2,
     1
@@ -76809,7 +76809,7 @@
    "wp": "turizm",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     3,
     0
@@ -80922,7 +80922,7 @@
    "wp": "arge",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     4,
     0
@@ -82084,7 +82084,7 @@
    ]
   },
   {
-   "handle": "@snowangel_lif0",
+   "handle": "@snowangel_onsra",
    "arrive": 1793061000,
    "move": 1793080800,
    "home": "Doğu Banliyö D Blok, Daire 118",
@@ -82304,7 +82304,7 @@
    "wp": "sigorta",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 1793394000
   },
   {
    "handle": "@miladerenb_",
@@ -83073,7 +83073,7 @@
    ]
   },
   {
-   "handle": "@2.mehmed_1453_fsm",
+   "handle": "@ajan___x",
    "arrive": 1793061000,
    "move": 1793080800,
    "home": "Doğu Banliyö E Blok, Daire 6",
@@ -83275,7 +83275,7 @@
    ]
   },
   {
-   "handle": "@elanurbelakafalarfenaa101",
+   "handle": "@safebabeela3",
    "arrive": 1793061000,
    "move": 1793080800,
    "home": "Doğu Banliyö E Blok, Daire 9",
@@ -83878,7 +83878,7 @@
    "wp": "sigorta",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0
+   "left": 1793394000
   },
   {
    "handle": "@ichigoaynibenaq",
@@ -83984,7 +83984,7 @@
    "wp": "muhendislik",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0
+   "left": 1793394000
   },
   {
    "handle": "@y4kyz",
@@ -84001,7 +84001,7 @@
    "wp": "lojistik",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 1793394000
   },
   {
    "handle": "@nisayikiliyor",
@@ -87881,7 +87881,7 @@
    "left": 0
   },
   {
-   "handle": "@sadece_lal03",
+   "handle": "@lal.cover03",
    "arrive": 1793136600,
    "move": 1793167200,
    "home": "Kıyı Caddesi No 6, Daire 1",
@@ -94021,7 +94021,7 @@
    "wp": "tasarim",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     3,
     0
@@ -94667,7 +94667,7 @@
    "wp": "telekom",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     3,
     0
@@ -95086,7 +95086,7 @@
    "wp": "mimarlik",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 1793394000
   },
   {
    "handle": "@ba_har_oski",
@@ -95527,7 +95527,7 @@
    "wp": "arge",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     3,
     0
@@ -96415,7 +96415,7 @@
    "wp": "sigorta",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 1793394000
   },
   {
    "handle": "@rose54_54",
@@ -98415,7 +98415,7 @@
    "left": 0
   },
   {
-   "handle": "@ugur_cakir49",
+   "handle": "@ugur_cakir.35",
    "arrive": 1793323080,
    "move": 1793340000,
    "home": "Doğu Banliyö F Blok, Daire 128",
@@ -99621,7 +99621,7 @@
    "wp": "dershane",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 1793394000
   },
   {
    "handle": "@miraydmrcw",
@@ -101165,7 +101165,7 @@
    "wp": "mimarlik",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 1793394000
   },
   {
    "handle": "@anywayiwanteatchicken",
@@ -101241,7 +101241,7 @@
    "wp": "muhasebe",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0
+   "left": 1793394000
   },
   {
    "handle": "@berat_bilgin25",
@@ -101507,7 +101507,7 @@
    "wp": "gayrimenkul",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793394000,
    "look": [
     3,
     0
@@ -102073,7 +102073,7 @@
    "wp": "muhendislik",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0
+   "left": 1793394000
   },
   {
    "handle": "@zngzl0",
@@ -102141,7 +102141,7 @@
    "wp": "banka",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 1793394000
   },
   {
    "handle": "@vanila_angel45",
@@ -105283,6 +105283,9980 @@
    "wp": "banka",
    "hobby": "Balık tutmak",
    "queue": 0,
+   "left": 1793394000
+  },
+  {
+   "handle": "@ckubractn",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö A Blok, Daire 6",
+   "home_from": 1793426400,
+   "job": [
+    "Yazılımcı",
+    "Miniakent Alfa Yazılım A.Ş. · Miniakent Plaza, Kat 7",
+    "office",
+    "plaza"
+   ],
+   "wp": "yazilim",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@ufukguvnc",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö A Blok, Daire 23",
+   "home_from": 1793426400,
+   "job": [
+    "Emlak Danışmanı",
+    "Miniakent Gayrimenkul · Miniakent Plaza 2, Kat 9",
+    "office",
+    "plaza2"
+   ],
+   "wp": "gayrimenkul",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@sltnmert_",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö A Blok, Daire 36",
+   "home_from": 1793426400,
+   "job": [
+    "Hasar Uzmanı",
+    "Miniakent Sigorta A.Ş. · Miniakent Plaza 2, Kat 2",
+    "office",
+    "plaza2"
+   ],
+   "wp": "sigorta",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@naarincn",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö A Blok, Daire 45",
+   "home_from": 1793426400,
+   "job": [
+    "Hasar Uzmanı",
+    "Miniakent Sigorta A.Ş. · Miniakent Plaza 2, Kat 2",
+    "office",
+    "plaza2"
+   ],
+   "wp": "sigorta",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@z.irem.ce",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö A Blok, Daire 91",
+   "home_from": 1793426400,
+   "job": [
+    "Editör",
+    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
+   ],
+   "wp": "medya",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@hzecececrin",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö A Blok, Daire 99",
+   "home_from": 1793426400,
+   "job": [
+    "İçerik Yazarı",
+    "Miniakent Tasarım Stüdyosu · Miniakent Plaza, Kat 8",
+    "office",
+    "plaza"
+   ],
+   "wp": "tasarim",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@zeynep.faris",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö A Blok, Daire 102",
+   "home_from": 1793426400,
+   "job": [
+    "Lojistik Uzmanı",
+    "Miniakent Lojistik A.Ş. · Miniakent Plaza 2, Kat 3",
+    "office",
+    "plaza2"
+   ],
+   "wp": "lojistik",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@pikachu_modu",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö A Blok, Daire 109",
+   "home_from": 1793426400,
+   "job": [
+    "Emlak Danışmanı",
+    "Miniakent Gayrimenkul · Miniakent Plaza 2, Kat 9",
+    "office",
+    "plaza2"
+   ],
+   "wp": "gayrimenkul",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@talha_avci57",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö B Blok, Daire 15",
+   "home_from": 1793426400,
+   "job": [
+    "Mimar",
+    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
+    "office",
+    "plaza"
+   ],
+   "wp": "mimarlik",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@keepingupwithayss",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö B Blok, Daire 43",
+   "home_from": 1793426400,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ats_cihn",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö B Blok, Daire 79",
+   "home_from": 1793426400,
+   "job": [
+    "Sigorta Uzmanı",
+    "Miniakent Sigorta A.Ş. · Miniakent Plaza 2, Kat 2",
+    "office",
+    "plaza2"
+   ],
+   "wp": "sigorta",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@zikreddinyilmaz",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö C Blok, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@tenjintheannihilator",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö C Blok, Daire 53",
+   "home_from": 1793426400,
+   "job": [
+    "Reklamcı",
+    "Miniakent Tasarım Stüdyosu · Miniakent Plaza, Kat 8",
+    "office",
+    "plaza"
+   ],
+   "wp": "tasarim",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@_gulcanns",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö C Blok, Daire 89",
+   "home_from": 1793426400,
+   "job": [
+    "Proje Uzmanı",
+    "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
+    "office",
+    "plaza2"
+   ],
+   "wp": "muhendislik",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@z3hrallq",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö C Blok, Daire 94",
+   "home_from": 1793426400,
+   "job": [
+    "Operasyon Uzmanı",
+    "Miniakent Lojistik A.Ş. · Miniakent Plaza 2, Kat 3",
+    "office",
+    "plaza2"
+   ],
+   "wp": "lojistik",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ahminephotography",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö C Blok, Daire 103",
+   "home_from": 1793426400,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Sigorta A.Ş. · Miniakent Plaza 2, Kat 2",
+    "office",
+    "plaza2"
+   ],
+   "wp": "sigorta",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@miray41altunts",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö C Blok, Daire 104",
+   "home_from": 1793426400,
+   "job": [
+    "Yazılım Test Uzmanı",
+    "Miniakent Alfa Yazılım A.Ş. · Miniakent Plaza, Kat 7",
+    "office",
+    "plaza"
+   ],
+   "wp": "yazilim",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@alperen.lm",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö C Blok, Daire 116",
+   "home_from": 1793426400,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Telekom · Miniakent Plaza 2, Kat 11",
+    "office",
+    "plaza2"
+   ],
+   "wp": "telekom",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@elraenix_",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö C Blok, Daire 120",
+   "home_from": 1793426400,
+   "job": [
+    "Emlak Danışmanı",
+    "Miniakent Gayrimenkul · Miniakent Plaza 2, Kat 9",
+    "office",
+    "plaza2"
+   ],
+   "wp": "gayrimenkul",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@batssmin3",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö C Blok, Daire 123",
+   "home_from": 1793426400,
+   "job": [
+    "İş Analisti",
+    "Miniakent Danışmanlık · Miniakent Plaza 2, Kat 12",
+    "office",
+    "plaza2"
+   ],
+   "wp": "danismanlik",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@baran1283p",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö C Blok, Daire 136",
+   "home_from": 1793426400,
+   "job": [
+    "Laboratuvar Teknisyeni",
+    "Miniakent Ar-Ge Merkezi · Miniakent Plaza, Kat 12",
+    "office",
+    "plaza"
+   ],
+   "wp": "arge",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@derindenizlerdekaybolduu_",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö C Blok, Daire 138",
+   "home_from": 1793426400,
+   "job": [
+    "Mali Müşavir",
+    "Miniakent Muhasebe · Miniakent Plaza, Kat 4",
+    "office",
+    "plaza"
+   ],
+   "wp": "muhasebe",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ahmet_almali_",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö D Blok, Daire 18",
+   "home_from": 1793426400,
+   "job": [
+    "Değerleme Uzmanı",
+    "Miniakent Gayrimenkul · Miniakent Plaza 2, Kat 9",
+    "office",
+    "plaza2"
+   ],
+   "wp": "gayrimenkul",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@fdihpq",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö D Blok, Daire 29",
+   "home_from": 1793426400,
+   "job": [
+    "Avukat",
+    "Miniakent Hukuk Bürosu · Miniakent Plaza, Kat 6",
+    "office",
+    "plaza"
+   ],
+   "wp": "hukuk",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@kerem._.707",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö D Blok, Daire 98",
+   "home_from": 1793426400,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@b1gusxxllaa",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö D Blok, Daire 121",
+   "home_from": 1793426400,
+   "job": [
+    "Mimar",
+    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
+    "office",
+    "plaza"
+   ],
+   "wp": "mimarlik",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@alabaliiik",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö F Blok, Daire 42",
+   "home_from": 1793426400,
+   "job": [
+    "Avukat",
+    "Miniakent Hukuk Bürosu · Miniakent Plaza, Kat 6",
+    "office",
+    "plaza"
+   ],
+   "wp": "hukuk",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@_svl_.naz",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö F Blok, Daire 53",
+   "home_from": 1793426400,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@aciliyiaa35",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö F Blok, Daire 68",
+   "home_from": 1793426400,
+   "job": [
+    "Mali Müşavir",
+    "Miniakent Muhasebe · Miniakent Plaza, Kat 4",
+    "office",
+    "plaza"
+   ],
+   "wp": "muhasebe",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ervanurmete",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö F Blok, Daire 79",
+   "home_from": 1793426400,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@_elanuur12",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö F Blok, Daire 87",
+   "home_from": 1793426400,
+   "job": [
+    "Değerleme Uzmanı",
+    "Miniakent Gayrimenkul · Miniakent Plaza 2, Kat 9",
+    "office",
+    "plaza2"
+   ],
+   "wp": "gayrimenkul",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@hip_ers74",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö F Blok, Daire 95",
+   "home_from": 1793426400,
+   "job": [
+    "Hasar Uzmanı",
+    "Miniakent Sigorta A.Ş. · Miniakent Plaza 2, Kat 2",
+    "office",
+    "plaza2"
+   ],
+   "wp": "sigorta",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@notmirayy",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Doğu Banliyö F Blok, Daire 111",
+   "home_from": 1793426400,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@sahinguuness",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Defne Sokağı No 6, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Grafik Tasarımcı",
+    "Miniakent Tasarım Stüdyosu · Miniakent Plaza, Kat 8",
+    "office",
+    "plaza"
+   ],
+   "wp": "tasarim",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@baris.ctn55",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Bahçe Caddesi No 1",
+   "home_from": 1793426400,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@veloira_bookss",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Akasya Sokağı No 2, Daire 19",
+   "home_from": 1793426400,
+   "job": [
+    "Editör",
+    "Miniakent Yayınevi · Miniakent Plaza, Kat 11",
+    "office",
+    "plaza"
+   ],
+   "wp": "yayinevi",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@aslihanncv",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Zeytin Sokağı No 1, Daire 19",
+   "home_from": 1793426400,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@buseyirgall",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Zeytin Sokağı No 1, Daire 30",
+   "home_from": 1793426400,
+   "job": [
+    "Hukuk Danışmanı",
+    "Miniakent Hukuk Bürosu · Miniakent Plaza, Kat 6",
+    "office",
+    "plaza"
+   ],
+   "wp": "hukuk",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@sseheeeeerr",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Zeytin Sokağı No 3, Daire 27",
+   "home_from": 1793426400,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@canelgin14",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Zeytin Sokağı No 5, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Editör",
+    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
+   ],
+   "wp": "medya",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@hillal_9",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 8, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Lojistik Uzmanı",
+    "Miniakent Lojistik A.Ş. · Miniakent Plaza 2, Kat 3",
+    "office",
+    "plaza2"
+   ],
+   "wp": "lojistik",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ark.qx",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 2, Daire 6",
+   "home_from": 1793426400,
+   "job": [
+    "Seyahat Danışmanı",
+    "Miniakent Turizm · Miniakent Plaza 2, Kat 7",
+    "office",
+    "plaza2"
+   ],
+   "wp": "turizm",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@meri.5142",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 1, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Emlak Danışmanı",
+    "Miniakent Ticaret A.Ş. · Miniakent Plaza, Kat 10",
+    "office",
+    "plaza"
+   ],
+   "wp": "ticaret",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@yagmur.baserer",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 1, Daire 7",
+   "home_from": 1793426400,
+   "job": [
+    "Ağ Uzmanı",
+    "Miniakent Telekom · Miniakent Plaza 2, Kat 11",
+    "office",
+    "plaza2"
+   ],
+   "wp": "telekom",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@zaferfirat_36",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 3, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Rezervasyon Uzmanı",
+    "Miniakent Turizm · Miniakent Plaza 2, Kat 7",
+    "office",
+    "plaza2"
+   ],
+   "wp": "turizm",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@wlaazzyynnpp",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 8, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@emekyemekss",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 9, Daire 6",
+   "home_from": 1793426400,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@muhammedbalkpriw17",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 11, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Öğretmen",
+    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
+    "office",
+    "plaza2"
+   ],
+   "wp": "dershane",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@melekensaglamm",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 16, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Mimar",
+    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
+    "office",
+    "plaza"
+   ],
+   "wp": "mimarlik",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@tuba_evren",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Begonvil Sokağı No 1, Daire 7",
+   "home_from": 1793426400,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@kubra._.ecrn",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Kıyı Caddesi No 6, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Rezervasyon Uzmanı",
+    "Miniakent Turizm · Miniakent Plaza 2, Kat 7",
+    "office",
+    "plaza2"
+   ],
+   "wp": "turizm",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@zeydaiii",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Kıyı Caddesi No 10, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@eylulnaz.sune",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Begonvil Sokağı No 9, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@definee_02",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Begonvil Sokağı No 13, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Muhasebe · Miniakent Plaza, Kat 4",
+    "office",
+    "plaza"
+   ],
+   "wp": "muhasebe",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@nasyagmur_01",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Begonvil Sokağı No 8, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@dogukan_sariiii",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Begonvil Sokağı No 8, Daire 5",
+   "home_from": 1793426400,
+   "job": [
+    "Kurgucu",
+    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
+   ],
+   "wp": "medya",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@kaan_b00",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Begonvil Sokağı No 8, Daire 6",
+   "home_from": 1793426400,
+   "job": [
+    "Rehber Öğretmen",
+    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
+    "office",
+    "plaza2"
+   ],
+   "wp": "dershane",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@ikblbydr.1",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 5, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "Laboratuvar Teknisyeni",
+    "Miniakent Ar-Ge Merkezi · Miniakent Plaza, Kat 12",
+    "office",
+    "plaza"
+   ],
+   "wp": "arge",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@sehmuz_polat2763",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 5, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@quaresmannboynundakiopucukdovm",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 5, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@byte_r",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 5, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@aazzrraaprivate",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 5, Daire 5",
+   "home_from": 1793426400,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@defne.kocak_",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 5, Daire 6",
+   "home_from": 1793426400,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@korilinoodle14",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 7, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@busrwltn",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 7, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@hyun0101_",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 7, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@fallnfromeden",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 7, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@marjinalnpc",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 7, Daire 5",
+   "home_from": 1793426400,
+   "job": [
+    "Makine Mühendisi",
+    "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
+    "office",
+    "plaza2"
+   ],
+   "wp": "muhendislik",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@senas3na.s",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 7, Daire 6",
+   "home_from": 1793426400,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@etoilessude",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 2, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "İç Mimar",
+    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
+    "office",
+    "plaza"
+   ],
+   "wp": "mimarlik",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@07denooo_06",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 2, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@burakk.vv",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 2, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@thesilikonreis",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 2, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@mukhammadali_k_",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 4, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@elifcirakli",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 4, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@simayezellwq01",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 4, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Değerleme Uzmanı",
+    "Miniakent Gayrimenkul · Miniakent Plaza 2, Kat 9",
+    "office",
+    "plaza2"
+   ],
+   "wp": "gayrimenkul",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@kavurma.1",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 4, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@itsduruu_",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 1, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "Rezervasyon Uzmanı",
+    "Miniakent Turizm · Miniakent Plaza 2, Kat 7",
+    "office",
+    "plaza2"
+   ],
+   "wp": "turizm",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@mimozaniz",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 1, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ali560401",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 1, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@yusr_a35.04",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 1, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@dorukbalkesen",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 1, Daire 5",
+   "home_from": 1793426400,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@elifgnydn061",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 1, Daire 6",
+   "home_from": 1793426400,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@dnyunus23",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 1, Daire 7",
+   "home_from": 1793426400,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@ervanur4543",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 1, Daire 8",
+   "home_from": 1793426400,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@esma_8251",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 3, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@sunfairyxcc",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 3, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@hasanredd_",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 3, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@isimsiz63862",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 3, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@beratsaracbasi",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 3, Daire 5",
+   "home_from": 1793426400,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@rumeysadog4n",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 3, Daire 6",
+   "home_from": 1793426400,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@mehmethan2994",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 6, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@ufukseker41",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 6, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@clpxregnt",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 6, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@onurcvher",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 6, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@melodi.yazar",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 6, Daire 5",
+   "home_from": 1793426400,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@_lknow8",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 6, Daire 6",
+   "home_from": 1793426400,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@_.efwqxx._",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 8, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@sosyopatpsikologg",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 8, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@gazerupaseri",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 8, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@derin_okyanus4",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Yasemin Sokağı No 8, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ceylinkatan",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 5, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@eemine425",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 5, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@baha_tas707",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 5, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@justtcinar",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 5, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@gursudelice",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 5, Daire 5",
+   "home_from": 1793426400,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ardakilli15",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 5, Daire 6",
+   "home_from": 1793426400,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@feti.ergl",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 7, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@kaanyelek_3441",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 7, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@svgiarslnn",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 7, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@sswozy_h3rzaman1dir",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 7, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@rana_tekin35",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 7, Daire 5",
+   "home_from": 1793426400,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@titaniktkikemanci",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 7, Daire 6",
+   "home_from": 1793426400,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@_.umuut._",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 2, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@enez.11",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 2, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@caglarugurdskn_",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 2, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@furkanc28",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 2, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@bir_garip_fok7",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 2, Daire 5",
+   "home_from": 1793426400,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@fatma_diyebiri123",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 2, Daire 6",
+   "home_from": 1793426400,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@asuu_de07",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 2, Daire 7",
+   "home_from": 1793426400,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@babibanemhttps",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 2, Daire 8",
+   "home_from": 1793426400,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@harmorina",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 4, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@_1nilyx0",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 4, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@_batuhan_yldrm_",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 4, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@hira.koklu",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 4, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@fatmazehrayuner",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 4, Daire 5",
+   "home_from": 1793426400,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@bi_mrt",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 4, Daire 6",
+   "home_from": 1793426400,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@bihaysisvip",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 1, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@bsultann26",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 1, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@ya.giz6099",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 1, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@elmannq",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 1, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ylrm_eminahmet",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 1, Daire 5",
+   "home_from": 1793426400,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@selimdemir_52",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 1, Daire 6",
+   "home_from": 1793426400,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@rumeystuykn",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 1, Daire 7",
+   "home_from": 1793426400,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@aysuunkrkbs",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 1, Daire 8",
+   "home_from": 1793426400,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@bus.olabilir",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 3, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@deliimeliss",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 3, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@berke1cinar",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 3, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@dijhle123",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 3, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@proaktif__ahmet",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 3, Daire 5",
+   "home_from": 1793426400,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@ilolii_00",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 3, Daire 6",
+   "home_from": 1793426400,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@esoli1216",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 3, Daire 7",
+   "home_from": 1793426400,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@alpimetehan",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 3, Daire 8",
+   "home_from": 1793426400,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@smihe_00",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 6, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@wqsna_",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 6, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@emir.muhcu",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 6, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@ozlemm.brmnnn",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 6, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@aes_reha",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 6, Daire 5",
+   "home_from": 1793426400,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@aliefesen34",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 6, Daire 6",
+   "home_from": 1793426400,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@zemssta",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 8, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ilos._musum",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 8, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@zldyck_1903",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 8, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@emosi_stee",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 8, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@sabahcikahvesi07",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 5, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@3raafc",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 5, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@slmbndogaa",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 5, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@yavuzefesoysal",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 5, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@keremmiism",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 5, Daire 5",
+   "home_from": 1793426400,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@zurnaduruxm",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 5, Daire 6",
+   "home_from": 1793426400,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@kasgarli_aff",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 7, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@elif_nissaa",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 7, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@apple_pi_00",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 7, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@eymen_27214",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 7, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@chaeyoungs_001",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 7, Daire 5",
+   "home_from": 1793426400,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@tunaykalpben_",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 7, Daire 6",
+   "home_from": 1793426400,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@wndkwfekaqpercb",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 7, Daire 7",
+   "home_from": 1793426400,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@vbv.eso_",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 7, Daire 8",
+   "home_from": 1793426400,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@lady.cocacola",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 10, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@yyusuf.kaya7",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 10, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@alex_carter911",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 10, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@umut_abzer0712",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 10, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@enes_aboooo",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 12, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@newday5a",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 12, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@egzotiktavsan",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 12, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ismailasafbyklogl",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 12, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@zumrraa16",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 12, Daire 5",
+   "home_from": 1793426400,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@cinar_0911",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 12, Daire 6",
+   "home_from": 1793426400,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@bayindirr_berat",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 9, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@awdasdwewasdew",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 9, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@elif.ates_s",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 9, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@elifduru0533",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 9, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@armtxt",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 9, Daire 5",
+   "home_from": 1793426400,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@berat_bkc_63",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 9, Daire 6",
+   "home_from": 1793426400,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@damla_nil_0301",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 9, Daire 7",
+   "home_from": 1793426400,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@feingsevenler",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 9, Daire 8",
+   "home_from": 1793426400,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@sevval46622",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 11, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@sena.isenc0",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 11, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@ahmet_tuna_fil",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 11, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@kadirberataylak",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 11, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@elesssooo",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 11, Daire 5",
+   "home_from": 1793426400,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@rafasilvalipenguen",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 11, Daire 6",
+   "home_from": 1793426400,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@duru.90418",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 11, Daire 7",
+   "home_from": 1793426400,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@redhoodyiyenmandalina",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 11, Daire 8",
+   "home_from": 1793426400,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@erhannyaprak",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 14, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@fatsso06",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 14, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@_beezy_2303",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 14, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@seh0sss",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 14, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@fatihh.msk",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 14, Daire 5",
+   "home_from": 1793426400,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@aymi_na0",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 14, Daire 6",
+   "home_from": 1793426400,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@dilara_yldzhn.07",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 14, Daire 7",
+   "home_from": 1793426400,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@ilknur.ece35",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 14, Daire 8",
+   "home_from": 1793426400,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@yagizcigimmm",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 16, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@yagiz35377",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 16, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@belinyck",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 16, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@erdm_tna67",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 16, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@selambenbirisi2",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 16, Daire 5",
+   "home_from": 1793426400,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@jojoroo.o",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lavanta Sokağı No 16, Daire 6",
+   "home_from": 1793426400,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@beyazitbekic",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 13, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@lawwo__21",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 13, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@rahmaabulmagd.8",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 13, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@_marsell._.01",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 13, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@visal.krtke",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 13, Daire 5",
+   "home_from": 1793426400,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@karpot.ila",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 13, Daire 6",
+   "home_from": 1793426400,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@lilleylull",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 13, Daire 7",
+   "home_from": 1793426400,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@xiaomiliyan",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 13, Daire 8",
+   "home_from": 1793426400,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@nursimaozer17",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 15, Daire 1",
+   "home_from": 1793426400,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@17_berke_17",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 15, Daire 2",
+   "home_from": 1793426400,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@ebonlie",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 15, Daire 3",
+   "home_from": 1793426400,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@baranmustafaefe",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 15, Daire 4",
+   "home_from": 1793426400,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@izmirlidiva",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 15, Daire 5",
+   "home_from": 1793426400,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@gokcenhuma",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Mimoza Sokağı No 15, Daire 6",
+   "home_from": 1793426400,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@banasucukderlerrr",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lale Sokağı No 2",
+   "home_from": 1793426400,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@cwrenlix",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lale Sokağı No 6",
+   "home_from": 1793426400,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@talhakd2811",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Sahil Caddesi No 2",
+   "home_from": 1793426400,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@mete_gulr",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Defne Sokağı No 8",
+   "home_from": 1793426400,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@pouliaa___",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Çınar Sokağı No 1",
+   "home_from": 1793426400,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@eceren_alper",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Martı Caddesi No 5",
+   "home_from": 1793426400,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@melisdmrzz_113",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Rüzgâr Sokağı No 5",
+   "home_from": 1793426400,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@renginwwqq",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Sahil Caddesi No 8",
+   "home_from": 1793426400,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@hamza_shn_65",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Rüzgâr Sokağı No 7",
+   "home_from": 1793426400,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@ipekdamlakoc",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Rüzgâr Sokağı No 3",
+   "home_from": 1793426400,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@mehmet_mustafa_bilhan",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Çınar Sokağı No 5",
+   "home_from": 1793426400,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@s3man_rr",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lale Sokağı No 2",
+   "home_from": 1793426400,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@s61zeyno",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lale Sokağı No 6",
+   "home_from": 1793426400,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@baranisteolmnapcanya",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Sahil Caddesi No 2",
+   "home_from": 1793426400,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@mehlika_mrym",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Defne Sokağı No 8",
+   "home_from": 1793426400,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@beiiove",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Çınar Sokağı No 1",
+   "home_from": 1793426400,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@eecrin_05",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Martı Caddesi No 5",
+   "home_from": 1793426400,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@iskender34790",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Rüzgâr Sokağı No 5",
+   "home_from": 1793426400,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@levosparky",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Sahil Caddesi No 8",
+   "home_from": 1793426400,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@allahkerimfathterim",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Rüzgâr Sokağı No 7",
+   "home_from": 1793426400,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@mevlude3744",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Rüzgâr Sokağı No 3",
+   "home_from": 1793426400,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@macro_o_o",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Çınar Sokağı No 5",
+   "home_from": 1793426400,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@penci_zost",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lale Sokağı No 2",
+   "home_from": 1793426400,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@no1inthekirsehir",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Lale Sokağı No 6",
+   "home_from": 1793426400,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@zumra.ckr.2834",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Sahil Caddesi No 2",
+   "home_from": 1793426400,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@sucukluyumurtali0011",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Defne Sokağı No 8",
+   "home_from": 1793426400,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@cerbusra",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Çınar Sokağı No 1",
+   "home_from": 1793426400,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@at_etiquikf",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Martı Caddesi No 5",
+   "home_from": 1793426400,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@eylulirmakavsar",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Rüzgâr Sokağı No 5",
+   "home_from": 1793426400,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@yadagitarimlaolurumbihicbiri",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Sahil Caddesi No 8",
+   "home_from": 1793426400,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@kerembulgurcu",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Rüzgâr Sokağı No 7",
+   "home_from": 1793426400,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@dervismyr",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Rüzgâr Sokağı No 3",
+   "home_from": 1793426400,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@divine_general5",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "Çınar Sokağı No 5",
+   "home_from": 1793426400,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@bay_bl4ck",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 1,
+   "left": 0
+  },
+  {
+   "handle": "@_astrxikra_",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 2,
+   "left": 0
+  },
+  {
+   "handle": "@bsrrr_33",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 3,
+   "left": 0
+  },
+  {
+   "handle": "@ae._ysr",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 4,
+   "left": 0
+  },
+  {
+   "handle": "@oqulen_nt",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 5,
+   "left": 0
+  },
+  {
+   "handle": "@ophanim_stark",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 6,
+   "left": 0
+  },
+  {
+   "handle": "@elifcplk5",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 7,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@azraltns0",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 8,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@06ll_abdullah",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 9,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@arigatokosaimasu._",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 10,
+   "left": 0
+  },
+  {
+   "handle": "@turklshdellght",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 11,
+   "left": 0
+  },
+  {
+   "handle": "@blessedbrunette0",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 12,
+   "left": 0
+  },
+  {
+   "handle": "@alis.a12117",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 13,
+   "left": 0
+  },
+  {
+   "handle": "@sincabhanim",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 14,
+   "left": 0
+  },
+  {
+   "handle": "@immerveeqq",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 15,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@esvcain",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 16,
+   "left": 0
+  },
+  {
+   "handle": "@buglemnaz_.atan",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 17,
+   "left": 0
+  },
+  {
+   "handle": "@cinarglbs38",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 18,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@zkydp_da",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 19,
+   "left": 0
+  },
+  {
+   "handle": "@orcunozdeenn",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 20,
+   "left": 0
+  },
+  {
+   "handle": "@thezehra123",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 21,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@cynon3butyou",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 22,
+   "left": 0
+  },
+  {
+   "handle": "@zeynepgulruo4",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 23,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@ido30637",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 24,
+   "left": 0
+  },
+  {
+   "handle": "@speed0217____",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 25,
+   "left": 0
+  },
+  {
+   "handle": "@eko06060606",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 26,
+   "left": 0
+  },
+  {
+   "handle": "@gllaysss",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 27,
+   "left": 0
+  },
+  {
+   "handle": "@winston_big_niger_emuristan",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 28,
+   "left": 0
+  },
+  {
+   "handle": "@prwof.pk",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 29,
+   "left": 0
+  },
+  {
+   "handle": "@eloosss7_",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 30,
+   "left": 0
+  },
+  {
+   "handle": "@gulnaz_glsy",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 31,
+   "left": 0
+  },
+  {
+   "handle": "@inmyheartliveu4ever",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 32,
+   "left": 0
+  },
+  {
+   "handle": "@melkskrn",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 33,
+   "left": 0
+  },
+  {
+   "handle": "@littlefire_bunny2",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 34,
+   "left": 0
+  },
+  {
+   "handle": "@asyussg",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 35,
+   "left": 0
+  },
+  {
+   "handle": "@azrasertq",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 36,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@osman445566778899",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 37,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@goktug_gc",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 38,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@stik.gem",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 39,
+   "left": 0
+  },
+  {
+   "handle": "@hannivie1",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 40,
+   "left": 0
+  },
+  {
+   "handle": "@love_monsterenergyys",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 41,
+   "left": 0
+  },
+  {
+   "handle": "@etl1krep",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 42,
+   "left": 0
+  },
+  {
+   "handle": "@mrmertaytb",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 43,
+   "left": 0
+  },
+  {
+   "handle": "@iborriw",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 44,
+   "left": 0
+  },
+  {
+   "handle": "@eren_yilmazz67",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 45,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@omerdgdvrn17",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 46,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@lazerus64",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 47,
+   "left": 0
+  },
+  {
+   "handle": "@rumeysaozogul_",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 48,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@_.nurgul.sire._",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 49,
+   "left": 0
+  },
+  {
+   "handle": "@xoxoniss4",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 50,
+   "left": 0
+  },
+  {
+   "handle": "@suyunboncugu",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 51,
+   "left": 0
+  },
+  {
+   "handle": "@x_m1tsk",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 52,
+   "left": 0
+  },
+  {
+   "handle": "@ecoslyw",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 53,
+   "left": 0
+  },
+  {
+   "handle": "@adalinka11",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 54,
+   "left": 0
+  },
+  {
+   "handle": "@natt3seii",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 55,
+   "left": 0
+  },
+  {
+   "handle": "@ed3my",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 56,
+   "left": 0
+  },
+  {
+   "handle": "@zojelt1",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 57,
+   "left": 0
+  },
+  {
+   "handle": "@ice_white_chocolete_mocha",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 58,
+   "left": 0
+  },
+  {
+   "handle": "@dorukmertucar",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 59,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@duru_eyyem2026",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 60,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@rumeysacagill",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 61,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@cinar_ygtt",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 62,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@devrim_ege12",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 63,
+   "left": 0
+  },
+  {
+   "handle": "@sehrubanyilmaz",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 64,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@kumsisinizzxx",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 65,
+   "left": 0
+  },
+  {
+   "handle": "@donenkarinca",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 66,
+   "left": 0
+  },
+  {
+   "handle": "@gizomelli",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 67,
+   "left": 0
+  },
+  {
+   "handle": "@hakanefeturmus",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 68,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@bozkurtspor2024.lol",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 69,
+   "left": 0
+  },
+  {
+   "handle": "@nurrww334",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 70,
+   "left": 0
+  },
+  {
+   "handle": "@semihkaplan414141",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 71,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@besiktaslichillman17",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 72,
+   "left": 0
+  },
+  {
+   "handle": "@silaa02412",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 73,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@alyadao_",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 74,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@enosemoc",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 75,
+   "left": 0
+  },
+  {
+   "handle": "@weliskartal",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 76,
+   "left": 0
+  },
+  {
+   "handle": "@omerasaf3128",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 77,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@canarslan.efe",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 78,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@imguttugo.owbatuw",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 79,
+   "left": 0
+  },
+  {
+   "handle": "@yusuf_cnr0024",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 80,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@strawberrymoonly",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 81,
+   "left": 0
+  },
+  {
+   "handle": "@bekir84851",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 82,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@bartubayram_",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 83,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@mihrmah2608",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 84,
+   "left": 0
+  },
+  {
+   "handle": "@demirozcandemiradam",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 85,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@sariiiimnsss",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 86,
+   "left": 0
+  },
+  {
+   "handle": "@pumpkinsungho",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 87,
+   "left": 0
+  },
+  {
+   "handle": "@eliff_miiii",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 88,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@tahmaz.2854",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 89,
+   "left": 0
+  },
+  {
+   "handle": "@i.mceyylii",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 90,
+   "left": 0
+  },
+  {
+   "handle": "@0pm_nexa",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 91,
+   "left": 0
+  },
+  {
+   "handle": "@miyauwzzn",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 92,
+   "left": 0
+  },
+  {
+   "handle": "@emir44118",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 93,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@kask_0404",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 94,
+   "left": 0
+  },
+  {
+   "handle": "@deniz__kaya82",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 95,
+   "left": 0
+  },
+  {
+   "handle": "@lliliess_ashtine",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 96,
+   "left": 0
+  },
+  {
+   "handle": "@nisaemektar",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 97,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@_monamoto_sama",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 98,
+   "left": 0
+  },
+  {
+   "handle": "@eknnsshnlr",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 99,
+   "left": 0
+  },
+  {
+   "handle": "@i_am_iroman_batii",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 100,
+   "left": 0
+  },
+  {
+   "handle": "@beren.priww02",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 101,
+   "left": 0
+  },
+  {
+   "handle": "@sadeceben._.w",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 102,
+   "left": 0
+  },
+  {
+   "handle": "@bastiginyrleritoprakdiyerkgcme",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 103,
+   "left": 0
+  },
+  {
+   "handle": "@nefertiti_hawa335",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 104,
+   "left": 0
+  },
+  {
+   "handle": "@itsmylena11",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 105,
+   "left": 0
+  },
+  {
+   "handle": "@herantetikteyim_",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 106,
+   "left": 0
+  },
+  {
+   "handle": "@jinzhao_2",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 107,
+   "left": 0
+  },
+  {
+   "handle": "@seunqmongss",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 108,
+   "left": 0
+  },
+  {
+   "handle": "@fearyesikenhongazra",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 109,
+   "left": 0
+  },
+  {
+   "handle": "@iremartl",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 110,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@enverbeyefendi",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 111,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@arjin9937",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 112,
+   "left": 0
+  },
+  {
+   "handle": "@erenbalcc",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 113,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@canv0r",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 114,
+   "left": 0
+  },
+  {
+   "handle": "@rebzyyxmylife",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 115,
+   "left": 0
+  },
+  {
+   "handle": "@devilsbackseat",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 116,
+   "left": 0
+  },
+  {
+   "handle": "@shapeeeeeshapeofmyheart",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 117,
+   "left": 0
+  },
+  {
+   "handle": "@bilalikon23",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 118,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@rosie_poisee",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 119,
+   "left": 0
+  },
+  {
+   "handle": "@sercans3457",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 120,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@taecskook",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 121,
+   "left": 0
+  },
+  {
+   "handle": "@feride_klc2806",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 122,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@3brars.0",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 123,
+   "left": 0
+  },
+  {
+   "handle": "@serpil_sude_42",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 124,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@yasya_s221",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 125,
+   "left": 0
+  },
+  {
+   "handle": "@asyggz",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 126,
+   "left": 0
+  },
+  {
+   "handle": "@simitayrann4",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 127,
+   "left": 0
+  },
+  {
+   "handle": "@sugarhillhdott",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 128,
+   "left": 0
+  },
+  {
+   "handle": "@spike_bs3",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 129,
+   "left": 0
+  },
+  {
+   "handle": "@deniiztn_",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 130,
+   "left": 0
+  },
+  {
+   "handle": "@f2th2",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 131,
+   "left": 0
+  },
+  {
+   "handle": "@drnarda0",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 132,
+   "left": 0
+  },
+  {
+   "handle": "@hasa.nn006",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 133,
+   "left": 0
+  },
+  {
+   "handle": "@raveensky.y",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 134,
+   "left": 0
+  },
+  {
+   "handle": "@kazb_ekx00",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 135,
+   "left": 0
+  },
+  {
+   "handle": "@cekmekoymilletvekili",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 136,
+   "left": 0
+  },
+  {
+   "handle": "@saitt.691",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 137,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@yazlyyyewa07",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 138,
+   "left": 0
+  },
+  {
+   "handle": "@aybuk_ylmz",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 139,
+   "left": 0
+  },
+  {
+   "handle": "@emonasel",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 140,
+   "left": 0
+  },
+  {
+   "handle": "@hellheimq",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 141,
+   "left": 0
+  },
+  {
+   "handle": "@dustininbiriciksevgilisi",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 142,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@deni_yigt",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 143,
+   "left": 0
+  },
+  {
+   "handle": "@halisokty",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 144,
+   "left": 0
+  },
+  {
+   "handle": "@azrq.w222",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 145,
+   "left": 0
+  },
+  {
+   "handle": "@spectratwiwaqi",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 146,
+   "left": 0
+  },
+  {
+   "handle": "@sare.iouslyy",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 147,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@arif_dumanli_123",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 148,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@herayiyiyenadaaaooo",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 149,
+   "left": 0
+  },
+  {
+   "handle": "@kul_lan1c",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 150,
+   "left": 0
+  },
+  {
+   "handle": "@defnehira2026",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 151,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@ahmethakan.tuna",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 152,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@yigit315679",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 153,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@yamobasla_06",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 154,
+   "left": 0
+  },
+  {
+   "handle": "@eliffyrnolcyy.26",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 155,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@ece_bey02",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 156,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@ortakcioyku",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 157,
+   "left": 0
+  },
+  {
+   "handle": "@snipetr",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 158,
+   "left": 0
+  },
+  {
+   "handle": "@melek.ustndg",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 159,
+   "left": 0
+  },
+  {
+   "handle": "@shadow._editss",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 160,
+   "left": 0
+  },
+  {
+   "handle": "@elena66_16",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 161,
+   "left": 0
+  },
+  {
+   "handle": "@wraehsx",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 162,
+   "left": 0
+  },
+  {
+   "handle": "@stay_00x",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 163,
+   "left": 0
+  },
+  {
+   "handle": "@o_yueliang_o",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 164,
+   "left": 0
+  },
+  {
+   "handle": "@elif_kah1209",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 165,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@_mmerveayyy",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 166,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@azraori",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 167,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@emayneyorke",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 168,
+   "left": 0
+  },
+  {
+   "handle": "@ecrin070_",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 169,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@muro_art60",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 170,
+   "left": 0
+  },
+  {
+   "handle": "@sehervaktibirguzelevuruldum0_0",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 171,
+   "left": 0
+  },
+  {
+   "handle": "@eyllacar_6788",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 172,
+   "left": 0
+  },
+  {
+   "handle": "@cumalihnts01",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 173,
+   "left": 0
+  },
+  {
+   "handle": "@gumuland",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 174,
+   "left": 0
+  },
+  {
+   "handle": "@06xayaz",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 175,
+   "left": 0
+  },
+  {
+   "handle": "@elifyagmurarin",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 176,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@g0zzz_34",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 177,
+   "left": 0
+  },
+  {
+   "handle": "@elmadilimpatates6767",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 178,
+   "left": 0
+  },
+  {
+   "handle": "@ylmzseyda.06",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 179,
+   "left": 0
+  },
+  {
+   "handle": "@albassmis",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 180,
+   "left": 0
+  },
+  {
+   "handle": "@novera_rolex",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 181,
+   "left": 0
+  },
+  {
+   "handle": "@emre.jr63",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 182,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@isleksevin",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 183,
+   "left": 0
+  },
+  {
+   "handle": "@ben_nyxora",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 184,
+   "left": 0
+  },
+  {
+   "handle": "@kurtdaraldigezmekistiyour",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 185,
+   "left": 0
+  },
+  {
+   "handle": "@cerenkimkizatenn",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 186,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@selvi.ckn35",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 187,
+   "left": 0
+  },
+  {
+   "handle": "@korzakko_zipzipzip",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 188,
+   "left": 0
+  },
+  {
+   "handle": "@habibe.irem.123",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 189,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@kayrdenz.g",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 190,
+   "left": 0
+  },
+  {
+   "handle": "@scorch_shadow",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 191,
+   "left": 0
+  },
+  {
+   "handle": "@desen_32",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 192,
+   "left": 0
+  },
+  {
+   "handle": "@cemre.0x0",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 193,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@rrealgachakid",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 194,
+   "left": 0
+  },
+  {
+   "handle": "@e.r.h.a.y.a.t",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 195,
+   "left": 0
+  },
+  {
+   "handle": "@esila.aslnn",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 196,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@mircsrz",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 197,
+   "left": 0
+  },
+  {
+   "handle": "@vahap588",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 198,
+   "left": 0
+  },
+  {
+   "handle": "@ozayelif33",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 199,
+   "left": 0
+  },
+  {
+   "handle": "@azrabet.blbllr",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 200,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@mira396431",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 201,
+   "left": 0
+  },
+  {
+   "handle": "@doqanakdin",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 202,
+   "left": 0
+  },
+  {
+   "handle": "@rr._.2787",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 203,
+   "left": 0
+  },
+  {
+   "handle": "@elifnaz_kurt58",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 204,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@itsme_bdq",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 205,
+   "left": 0
+  },
+  {
+   "handle": "@bqhtsizsairrr",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 206,
+   "left": 0
+  },
+  {
+   "handle": "@firas_35_45",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 207,
+   "left": 0
+  },
+  {
+   "handle": "@_.vexvii._",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 208,
+   "left": 0
+  },
+  {
+   "handle": "@mrvbegumy",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 209,
+   "left": 0
+  },
+  {
+   "handle": "@kumahane_reisi23",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 210,
+   "left": 0
+  },
+  {
+   "handle": "@fcemalbilen",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 211,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@ikinciiibaharrr",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 212,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@ndnsndjssmd",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 213,
+   "left": 0
+  },
+  {
+   "handle": "@elifguray2013",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 214,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@asliecemsarica",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 215,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@kahkulluhafize",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 216,
+   "left": 0
+  },
+  {
+   "handle": "@begum.klci",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 217,
+   "left": 0
+  },
+  {
+   "handle": "@hayatli_hayatsiz_elcin",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 218,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@lexryss505",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 219,
+   "left": 0
+  },
+  {
+   "handle": "@erkocc_melisa",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 220,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@resul._.6706",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 221,
+   "left": 0
+  },
+  {
+   "handle": "@meymey_secrett",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 222,
+   "left": 0
+  },
+  {
+   "handle": "@nisan.aslnn",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 223,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@nuri_emir_",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 224,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@ali.talha1905",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 225,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@ahmet92053",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 226,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@alparslan.serbes_pro",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 227,
+   "left": 0
+  },
+  {
+   "handle": "@ataantoni07",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 228,
+   "left": 0
+  },
+  {
+   "handle": "@ceyyyce_032",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 229,
+   "left": 0
+  },
+  {
+   "handle": "@rzgrkrks11",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 230,
+   "left": 0
+  },
+  {
+   "handle": "@beyzagms14",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 231,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@kagoxxy",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 232,
+   "left": 0
+  },
+  {
+   "handle": "@lyzonx._",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 233,
+   "left": 0
+  },
+  {
+   "handle": "@berranurkavdesim",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 234,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@nehirmasmavi",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 235,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@neyirmis._",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 236,
+   "left": 0
+  },
+  {
+   "handle": "@omerqs_",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 237,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@cindybebekgibikizz_9",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 238,
+   "left": 0
+  },
+  {
+   "handle": "@mirisss0143",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 239,
+   "left": 0
+  },
+  {
+   "handle": "@buth.eavenknowsimmiserablenow",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 240,
+   "left": 0
+  },
+  {
+   "handle": "@zeynpnzylmz",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 241,
+   "left": 0
+  },
+  {
+   "handle": "@adaunverir",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 242,
+   "left": 0
+  },
+  {
+   "handle": "@fcb_bmw_1899",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 243,
+   "left": 0
+  },
+  {
+   "handle": "@berenn_39",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 244,
+   "left": 0
+  },
+  {
+   "handle": "@ilyastufek98",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 245,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@atahancol80",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 246,
+   "left": 0
+  },
+  {
+   "handle": "@_ecrn_yx",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 247,
+   "left": 0
+  },
+  {
+   "handle": "@gulszss",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 248,
+   "left": 0
+  },
+  {
+   "handle": "@peceli.rahibe",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 249,
+   "left": 0
+  },
+  {
+   "handle": "@utkceylan64",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 250,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@elifyagmurluu",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 251,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@unlubaysinem_",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 252,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@nvxesports2026",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 253,
+   "left": 0
+  },
+  {
+   "handle": "@mert.selimoglu2015",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 254,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@ozol.mert",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 255,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@studywzoya",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 256,
+   "left": 0
+  },
+  {
+   "handle": "@bahaddinakk",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 257,
+   "left": 0
+  },
+  {
+   "handle": "@polasskaa",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 258,
+   "left": 0
+  },
+  {
+   "handle": "@enesyn109283",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 259,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@caglakadnan038",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 260,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@gulsun_alptelin",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 261,
+   "left": 0
+  },
+  {
+   "handle": "@medine_ua",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 262,
+   "left": 0
+  },
+  {
+   "handle": "@ezgiiylxx",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 263,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@pelinerrgul",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 264,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@naturalsenfony",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 265,
+   "left": 0
+  },
+  {
+   "handle": "@lorikkk_06",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 266,
+   "left": 0
+  },
+  {
+   "handle": "@gk3sk1n",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 267,
+   "left": 0
+  },
+  {
+   "handle": "@seelen2m",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 268,
+   "left": 0
+  },
+  {
+   "handle": "@ryzencaesarr",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 269,
+   "left": 0
+  },
+  {
+   "handle": "@busee.kplnnn",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 270,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@ayhantoprak.48",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 271,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@masii__04",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 272,
+   "left": 0
+  },
+  {
+   "handle": "@lamiatalak",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 273,
+   "left": 0
+  },
+  {
+   "handle": "@_dorukserbett",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 274,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@yid0s",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 275,
+   "left": 0
+  },
+  {
+   "handle": "@emre_34pl",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 276,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@h6raa_",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 277,
+   "left": 0
+  },
+  {
+   "handle": "@0xlseei",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 278,
+   "left": 0
+  },
+  {
+   "handle": "@ays3.y",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 279,
+   "left": 0
+  },
+  {
+   "handle": "@doktor_.1907",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 280,
+   "left": 0
+  },
+  {
+   "handle": "@ardakurc",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 281,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@tsetnight",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 282,
+   "left": 0
+  },
+  {
+   "handle": "@peragilbrt",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 283,
+   "left": 0
+  },
+  {
+   "handle": "@ranakocyigt",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 284,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@miraytireng",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 285,
+   "left": 0
+  },
+  {
+   "handle": "@nehirmis_198",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 286,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@34kopekkabnda_kabuskakemiren",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 287,
+   "left": 0
+  },
+  {
+   "handle": "@goddaynot",
+   "arrive": 1793404800,
+   "move": 1793426400,
+   "home": "",
+   "home_from": 0,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 288,
    "left": 0
   }
  ]
