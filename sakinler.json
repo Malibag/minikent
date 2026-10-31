@@ -105342,7 +105342,11 @@
    "wp": "sigorta",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@naarincn",
@@ -105359,7 +105363,11 @@
    "wp": "sigorta",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@z.irem.ce",
@@ -105570,7 +105578,11 @@
    "wp": "lojistik",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@ahminephotography",
@@ -105587,7 +105599,11 @@
    "wp": "sigorta",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@miray41altunts",
@@ -105604,7 +105620,11 @@
    "wp": "yazilim",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@alperen.lm",
@@ -105807,7 +105827,11 @@
    "wp": "banka",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@aciliyiaa35",
@@ -105841,7 +105865,11 @@
    "wp": "banka",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@_elanuur12",
@@ -105858,7 +105886,11 @@
    "wp": "gayrimenkul",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@hip_ers74",
@@ -105892,7 +105924,11 @@
    "wp": "banka",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@sahinguuness",
@@ -106010,7 +106046,11 @@
    "wp": "banka",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@canelgin14",
@@ -106027,7 +106067,11 @@
    "wp": "medya",
    "hobby": "Balık tutmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@hillal_9",
@@ -106044,7 +106088,11 @@
    "wp": "lojistik",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@ark.qx",
@@ -106078,7 +106126,11 @@
    "wp": "ticaret",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@yagmur.baserer",
@@ -106095,7 +106147,11 @@
    "wp": "telekom",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@zaferfirat_36",
@@ -106188,7 +106244,11 @@
    "wp": "mimarlik",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@tuba_evren",
@@ -106247,7 +106307,11 @@
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@eylulnaz.sune",
@@ -106285,7 +106349,11 @@
    "wp": "muhasebe",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@nasyagmur_01",
@@ -106302,7 +106370,11 @@
    "wp": "banka",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@dogukan_sariiii",
@@ -106361,7 +106433,11 @@
    "wp": "arge",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@sehmuz_polat2763",
@@ -106433,7 +106509,11 @@
    "wp": "banka",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@defne.kocak_",
@@ -106488,7 +106568,11 @@
    "wp": "banka",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@hyun0101_",
@@ -106577,7 +106661,11 @@
    "wp": "mimarlik",
    "hobby": "Balık tutmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@07denooo_06",
@@ -106632,7 +106720,11 @@
    "wp": "banka",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@mukhammadali_k_",
@@ -106649,7 +106741,11 @@
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@elifcirakli",
@@ -106687,7 +106783,11 @@
    "wp": "gayrimenkul",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@kavurma.1",
@@ -106721,7 +106821,11 @@
    "wp": "turizm",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@mimozaniz",
@@ -106776,7 +106880,11 @@
    "wp": "banka",
    "hobby": "Balık tutmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@dorukbalkesen",
@@ -106856,7 +106964,11 @@
    "wp": "banka",
    "hobby": "Balık tutmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@esma_8251",
@@ -107071,7 +107183,11 @@
    "wp": "banka",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@_lknow8",
@@ -107173,7 +107289,11 @@
    "wp": "banka",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@eemine425",
@@ -107211,7 +107331,11 @@
    "wp": "banka",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@justtcinar",
@@ -107325,7 +107449,11 @@
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@sswozy_h3rzaman1dir",
@@ -107397,7 +107525,11 @@
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@enez.11",
@@ -107414,7 +107546,11 @@
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@caglarugurdskn_",
@@ -107433,8 +107569,8 @@
    "queue": 0,
    "left": 0,
    "look": [
-    1,
-    1
+    0,
+    0
    ]
   },
   {
@@ -107511,7 +107647,11 @@
    "wp": "banka",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@babibanemhttps",
@@ -107697,7 +107837,11 @@
    "wp": "banka",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@elmannq",
@@ -107773,7 +107917,11 @@
    "wp": "banka",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@aysuunkrkbs",
@@ -107790,7 +107938,11 @@
    "wp": "banka",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@bus.olabilir",
@@ -107866,7 +108018,11 @@
    "wp": "banka",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@proaktif__ahmet",
@@ -107938,7 +108094,11 @@
    "wp": "banka",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@smihe_00",
@@ -108048,7 +108208,11 @@
    "wp": "banka",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@zemssta",
@@ -108391,7 +108555,11 @@
    "wp": "banka",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@yyusuf.kaya7",
@@ -108446,7 +108614,11 @@
    "wp": "banka",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@enes_aboooo",
@@ -108539,7 +108711,11 @@
    "wp": "banka",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@cinar_0911",
@@ -109083,7 +109259,11 @@
    "wp": "banka",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@erdm_tna67",
@@ -109100,7 +109280,11 @@
    "wp": "banka",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@selambenbirisi2",
@@ -109151,7 +109335,11 @@
    "wp": "banka",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@lawwo__21",
@@ -109185,7 +109373,11 @@
    "wp": "banka",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@_marsell._.01",
@@ -109291,7 +109483,11 @@
    "wp": "banka",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@17_berke_17",
@@ -109367,7 +109563,11 @@
    "wp": "banka",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@gokcenhuma",
@@ -109384,7 +109584,11 @@
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@banasucukderlerrr",
@@ -109496,8 +109700,8 @@
    "queue": 0,
    "left": 0,
    "look": [
-    3,
-    0
+    2,
+    1
    ]
   },
   {
@@ -109538,8 +109742,8 @@
    "queue": 0,
    "left": 0,
    "look": [
-    4,
-    0
+    2,
+    1
    ]
   },
   {
@@ -109637,7 +109841,11 @@
    "wp": "banka",
    "hobby": "Balık tutmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@baranisteolmnapcanya",
@@ -109675,7 +109883,11 @@
    "wp": "banka",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@beiiove",
@@ -109730,7 +109942,11 @@
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@levosparky",
@@ -109785,7 +110001,11 @@
    "wp": "banka",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@macro_o_o",
@@ -109853,7 +110073,11 @@
    "wp": "banka",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@sucukluyumurtali0011",
@@ -109984,7 +110208,11 @@
    "wp": "banka",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@divine_general5",
@@ -110018,7 +110246,11 @@
    "wp": "banka",
    "hobby": "Kuşları izlemek",
    "queue": 1,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@_astrxikra_",
@@ -110052,7 +110284,11 @@
    "wp": "banka",
    "hobby": "Bahçe işleri",
    "queue": 3,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@ae._ysr",
@@ -110217,7 +110453,11 @@
    "wp": "banka",
    "hobby": "Bahçe işleri",
    "queue": 12,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@alis.a12117",
@@ -110251,7 +110491,11 @@
    "wp": "banka",
    "hobby": "Bisiklete binmek",
    "queue": 14,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@immerveeqq",
@@ -110306,7 +110550,11 @@
    "wp": "banka",
    "hobby": "Satranç",
    "queue": 17,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@cinarglbs38",
@@ -110361,7 +110609,11 @@
    "wp": "banka",
    "hobby": "Gitar çalmak",
    "queue": 20,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@thezehra123",
@@ -110556,7 +110808,11 @@
    "wp": "banka",
    "hobby": "Kitap okumak",
    "queue": 31,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@inmyheartliveu4ever",
@@ -110590,7 +110846,11 @@
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
    "queue": 33,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@littlefire_bunny2",
@@ -110772,7 +111032,11 @@
    "wp": "banka",
    "hobby": "Yemek yapmak",
    "queue": 43,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@iborriw",
@@ -110886,7 +111150,11 @@
    "wp": "banka",
    "hobby": "Gitar çalmak",
    "queue": 49,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@xoxoniss4",
@@ -110971,7 +111239,11 @@
    "wp": "banka",
    "hobby": "Resim yapmak",
    "queue": 54,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@natt3seii",
@@ -111140,7 +111412,11 @@
    "wp": "banka",
    "hobby": "Balık tutmak",
    "queue": 63,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@sehrubanyilmaz",
@@ -111159,8 +111435,8 @@
    "queue": 64,
    "left": 0,
    "look": [
-    4,
-    0
+    2,
+    1
    ]
   },
   {
@@ -111212,7 +111488,11 @@
    "wp": "banka",
    "hobby": "Yüzmek",
    "queue": 67,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@hakanefeturmus",
@@ -111267,7 +111547,11 @@
    "wp": "banka",
    "hobby": "Satranç",
    "queue": 70,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@semihkaplan414141",
@@ -111305,7 +111589,11 @@
    "wp": "banka",
    "hobby": "Yemek yapmak",
    "queue": 72,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@silaa02412",
@@ -111381,7 +111669,11 @@
    "wp": "banka",
    "hobby": "Bisiklete binmek",
    "queue": 76,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@omerasaf3128",
@@ -111537,7 +111829,11 @@
    "wp": "banka",
    "hobby": "Balık tutmak",
    "queue": 84,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@demirozcandemiradam",
@@ -111630,7 +111926,11 @@
    "wp": "banka",
    "hobby": "Bisiklete binmek",
    "queue": 89,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@i.mceyylii",
@@ -111647,7 +111947,11 @@
    "wp": "banka",
    "hobby": "Resim yapmak",
    "queue": 90,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@0pm_nexa",
@@ -111842,7 +112146,11 @@
    "wp": "banka",
    "hobby": "Bahçe işleri",
    "queue": 101,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@sadeceben._.w",
@@ -111893,7 +112201,11 @@
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
    "queue": 104,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@itsmylena11",
@@ -111910,7 +112222,11 @@
    "wp": "banka",
    "hobby": "Resim yapmak",
    "queue": 105,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@herantetikteyim_",
@@ -111978,7 +112294,11 @@
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
    "queue": 109,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@iremartl",
@@ -112164,7 +112484,11 @@
    "wp": "banka",
    "hobby": "Yüzmek",
    "queue": 119,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@sercans3457",
@@ -112240,7 +112564,11 @@
    "wp": "banka",
    "hobby": "Bahçe işleri",
    "queue": 123,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@serpil_sude_42",
@@ -112278,7 +112606,11 @@
    "wp": "banka",
    "hobby": "Satranç",
    "queue": 125,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@asyggz",
@@ -112295,7 +112627,11 @@
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
    "queue": 126,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@simitayrann4",
@@ -112397,7 +112733,11 @@
    "wp": "banka",
    "hobby": "Kitap okumak",
    "queue": 132,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@hasa.nn006",
@@ -112414,7 +112754,11 @@
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
    "queue": 133,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@raveensky.y",
@@ -112520,7 +112864,11 @@
    "wp": "banka",
    "hobby": "Yemek yapmak",
    "queue": 139,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@emonasel",
@@ -112592,7 +112940,11 @@
    "wp": "banka",
    "hobby": "Bisiklete binmek",
    "queue": 143,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@halisokty",
@@ -112609,7 +112961,11 @@
    "wp": "banka",
    "hobby": "Gitar çalmak",
    "queue": 144,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@azrq.w222",
@@ -112626,7 +112982,11 @@
    "wp": "banka",
    "hobby": "Yemek yapmak",
    "queue": 145,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@spectratwiwaqi",
@@ -112858,7 +113218,11 @@
    "wp": "banka",
    "hobby": "Bahçe işleri",
    "queue": 157,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@snipetr",
@@ -112892,7 +113256,11 @@
    "wp": "banka",
    "hobby": "Bahçe işleri",
    "queue": 159,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@shadow._editss",
@@ -112926,7 +113294,11 @@
    "wp": "banka",
    "hobby": "Kuşları izlemek",
    "queue": 161,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@wraehsx",
@@ -113095,7 +113467,11 @@
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
    "queue": 170,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@sehervaktibirguzelevuruldum0_0",
@@ -113129,7 +113505,11 @@
    "wp": "banka",
    "hobby": "Yemek yapmak",
    "queue": 172,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@cumalihnts01",
@@ -113146,7 +113526,11 @@
    "wp": "banka",
    "hobby": "Kitap okumak",
    "queue": 173,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@gumuland",
@@ -113180,7 +113564,11 @@
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
    "queue": 175,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@elifyagmurarin",
@@ -113252,7 +113640,11 @@
    "wp": "banka",
    "hobby": "Yemek yapmak",
    "queue": 179,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@albassmis",
@@ -113324,7 +113716,11 @@
    "wp": "banka",
    "hobby": "Gitar çalmak",
    "queue": 183,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@ben_nyxora",
@@ -113396,7 +113792,11 @@
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
    "queue": 187,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@korzakko_zipzipzip",
@@ -113578,7 +113978,11 @@
    "wp": "banka",
    "hobby": "Kuşları izlemek",
    "queue": 197,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@vahap588",
@@ -113595,7 +113999,11 @@
    "wp": "banka",
    "hobby": "Balık tutmak",
    "queue": 198,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@ozayelif33",
@@ -113612,7 +114020,11 @@
    "wp": "banka",
    "hobby": "Resim yapmak",
    "queue": 199,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@azrabet.blbllr",
@@ -113650,7 +114062,11 @@
    "wp": "banka",
    "hobby": "Kitap okumak",
    "queue": 201,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@doqanakdin",
@@ -113667,7 +114083,11 @@
    "wp": "banka",
    "hobby": "Kitap okumak",
    "queue": 202,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@rr._.2787",
@@ -113756,7 +114176,11 @@
    "wp": "banka",
    "hobby": "Resim yapmak",
    "queue": 207,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@_.vexvii._",
@@ -113790,7 +114214,11 @@
    "wp": "banka",
    "hobby": "Bahçe işleri",
    "queue": 209,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@kumahane_reisi23",
@@ -113807,7 +114235,11 @@
    "wp": "banka",
    "hobby": "Yüzmek",
    "queue": 210,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@fcemalbilen",
@@ -113925,7 +114357,11 @@
    "wp": "banka",
    "hobby": "Bisiklete binmek",
    "queue": 216,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@begum.klci",
@@ -113942,7 +114378,11 @@
    "wp": "banka",
    "hobby": "Yüzmek",
    "queue": 217,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@hayatli_hayatsiz_elcin",
@@ -114018,7 +114458,11 @@
    "wp": "banka",
    "hobby": "Balık tutmak",
    "queue": 221,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@meymey_secrett",
@@ -114136,7 +114580,11 @@
    "wp": "banka",
    "hobby": "Bisiklete binmek",
    "queue": 227,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@ataantoni07",
@@ -114153,7 +114601,11 @@
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
    "queue": 228,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@ceyyyce_032",
@@ -114170,7 +114622,11 @@
    "wp": "banka",
    "hobby": "Resim yapmak",
    "queue": 229,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@rzgrkrks11",
@@ -114339,7 +114795,11 @@
    "wp": "banka",
    "hobby": "Gitar çalmak",
    "queue": 238,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@mirisss0143",
@@ -114356,7 +114816,11 @@
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
    "queue": 239,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@buth.eavenknowsimmiserablenow",
@@ -114390,7 +114854,11 @@
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
    "queue": 241,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@adaunverir",
@@ -114407,7 +114875,11 @@
    "wp": "banka",
    "hobby": "Balık tutmak",
    "queue": 242,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@fcb_bmw_1899",
@@ -114441,7 +114913,11 @@
    "wp": "banka",
    "hobby": "Yüzmek",
    "queue": 244,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@ilyastufek98",
@@ -114479,7 +114955,11 @@
    "wp": "banka",
    "hobby": "Satranç",
    "queue": 246,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@_ecrn_yx",
@@ -114496,7 +114976,11 @@
    "wp": "banka",
    "hobby": "Kitap okumak",
    "queue": 247,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@gulszss",
@@ -114513,7 +114997,11 @@
    "wp": "banka",
    "hobby": "Resim yapmak",
    "queue": 248,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@peceli.rahibe",
@@ -114530,7 +115018,11 @@
    "wp": "banka",
    "hobby": "Satranç",
    "queue": 249,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@utkceylan64",
@@ -114549,8 +115041,8 @@
    "queue": 250,
    "left": 0,
    "look": [
-    1,
-    1
+    0,
+    0
    ]
   },
   {
@@ -114669,7 +115161,11 @@
    "wp": "banka",
    "hobby": "Gitar çalmak",
    "queue": 256,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@bahaddinakk",
@@ -114686,7 +115182,11 @@
    "wp": "banka",
    "hobby": "Yüzmek",
    "queue": 257,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@polasskaa",
@@ -114762,7 +115262,11 @@
    "wp": "banka",
    "hobby": "Yüzmek",
    "queue": 261,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@medine_ua",
@@ -114779,7 +115283,11 @@
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
    "queue": 262,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@ezgiiylxx",
@@ -114906,7 +115414,11 @@
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
    "queue": 269,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@busee.kplnnn",
@@ -114982,7 +115494,11 @@
    "wp": "banka",
    "hobby": "Resim yapmak",
    "queue": 273,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@_dorukserbett",
@@ -115092,7 +115608,11 @@
    "wp": "banka",
    "hobby": "Bahçe işleri",
    "queue": 279,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@doktor_.1907",
@@ -115164,7 +115684,11 @@
    "wp": "banka",
    "hobby": "Bahçe işleri",
    "queue": 283,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@ranakocyigt",
@@ -115202,7 +115726,11 @@
    "wp": "banka",
    "hobby": "Kuşları izlemek",
    "queue": 285,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@nehirmis_198",
