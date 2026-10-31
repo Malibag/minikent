@@ -950,12 +950,12 @@
    "home": "Zeytin Sokağı No 1, Daire 2",
    "home_from": 1792735200,
    "job": [
-    "Bakım Teknisyeni",
-    "Miniakent Fabrikası 2 · Sanayi Bölgesi",
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
     "shop",
-    "fabrika_b"
+    "veteriner"
    ],
-   "wp": "fabrika_b",
+   "wp": "veteriner",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -1568,7 +1568,7 @@
    "home": "Zeytin Sokağı No 3, Daire 11",
    "home_from": 1792735200,
    "job": [
-    "Başhekim",
+    "Koordinatör Veteriner",
     "Miniakent Veteriner Kliniği",
     "shop",
     "veteriner"
@@ -9069,12 +9069,12 @@
    "home": "Lavanta Sokağı No 2, Daire 4",
    "home_from": 1792821600,
    "job": [
-    "Ürün Fotoğrafçısı",
-    "Miniakent E-Ticaret A.Ş. · Miniakent Plaza 2, Kat 8",
-    "office",
-    "plaza2"
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "eticaret",
+   "wp": "veteriner",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -13999,12 +13999,12 @@
    "home": "Kıyı Caddesi No 2, Daire 1",
    "home_from": 1792821600,
    "job": [
-    "İş Güvenliği Uzmanı",
-    "Miniakent Yapı Mühendislik A.Ş. · Miniakent Plaza 3 şantiyesi",
-    "area",
-    "site"
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "santiye",
+   "wp": "veteriner",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -21567,12 +21567,12 @@
    "home": "Yasemin Sokağı No 2, Daire 4",
    "home_from": 1792821600,
    "job": [
-    "Bahçıvan",
-    "Grand Miniakent Oteli",
-    "hotel",
-    ""
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "otel",
+   "wp": "veteriner",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0
@@ -21639,12 +21639,12 @@
    "home": "Yasemin Sokağı No 4, Daire 4",
    "home_from": 1792821600,
    "job": [
-    "Rezervasyon Görevlisi",
-    "Grand Miniakent Oteli",
-    "hotel",
-    ""
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "otel",
+   "wp": "veteriner",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0
@@ -30895,12 +30895,12 @@
    "home": "Yasemin Sokağı No 5, Daire 1",
    "home_from": 1792821600,
    "job": [
-    "Satın Alma Sorumlusu",
-    "Grand Miniakent Oteli",
-    "hotel",
-    ""
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "otel",
+   "wp": "veteriner",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0
@@ -33556,12 +33556,12 @@
    "home": "Lavanta Sokağı No 14, Daire 6",
    "home_from": 1792821600,
    "job": [
-    "Elektrik-Elektronik Mühendisi",
-    "Miniakent Enerji A.Ş. · Miniakent Plaza, Kat 9",
-    "office",
-    "plaza"
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "enerji",
+   "wp": "veteriner",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0
@@ -37004,12 +37004,12 @@
    "home": "Yasemin Sokağı No 3, Daire 2",
    "home_from": 1792821600,
    "job": [
-    "Veri Bilimci",
-    "Miniakent Ar-Ge Merkezi · Miniakent Plaza, Kat 12",
-    "office",
-    "plaza"
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "arge",
+   "wp": "veteriner",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0
@@ -40674,12 +40674,12 @@
    "home": "Doğu Banliyö B Blok, Daire 59",
    "home_from": 1792908000,
    "job": [
-    "Barmen",
-    "Grand Miniakent Oteli",
-    "hotel",
-    ""
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "otel",
+   "wp": "veteriner",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -42419,12 +42419,12 @@
    "home": "Doğu Banliyö C Blok, Daire 14",
    "home_from": 1792908000,
    "job": [
-    "Bakım Teknisyeni",
-    "Miniakent Fabrikası 2 · Sanayi Bölgesi",
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
     "shop",
-    "fabrika_b"
+    "veteriner"
    ],
-   "wp": "fabrika_b",
+   "wp": "veteriner",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
@@ -42440,12 +42440,12 @@
    "home": "Doğu Banliyö C Blok, Daire 15",
    "home_from": 1792908000,
    "job": [
-    "Çamaşırhane Görevlisi",
-    "Grand Miniakent Oteli",
-    "hotel",
-    ""
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "otel",
+   "wp": "veteriner",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -44900,12 +44900,12 @@
    "home": "Doğu Banliyö C Blok, Daire 132",
    "home_from": 1792908000,
    "job": [
-    "Kat Görevlisi",
-    "Grand Miniakent Oteli",
-    "hotel",
-    ""
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "otel",
+   "wp": "veteriner",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -47781,12 +47781,12 @@
    "home": "Doğu Banliyö D Blok, Daire 125",
    "home_from": 1792908000,
    "job": [
-    "Gümrük Memuru",
-    "Miniakent Limanı",
-    "area",
-    "liman"
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "liman",
+   "wp": "veteriner",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
@@ -53092,12 +53092,12 @@
    "home": "Doğu Banliyö A Blok, Daire 4",
    "home_from": 1792994400,
    "job": [
-    "Ürün Fotoğrafçısı",
-    "Miniakent E-Ticaret A.Ş. · Miniakent Plaza 2, Kat 8",
-    "office",
-    "plaza2"
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "eticaret",
+   "wp": "veteriner",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0
@@ -58429,12 +58429,12 @@
    "home": "Doğu Banliyö A Blok, Daire 98",
    "home_from": 1792994400,
    "job": [
-    "Veri Analisti",
-    "Miniakent Ticaret A.Ş. · Miniakent Plaza, Kat 10",
-    "office",
-    "plaza"
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "ticaret",
+   "wp": "veteriner",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -59588,12 +59588,12 @@
    "home": "Doğu Banliyö B Blok, Daire 7",
    "home_from": 1792994400,
    "job": [
-    "Doktor",
-    "Miniakent Devlet Hastanesi",
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
     "shop",
-    "hastane"
+    "veteriner"
    ],
-   "wp": "hastane",
+   "wp": "veteriner",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0
@@ -67247,12 +67247,12 @@
    "home": "Doğu Banliyö C Blok, Daire 16",
    "home_from": 1792994400,
    "job": [
-    "Finans Uzmanı",
-    "Miniakent Muhasebe · Miniakent Plaza, Kat 4",
-    "office",
-    "plaza"
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "muhasebe",
+   "wp": "veteriner",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -67365,12 +67365,12 @@
    "home": "Doğu Banliyö C Blok, Daire 18",
    "home_from": 1792994400,
    "job": [
-    "Proje Uzmanı",
-    "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
-    "office",
-    "plaza2"
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "muhendislik",
+   "wp": "veteriner",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
@@ -75348,12 +75348,12 @@
    "home": "Doğu Banliyö D Blok, Daire 5",
    "home_from": 1793080800,
    "job": [
-    "Grafik Tasarımcı",
-    "Miniakent Tasarım Stüdyosu · Miniakent Plaza, Kat 8",
-    "office",
-    "plaza"
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "tasarim",
+   "wp": "veteriner",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -76839,12 +76839,12 @@
    "home": "Doğu Banliyö D Blok, Daire 30",
    "home_from": 1793080800,
    "job": [
-    "Yazılım Test Uzmanı",
-    "Miniakent Alfa Yazılım A.Ş. · Miniakent Plaza, Kat 7",
-    "office",
-    "plaza"
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "yazilim",
+   "wp": "veteriner",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -77117,12 +77117,12 @@
    "home": "Doğu Banliyö D Blok, Daire 34",
    "home_from": 1793080800,
    "job": [
-    "Banka Memuru",
-    "Miniakent Bankası",
-    "office",
-    "banka"
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "banka",
+   "wp": "veteriner",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -78590,12 +78590,12 @@
    "home": "Doğu Banliyö D Blok, Daire 59",
    "home_from": 1793080800,
    "job": [
-    "Mimar",
-    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
-    "office",
-    "plaza"
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "mimarlik",
+   "wp": "veteriner",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0
@@ -79309,12 +79309,12 @@
    "home": "Doğu Banliyö D Blok, Daire 71",
    "home_from": 1793080800,
    "job": [
-    "Değerleme Uzmanı",
-    "Miniakent Gayrimenkul · Miniakent Plaza 2, Kat 9",
-    "office",
-    "plaza2"
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "gayrimenkul",
+   "wp": "veteriner",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -81833,12 +81833,12 @@
    "home": "Doğu Banliyö D Blok, Daire 113",
    "home_from": 1793080800,
    "job": [
-    "Diş Teknisyeni",
-    "Miniakent Sağlık Merkezi · Miniakent Plaza, Kat 2",
-    "office",
-    "plaza"
+    "Veteriner Yardımcısı",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "saglik",
+   "wp": "veteriner",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -89764,12 +89764,12 @@
    "home": "Doğu Banliyö F Blok, Daire 5",
    "home_from": 1793167200,
    "job": [
-    "Emlak Danışmanı",
-    "Miniakent Gayrimenkul · Miniakent Plaza 2, Kat 9",
-    "office",
-    "plaza2"
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "gayrimenkul",
+   "wp": "veteriner",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -90399,12 +90399,12 @@
    "home": "Doğu Banliyö F Blok, Daire 16",
    "home_from": 1793167200,
    "job": [
-    "Makine Mühendisi",
-    "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
-    "office",
-    "plaza2"
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "muhendislik",
+   "wp": "veteriner",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -90471,12 +90471,12 @@
    "home": "Doğu Banliyö F Blok, Daire 17",
    "home_from": 1793167200,
    "job": [
-    "Endüstri Mühendisi",
-    "Miniakent Enerji A.Ş. · Miniakent Plaza, Kat 9",
-    "office",
-    "plaza"
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "enerji",
+   "wp": "veteriner",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0
@@ -92587,12 +92587,12 @@
    "home": "Doğu Banliyö F Blok, Daire 43",
    "home_from": 1793253600,
    "job": [
-    "Tur Rehberi",
-    "Miniakent Turizm · Miniakent Plaza 2, Kat 7",
-    "office",
-    "plaza2"
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "turizm",
+   "wp": "veteriner",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0
@@ -92672,12 +92672,12 @@
    "home": "Doğu Banliyö F Blok, Daire 44",
    "home_from": 1793253600,
    "job": [
-    "Reklamcı",
-    "Miniakent Tasarım Stüdyosu · Miniakent Plaza, Kat 8",
-    "office",
-    "plaza"
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "tasarim",
+   "wp": "veteriner",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -93505,12 +93505,12 @@
    "home": "Doğu Banliyö F Blok, Daire 59",
    "home_from": 1793253600,
    "job": [
-    "Müşteri Temsilcisi",
-    "Miniakent Bankası",
-    "office",
-    "banka"
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "banka",
+   "wp": "veteriner",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -102729,12 +102729,12 @@
    "home": "Mimoza Sokağı No 15, Daire 4",
    "home_from": 1793340000,
    "job": [
-    "Çağrı Merkezi Görevlisi",
-    "Miniakent Bankası",
-    "office",
-    "banka"
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "banka",
+   "wp": "veteriner",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -106653,12 +106653,12 @@
    "home": "Yasemin Sokağı No 2, Daire 1",
    "home_from": 1793426400,
    "job": [
-    "İç Mimar",
-    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
-    "office",
-    "plaza"
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "mimarlik",
+   "wp": "veteriner",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
