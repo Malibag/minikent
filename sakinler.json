@@ -110234,8 +110234,8 @@
    "handle": "@bay_bl4ck",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 113",
+   "home_from": 1793451171,
    "job": [
     "Aşçı",
     "Miniakent Bankası",
@@ -110244,7 +110244,7 @@
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
-   "queue": 1,
+   "queue": 0,
    "left": 0,
    "look": [
     3,
@@ -110255,8 +110255,8 @@
    "handle": "@_astrxikra_",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 113",
+   "home_from": 1793451171,
    "job": [
     "Aşçı",
     "Miniakent Bankası",
@@ -110265,15 +110265,15 @@
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
-   "queue": 2,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@bsrrr_33",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 113",
+   "home_from": 1793451171,
    "job": [
     "Halkla İlişkiler Uzmanı",
     "Miniakent Bankası",
@@ -110282,7 +110282,7 @@
    ],
    "wp": "banka",
    "hobby": "Bahçe işleri",
-   "queue": 3,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -110293,8 +110293,8 @@
    "handle": "@ae._ysr",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 113",
+   "home_from": 1793451171,
    "job": [
     "Veznedar",
     "Miniakent Bankası",
@@ -110303,15 +110303,15 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 4,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@oqulen_nt",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 114",
+   "home_from": 1793451171,
    "job": [
     "Temizlik Görevlisi",
     "Miniakent Bankası",
@@ -110320,15 +110320,15 @@
    ],
    "wp": "banka",
    "hobby": "Bahçe işleri",
-   "queue": 5,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@ophanim_stark",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 114",
+   "home_from": 1793451171,
    "job": [
     "Kredi Uzmanı",
     "Miniakent Bankası",
@@ -110337,15 +110337,15 @@
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
-   "queue": 6,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@elifcplk5",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 114",
+   "home_from": 1793451171,
    "job": [
     "Bilişim Uzmanı",
     "Miniakent Bankası",
@@ -110354,7 +110354,7 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 7,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -110365,8 +110365,8 @@
    "handle": "@azraltns0",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 114",
+   "home_from": 1793451171,
    "job": [
     "Güvenlik Görevlisi",
     "Miniakent Bankası",
@@ -110375,7 +110375,7 @@
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
-   "queue": 8,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -110386,8 +110386,8 @@
    "handle": "@06ll_abdullah",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 115",
+   "home_from": 1793451171,
    "job": [
     "Satın Alma Sorumlusu",
     "Miniakent Bankası",
@@ -110396,7 +110396,7 @@
    ],
    "wp": "banka",
    "hobby": "Satranç",
-   "queue": 9,
+   "queue": 0,
    "left": 0,
    "look": [
     3,
@@ -110407,8 +110407,8 @@
    "handle": "@arigatokosaimasu._",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 115",
+   "home_from": 1793451171,
    "job": [
     "Temizlik Görevlisi",
     "Miniakent Bankası",
@@ -110417,15 +110417,15 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 10,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@turklshdellght",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 115",
+   "home_from": 1793451171,
    "job": [
     "Banka Memuru",
     "Miniakent Bankası",
@@ -110434,15 +110434,15 @@
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
-   "queue": 11,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@blessedbrunette0",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 115",
+   "home_from": 1793451171,
    "job": [
     "Pazarlama Uzmanı",
     "Miniakent Bankası",
@@ -110451,7 +110451,7 @@
    ],
    "wp": "banka",
    "hobby": "Bahçe işleri",
-   "queue": 12,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -110462,8 +110462,8 @@
    "handle": "@alis.a12117",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 116",
+   "home_from": 1793451171,
    "job": [
     "Çağrı Merkezi Görevlisi",
     "Miniakent Bankası",
@@ -110472,15 +110472,15 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 13,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@sincabhanim",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 116",
+   "home_from": 1793451171,
    "job": [
     "Muhasebeci",
     "Miniakent Bankası",
@@ -110489,7 +110489,7 @@
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
-   "queue": 14,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -110500,8 +110500,8 @@
    "handle": "@immerveeqq",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 116",
+   "home_from": 1793451171,
    "job": [
     "Kredi Uzmanı",
     "Miniakent Bankası",
@@ -110510,7 +110510,7 @@
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
-   "queue": 15,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -110521,8 +110521,8 @@
    "handle": "@esvcain",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 116",
+   "home_from": 1793451171,
    "job": [
     "Güvenlik Görevlisi",
     "Miniakent Bankası",
@@ -110531,15 +110531,15 @@
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
-   "queue": 16,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@buglemnaz_.atan",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 117",
+   "home_from": 1793451171,
    "job": [
     "Kredi Uzmanı",
     "Miniakent Bankası",
@@ -110548,7 +110548,7 @@
    ],
    "wp": "banka",
    "hobby": "Satranç",
-   "queue": 17,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -110559,8 +110559,8 @@
    "handle": "@cinarglbs38",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 117",
+   "home_from": 1793451171,
    "job": [
     "Satın Alma Sorumlusu",
     "Miniakent Bankası",
@@ -110569,7 +110569,7 @@
    ],
    "wp": "banka",
    "hobby": "Bahçe işleri",
-   "queue": 18,
+   "queue": 0,
    "left": 0,
    "look": [
     3,
@@ -110580,8 +110580,8 @@
    "handle": "@zkydp_da",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 117",
+   "home_from": 1793451171,
    "job": [
     "Güvenlik Görevlisi",
     "Miniakent Bankası",
@@ -110590,15 +110590,15 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 19,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@orcunozdeenn",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 117",
+   "home_from": 1793451171,
    "job": [
     "Muhasebeci",
     "Miniakent Bankası",
@@ -110607,7 +110607,7 @@
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
-   "queue": 20,
+   "queue": 0,
    "left": 0,
    "look": [
     4,
@@ -110618,8 +110618,8 @@
    "handle": "@thezehra123",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 118",
+   "home_from": 1793451171,
    "job": [
     "Temizlik Görevlisi",
     "Miniakent Bankası",
@@ -110628,7 +110628,7 @@
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
-   "queue": 21,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -110639,8 +110639,8 @@
    "handle": "@cynon3butyou",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 118",
+   "home_from": 1793451171,
    "job": [
     "Satın Alma Sorumlusu",
     "Miniakent Bankası",
@@ -110649,15 +110649,15 @@
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
-   "queue": 22,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@zeynepgulruo4",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 118",
+   "home_from": 1793451171,
    "job": [
     "Müşteri Temsilcisi",
     "Miniakent Bankası",
@@ -110666,7 +110666,7 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 23,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -110677,8 +110677,8 @@
    "handle": "@ido30637",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 118",
+   "home_from": 1793451171,
    "job": [
     "Banka Memuru",
     "Miniakent Bankası",
@@ -110687,15 +110687,15 @@
    ],
    "wp": "banka",
    "hobby": "Bahçe işleri",
-   "queue": 24,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@speed0217____",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 119",
+   "home_from": 1793451171,
    "job": [
     "Aşçı",
     "Miniakent Bankası",
@@ -110704,15 +110704,15 @@
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
-   "queue": 25,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@eko06060606",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 119",
+   "home_from": 1793451171,
    "job": [
     "Güvenlik Görevlisi",
     "Miniakent Bankası",
@@ -110721,15 +110721,15 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 26,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@gllaysss",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 119",
+   "home_from": 1793451171,
    "job": [
     "Reklamcı",
     "Miniakent Bankası",
@@ -110738,15 +110738,15 @@
    ],
    "wp": "banka",
    "hobby": "Kitap okumak",
-   "queue": 27,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@winston_big_niger_emuristan",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 119",
+   "home_from": 1793451171,
    "job": [
     "Halkla İlişkiler Uzmanı",
     "Miniakent Bankası",
@@ -110755,15 +110755,15 @@
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
-   "queue": 28,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@prwof.pk",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 120",
+   "home_from": 1793451171,
    "job": [
     "Pazarlama Uzmanı",
     "Miniakent Bankası",
@@ -110772,15 +110772,15 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 29,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@eloosss7_",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 120",
+   "home_from": 1793451171,
    "job": [
     "Müşteri Temsilcisi",
     "Miniakent Bankası",
@@ -110789,15 +110789,15 @@
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
-   "queue": 30,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@gulnaz_glsy",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 120",
+   "home_from": 1793451171,
    "job": [
     "Aşçı",
     "Miniakent Bankası",
@@ -110806,7 +110806,7 @@
    ],
    "wp": "banka",
    "hobby": "Kitap okumak",
-   "queue": 31,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -110817,8 +110817,8 @@
    "handle": "@inmyheartliveu4ever",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 120",
+   "home_from": 1793451171,
    "job": [
     "Pazarlama Uzmanı",
     "Miniakent Bankası",
@@ -110827,15 +110827,15 @@
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
-   "queue": 32,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@melkskrn",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 121",
+   "home_from": 1793451171,
    "job": [
     "Müşteri Temsilcisi",
     "Miniakent Bankası",
@@ -110844,7 +110844,7 @@
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
-   "queue": 33,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -110855,8 +110855,8 @@
    "handle": "@littlefire_bunny2",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 121",
+   "home_from": 1793451171,
    "job": [
     "Banka Memuru",
     "Miniakent Bankası",
@@ -110865,15 +110865,15 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 34,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@asyussg",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 121",
+   "home_from": 1793451171,
    "job": [
     "Aşçı",
     "Miniakent Bankası",
@@ -110882,15 +110882,15 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 35,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@azrasertq",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 121",
+   "home_from": 1793451171,
    "job": [
     "Çağrı Merkezi Görevlisi",
     "Miniakent Bankası",
@@ -110899,7 +110899,7 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 36,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -110910,8 +110910,8 @@
    "handle": "@osman445566778899",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 122",
+   "home_from": 1793451171,
    "job": [
     "Güvenlik Görevlisi",
     "Miniakent Bankası",
@@ -110920,7 +110920,7 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 37,
+   "queue": 0,
    "left": 0,
    "look": [
     4,
@@ -110931,8 +110931,8 @@
    "handle": "@goktug_gc",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 122",
+   "home_from": 1793451171,
    "job": [
     "Pazarlama Uzmanı",
     "Miniakent Bankası",
@@ -110941,7 +110941,7 @@
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
-   "queue": 38,
+   "queue": 0,
    "left": 0,
    "look": [
     4,
@@ -110952,8 +110952,8 @@
    "handle": "@stik.gem",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 122",
+   "home_from": 1793451171,
    "job": [
     "Satın Alma Sorumlusu",
     "Miniakent Bankası",
@@ -110962,15 +110962,15 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 39,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@hannivie1",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 122",
+   "home_from": 1793451171,
    "job": [
     "Banka Memuru",
     "Miniakent Bankası",
@@ -110979,15 +110979,15 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 40,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@love_monsterenergyys",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 123",
+   "home_from": 1793451171,
    "job": [
     "Temizlik Görevlisi",
     "Miniakent Bankası",
@@ -110996,15 +110996,15 @@
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
-   "queue": 41,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@etl1krep",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 123",
+   "home_from": 1793451171,
    "job": [
     "Muhasebeci",
     "Miniakent Bankası",
@@ -111013,15 +111013,15 @@
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
-   "queue": 42,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@mrmertaytb",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 123",
+   "home_from": 1793451171,
    "job": [
     "Halkla İlişkiler Uzmanı",
     "Miniakent Bankası",
@@ -111030,7 +111030,7 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 43,
+   "queue": 0,
    "left": 0,
    "look": [
     3,
@@ -111041,8 +111041,8 @@
    "handle": "@iborriw",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 123",
+   "home_from": 1793451171,
    "job": [
     "Reklamcı",
     "Miniakent Bankası",
@@ -111051,15 +111051,15 @@
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
-   "queue": 44,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@eren_yilmazz67",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 124",
+   "home_from": 1793451171,
    "job": [
     "Temizlik Görevlisi",
     "Miniakent Bankası",
@@ -111068,7 +111068,7 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 45,
+   "queue": 0,
    "left": 0,
    "look": [
     4,
@@ -111079,8 +111079,8 @@
    "handle": "@omerdgdvrn17",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 124",
+   "home_from": 1793451171,
    "job": [
     "Temizlik Görevlisi",
     "Miniakent Bankası",
@@ -111089,7 +111089,7 @@
    ],
    "wp": "banka",
    "hobby": "Kitap okumak",
-   "queue": 46,
+   "queue": 0,
    "left": 0,
    "look": [
     0,
@@ -111100,8 +111100,8 @@
    "handle": "@lazerus64",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 124",
+   "home_from": 1793451171,
    "job": [
     "Veznedar",
     "Miniakent Bankası",
@@ -111110,15 +111110,15 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 47,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@rumeysaozogul_",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 124",
+   "home_from": 1793451171,
    "job": [
     "Banka Memuru",
     "Miniakent Bankası",
@@ -111127,7 +111127,7 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 48,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -111138,8 +111138,8 @@
    "handle": "@_.nurgul.sire._",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 125",
+   "home_from": 1793451171,
    "job": [
     "Veznedar",
     "Miniakent Bankası",
@@ -111148,7 +111148,7 @@
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
-   "queue": 49,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -111159,8 +111159,8 @@
    "handle": "@xoxoniss4",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 125",
+   "home_from": 1793451171,
    "job": [
     "Bilişim Uzmanı",
     "Miniakent Bankası",
@@ -111169,15 +111169,15 @@
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
-   "queue": 50,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@suyunboncugu",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 125",
+   "home_from": 1793451171,
    "job": [
     "Pazarlama Uzmanı",
     "Miniakent Bankası",
@@ -111186,15 +111186,15 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 51,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@x_m1tsk",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 125",
+   "home_from": 1793451171,
    "job": [
     "Güvenlik Görevlisi",
     "Miniakent Bankası",
@@ -111203,15 +111203,15 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 52,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@ecoslyw",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 126",
+   "home_from": 1793451171,
    "job": [
     "Temizlik Görevlisi",
     "Miniakent Bankası",
@@ -111220,15 +111220,15 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 53,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@adalinka11",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 126",
+   "home_from": 1793451171,
    "job": [
     "Müşteri Temsilcisi",
     "Miniakent Bankası",
@@ -111237,7 +111237,7 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 54,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -111248,8 +111248,8 @@
    "handle": "@natt3seii",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 126",
+   "home_from": 1793451171,
    "job": [
     "Güvenlik Görevlisi",
     "Miniakent Bankası",
@@ -111258,15 +111258,15 @@
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
-   "queue": 55,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@ed3my",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 126",
+   "home_from": 1793451171,
    "job": [
     "Veznedar",
     "Miniakent Bankası",
@@ -111275,15 +111275,15 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 56,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@zojelt1",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 127",
+   "home_from": 1793451171,
    "job": [
     "Güvenlik Görevlisi",
     "Miniakent Bankası",
@@ -111292,15 +111292,15 @@
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
-   "queue": 57,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@ice_white_chocolete_mocha",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 127",
+   "home_from": 1793451171,
    "job": [
     "Banka Memuru",
     "Miniakent Bankası",
@@ -111309,15 +111309,15 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 58,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@dorukmertucar",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 127",
+   "home_from": 1793451171,
    "job": [
     "Satın Alma Sorumlusu",
     "Miniakent Bankası",
@@ -111326,7 +111326,7 @@
    ],
    "wp": "banka",
    "hobby": "Kitap okumak",
-   "queue": 59,
+   "queue": 0,
    "left": 0,
    "look": [
     0,
@@ -111337,8 +111337,8 @@
    "handle": "@duru_eyyem2026",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 127",
+   "home_from": 1793451171,
    "job": [
     "Bilişim Uzmanı",
     "Miniakent Bankası",
@@ -111347,7 +111347,7 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 60,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -111358,8 +111358,8 @@
    "handle": "@rumeysacagill",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 128",
+   "home_from": 1793451171,
    "job": [
     "Müşteri Temsilcisi",
     "Miniakent Bankası",
@@ -111368,7 +111368,7 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 61,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -111379,8 +111379,8 @@
    "handle": "@cinar_ygtt",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 128",
+   "home_from": 1793451171,
    "job": [
     "Halkla İlişkiler Uzmanı",
     "Miniakent Bankası",
@@ -111389,7 +111389,7 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 62,
+   "queue": 0,
    "left": 0,
    "look": [
     3,
@@ -111400,8 +111400,8 @@
    "handle": "@devrim_ege12",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 128",
+   "home_from": 1793451171,
    "job": [
     "Kredi Uzmanı",
     "Miniakent Bankası",
@@ -111410,7 +111410,7 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 63,
+   "queue": 0,
    "left": 0,
    "look": [
     4,
@@ -111421,8 +111421,8 @@
    "handle": "@sehrubanyilmaz",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 128",
+   "home_from": 1793451171,
    "job": [
     "Muhasebeci",
     "Miniakent Bankası",
@@ -111431,7 +111431,7 @@
    ],
    "wp": "banka",
    "hobby": "Satranç",
-   "queue": 64,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -111442,8 +111442,8 @@
    "handle": "@kumsisinizzxx",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 129",
+   "home_from": 1793451171,
    "job": [
     "Çağrı Merkezi Görevlisi",
     "Miniakent Bankası",
@@ -111452,15 +111452,15 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 65,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@donenkarinca",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 129",
+   "home_from": 1793451171,
    "job": [
     "Bilişim Uzmanı",
     "Miniakent Bankası",
@@ -111469,15 +111469,15 @@
    ],
    "wp": "banka",
    "hobby": "Satranç",
-   "queue": 66,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@gizomelli",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 129",
+   "home_from": 1793451171,
    "job": [
     "Halkla İlişkiler Uzmanı",
     "Miniakent Bankası",
@@ -111486,7 +111486,7 @@
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
-   "queue": 67,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -111497,8 +111497,8 @@
    "handle": "@hakanefeturmus",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 129",
+   "home_from": 1793451171,
    "job": [
     "Muhasebeci",
     "Miniakent Bankası",
@@ -111507,7 +111507,7 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 68,
+   "queue": 0,
    "left": 0,
    "look": [
     3,
@@ -111518,8 +111518,8 @@
    "handle": "@bozkurtspor2024.lol",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 130",
+   "home_from": 1793451171,
    "job": [
     "Veznedar",
     "Miniakent Bankası",
@@ -111528,15 +111528,15 @@
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
-   "queue": 69,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@nurrww334",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 130",
+   "home_from": 1793451171,
    "job": [
     "Aşçı",
     "Miniakent Bankası",
@@ -111545,7 +111545,7 @@
    ],
    "wp": "banka",
    "hobby": "Satranç",
-   "queue": 70,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -111556,8 +111556,8 @@
    "handle": "@semihkaplan414141",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 130",
+   "home_from": 1793451171,
    "job": [
     "Pazarlama Uzmanı",
     "Miniakent Bankası",
@@ -111566,7 +111566,7 @@
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
-   "queue": 71,
+   "queue": 0,
    "left": 0,
    "look": [
     4,
@@ -111577,8 +111577,8 @@
    "handle": "@besiktaslichillman17",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 130",
+   "home_from": 1793451171,
    "job": [
     "Temizlik Görevlisi",
     "Miniakent Bankası",
@@ -111587,7 +111587,7 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 72,
+   "queue": 0,
    "left": 0,
    "look": [
     0,
@@ -111598,8 +111598,8 @@
    "handle": "@silaa02412",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 131",
+   "home_from": 1793451171,
    "job": [
     "Bilişim Uzmanı",
     "Miniakent Bankası",
@@ -111608,7 +111608,7 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 73,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -111619,8 +111619,8 @@
    "handle": "@alyadao_",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 131",
+   "home_from": 1793451171,
    "job": [
     "Temizlik Görevlisi",
     "Miniakent Bankası",
@@ -111629,7 +111629,7 @@
    ],
    "wp": "banka",
    "hobby": "Satranç",
-   "queue": 74,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -111640,8 +111640,8 @@
    "handle": "@enosemoc",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 131",
+   "home_from": 1793451171,
    "job": [
     "Satın Alma Sorumlusu",
     "Miniakent Bankası",
@@ -111650,15 +111650,15 @@
    ],
    "wp": "banka",
    "hobby": "Bahçe işleri",
-   "queue": 75,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@weliskartal",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 131",
+   "home_from": 1793451171,
    "job": [
     "Veznedar",
     "Miniakent Bankası",
@@ -111667,7 +111667,7 @@
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
-   "queue": 76,
+   "queue": 0,
    "left": 0,
    "look": [
     0,
@@ -111678,8 +111678,8 @@
    "handle": "@omerasaf3128",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 132",
+   "home_from": 1793451171,
    "job": [
     "Veznedar",
     "Miniakent Bankası",
@@ -111688,7 +111688,7 @@
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
-   "queue": 77,
+   "queue": 0,
    "left": 0,
    "look": [
     4,
@@ -111699,8 +111699,8 @@
    "handle": "@canarslan.efe",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 132",
+   "home_from": 1793451171,
    "job": [
     "Muhasebeci",
     "Miniakent Bankası",
@@ -111709,7 +111709,7 @@
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
-   "queue": 78,
+   "queue": 0,
    "left": 0,
    "look": [
     3,
@@ -111720,8 +111720,8 @@
    "handle": "@imguttugo.owbatuw",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 132",
+   "home_from": 1793451171,
    "job": [
     "Çağrı Merkezi Görevlisi",
     "Miniakent Bankası",
@@ -111730,15 +111730,15 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 79,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@yusuf_cnr0024",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 132",
+   "home_from": 1793451171,
    "job": [
     "Reklamcı",
     "Miniakent Bankası",
@@ -111747,7 +111747,7 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 80,
+   "queue": 0,
    "left": 0,
    "look": [
     3,
@@ -111758,8 +111758,8 @@
    "handle": "@strawberrymoonly",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 133",
+   "home_from": 1793451171,
    "job": [
     "Reklamcı",
     "Miniakent Bankası",
@@ -111768,15 +111768,15 @@
    ],
    "wp": "banka",
    "hobby": "Kitap okumak",
-   "queue": 81,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@bekir84851",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 133",
+   "home_from": 1793451171,
    "job": [
     "Halkla İlişkiler Uzmanı",
     "Miniakent Bankası",
@@ -111785,7 +111785,7 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 82,
+   "queue": 0,
    "left": 0,
    "look": [
     4,
@@ -111796,8 +111796,8 @@
    "handle": "@bartubayram_",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 133",
+   "home_from": 1793451171,
    "job": [
     "Satın Alma Sorumlusu",
     "Miniakent Bankası",
@@ -111806,7 +111806,7 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 83,
+   "queue": 0,
    "left": 0,
    "look": [
     0,
@@ -111817,8 +111817,8 @@
    "handle": "@mihrmah2608",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 133",
+   "home_from": 1793451171,
    "job": [
     "Aşçı",
     "Miniakent Bankası",
@@ -111827,7 +111827,7 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 84,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -111838,8 +111838,8 @@
    "handle": "@demirozcandemiradam",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 134",
+   "home_from": 1793451171,
    "job": [
     "Temizlik Görevlisi",
     "Miniakent Bankası",
@@ -111848,7 +111848,7 @@
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
-   "queue": 85,
+   "queue": 0,
    "left": 0,
    "look": [
     3,
@@ -111859,8 +111859,8 @@
    "handle": "@sariiiimnsss",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 134",
+   "home_from": 1793451171,
    "job": [
     "Bilişim Uzmanı",
     "Miniakent Bankası",
@@ -111869,15 +111869,15 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 86,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@pumpkinsungho",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 134",
+   "home_from": 1793451171,
    "job": [
     "Bilişim Uzmanı",
     "Miniakent Bankası",
@@ -111886,15 +111886,15 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 87,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@eliff_miiii",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 134",
+   "home_from": 1793451171,
    "job": [
     "Banka Memuru",
     "Miniakent Bankası",
@@ -111903,7 +111903,7 @@
    ],
    "wp": "banka",
    "hobby": "Satranç",
-   "queue": 88,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -111914,8 +111914,8 @@
    "handle": "@tahmaz.2854",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 135",
+   "home_from": 1793451171,
    "job": [
     "Hemşire",
     "Miniakent Devlet Hastanesi",
@@ -111924,7 +111924,7 @@
    ],
    "wp": "hastane",
    "hobby": "Bisiklete binmek",
-   "queue": 89,
+   "queue": 0,
    "left": 0,
    "look": [
     3,
@@ -111935,8 +111935,8 @@
    "handle": "@i.mceyylii",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 135",
+   "home_from": 1793451171,
    "job": [
     "Kredi Uzmanı",
     "Miniakent Bankası",
@@ -111945,7 +111945,7 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 90,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -111956,8 +111956,8 @@
    "handle": "@0pm_nexa",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 135",
+   "home_from": 1793451171,
    "job": [
     "Gişe Görevlisi",
     "Miniakent Bankası",
@@ -111966,15 +111966,15 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 91,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@miyauwzzn",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 135",
+   "home_from": 1793451171,
    "job": [
     "Reklamcı",
     "Miniakent Bankası",
@@ -111983,15 +111983,15 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 92,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@emir44118",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 136",
+   "home_from": 1793451171,
    "job": [
     "Müşteri Temsilcisi",
     "Miniakent Bankası",
@@ -112000,7 +112000,7 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 93,
+   "queue": 0,
    "left": 0,
    "look": [
     3,
@@ -112011,8 +112011,8 @@
    "handle": "@kask_0404",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 136",
+   "home_from": 1793451171,
    "job": [
     "Gişe Görevlisi",
     "Miniakent Bankası",
@@ -112021,15 +112021,15 @@
    ],
    "wp": "banka",
    "hobby": "Satranç",
-   "queue": 94,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@deniz__kaya82",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 136",
+   "home_from": 1793451171,
    "job": [
     "Bilişim Uzmanı",
     "Miniakent Bankası",
@@ -112038,15 +112038,15 @@
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
-   "queue": 95,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@lliliess_ashtine",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 136",
+   "home_from": 1793451171,
    "job": [
     "Pazarlama Uzmanı",
     "Miniakent Bankası",
@@ -112055,15 +112055,15 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 96,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@nisaemektar",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 137",
+   "home_from": 1793451171,
    "job": [
     "Aşçı",
     "Miniakent Bankası",
@@ -112072,7 +112072,7 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 97,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -112083,8 +112083,8 @@
    "handle": "@_monamoto_sama",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 137",
+   "home_from": 1793451171,
    "job": [
     "Muhasebeci",
     "Miniakent Bankası",
@@ -112093,15 +112093,15 @@
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
-   "queue": 98,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@eknnsshnlr",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 137",
+   "home_from": 1793451171,
    "job": [
     "Halkla İlişkiler Uzmanı",
     "Miniakent Bankası",
@@ -112110,15 +112110,15 @@
    ],
    "wp": "banka",
    "hobby": "Satranç",
-   "queue": 99,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@i_am_iroman_batii",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 137",
+   "home_from": 1793451171,
    "job": [
     "Temizlik Görevlisi",
     "Miniakent Bankası",
@@ -112127,15 +112127,15 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 100,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@beren.priww02",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 138",
+   "home_from": 1793451171,
    "job": [
     "Gişe Görevlisi",
     "Miniakent Bankası",
@@ -112144,7 +112144,7 @@
    ],
    "wp": "banka",
    "hobby": "Bahçe işleri",
-   "queue": 101,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -112155,8 +112155,8 @@
    "handle": "@sadeceben._.w",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 138",
+   "home_from": 1793451171,
    "job": [
     "Bilişim Uzmanı",
     "Miniakent Bankası",
@@ -112165,15 +112165,15 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 102,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@bastiginyrleritoprakdiyerkgcme",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 138",
+   "home_from": 1793451171,
    "job": [
     "Banka Memuru",
     "Miniakent Bankası",
@@ -112182,15 +112182,15 @@
    ],
    "wp": "banka",
    "hobby": "Kitap okumak",
-   "queue": 103,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@nefertiti_hawa335",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 138",
+   "home_from": 1793451171,
    "job": [
     "Bilişim Uzmanı",
     "Miniakent Bankası",
@@ -112199,7 +112199,7 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 104,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -112210,8 +112210,8 @@
    "handle": "@itsmylena11",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 139",
+   "home_from": 1793451171,
    "job": [
     "Muhasebeci",
     "Miniakent Bankası",
@@ -112220,7 +112220,7 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 105,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -112231,8 +112231,8 @@
    "handle": "@herantetikteyim_",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 139",
+   "home_from": 1793451171,
    "job": [
     "Gişe Görevlisi",
     "Miniakent Bankası",
@@ -112241,15 +112241,15 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 106,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@jinzhao_2",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 139",
+   "home_from": 1793451171,
    "job": [
     "Veznedar",
     "Miniakent Bankası",
@@ -112258,15 +112258,15 @@
    ],
    "wp": "banka",
    "hobby": "Satranç",
-   "queue": 107,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@seunqmongss",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 139",
+   "home_from": 1793451171,
    "job": [
     "Pazarlama Uzmanı",
     "Miniakent Bankası",
@@ -112275,15 +112275,15 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 108,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@fearyesikenhongazra",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 140",
+   "home_from": 1793451171,
    "job": [
     "Gişe Görevlisi",
     "Miniakent Bankası",
@@ -112292,7 +112292,7 @@
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
-   "queue": 109,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -112303,8 +112303,8 @@
    "handle": "@iremartl",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 140",
+   "home_from": 1793451171,
    "job": [
     "Muhasebeci",
     "Miniakent Bankası",
@@ -112313,7 +112313,7 @@
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
-   "queue": 110,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -112324,8 +112324,8 @@
    "handle": "@enverbeyefendi",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 140",
+   "home_from": 1793451171,
    "job": [
     "Kredi Uzmanı",
     "Miniakent Bankası",
@@ -112334,7 +112334,7 @@
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
-   "queue": 111,
+   "queue": 0,
    "left": 0,
    "look": [
     3,
@@ -112345,8 +112345,8 @@
    "handle": "@arjin9937",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 140",
+   "home_from": 1793451171,
    "job": [
     "Satın Alma Sorumlusu",
     "Miniakent Bankası",
@@ -112355,15 +112355,15 @@
    ],
    "wp": "banka",
    "hobby": "Kitap okumak",
-   "queue": 112,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@erenbalcc",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 141",
+   "home_from": 1793451171,
    "job": [
     "Satın Alma Sorumlusu",
     "Miniakent Bankası",
@@ -112372,7 +112372,7 @@
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
-   "queue": 113,
+   "queue": 0,
    "left": 0,
    "look": [
     3,
@@ -112383,8 +112383,8 @@
    "handle": "@canv0r",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 141",
+   "home_from": 1793451171,
    "job": [
     "Müşteri Temsilcisi",
     "Miniakent Bankası",
@@ -112393,15 +112393,15 @@
    ],
    "wp": "banka",
    "hobby": "Kitap okumak",
-   "queue": 114,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@rebzyyxmylife",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 141",
+   "home_from": 1793451171,
    "job": [
     "Halkla İlişkiler Uzmanı",
     "Miniakent Bankası",
@@ -112410,15 +112410,15 @@
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
-   "queue": 115,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@devilsbackseat",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 141",
+   "home_from": 1793451171,
    "job": [
     "Satın Alma Sorumlusu",
     "Miniakent Bankası",
@@ -112427,15 +112427,15 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 116,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@shapeeeeeshapeofmyheart",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 142",
+   "home_from": 1793451171,
    "job": [
     "Halkla İlişkiler Uzmanı",
     "Miniakent Bankası",
@@ -112444,15 +112444,15 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 117,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@bilalikon23",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 142",
+   "home_from": 1793451171,
    "job": [
     "Bilişim Uzmanı",
     "Miniakent Bankası",
@@ -112461,7 +112461,7 @@
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
-   "queue": 118,
+   "queue": 0,
    "left": 0,
    "look": [
     3,
@@ -112472,8 +112472,8 @@
    "handle": "@rosie_poisee",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 142",
+   "home_from": 1793451171,
    "job": [
     "Müşteri Temsilcisi",
     "Miniakent Bankası",
@@ -112482,7 +112482,7 @@
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
-   "queue": 119,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -112493,8 +112493,8 @@
    "handle": "@sercans3457",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 142",
+   "home_from": 1793451171,
    "job": [
     "Satın Alma Sorumlusu",
     "Miniakent Bankası",
@@ -112503,7 +112503,7 @@
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
-   "queue": 120,
+   "queue": 0,
    "left": 0,
    "look": [
     0,
@@ -112514,8 +112514,8 @@
    "handle": "@taecskook",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 143",
+   "home_from": 1793451171,
    "job": [
     "Reklamcı",
     "Miniakent Bankası",
@@ -112524,15 +112524,15 @@
    ],
    "wp": "banka",
    "hobby": "Satranç",
-   "queue": 121,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@feride_klc2806",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 143",
+   "home_from": 1793451171,
    "job": [
     "Reklamcı",
     "Miniakent Bankası",
@@ -112541,7 +112541,7 @@
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
-   "queue": 122,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -112552,8 +112552,8 @@
    "handle": "@3brars.0",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 143",
+   "home_from": 1793451171,
    "job": [
     "Güvenlik Görevlisi",
     "Miniakent Bankası",
@@ -112562,7 +112562,7 @@
    ],
    "wp": "banka",
    "hobby": "Bahçe işleri",
-   "queue": 123,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -112573,8 +112573,8 @@
    "handle": "@serpil_sude_42",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 143",
+   "home_from": 1793451171,
    "job": [
     "Temizlik Görevlisi",
     "Miniakent Bankası",
@@ -112583,7 +112583,7 @@
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
-   "queue": 124,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -112594,8 +112594,8 @@
    "handle": "@yasya_s221",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 144",
+   "home_from": 1793451171,
    "job": [
     "Veznedar",
     "Miniakent Bankası",
@@ -112604,7 +112604,7 @@
    ],
    "wp": "banka",
    "hobby": "Satranç",
-   "queue": 125,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -112615,8 +112615,8 @@
    "handle": "@asyggz",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 144",
+   "home_from": 1793451171,
    "job": [
     "Temizlik Görevlisi",
     "Miniakent Bankası",
@@ -112625,7 +112625,7 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 126,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -112636,8 +112636,8 @@
    "handle": "@simitayrann4",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 144",
+   "home_from": 1793451171,
    "job": [
     "Güvenlik Görevlisi",
     "Miniakent Bankası",
@@ -112646,15 +112646,15 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 127,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@sugarhillhdott",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö A Blok, Daire 144",
+   "home_from": 1793451171,
    "job": [
     "Halkla İlişkiler Uzmanı",
     "Miniakent Bankası",
@@ -112663,15 +112663,15 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 128,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@spike_bs3",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 129",
+   "home_from": 1793451171,
    "job": [
     "Gişe Görevlisi",
     "Miniakent Bankası",
@@ -112680,15 +112680,15 @@
    ],
    "wp": "banka",
    "hobby": "Kitap okumak",
-   "queue": 129,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@deniiztn_",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 129",
+   "home_from": 1793451171,
    "job": [
     "Reklamcı",
     "Miniakent Bankası",
@@ -112697,15 +112697,15 @@
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
-   "queue": 130,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@f2th2",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 129",
+   "home_from": 1793451171,
    "job": [
     "Aşçı",
     "Miniakent Bankası",
@@ -112714,15 +112714,15 @@
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
-   "queue": 131,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@drnarda0",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 129",
+   "home_from": 1793451171,
    "job": [
     "Halkla İlişkiler Uzmanı",
     "Miniakent Bankası",
@@ -112731,7 +112731,7 @@
    ],
    "wp": "banka",
    "hobby": "Kitap okumak",
-   "queue": 132,
+   "queue": 0,
    "left": 0,
    "look": [
     3,
@@ -112742,8 +112742,8 @@
    "handle": "@hasa.nn006",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 130",
+   "home_from": 1793451171,
    "job": [
     "Banka Memuru",
     "Miniakent Bankası",
@@ -112752,7 +112752,7 @@
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
-   "queue": 133,
+   "queue": 0,
    "left": 0,
    "look": [
     4,
@@ -112763,8 +112763,8 @@
    "handle": "@raveensky.y",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 130",
+   "home_from": 1793451171,
    "job": [
     "Müşteri Temsilcisi",
     "Miniakent Bankası",
@@ -112773,15 +112773,15 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 134,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@kazb_ekx00",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 130",
+   "home_from": 1793451171,
    "job": [
     "Banka Memuru",
     "Miniakent Bankası",
@@ -112790,15 +112790,15 @@
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
-   "queue": 135,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@cekmekoymilletvekili",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 130",
+   "home_from": 1793451171,
    "job": [
     "Pazarlama Uzmanı",
     "Miniakent Bankası",
@@ -112807,15 +112807,15 @@
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
-   "queue": 136,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@saitt.691",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 131",
+   "home_from": 1793451171,
    "job": [
     "Muhasebeci",
     "Miniakent Bankası",
@@ -112824,7 +112824,7 @@
    ],
    "wp": "banka",
    "hobby": "Bahçe işleri",
-   "queue": 137,
+   "queue": 0,
    "left": 0,
    "look": [
     4,
@@ -112835,8 +112835,8 @@
    "handle": "@yazlyyyewa07",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 131",
+   "home_from": 1793451171,
    "job": [
     "Çağrı Merkezi Görevlisi",
     "Miniakent Bankası",
@@ -112845,15 +112845,15 @@
    ],
    "wp": "banka",
    "hobby": "Bahçe işleri",
-   "queue": 138,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@aybuk_ylmz",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 131",
+   "home_from": 1793451171,
    "job": [
     "Veznedar",
     "Miniakent Bankası",
@@ -112862,7 +112862,7 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 139,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -112873,8 +112873,8 @@
    "handle": "@emonasel",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 131",
+   "home_from": 1793451171,
    "job": [
     "Müşteri Temsilcisi",
     "Miniakent Bankası",
@@ -112883,15 +112883,15 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 140,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@hellheimq",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 132",
+   "home_from": 1793451171,
    "job": [
     "Aşçı",
     "Miniakent Bankası",
@@ -112900,15 +112900,15 @@
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
-   "queue": 141,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@dustininbiriciksevgilisi",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 132",
+   "home_from": 1793451171,
    "job": [
     "Kredi Uzmanı",
     "Miniakent Bankası",
@@ -112917,7 +112917,7 @@
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
-   "queue": 142,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -112928,8 +112928,8 @@
    "handle": "@deni_yigt",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 132",
+   "home_from": 1793451171,
    "job": [
     "Çağrı Merkezi Görevlisi",
     "Miniakent Bankası",
@@ -112938,7 +112938,7 @@
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
-   "queue": 143,
+   "queue": 0,
    "left": 0,
    "look": [
     0,
@@ -112949,8 +112949,8 @@
    "handle": "@halisokty",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 132",
+   "home_from": 1793451171,
    "job": [
     "Gişe Görevlisi",
     "Miniakent Bankası",
@@ -112959,7 +112959,7 @@
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
-   "queue": 144,
+   "queue": 0,
    "left": 0,
    "look": [
     4,
@@ -112970,8 +112970,8 @@
    "handle": "@azrq.w222",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 133",
+   "home_from": 1793451171,
    "job": [
     "Muhasebeci",
     "Miniakent Bankası",
@@ -112980,7 +112980,7 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 145,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -112991,8 +112991,8 @@
    "handle": "@spectratwiwaqi",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 133",
+   "home_from": 1793451171,
    "job": [
     "Satın Alma Sorumlusu",
     "Miniakent Bankası",
@@ -113001,15 +113001,15 @@
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
-   "queue": 146,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@sare.iouslyy",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 133",
+   "home_from": 1793451171,
    "job": [
     "Çağrı Merkezi Görevlisi",
     "Miniakent Bankası",
@@ -113018,7 +113018,7 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 147,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -113029,8 +113029,8 @@
    "handle": "@arif_dumanli_123",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 133",
+   "home_from": 1793451171,
    "job": [
     "Veznedar",
     "Miniakent Bankası",
@@ -113039,7 +113039,7 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 148,
+   "queue": 0,
    "left": 0,
    "look": [
     0,
@@ -113050,8 +113050,8 @@
    "handle": "@herayiyiyenadaaaooo",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 134",
+   "home_from": 1793451171,
    "job": [
     "Halkla İlişkiler Uzmanı",
     "Miniakent Bankası",
@@ -113060,15 +113060,15 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 149,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@kul_lan1c",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 134",
+   "home_from": 1793451171,
    "job": [
     "Kredi Uzmanı",
     "Miniakent Bankası",
@@ -113077,15 +113077,15 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 150,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@defnehira2026",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 134",
+   "home_from": 1793451171,
    "job": [
     "Çağrı Merkezi Görevlisi",
     "Miniakent Bankası",
@@ -113094,7 +113094,7 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 151,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -113105,8 +113105,8 @@
    "handle": "@ahmethakan.tuna",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 134",
+   "home_from": 1793451171,
    "job": [
     "Muhasebeci",
     "Miniakent Bankası",
@@ -113115,7 +113115,7 @@
    ],
    "wp": "banka",
    "hobby": "Bahçe işleri",
-   "queue": 152,
+   "queue": 0,
    "left": 0,
    "look": [
     4,
@@ -113126,8 +113126,8 @@
    "handle": "@yigit315679",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 135",
+   "home_from": 1793451171,
    "job": [
     "Bilişim Uzmanı",
     "Miniakent Bankası",
@@ -113136,7 +113136,7 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 153,
+   "queue": 0,
    "left": 0,
    "look": [
     0,
@@ -113147,8 +113147,8 @@
    "handle": "@yamobasla_06",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 135",
+   "home_from": 1793451171,
    "job": [
     "Satın Alma Sorumlusu",
     "Miniakent Bankası",
@@ -113157,15 +113157,15 @@
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
-   "queue": 154,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@eliffyrnolcyy.26",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 135",
+   "home_from": 1793451171,
    "job": [
     "Kredi Uzmanı",
     "Miniakent Bankası",
@@ -113174,7 +113174,7 @@
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
-   "queue": 155,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -113185,8 +113185,8 @@
    "handle": "@ece_bey02",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 135",
+   "home_from": 1793451171,
    "job": [
     "Muhasebeci",
     "Miniakent Bankası",
@@ -113195,7 +113195,7 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 156,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -113206,8 +113206,8 @@
    "handle": "@ortakcioyku",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 136",
+   "home_from": 1793451171,
    "job": [
     "Pazarlama Uzmanı",
     "Miniakent Bankası",
@@ -113216,7 +113216,7 @@
    ],
    "wp": "banka",
    "hobby": "Bahçe işleri",
-   "queue": 157,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -113227,8 +113227,8 @@
    "handle": "@snipetr",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 136",
+   "home_from": 1793451171,
    "job": [
     "Banka Memuru",
     "Miniakent Bankası",
@@ -113237,15 +113237,15 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 158,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@melek.ustndg",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 136",
+   "home_from": 1793451171,
    "job": [
     "Müşteri Temsilcisi",
     "Miniakent Bankası",
@@ -113254,7 +113254,7 @@
    ],
    "wp": "banka",
    "hobby": "Bahçe işleri",
-   "queue": 159,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -113265,8 +113265,8 @@
    "handle": "@shadow._editss",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 136",
+   "home_from": 1793451171,
    "job": [
     "Veznedar",
     "Miniakent Bankası",
@@ -113275,15 +113275,15 @@
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
-   "queue": 160,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@elena66_16",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 137",
+   "home_from": 1793451171,
    "job": [
     "Doktor",
     "Miniakent Devlet Hastanesi",
@@ -113292,7 +113292,7 @@
    ],
    "wp": "hastane",
    "hobby": "Kuşları izlemek",
-   "queue": 161,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -113303,8 +113303,8 @@
    "handle": "@wraehsx",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 137",
+   "home_from": 1793451171,
    "job": [
     "Kredi Uzmanı",
     "Miniakent Bankası",
@@ -113313,15 +113313,15 @@
    ],
    "wp": "banka",
    "hobby": "Bahçe işleri",
-   "queue": 162,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@stay_00x",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 137",
+   "home_from": 1793451171,
    "job": [
     "Müşteri Temsilcisi",
     "Miniakent Bankası",
@@ -113330,15 +113330,15 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 163,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@o_yueliang_o",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 137",
+   "home_from": 1793451171,
    "job": [
     "Halkla İlişkiler Uzmanı",
     "Miniakent Bankası",
@@ -113347,15 +113347,15 @@
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
-   "queue": 164,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@elif_kah1209",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 138",
+   "home_from": 1793451171,
    "job": [
     "Pazarlama Uzmanı",
     "Miniakent Bankası",
@@ -113364,7 +113364,7 @@
    ],
    "wp": "banka",
    "hobby": "Bahçe işleri",
-   "queue": 165,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -113375,8 +113375,8 @@
    "handle": "@_mmerveayyy",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 138",
+   "home_from": 1793451171,
    "job": [
     "Muhasebeci",
     "Miniakent Bankası",
@@ -113385,7 +113385,7 @@
    ],
    "wp": "banka",
    "hobby": "Satranç",
-   "queue": 166,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -113396,8 +113396,8 @@
    "handle": "@azraori",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 138",
+   "home_from": 1793451171,
    "job": [
     "Pazarlama Uzmanı",
     "Miniakent Bankası",
@@ -113406,7 +113406,7 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 167,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -113417,8 +113417,8 @@
    "handle": "@emayneyorke",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 138",
+   "home_from": 1793451171,
    "job": [
     "Satın Alma Sorumlusu",
     "Miniakent Bankası",
@@ -113427,15 +113427,15 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 168,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@ecrin070_",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 139",
+   "home_from": 1793451171,
    "job": [
     "Pazarlama Uzmanı",
     "Miniakent Bankası",
@@ -113444,7 +113444,7 @@
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
-   "queue": 169,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -113455,8 +113455,8 @@
    "handle": "@muro_art60",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 139",
+   "home_from": 1793451171,
    "job": [
     "Aşçı",
     "Miniakent Bankası",
@@ -113465,7 +113465,7 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 170,
+   "queue": 0,
    "left": 0,
    "look": [
     3,
@@ -113476,8 +113476,8 @@
    "handle": "@sehervaktibirguzelevuruldum0_0",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 139",
+   "home_from": 1793451171,
    "job": [
     "Güvenlik Görevlisi",
     "Miniakent Bankası",
@@ -113486,15 +113486,15 @@
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
-   "queue": 171,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@eyllacar_6788",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 139",
+   "home_from": 1793451171,
    "job": [
     "Aşçı",
     "Miniakent Bankası",
@@ -113503,7 +113503,7 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 172,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -113514,8 +113514,8 @@
    "handle": "@cumalihnts01",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 140",
+   "home_from": 1793451171,
    "job": [
     "Pazarlama Uzmanı",
     "Miniakent Bankası",
@@ -113524,7 +113524,7 @@
    ],
    "wp": "banka",
    "hobby": "Kitap okumak",
-   "queue": 173,
+   "queue": 0,
    "left": 0,
    "look": [
     3,
@@ -113535,8 +113535,8 @@
    "handle": "@gumuland",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 140",
+   "home_from": 1793451171,
    "job": [
     "Reklamcı",
     "Miniakent Bankası",
@@ -113545,15 +113545,15 @@
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
-   "queue": 174,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@06xayaz",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 140",
+   "home_from": 1793451171,
    "job": [
     "Veznedar",
     "Miniakent Bankası",
@@ -113562,7 +113562,7 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 175,
+   "queue": 0,
    "left": 0,
    "look": [
     0,
@@ -113573,8 +113573,8 @@
    "handle": "@elifyagmurarin",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 140",
+   "home_from": 1793451171,
    "job": [
     "Reklamcı",
     "Miniakent Bankası",
@@ -113583,7 +113583,7 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 176,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -113594,8 +113594,8 @@
    "handle": "@g0zzz_34",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 141",
+   "home_from": 1793451171,
    "job": [
     "Halkla İlişkiler Uzmanı",
     "Miniakent Bankası",
@@ -113604,15 +113604,15 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 177,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@elmadilimpatates6767",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 141",
+   "home_from": 1793451171,
    "job": [
     "Muhasebeci",
     "Miniakent Bankası",
@@ -113621,15 +113621,15 @@
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
-   "queue": 178,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@ylmzseyda.06",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 141",
+   "home_from": 1793451171,
    "job": [
     "Reklamcı",
     "Miniakent Bankası",
@@ -113638,7 +113638,7 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 179,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -113649,8 +113649,8 @@
    "handle": "@albassmis",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 141",
+   "home_from": 1793451171,
    "job": [
     "Pazarlama Uzmanı",
     "Miniakent Bankası",
@@ -113659,15 +113659,15 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 180,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@novera_rolex",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 142",
+   "home_from": 1793451171,
    "job": [
     "Reklamcı",
     "Miniakent Bankası",
@@ -113676,15 +113676,15 @@
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
-   "queue": 181,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@emre.jr63",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 142",
+   "home_from": 1793451171,
    "job": [
     "Banka Memuru",
     "Miniakent Bankası",
@@ -113693,7 +113693,7 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 182,
+   "queue": 0,
    "left": 0,
    "look": [
     0,
@@ -113704,8 +113704,8 @@
    "handle": "@isleksevin",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 142",
+   "home_from": 1793451171,
    "job": [
     "Kredi Uzmanı",
     "Miniakent Bankası",
@@ -113714,7 +113714,7 @@
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
-   "queue": 183,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -113725,8 +113725,8 @@
    "handle": "@ben_nyxora",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 142",
+   "home_from": 1793451171,
    "job": [
     "Temizlik Görevlisi",
     "Miniakent Bankası",
@@ -113735,15 +113735,15 @@
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
-   "queue": 184,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@kurtdaraldigezmekistiyour",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 143",
+   "home_from": 1793451171,
    "job": [
     "Veznedar",
     "Miniakent Bankası",
@@ -113752,15 +113752,15 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 185,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@cerenkimkizatenn",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 143",
+   "home_from": 1793451171,
    "job": [
     "Temizlik Görevlisi",
     "Miniakent Bankası",
@@ -113769,7 +113769,7 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 186,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -113780,8 +113780,8 @@
    "handle": "@selvi.ckn35",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 143",
+   "home_from": 1793451171,
    "job": [
     "Bilişim Uzmanı",
     "Miniakent Bankası",
@@ -113790,7 +113790,7 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 187,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -113801,8 +113801,8 @@
    "handle": "@korzakko_zipzipzip",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 143",
+   "home_from": 1793451171,
    "job": [
     "Güvenlik Görevlisi",
     "Miniakent Bankası",
@@ -113811,15 +113811,15 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 188,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@habibe.irem.123",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 144",
+   "home_from": 1793451171,
    "job": [
     "Müşteri Temsilcisi",
     "Miniakent Bankası",
@@ -113828,7 +113828,7 @@
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
-   "queue": 189,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -113839,8 +113839,8 @@
    "handle": "@kayrdenz.g",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 144",
+   "home_from": 1793451171,
    "job": [
     "Bilişim Uzmanı",
     "Miniakent Bankası",
@@ -113849,15 +113849,15 @@
    ],
    "wp": "banka",
    "hobby": "Kitap okumak",
-   "queue": 190,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@scorch_shadow",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 144",
+   "home_from": 1793451171,
    "job": [
     "Kredi Uzmanı",
     "Miniakent Bankası",
@@ -113866,15 +113866,15 @@
    ],
    "wp": "banka",
    "hobby": "Kitap okumak",
-   "queue": 191,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@desen_32",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö B Blok, Daire 144",
+   "home_from": 1793451171,
    "job": [
     "Müşteri Temsilcisi",
     "Miniakent Bankası",
@@ -113883,15 +113883,15 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 192,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@cemre.0x0",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 129",
+   "home_from": 1793451171,
    "job": [
     "Çağrı Merkezi Görevlisi",
     "Miniakent Bankası",
@@ -113900,7 +113900,7 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 193,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -113911,8 +113911,8 @@
    "handle": "@rrealgachakid",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 129",
+   "home_from": 1793451171,
    "job": [
     "Çağrı Merkezi Görevlisi",
     "Miniakent Bankası",
@@ -113921,15 +113921,15 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 194,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@e.r.h.a.y.a.t",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 129",
+   "home_from": 1793451171,
    "job": [
     "Ambulans Şoförü",
     "Miniakent Devlet Hastanesi",
@@ -113938,15 +113938,15 @@
    ],
    "wp": "hastane",
    "hobby": "Balık tutmak",
-   "queue": 195,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@esila.aslnn",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 129",
+   "home_from": 1793451171,
    "job": [
     "Temizlik Görevlisi",
     "Miniakent Bankası",
@@ -113955,7 +113955,7 @@
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
-   "queue": 196,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -113966,8 +113966,8 @@
    "handle": "@mircsrz",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 130",
+   "home_from": 1793451171,
    "job": [
     "Kredi Uzmanı",
     "Miniakent Bankası",
@@ -113976,7 +113976,7 @@
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
-   "queue": 197,
+   "queue": 0,
    "left": 0,
    "look": [
     4,
@@ -113987,8 +113987,8 @@
    "handle": "@vahap588",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 130",
+   "home_from": 1793451171,
    "job": [
     "Pazarlama Uzmanı",
     "Miniakent Bankası",
@@ -113997,7 +113997,7 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 198,
+   "queue": 0,
    "left": 0,
    "look": [
     3,
@@ -114008,8 +114008,8 @@
    "handle": "@ozayelif33",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 130",
+   "home_from": 1793451171,
    "job": [
     "Reklamcı",
     "Miniakent Bankası",
@@ -114018,7 +114018,7 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 199,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -114029,8 +114029,8 @@
    "handle": "@azrabet.blbllr",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 130",
+   "home_from": 1793451171,
    "job": [
     "Muhasebeci",
     "Miniakent Bankası",
@@ -114039,7 +114039,7 @@
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
-   "queue": 200,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -114050,8 +114050,8 @@
    "handle": "@mira396431",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 131",
+   "home_from": 1793451171,
    "job": [
     "Satın Alma Sorumlusu",
     "Miniakent Bankası",
@@ -114060,7 +114060,7 @@
    ],
    "wp": "banka",
    "hobby": "Kitap okumak",
-   "queue": 201,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -114071,8 +114071,8 @@
    "handle": "@doqanakdin",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 131",
+   "home_from": 1793451171,
    "job": [
     "Güvenlik Görevlisi",
     "Miniakent Bankası",
@@ -114081,7 +114081,7 @@
    ],
    "wp": "banka",
    "hobby": "Kitap okumak",
-   "queue": 202,
+   "queue": 0,
    "left": 0,
    "look": [
     0,
@@ -114092,8 +114092,8 @@
    "handle": "@rr._.2787",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 131",
+   "home_from": 1793451171,
    "job": [
     "Kredi Uzmanı",
     "Miniakent Bankası",
@@ -114102,15 +114102,15 @@
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
-   "queue": 203,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@elifnaz_kurt58",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 131",
+   "home_from": 1793451171,
    "job": [
     "Pazarlama Uzmanı",
     "Miniakent Bankası",
@@ -114119,7 +114119,7 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 204,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -114130,8 +114130,8 @@
    "handle": "@itsme_bdq",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 132",
+   "home_from": 1793451171,
    "job": [
     "Temizlik Görevlisi",
     "Miniakent Bankası",
@@ -114140,15 +114140,15 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 205,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@bqhtsizsairrr",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 132",
+   "home_from": 1793451171,
    "job": [
     "Banka Memuru",
     "Miniakent Bankası",
@@ -114157,15 +114157,15 @@
    ],
    "wp": "banka",
    "hobby": "Bahçe işleri",
-   "queue": 206,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@firas_35_45",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 132",
+   "home_from": 1793451171,
    "job": [
     "Müşteri Temsilcisi",
     "Miniakent Bankası",
@@ -114174,7 +114174,7 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 207,
+   "queue": 0,
    "left": 0,
    "look": [
     3,
@@ -114185,8 +114185,8 @@
    "handle": "@_.vexvii._",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 132",
+   "home_from": 1793451171,
    "job": [
     "Bilişim Uzmanı",
     "Miniakent Bankası",
@@ -114195,15 +114195,15 @@
    ],
    "wp": "banka",
    "hobby": "Satranç",
-   "queue": 208,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@mrvbegumy",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 133",
+   "home_from": 1793451171,
    "job": [
     "Banka Memuru",
     "Miniakent Bankası",
@@ -114212,7 +114212,7 @@
    ],
    "wp": "banka",
    "hobby": "Bahçe işleri",
-   "queue": 209,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -114223,8 +114223,8 @@
    "handle": "@kumahane_reisi23",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 133",
+   "home_from": 1793451171,
    "job": [
     "Satın Alma Sorumlusu",
     "Miniakent Bankası",
@@ -114233,7 +114233,7 @@
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
-   "queue": 210,
+   "queue": 0,
    "left": 0,
    "look": [
     4,
@@ -114244,8 +114244,8 @@
    "handle": "@fcemalbilen",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 133",
+   "home_from": 1793451171,
    "job": [
     "Temizlik Görevlisi",
     "Miniakent Bankası",
@@ -114254,7 +114254,7 @@
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
-   "queue": 211,
+   "queue": 0,
    "left": 0,
    "look": [
     3,
@@ -114265,8 +114265,8 @@
    "handle": "@ikinciiibaharrr",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 133",
+   "home_from": 1793451171,
    "job": [
     "Veznedar",
     "Miniakent Bankası",
@@ -114275,7 +114275,7 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 212,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -114286,8 +114286,8 @@
    "handle": "@ndnsndjssmd",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 134",
+   "home_from": 1793451171,
    "job": [
     "Pazarlama Uzmanı",
     "Miniakent Bankası",
@@ -114296,15 +114296,15 @@
    ],
    "wp": "banka",
    "hobby": "Kitap okumak",
-   "queue": 213,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@elifguray2013",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 134",
+   "home_from": 1793451171,
    "job": [
     "Aşçı",
     "Miniakent Bankası",
@@ -114313,7 +114313,7 @@
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
-   "queue": 214,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -114324,8 +114324,8 @@
    "handle": "@asliecemsarica",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 134",
+   "home_from": 1793451171,
    "job": [
     "Pazarlama Uzmanı",
     "Miniakent Bankası",
@@ -114334,7 +114334,7 @@
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
-   "queue": 215,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -114345,8 +114345,8 @@
    "handle": "@kahkulluhafize",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 134",
+   "home_from": 1793451171,
    "job": [
     "Bilişim Uzmanı",
     "Miniakent Bankası",
@@ -114355,7 +114355,7 @@
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
-   "queue": 216,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -114366,8 +114366,8 @@
    "handle": "@begum.klci",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 135",
+   "home_from": 1793451171,
    "job": [
     "Kredi Uzmanı",
     "Miniakent Bankası",
@@ -114376,7 +114376,7 @@
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
-   "queue": 217,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -114387,8 +114387,8 @@
    "handle": "@hayatli_hayatsiz_elcin",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 135",
+   "home_from": 1793451171,
    "job": [
     "Kredi Uzmanı",
     "Miniakent Bankası",
@@ -114397,7 +114397,7 @@
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
-   "queue": 218,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -114408,8 +114408,8 @@
    "handle": "@lexryss505",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 135",
+   "home_from": 1793451171,
    "job": [
     "Temizlik Görevlisi",
     "Miniakent Bankası",
@@ -114418,15 +114418,15 @@
    ],
    "wp": "banka",
    "hobby": "Bahçe işleri",
-   "queue": 219,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@erkocc_melisa",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 135",
+   "home_from": 1793451171,
    "job": [
     "Çağrı Merkezi Görevlisi",
     "Miniakent Bankası",
@@ -114435,7 +114435,7 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 220,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -114446,8 +114446,8 @@
    "handle": "@resul._.6706",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 136",
+   "home_from": 1793451171,
    "job": [
     "Muhasebeci",
     "Miniakent Bankası",
@@ -114456,7 +114456,7 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 221,
+   "queue": 0,
    "left": 0,
    "look": [
     0,
@@ -114467,8 +114467,8 @@
    "handle": "@meymey_secrett",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 136",
+   "home_from": 1793451171,
    "job": [
     "Muhasebeci",
     "Miniakent Bankası",
@@ -114477,15 +114477,15 @@
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
-   "queue": 222,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@nisan.aslnn",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 136",
+   "home_from": 1793451171,
    "job": [
     "Müşteri Temsilcisi",
     "Miniakent Bankası",
@@ -114494,7 +114494,7 @@
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
-   "queue": 223,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -114505,8 +114505,8 @@
    "handle": "@nuri_emir_",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 136",
+   "home_from": 1793451171,
    "job": [
     "Satın Alma Sorumlusu",
     "Miniakent Bankası",
@@ -114515,7 +114515,7 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 224,
+   "queue": 0,
    "left": 0,
    "look": [
     4,
@@ -114526,8 +114526,8 @@
    "handle": "@ali.talha1905",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 137",
+   "home_from": 1793451171,
    "job": [
     "Aşçı",
     "Miniakent Bankası",
@@ -114536,7 +114536,7 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 225,
+   "queue": 0,
    "left": 0,
    "look": [
     3,
@@ -114547,8 +114547,8 @@
    "handle": "@ahmet92053",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 137",
+   "home_from": 1793451171,
    "job": [
     "Güvenlik Görevlisi",
     "Miniakent Bankası",
@@ -114557,7 +114557,7 @@
    ],
    "wp": "banka",
    "hobby": "Kitap okumak",
-   "queue": 226,
+   "queue": 0,
    "left": 0,
    "look": [
     4,
@@ -114568,8 +114568,8 @@
    "handle": "@alparslan.serbes_pro",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 137",
+   "home_from": 1793451171,
    "job": [
     "Aşçı",
     "Miniakent Bankası",
@@ -114578,7 +114578,7 @@
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
-   "queue": 227,
+   "queue": 0,
    "left": 0,
    "look": [
     4,
@@ -114589,8 +114589,8 @@
    "handle": "@ataantoni07",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 137",
+   "home_from": 1793451171,
    "job": [
     "Bilişim Uzmanı",
     "Miniakent Bankası",
@@ -114599,7 +114599,7 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 228,
+   "queue": 0,
    "left": 0,
    "look": [
     4,
@@ -114610,8 +114610,8 @@
    "handle": "@ceyyyce_032",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 138",
+   "home_from": 1793451171,
    "job": [
     "Müşteri Temsilcisi",
     "Miniakent Bankası",
@@ -114620,7 +114620,7 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 229,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -114631,8 +114631,8 @@
    "handle": "@rzgrkrks11",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 138",
+   "home_from": 1793451171,
    "job": [
     "Bilişim Uzmanı",
     "Miniakent Bankası",
@@ -114641,15 +114641,15 @@
    ],
    "wp": "banka",
    "hobby": "Satranç",
-   "queue": 230,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@beyzagms14",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 138",
+   "home_from": 1793451171,
    "job": [
     "Güvenlik Görevlisi",
     "Miniakent Bankası",
@@ -114658,7 +114658,7 @@
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
-   "queue": 231,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -114669,8 +114669,8 @@
    "handle": "@kagoxxy",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 138",
+   "home_from": 1793451171,
    "job": [
     "Gişe Görevlisi",
     "Miniakent Bankası",
@@ -114679,15 +114679,15 @@
    ],
    "wp": "banka",
    "hobby": "Kitap okumak",
-   "queue": 232,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@lyzonx._",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 139",
+   "home_from": 1793451171,
    "job": [
     "Banka Memuru",
     "Miniakent Bankası",
@@ -114696,15 +114696,15 @@
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
-   "queue": 233,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@berranurkavdesim",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 139",
+   "home_from": 1793451171,
    "job": [
     "Kredi Uzmanı",
     "Miniakent Bankası",
@@ -114713,7 +114713,7 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 234,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -114724,8 +114724,8 @@
    "handle": "@nehirmasmavi",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 139",
+   "home_from": 1793451171,
    "job": [
     "Kredi Uzmanı",
     "Miniakent Bankası",
@@ -114734,7 +114734,7 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 235,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -114745,8 +114745,8 @@
    "handle": "@neyirmis._",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 139",
+   "home_from": 1793451171,
    "job": [
     "Muhasebeci",
     "Miniakent Bankası",
@@ -114755,15 +114755,15 @@
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
-   "queue": 236,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@omerqs_",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 140",
+   "home_from": 1793451171,
    "job": [
     "Muhasebeci",
     "Miniakent Bankası",
@@ -114772,7 +114772,7 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 237,
+   "queue": 0,
    "left": 0,
    "look": [
     0,
@@ -114783,8 +114783,8 @@
    "handle": "@cindybebekgibikizz_9",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 140",
+   "home_from": 1793451171,
    "job": [
     "Reklamcı",
     "Miniakent Bankası",
@@ -114793,7 +114793,7 @@
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
-   "queue": 238,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -114804,8 +114804,8 @@
    "handle": "@mirisss0143",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 140",
+   "home_from": 1793451171,
    "job": [
     "Gişe Görevlisi",
     "Miniakent Bankası",
@@ -114814,7 +114814,7 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 239,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -114825,8 +114825,8 @@
    "handle": "@buth.eavenknowsimmiserablenow",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 140",
+   "home_from": 1793451171,
    "job": [
     "Aşçı",
     "Miniakent Bankası",
@@ -114835,15 +114835,15 @@
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
-   "queue": 240,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@zeynpnzylmz",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 141",
+   "home_from": 1793451171,
    "job": [
     "Müşteri Temsilcisi",
     "Miniakent Bankası",
@@ -114852,7 +114852,7 @@
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
-   "queue": 241,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -114863,8 +114863,8 @@
    "handle": "@adaunverir",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 141",
+   "home_from": 1793451171,
    "job": [
     "Müşteri Temsilcisi",
     "Miniakent Bankası",
@@ -114873,7 +114873,7 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 242,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -114884,8 +114884,8 @@
    "handle": "@fcb_bmw_1899",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 141",
+   "home_from": 1793451171,
    "job": [
     "Gişe Görevlisi",
     "Miniakent Bankası",
@@ -114894,15 +114894,15 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 243,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@berenn_39",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 141",
+   "home_from": 1793451171,
    "job": [
     "Temizlik Görevlisi",
     "Miniakent Bankası",
@@ -114911,7 +114911,7 @@
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
-   "queue": 244,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -114922,8 +114922,8 @@
    "handle": "@ilyastufek98",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 142",
+   "home_from": 1793451171,
    "job": [
     "Müşteri Temsilcisi",
     "Miniakent Bankası",
@@ -114932,7 +114932,7 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 245,
+   "queue": 0,
    "left": 0,
    "look": [
     3,
@@ -114943,8 +114943,8 @@
    "handle": "@atahancol80",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 142",
+   "home_from": 1793451171,
    "job": [
     "Temizlik Görevlisi",
     "Miniakent Bankası",
@@ -114953,7 +114953,7 @@
    ],
    "wp": "banka",
    "hobby": "Satranç",
-   "queue": 246,
+   "queue": 0,
    "left": 0,
    "look": [
     0,
@@ -114964,8 +114964,8 @@
    "handle": "@_ecrn_yx",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 142",
+   "home_from": 1793451171,
    "job": [
     "Çağrı Merkezi Görevlisi",
     "Miniakent Bankası",
@@ -114974,7 +114974,7 @@
    ],
    "wp": "banka",
    "hobby": "Kitap okumak",
-   "queue": 247,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -114985,8 +114985,8 @@
    "handle": "@gulszss",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 142",
+   "home_from": 1793451171,
    "job": [
     "Kredi Uzmanı",
     "Miniakent Bankası",
@@ -114995,7 +114995,7 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 248,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -115006,8 +115006,8 @@
    "handle": "@peceli.rahibe",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 143",
+   "home_from": 1793451171,
    "job": [
     "Çağrı Merkezi Görevlisi",
     "Miniakent Bankası",
@@ -115016,7 +115016,7 @@
    ],
    "wp": "banka",
    "hobby": "Satranç",
-   "queue": 249,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -115027,8 +115027,8 @@
    "handle": "@utkceylan64",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 143",
+   "home_from": 1793451171,
    "job": [
     "Gişe Görevlisi",
     "Miniakent Bankası",
@@ -115037,7 +115037,7 @@
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
-   "queue": 250,
+   "queue": 0,
    "left": 0,
    "look": [
     0,
@@ -115048,8 +115048,8 @@
    "handle": "@elifyagmurluu",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 143",
+   "home_from": 1793451171,
    "job": [
     "Müşteri Temsilcisi",
     "Miniakent Bankası",
@@ -115058,7 +115058,7 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 251,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -115069,8 +115069,8 @@
    "handle": "@unlubaysinem_",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 143",
+   "home_from": 1793451171,
    "job": [
     "Müşteri Temsilcisi",
     "Miniakent Bankası",
@@ -115079,7 +115079,7 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 252,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -115090,8 +115090,8 @@
    "handle": "@nvxesports2026",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 144",
+   "home_from": 1793451171,
    "job": [
     "Muhasebeci",
     "Miniakent Bankası",
@@ -115100,15 +115100,15 @@
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
-   "queue": 253,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@mert.selimoglu2015",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 144",
+   "home_from": 1793451171,
    "job": [
     "Reklamcı",
     "Miniakent Bankası",
@@ -115117,7 +115117,7 @@
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
-   "queue": 254,
+   "queue": 0,
    "left": 0,
    "look": [
     0,
@@ -115128,8 +115128,8 @@
    "handle": "@ozol.mert",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 144",
+   "home_from": 1793451171,
    "job": [
     "Temizlik Görevlisi",
     "Miniakent Bankası",
@@ -115138,7 +115138,7 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 255,
+   "queue": 0,
    "left": 0,
    "look": [
     4,
@@ -115149,8 +115149,8 @@
    "handle": "@studywzoya",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö D Blok, Daire 144",
+   "home_from": 1793451171,
    "job": [
     "Doktor",
     "Miniakent Devlet Hastanesi",
@@ -115159,7 +115159,7 @@
    ],
    "wp": "hastane",
    "hobby": "Gitar çalmak",
-   "queue": 256,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -115170,8 +115170,8 @@
    "handle": "@bahaddinakk",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 113",
+   "home_from": 1793451171,
    "job": [
     "Gişe Görevlisi",
     "Miniakent Bankası",
@@ -115180,7 +115180,7 @@
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
-   "queue": 257,
+   "queue": 0,
    "left": 0,
    "look": [
     0,
@@ -115191,8 +115191,8 @@
    "handle": "@polasskaa",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 113",
+   "home_from": 1793451171,
    "job": [
     "Kredi Uzmanı",
     "Miniakent Bankası",
@@ -115201,15 +115201,15 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 258,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@enesyn109283",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 113",
+   "home_from": 1793451171,
    "job": [
     "Veznedar",
     "Miniakent Bankası",
@@ -115218,7 +115218,7 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 259,
+   "queue": 0,
    "left": 0,
    "look": [
     4,
@@ -115229,8 +115229,8 @@
    "handle": "@caglakadnan038",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 113",
+   "home_from": 1793451171,
    "job": [
     "Muhasebeci",
     "Miniakent Bankası",
@@ -115239,7 +115239,7 @@
    ],
    "wp": "banka",
    "hobby": "Satranç",
-   "queue": 260,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -115250,8 +115250,8 @@
    "handle": "@gulsun_alptelin",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 114",
+   "home_from": 1793451171,
    "job": [
     "Veznedar",
     "Miniakent Bankası",
@@ -115260,7 +115260,7 @@
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
-   "queue": 261,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -115271,8 +115271,8 @@
    "handle": "@medine_ua",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 114",
+   "home_from": 1793451171,
    "job": [
     "Muhasebeci",
     "Miniakent Bankası",
@@ -115281,7 +115281,7 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 262,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -115292,8 +115292,8 @@
    "handle": "@ezgiiylxx",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 114",
+   "home_from": 1793451171,
    "job": [
     "Muhasebeci",
     "Miniakent Bankası",
@@ -115302,7 +115302,7 @@
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
-   "queue": 263,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -115313,8 +115313,8 @@
    "handle": "@pelinerrgul",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 114",
+   "home_from": 1793451171,
    "job": [
     "Satın Alma Sorumlusu",
     "Miniakent Bankası",
@@ -115323,7 +115323,7 @@
    ],
    "wp": "banka",
    "hobby": "Satranç",
-   "queue": 264,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -115334,8 +115334,8 @@
    "handle": "@naturalsenfony",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 115",
+   "home_from": 1793451171,
    "job": [
     "Reklamcı",
     "Miniakent Bankası",
@@ -115344,15 +115344,15 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 265,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@lorikkk_06",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 115",
+   "home_from": 1793451171,
    "job": [
     "Banka Memuru",
     "Miniakent Bankası",
@@ -115361,15 +115361,15 @@
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
-   "queue": 266,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@gk3sk1n",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 115",
+   "home_from": 1793451171,
    "job": [
     "Müşteri Temsilcisi",
     "Miniakent Bankası",
@@ -115378,15 +115378,15 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 267,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@seelen2m",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 115",
+   "home_from": 1793451171,
    "job": [
     "Banka Memuru",
     "Miniakent Bankası",
@@ -115395,15 +115395,15 @@
    ],
    "wp": "banka",
    "hobby": "Satranç",
-   "queue": 268,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@ryzencaesarr",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 116",
+   "home_from": 1793451171,
    "job": [
     "Pazarlama Uzmanı",
     "Miniakent Bankası",
@@ -115412,7 +115412,7 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 269,
+   "queue": 0,
    "left": 0,
    "look": [
     0,
@@ -115423,8 +115423,8 @@
    "handle": "@busee.kplnnn",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 116",
+   "home_from": 1793451171,
    "job": [
     "Banka Memuru",
     "Miniakent Bankası",
@@ -115433,7 +115433,7 @@
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
-   "queue": 270,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -115444,8 +115444,8 @@
    "handle": "@ayhantoprak.48",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 116",
+   "home_from": 1793451171,
    "job": [
     "Reklamcı",
     "Miniakent Bankası",
@@ -115454,7 +115454,7 @@
    ],
    "wp": "banka",
    "hobby": "Gitar çalmak",
-   "queue": 271,
+   "queue": 0,
    "left": 0,
    "look": [
     3,
@@ -115465,8 +115465,8 @@
    "handle": "@masii__04",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 116",
+   "home_from": 1793451171,
    "job": [
     "Pazarlama Uzmanı",
     "Miniakent Bankası",
@@ -115475,15 +115475,15 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 272,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@lamiatalak",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 117",
+   "home_from": 1793451171,
    "job": [
     "Banka Memuru",
     "Miniakent Bankası",
@@ -115492,7 +115492,7 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 273,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -115503,8 +115503,8 @@
    "handle": "@_dorukserbett",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 117",
+   "home_from": 1793451171,
    "job": [
     "Pazarlama Uzmanı",
     "Miniakent Bankası",
@@ -115513,7 +115513,7 @@
    ],
    "wp": "banka",
    "hobby": "Yemek yapmak",
-   "queue": 274,
+   "queue": 0,
    "left": 0,
    "look": [
     0,
@@ -115524,8 +115524,8 @@
    "handle": "@yid0s",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 117",
+   "home_from": 1793451171,
    "job": [
     "Temizlik Görevlisi",
     "Miniakent Bankası",
@@ -115534,15 +115534,15 @@
    ],
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
-   "queue": 275,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@emre_34pl",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 117",
+   "home_from": 1793451171,
    "job": [
     "Doktor",
     "Miniakent Devlet Hastanesi",
@@ -115551,7 +115551,7 @@
    ],
    "wp": "hastane",
    "hobby": "Uçurtma uçurmak",
-   "queue": 276,
+   "queue": 0,
    "left": 0,
    "look": [
     3,
@@ -115562,8 +115562,8 @@
    "handle": "@h6raa_",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 118",
+   "home_from": 1793451171,
    "job": [
     "Muhasebeci",
     "Miniakent Bankası",
@@ -115572,15 +115572,15 @@
    ],
    "wp": "banka",
    "hobby": "Satranç",
-   "queue": 277,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@0xlseei",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 118",
+   "home_from": 1793451171,
    "job": [
     "Kredi Uzmanı",
     "Miniakent Bankası",
@@ -115589,15 +115589,15 @@
    ],
    "wp": "banka",
    "hobby": "Satranç",
-   "queue": 278,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@ays3.y",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 118",
+   "home_from": 1793451171,
    "job": [
     "Kredi Uzmanı",
     "Miniakent Bankası",
@@ -115606,7 +115606,7 @@
    ],
    "wp": "banka",
    "hobby": "Bahçe işleri",
-   "queue": 279,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -115617,8 +115617,8 @@
    "handle": "@doktor_.1907",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 118",
+   "home_from": 1793451171,
    "job": [
     "Kredi Uzmanı",
     "Miniakent Bankası",
@@ -115627,15 +115627,15 @@
    ],
    "wp": "banka",
    "hobby": "Resim yapmak",
-   "queue": 280,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@ardakurc",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 119",
+   "home_from": 1793451171,
    "job": [
     "Aşçı",
     "Miniakent Bankası",
@@ -115644,7 +115644,7 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 281,
+   "queue": 0,
    "left": 0,
    "look": [
     3,
@@ -115655,8 +115655,8 @@
    "handle": "@tsetnight",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 119",
+   "home_from": 1793451171,
    "job": [
     "Muhasebeci",
     "Miniakent Bankası",
@@ -115665,15 +115665,15 @@
    ],
    "wp": "banka",
    "hobby": "Satranç",
-   "queue": 282,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@peragilbrt",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 119",
+   "home_from": 1793451171,
    "job": [
     "Banka Memuru",
     "Miniakent Bankası",
@@ -115682,7 +115682,7 @@
    ],
    "wp": "banka",
    "hobby": "Bahçe işleri",
-   "queue": 283,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -115693,8 +115693,8 @@
    "handle": "@ranakocyigt",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 119",
+   "home_from": 1793451171,
    "job": [
     "Satın Alma Sorumlusu",
     "Miniakent Bankası",
@@ -115703,7 +115703,7 @@
    ],
    "wp": "banka",
    "hobby": "Balık tutmak",
-   "queue": 284,
+   "queue": 0,
    "left": 0,
    "look": [
     1,
@@ -115714,8 +115714,8 @@
    "handle": "@miraytireng",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 120",
+   "home_from": 1793451171,
    "job": [
     "Reklamcı",
     "Miniakent Bankası",
@@ -115724,7 +115724,7 @@
    ],
    "wp": "banka",
    "hobby": "Kuşları izlemek",
-   "queue": 285,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -115735,8 +115735,8 @@
    "handle": "@nehirmis_198",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 120",
+   "home_from": 1793451171,
    "job": [
     "Kredi Uzmanı",
     "Miniakent Bankası",
@@ -115745,7 +115745,7 @@
    ],
    "wp": "banka",
    "hobby": "Yüzmek",
-   "queue": 286,
+   "queue": 0,
    "left": 0,
    "look": [
     2,
@@ -115756,8 +115756,8 @@
    "handle": "@34kopekkabnda_kabuskakemiren",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 120",
+   "home_from": 1793451171,
    "job": [
     "Kredi Uzmanı",
     "Miniakent Bankası",
@@ -115766,15 +115766,15 @@
    ],
    "wp": "banka",
    "hobby": "Bisiklete binmek",
-   "queue": 287,
+   "queue": 0,
    "left": 0
   },
   {
    "handle": "@goddaynot",
    "arrive": 1793404800,
    "move": 1793426400,
-   "home": "",
-   "home_from": 0,
+   "home": "Doğu Banliyö E Blok, Daire 120",
+   "home_from": 1793451171,
    "job": [
     "Muhasebeci",
     "Miniakent Bankası",
@@ -115783,7 +115783,7 @@
    ],
    "wp": "banka",
    "hobby": "Fotoğraf çekmek",
-   "queue": 288,
+   "queue": 0,
    "left": 0
   }
  ]
