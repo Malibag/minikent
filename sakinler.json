@@ -106269,12 +106269,12 @@
    "home": "Begonvil Sokağı No 1, Daire 7",
    "home_from": 1793426400,
    "job": [
-    "Güvenlik Görevlisi",
-    "Miniakent Bankası",
+    "Turizm Rehberi",
+    "Miniakent Turizm · Miniakent Plaza 2, Kat 7",
     "office",
-    "banka"
+    "plaza2"
    ],
-   "wp": "banka",
+   "wp": "turizm",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -117021,12 +117021,12 @@
    "home": "Zeytin Sokağı No 3, Daire 34",
    "home_from": 1793512800,
    "job": [
-    "Rehber Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
+    "Mimar",
+    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
     "office",
-    "plaza2"
+    "plaza"
    ],
-   "wp": "dershane",
+   "wp": "mimarlik",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -118215,12 +118215,12 @@
    "home": "Akasya Sokağı No 2, Daire 35",
    "home_from": 1793512800,
    "job": [
-    "Hukuk Danışmanı",
-    "Miniakent Hukuk Bürosu · Miniakent Plaza, Kat 6",
-    "office",
-    "plaza"
+    "Polis Memuru",
+    "Miniakent Emniyet Müdürlüğü",
+    "shop",
+    "emniyet"
    ],
-   "wp": "hukuk",
+   "wp": "emniyet",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
