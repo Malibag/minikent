@@ -1,8 +1,8 @@
 {
  "elektrik_yok": false,
- "updated": 1793484353,
+ "updated": 1793570560,
  "trains": [
-  1793484300
+  1793570520
  ],
  "residents": [
   {
@@ -3269,7 +3269,7 @@
    "wp": "mimarlik",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     1,
     1
@@ -4282,7 +4282,7 @@
    "wp": "spor",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     1,
     1
@@ -5328,7 +5328,7 @@
    "wp": "fabrika_b",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     4,
     0
@@ -5728,7 +5728,7 @@
    "wp": "santiye",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     3,
     0
@@ -6493,7 +6493,7 @@
    "wp": "ticaret",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     3,
     0
@@ -8541,7 +8541,7 @@
    "wp": "fabrika_a",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "lunapark": 17
   },
   {
@@ -8957,7 +8957,7 @@
    ]
   },
   {
-   "handle": "@fusetea.canavari",
+   "handle": "@domestosmonster",
    "arrive": 1792702800,
    "move": 1792735200,
    "home": "Mimoza Sokağı No 1, Daire 2",
@@ -10027,7 +10027,7 @@
    ]
   },
   {
-   "handle": "@irem_00z",
+   "handle": "@ilay_00z",
    "arrive": 1792702800,
    "move": 1792735200,
    "home": "Lavanta Sokağı No 1, Daire 3",
@@ -15407,7 +15407,7 @@
    "wp": "fabrika_b",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     2,
     1
@@ -16911,7 +16911,7 @@
    "wp": "otel",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     3,
     0
@@ -21554,7 +21554,7 @@
    "wp": "muhendislik",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     3,
     0
@@ -21825,7 +21825,7 @@
    "wp": "gayrimenkul",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@m.ekremchn",
@@ -31301,7 +31301,7 @@
    "wp": "postane",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     4,
     0
@@ -32146,7 +32146,7 @@
    "wp": "hukuk",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@cl0ve9",
@@ -33432,7 +33432,7 @@
    "wp": "oyun",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@edabolekk",
@@ -33585,7 +33585,7 @@
    "wp": "spor",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     3,
     0
@@ -34724,7 +34724,7 @@
    "wp": "market",
    "hobby": "Balık tutmak",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@ruzgarn_arka_bahcesi",
@@ -37183,7 +37183,7 @@
    ]
   },
   {
-   "handle": "@onur6464y",
+   "handle": "@mercurythw",
    "arrive": 1792898400,
    "move": 1792908000,
    "home": "Doğu Banliyö A Blok, Daire 5",
@@ -37933,7 +37933,7 @@
    "wp": "medya",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     0,
     0
@@ -41191,7 +41191,7 @@
    "wp": "liman",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     3,
     0
@@ -43040,7 +43040,7 @@
    "wp": "liman",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     3,
     0
@@ -43082,7 +43082,7 @@
    "wp": "fabrika_a",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     2,
     1
@@ -46664,7 +46664,7 @@
    ]
   },
   {
-   "handle": "@10111void11101",
+   "handle": "@wannabe.assencion",
    "arrive": 1792898400,
    "move": 1792908000,
    "home": "Doğu Banliyö D Blok, Daire 72",
@@ -49313,7 +49313,7 @@
    ]
   },
   {
-   "handle": "@iko_.kkyn0",
+   "handle": "@ikbaallsezer0",
    "arrive": 1792898400,
    "move": 1792908000,
    "home": "Doğu Banliyö E Blok, Daire 70",
@@ -49329,8 +49329,8 @@
    "queue": 0,
    "left": 0,
    "look": [
-    4,
-    0
+    2,
+    1
    ]
   },
   {
@@ -49684,7 +49684,7 @@
    "wp": "liman",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     1,
     1
@@ -51660,7 +51660,7 @@
    "wp": "liman",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     4,
     0
@@ -52502,7 +52502,7 @@
    "wp": "liman",
    "hobby": "Balık tutmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     4,
     0
@@ -54113,7 +54113,7 @@
    ]
   },
   {
-   "handle": "@dendenwhal",
+   "handle": "@ryanpdenden",
    "arrive": 1792971000,
    "move": 1792994400,
    "home": "Doğu Banliyö A Blok, Daire 22",
@@ -54127,7 +54127,11 @@
    "wp": "arge",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@rraestee",
@@ -54195,7 +54199,7 @@
    "wp": "saglik",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@yagiz21efe",
@@ -55920,7 +55924,7 @@
    "wp": "yayinevi",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     3,
     0
@@ -57722,7 +57726,7 @@
    "wp": "yayinevi",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@ibrahim744161",
@@ -59264,7 +59268,7 @@
    "wp": "saglik",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@ozalparslan.20",
@@ -60711,7 +60715,7 @@
    "left": 0
   },
   {
-   "handle": "@gladion7730",
+   "handle": "@yigitscopain",
    "arrive": 1792971000,
    "move": 1792994400,
    "home": "Doğu Banliyö B Blok, Daire 27",
@@ -60725,7 +60729,11 @@
    "wp": "gayrimenkul",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@efepolat010",
@@ -61406,7 +61414,7 @@
    "wp": "turizm",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@halleyy_2015",
@@ -64238,7 +64246,7 @@
    ]
   },
   {
-   "handle": "@umuttasci190339",
+   "handle": "@umuttasc39",
    "arrive": 1792971000,
    "move": 1792994400,
    "home": "Doğu Banliyö B Blok, Daire 90",
@@ -64252,7 +64260,11 @@
    "wp": "telekom",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@_mertcan_1475",
@@ -64397,7 +64409,7 @@
    "wp": "medya",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@yusufdirican_",
@@ -67026,7 +67038,7 @@
    "wp": "saglik",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@mertx38123",
@@ -67284,7 +67296,7 @@
    "wp": "arge",
    "hobby": "Balık tutmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     0,
     0
@@ -70371,7 +70383,7 @@
    "wp": "eticaret",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@mustafayurteri",
@@ -71200,7 +71212,7 @@
    "wp": "banka",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@yashiro_akanesan",
@@ -71474,7 +71486,7 @@
    "left": 0
   },
   {
-   "handle": "@burak_cevikk04",
+   "handle": "@burak_cevikk35",
    "arrive": 1792971000,
    "move": 1792994400,
    "home": "Doğu Banliyö C Blok, Daire 91",
@@ -72662,7 +72674,7 @@
    "wp": "emniyet",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     4,
     0
@@ -73769,7 +73781,7 @@
    "wp": "lojistik",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     4,
     0
@@ -74211,7 +74223,7 @@
    "wp": "mimarlik",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     4,
     0
@@ -78777,7 +78789,7 @@
    ]
   },
   {
-   "handle": "@nycbaddieolcamanne",
+   "handle": "@permutasyonkombinasyonolasilik",
    "arrive": 1793061000,
    "move": 1793080800,
    "home": "Doğu Banliyö D Blok, Daire 62",
@@ -79346,7 +79358,7 @@
    "wp": "saglik",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     3,
     0
@@ -79708,7 +79720,7 @@
    "wp": "enerji",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     1,
     1
@@ -80448,7 +80460,7 @@
    ]
   },
   {
-   "handle": "@ekmekdivaylabaglanhayataa",
+   "handle": "@apkeninekmekfirini",
    "arrive": 1793061000,
    "move": 1793080800,
    "home": "Doğu Banliyö D Blok, Daire 90",
@@ -81552,7 +81564,7 @@
    "wp": "lojistik",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     3,
     0
@@ -85705,7 +85717,7 @@
    "wp": "medya",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@jjenniee_zz",
@@ -91849,7 +91861,7 @@
    "wp": "tasarim",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@cosplayupdate.tr",
@@ -93961,7 +93973,7 @@
    "wp": "muhendislik",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@mr.ubis",
@@ -94188,7 +94200,7 @@
    "left": 0
   },
   {
-   "handle": "@elifgc17",
+   "handle": "@elifgulcecibir",
    "arrive": 1793228400,
    "move": 1793253600,
    "home": "Doğu Banliyö F Blok, Daire 71",
@@ -94700,7 +94712,7 @@
    "wp": "muhendislik",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     2,
     1
@@ -95856,7 +95868,7 @@
    "wp": "telekom",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     1,
     1
@@ -97188,7 +97200,7 @@
    "wp": "hastane",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@cagan39738",
@@ -98479,7 +98491,7 @@
    "wp": "enerji",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     0,
     0
@@ -98711,7 +98723,7 @@
    "wp": "banka",
    "hobby": "Balık tutmak",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@oykumiyaaa",
@@ -99797,7 +99809,7 @@
    "left": 0
   },
   {
-   "handle": "@bb_medya_sosyal",
+   "handle": "@eyupmertkaya",
    "arrive": 1793323080,
    "move": 1793340000,
    "home": "Kıyı Caddesi No 4, Daire 2",
@@ -101485,7 +101497,7 @@
    "wp": "sigorta",
    "hobby": "Balık tutmak",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@radio_demon_1950",
@@ -102500,7 +102512,7 @@
    "wp": "banka",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@hasanaliavcioglu",
@@ -103075,7 +103087,7 @@
    "wp": "banka",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     4,
     0
@@ -103526,7 +103538,7 @@
    "left": 0
   },
   {
-   "handle": "@umutcan_18_38",
+   "handle": "@umutcann_palass",
    "arrive": 1793323080,
    "move": 1793340000,
    "home": "Kıyı Caddesi No 8, Daire 4",
@@ -108326,7 +108338,7 @@
    "wp": "banka",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@slmbndogaa",
@@ -108626,7 +108638,7 @@
    "wp": "banka",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     3,
     0
@@ -109406,7 +109418,7 @@
    "wp": "banka",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@visal.krtke",
@@ -110368,7 +110380,7 @@
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     1,
     1
@@ -110841,7 +110853,7 @@
    "wp": "banka",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@melkskrn",
@@ -111044,7 +111056,7 @@
    "wp": "banka",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     3,
     0
@@ -111162,7 +111174,7 @@
    "wp": "banka",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     1,
     1
@@ -112186,7 +112198,7 @@
    "left": 0
   },
   {
-   "handle": "@bastiginyrleritoprakdiyerkgcme",
+   "handle": "@lunariviaaa",
    "arrive": 1793404800,
    "move": 1793426400,
    "home": "Doğu Banliyö A Blok, Daire 138",
@@ -112200,7 +112212,11 @@
    "wp": "banka",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@nefertiti_hawa335",
@@ -112262,7 +112278,7 @@
    "left": 1793480400
   },
   {
-   "handle": "@jinzhao_2",
+   "handle": "@gulang_kulakkkk",
    "arrive": 1793404800,
    "move": 1793426400,
    "home": "Doğu Banliyö A Blok, Daire 139",
@@ -112863,7 +112879,7 @@
    "wp": "banka",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@aybuk_ylmz",
@@ -113521,7 +113537,7 @@
    "wp": "banka",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     1,
     1
@@ -114638,7 +114654,7 @@
    "wp": "banka",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     1,
     1
@@ -114912,7 +114928,7 @@
    "wp": "banka",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@berenn_39",
@@ -115687,7 +115703,7 @@
    "left": 0
   },
   {
-   "handle": "@peragilbrt",
+   "handle": "@peapetrova",
    "arrive": 1793404800,
    "move": 1793426400,
    "home": "Doğu Banliyö E Blok, Daire 119",
@@ -117721,14 +117737,14 @@
    "wp": "hukuk",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     2,
     1
    ]
   },
   {
-   "handle": "@kirarahoshireal",
+   "handle": "@shiceeaa",
    "arrive": 1793484300,
    "move": 1793512800,
    "home": "Akasya Sokağı No 2, Daire 34",
@@ -118147,7 +118163,7 @@
    "wp": "banka",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@cinaragaciburada2631",
@@ -118320,7 +118336,7 @@
    "wp": "eticaret",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@kiitapkrizi",
@@ -119750,7 +119766,7 @@
    "wp": "banka",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     1,
     1
@@ -119892,7 +119908,7 @@
    "left": 0
   },
   {
-   "handle": "@chasekarisi",
+   "handle": "@misoo._.souup",
    "arrive": 1793484300,
    "move": 1793512800,
    "home": "Akasya Sokağı No 4, Daire 37",
@@ -119965,7 +119981,7 @@
    "wp": "banka",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     1,
     1
@@ -122651,7 +122667,7 @@
    "wp": "banka",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     4,
     0
@@ -123262,7 +123278,7 @@
    "wp": "banka",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@dry_nr_ar",
@@ -124417,7 +124433,7 @@
    "wp": "banka",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@wlifbas_ll3",
@@ -124559,7 +124575,7 @@
    ]
   },
   {
-   "handle": "@korayysgul_privv",
+   "handle": "@korayygulss",
    "arrive": 1793484300,
    "move": 1793512800,
    "home": "Doğu Banliyö H Blok, Daire 31",
@@ -125218,7 +125234,7 @@
    "wp": "banka",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     1,
     1
@@ -125585,7 +125601,7 @@
    "wp": "banka",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     4,
     0
@@ -128502,7 +128518,7 @@
    "left": 0
   },
   {
-   "handle": "@hayiironusoyleme",
+   "handle": "@gangsenbunlarinerdnbuluyonya",
    "arrive": 1793484300,
    "move": 1793512800,
    "home": "Doğu Banliyö H Blok, Daire 82",
@@ -132131,7 +132147,7 @@
    ]
   },
   {
-   "handle": "@islam.degerrr",
+   "handle": "@iislamm.d",
    "arrive": 1793484300,
    "move": 1793512800,
    "home": "Doğu Banliyö H Blok, Daire 128",
@@ -132280,7 +132296,7 @@
    "wp": "banka",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     2,
     1
@@ -132590,7 +132606,7 @@
    ]
   },
   {
-   "handle": "@yarengulce_1903",
+   "handle": "@yarengulcesahinn",
    "arrive": 1793484300,
    "move": 1793512800,
    "home": "Doğu Banliyö H Blok, Daire 134",
@@ -132809,7 +132825,7 @@
    ]
   },
   {
-   "handle": "@cemreeymisss.s",
+   "handle": "@cemre.arslann.n",
    "arrive": 1793484300,
    "move": 1793512800,
    "home": "Doğu Banliyö H Blok, Daire 136",
@@ -134134,7 +134150,7 @@
    "wp": "banka",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     2,
     1
@@ -134758,7 +134774,7 @@
    "wp": "banka",
    "hobby": "Balık tutmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     1,
     1
@@ -135334,7 +135350,7 @@
    "left": 0
   },
   {
-   "handle": "@fornte_stb_trade",
+   "handle": "@miyav_buommm",
    "arrive": 1793484300,
    "move": 1793512800,
    "home": "Doğu Banliyö J Blok, Daire 24",
@@ -135554,7 +135570,7 @@
    ]
   },
   {
-   "handle": "@ewsru_muzlusey",
+   "handle": "@dashin_rainbowu",
    "arrive": 1793484300,
    "move": 1793512800,
    "home": "Doğu Banliyö J Blok, Daire 27",
@@ -135606,7 +135622,7 @@
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@benden.bi.bok.olmaz",
@@ -135775,7 +135791,7 @@
    "wp": "banka",
    "hobby": "Balık tutmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     2,
     1
@@ -135906,7 +135922,7 @@
    "wp": "banka",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0,
+   "left": 1793566800,
    "look": [
     4,
     0
@@ -136412,7 +136428,7 @@
    "wp": "banka",
    "hobby": "Balık tutmak",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@alikinnnn",
@@ -136513,7 +136529,7 @@
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0
+   "left": 1793566800
   },
   {
    "handle": "@_.pirateywq._",
@@ -136588,7 +136604,7 @@
    ]
   },
   {
-   "handle": "@fadonuzz_",
+   "handle": "@fadimesuprlk",
    "arrive": 1793484300,
    "move": 1793512800,
    "home": "Doğu Banliyö J Blok, Daire 41",
@@ -136602,7 +136618,11 @@
    "wp": "banka",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@isimyok_usendim",
@@ -137122,6 +137142,9180 @@
     1,
     1
    ]
+  },
+  {
+   "handle": "@captain_niki.1",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Zeytin Sokağı No 1, Daire 29",
+   "home_from": 1793599200,
+   "job": [
+    "Editör",
+    "Miniakent Yayınevi · Miniakent Plaza, Kat 11",
+    "office",
+    "plaza"
+   ],
+   "wp": "yayinevi",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@lady_shitpostt2",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Zeytin Sokağı No 5, Daire 3",
+   "home_from": 1793599200,
+   "job": [
+    "Makine Mühendisi",
+    "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
+    "office",
+    "plaza2"
+   ],
+   "wp": "muhendislik",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@elifsycelik",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Akasya Sokağı No 2, Daire 32",
+   "home_from": 1793599200,
+   "job": [
+    "Hukuk Danışmanı",
+    "Miniakent Hukuk Bürosu · Miniakent Plaza, Kat 6",
+    "office",
+    "plaza"
+   ],
+   "wp": "hukuk",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@eym9627",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Akasya Sokağı No 2, Daire 33",
+   "home_from": 1793599200,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@xharunyy",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Zeytin Sokağı No 5, Daire 24",
+   "home_from": 1793599200,
+   "job": [
+    "Hasar Uzmanı",
+    "Miniakent Sigorta A.Ş. · Miniakent Plaza 2, Kat 2",
+    "office",
+    "plaza2"
+   ],
+   "wp": "sigorta",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@s_hlc_38",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Zeytin Sokağı No 5, Daire 32",
+   "home_from": 1793599200,
+   "job": [
+    "Çevirmen",
+    "Miniakent Yayınevi · Miniakent Plaza, Kat 11",
+    "office",
+    "plaza"
+   ],
+   "wp": "yayinevi",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@aysesu1256",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Akasya Sokağı No 4, Daire 1",
+   "home_from": 1793599200,
+   "job": [
+    "Kameraman",
+    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
+   ],
+   "wp": "medya",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@miuwsaa.7",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Akasya Sokağı No 4, Daire 8",
+   "home_from": 1793599200,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@uhhcei",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Akasya Sokağı No 4, Daire 29",
+   "home_from": 1793599200,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@muhammedbrn__",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Akasya Sokağı No 4, Daire 40",
+   "home_from": 1793599200,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@tezcanteber__60",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Akasya Sokağı No 4, Daire 41",
+   "home_from": 1793599200,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@oozanclsknn",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö B Blok, Daire 1",
+   "home_from": 1793599200,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@1will4lwaysloveu",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö B Blok, Daire 40",
+   "home_from": 1793599200,
+   "job": [
+    "Grafik Tasarımcı",
+    "Miniakent Tasarım Stüdyosu · Miniakent Plaza, Kat 8",
+    "office",
+    "plaza"
+   ],
+   "wp": "tasarim",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@wq.yumos35",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö B Blok, Daire 83",
+   "home_from": 1793599200,
+   "job": [
+    "Diş Hekimi",
+    "Miniakent Sağlık Merkezi · Miniakent Plaza, Kat 2",
+    "office",
+    "plaza"
+   ],
+   "wp": "saglik",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ayaz_celik22",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö B Blok, Daire 93",
+   "home_from": 1793599200,
+   "job": [
+    "Hemşire",
+    "Miniakent Sağlık Merkezi · Miniakent Plaza, Kat 2",
+    "office",
+    "plaza"
+   ],
+   "wp": "saglik",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@basturk.sareee",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö B Blok, Daire 131",
+   "home_from": 1793599200,
+   "job": [
+    "Planlama Uzmanı",
+    "Miniakent Lojistik A.Ş. · Miniakent Plaza 2, Kat 3",
+    "office",
+    "plaza2"
+   ],
+   "wp": "lojistik",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@semihsaki0",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö B Blok, Daire 139",
+   "home_from": 1793599200,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@y3giz_mcyarali",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö D Blok, Daire 71",
+   "home_from": 1793599200,
+   "job": [
+    "Makine Mühendisi",
+    "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
+    "office",
+    "plaza2"
+   ],
+   "wp": "muhendislik",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@ayak_fetisi_olanlar_dernegi",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö D Blok, Daire 77",
+   "home_from": 1793599200,
+   "job": [
+    "Oyun Geliştirici",
+    "Miniakent Oyun Stüdyosu · Miniakent Plaza 2, Kat 5",
+    "office",
+    "plaza2"
+   ],
+   "wp": "oyun",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@enes.klc17",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö D Blok, Daire 108",
+   "home_from": 1793599200,
+   "job": [
+    "Öğretmen",
+    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
+    "office",
+    "plaza2"
+   ],
+   "wp": "dershane",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@ozg3_908",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö D Blok, Daire 138",
+   "home_from": 1793599200,
+   "job": [
+    "Müşteri Hizmetleri Uzmanı",
+    "Miniakent E-Ticaret A.Ş. · Miniakent Plaza 2, Kat 8",
+    "office",
+    "plaza2"
+   ],
+   "wp": "eticaret",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@melek_seyam",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö D Blok, Daire 141",
+   "home_from": 1793599200,
+   "job": [
+    "Hukuk Danışmanı",
+    "Miniakent Hukuk Bürosu · Miniakent Plaza, Kat 6",
+    "office",
+    "plaza"
+   ],
+   "wp": "hukuk",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@savuraneren",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö F Blok, Daire 29",
+   "home_from": 1793599200,
+   "job": [
+    "Lojistik Uzmanı",
+    "Miniakent Lojistik A.Ş. · Miniakent Plaza 2, Kat 3",
+    "office",
+    "plaza2"
+   ],
+   "wp": "lojistik",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@hamzasygln",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö F Blok, Daire 67",
+   "home_from": 1793599200,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Ticaret A.Ş. · Miniakent Plaza, Kat 10",
+    "office",
+    "plaza"
+   ],
+   "wp": "ticaret",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@okansahin61.5",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö F Blok, Daire 69",
+   "home_from": 1793599200,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@zhrso9",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö F Blok, Daire 80",
+   "home_from": 1793599200,
+   "job": [
+    "Makine Mühendisi",
+    "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
+    "office",
+    "plaza2"
+   ],
+   "wp": "muhendislik",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@yelizzx28",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö F Blok, Daire 101",
+   "home_from": 1793599200,
+   "job": [
+    "Mimar",
+    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
+    "office",
+    "plaza"
+   ],
+   "wp": "mimarlik",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@adoswmmm",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö F Blok, Daire 109",
+   "home_from": 1793599200,
+   "job": [
+    "Elektrik-Elektronik Mühendisi",
+    "Miniakent Enerji A.Ş. · Miniakent Plaza, Kat 9",
+    "office",
+    "plaza"
+   ],
+   "wp": "enerji",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ender_soydemir",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö F Blok, Daire 125",
+   "home_from": 1793599200,
+   "job": [
+    "Spor Hocası",
+    "Miniakent Spor Salonu · Miniakent Plaza, Kat 1",
+    "office",
+    "plaza"
+   ],
+   "wp": "spor",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@kiriciberen",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö A Blok, Daire 23",
+   "home_from": 1793599200,
+   "job": [
+    "Laboratuvar Teknisyeni",
+    "Miniakent Ar-Ge Merkezi · Miniakent Plaza, Kat 12",
+    "office",
+    "plaza"
+   ],
+   "wp": "arge",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@danzadellestatue",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö A Blok, Daire 40",
+   "home_from": 1793599200,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@duckmann290",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö A Blok, Daire 53",
+   "home_from": 1793599200,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@nazim_davut_",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö A Blok, Daire 85",
+   "home_from": 1793599200,
+   "job": [
+    "Yoga Eğitmeni",
+    "Miniakent Spor Salonu · Miniakent Plaza, Kat 1",
+    "office",
+    "plaza"
+   ],
+   "wp": "spor",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@alimee_tas",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö A Blok, Daire 114",
+   "home_from": 1793599200,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Telekom · Miniakent Plaza 2, Kat 11",
+    "office",
+    "plaza2"
+   ],
+   "wp": "telekom",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@pembekalpemojisi",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö A Blok, Daire 120",
+   "home_from": 1793599200,
+   "job": [
+    "Fizyoterapist",
+    "Miniakent Sağlık Merkezi · Miniakent Plaza, Kat 2",
+    "office",
+    "plaza"
+   ],
+   "wp": "saglik",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ilaydaa_ydn",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö A Blok, Daire 123",
+   "home_from": 1793599200,
+   "job": [
+    "Kurgucu",
+    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
+   ],
+   "wp": "medya",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@sandimsenvarsinn",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö A Blok, Daire 125",
+   "home_from": 1793599200,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@06nedaw",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö H Blok, Daire 6",
+   "home_from": 1793599200,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@mehmetihsan263",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö C Blok, Daire 12",
+   "home_from": 1793599200,
+   "job": [
+    "Ürün Fotoğrafçısı",
+    "Miniakent E-Ticaret A.Ş. · Miniakent Plaza 2, Kat 8",
+    "office",
+    "plaza2"
+   ],
+   "wp": "eticaret",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@oylesinenes",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö H Blok, Daire 14",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@llx.deriin34",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö H Blok, Daire 29",
+   "home_from": 1793599200,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@merttkya33",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö H Blok, Daire 39",
+   "home_from": 1793599200,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@aleynanurketenci",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö H Blok, Daire 44",
+   "home_from": 1793599200,
+   "job": [
+    "Doktor",
+    "Miniakent Sağlık Merkezi · Miniakent Plaza, Kat 2",
+    "office",
+    "plaza"
+   ],
+   "wp": "saglik",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@gulnrdalgic",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö H Blok, Daire 130",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@trakdergi",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö C Blok, Daire 17",
+   "home_from": 1793599200,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@elul26e",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö C Blok, Daire 43",
+   "home_from": 1793599200,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@o6.efxx",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö C Blok, Daire 45",
+   "home_from": 1793599200,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@_arda_a_",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö C Blok, Daire 71",
+   "home_from": 1793599200,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@__bhrmmn",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö C Blok, Daire 86",
+   "home_from": 1793599200,
+   "job": [
+    "Elektrik-Elektronik Mühendisi",
+    "Miniakent Enerji A.Ş. · Miniakent Plaza, Kat 9",
+    "office",
+    "plaza"
+   ],
+   "wp": "enerji",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@asenakalpinsta",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö C Blok, Daire 104",
+   "home_from": 1793599200,
+   "job": [
+    "Hukuk Danışmanı",
+    "Miniakent Hukuk Bürosu · Miniakent Plaza, Kat 6",
+    "office",
+    "plaza"
+   ],
+   "wp": "hukuk",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@bilalbalaban4141",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö C Blok, Daire 129",
+   "home_from": 1793599200,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@uzaygorkemarslan",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 9",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@babapiroahseb",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö E Blok, Daire 27",
+   "home_from": 1793599200,
+   "job": [
+    "Emlak Danışmanı",
+    "Miniakent Gayrimenkul · Miniakent Plaza 2, Kat 9",
+    "office",
+    "plaza2"
+   ],
+   "wp": "gayrimenkul",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@thecharlottespage",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 17",
+   "home_from": 1793599200,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@clltn.cagatay.kurt01",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 28",
+   "home_from": 1793599200,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@eren27.10",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 30",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@defnegizemgzlgee",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö E Blok, Daire 44",
+   "home_from": 1793599200,
+   "job": [
+    "Kurgucu",
+    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
+   ],
+   "wp": "medya",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@omer_efesentrk",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 32",
+   "home_from": 1793599200,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@y4gmur_p0",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 38",
+   "home_from": 1793599200,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@leyll_x072",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 39",
+   "home_from": 1793599200,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@_ruzgar_a",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 48",
+   "home_from": 1793599200,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@littleants.world",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 48",
+   "home_from": 1793599200,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@emolina_queen",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 48",
+   "home_from": 1793599200,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@anilkyraakyol",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 48",
+   "home_from": 1793599200,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@ayhan_atlas309",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 49",
+   "home_from": 1793599200,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@bes_teee11",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 49",
+   "home_from": 1793599200,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@ezgiwwxd",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 49",
+   "home_from": 1793599200,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@huseyin_tohan51",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 49",
+   "home_from": 1793599200,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@phoenixmustdie_3",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 50",
+   "home_from": 1793599200,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@s3na_zeyy",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 50",
+   "home_from": 1793599200,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@hey.diloss",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 50",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@g0khan_7733",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 50",
+   "home_from": 1793599200,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@nesliiblcw",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 51",
+   "home_from": 1793599200,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@elif._.bayindir",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 51",
+   "home_from": 1793599200,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@sadiye1905",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 51",
+   "home_from": 1793599200,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@eliustaelif",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 51",
+   "home_from": 1793599200,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@aslindasendiinherseyim",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 52",
+   "home_from": 1793599200,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@neuvillwtte",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 52",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@kilic_mustafa_1",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 52",
+   "home_from": 1793599200,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@uzaylieslem",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 52",
+   "home_from": 1793599200,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@dogan.mihrimah",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 53",
+   "home_from": 1793599200,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@strawbetties.3",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 53",
+   "home_from": 1793599200,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@alooonsoo_f1",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 53",
+   "home_from": 1793599200,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@irllnxy",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 53",
+   "home_from": 1793599200,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@haalimizzduumann",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 54",
+   "home_from": 1793599200,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@emogaming81",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 54",
+   "home_from": 1793599200,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@omersadk1",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 54",
+   "home_from": 1793599200,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@askweghsel_1",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 54",
+   "home_from": 1793599200,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@semihcokertme",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 55",
+   "home_from": 1793599200,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@nilaykarakaya88",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 55",
+   "home_from": 1793599200,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@yurtbasihalilugur",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 55",
+   "home_from": 1793599200,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@bengitmekistiyom_ehe",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 55",
+   "home_from": 1793599200,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@atadenizyorulmaz",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 56",
+   "home_from": 1793599200,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@0heraeth_",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 56",
+   "home_from": 1793599200,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@mervenursinem",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 56",
+   "home_from": 1793599200,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@cikolatali_sut_sever",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 56",
+   "home_from": 1793599200,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@sutdurulina",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 57",
+   "home_from": 1793599200,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@mwanoss_",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 57",
+   "home_from": 1793599200,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@_boraunlu_",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 57",
+   "home_from": 1793599200,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@m.ilkeyaylaa",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 57",
+   "home_from": 1793599200,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@oyk.rna",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 58",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@zlkf.97",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 58",
+   "home_from": 1793599200,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@bensarisindegiliiim",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 58",
+   "home_from": 1793599200,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@12h6yh6h",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 58",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@mina_oye7761",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 59",
+   "home_from": 1793599200,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@elo_burdan_gecti",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 59",
+   "home_from": 1793599200,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@musa_saruhanli",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 59",
+   "home_from": 1793599200,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@xemine_nisa",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 59",
+   "home_from": 1793599200,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@batuyeap",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 60",
+   "home_from": 1793599200,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@zumrabk56",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 60",
+   "home_from": 1793599200,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@kcygt_zeynep",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 60",
+   "home_from": 1793599200,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@iklim.askin",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 60",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@miray67817",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 61",
+   "home_from": 1793599200,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@nazwqx2818",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 61",
+   "home_from": 1793599200,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@hayrunisapendr",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 61",
+   "home_from": 1793599200,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@sanalkisyokancparmaksiklatmasi",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 61",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@uynambir_osmantusun_arabasi",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 62",
+   "home_from": 1793599200,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@pattes_cuvali_ve_arklari",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 62",
+   "home_from": 1793599200,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@kara_pena_11",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 62",
+   "home_from": 1793599200,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ucmang",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 62",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@buglem_rabia_seckin",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 63",
+   "home_from": 1793599200,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@meevlus.s",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 63",
+   "home_from": 1793599200,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@gecenin.incisi13",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 63",
+   "home_from": 1793599200,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@1ruzgarvsrms",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 63",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@ilkilk.01",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 64",
+   "home_from": 1793599200,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@z3yneqlll",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 64",
+   "home_from": 1793599200,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@senatambi_sefa",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 64",
+   "home_from": 1793599200,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@hilalsyrmzz",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 64",
+   "home_from": 1793599200,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@ygt.omerrr",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 65",
+   "home_from": 1793599200,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@elif702387",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 65",
+   "home_from": 1793599200,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@melisagdyy_",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 65",
+   "home_from": 1793599200,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@mahallenindayisi",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 65",
+   "home_from": 1793599200,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@zeyneq_7_",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 66",
+   "home_from": 1793599200,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@ipeknasdemirbacak",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 66",
+   "home_from": 1793599200,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@asyaysa.jpg",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 66",
+   "home_from": 1793599200,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@soyturk_yagmurr",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 66",
+   "home_from": 1793599200,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@kedicik2263",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 67",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@lookpeach_thee",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 67",
+   "home_from": 1793599200,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@madgenta_m",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 67",
+   "home_from": 1793599200,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@add_endd",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 67",
+   "home_from": 1793599200,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@evlanccc_1",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 68",
+   "home_from": 1793599200,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@nebil.ayim",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 68",
+   "home_from": 1793599200,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@diskoovirlov",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 68",
+   "home_from": 1793599200,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@o6ecrin_wls",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 68",
+   "home_from": 1793599200,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@seheraky7",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 69",
+   "home_from": 1793599200,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@_eyll12",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 69",
+   "home_from": 1793599200,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@alameddintop",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 69",
+   "home_from": 1793599200,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@beratalver60",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 69",
+   "home_from": 1793599200,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@y4mann_celikk73",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 70",
+   "home_from": 1793599200,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@selef_nr",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 70",
+   "home_from": 1793599200,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@visionvibei",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 70",
+   "home_from": 1793599200,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@fenerliicivciviim",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 70",
+   "home_from": 1793599200,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@emre_eg_07",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 71",
+   "home_from": 1793599200,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@ffatmairon",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 71",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@_fatih.su_",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 71",
+   "home_from": 1793599200,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@busbusrai",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 71",
+   "home_from": 1793599200,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@watarai32026",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 72",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ar_min0309",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 72",
+   "home_from": 1793599200,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@kaahrolmusfisstikk",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 72",
+   "home_from": 1793599200,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@fatmafeyza00",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 72",
+   "home_from": 1793599200,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@_simaywqp",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 73",
+   "home_from": 1793599200,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@elfiyreni",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 73",
+   "home_from": 1793599200,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@o6_azrqxv",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 73",
+   "home_from": 1793599200,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@vampirmorde",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 73",
+   "home_from": 1793599200,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@atakan__3543",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 74",
+   "home_from": 1793599200,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@kanatszguvecriin",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 74",
+   "home_from": 1793599200,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@asyaylacokyasatm",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 74",
+   "home_from": 1793599200,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@dilaraybk",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 74",
+   "home_from": 1793599200,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@duce.tm",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 75",
+   "home_from": 1793599200,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@broicd_",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 75",
+   "home_from": 1793599200,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@mirayy_aby",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 75",
+   "home_from": 1793599200,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@karpuzluicetea_59",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 75",
+   "home_from": 1793599200,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@eslem_ayten",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 76",
+   "home_from": 1793599200,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@himmanliyorum",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 76",
+   "home_from": 1793599200,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@mert94774",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 76",
+   "home_from": 1793599200,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@bulutmelihfirat",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 76",
+   "home_from": 1793599200,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@derinlerdeyizz4",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 77",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@omer.bamsi.25",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 77",
+   "home_from": 1793599200,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@senakla_12",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 77",
+   "home_from": 1793599200,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@cemreakcaym",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 77",
+   "home_from": 1793599200,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@busrakarabayir3",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 78",
+   "home_from": 1793599200,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@fatihakcan01",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 78",
+   "home_from": 1793599200,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@hiranur_ayyildiz",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 78",
+   "home_from": 1793599200,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@ygmryllmaz_o6",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 78",
+   "home_from": 1793599200,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@benniloya.a",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 79",
+   "home_from": 1793599200,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@tolgarmx",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 79",
+   "home_from": 1793599200,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@leylakoksalans",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 79",
+   "home_from": 1793599200,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@poloyakaseven_3110",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 79",
+   "home_from": 1793599200,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@eliftekinnsss",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 80",
+   "home_from": 1793599200,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@reynmenkimbilmemamabenreyhan",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 80",
+   "home_from": 1793599200,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@aybukkee6",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 80",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@deren43376",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 80",
+   "home_from": 1793599200,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ela_cykra",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 81",
+   "home_from": 1793599200,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@1eerendogan",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 81",
+   "home_from": 1793599200,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@kola_icen_maymun",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 81",
+   "home_from": 1793599200,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ozanarslantass",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 81",
+   "home_from": 1793599200,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@haythame_kenwayy",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 82",
+   "home_from": 1793599200,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@dmrarabasuren",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 82",
+   "home_from": 1793599200,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@nisa_gunes42",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 82",
+   "home_from": 1793599200,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@kesinlikle_gunes_degil",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 82",
+   "home_from": 1793599200,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@sekerahmet24",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 83",
+   "home_from": 1793599200,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@noxive._offical",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 83",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@aozrope",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 83",
+   "home_from": 1793599200,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@luwiezx",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 83",
+   "home_from": 1793599200,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@bayezid066",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 84",
+   "home_from": 1793599200,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@alikerimcicekci1",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 84",
+   "home_from": 1793599200,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@zeyno_ysss",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 84",
+   "home_from": 1793599200,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@efe1233412",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 84",
+   "home_from": 1793599200,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@e.ylul8431",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 85",
+   "home_from": 1793599200,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@kaynak_elifsu",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 85",
+   "home_from": 1793599200,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@nurfsnnn._",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 85",
+   "home_from": 1793599200,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@cryinzyra",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 85",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@megusta_faruk",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 86",
+   "home_from": 1793599200,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@ben_moktayz",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 86",
+   "home_from": 1793599200,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@koseoglu4y",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 86",
+   "home_from": 1793599200,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@yokyavnealakasvar",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 86",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@mustafacnarklc",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 87",
+   "home_from": 1793599200,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@itsrumeysa53",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 87",
+   "home_from": 1793599200,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@_.zulfikar82",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 87",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@mrcbuen1",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 87",
+   "home_from": 1793599200,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@beyzaymiss1903",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 88",
+   "home_from": 1793599200,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@batukuzey_52",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 88",
+   "home_from": 1793599200,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@zehra_1066",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 88",
+   "home_from": 1793599200,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@3fetugrul",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 88",
+   "home_from": 1793599200,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@userecenisa",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 89",
+   "home_from": 1793599200,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@sena44463",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 89",
+   "home_from": 1793599200,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@adnan.yldrm_",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 89",
+   "home_from": 1793599200,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@salvazar0",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 89",
+   "home_from": 1793599200,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@dorukisikan",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 90",
+   "home_from": 1793599200,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@denizzsoysall0980",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 90",
+   "home_from": 1793599200,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@silvana__bloom",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 90",
+   "home_from": 1793599200,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@mehmeteminkaraduman",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 90",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@seyoizm",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 91",
+   "home_from": 1793599200,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@_nisaakyncu",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 91",
+   "home_from": 1793599200,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@merdivenaltibebekmamaciligi",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 91",
+   "home_from": 1793599200,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@dafiduck_45",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 91",
+   "home_from": 1793599200,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@esmer_seker89",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 92",
+   "home_from": 1793599200,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@byraktr_a",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 92",
+   "home_from": 1793599200,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@denizcemzade",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 92",
+   "home_from": 1793599200,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@zeynep_nisa_8",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 92",
+   "home_from": 1793599200,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@buglemm_ozsoy",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 93",
+   "home_from": 1793599200,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@6mihrinisa",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 93",
+   "home_from": 1793599200,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@sakineboke",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 93",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@007sevinn",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 93",
+   "home_from": 1793599200,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@kaderkr001",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 94",
+   "home_from": 1793599200,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@ssarelle14",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 94",
+   "home_from": 1793599200,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@sdl_yldz_60",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 94",
+   "home_from": 1793599200,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@erenozzdemiir",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 94",
+   "home_from": 1793599200,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@alysa0618",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 95",
+   "home_from": 1793599200,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@svvalkocc",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 95",
+   "home_from": 1793599200,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@hikayedegiloykuyumm",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 95",
+   "home_from": 1793599200,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@berkay85009",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 95",
+   "home_from": 1793599200,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@ayse.krblt.01",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 96",
+   "home_from": 1793599200,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@efaydnnn",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 96",
+   "home_from": 1793599200,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@b3nevenoz",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 96",
+   "home_from": 1793599200,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@sudiis0",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 96",
+   "home_from": 1793599200,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@beijanur",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 97",
+   "home_from": 1793599200,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@hiranur_tartici",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 97",
+   "home_from": 1793599200,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@gozde_krksss",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 97",
+   "home_from": 1793599200,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@l0oklikeanangelgoddamnmasallah",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 97",
+   "home_from": 1793599200,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@sielabolat",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 98",
+   "home_from": 1793599200,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@fulyapuslu",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 98",
+   "home_from": 1793599200,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@niskurnaz",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 98",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@eeeaaa355",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 98",
+   "home_from": 1793599200,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@sametmizrakx",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 99",
+   "home_from": 1793599200,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@focusfokfok",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 99",
+   "home_from": 1793599200,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@bape_.fr",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 99",
+   "home_from": 1793599200,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@dfnarkn00",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 99",
+   "home_from": 1793599200,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@marjinal.roseblack",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 100",
+   "home_from": 1793599200,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@bereenkaratepe",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 100",
+   "home_from": 1793599200,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@zumrabk",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 100",
+   "home_from": 1793599200,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@anit.halilibrahim",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 100",
+   "home_from": 1793599200,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@astanxyara",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 101",
+   "home_from": 1793599200,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@senagrcc7",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 101",
+   "home_from": 1793599200,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@duel1nteyvat",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 101",
+   "home_from": 1793599200,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@mamomucks.twnkle.12",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 101",
+   "home_from": 1793599200,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@hilal_erdeen",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 102",
+   "home_from": 1793599200,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@eds20012",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 102",
+   "home_from": 1793599200,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@asslyyll",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 102",
+   "home_from": 1793599200,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@kure_kalbi",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 102",
+   "home_from": 1793599200,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@iremnarbuzlu",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 103",
+   "home_from": 1793599200,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@sertanavlar",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 103",
+   "home_from": 1793599200,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@ervsog.1018",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 103",
+   "home_from": 1793599200,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@melanilceren",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 103",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@moonspark60",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 104",
+   "home_from": 1793599200,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@cakmayaoici",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 104",
+   "home_from": 1793599200,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@pinkiepiedef",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 104",
+   "home_from": 1793599200,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@eliftir._",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 104",
+   "home_from": 1793599200,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@adenmadendebademyemis",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 105",
+   "home_from": 1793599200,
+   "job": [
+    "Veznedar",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ysni_yld",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 105",
+   "home_from": 1793599200,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@yengeyecerendedinusta",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 105",
+   "home_from": 1793599200,
+   "job": [
+    "Aşçı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@sonsuzdmlasomnsuzz",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 105",
+   "home_from": 1793599200,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@esma12661266",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 106",
+   "home_from": 1793599200,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@lebllabbie",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 106",
+   "home_from": 1793599200,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@jen.nie_1994",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 106",
+   "home_from": 1793599200,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@kerima.ltunkaya",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 106",
+   "home_from": 1793599200,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@t4lh1phlvn",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 107",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@aycasensesw",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 107",
+   "home_from": 1793599200,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@yagmusspriwwcanum",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 107",
+   "home_from": 1793599200,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@zeynep._.vildan",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 107",
+   "home_from": 1793599200,
+   "job": [
+    "Gişe Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@e.gumussss",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 108",
+   "home_from": 1793599200,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@exhausted_emir",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 108",
+   "home_from": 1793599200,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@ayseakdasgul",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 108",
+   "home_from": 1793599200,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@ruzgar201312",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 108",
+   "home_from": 1793599200,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@ayrandegilimya4",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 109",
+   "home_from": 1793599200,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@stanleysnyder234",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 109",
+   "home_from": 1793599200,
+   "job": [
+    "Güvenlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@asra_yavuzz",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 109",
+   "home_from": 1793599200,
+   "job": [
+    "Pazarlama Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@akoo_52.34",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 109",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ceceylibonn",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 110",
+   "home_from": 1793599200,
+   "job": [
+    "Bilişim Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@humaymisimm1",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 110",
+   "home_from": 1793599200,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@ysuefesenturk",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 110",
+   "home_from": 1793599200,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@hzyastz",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 110",
+   "home_from": 1793599200,
+   "job": [
+    "Temizlik Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@berra_.03",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 111",
+   "home_from": 1793599200,
+   "job": [
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@simaycetin00",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 111",
+   "home_from": 1793599200,
+   "job": [
+    "Halkla İlişkiler Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@miray.es",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 111",
+   "home_from": 1793599200,
+   "job": [
+    "Satın Alma Sorumlusu",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@tuannayildiz.1",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 111",
+   "home_from": 1793599200,
+   "job": [
+    "Çağrı Merkezi Görevlisi",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@nemlihatunn",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 112",
+   "home_from": 1793599200,
+   "job": [
+    "Reklamcı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@serru.1",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "Doğu Banliyö J Blok, Daire 112",
+   "home_from": 1793599200,
+   "job": [
+    "Kredi Uzmanı",
+    "Miniakent Bankası",
+    "office",
+    "banka"
+   ],
+   "wp": "banka",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ferikrkmz123",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Balık tutmak",
+   "queue": 1,
+   "left": 0
+  },
+  {
+   "handle": "@yuris.pie",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yemek yapmak",
+   "queue": 2,
+   "left": 0
+  },
+  {
+   "handle": "@esila_turann01",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yüzmek",
+   "queue": 3,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@masaldenizak",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 4,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@mr_demir_",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Gitar çalmak",
+   "queue": 5,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@zehwr_d",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kuşları izlemek",
+   "queue": 6,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@whoischokingidc7",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yemek yapmak",
+   "queue": 7,
+   "left": 0
+  },
+  {
+   "handle": "@kadlrfr",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kitap okumak",
+   "queue": 8,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@614illegal",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yüzmek",
+   "queue": 9,
+   "left": 0
+  },
+  {
+   "handle": "@muhammedking221",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bahçe işleri",
+   "queue": 10,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@eliff_turr",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kuşları izlemek",
+   "queue": 11,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@bebisporcay",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Satranç",
+   "queue": 12,
+   "left": 0
+  },
+  {
+   "handle": "@eliff_043x_",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bisiklete binmek",
+   "queue": 13,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@cigkofte_olcam",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yemek yapmak",
+   "queue": 14,
+   "left": 0
+  },
+  {
+   "handle": "@damonsalvatorlovebidehailey",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yüzmek",
+   "queue": 15,
+   "left": 0
+  },
+  {
+   "handle": "@then0_x",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 16,
+   "left": 0
+  },
+  {
+   "handle": "@musa.krds0",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yemek yapmak",
+   "queue": 17,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@wisper1aa",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kitap okumak",
+   "queue": 18,
+   "left": 0
+  },
+  {
+   "handle": "@zeynepduruozkan.z",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yüzmek",
+   "queue": 19,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@onetomynine",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Resim yapmak",
+   "queue": 20,
+   "left": 0
+  },
+  {
+   "handle": "@laftananlamazbirben",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yemek yapmak",
+   "queue": 21,
+   "left": 0
+  },
+  {
+   "handle": "@m0kalattee11",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Satranç",
+   "queue": 22,
+   "left": 0
+  },
+  {
+   "handle": "@yama.fr42",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 23,
+   "left": 0
+  },
+  {
+   "handle": "@geercekkeglencee",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 24,
+   "left": 0
+  },
+  {
+   "handle": "@arasunlu12",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 25,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@brn_aribakir",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yemek yapmak",
+   "queue": 26,
+   "left": 0
+  },
+  {
+   "handle": "@petsisetedarikcisi",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Satranç",
+   "queue": 27,
+   "left": 0
+  },
+  {
+   "handle": "@emirsahin1027",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Gitar çalmak",
+   "queue": 28,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@sukisukidaiwsuki",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Balık tutmak",
+   "queue": 29,
+   "left": 0
+  },
+  {
+   "handle": "@marslibirhanim",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yüzmek",
+   "queue": 30,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@hiranuew",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yemek yapmak",
+   "queue": 31,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@ticci_toby.y.y",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Satranç",
+   "queue": 32,
+   "left": 0
+  },
+  {
+   "handle": "@_iqraaky",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yüzmek",
+   "queue": 33,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@asya_levent_",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Resim yapmak",
+   "queue": 34,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@berto_0156",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Satranç",
+   "queue": 35,
+   "left": 0
+  },
+  {
+   "handle": "@ebrars_021",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bisiklete binmek",
+   "queue": 36,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@yzcizzet57",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kitap okumak",
+   "queue": 37,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@mrcsayarr43",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kuşları izlemek",
+   "queue": 38,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@mmizgin993",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 39,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@akif.tasdemirr",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kitap okumak",
+   "queue": 40,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@yus.ufhrd",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 41,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@vakvakurbagaincii",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kitap okumak",
+   "queue": 42,
+   "left": 0
+  },
+  {
+   "handle": "@3miri.s3viyorum",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 43,
+   "left": 0
+  },
+  {
+   "handle": "@ibozenith_xb",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Resim yapmak",
+   "queue": 44,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@4ys3gu77",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kitap okumak",
+   "queue": 45,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@neyapmayacalisiyosunela",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bisiklete binmek",
+   "queue": 46,
+   "left": 0
+  },
+  {
+   "handle": "@crazy_maymunnn",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Balık tutmak",
+   "queue": 47,
+   "left": 0
+  },
+  {
+   "handle": "@sude50648",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kuşları izlemek",
+   "queue": 48,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@_kelebek_etkisii_",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bahçe işleri",
+   "queue": 49,
+   "left": 0
+  },
+  {
+   "handle": "@baelsow",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kuşları izlemek",
+   "queue": 50,
+   "left": 0
+  },
+  {
+   "handle": "@cherife00",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Gitar çalmak",
+   "queue": 51,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@tuncayibili",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kitap okumak",
+   "queue": 52,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@dmlidyp",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yüzmek",
+   "queue": 53,
+   "left": 0
+  },
+  {
+   "handle": "@saraaa000389",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 54,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@melekyuzluseeytan",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yüzmek",
+   "queue": 55,
+   "left": 0
+  },
+  {
+   "handle": "@ssakamakamadafaka_",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 56,
+   "left": 0
+  },
+  {
+   "handle": "@karya_arts12",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Satranç",
+   "queue": 57,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@niisaaakooo",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Satranç",
+   "queue": 58,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@badewp_14",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Balık tutmak",
+   "queue": 59,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@lutfiozgureraytas",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yemek yapmak",
+   "queue": 60,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@egealknn08",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bisiklete binmek",
+   "queue": 61,
+   "left": 0
+  },
+  {
+   "handle": "@kedilericokseviomm",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kitap okumak",
+   "queue": 62,
+   "left": 0
+  },
+  {
+   "handle": "@bunyamin_1224",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bahçe işleri",
+   "queue": 63,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@inci.soyaslann",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kitap okumak",
+   "queue": 64,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@03mustafa_demirbas03",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Gitar çalmak",
+   "queue": 65,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@yetimhanepatlatan3111",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Satranç",
+   "queue": 66,
+   "left": 0
+  },
+  {
+   "handle": "@beyza33.333",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Balık tutmak",
+   "queue": 67,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@mira961920",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bahçe işleri",
+   "queue": 68,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@dunyyp",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bisiklete binmek",
+   "queue": 69,
+   "left": 0
+  },
+  {
+   "handle": "@locationasya",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yemek yapmak",
+   "queue": 70,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@oyarenbuyarendegil",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Resim yapmak",
+   "queue": 71,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@ern_aes1",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Satranç",
+   "queue": 72,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@anil.utk",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bahçe işleri",
+   "queue": 73,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@ferrari.432026_",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bahçe işleri",
+   "queue": 74,
+   "left": 0
+  },
+  {
+   "handle": "@zuulaalimm",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bahçe işleri",
+   "queue": 75,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@tanemhosgor",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Gitar çalmak",
+   "queue": 76,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@uyanuyuyanguzel",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yüzmek",
+   "queue": 77,
+   "left": 0
+  },
+  {
+   "handle": "@ilayda_yamak7",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 78,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@dereninmekaniii",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yüzmek",
+   "queue": 79,
+   "left": 0
+  },
+  {
+   "handle": "@bery_nwt1",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Gitar çalmak",
+   "queue": 80,
+   "left": 0
+  },
+  {
+   "handle": "@nisia1622",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yüzmek",
+   "queue": 81,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@naaqn_a",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Balık tutmak",
+   "queue": 82,
+   "left": 0
+  },
+  {
+   "handle": "@gulludeva",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bahçe işleri",
+   "queue": 83,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@replik__hane13",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Satranç",
+   "queue": 84,
+   "left": 0
+  },
+  {
+   "handle": "@_ahmetkaynak__",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kuşları izlemek",
+   "queue": 85,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@_el1fnazcim",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Satranç",
+   "queue": 86,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@dolukadehiterstutmadokcenawk",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Satranç",
+   "queue": 87,
+   "left": 0
+  },
+  {
+   "handle": "@meryemkayhn",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bisiklete binmek",
+   "queue": 88,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@adanineglencemekani",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Satranç",
+   "queue": 89,
+   "left": 0
+  },
+  {
+   "handle": "@irmagiminakisinaolurumturkiyem",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kitap okumak",
+   "queue": 90,
+   "left": 0
+  },
+  {
+   "handle": "@dogaikd",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Resim yapmak",
+   "queue": 91,
+   "left": 0
+  },
+  {
+   "handle": "@imrewnnn",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Resim yapmak",
+   "queue": 92,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@ayaaitmisim",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 93,
+   "left": 0
+  },
+  {
+   "handle": "@komurkarasemih00",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yüzmek",
+   "queue": 94,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@s_.aylin_a",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bahçe işleri",
+   "queue": 95,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@tursuyaren",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 96,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@ela040714",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Resim yapmak",
+   "queue": 97,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@asikolmakicinfazlamelankoligim",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Resim yapmak",
+   "queue": 98,
+   "left": 0
+  },
+  {
+   "handle": "@defne_serden",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kitap okumak",
+   "queue": 99,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@samiraomar765",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Gitar çalmak",
+   "queue": 100,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@hayrunnisa4125",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yemek yapmak",
+   "queue": 101,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@olkanesma",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yemek yapmak",
+   "queue": 102,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@yagmur.nfsogl",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kitap okumak",
+   "queue": 103,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@k.wzey",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 104,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@nazwyy._",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yüzmek",
+   "queue": 105,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@berraguzel82",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Gitar çalmak",
+   "queue": 106,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@kopernik_pizzasi__",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Gitar çalmak",
+   "queue": 107,
+   "left": 0
+  },
+  {
+   "handle": "@devrim_naz.4",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yemek yapmak",
+   "queue": 108,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@tutsakkalmisbokcuvali",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Satranç",
+   "queue": 109,
+   "left": 0
+  },
+  {
+   "handle": "@rabiaisyar",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kitap okumak",
+   "queue": 110,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@hamza_zorlu4158",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bahçe işleri",
+   "queue": 111,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@_rqvzaax_",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Satranç",
+   "queue": 112,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@bilalkapllan",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bahçe işleri",
+   "queue": 113,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@slayyhocam_411",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yüzmek",
+   "queue": 114,
+   "left": 0
+  },
+  {
+   "handle": "@denoss_benn",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yemek yapmak",
+   "queue": 115,
+   "left": 0
+  },
+  {
+   "handle": "@aseninpriwiss",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Resim yapmak",
+   "queue": 116,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@peri.psknst",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kuşları izlemek",
+   "queue": 117,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@ayd_numan55",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Gitar çalmak",
+   "queue": 118,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@zeyneplerdeyiz_2010",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bahçe işleri",
+   "queue": 119,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@betulfarmasi8725",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 120,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@yogurtlutantuniso",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kuşları izlemek",
+   "queue": 121,
+   "left": 0
+  },
+  {
+   "handle": "@e_se_m_a",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bisiklete binmek",
+   "queue": 122,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@stlya16",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 123,
+   "left": 0
+  },
+  {
+   "handle": "@emo.sansur",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kitap okumak",
+   "queue": 124,
+   "left": 0
+  },
+  {
+   "handle": "@sudenakblutts",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kitap okumak",
+   "queue": 125,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@nihatuzunum",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kuşları izlemek",
+   "queue": 126,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@aydaokl",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kitap okumak",
+   "queue": 127,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@mertdenizanill",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Satranç",
+   "queue": 128,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@burak.ogutluoglu",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Satranç",
+   "queue": 129,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@ardaa.iilebaglanhayataaa",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Gitar çalmak",
+   "queue": 130,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@mustafa.efe0",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Gitar çalmak",
+   "queue": 131,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@n3n3xxhir",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yemek yapmak",
+   "queue": 132,
+   "left": 0
+  },
+  {
+   "handle": "@leopard.1899375",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Satranç",
+   "queue": 133,
+   "left": 0
+  },
+  {
+   "handle": "@gelmedidahaguzeelii",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 134,
+   "left": 0
+  },
+  {
+   "handle": "@herkesemermi_zeynepyermi_01",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yemek yapmak",
+   "queue": 135,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@mongolufestea",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Gitar çalmak",
+   "queue": 136,
+   "left": 0
+  },
+  {
+   "handle": "@duruozel3",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yemek yapmak",
+   "queue": 137,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@g.nur05.f",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Resim yapmak",
+   "queue": 138,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@endingcr",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 139,
+   "left": 0
+  },
+  {
+   "handle": "@aziz_doruk_turkis",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 140,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@rabiates_0634",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bahçe işleri",
+   "queue": 141,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@ily_trn",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Balık tutmak",
+   "queue": 142,
+   "left": 0
+  },
+  {
+   "handle": "@tanemx2m",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bisiklete binmek",
+   "queue": 143,
+   "left": 0
+  },
+  {
+   "handle": "@mertbengul",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Satranç",
+   "queue": 144,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@inosuke_breathing.5686",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 145,
+   "left": 0
+  },
+  {
+   "handle": "@asude.okr",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bisiklete binmek",
+   "queue": 146,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@dev.lezgin_krkt",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yüzmek",
+   "queue": 147,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@altuuntas",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 148,
+   "left": 0
+  },
+  {
+   "handle": "@irmaaaak_priww",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bahçe işleri",
+   "queue": 149,
+   "left": 0
+  },
+  {
+   "handle": "@gunes.ipk",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yemek yapmak",
+   "queue": 150,
+   "left": 0
+  },
+  {
+   "handle": "@mami_volta04",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bahçe işleri",
+   "queue": 151,
+   "left": 0
+  },
+  {
+   "handle": "@elif_lyk1",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kitap okumak",
+   "queue": 152,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@elipp26",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Gitar çalmak",
+   "queue": 153,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@bekirusta66",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yüzmek",
+   "queue": 154,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@ff3eyys0_",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bisiklete binmek",
+   "queue": 155,
+   "left": 0
+  },
+  {
+   "handle": "@_ahmet.sabag",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Resim yapmak",
+   "queue": 156,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@1yunusckmz_",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Satranç",
+   "queue": 157,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@buzlu.bounty6",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Gitar çalmak",
+   "queue": 158,
+   "left": 0
+  },
+  {
+   "handle": "@asyakj__333",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 159,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@erendemir31.44.17",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Satranç",
+   "queue": 160,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@ygmr.aleyy",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yüzmek",
+   "queue": 161,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@nehirmelekinal",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yemek yapmak",
+   "queue": 162,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@blupblupada",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yemek yapmak",
+   "queue": 163,
+   "left": 0
+  },
+  {
+   "handle": "@cengizhanbarak",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yemek yapmak",
+   "queue": 164,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@elifmelis0668",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 165,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@elifff.2014",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bahçe işleri",
+   "queue": 166,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@lunaflares1",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kuşları izlemek",
+   "queue": 167,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@bagcii7",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kuşları izlemek",
+   "queue": 168,
+   "left": 0
+  },
+  {
+   "handle": "@zeynepdikmenli.official",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Balık tutmak",
+   "queue": 169,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@ekin.kygs",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Gitar çalmak",
+   "queue": 170,
+   "left": 0
+  },
+  {
+   "handle": "@rumeysa.1442",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yüzmek",
+   "queue": 171,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@_zeynep_duru_37",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yüzmek",
+   "queue": 172,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@_hazalyigt",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yemek yapmak",
+   "queue": 173,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@sirincagatay",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kitap okumak",
+   "queue": 174,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@oihunghie",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yüzmek",
+   "queue": 175,
+   "left": 0
+  },
+  {
+   "handle": "@asskistan",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yüzmek",
+   "queue": 176,
+   "left": 0
+  },
+  {
+   "handle": "@cocuk_adam11111",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yemek yapmak",
+   "queue": 177,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@adenn.kskn",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Satranç",
+   "queue": 178,
+   "left": 0
+  },
+  {
+   "handle": "@_night_san_",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Resim yapmak",
+   "queue": 179,
+   "left": 0
+  },
+  {
+   "handle": "@kurbik99",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 180,
+   "left": 0
+  },
+  {
+   "handle": "@kuze.yyy2",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Resim yapmak",
+   "queue": 181,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@orum1cek2adam34",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 182,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@ahmetemir_yasar52",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 183,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@patates.yuta",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kitap okumak",
+   "queue": 184,
+   "left": 0
+  },
+  {
+   "handle": "@guntekinagah41",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Balık tutmak",
+   "queue": 185,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@mehmetdaghan9988",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Gitar çalmak",
+   "queue": 186,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@cinar32500",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Gitar çalmak",
+   "queue": 187,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@yunus_emre5131",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bahçe işleri",
+   "queue": 188,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@zynkoksal",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yemek yapmak",
+   "queue": 189,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@zeobeyyy",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bahçe işleri",
+   "queue": 190,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@yartellocannnn24",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bisiklete binmek",
+   "queue": 191,
+   "left": 0
+  },
+  {
+   "handle": "@isoo_klcc",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kitap okumak",
+   "queue": 192,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@lozysetup",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 193,
+   "left": 0
+  },
+  {
+   "handle": "@rustwww",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yemek yapmak",
+   "queue": 194,
+   "left": 0
+  },
+  {
+   "handle": "@utkualagoz",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Yemek yapmak",
+   "queue": 195,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@iamgonnagrowwings0",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kitap okumak",
+   "queue": 196,
+   "left": 0
+  },
+  {
+   "handle": "@hlaluludag",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Kuşları izlemek",
+   "queue": 197,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@enbuyukthenbhdfani",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bahçe işleri",
+   "queue": 198,
+   "left": 0
+  },
+  {
+   "handle": "@wo.istmeinemama",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bisiklete binmek",
+   "queue": 199,
+   "left": 0
+  },
+  {
+   "handle": "@bidibidikedicik",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Bisiklete binmek",
+   "queue": 200,
+   "left": 0
+  },
+  {
+   "handle": "@ecrin._.zeynep_",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 201,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@eymenaydin1243",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Resim yapmak",
+   "queue": 202,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@akewthbeee",
+   "arrive": 1793570520,
+   "move": 1793599200,
+   "home": "",
+   "home_from": 0,
+   "job": null,
+   "wp": "",
+   "hobby": "Resim yapmak",
+   "queue": 203,
+   "left": 0
   }
  ]
 }
