@@ -277,18 +277,37 @@ try {
 	}
 	// Cadılar Bayramı kostümleri (kullanıcı, 2026-11-02): kartta seçilen kostüm <yol>/<kullanıcı adı> olarak yazılır,
 	// herkes görür; sınır yok. Kullanıcı adında "@" atılır, "." yerine "," (Firebase anahtarında nokta olamaz).
-	// Yol yalnız sayfa verirse açık (window.miniakentKostumYol; test sayfası "kostum_deneme"); yoksa kapalı.
-	const kostumYol = window.miniakentKostumYol || "";
-	if (kostumYol) {
+	// Canlıda "kostum" bölümü yalnız Salı 3 Kasım 09:00 – Pazar 8 Kasım 06:00 arası açık (Türkiye saati; kullanıcı,
+	// 2026-11-02): sayfa açıkken başlangıçta açılır, bitişte kostümler kalkar ve düğme kaybolur. Test sayfası kendi
+	// yolunu verir (window.miniakentKostumYol = "kostum_deneme"), tarihsiz açıktır.
+	const KOSTUM_BAS = Date.parse("2026-11-03T09:00:00+03:00");
+	const KOSTUM_BIT = Date.parse("2026-11-08T06:00:00+03:00");
+	let kostumBirak = null;
+	const kostumAc = (yol) => {
 		window.miniakentKostumlar = {};
-		window.miniakentKostumSurum = 0;
-		onValue(ref(db, kostumYol), (s) => {
+		window.miniakentKostumSurum = (window.miniakentKostumSurum || 0) + 1;
+		kostumBirak = onValue(ref(db, yol), (s) => {
 			const o = {};
 			s.forEach((c) => { o["@" + c.key.replace(/,/g, ".")] = c.val(); });
 			window.miniakentKostumlar = o;
 			window.miniakentKostumSurum++;
 		});
-		window.miniakentKostumSec = (h, ad) => set(ref(db, kostumYol + "/" + h.replace(/^@/, "").replace(/\./g, ",")), ad);
+		// boş ad = kostümü çıkar: kayıt silinir (kullanıcı, 2026-11-03)
+		window.miniakentKostumSec = (h, ad) => set(ref(db, yol + "/" + h.replace(/^@/, "").replace(/\./g, ",")), ad || null);
+	};
+	const kostumKapat = () => {
+		if (kostumBirak) kostumBirak();
+		delete window.miniakentKostumSec;
+		window.miniakentKostumlar = {};
+		window.miniakentKostumSurum = (window.miniakentKostumSurum || 0) + 1;
+	};
+	if (window.miniakentKostumYol) {
+		kostumAc(window.miniakentKostumYol);
+	} else if (Date.now() < KOSTUM_BIT) {
+		setTimeout(() => {
+			kostumAc("kostum");
+			setTimeout(kostumKapat, Math.max(0, KOSTUM_BIT - Date.now()));
+		}, Math.max(0, KOSTUM_BAS - Date.now()));
 	}
 } catch (e) {
 	console.warn("Firebase", e);
@@ -296,7 +315,7 @@ try {
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"kostum-deneme/index-kostum-v202611022306.pck","fileSizes":{"kostum-deneme/index-kostum-v202611022306.pck":6089828,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"kostum-deneme/index-kostum-v202611030034.pck","fileSizes":{"kostum-deneme/index-kostum-v202611030034.pck":6093828,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
