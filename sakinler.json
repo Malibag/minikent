@@ -9428,10 +9428,10 @@
    "home": "Yasemin Sokağı No 8, Daire 4",
    "home_from": 1792821600,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Bahçe işleri",
@@ -17321,8 +17321,8 @@
    "job": [
     "Trafik Polisi",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Uçurtma uçurmak",
@@ -20789,10 +20789,10 @@
    "home": "Lavanta Sokağı No 16, Daire 2",
    "home_from": 1792821600,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Satranç",
@@ -22158,8 +22158,8 @@
    "job": [
     "Trafik Polisi",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Satranç",
@@ -23626,10 +23626,10 @@
    "home": "Begonvil Sokağı No 11, Daire 1",
    "home_from": 1792821600,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Bahçe işleri",
@@ -25313,10 +25313,10 @@
    "home": "Lavanta Sokağı No 1, Daire 1",
    "home_from": 1792821600,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Uçurtma uçurmak",
@@ -25347,10 +25347,10 @@
    "home": "Lavanta Sokağı No 1, Daire 3",
    "home_from": 1792821600,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Balık tutmak",
@@ -25900,10 +25900,10 @@
    "home": "Lavanta Sokağı No 7, Daire 2",
    "home_from": 1792821600,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Balık tutmak",
@@ -26451,10 +26451,10 @@
    "home": "Mimoza Sokağı No 3, Daire 4",
    "home_from": 1792821600,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Kitap okumak",
@@ -26463,8 +26463,7 @@
    "look": [
     0,
     0
-   ],
-   "nobet": 6
+   ]
   },
   {
    "handle": "@verschrobenth",
@@ -27168,8 +27167,8 @@
    "job": [
     "Trafik Polisi",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Fotoğraf çekmek",
@@ -28177,8 +28176,8 @@
    "job": [
     "Trafik Polisi",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Balık tutmak",
@@ -32104,10 +32103,10 @@
    "home": "Lavanta Sokağı No 4, Daire 1",
    "home_from": 1792821600,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Gitar çalmak",
@@ -34530,10 +34529,10 @@
    "home": "Akasya Sokağı No 4, Daire 25",
    "home_from": 1792821600,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Resim yapmak",
@@ -34900,8 +34899,8 @@
    "job": [
     "Trafik Polisi",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Resim yapmak",
@@ -71666,16 +71665,15 @@
    "home": "Doğu Banliyö A Blok, Daire 19",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Balık tutmak",
    "queue": 0,
-   "left": 0,
-   "nobet": 7
+   "left": 0
   },
   {
    "handle": "@alsibakuninn",
@@ -71722,10 +71720,10 @@
    "home": "Doğu Banliyö A Blok, Daire 71",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Yüzmek",
@@ -71734,8 +71732,7 @@
    "look": [
     4,
     0
-   ],
-   "nobet": 10
+   ]
   },
   {
    "handle": "@the_yusufiiijjj",
@@ -71744,10 +71741,10 @@
    "home": "Doğu Banliyö A Blok, Daire 84",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Bahçe işleri",
@@ -71756,8 +71753,7 @@
    "look": [
     0,
     0
-   ],
-   "nobet": 11
+   ]
   },
   {
    "handle": "@onsra34",
@@ -71766,16 +71762,15 @@
    "home": "Doğu Banliyö B Blok, Daire 10",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0,
-   "nobet": 12
+   "left": 0
   },
   {
    "handle": "@slaaaballl",
@@ -71784,16 +71779,15 @@
    "home": "Doğu Banliyö B Blok, Daire 28",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0,
-   "nobet": 13
+   "left": 0
   },
   {
    "handle": "@llseda_k",
@@ -71802,10 +71796,10 @@
    "home": "Doğu Banliyö B Blok, Daire 28",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Satranç",
@@ -71814,8 +71808,7 @@
    "look": [
     1,
     1
-   ],
-   "nobet": 14
+   ]
   },
   {
    "handle": "@halil_merts",
@@ -71846,10 +71839,10 @@
    "home": "Doğu Banliyö B Blok, Daire 37",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Uçurtma uçurmak",
@@ -71858,8 +71851,7 @@
    "look": [
     0,
     0
-   ],
-   "nobet": 16
+   ]
   },
   {
    "handle": "@marjinalsushi",
@@ -71868,16 +71860,15 @@
    "home": "Doğu Banliyö B Blok, Daire 50",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0,
-   "nobet": 17
+   "left": 0
   },
   {
    "handle": "@iremirzam",
@@ -71886,10 +71877,10 @@
    "home": "Doğu Banliyö B Blok, Daire 117",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Kitap okumak",
@@ -71898,8 +71889,7 @@
    "look": [
     2,
     1
-   ],
-   "nobet": 18
+   ]
   },
   {
    "handle": "@aimron_wx1",
@@ -71908,16 +71898,15 @@
    "home": "Doğu Banliyö B Blok, Daire 124",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0,
-   "nobet": 19
+   "left": 0
   },
   {
    "handle": "@pizzzza.mwahh",
@@ -71926,16 +71915,15 @@
    "home": "Doğu Banliyö C Blok, Daire 2",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0,
-   "nobet": 20
+   "left": 0
   },
   {
    "handle": "@egehan.mp4",
@@ -71944,10 +71932,10 @@
    "home": "Doğu Banliyö C Blok, Daire 36",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Satranç",
@@ -71956,8 +71944,7 @@
    "look": [
     4,
     0
-   ],
-   "nobet": 21
+   ]
   },
   {
    "handle": "@fatbekonline",
@@ -71987,16 +71974,15 @@
    "home": "Doğu Banliyö C Blok, Daire 67",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0,
-   "nobet": 23
+   "left": 0
   },
   {
    "handle": "@iroinnwonderland",
@@ -72005,10 +71991,10 @@
    "home": "Doğu Banliyö C Blok, Daire 81",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Yemek yapmak",
@@ -72017,8 +72003,7 @@
    "look": [
     2,
     1
-   ],
-   "nobet": 24
+   ]
   },
   {
    "handle": "@elfooa_",
@@ -72027,10 +72012,10 @@
    "home": "Doğu Banliyö C Blok, Daire 91",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Bisiklete binmek",
@@ -72039,8 +72024,7 @@
    "look": [
     2,
     1
-   ],
-   "nobet": 25
+   ]
   },
   {
    "handle": "@yetim_kundakcisi36",
@@ -72049,16 +72033,15 @@
    "home": "Doğu Banliyö C Blok, Daire 94",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0,
-   "nobet": 26
+   "left": 0
   },
   {
    "handle": "@benimaptalhayatimm",
@@ -72067,16 +72050,15 @@
    "home": "Doğu Banliyö C Blok, Daire 95",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0,
-   "nobet": 27
+   "left": 0
   },
   {
    "handle": "@sudeprrlk",
@@ -72085,10 +72067,10 @@
    "home": "Doğu Banliyö C Blok, Daire 95",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Uçurtma uçurmak",
@@ -72097,8 +72079,7 @@
    "look": [
     1,
     1
-   ],
-   "nobet": 28
+   ]
   },
   {
    "handle": "@5hidroksitriptamiin",
@@ -72107,16 +72088,15 @@
    "home": "Doğu Banliyö C Blok, Daire 95",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0,
-   "nobet": 29
+   "left": 0
   },
   {
    "handle": "@mustf.cng",
@@ -72125,10 +72105,10 @@
    "home": "Doğu Banliyö C Blok, Daire 96",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Satranç",
@@ -72137,8 +72117,7 @@
    "look": [
     3,
     0
-   ],
-   "nobet": 30
+   ]
   },
   {
    "handle": "@berayyy_3",
@@ -72169,10 +72148,10 @@
    "home": "Doğu Banliyö C Blok, Daire 96",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Kuşları izlemek",
@@ -72181,8 +72160,7 @@
    "look": [
     1,
     1
-   ],
-   "nobet": 32
+   ]
   },
   {
    "handle": "@onwr.w",
@@ -72191,10 +72169,10 @@
    "home": "Doğu Banliyö C Blok, Daire 97",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Uçurtma uçurmak",
@@ -72203,8 +72181,7 @@
    "look": [
     3,
     0
-   ],
-   "nobet": 33
+   ]
   },
   {
    "handle": "@rub4r4n",
@@ -72213,10 +72190,10 @@
    "home": "Doğu Banliyö C Blok, Daire 97",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Bahçe işleri",
@@ -72225,8 +72202,7 @@
    "look": [
     0,
     0
-   ],
-   "nobet": 34
+   ]
   },
   {
    "handle": "@mete_emanet",
@@ -72235,10 +72211,10 @@
    "home": "Doğu Banliyö C Blok, Daire 97",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Balık tutmak",
@@ -72247,8 +72223,7 @@
    "look": [
     0,
     0
-   ],
-   "nobet": 4
+   ]
   },
   {
    "handle": "@ilov3r4in",
@@ -72257,16 +72232,15 @@
    "home": "Doğu Banliyö C Blok, Daire 98",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0,
-   "nobet": 35
+   "left": 0
   },
   {
    "handle": "@m.enesvrl",
@@ -72275,10 +72249,10 @@
    "home": "Doğu Banliyö C Blok, Daire 98",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Resim yapmak",
@@ -72287,8 +72261,7 @@
    "look": [
     0,
     0
-   ],
-   "nobet": 36
+   ]
   },
   {
    "handle": "@ali55yetkin",
@@ -72297,10 +72270,10 @@
    "home": "Doğu Banliyö C Blok, Daire 98",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Resim yapmak",
@@ -72309,8 +72282,7 @@
    "look": [
     3,
     0
-   ],
-   "nobet": 37
+   ]
   },
   {
    "handle": "@berat_ozkn.0",
@@ -72319,10 +72291,10 @@
    "home": "Doğu Banliyö C Blok, Daire 99",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Bahçe işleri",
@@ -72331,8 +72303,7 @@
    "look": [
     4,
     0
-   ],
-   "nobet": 38
+   ]
   },
   {
    "handle": "@f1rd3vs_",
@@ -72341,10 +72312,10 @@
    "home": "Doğu Banliyö C Blok, Daire 99",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Bahçe işleri",
@@ -72353,8 +72324,7 @@
    "look": [
     2,
     1
-   ],
-   "nobet": 39
+   ]
   },
   {
    "handle": "@ayaz2_0111",
@@ -72363,10 +72333,10 @@
    "home": "Doğu Banliyö C Blok, Daire 99",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Bisiklete binmek",
@@ -72375,8 +72345,7 @@
    "look": [
     4,
     0
-   ],
-   "nobet": 40
+   ]
   },
   {
    "handle": "@limons_1453",
@@ -72385,16 +72354,15 @@
    "home": "Doğu Banliyö C Blok, Daire 100",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0,
-   "nobet": 41
+   "left": 0
   },
   {
    "handle": "@enginhacibiyik",
@@ -72425,10 +72393,10 @@
    "home": "Doğu Banliyö C Blok, Daire 100",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Fotoğraf çekmek",
@@ -72437,8 +72405,7 @@
    "look": [
     1,
     1
-   ],
-   "nobet": 43
+   ]
   },
   {
    "handle": "@ipekn_mutlu",
@@ -72447,10 +72414,10 @@
    "home": "Doğu Banliyö C Blok, Daire 101",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Satranç",
@@ -72459,8 +72426,7 @@
    "look": [
     1,
     1
-   ],
-   "nobet": 44
+   ]
   },
   {
    "handle": "@havineyssanceri",
@@ -72469,10 +72435,10 @@
    "home": "Doğu Banliyö C Blok, Daire 101",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Gitar çalmak",
@@ -72481,8 +72447,7 @@
    "look": [
     1,
     1
-   ],
-   "nobet": 45
+   ]
   },
   {
    "handle": "@yagizdenli",
@@ -72491,10 +72456,10 @@
    "home": "Doğu Banliyö C Blok, Daire 101",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Fotoğraf çekmek",
@@ -72503,8 +72468,7 @@
    "look": [
     4,
     0
-   ],
-   "nobet": 46
+   ]
   },
   {
    "handle": "@eeeylulsr",
@@ -72513,10 +72477,10 @@
    "home": "Doğu Banliyö C Blok, Daire 102",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Fotoğraf çekmek",
@@ -72525,8 +72489,7 @@
    "look": [
     2,
     1
-   ],
-   "nobet": 47
+   ]
   },
   {
    "handle": "@ulusoy_selcuk",
@@ -72535,10 +72498,10 @@
    "home": "Doğu Banliyö C Blok, Daire 102",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Fotoğraf çekmek",
@@ -72547,8 +72510,7 @@
    "look": [
     4,
     0
-   ],
-   "nobet": 48
+   ]
   },
   {
    "handle": "@selcukhantras_",
@@ -72557,10 +72519,10 @@
    "home": "Doğu Banliyö C Blok, Daire 102",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Kuşları izlemek",
@@ -72569,8 +72531,7 @@
    "look": [
     3,
     0
-   ],
-   "nobet": 49
+   ]
   },
   {
    "handle": "@jax_rosie_blink",
@@ -72579,10 +72540,10 @@
    "home": "Doğu Banliyö C Blok, Daire 103",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Fotoğraf çekmek",
@@ -72591,8 +72552,7 @@
    "look": [
     2,
     1
-   ],
-   "nobet": 15
+   ]
   },
   {
    "handle": "@thecoachsami",
@@ -72644,10 +72604,10 @@
    "home": "Doğu Banliyö C Blok, Daire 104",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Balık tutmak",
@@ -72656,8 +72616,7 @@
    "look": [
     4,
     0
-   ],
-   "nobet": 9
+   ]
   },
   {
    "handle": "@yusufsc34",
@@ -73566,10 +73525,10 @@
    "home": "Doğu Banliyö C Blok, Daire 119",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Bisiklete binmek",
@@ -73578,8 +73537,7 @@
    "look": [
     2,
     1
-   ],
-   "nobet": 3
+   ]
   },
   {
    "handle": "@melwkorg",
@@ -80015,10 +79973,10 @@
    "home": "Doğu Banliyö D Blok, Daire 82",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Balık tutmak",
@@ -80027,8 +79985,7 @@
    "look": [
     1,
     1
-   ],
-   "nobet": 0
+   ]
   },
   {
    "handle": "@muzaffer_cakmakci",
@@ -80037,10 +79994,10 @@
    "home": "Doğu Banliyö D Blok, Daire 83",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Kitap okumak",
@@ -80049,8 +80006,7 @@
    "look": [
     3,
     0
-   ],
-   "nobet": 2
+   ]
   },
   {
    "handle": "@nevroz.crcoglu_",
@@ -80976,10 +80932,10 @@
    "home": "Doğu Banliyö D Blok, Daire 99",
    "home_from": 1793080800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Yüzmek",
@@ -80988,8 +80944,7 @@
    "look": [
     0,
     0
-   ],
-   "nobet": 5
+   ]
   },
   {
    "handle": "@irmak_micc4",
@@ -118231,10 +118186,10 @@
    "home": "Akasya Sokağı No 2, Daire 35",
    "home_from": 1793512800,
    "job": [
-    "Polis Memuru",
+    "Polis",
     "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "patrol_all",
+    ""
    ],
    "wp": "emniyet",
    "hobby": "Satranç",
