@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="tr">
+	<head>
+		<base href="../">
+		<meta name="robots" content="noindex, nofollow">
+		<!-- Kostüm deneme sayfası (kullanıcı, 2026-11-02): motor dosyaları canlı sitedekiler (base ../), oyun paketi bu
+		klasörde; kostüm seçimleri Firebase kostum_deneme bölümüne yazılır (canlıdaki kostum bölümüne değil). -->
+		<script>window.miniakentKostumYol = "kostum_deneme";</script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+		<title>Miniakent</title>
+		<!--
+		Miniakent yükleme ekranı (kullanıcı, 2026-10-20): Godot'un yükleme ekranı yerine logo ve kullanıcının
+		tasarladığı ada çubuğu; ev, yükleme ilerledikçe sağa ilerler. Ziyaretçinin saatine göre 07:00–19:00
+		gündüz, kalanı gece görseli. Çubuk parçaları ve logolar Web_Deneme'de (yukleme_*.webp). Oyun ilk kez
+		çizilince (main.gd -> window.miniakentHazir) ekran kaybolur. Bu dosya export_presets.cfg'de
+		html/custom_html_shell olarak verilir.
+		-->
+		<style>
+html, body, #canvas {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	color: white;
+	background-color: #ffffff;
+	overflow: hidden;
+	touch-action: none;
+}
+
+body.gece {
+	background-color: #121a2e;
+}
+
+#canvas {
+	display: block;
+}
+
+#canvas:focus {
+	outline: none;
+}
+
+#yukleme {
+	position: absolute;
+	inset: 0;
+	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 3vh;
+	background-color: inherit;
+	transition: opacity 0.6s ease;
+}
+
+#yukleme.bitti {
+	opacity: 0;
+	pointer-events: none;
+}
+
+#yukleme-logo {
+	width: min(72vw, 420px);
+	max-height: 46vh;
+	object-fit: contain;
+}
+
+#yukleme-cubuk {
+	position: relative;
+	width: min(88vw, 640px);
+	aspect-ratio: 1275 / 174;
+}
+
+#yukleme-cubuk img {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	pointer-events: none;
+	user-select: none;
+}
+
+#cubuk-bos, #cubuk-dolu {
+	left: 0;
+	width: 100%;
+}
+
+/* Dolu kısım ve ev yalnız transform ile kayar: oyun motoru açılırken sayfa betiği dursa da tarayıcı bu
+   hareketleri çizmeye devam eder (ev yolun ortasında takılmasın). */
+#dolu-kap {
+	position: absolute;
+	inset: 0;
+	overflow: hidden;
+	transform: translateX(-100%);
+	will-change: transform;
+}
+
+#cubuk-dolu {
+	transform: translateX(100%);
+	will-change: transform;
+}
+
+#cubuk-ev {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 12.94%;
+	height: 100%;
+	will-change: transform;
+}
+
+#ev-resim {
+	left: 0;
+	width: 100%;
+	animation: sallan 1.6s ease-in-out infinite;
+}
+
+@keyframes sallan {
+	0%, 100% { transform: translateY(0); }
+	50% { transform: translateY(-3%); }
+}
+
+#yukleme-yazi {
+	position: absolute;
+	bottom: 2.5vh;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+	font-size: 12px;
+	letter-spacing: 0.02em;
+	color: #a9a9a9;
+}
+
+body.gece #yukleme-yazi {
+	color: #5f6b85;
+}
+
+#status-notice {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 11;
+	background-color: #5b3943;
+	border-radius: 0.5rem;
+	border: 1px solid #9b3943;
+	color: #e0e0e0;
+	font-family: 'Noto Sans', 'Droid Sans', Arial, sans-serif;
+	line-height: 1.3;
+	margin: 0 2rem;
+	overflow: hidden;
+	padding: 1rem;
+	text-align: center;
+}
+		</style>
+		<!-- Google Analytics (kullanıcı, 2026-10-30: reklam verenlere sunulacak istatistikler). KVKK: ziyaretçi "Kabul et"
+		     demeden çerez yazılmaz (onay modu); seçim tarayıcıda saklanır. Oyun olayları window.miniakentOlay ile gelir. -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-8871X5M15R"></script>
+		<script>
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+(function () {
+	let secim = null;
+	try { secim = localStorage.getItem("miniakent_cerez"); } catch (e) {}
+	gtag("consent", "default", {analytics_storage: secim === "evet" ? "granted" : "denied",
+		ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied"});
+	gtag("js", new Date());
+	gtag("config", "G-8871X5M15R");
+	window.miniakentOlay = function (ad, bilgi) {
+		try { gtag("event", ad, bilgi || {}); } catch (e) {}
+	};
+	if (secim === "evet" || secim === "hayir") {
+		return;
+	}
+	// çerez bildirimi (kullanıcının onayladığı metin): sayfanın altında, arama kutusunun üstünde küçük şerit
+	window.addEventListener("DOMContentLoaded", function () {
+		const s = document.createElement("div");
+		s.id = "mk-cerez";
+		const tel = "ontouchstart" in window;
+		s.style.cssText = "position:fixed;left:50%;transform:translateX(-50%);z-index:20;bottom:" + (tel ? "66px" : "96px") + ";" +
+			"width:min(520px,calc(100vw - 20px));box-sizing:border-box;display:flex;align-items:center;gap:10px;flex-wrap:wrap;" +
+			"padding:10px 12px;background:rgba(250,245,235,.97);color:#2a2620;border-radius:14px;" +
+			"box-shadow:0 4px 18px rgba(61,46,26,.18);font:13px/1.35 system-ui,-apple-system,sans-serif";
+		const yazi = document.createElement("span");
+		yazi.style.cssText = "flex:1 1 220px";
+		yazi.textContent = "Miniakent, ziyaret istatistiklerini (ziyaretçi sayısı, süre, cihaz türü) ölçmek için çerez kullanır.";
+		s.appendChild(yazi);
+		[["Kabul et", "evet", "#2a2620", "#faf5eb"], ["Reddet", "hayir", "#ece4d6", "#2a2620"]].forEach(function (d) {
+			const b = document.createElement("button");
+			b.type = "button";
+			b.textContent = d[0];
+			b.style.cssText = "border:0;border-radius:10px;padding:6px 12px;font-size:13px;cursor:pointer;background:" + d[2] + ";color:" + d[3];
+			b.addEventListener("click", function () {
+				try { localStorage.setItem("miniakent_cerez", d[1]); } catch (e) {}
+				if (d[1] === "evet") {
+					gtag("consent", "update", {analytics_storage: "granted"});
+				}
+				s.remove();
+			});
+			s.appendChild(b);
+		});
+		document.body.appendChild(s);
+	});
+}());
+		</script>
+		<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
+<link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
+
+	</head>
+	<body>
+		<canvas id="canvas">
+			Your browser does not support the canvas tag.
+		</canvas>
+
+		<noscript>
+			Your browser does not support JavaScript.
+		</noscript>
+
+		<div id="yukleme">
+			<img id="yukleme-logo" alt="Miniakent">
+			<div id="yukleme-cubuk">
+				<img id="cubuk-bos" alt="">
+				<div id="dolu-kap"><img id="cubuk-dolu" alt=""></div>
+				<div id="cubuk-ev"><img id="ev-resim" alt=""></div>
+			</div>
+			<div id="yukleme-yazi">Made with Godot Engine</div>
+		</div>
+		<div id="status-notice"></div>
+
+		<script>
+(function () {
+	// Gündüz mü gece mi: ziyaretçinin kendi saati (07:00–19:00 gündüz)
+	const h = new Date().getHours();
+	const zaman = (h >= 7 && h < 19) ? 'gunduz' : 'gece';
+	if (zaman === 'gece') {
+		document.body.classList.add('gece');
+	}
+	document.getElementById('yukleme-logo').src = 'yukleme_logo_' + zaman + '.webp';
+	document.getElementById('cubuk-bos').src = 'yukleme_bos_' + zaman + '.webp';
+	document.getElementById('cubuk-dolu').src = 'yukleme_dolu_' + zaman + '.webp';
+	document.getElementById('ev-resim').src = 'yukleme_ev_' + zaman + '.webp';
+}());
+		</script>
+		<script type="module">
+// Çevrimiçi ve günlük ziyaretçi (kullanıcı, 2026-10-25): Firebase Realtime Database (proje miniakent, europe-west1).
+// Her ziyaretçi cevrimici/<kimlik> yazar, sekme kapanınca silinir; oyun sayıyı window.miniakentCevrimici'den okur.
+// gunluk/<Türkiye tarihi> her tarayıcıda günde bir kez 1 artar. Bağlantı kurulamazsa oyun etkilenmez.
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getDatabase, ref, set, onDisconnect, onValue, runTransaction, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+try {
+	const app = initializeApp({
+		apiKey: "AIzaSyCC0HI_bln18UBMEDHdAO7CmtMEM3JtM5I",
+		authDomain: "miniakent.firebaseapp.com",
+		databaseURL: "https://miniakent-default-rtdb.europe-west1.firebasedatabase.app",
+		projectId: "miniakent",
+		appId: "1:591368262283:web:65292bb355bc8c55287a8e",
+	});
+	const db = getDatabase(app);
+	const id = crypto.randomUUID ? crypto.randomUUID() : String(Math.random()).slice(2) + "-" + Date.now();
+	const ben = ref(db, "cevrimici/" + id);
+	onValue(ref(db, ".info/connected"), (s) => {
+		if (s.val() === true) {
+			onDisconnect(ben).remove().then(() => set(ben, serverTimestamp()));
+		}
+	});
+	onValue(ref(db, "cevrimici"), (s) => { window.miniakentCevrimici = s.size; });
+	const gun = new Date(Date.now() + 3 * 3600 * 1000).toISOString().slice(0, 10);
+	let sayildi = null;
+	try { sayildi = localStorage.getItem("miniakent_gun"); } catch (e) {}
+	if (sayildi !== gun) {
+		runTransaction(ref(db, "gunluk/" + gun), (v) => (v || 0) + 1).then(() => {
+			try { localStorage.setItem("miniakent_gun", gun); } catch (e) {}
+		});
+	}
+	// Cadılar Bayramı kostümleri (kullanıcı, 2026-11-02): kartta seçilen kostüm <yol>/<kullanıcı adı> olarak yazılır,
+	// herkes görür; sınır yok. Kullanıcı adında "@" atılır, "." yerine "," (Firebase anahtarında nokta olamaz).
+	// Yol yalnız sayfa verirse açık (window.miniakentKostumYol; test sayfası "kostum_deneme"); yoksa kapalı.
+	const kostumYol = window.miniakentKostumYol || "";
+	if (kostumYol) {
+		window.miniakentKostumlar = {};
+		window.miniakentKostumSurum = 0;
+		onValue(ref(db, kostumYol), (s) => {
+			const o = {};
+			s.forEach((c) => { o["@" + c.key.replace(/,/g, ".")] = c.val(); });
+			window.miniakentKostumlar = o;
+			window.miniakentKostumSurum++;
+		});
+		window.miniakentKostumSec = (h, ad) => set(ref(db, kostumYol + "/" + h.replace(/^@/, "").replace(/\./g, ",")), ad);
+	}
+} catch (e) {
+	console.warn("Firebase", e);
+}
+		</script>
+		<script src="index.js"></script>
+		<script>
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"kostum-deneme/index-kostum-v202611021622.pck","fileSizes":{"kostum-deneme/index-kostum-v202611021622.pck":5884756,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_THREADS_ENABLED = false;
+const engine = new Engine(GODOT_CONFIG);
+
+(function () {
+	const yukleme = document.getElementById('yukleme');
+	const cubuk = document.getElementById('yukleme-cubuk');
+	const kap = document.getElementById('dolu-kap');
+	const dolu = document.getElementById('cubuk-dolu');
+	const ev = document.getElementById('cubuk-ev');
+	const statusNotice = document.getElementById('status-notice');
+	// Çubuk 1700 birim: ev parçası 220 birim; solu 250'den 1450'ye (çubuğun ucu) ilerler, dolu kısım evin
+	// altına kadar görünür. İndirme sürerken her karede yerleştirilir; indirme bitince kalan yol tarayıcının
+	// kendi animasyonuna verilir (motor açılırken sayfa betiği dursa da ev ilerlemeye devam eder).
+	let hedef = 0;    // ulaşılması gereken ilerleme
+	let gorunen = 0;  // ekrandaki ilerleme, hedefe yumuşakça yaklaşır
+	let son = false;  // indirme bitti: hareket tarayıcı animasyonunda
+	let anims = [];
+	let bitti = false;
+
+	function konum(g) {
+		const w = cubuk.clientWidth;
+		const x = 250 + g * 1200;
+		const gizli = w - (x + 60) / 1700 * w;
+		return [
+			'translateX(' + (x / 1700 * w) + 'px)',
+			'translateX(' + (-gizli) + 'px)',
+			'translateX(' + gizli + 'px)',
+		];
+	}
+
+	function kay(g0, g1, ms) {
+		const a = konum(g0);
+		const b = konum(g1);
+		const opt = { duration: ms, easing: 'cubic-bezier(0.25, 0.6, 0.35, 1)', fill: 'forwards' };
+		anims = [ev, kap, dolu].map((el, i) => el.animate([{ transform: a[i] }, { transform: b[i] }], opt));
+		return Promise.all(anims.map((an) => an.finished));
+	}
+
+	function ilerle(p) {
+		hedef = Math.max(hedef, Math.min(1, p));
+	}
+
+	function ciz() {
+		if (son || !yukleme.isConnected) {
+			return;
+		}
+		gorunen += (hedef - gorunen) * 0.08;
+		if (hedef - gorunen < 0.001) {
+			gorunen = hedef;
+		}
+		const k = konum(gorunen);
+		ev.style.transform = k[0];
+		kap.style.transform = k[1];
+		dolu.style.transform = k[2];
+		requestAnimationFrame(ciz);
+	}
+	requestAnimationFrame(ciz);
+
+	// İndirme bitti: ev kalan yolun çoğunu motor açılırken yavaşça alır.
+	function sonaDogru() {
+		if (son) {
+			return;
+		}
+		son = true;
+		kay(gorunen, 0.96, 9000);
+	}
+
+	function kapat() {
+		if (bitti) {
+			return;
+		}
+		bitti = true;
+		sonaDogru();
+		anims.forEach((an) => an.updatePlaybackRate(6));
+		Promise.all(anims.map((an) => an.finished)).then(() => kay(0.96, 1, 350)).then(() => {
+			yukleme.classList.add('bitti');  // ev çubuğun ucuna varınca ekran kaybolur
+			setTimeout(function () { yukleme.remove(); }, 700);
+		});
+	}
+	// main.gd şehir ilk kez çizilince çağırır
+	window.miniakentHazir = kapat;
+
+	function setStatusNotice(text) {
+		while (statusNotice.lastChild) {
+			statusNotice.removeChild(statusNotice.lastChild);
+		}
+		text.split('\n').forEach((line) => {
+			statusNotice.appendChild(document.createTextNode(line));
+			statusNotice.appendChild(document.createElement('br'));
+		});
+		statusNotice.style.display = 'block';
+	}
+
+	function displayFailureNotice(err) {
+		console.error(err);
+		if (err instanceof Error) {
+			setStatusNotice(err.message);
+		} else if (typeof err === 'string') {
+			setStatusNotice(err);
+		} else {
+			setStatusNotice('An unknown error occurred.');
+		}
+	}
+
+	const missing = Engine.getMissingFeatures({
+		threads: GODOT_THREADS_ENABLED,
+	});
+
+	if (missing.length !== 0) {
+		if (GODOT_CONFIG['serviceWorker'] && GODOT_CONFIG['ensureCrossOriginIsolationHeaders'] && 'serviceWorker' in navigator) {
+			let serviceWorkerRegistrationPromise;
+			try {
+				serviceWorkerRegistrationPromise = navigator.serviceWorker.getRegistration();
+			} catch (err) {
+				serviceWorkerRegistrationPromise = Promise.reject(new Error('Service worker registration failed.'));
+			}
+			Promise.race([
+				serviceWorkerRegistrationPromise.then((registration) => {
+					if (registration != null) {
+						return Promise.reject(new Error('Service worker already exists.'));
+					}
+					return registration;
+				}).then(() => engine.installServiceWorker()),
+				new Promise((resolve) => {
+					setTimeout(() => resolve(), 2000);
+				}),
+			]).then(() => {
+				window.location.reload();
+			}).catch((err) => {
+				console.error('Error while registering service worker:', err);
+			});
+		} else {
+			const missingMsg = 'Error\nThe following features required to run Godot projects on the Web are missing:\n';
+			displayFailureNotice(missingMsg + missing.join('\n'));
+		}
+	} else {
+		ilerle(0);
+		engine.startGame({
+			'onProgress': function (current, total) {
+				if (current > 0 && total > 0) {
+					ilerle(0.8 * current / total);  // indirme; kalan pay motorun açılışı ve şehrin kurulması
+					if (current >= 0.97 * total) {  // son parça: motor birazdan açılır, sayfa betiği durabilir
+						sonaDogru();
+					}
+				}
+			},
+		}).then(() => {
+			sonaDogru();
+			setTimeout(kapat, 15000);  // oyundan haber gelmezse de kalkar
+		}, displayFailureNotice);
+	}
+}());
+		</script>
+	</body>
+</html>
+
