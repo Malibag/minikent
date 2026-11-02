@@ -15004,12 +15004,12 @@
    "home": "Çınar Sokağı No 3, Daire 9",
    "home_from": 1792735200,
    "job": [
-    "Paketleme Görevlisi",
-    "Miniakent Fabrikası 1 · Sanayi Bölgesi",
-    "shop",
-    "fabrika_a"
+    "Çöp Toplama Görevlisi",
+    "Miniakent Belediyesi",
+    "none",
+    ""
    ],
-   "wp": "fabrika_a",
+   "wp": "sehir",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -22270,12 +22270,12 @@
    "home": "Zeytin Sokağı No 1, Daire 26",
    "home_from": 1792821600,
    "job": [
-    "Mimar",
-    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
-    "office",
-    "plaza"
+    "Hemşire",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "mimarlik",
+   "wp": "hastane",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0
@@ -111943,12 +111943,12 @@
    "home": "Doğu Banliyö A Blok, Daire 135",
    "home_from": 1793451171,
    "job": [
-    "Gişe Görevlisi",
-    "Miniakent Bankası",
-    "office",
-    "banka"
+    "Veteriner",
+    "Miniakent Veteriner Kliniği",
+    "shop",
+    "veteriner"
    ],
-   "wp": "banka",
+   "wp": "veteriner",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -128378,12 +128378,12 @@
    "home": "Doğu Banliyö H Blok, Daire 80",
    "home_from": 1793512800,
    "job": [
-    "Temizlik Görevlisi",
-    "Miniakent Bankası",
-    "office",
-    "banka"
+    "Sörf Eğitmeni",
+    "Miniakent Plajı",
+    "area",
+    "beach"
    ],
-   "wp": "banka",
+   "wp": "plaj",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -131155,12 +131155,12 @@
    "home": "Doğu Banliyö H Blok, Daire 116",
    "home_from": 1793512800,
    "job": [
-    "Reklamcı",
-    "Miniakent Bankası",
-    "office",
-    "banka"
+    "Laborant",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "banka",
+   "wp": "hastane",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
