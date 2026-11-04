@@ -19000,12 +19000,12 @@
    "home": "Begonvil Sokağı No 15, Daire 7",
    "home_from": 1792821600,
    "job": [
-    "Öğretmen",
-    "Miniakent Koleji",
-    "shop",
-    "kolej"
+    "Mimar",
+    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
+    "office",
+    "plaza"
    ],
-   "wp": "kolej",
+   "wp": "mimarlik",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -153253,15 +153253,19 @@
    "home": "Batı Banliyö B Blok, Daire 19",
    "home_from": 1793772000,
    "job": [
-    "Öğretmen",
-    "Miniakent Koleji",
-    "shop",
-    "kolej"
+    "Avukat",
+    "Miniakent Hukuk Bürosu · Miniakent Plaza, Kat 6",
+    "office",
+    "plaza"
    ],
-   "wp": "kolej",
+   "wp": "hukuk",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@edinkartalozturk9",
