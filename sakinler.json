@@ -38773,7 +38773,7 @@
    "home": "Doğu Banliyö A Blok, Daire 80",
    "home_from": 1792908000,
    "job": [
-    "Doktor",
+    "Diş Hekimi",
     "Miniakent Devlet Hastanesi",
     "shop",
     "hastane"
@@ -105855,12 +105855,12 @@
    "home": "Doğu Banliyö F Blok, Daire 53",
    "home_from": 1793426400,
    "job": [
-    "Muhasebeci",
-    "Miniakent Bankası",
-    "office",
-    "banka"
+    "Resim Öğretmeni",
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "banka",
+   "wp": "kolej",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
