@@ -85073,7 +85073,11 @@
    "wp": "muhasebe",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@gulse.39",
@@ -88413,7 +88417,11 @@
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
-   "lunapark": 12
+   "lunapark": 12,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@shineisie",
@@ -100131,7 +100139,11 @@
    "wp": "spor",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@zel1s_m",
@@ -134516,7 +134528,11 @@
    "wp": "banka",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@xirem_q7",
@@ -148406,8 +148422,8 @@
    "queue": 0,
    "left": 0,
    "look": [
-    4,
-    0
+    1,
+    1
    ]
   },
   {
