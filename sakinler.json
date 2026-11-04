@@ -3775,9 +3775,9 @@
    "home_from": 1792735200,
    "job": [
     "Grafiti Ustası Yardımcısı",
-    "—",
-    "area",
-    "grafiti_6"
+    "Miniakent Sanat Atölyesi · Miniakent Plaza, Kat 8",
+    "office",
+    "plaza"
    ],
    "wp": "",
    "hobby": "Yemek yapmak",
@@ -31133,9 +31133,9 @@
    "home_from": 1792821600,
    "job": [
     "Grafiti Ustası",
-    "—",
-    "area",
-    "grafiti_0"
+    "Miniakent Sanat Atölyesi · Miniakent Plaza, Kat 8",
+    "office",
+    "plaza"
    ],
    "wp": "",
    "hobby": "Gitar çalmak",
@@ -43608,9 +43608,9 @@
    "home_from": 1792908000,
    "job": [
     "Grafiti Ustası Yardımcısı",
-    "—",
-    "area",
-    "grafiti_1"
+    "Miniakent Sanat Atölyesi · Miniakent Plaza, Kat 8",
+    "office",
+    "plaza"
    ],
    "wp": "",
    "hobby": "Bisiklete binmek",
@@ -45691,9 +45691,9 @@
    "home_from": 1792908000,
    "job": [
     "Grafiti Ustası Yardımcısı",
-    "—",
-    "area",
-    "grafiti_2"
+    "Miniakent Sanat Atölyesi · Miniakent Plaza, Kat 8",
+    "office",
+    "plaza"
    ],
    "wp": "",
    "hobby": "Yemek yapmak",
@@ -47647,9 +47647,9 @@
    "home_from": 1792908000,
    "job": [
     "Grafiti Ustası Yardımcısı",
-    "—",
-    "area",
-    "grafiti_3"
+    "Miniakent Sanat Atölyesi · Miniakent Plaza, Kat 8",
+    "office",
+    "plaza"
    ],
    "wp": "",
    "hobby": "Uçurtma uçurmak",
@@ -48487,9 +48487,9 @@
    "home_from": 1792908000,
    "job": [
     "Grafiti Ustası Yardımcısı",
-    "—",
-    "area",
-    "grafiti_4"
+    "Miniakent Sanat Atölyesi · Miniakent Plaza, Kat 8",
+    "office",
+    "plaza"
    ],
    "wp": "",
    "hobby": "Balık tutmak",
@@ -52228,9 +52228,9 @@
    "home_from": 1792908000,
    "job": [
     "Grafiti Ustası Yardımcısı",
-    "—",
-    "area",
-    "grafiti_5"
+    "Miniakent Sanat Atölyesi · Miniakent Plaza, Kat 8",
+    "office",
+    "plaza"
    ],
    "wp": "",
    "hobby": "Balık tutmak",
@@ -154091,7 +154091,7 @@
    "home": "Doğu Banliyö G Blok, Daire 31",
    "home_from": 1793772000,
    "job": [
-    "Liman İşçisi",
+    "Tır Şoförü",
     "Miniakent Limanı",
     "area",
     "liman"
