@@ -123825,7 +123825,11 @@
    "wp": "banka",
    "hobby": "Balık tutmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@patrickjaneew",
