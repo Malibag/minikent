@@ -92991,12 +92991,12 @@
    "home": "Doğu Banliyö F Blok, Daire 49",
    "home_from": 1793253600,
    "job": [
-    "Çağrı Merkezi Görevlisi",
-    "Miniakent Telekom · Miniakent Plaza 2, Kat 11",
+    "Mimar",
+    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
     "office",
-    "plaza2"
+    "plaza"
    ],
-   "wp": "telekom",
+   "wp": "mimarlik",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -163187,12 +163187,12 @@
    "home": "Doğu Banliyö G Blok, Daire 132",
    "home_from": 1793858400,
    "job": [
-    "Kalite Kontrol Uzmanı",
-    "Miniakent Fabrikası 1 · Sanayi Bölgesi",
-    "shop",
-    "fabrika_a"
+    "Mimar",
+    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
+    "office",
+    "plaza"
    ],
-   "wp": "fabrika_a",
+   "wp": "mimarlik",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
