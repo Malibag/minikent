@@ -576,6 +576,7 @@ body.gece #mkb { --krem: #22304f; --krem2: #2c3b5e; --yazi: #fbe9cb; --kenar: #0
 #mkb .kostumler { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
 #mkb .kostumler button { aspect-ratio: 4 / 5; border-radius: 10px; border: 2px solid transparent; background: url("beta/kostumler.png") 0 0 / 500% 800% no-repeat, var(--krem2); padding: 0; }
 #mkb .kostumler button.secili { border-color: var(--deniz); }
+#mkb .devam { align-self: flex-start; border: 0; background: none; padding: 2px 0; font-weight: 800; font-size: 14px; text-decoration: underline; text-underline-offset: 3px; }
 #mkb .adlar { display: flex; flex-wrap: wrap; gap: 6px; }
 #mkb .adlar button { padding: 5px 10px; border-radius: 999px; border: 2px solid var(--kenar); background: var(--krem2); font-weight: 700; font-size: 13px; }
 /* ayarlar: dişliden açılır */
@@ -772,7 +773,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			<div class="satir"><span>${is ? "Boş kadro" : "Boş yer"}</span><b>${sayi(Math.max(0, g.kap - n))}</b></div></div>
 		${n ? `<div class="bolum">${is ? "Burada çalışanlar" : "Burada yaşayanlar"} (${sayi(n)})</div>
 		<div class="adlar">${adlar.map((h) => `<button data-sec="${esc(h)}">${esc(h)}</button>`).join("")}</div>
-		${n > adlar.length ? `<button class="git" data-hepsi="${tur}"><b>Daha fazlasını gör</b><span>${sayi(n - adlar.length)} kişi daha</span><em>Tümü</em></button>` : ""}` : ""}`;
+		${n > adlar.length ? `<button class="devam" data-hepsi="${tur}">Devamını gör »</button>` : ""}` : ""}`;
 	}
 
 	const SAYFA = {
