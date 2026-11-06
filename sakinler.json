@@ -66,8 +66,7 @@
    "look": [
     0,
     0
-   ],
-   "protest": 10
+   ]
   },
   {
    "handle": "@toprakcrc10",
@@ -233,8 +232,7 @@
    "look": [
     3,
     0
-   ],
-   "protest": 36
+   ]
   },
   {
    "handle": "@muhammedhakandogan",
@@ -485,8 +483,7 @@
     1,
     0
    ],
-   "partner": "@mali_bagci",
-   "is_protest": 1
+   "partner": "@mali_bagci"
   },
   {
    "handle": "@curio_turkce",
@@ -7409,8 +7406,7 @@
    "look": [
     1,
     1
-   ],
-   "protest": 16
+   ]
   },
   {
    "handle": "@een3ws.1",
@@ -7767,8 +7763,7 @@
    "look": [
     0,
     0
-   ],
-   "protest": 57
+   ]
   },
   {
    "handle": "@tolgacann.06",
@@ -8541,8 +8536,7 @@
    "wp": "fabrika_a",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 1793566800,
-   "lunapark": 17
+   "left": 1793566800
   },
   {
    "handle": "@emirberberogluu",
@@ -8975,8 +8969,7 @@
    "look": [
     4,
     0
-   ],
-   "protest": 55
+   ]
   },
   {
    "handle": "@burcinn.g",
@@ -9081,8 +9074,7 @@
    "look": [
     4,
     0
-   ],
-   "protest": 14
+   ]
   },
   {
    "handle": "@thefoola",
@@ -9334,8 +9326,7 @@
    "look": [
     4,
     0
-   ],
-   "protest": 25
+   ]
   },
   {
    "handle": "@x6vela",
@@ -10045,8 +10036,7 @@
    "look": [
     1,
     1
-   ],
-   "lunapark": 18
+   ]
   },
   {
    "handle": "@ayseelag14",
@@ -10529,8 +10519,7 @@
    "look": [
     3,
     0
-   ],
-   "protest": 28
+   ]
   },
   {
    "handle": "@can_atss",
@@ -12278,8 +12267,7 @@
    "wp": "santiye",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0,
-   "is_protest": 11
+   "left": 0
   },
   {
    "handle": "@ahmetozhantarhan",
@@ -12985,8 +12973,7 @@
    "look": [
     1,
     1
-   ],
-   "beton": 1
+   ]
   },
   {
    "handle": "@gormus.ege75",
@@ -18243,8 +18230,7 @@
    "wp": "muhendislik",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0,
-   "lunapark": 15
+   "left": 0
   },
   {
    "handle": "@polatecvt",
@@ -18253,12 +18239,12 @@
    "home": "Kıyı Caddesi No 10, Daire 6",
    "home_from": 1792821600,
    "job": [
-    "Müteahhit Adayı",
-    "Miniakent Belediyesi önü",
+    "İnşaat Mühendisi",
+    "Miniakent Yapı Mühendislik A.Ş. · Miniakent Arena şantiyesi",
     "area",
-    "protesto_karsi"
+    "site"
    ],
-   "wp": "",
+   "wp": "santiye",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -21330,13 +21316,13 @@
    "handle": "@yarenkoksalans",
    "arrive": 1792704900,
    "move": 1792735200,
-   "home": "Yasemin Sokağı No 5, Daire 4",
-   "home_from": 1792821600,
+   "home": "Bahçeli Köy Evleri No 4",
+   "home_from": 1793974524,
    "job": [
-    "Aktivist",
-    "Miniakent Belediyesi önü",
+    "Çiftçi",
+    "Bahçeli Köy Evleri",
     "area",
-    "protesto"
+    "koy_tarla"
    ],
    "wp": "",
    "hobby": "Uçurtma uçurmak",
@@ -21404,8 +21390,7 @@
    "look": [
     3,
     0
-   ],
-   "lunapark": 6
+   ]
   },
   {
    "handle": "@wacinsdeanlarlar",
@@ -21540,8 +21525,7 @@
    "look": [
     1,
     1
-   ],
-   "protest": 13
+   ]
   },
   {
    "handle": "@salih_gunes._",
@@ -22562,23 +22546,22 @@
    "handle": "@volkanikizler",
    "arrive": 1792796820,
    "move": 1792821600,
-   "home": "Zeytin Sokağı No 5, Daire 30",
-   "home_from": 1792821600,
+   "home": "Bahçeli Köy Evleri No 4",
+   "home_from": 1793974524,
    "job": [
-    "Garson",
-    "Miniakent Kamu Kafe",
+    "Çiftçi",
+    "Bahçeli Köy Evleri",
     "area",
-    "kamu_kafe"
+    "koy_tarla"
    ],
-   "wp": "kamu_kafe",
+   "wp": "",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
    "look": [
     3,
     0
-   ],
-   "protest": 3
+   ]
   },
   {
    "handle": "@terzi.muhammedd",
@@ -23684,8 +23667,7 @@
    "look": [
     1,
     1
-   ],
-   "is_protest": 5
+   ]
   },
   {
    "handle": "@hasanlio._",
@@ -26161,8 +26143,7 @@
    "look": [
     2,
     1
-   ],
-   "is_protest": 6
+   ]
   },
   {
    "handle": "@whenth3sunhits",
@@ -26467,8 +26448,7 @@
    "look": [
     0,
     0
-   ],
-   "nobet": 6
+   ]
   },
   {
    "handle": "@verschrobenth",
@@ -30101,8 +30081,7 @@
    "look": [
     1,
     1
-   ],
-   "protest": 11
+   ]
   },
   {
    "handle": "@alperkyoruk95",
@@ -30876,8 +30855,7 @@
    "wp": "fabrika_b",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0,
-   "protest": 34
+   "left": 0
   },
   {
    "handle": "@niiili",
@@ -30995,8 +30973,7 @@
    "wp": "mimarlik",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0,
-   "is_protest": 14
+   "left": 0
   },
   {
    "handle": "@blnfurkann",
@@ -32411,8 +32388,7 @@
    "look": [
     0,
     0
-   ],
-   "protest": 65
+   ]
   },
   {
    "handle": "@efecpm81",
@@ -32633,19 +32609,18 @@
    "handle": "@qras.qwx",
    "arrive": 1792796820,
    "move": 1792821600,
-   "home": "Lavanta Sokağı No 8, Daire 1",
-   "home_from": 1792821600,
+   "home": "Bahçeli Köy Evleri No 4",
+   "home_from": 1793974524,
    "job": [
-    "İş Analisti",
-    "Miniakent Danışmanlık · Miniakent Plaza 2, Kat 12",
-    "office",
-    "plaza2"
+    "Çiftçi",
+    "Bahçeli Köy Evleri",
+    "area",
+    "koy_tarla"
    ],
-   "wp": "danismanlik",
+   "wp": "",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0,
-   "protest": 4
+   "left": 0
   },
   {
    "handle": "@berkay.inan",
@@ -33524,8 +33499,7 @@
    "look": [
     0,
     0
-   ],
-   "protest": 52
+   ]
   },
   {
    "handle": "@emiralp797",
@@ -33732,8 +33706,7 @@
    "wp": "muhendislik",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0,
-   "protest": 7
+   "left": 0
   },
   {
    "handle": "@cinmustafagoktug",
@@ -34464,8 +34437,7 @@
    "look": [
     0,
     0
-   ],
-   "protest": 29
+   ]
   },
   {
    "handle": "@06buno",
@@ -36091,8 +36063,7 @@
    "look": [
     4,
     0
-   ],
-   "beton": 0
+   ]
   },
   {
    "handle": "@tekediy",
@@ -36498,8 +36469,7 @@
    "look": [
     1,
     1
-   ],
-   "beton": 3
+   ]
   },
   {
    "handle": "@hasanefekol61",
@@ -37385,8 +37355,7 @@
    "look": [
     4,
     0
-   ],
-   "protest": 56
+   ]
   },
   {
    "handle": "@silaaea",
@@ -37518,13 +37487,13 @@
    "handle": "@kardesimidovdum",
    "arrive": 1792898400,
    "move": 1792908000,
-   "home": "Doğu Banliyö A Blok, Daire 21",
-   "home_from": 1792908000,
+   "home": "Bahçeli Köy Evleri No 4",
+   "home_from": 1793974524,
    "job": [
-    "Aktivist",
-    "Miniakent Belediyesi önü",
+    "Çiftçi",
+    "Bahçeli Köy Evleri",
     "area",
-    "protesto"
+    "koy_tarla"
    ],
    "wp": "",
    "hobby": "Gitar çalmak",
@@ -40285,8 +40254,7 @@
    "look": [
     1,
     1
-   ],
-   "is_protest": 0
+   ]
   },
   {
    "handle": "@fdtrxec544",
@@ -40874,8 +40842,7 @@
    "look": [
     4,
     0
-   ],
-   "protest": 38
+   ]
   },
   {
    "handle": "@cagantoprakervus",
@@ -41631,8 +41598,7 @@
    "look": [
     0,
     0
-   ],
-   "protest": 37
+   ]
   },
   {
    "handle": "@berat.celik45",
@@ -43732,8 +43698,7 @@
    "look": [
     1,
     1
-   ],
-   "protest": 43
+   ]
   },
   {
    "handle": "@batuhanksgl18",
@@ -43943,8 +43908,7 @@
    "look": [
     4,
     0
-   ],
-   "protest": 59
+   ]
   },
   {
    "handle": "@ch1covalentino",
@@ -44595,8 +44559,7 @@
    "look": [
     1,
     1
-   ],
-   "protest": 46
+   ]
   },
   {
    "handle": "@serhanntutarr_",
@@ -45058,8 +45021,7 @@
    "look": [
     0,
     0
-   ],
-   "protest": 63
+   ]
   },
   {
    "handle": "@tamameyvallahpasam",
@@ -46550,8 +46512,7 @@
    "look": [
     3,
     0
-   ],
-   "protest": 54
+   ]
   },
   {
    "handle": "@ertakus0",
@@ -47013,8 +46974,7 @@
    "look": [
     1,
     1
-   ],
-   "protest": 44
+   ]
   },
   {
    "handle": "@w3nxeirrr",
@@ -47224,8 +47184,7 @@
    "look": [
     0,
     0
-   ],
-   "protest": 40
+   ]
   },
   {
    "handle": "@aydoganenesege",
@@ -48653,8 +48612,7 @@
    "look": [
     3,
     0
-   ],
-   "protest": 53
+   ]
   },
   {
    "handle": "@mehm3tcaglar_",
@@ -49956,8 +49914,7 @@
    "look": [
     4,
     0
-   ],
-   "protest": 9
+   ]
   },
   {
    "handle": "@arjjmiel3_",
@@ -50650,8 +50607,7 @@
    "look": [
     1,
     1
-   ],
-   "protest": 15
+   ]
   },
   {
    "handle": "@camel.8361242",
@@ -52394,8 +52350,7 @@
    "look": [
     0,
     0
-   ],
-   "protest": 30
+   ]
   },
   {
    "handle": "@cgrgncglnn",
@@ -52416,8 +52371,7 @@
    "look": [
     0,
     0
-   ],
-   "protest": 64
+   ]
   },
   {
    "handle": "@eray_burdami",
@@ -54308,8 +54262,7 @@
    "wp": "banka",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0,
-   "protest": 45
+   "left": 0
   },
   {
    "handle": "@spacensa_4",
@@ -55069,8 +55022,7 @@
    "look": [
     1,
     1
-   ],
-   "is_protest": 10
+   ]
   },
   {
    "handle": "@a_yaz4347",
@@ -56181,8 +56133,7 @@
    "wp": "plaza_hizmet",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0,
-   "protest": 35
+   "left": 0
   },
   {
    "handle": "@beyzabozkurt___",
@@ -57356,8 +57307,7 @@
    "wp": "mimarlik",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0,
-   "beton": 6
+   "left": 0
   },
   {
    "handle": "@0kan_1gk",
@@ -57391,8 +57341,7 @@
    "wp": "eticaret",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0,
-   "protest": 39
+   "left": 0
   },
   {
    "handle": "@aysencnck01",
@@ -58588,8 +58537,7 @@
    "wp": "medya",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0,
-   "protest": 50
+   "left": 0
   },
   {
    "handle": "@georgemirr63",
@@ -59228,8 +59176,7 @@
    "wp": "lojistik",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0,
-   "protest": 33
+   "left": 0
   },
   {
    "handle": "@elchavodokan",
@@ -59530,8 +59477,7 @@
    "wp": "gayrimenkul",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0,
-   "beton": 5
+   "left": 0
   },
   {
    "handle": "@zeyynepunlu",
@@ -61481,8 +61427,7 @@
    "wp": "hastane",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0,
-   "lunapark": 5
+   "left": 0
   },
   {
    "handle": "@yasuwiste_luwx",
@@ -62294,8 +62239,7 @@
    "wp": "muhendislik",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0,
-   "beton": 4
+   "left": 0
   },
   {
    "handle": "@zeynep88710",
@@ -62511,8 +62455,7 @@
    "wp": "oyun",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0,
-   "protest": 31
+   "left": 0
   },
   {
    "handle": "@kaan.duran111",
@@ -63544,8 +63487,7 @@
    "wp": "medya",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0,
-   "protest": 62
+   "left": 0
   },
   {
    "handle": "@meryyyeeyy",
@@ -63773,8 +63715,7 @@
    "look": [
     2,
     1
-   ],
-   "is_protest": 3
+   ]
   },
   {
    "handle": "@enes_cevjk",
@@ -63829,8 +63770,7 @@
    "wp": "medya",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0,
-   "is_protest": 4
+   "left": 0
   },
   {
    "handle": "@itsguanii_17",
@@ -63965,8 +63905,7 @@
    "look": [
     0,
     0
-   ],
-   "is_protest": 9
+   ]
   },
   {
    "handle": "@azra_bstn1907",
@@ -64071,8 +64010,7 @@
    "look": [
     2,
     1
-   ],
-   "protest": 12
+   ]
   },
   {
    "handle": "@rain_ngyvaa",
@@ -64089,8 +64027,7 @@
    "wp": "dershane",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0,
-   "is_protest": 12
+   "left": 0
   },
   {
    "handle": "@sabrivriv",
@@ -64390,8 +64327,7 @@
    "wp": "oyun",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0,
-   "lunapark": 11
+   "left": 0
   },
   {
    "handle": "@etipuf5899",
@@ -64619,8 +64555,7 @@
    "wp": "muhendislik",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0,
-   "protest": 48
+   "left": 0
   },
   {
    "handle": "@arici_bedirhan61",
@@ -64658,8 +64593,7 @@
    "wp": "turizm",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 1793653200,
-   "protest": 42
+   "left": 1793653200
   },
   {
    "handle": "@kadir.ez16",
@@ -65686,8 +65620,7 @@
    "look": [
     1,
     1
-   ],
-   "is_protest": 2
+   ]
   },
   {
    "handle": "@_j4nsetnelitb",
@@ -66740,8 +66673,7 @@
    "wp": "hukuk",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0,
-   "protest": 49
+   "left": 0
   },
   {
    "handle": "@alibaha5454",
@@ -67392,8 +67324,7 @@
    "wp": "veteriner",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0,
-   "lunapark": 3
+   "left": 0
   },
   {
    "handle": "@_.minnie.chaeslyy._",
@@ -67859,8 +67790,7 @@
    "wp": "hastane",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0,
-   "protest": 8
+   "left": 0
   },
   {
    "handle": "@subay_3460",
@@ -67987,8 +67917,7 @@
    "wp": "saglik",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0,
-   "protest": 41
+   "left": 0
   },
   {
    "handle": "@varlikolaninsan",
@@ -69036,8 +68965,7 @@
    "look": [
     3,
     0
-   ],
-   "protest": 6
+   ]
   },
   {
    "handle": "@can_kaya135",
@@ -69246,23 +69174,22 @@
    "handle": "@arascinar3",
    "arrive": 1792971000,
    "move": 1792994400,
-   "home": "Doğu Banliyö C Blok, Daire 51",
-   "home_from": 1792994400,
+   "home": "Bahçeli Köy Evleri No 4",
+   "home_from": 1793974524,
    "job": [
-    "Yazılımcı",
-    "Miniakent Alfa Yazılım A.Ş. · Miniakent Plaza, Kat 7",
-    "office",
-    "plaza"
+    "Çiftçi",
+    "Bahçeli Köy Evleri",
+    "area",
+    "koy_tarla"
    ],
-   "wp": "yazilim",
+   "wp": "",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
    "look": [
     4,
     0
-   ],
-   "protest": 5
+   ]
   },
   {
    "handle": "@oykuxelysian",
@@ -70852,30 +70779,28 @@
    "wp": "danismanlik",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0,
-   "is_protest": 8
+   "left": 0
   },
   {
    "handle": "@mervenur_ers",
    "arrive": 1792971000,
    "move": 1792994400,
-   "home": "Doğu Banliyö C Blok, Daire 80",
-   "home_from": 1792994400,
+   "home": "Bahçeli Köy Evleri No 4",
+   "home_from": 1793974524,
    "job": [
-    "E-Ticaret Uzmanı",
-    "Miniakent E-Ticaret A.Ş. · Miniakent Plaza 2, Kat 8",
-    "office",
-    "plaza2"
+    "Çiftçi",
+    "Bahçeli Köy Evleri",
+    "area",
+    "koy_tarla"
    ],
-   "wp": "eticaret",
+   "wp": "",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
    "look": [
     1,
     1
-   ],
-   "protest": 1
+   ]
   },
   {
    "handle": "@nano_tasiyici",
@@ -71178,23 +71103,22 @@
    "handle": "@oguzhanasar0",
    "arrive": 1792971000,
    "move": 1792994400,
-   "home": "Doğu Banliyö C Blok, Daire 86",
-   "home_from": 1792994400,
+   "home": "Bahçeli Köy Evleri No 4",
+   "home_from": 1793974524,
    "job": [
-    "Psikolog",
-    "Miniakent Sağlık Merkezi · Miniakent Plaza, Kat 2",
-    "office",
-    "plaza"
+    "Çiftçi",
+    "Bahçeli Köy Evleri",
+    "area",
+    "koy_tarla"
    ],
-   "wp": "saglik",
+   "wp": "",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
    "look": [
     0,
     0
-   ],
-   "protest": 2
+   ]
   },
   {
    "handle": "@maybetterthan_",
@@ -71602,23 +71526,22 @@
    "handle": "@huseyin_cobanoglu35",
    "arrive": 1792971000,
    "move": 1792994400,
-   "home": "Doğu Banliyö C Blok, Daire 93",
-   "home_from": 1792994400,
+   "home": "Bahçeli Köy Evleri No 4",
+   "home_from": 1793974524,
    "job": [
-    "Ağ Uzmanı",
-    "Miniakent Telekom · Miniakent Plaza 2, Kat 11",
-    "office",
-    "plaza2"
+    "Çiftçi",
+    "Bahçeli Köy Evleri",
+    "area",
+    "koy_tarla"
    ],
-   "wp": "telekom",
+   "wp": "",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
    "look": [
     3,
     0
-   ],
-   "protest": 0
+   ]
   },
   {
    "handle": "@osman.aggah.19",
@@ -71673,8 +71596,7 @@
    "wp": "emniyet",
    "hobby": "Balık tutmak",
    "queue": 0,
-   "left": 0,
-   "nobet": 7
+   "left": 0
   },
   {
    "handle": "@alsibakuninn",
@@ -71733,8 +71655,7 @@
    "look": [
     4,
     0
-   ],
-   "nobet": 10
+   ]
   },
   {
    "handle": "@the_yusufiiijjj",
@@ -71755,8 +71676,7 @@
    "look": [
     0,
     0
-   ],
-   "nobet": 11
+   ]
   },
   {
    "handle": "@onsra34",
@@ -71773,8 +71693,7 @@
    "wp": "emniyet",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0,
-   "nobet": 12
+   "left": 0
   },
   {
    "handle": "@slaaaballl",
@@ -71791,8 +71710,7 @@
    "wp": "emniyet",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0,
-   "nobet": 13
+   "left": 0
   },
   {
    "handle": "@llseda_k",
@@ -71813,8 +71731,7 @@
    "look": [
     1,
     1
-   ],
-   "nobet": 14
+   ]
   },
   {
    "handle": "@halil_merts",
@@ -71835,8 +71752,7 @@
    "look": [
     4,
     0
-   ],
-   "protest": 26
+   ]
   },
   {
    "handle": "@selahatdinkrbyk",
@@ -71857,8 +71773,7 @@
    "look": [
     0,
     0
-   ],
-   "nobet": 16
+   ]
   },
   {
    "handle": "@marjinalsushi",
@@ -71875,8 +71790,7 @@
    "wp": "emniyet",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0,
-   "nobet": 17
+   "left": 0
   },
   {
    "handle": "@iremirzam",
@@ -71897,8 +71811,7 @@
    "look": [
     2,
     1
-   ],
-   "nobet": 18
+   ]
   },
   {
    "handle": "@aimron_wx1",
@@ -71915,8 +71828,7 @@
    "wp": "emniyet",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0,
-   "nobet": 19
+   "left": 0
   },
   {
    "handle": "@pizzzza.mwahh",
@@ -71933,8 +71845,7 @@
    "wp": "emniyet",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0,
-   "nobet": 20
+   "left": 0
   },
   {
    "handle": "@egehan.mp4",
@@ -71955,8 +71866,7 @@
    "look": [
     4,
     0
-   ],
-   "nobet": 21
+   ]
   },
   {
    "handle": "@fatbekonline",
@@ -71994,8 +71904,7 @@
    "wp": "emniyet",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0,
-   "nobet": 23
+   "left": 0
   },
   {
    "handle": "@iroinnwonderland",
@@ -72016,8 +71925,7 @@
    "look": [
     2,
     1
-   ],
-   "nobet": 24
+   ]
   },
   {
    "handle": "@elfooa_",
@@ -72038,8 +71946,7 @@
    "look": [
     2,
     1
-   ],
-   "nobet": 25
+   ]
   },
   {
    "handle": "@yetim_kundakcisi36",
@@ -72056,8 +71963,7 @@
    "wp": "emniyet",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0,
-   "nobet": 26
+   "left": 0
   },
   {
    "handle": "@benimaptalhayatimm",
@@ -72074,8 +71980,7 @@
    "wp": "emniyet",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0,
-   "nobet": 27
+   "left": 0
   },
   {
    "handle": "@sudeprrlk",
@@ -72096,8 +72001,7 @@
    "look": [
     1,
     1
-   ],
-   "nobet": 28
+   ]
   },
   {
    "handle": "@5hidroksitriptamiin",
@@ -72114,8 +72018,7 @@
    "wp": "emniyet",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0,
-   "nobet": 29
+   "left": 0
   },
   {
    "handle": "@mustf.cng",
@@ -72136,8 +72039,7 @@
    "look": [
     3,
     0
-   ],
-   "nobet": 30
+   ]
   },
   {
    "handle": "@berayyy_3",
@@ -72158,8 +72060,7 @@
    "look": [
     2,
     1
-   ],
-   "nobet": 31
+   ]
   },
   {
    "handle": "@nazsenlikk",
@@ -72180,8 +72081,7 @@
    "look": [
     1,
     1
-   ],
-   "nobet": 32
+   ]
   },
   {
    "handle": "@onwr.w",
@@ -72202,8 +72102,7 @@
    "look": [
     3,
     0
-   ],
-   "nobet": 33
+   ]
   },
   {
    "handle": "@rub4r4n",
@@ -72224,8 +72123,7 @@
    "look": [
     0,
     0
-   ],
-   "nobet": 34
+   ]
   },
   {
    "handle": "@mete_emanet",
@@ -72246,8 +72144,7 @@
    "look": [
     0,
     0
-   ],
-   "nobet": 4
+   ]
   },
   {
    "handle": "@ilov3r4in",
@@ -72264,8 +72161,7 @@
    "wp": "emniyet",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0,
-   "nobet": 35
+   "left": 0
   },
   {
    "handle": "@m.enesvrl",
@@ -72286,8 +72182,7 @@
    "look": [
     0,
     0
-   ],
-   "nobet": 36
+   ]
   },
   {
    "handle": "@ali55yetkin",
@@ -72308,8 +72203,7 @@
    "look": [
     3,
     0
-   ],
-   "nobet": 37
+   ]
   },
   {
    "handle": "@berat_ozkn.0",
@@ -72330,8 +72224,7 @@
    "look": [
     4,
     0
-   ],
-   "nobet": 38
+   ]
   },
   {
    "handle": "@f1rd3vs_",
@@ -72352,8 +72245,7 @@
    "look": [
     2,
     1
-   ],
-   "nobet": 39
+   ]
   },
   {
    "handle": "@ayaz2_0111",
@@ -72374,8 +72266,7 @@
    "look": [
     4,
     0
-   ],
-   "nobet": 40
+   ]
   },
   {
    "handle": "@limons_1453",
@@ -72392,8 +72283,7 @@
    "wp": "emniyet",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0,
-   "nobet": 41
+   "left": 0
   },
   {
    "handle": "@enginhacibiyik",
@@ -72414,8 +72304,7 @@
    "look": [
     0,
     0
-   ],
-   "protest": 24
+   ]
   },
   {
    "handle": "@selinaladagg",
@@ -72436,8 +72325,7 @@
    "look": [
     1,
     1
-   ],
-   "nobet": 43
+   ]
   },
   {
    "handle": "@ipekn_mutlu",
@@ -72458,8 +72346,7 @@
    "look": [
     1,
     1
-   ],
-   "nobet": 44
+   ]
   },
   {
    "handle": "@havineyssanceri",
@@ -72480,8 +72367,7 @@
    "look": [
     1,
     1
-   ],
-   "nobet": 45
+   ]
   },
   {
    "handle": "@yagizdenli",
@@ -72502,8 +72388,7 @@
    "look": [
     4,
     0
-   ],
-   "nobet": 46
+   ]
   },
   {
    "handle": "@eeeylulsr",
@@ -72524,8 +72409,7 @@
    "look": [
     2,
     1
-   ],
-   "nobet": 47
+   ]
   },
   {
    "handle": "@ulusoy_selcuk",
@@ -72546,8 +72430,7 @@
    "look": [
     4,
     0
-   ],
-   "nobet": 48
+   ]
   },
   {
    "handle": "@selcukhantras_",
@@ -72568,8 +72451,7 @@
    "look": [
     3,
     0
-   ],
-   "nobet": 49
+   ]
   },
   {
    "handle": "@jax_rosie_blink",
@@ -72590,8 +72472,7 @@
    "look": [
     2,
     1
-   ],
-   "nobet": 15
+   ]
   },
   {
    "handle": "@thecoachsami",
@@ -72612,8 +72493,7 @@
    "look": [
     4,
     0
-   ],
-   "nobet": 42
+   ]
   },
   {
    "handle": "@incionr_",
@@ -72655,8 +72535,7 @@
    "look": [
     4,
     0
-   ],
-   "nobet": 9
+   ]
   },
   {
    "handle": "@yusufsc34",
@@ -72677,8 +72556,7 @@
    "look": [
     4,
     0
-   ],
-   "nobet": 8
+   ]
   },
   {
    "handle": "@babapiro2085",
@@ -73534,8 +73412,7 @@
    "look": [
     1,
     1
-   ],
-   "is_protest": 13
+   ]
   },
   {
    "handle": "@burcuu_aydemirr",
@@ -73577,8 +73454,7 @@
    "look": [
     2,
     1
-   ],
-   "nobet": 3
+   ]
   },
   {
    "handle": "@melwkorg",
@@ -74614,8 +74490,7 @@
    "look": [
     2,
     1
-   ],
-   "lunapark": 7
+   ]
   },
   {
    "handle": "@fstmaks",
@@ -75357,8 +75232,7 @@
    "look": [
     1,
     1
-   ],
-   "protest": 17
+   ]
   },
   {
    "handle": "@buse_ee_ee",
@@ -75594,8 +75468,7 @@
    "look": [
     2,
     1
-   ],
-   "protest": 32
+   ]
   },
   {
    "handle": "@n.urrnur.r",
@@ -75637,8 +75510,7 @@
    "look": [
     2,
     1
-   ],
-   "beton": 2
+   ]
   },
   {
    "handle": "@adolfhikmet",
@@ -75777,8 +75649,7 @@
    "look": [
     3,
     0
-   ],
-   "protest": 61
+   ]
   },
   {
    "handle": "@cemalikilicofficiall",
@@ -76225,8 +76096,7 @@
    "look": [
     1,
     1
-   ],
-   "protest": 23
+   ]
   },
   {
    "handle": "@aysegulunaaal",
@@ -76386,8 +76256,7 @@
    "look": [
     1,
     1
-   ],
-   "protest": 58
+   ]
   },
   {
    "handle": "@nazlissiim",
@@ -76627,8 +76496,7 @@
    "wp": "turizm",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0,
-   "protest": 22
+   "left": 0
   },
   {
    "handle": "@furkannnckr",
@@ -76666,8 +76534,7 @@
    "wp": "yazilim",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0,
-   "protest": 21
+   "left": 0
   },
   {
    "handle": "@suhedafiskiracaktopragisiksans",
@@ -76688,8 +76555,7 @@
    "look": [
     1,
     1
-   ],
-   "protest": 27
+   ]
   },
   {
    "handle": "@mert_kahramanogluu",
@@ -77224,8 +77090,7 @@
    "wp": "yazilim",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0,
-   "protest": 51
+   "left": 0
   },
   {
    "handle": "@mefed_setup",
@@ -77616,8 +77481,7 @@
    "wp": "hastane",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0,
-   "protest": 60
+   "left": 0
   },
   {
    "handle": "@berat.efe07",
@@ -78063,8 +77927,7 @@
    "look": [
     2,
     1
-   ],
-   "protest": 20
+   ]
   },
   {
    "handle": "@tayfunngzr",
@@ -78237,8 +78100,7 @@
    "wp": "enerji",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0,
-   "lunapark": 2
+   "left": 0
   },
   {
    "handle": "@elanur_demiryrek",
@@ -78941,8 +78803,7 @@
    "wp": "lojistik",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0,
-   "protest": 66
+   "left": 0
   },
   {
    "handle": "@esat.cymz1",
@@ -79225,8 +79086,7 @@
    "look": [
     2,
     1
-   ],
-   "protest": 19
+   ]
   },
   {
    "handle": "@simpabxbee",
@@ -80026,8 +79886,7 @@
    "look": [
     1,
     1
-   ],
-   "nobet": 0
+   ]
   },
   {
    "handle": "@muzaffer_cakmakci",
@@ -80048,8 +79907,7 @@
    "look": [
     3,
     0
-   ],
-   "nobet": 2
+   ]
   },
   {
    "handle": "@nevroz.crcoglu_",
@@ -80226,8 +80084,7 @@
    "look": [
     1,
     1
-   ],
-   "lunapark": 1
+   ]
   },
   {
    "handle": "@aysumandacii",
@@ -80299,8 +80156,7 @@
    "wp": "ticaret",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0,
-   "protest": 18
+   "left": 0
   },
   {
    "handle": "@isott25m",
@@ -80987,8 +80843,7 @@
    "look": [
     0,
     0
-   ],
-   "nobet": 5
+   ]
   },
   {
    "handle": "@irmak_micc4",
@@ -81249,8 +81104,7 @@
    "look": [
     1,
     1
-   ],
-   "is_protest": 7
+   ]
   },
   {
    "handle": "@oziy3ch",
@@ -81448,8 +81302,7 @@
    "wp": "dershane",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0,
-   "protest": 47
+   "left": 0
   },
   {
    "handle": "@grkemtaha",
@@ -81765,8 +81618,7 @@
    "look": [
     1,
     1
-   ],
-   "lunapark": 4
+   ]
   },
   {
    "handle": "@esis5504",
@@ -81800,8 +81652,7 @@
    "wp": "emniyet",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 1793134800,
-   "nobet": 1
+   "left": 1793134800
   },
   {
    "handle": "@seherrvaktiim",
@@ -85174,8 +85025,7 @@
    "look": [
     4,
     0
-   ],
-   "protest": 67
+   ]
   },
   {
    "handle": "@6zgun",
@@ -87039,8 +86889,7 @@
    "wp": "plaza_hizmet",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0,
-   "lunapark": 19
+   "left": 0
   },
   {
    "handle": "@serapmeltm",
@@ -87773,8 +87622,7 @@
    "look": [
     2,
     1
-   ],
-   "lunapark": 13
+   ]
   },
   {
    "handle": "@ortacivelek",
@@ -88003,8 +87851,7 @@
    "wp": "telekom",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0,
-   "lunapark": 16
+   "left": 0
   },
   {
    "handle": "@azo._.68",
@@ -88296,8 +88143,7 @@
    "wp": "turizm",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0,
-   "lunapark": 14
+   "left": 0
   },
   {
    "handle": "@herkesinniyeprivivar",
@@ -88404,7 +88250,6 @@
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
-   "lunapark": 12,
    "look": [
     1,
     1
@@ -88793,8 +88638,7 @@
    "wp": "arge",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0,
-   "lunapark": 10
+   "left": 0
   },
   {
    "handle": "@nazlimmm09",
@@ -88832,8 +88676,7 @@
    "wp": "gayrimenkul",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 1793912400,
-   "lunapark": 9
+   "left": 1793912400
   },
   {
    "handle": "@esm.ademir55",
@@ -88985,8 +88828,7 @@
    "wp": "oyun",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0,
-   "lunapark": 8
+   "left": 0
   },
   {
    "handle": "@kirazinyo",
@@ -160357,7 +160199,6 @@
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 1793912400,
-   "lunapark": 0,
    "look": [
     2,
     1
