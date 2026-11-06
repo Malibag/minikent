@@ -784,7 +784,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		sayfaAd = ad; kostumAcik = false; durum = durum || 1; ciz(); arayuz();
 		$("mkb-icerik").scrollTop = 0;
 	}
-	function kapat() {   // × ya da aşağı çekince: takip de biter (eski kartın × gibi)
+	function kapat() {   // ×: kart kapanır, takip de biter (eski kartın × gibi)
 		durum = 0; arayuz();
 		if (window.miniakentBirak) window.miniakentBirak();
 	}
@@ -804,7 +804,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		const dy = e.clientY - y0;
 		y0 = null;
 		if (dy < -30) durum = 2;
-		else if (dy > 30 && durum === 1) return kapat();   // aşağı çekip kapatınca takip de biter (× gibi)
+		else if (dy > 30 && durum === 1) durum = 0;   // aşağı çekince yalnız kart kapanır, takip sürer; takibi yalnız × bitirir (kullanıcı, 2026-11-06)
 		else if (dy > 30) durum = 1;
 		else durum = durum === 1 ? 2 : 1;
 		arayuz();
