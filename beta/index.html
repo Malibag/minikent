@@ -576,6 +576,8 @@ body.gece #mkb { --krem: #22304f; --krem2: #2c3b5e; --yazi: #fbe9cb; --kenar: #0
 #mkb .kostumler { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
 #mkb .kostumler button { aspect-ratio: 4 / 5; border-radius: 10px; border: 2px solid transparent; background: url("beta/kostumler.png") 0 0 / 500% 800% no-repeat, var(--krem2); padding: 0; }
 #mkb .kostumler button.secili { border-color: var(--deniz); }
+#mkb .adlar { display: flex; flex-wrap: wrap; gap: 6px; }
+#mkb .adlar button { padding: 5px 10px; border-radius: 999px; border: 2px solid var(--kenar); background: var(--krem2); font-weight: 700; font-size: 13px; }
 /* ayarlar: dişliden açılır */
 #mkb .ayarlar { position: absolute; top: calc(58px + env(safe-area-inset-top, 0px)); left: calc(12px + var(--en) - min(280px, var(--en))); width: min(280px, var(--en)); z-index: 9;
 	padding: 12px 14px; display: flex; flex-direction: column; gap: 12px; background: var(--krem); border: 3px solid var(--kenar); border-radius: 18px; box-shadow: 0 4px 0 var(--golge); }
@@ -760,6 +762,19 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			<button class="git" data-kostum=""><b>Kostümü çıkar</b><span>Kendi kıyafetine döner</span><em>—</em></button>`;
 	}
 
+	// bina kartı (kullanıcı, 2026-11-06): bilgiler ve çalışanlar/yaşayanlar; ilk 12 ad, "Daha fazlasını gör" ile hepsi
+	function binaGrup(tur) {
+		const g = bina[tur], n = g.adlar.length, is = tur === "is";
+		const adlar = binaTum[tur] ? g.adlar : g.adlar.slice(0, 12);
+		return `<div class="kutu">
+			<div class="satir"><span>${is ? "Çalışan kapasitesi" : "Toplam kapasite"}</span><b>${sayi(g.kap)} kişi</b></div>
+			<div class="satir"><span>${is ? "Burada çalışan" : g.bekle ? "Bekleyen" : "Burada yaşayan"}</span><b>${sayi(n)}</b></div>
+			<div class="satir"><span>${is ? "Boş kadro" : "Boş yer"}</span><b>${sayi(Math.max(0, g.kap - n))}</b></div></div>
+		${n ? `<div class="bolum">${is ? "Burada çalışanlar" : "Burada yaşayanlar"} (${sayi(n)})</div>
+		<div class="adlar">${adlar.map((h) => `<button data-sec="${esc(h)}">${esc(h)}</button>`).join("")}</div>
+		${n > adlar.length ? `<button class="git" data-hepsi="${tur}"><b>Daha fazlasını gör</b><span>${sayi(n - adlar.length)} kişi daha</span><em>Tümü</em></button>` : ""}` : ""}`;
+	}
+
 	const SAYFA = {
 		kisi: ["Karakterim", () => {
 			const is = isim(), ev = evim(), [dy, iste] = durumYazi();
@@ -792,6 +807,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			<p class="bilgi">Mesai bitince karakterin eve döner.</p><p class="bilgi">Betada karakter henüz seçilen yere gitmez.</p>`;
 		}],
 		gorunus: ["Görünüş", () => kostumVar() ? kostumIzgara(karakter) : `<p class="bilgi">Kostümler şu an kapalı.</p>`],
+		bina: [() => bina.baslik, () => `${bina.alt ? `<p class="bilgi">${esc(bina.alt)}</p>` : ""}${bina.is ? binaGrup("is") : ""}${bina.ev ? binaGrup("ev") : ""}`],
 		// başka sakinin kartı: para ve göstergeler, Evini/İş yerini göster; kostüm yalnız etkinlik süresince (kullanıcı, 2026-11-05)
 		sakin: ["Sakin", () => {
 			const s = secilen, o = ozet(s.handle), m = mesai();
@@ -802,11 +818,11 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			${kostumVar() ? (kostumAcik ? kostumIzgara(s.handle) : `<button class="git" data-kostumac="1"><b>Kostüm giydir</b><span>Cadılar Bayramı kostümleri</span><em>40 kostüm</em></button>`) : ""}`;
 		}],
 	};
-	let secilen = null, kostumAcik = false;
+	let secilen = null, kostumAcik = false, bina = null, binaTum = {};
 
 	function ciz() {
 		const s = SAYFA[sayfaAd];
-		$("mkb-baslik").textContent = s[0];
+		$("mkb-baslik").textContent = typeof s[0] === "function" ? s[0]() : s[0];
 		const ic = $("mkb-icerik"), y = ic.scrollTop;
 		ic.innerHTML = s[1]();
 		ic.scrollTop = y;
@@ -824,7 +840,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		if (window.miniakentArayuz) window.miniakentArayuz(tel && kumandaAcik && !tam, takipVar ? 84 : 0);
 	}
 	function ac(ad) {
-		sayfaAd = ad; kostumAcik = false;
+		sayfaAd = ad; kostumAcik = false; binaTum = {};
 		$("mkb-pano").classList.add("acik");
 		$("mkb-pano").setAttribute("aria-hidden", "false");
 		ciz(); arayuz();
@@ -884,7 +900,9 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		const b = e.target.closest("button");
 		if (!b) return;
 		const d = b.dataset;
-		if (d.takip) window.miniakentTakip && window.miniakentTakip(d.takip);
+		if (d.sec) window.minikentSearch && window.minikentSearch(d.sec);
+		else if (d.hepsi) { binaTum[d.hepsi] = true; ciz(); }
+		else if (d.takip) window.miniakentTakip && window.miniakentTakip(d.takip);
 		else if (d.evgoster) window.miniakentEvGoster && window.miniakentEvGoster();
 		else if (d.isgoster) window.miniakentIsGoster && window.miniakentIsGoster();
 		else if (d.kontrol) window.miniakentKontrolAc && window.miniakentKontrolAc(secilen.handle);
@@ -944,7 +962,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	bolge.addEventListener("click", (e) => { const b = e.target.closest("button"); if (b) { bolge.hidden = true; window.miniakentBolgeGit && window.miniakentBolgeGit(b.dataset.z); } });
 
 	// oyunun durumu: yarım saniyede bir (oyun açılınca ana ekran görünür)
-	let sonBilgi = "", sonOturum = null, sonDk = -1, sonSecim = 0;
+	let sonBilgi = "", sonOturum = null, sonDk = -1, sonSecim = 0, sonBina = 0;
 	setInterval(() => {
 		const hud = window.miniakentHud;
 		if (!hud) return;
@@ -955,6 +973,13 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			secilen = window.miniakentSecilen;
 			bolge.hidden = true;
 			ac(secilen.handle === karakter ? "kisi" : "sakin");
+		}
+		// oyunda bir binaya dokunuldu: bina kartı
+		if (window.miniakentBinaSurum && window.miniakentBinaSurum !== sonBina) {
+			sonBina = window.miniakentBinaSurum;
+			bina = window.miniakentBina;
+			bolge.hidden = true;
+			ac("bina");
 		}
 		$("mkb-nufus").textContent = "Nüfus: " + sayi(hud.nufus) + " · Bekleyen: " + sayi(hud.bekleyen);
 		$("mkb-saat").textContent = hud.saat;
@@ -990,7 +1015,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"beta/index-beta-v202611061630.pck","fileSizes":{"beta/index-beta-v202611061630.pck":6173132,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"beta/index-beta-v202611061647.pck","fileSizes":{"beta/index-beta-v202611061647.pck":6173740,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
