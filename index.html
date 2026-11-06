@@ -298,19 +298,621 @@ try {
 	};
 	if (window.miniakentKostumYol) {
 		kostumAc(window.miniakentKostumYol);
+		if (window.miniakentBeta) {  // betada da kostüm yalnız etkinlik süresince (kullanıcı, 2026-11-05)
+			setTimeout(kostumKapat, Math.max(0, KOSTUM_BIT - Date.now()));
+		}
 	} else if (Date.now() < KOSTUM_BIT) {
 		setTimeout(() => {
 			kostumAc("kostum");
 			setTimeout(kostumKapat, Math.max(0, KOSTUM_BIT - Date.now()));
 		}, Math.max(0, KOSTUM_BAS - Date.now()));
 	}
+	// Kontrolü Al (kullanıcı, 2026-11-05; 1. adım: yalnız e-posta + şifreyle kayıt ve giriş, Instagram doğrulaması yok):
+	// şimdilik yalnız deneme sayfasında (window.miniakentKontrolDeneme). Kartta "Kontrolü Al" pencereyi açar; girişten
+	// sonra oyuncunun karakteri bu tarayıcıda saklanır (miniakent_karakter) ve kartında "Ayrıl" görünür. Oyun durumu
+	// window.miniakentOturum'dan okur (JSON; boşsa giriş yok), her değişimde window.miniakentOturumSurum artar.
+	if (window.miniakentKontrolDeneme) {
+		const fa = await import("https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js");
+		const auth = fa.getAuth(app);
+		auth.languageCode = "tr";
+		let karakter = "";
+		try { karakter = localStorage.getItem("miniakent_karakter") || ""; } catch (e) {}
+		const oturum = (u) => {
+			window.miniakentOturum = u ? JSON.stringify({ eposta: u.email, dogrulandi: u.emailVerified, karakter: karakter }) : "";
+			window.miniakentOturumSurum = (window.miniakentOturumSurum || 0) + 1;
+		};
+		fa.onAuthStateChanged(auth, oturum);
+		const css = document.createElement("style");
+		css.textContent = `
+#kontrol { position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center;
+	background: rgba(20, 18, 15, 0.55); font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; }
+#kontrol[hidden], #kontrol [hidden] { display: none; }
+#kontrol .kutu { position: relative; width: min(340px, calc(100vw - 32px)); box-sizing: border-box; padding: 22px 20px 18px;
+	border-radius: 14px; background: #faf5eb; color: #2a2620; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35); }
+#kontrol h2 { margin: 0; font-size: 19px; text-align: center; }
+#kontrol .kim { margin: 2px 0 14px; font-size: 14px; color: #776d60; text-align: center; }
+#kontrol .kapat { position: absolute; top: 8px; right: 10px; border: 0; background: none; font-size: 24px; color: #776d60; cursor: pointer; }
+#kontrol .sekme { display: flex; gap: 6px; margin-bottom: 14px; }
+#kontrol .sekme button { flex: 1; padding: 8px; border: 1px solid #2a2620; border-radius: 10px; background: none; color: #2a2620; font-size: 14px; cursor: pointer; }
+#kontrol .sekme button.secili { background: #2a2620; color: #faf5eb; }
+#kontrol label { display: block; margin: 8px 0 4px; font-size: 13px; color: #776d60; }
+#kontrol input { width: 100%; box-sizing: border-box; padding: 10px; border: 1px solid #cfc5b4; border-radius: 10px; font-size: 16px; background: #fff; color: #2a2620; }
+#kontrol .gonder { width: 100%; margin-top: 16px; padding: 11px; border: 0; border-radius: 12px; background: #2a2620; color: #faf5eb; font-size: 15px; cursor: pointer; }
+#kontrol .gonder:disabled { opacity: 0.6; }
+#kontrol .unuttum { display: block; margin: 10px auto 0; border: 0; background: none; color: #776d60; font-size: 13px; text-decoration: underline; cursor: pointer; }
+#kontrol .mesaj { min-height: 18px; margin-top: 10px; font-size: 13px; text-align: center; }
+#kontrol .mesaj.hata { color: #b23b2e; }`;
+		document.head.appendChild(css);
+		const pen = document.createElement("div");
+		pen.id = "kontrol";
+		pen.hidden = true;
+		pen.innerHTML = `<form class="kutu" novalidate>
+	<button type="button" class="kapat" aria-label="Kapat">×</button>
+	<h2>Kontrolü Al</h2>
+	<div class="kim"></div>
+	<div class="sekme"><button type="button" data-mod="kayit">Kayıt Ol</button><button type="button" data-mod="giris">Giriş Yap</button></div>
+	<label for="kontrol-eposta">E-posta</label>
+	<input id="kontrol-eposta" type="email" autocomplete="email" required>
+	<label for="kontrol-sifre">Şifre</label>
+	<input id="kontrol-sifre" type="password" required>
+	<button type="submit" class="gonder"></button>
+	<button type="button" class="unuttum">Şifremi unuttum</button>
+	<div class="mesaj" role="status"></div>
+</form>`;
+		document.body.appendChild(pen);
+		const q = (s) => pen.querySelector(s);
+		const eposta = q("#kontrol-eposta");
+		const sifre = q("#kontrol-sifre");
+		const gonder = q(".gonder");
+		const mesaj = q(".mesaj");
+		let mod = "kayit";
+		let aday = "";
+		const yaz = (t, hata) => { mesaj.textContent = t; mesaj.classList.toggle("hata", !!hata); };
+		const modSec = (m) => {
+			mod = m;
+			pen.querySelectorAll(".sekme button").forEach((b) => b.classList.toggle("secili", b.dataset.mod === m));
+			gonder.textContent = m === "kayit" ? "Kayıt Ol" : "Giriş Yap";
+			sifre.autocomplete = m === "kayit" ? "new-password" : "current-password";
+			q(".unuttum").hidden = m === "kayit";
+			yaz("");
+		};
+		const HATA = {
+			"auth/invalid-credential": "E-posta ya da şifre yanlış.",
+			"auth/wrong-password": "E-posta ya da şifre yanlış.",
+			"auth/user-not-found": "E-posta ya da şifre yanlış.",
+			"auth/email-already-in-use": "Bu e-postayla zaten bir hesap var.",
+			"auth/weak-password": "Şifre en az 6 karakter olmalı.",
+			"auth/invalid-email": "E-posta adresi geçersiz.",
+			"auth/missing-password": "Şifreni yaz.",
+			"auth/too-many-requests": "Çok fazla deneme yapıldı, biraz sonra tekrar dene.",
+		};
+		const hata = (e) => yaz(HATA[e && e.code] || "Bir sorun çıktı, tekrar dene.", true);
+		const kapat = () => { pen.hidden = true; };
+		pen.querySelectorAll(".sekme button").forEach((b) => b.addEventListener("click", () => modSec(b.dataset.mod)));
+		q(".kapat").addEventListener("click", kapat);
+		pen.addEventListener("click", (e) => { if (e.target === pen) kapat(); });
+		q("form").addEventListener("submit", async (e) => {
+			e.preventDefault();
+			gonder.disabled = true;
+			yaz("");
+			try {
+				const k = mod === "kayit"
+					? await fa.createUserWithEmailAndPassword(auth, eposta.value.trim(), sifre.value)
+					: await fa.signInWithEmailAndPassword(auth, eposta.value.trim(), sifre.value);
+				karakter = aday;
+				try { localStorage.setItem("miniakent_karakter", karakter); } catch (e2) {}
+				oturum(k.user);
+				if (mod === "kayit") {
+					await fa.sendEmailVerification(k.user);
+					yaz("Doğrulama bağlantısını e-postana gönderdik.");
+				} else if (!k.user.emailVerified) {
+					await fa.sendEmailVerification(k.user);  // doğrulanmamış girişte bağlantı yeniden gider (2026-11-05)
+					yaz("E-postan henüz doğrulanmadı, yeni doğrulama bağlantısını gönderdik.");
+				} else {
+					kapat();
+				}
+			} catch (err) {
+				hata(err);
+			}
+			gonder.disabled = false;
+		});
+		q(".unuttum").addEventListener("click", async () => {
+			if (!eposta.value.trim()) {
+				yaz("Önce e-postanı yaz.", true);
+				return;
+			}
+			try {
+				await fa.sendPasswordResetEmail(auth, eposta.value.trim());
+				yaz("Şifre yenileme bağlantısını e-postana gönderdik.");
+			} catch (err) {
+				hata(err);
+			}
+		});
+		window.miniakentKontrolAc = (h) => {
+			aday = h;
+			q(".kim").textContent = h;
+			sifre.value = "";
+			modSec("kayit");
+			pen.hidden = false;
+			eposta.focus();
+		};
+		window.miniakentAyril = () => {
+			karakter = "";
+			try { localStorage.removeItem("miniakent_karakter"); } catch (e) {}
+			fa.signOut(auth);
+		};
+	}
 } catch (e) {
 	console.warn("Firebase", e);
 }
 		</script>
+		<script>
+// Beta (kullanıcı, 2026-11-05; miniakent.com/beta/, window.miniakentBeta): onaylı taslağın ana ekranı ve "Karakterim"
+// paneli sayfada çizilir (renkler açılış ekranının logosu ve ada çubuğundan). Oyun nüfus/saat/ses durumunu
+// window.miniakentHud'a, girişli oyuncunun karakterini window.miniakentKarakterBilgi'ye yazar; sayfa
+// miniakentBolgeGit, miniakentSes, miniakentArayuz, miniakentTakip ve minikentSearch ile oyuna haber verir.
+// Para, göstergeler, ilanlar ve "Ne yapsın?" henüz ÖRNEK (kullanıcı: betayı yalnız o görecek, her şey denensin);
+// örnek durum bu tarayıcıda saklanır (miniakent_beta_ornek).
+if (window.miniakentBeta) (function () {
+	const font = document.createElement("link");
+	font.rel = "stylesheet";
+	font.href = "https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap";
+	document.head.appendChild(font);
+	const css = document.createElement("style");
+	css.textContent = `
+#mkb { --krem: #fbe9cb; --krem2: #fff6e4; --yazi: #162132; --kenar: #162132; --golge: #162132; --soluk: #5d6680;
+	--cimen: #9eac70; --kum: #e0c9af; --deniz: #629fa3; --kiremit: #b87449; --arti: #4e6b2c;
+	--fb: 'Fredoka', 'Nunito', system-ui, sans-serif; --fg: 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+	position: fixed; inset: 0; z-index: 30; pointer-events: none; color: var(--yazi); font: 15px var(--fg); }
+body.gece #mkb { --krem: #22304f; --krem2: #2c3b5e; --yazi: #fbe9cb; --kenar: #0b1220; --golge: #0b1220; --soluk: #a9b3c7;
+	--cimen: #6f8c58; --kum: #cdb79d; --deniz: #2f7a8c; --kiremit: #c9824f; --arti: #a9c58a; color-scheme: dark; }
+#mkb[hidden], #mkb [hidden] { display: none !important; }
+#mkb * { box-sizing: border-box; }
+#mkb button, #mkb input, #mkb form, #mkb .mkb-sayfa, #mkb .mkb-onay, #mkb .mkb-liste { pointer-events: auto; }
+#mkb button { font: inherit; color: inherit; cursor: pointer; }
+#mkb .ust { position: absolute; top: calc(12px + env(safe-area-inset-top, 0px)); left: 12px; right: 12px; display: flex; gap: 8px; align-items: center; }
+#mkb .serit { flex: 1; display: flex; align-items: center; gap: 8px; padding: 7px 12px; border-radius: 14px; background: var(--krem);
+	border: 2px solid var(--kenar); font: 600 13.5px var(--fb); font-variant-numeric: tabular-nums; }
+#mkb .serit .saat { margin-left: auto; font-size: 15px; }
+#mkb .yuvarlak { width: 38px; height: 38px; flex: 0 0 38px; display: grid; place-items: center; border-radius: 50%; background: var(--krem); border: 2px solid var(--kenar); padding: 0; }
+#mkb .yuvarlak svg { width: 18px; height: 18px; }
+#mkb .ust2 { position: absolute; top: calc(60px + env(safe-area-inset-top, 0px)); left: 12px; right: 12px; display: flex; gap: 8px; }
+#mkb .arama { display: flex; gap: 6px; flex: 1; min-width: 0; }
+#mkb .arama input { flex: 1; min-width: 0; padding: 7px 12px; border-radius: 999px; border: 2px solid var(--kenar); background: var(--krem2); color: var(--yazi); font: 14px var(--fg); outline: 0; }
+#mkb .cip { padding: 6px 12px; border-radius: 999px; background: var(--krem); border: 2px solid var(--kenar); font-weight: 700; font-size: 13px; }
+#mkb .cevrim { position: absolute; top: calc(98px + env(safe-area-inset-top, 0px)); left: 16px; font-size: 12px; font-weight: 700; color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,.6); }
+#mkb .mkb-liste { position: absolute; top: calc(98px + env(safe-area-inset-top, 0px)); display: flex; flex-direction: column; gap: 4px; max-height: 60vh; overflow-y: auto;
+	padding: 6px; border-radius: 14px; background: var(--krem); border: 2px solid var(--kenar); }
+#mkb .mkb-liste button { text-align: left; border: 0; background: none; padding: 7px 10px; border-radius: 10px; font-weight: 700; font-size: 14px; }
+#mkb .mkb-liste button.soluk { color: var(--soluk); }
+#mkb #mkb-oneri { left: 12px; right: 12px; }
+#mkb #mkb-bolge { right: 12px; min-width: 200px; }
+#mkb .kumanda-dugme { position: absolute; left: 14px; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); }
+#mkb .kumanda-dugme.acik { background: var(--yazi); color: var(--krem2); }
+#mkb .panel-dugme { position: absolute; right: 14px; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); display: flex; align-items: center; gap: 8px;
+	padding: 6px 14px 6px 6px; border-radius: 999px; background: var(--krem); border: 2.5px solid var(--kenar); box-shadow: 0 3px 0 var(--golge); font: 600 15px var(--fb); }
+#mkb .avatar { width: 36px; height: 36px; flex: 0 0 auto; border-radius: 50%; display: grid; place-items: center; background: var(--deniz); color: #fbe9cb;
+	font: 700 17px var(--fb); border: 2px solid var(--kenar); }
+#mkb .nokta { position: absolute; top: 2px; right: 6px; width: 12px; height: 12px; border-radius: 50%; background: var(--kiremit); border: 2px solid var(--krem); }
+#mkb .mkb-sayfa { position: absolute; left: 0; right: 0; bottom: 0; height: 92%; max-width: 560px; margin: 0 auto; background: var(--krem);
+	border: 3px solid var(--kenar); border-bottom: 0; border-radius: 26px 26px 0 0; transform: translateY(105%);
+	transition: transform .32s cubic-bezier(.2,.8,.2,1), height .3s; display: flex; flex-direction: column; }
+#mkb .mkb-sayfa.yarim { height: 64%; transform: none; }
+#mkb .mkb-sayfa.tam { transform: none; }
+#mkb .tutamak { flex: 0 0 auto; padding: 8px 0 2px; touch-action: none; }
+#mkb .tutamak i { display: block; width: 44px; height: 5px; border-radius: 3px; background: var(--soluk); opacity: .5; margin: 0 auto; }
+#mkb .bas { display: flex; align-items: center; gap: 8px; padding: 4px 14px 8px; flex: 0 0 auto; touch-action: none; }
+#mkb .bas h2 { flex: 1; margin: 0; font: 700 21px var(--fb); }
+#mkb .ikon { width: 36px; height: 36px; display: grid; place-items: center; border-radius: 50%; border: 0; background: transparent; padding: 0; }
+#mkb .ikon svg { width: 22px; height: 22px; }
+#mkb .icerik { flex: 1; overflow-y: auto; padding: 4px 14px calc(18px + env(safe-area-inset-bottom, 0px)); display: flex; flex-direction: column; gap: 12px; }
+#mkb .kim { display: flex; gap: 12px; align-items: center; }
+#mkb .kim .avatar { width: 52px; height: 52px; font-size: 24px; }
+#mkb .kim b { display: block; font: 600 18px var(--fb); }
+#mkb .kim span { display: block; color: var(--soluk); font-size: 13px; line-height: 1.35; }
+#mkb .durum { align-self: flex-start; padding: 4px 10px; border-radius: 999px; background: var(--cimen); color: #162132; font-weight: 800; font-size: 12.5px; }
+#mkb .durum.evde { background: var(--kum); }
+#mkb .kutu { position: relative; background: var(--krem2); border: 2px solid var(--kenar); border-radius: 16px; padding: 12px 14px; display: flex; flex-direction: column; gap: 10px; }
+#mkb .ornek { position: absolute; top: -9px; right: 12px; padding: 1px 8px; border-radius: 999px; background: var(--kum); color: #162132; font-size: 10.5px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+#mkb .para { flex-direction: row; align-items: flex-end; justify-content: space-between; gap: 10px; }
+#mkb .etiket { display: block; font-size: 11.5px; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; color: var(--soluk); }
+#mkb .para strong { font: 700 34px/1 var(--fb); font-variant-numeric: tabular-nums; }
+#mkb .bugun { text-align: right; font-size: 13px; line-height: 1.45; font-variant-numeric: tabular-nums; }
+#mkb .arti { color: var(--arti); font-weight: 800; }
+#mkb .eksi { color: var(--kiremit); font-weight: 800; }
+#mkb .gosterge { display: grid; grid-template-columns: 84px 1fr; align-items: center; gap: 4px 10px; font-weight: 700; font-size: 13.5px; }
+#mkb .gosterge.tek { grid-template-columns: 1fr; }
+#mkb .ada { height: 16px; border-radius: 9px; background: var(--kum); border-bottom: 4px solid var(--deniz); overflow: hidden; }
+#mkb .ada i { display: block; height: 100%; background: var(--cimen); border-radius: 9px 4px 4px 9px; }
+#mkb .kucuk { font-size: 12px; color: var(--soluk); font-weight: 600; }
+#mkb .gosterge .kucuk { grid-column: 2; }
+#mkb .gosterge.tek .kucuk { grid-column: 1; }
+#mkb .karolar { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+#mkb .karo { position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 8px; padding: 12px; border-radius: 16px; text-align: left;
+	background: var(--krem2); border: 2.5px solid var(--kenar); box-shadow: 0 3px 0 var(--golge); font: 600 17px var(--fb); }
+#mkb .karo:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--golge); }
+#mkb .karo .resim { width: 40px; height: 40px; display: grid; place-items: center; }
+#mkb .karo .resim img { width: 40px; height: 42px; object-fit: contain; }
+#mkb .karo .resim svg { width: 32px; height: 32px; }
+#mkb .rozet { position: absolute; top: 10px; right: 10px; padding: 2px 8px; border-radius: 999px; background: var(--kiremit); color: #fff6e4; font: 800 11.5px var(--fg); }
+#mkb .alt-dugmeler { display: flex; justify-content: center; gap: 16px; }
+#mkb .bag { border: 0; background: none; color: var(--soluk); font-weight: 700; text-decoration: underline; padding: 6px; }
+#mkb .satir { display: flex; justify-content: space-between; gap: 10px; font-size: 14px; }
+#mkb .satir span { color: var(--soluk); }
+#mkb .satir b { font-variant-numeric: tabular-nums; text-align: right; }
+#mkb .kutu h3 { margin: 0; font: 600 18px var(--fb); }
+#mkb .kutu .alt { margin: -6px 0 0; color: var(--soluk); font-size: 13px; }
+#mkb .bilgi { margin: 0; font-size: 13px; line-height: 1.45; color: var(--soluk); }
+#mkb .bolum { margin: 6px 0 -4px; font: 600 16px var(--fb); }
+#mkb .ilan { border-color: var(--kiremit); }
+#mkb .kadro { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; align-items: center; padding-top: 10px; border-top: 2px dashed var(--kum); }
+#mkb .kadro b { font-size: 14px; }
+#mkb .kadro p { grid-column: 1; margin: 0; font-size: 12.5px; color: var(--soluk); line-height: 1.4; }
+#mkb .kadro .fiyat { grid-column: 1; font: 600 15px var(--fb); font-variant-numeric: tabular-nums; }
+#mkb .kadro button { grid-column: 2; grid-row: 1 / span 3; padding: 10px 14px; border-radius: 12px; border: 2px solid var(--kenar); font-weight: 800; font-size: 14px; color: #fff6e4; box-shadow: 0 3px 0 var(--golge); }
+#mkb .hemen { background: var(--kiremit); }
+#mkb .basvur { background: var(--deniz); }
+#mkb .kadro button:disabled { background: var(--kum); color: #5d6680; box-shadow: none; cursor: default; }
+#mkb .bos { text-align: center; padding: 18px 14px; border-style: dashed; }
+#mkb .liste { display: flex; flex-direction: column; gap: 8px; }
+#mkb .git { display: grid; grid-template-columns: 1fr auto; gap: 2px 10px; padding: 11px 12px; border-radius: 14px; border: 2px solid var(--kenar); background: var(--krem2); text-align: left; }
+#mkb .git b { font: 600 16px var(--fb); }
+#mkb .git span { grid-column: 1; font-size: 12.5px; color: var(--soluk); }
+#mkb .git em { grid-column: 2; grid-row: 1 / span 2; align-self: center; font-style: normal; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 999px; background: var(--kum); color: #162132; }
+#mkb .git em.iyi { background: var(--cimen); }
+#mkb .git.secili { border-color: var(--deniz); box-shadow: inset 0 0 0 2px var(--deniz); }
+#mkb .sekmeler { display: flex; gap: 4px; }
+#mkb .sekmeler button { flex: 1; padding: 7px 4px; border-radius: 10px; border: 2px solid var(--kenar); background: transparent; font-weight: 800; font-size: 13px; }
+#mkb .sekmeler button.secili { background: var(--yazi); color: var(--krem2); }
+#mkb .kostumler { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
+#mkb .kostumler button { aspect-ratio: 4 / 5; border-radius: 10px; border: 2px solid transparent; background: url("beta/kostumler.png") 0 0 / 500% 800% no-repeat, var(--krem2); padding: 0; }
+#mkb .kostumler button.secili { border-color: var(--deniz); }
+#mkb .mkb-onay { position: absolute; inset: 0; background: rgba(11,18,32,.5); display: flex; align-items: flex-end; justify-content: center; padding: 14px 14px calc(14px + env(safe-area-inset-bottom, 0px)); }
+#mkb .mkb-onay .kutu { width: min(100%, 520px); box-shadow: 0 4px 0 var(--golge); }
+#mkb .mkb-onay p { margin: 0; line-height: 1.45; font-size: 14px; }
+#mkb .ikili { display: flex; gap: 8px; }
+#mkb .ikili button { flex: 1; padding: 11px; border-radius: 12px; border: 2px solid var(--kenar); font-weight: 800; }
+#mkb .ikili .evet { background: var(--yazi); color: var(--krem2); }
+#mkb .ikili .evet:disabled { opacity: .45; }
+#mkb .ikili .hayir { background: transparent; }
+body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: var(--yazi); }
+#mkb .tost { position: absolute; left: 50%; top: calc(110px + env(safe-area-inset-top, 0px)); transform: translateX(-50%); padding: 8px 14px; border-radius: 12px;
+	background: var(--yazi); color: var(--krem2); font-size: 13px; font-weight: 700; white-space: nowrap; }`;
+	document.head.appendChild(css);
+
+	const SVG = {
+		ses: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16.5 8.5a5 5 0 0 1 0 7"/></svg>',
+		sessiz: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16 9l5 6M21 9l-5 6"/></svg>',
+		geri: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>',
+		kapat: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>',
+		is: '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"><rect x="4" y="10" width="24" height="16" rx="3"/><path d="M12 10V7a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v3M4 17h24"/></svg>',
+		ne: '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"><path d="M16 29s9-8.2 9-15a9 9 0 0 0-18 0c0 6.8 9 15 9 15z"/><circle cx="16" cy="14" r="3.4"/></svg>',
+		gorunus: '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"><path d="M16 9a3 3 0 1 1 3-3M16 9v2L4 20a2 2 0 0 0 1.2 3.6h21.6A2 2 0 0 0 28 20L16 11"/></svg>',
+	};
+	const kok = document.createElement("div");
+	kok.id = "mkb";
+	kok.hidden = true;
+	kok.innerHTML = `
+<div class="ust"><div class="serit"><span id="mkb-nufus"></span><span class="saat" id="mkb-saat"></span></div>
+	<button class="yuvarlak" id="mkb-ses" aria-label="Ses"></button></div>
+<div class="ust2"><form class="arama" id="mkb-arama"><input id="mkb-ara" type="search" placeholder="Sakinini bul: @kullanıcıadı" autocomplete="off"
+	autocapitalize="none" spellcheck="false" enterkeyhint="search" aria-label="Sakinini bul"><button class="cip" type="submit">Bul</button></form>
+	<button class="cip" id="mkb-bolgeler">Bölgeler</button></div>
+<div class="cevrim" id="mkb-cevrim" hidden></div>
+<div class="mkb-liste" id="mkb-oneri" hidden></div>
+<div class="mkb-liste" id="mkb-bolge" hidden></div>
+<button class="cip kumanda-dugme" id="mkb-kumanda" hidden>Kumanda</button>
+<button class="panel-dugme" id="mkb-panel" hidden><span class="avatar" id="mkb-harf"></span>Karakterim<span class="nokta" id="mkb-nokta"></span></button>
+<div class="mkb-sayfa" id="mkb-sayfa">
+	<div class="tutamak" id="mkb-tutamak"><i></i></div>
+	<div class="bas" id="mkb-bas"><button class="ikon" id="mkb-geri" aria-label="Geri" hidden>${SVG.geri}</button>
+		<h2 id="mkb-baslik"></h2><button class="ikon" id="mkb-kapat" aria-label="Kapat">${SVG.kapat}</button></div>
+	<div class="icerik" id="mkb-icerik"></div>
+</div>
+<div class="mkb-onay" id="mkb-onay" hidden><div class="kutu"><h3 id="mkb-onay-baslik"></h3><p id="mkb-onay-yazi"></p>
+	<div class="ikili"><button class="hayir" id="mkb-vazgec">Vazgeç</button><button class="evet" id="mkb-ode">Öde</button></div></div></div>
+<div class="tost" id="mkb-tost" hidden>Örnek işlem yapıldı</div>`;
+	document.body.appendChild(kok);
+	const $ = (id) => document.getElementById(id);
+	const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+	const sayi = (n) => Number(n).toLocaleString("tr-TR");
+	const tel = "ontouchstart" in window;
+
+	// Örnek veriler (gerçek iş yeri ve adres biçimleriyle; ücret ve fiyatlar önerilen gruplardan)
+	const IS_ILAN = [
+		{ id: "i1", meslek: "Mimar", yer: "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5", grup: "Meslek sahibi", ucret: 320, hemen: 4000, basvuru: 200, dk: 860, kisi: 37 },
+		{ id: "i2", meslek: "Animatör", yer: "Grand Miniakent Oteli", grup: "Hizmet", ucret: 130, hemen: 1500, basvuru: 100, dk: 365, kisi: 12, dolu: true },
+	];
+	const EV_ILAN = [
+		{ id: "e1", adres: "Sahil Caddesi No 4, Daire 6", kira: 400, hemen: 3000, basvuru: 150, dk: 1200, kisi: 21 },
+		{ id: "e2", adres: "Doğu Banliyö E Blok, Daire 12", kira: 150, hemen: 800, basvuru: 50, dk: 220, kisi: 5 },
+	];
+	const NE = [
+		["mesai", "Fazla mesai yap", null, "Yorgunluk artar", false, "Fazla mesaide"],
+		["ev", "Eve git, dinlen", "Evine yürür", "Yorgunluk azalır", true, "Evde"],
+		["sahil", "Sahile git", "Kumsala yürür", "Stres azalır", true, "Sahilde"],
+		["kafe", "Kafeye git", "En yakın kafeye", "Stres azalır", true, "Kafede"],
+		["tiyatro", "Tiyatroya git", "Akşam oyununa", "Stres azalır", true, "Tiyatroda"],
+		["mac", "Maça git", "Stadyuma", "Stres azalır", true, "Maçta"],
+		["hastane", "Hastaneye git", "Miniakent Devlet Hastanesi", "Sağlık artar", true, "Hastanede"],
+	];
+	const GUN = 86400000;
+	const yeni = () => ({ para: 12480, is: null, son: 0, ev: null, alinan: {}, basvuru: {}, ne: "", bas: Date.now() });
+	let st;
+	try { st = JSON.parse(localStorage.getItem("miniakent_beta_ornek")) || yeni(); } catch (e) { st = yeni(); }
+	const kaydet = () => { try { localStorage.setItem("miniakent_beta_ornek", JSON.stringify(st)); } catch (e) {} };
+	const kiraOf = (a) => /Banliy/.test(a) ? 150 : /Koyu|Köy/.test(a) ? 300 : /Sokağı/.test(a) ? 250 : 400;
+
+	let bilgi = null, karakter = "", durum = 0, sayfaAd = "kisi", kumandaAcik = false, sekme = 0, bekleyen = null;
+	const isim = () => st.is || { meslek: (bilgi && bilgi.meslek) || "—", yer: (bilgi && bilgi.isyeri) || "", grup: "Uzman", ucret: 220 };
+	const evim = () => st.ev || { adres: (bilgi && bilgi.ev) || "—", kira: kiraOf((bilgi && bilgi.ev) || "") };
+	const kalan = (il) => st.bas + il.dk * 60000 - Date.now();
+	const sure = (ms) => { const m = Math.max(0, Math.round(ms / 60000)); return Math.floor(m / 60) + " sa " + (m % 60) + " dk"; };
+	const acikIlan = (l) => l.filter((il) => kalan(il) > 0);
+	const isBekleme = () => st.son && Date.now() - st.son < 7 * GUN;
+
+	function mesai() {
+		const d = new Date(), h = d.getHours() + d.getMinutes() / 60, iste = h >= 9 && h < 17;
+		return { iste, oran: iste ? (h - 9) / 8 : h >= 17 ? 1 : 0,
+			yazi: iste ? "Mesai 17:00'de biter" : h < 9 ? "Mesai 09:00'da başlar" : "Mesai yarın 09:00'da başlar" };
+	}
+	function durumYazi() {
+		const ne = NE.find((n) => n[0] === st.ne);
+		if (ne) return [ne[5], ne[0] === "mesai"];
+		const m = mesai();
+		return m.iste ? ["İşte · 09:00–17:00", true] : ["Evde", false];
+	}
+	const ada = (oran) => `<div class="ada"><i style="width:${Math.round(Math.max(0, Math.min(1, oran)) * 100)}%"></i></div>`;
+
+	function ilanKutu(il, tur) {
+		const k = kalan(il), alindi = il.dolu || st.alinan[il.id], basvurdu = st.basvuru[il.id];
+		const kilit = tur === "is" && isBekleme();
+		const bas = tur === "is" ? `<h3>${esc(il.meslek)}</h3><p class="alt">${esc(il.yer)}</p>
+			<div class="satir"><span>Meslek grubu</span><b>${esc(il.grup)} · saatlik ${il.ucret}</b></div>`
+			: `<h3>${esc(il.adres)}</h3><div class="satir"><span>Günlük kira</span><b>${il.kira}</b></div>`;
+		return `<div class="kutu ilan"><span class="ornek">Örnek</span>${bas}
+			<div class="gosterge tek">${ada(k / GUN)}<span class="kucuk">Kalan süre ${sure(k)} · ${il.kisi + (basvurdu ? 1 : 0)} kişi başvurdu</span></div>
+			<div class="kadro"><b>1. kadro · Hemen Al</b><p>Ödersin, ${tur === "is" ? "iş" : "ev"} hemen senin olur.</p><span class="fiyat">${sayi(il.hemen)}</span>
+				<button class="hemen" data-al="${il.id}" ${alindi || kilit ? "disabled" : ""}>${alindi ? "Alındı" : "Hemen Al"}</button></div>
+			<div class="kadro"><b>2. kadro · Başvur</b><p>İlan bitince başvuranlar arasından kura çekilir. Başvuru ücreti geri ödenmez.</p><span class="fiyat">${sayi(il.basvuru)}</span>
+				<button class="basvur" data-basvur="${il.id}" ${basvurdu || kilit ? "disabled" : ""}>${basvurdu ? "Başvurdun" : "Başvur"}</button></div></div>`;
+	}
+
+	// Kişi kartının üst kısmı (kullanıcı, 2026-11-05: başkasının kartı da kendi kartı gibi, yalnız seçmeli menüler yok).
+	// İsme dokununca kamera o kişiyi takip eder.
+	function kart(k, dy, iste) {
+		const m = mesai();
+		return `<button class="kim" data-takip="${esc(k.handle)}" style="border:0;background:none;padding:0;text-align:left">
+				<span class="avatar">${esc(k.handle.replace(/^@/, "").charAt(0).toUpperCase())}</span><div>
+				<b>${esc(k.handle)}</b><span>${esc(k.meslek)}${k.yer ? " · " + esc(k.yer.split(" · ")[0]) : ""}</span><span>${esc(k.ev)}</span></div></button>
+			<span class="durum ${iste ? "" : "evde"}">${esc(dy)}</span>
+			<div class="kutu para"><span class="ornek">Örnek</span><div><span class="etiket">Para</span><strong>${sayi(k.para)}</strong></div>
+				<div class="bugun"><span class="etiket">Bugün</span><span class="arti">+${sayi(k.ucret * 8)}</span> maaş<br><span class="eksi">−${sayi(k.kira)}</span> kira</div></div>
+			<div class="kutu"><span class="ornek">Örnek</span><div class="gosterge">
+				<span>Mesai</span>${ada(m.oran)}<span class="kucuk">${m.yazi}</span>
+				<span>Yorgunluk</span>${ada(k.g[0])}<span>Stres</span>${ada(k.g[1])}<span>Sağlık</span>${ada(k.g[2])}</div></div>`;
+	}
+	// başka sakinin örnek parası ve göstergeleri: kullanıcı adından (her açılışta aynı)
+	function ozet(h) {
+		let x = 7;
+		for (const c of h) x = (x * 31 + c.charCodeAt(0)) >>> 0;
+		return { para: 3000 + x % 17000, g: [((x >> 3) % 70 + 20) / 100, ((x >> 7) % 70 + 15) / 100, ((x >> 11) % 40 + 60) / 100] };
+	}
+	const kostumVar = () => window.miniakentKostumListe && typeof window.miniakentKostumSec === "function";
+	function kostumIzgara(h) {
+		const L = window.miniakentKostumListe, giyili = (window.miniakentKostumlar || {})[h] || "", g = L.gruplar[sekme];
+		return `<div class="etiket">Kostüm seç</div><div class="sekmeler">${L.gruplar.map((x, i) => `<button class="${i === sekme ? "secili" : ""}" data-sekme="${i}">${esc(x[0])}</button>`).join("")}</div>
+			<div class="kostumler">${g[1].map((id) => { const i = L.sira.indexOf(id);
+				return `<button class="${giyili === id ? "secili" : ""}" data-kostum="${id}" aria-label="${esc(L.adlar[id])}" style="background-position:${(i % 5) * 25}% ${Math.floor(i / 5) * (100 / 7)}%"></button>`; }).join("")}</div>
+			<button class="git" data-kostum=""><b>Kostümü çıkar</b><span>Kendi kıyafetine döner</span><em>—</em></button>`;
+	}
+
+	const SAYFA = {
+		kisi: ["Karakterim", () => {
+			const is = isim(), ev = evim(), [dy, iste] = durumYazi(), ilan = acikIlan(IS_ILAN).length;
+			return kart({ handle: karakter, meslek: is.meslek, yer: is.yer, ev: ev.adres, kira: ev.kira, ucret: is.ucret, para: st.para, g: [.62, .35, .9] }, dy, iste) + `
+			<div class="karolar">
+				<button class="karo" data-git="is"><span class="resim">${SVG.is}</span>İş${ilan ? `<span class="rozet">${ilan} ilan</span>` : ""}</button>
+				<button class="karo" data-git="ev"><span class="resim"><img src="yukleme_ev_${document.body.classList.contains("gece") ? "gece" : "gunduz"}.webp" alt=""></span>Ev</button>
+				<button class="karo" data-git="ne"><span class="resim">${SVG.ne}</span>Ne yapsın?</button>
+				<button class="karo" data-git="gorunus"><span class="resim">${SVG.gorunus}</span>Görünüş</button></div>
+			<div class="alt-dugmeler"><button class="bag" id="mkb-ayril">Ayrıl</button><button class="bag" id="mkb-sifirla">Örnekleri sıfırla</button></div>`;
+		}],
+		is: ["İş", () => {
+			const is = isim(), l = acikIlan(IS_ILAN);
+			const bilgiYazi = isBekleme()
+				? `İş değiştirdin. ${Math.ceil((st.son + 7 * GUN - Date.now()) / GUN)} gün sonra yeniden değiştirebilirsin.`
+				: "İş değiştirmek ücretlidir. Değiştirdikten sonra 7 gün yeniden değiştiremezsin.";
+			return `<div class="kutu"><span class="ornek">Örnek ücret</span><span class="etiket">Şu anki işin</span><h3>${esc(is.meslek)}</h3><p class="alt">${esc(is.yer)}</p>
+				<div class="satir"><span>Meslek grubu</span><b>${esc(is.grup)}</b></div><div class="satir"><span>Saatlik ücret</span><b>${is.ucret}</b></div>
+				<div class="satir"><span>Fazla mesai saati</span><b>${Math.round(is.ucret * 1.5)}</b></div><div class="satir"><span>Mesai</span><b>09:00–17:00</b></div></div>
+			<p class="bilgi">${bilgiYazi}</p><div class="bolum">Açık ilanlar</div>
+			${l.length ? l.map((il) => ilanKutu(il, "is")).join("") : `<div class="kutu bos"><p class="bilgi">Şu an açık ilan yok. İlanlar gün içinde farklı saatlerde çıkar.</p></div>`}`;
+		}],
+		ev: ["Ev", () => {
+			const ev = evim(), l = acikIlan(EV_ILAN);
+			return `<div class="kutu"><span class="ornek">Örnek kira</span><span class="etiket">Evin</span><h3>${esc(ev.adres)}</h3>
+				<div class="satir"><span>Günlük kira</span><b>${ev.kira}</b></div><p class="bilgi">Kira her gece 00:00'da paradan kesilir.</p></div>
+			<div class="bolum">Açık ilanlar</div>
+			${l.length ? l.map((il) => ilanKutu(il, "ev")).join("") : `<div class="kutu bos"><p class="bilgi">Şu an açık ilan yok. İlanlar gün içinde farklı saatlerde çıkar.</p></div>`}`;
+		}],
+		ne: ["Ne yapsın?", () => {
+			const [dy, iste] = durumYazi(), is = isim();
+			return `<span class="durum ${iste ? "" : "evde"}">Şu an: ${esc(dy.split(" · ")[0])}</span><div class="liste">
+				${NE.map((n) => `<button class="git ${st.ne === n[0] ? "secili" : ""}" data-ne="${n[0]}"><b>${n[1]}</b>
+					<span>${n[2] || "Mesaiden sonra, saatlik " + Math.round(is.ucret * 1.5)}</span><em class="${n[4] ? "iyi" : ""}">${n[3]}</em></button>`).join("")}</div>
+			<p class="bilgi">Mesai bitince karakterin eve döner.</p><p class="bilgi">Betada karakter henüz seçilen yere gitmez.</p>`;
+		}],
+		gorunus: ["Görünüş", () => kostumVar() ? kostumIzgara(karakter) : `<p class="bilgi">Kostümler şu an kapalı.</p>`],
+		// başka sakinin kartı: para ve göstergeler, Evini/İş yerini göster; kostüm yalnız etkinlik süresince (kullanıcı, 2026-11-05)
+		sakin: ["Sakin", () => {
+			const s = secilen, o = ozet(s.handle), m = mesai();
+			return kart({ handle: s.handle, meslek: s.meslek || "—", yer: s.isyeri, ev: s.ev || "—", kira: kiraOf(s.ev || ""), ucret: 220, para: o.para, g: o.g },
+				m.iste ? "İşte · 09:00–17:00" : "Evde", m.iste) + `
+			<div class="ikili"><button class="hayir" data-evgoster="1">Evini göster</button>${s.is_var ? `<button class="hayir" data-isgoster="1">İş yerini göster</button>` : ""}</div>
+			${karakter ? "" : `<div class="ikili"><button class="evet" data-kontrol="1">Kontrolü Al</button></div>`}
+			${kostumVar() ? (kostumAcik ? kostumIzgara(s.handle) : `<button class="git" data-kostumac="1"><b>Kostüm giydir</b><span>Cadılar Bayramı kostümleri</span><em>40 kostüm</em></button>`) : ""}`;
+		}],
+	};
+	let secilen = null, kostumAcik = false;
+
+	function ciz() {
+		const s = SAYFA[sayfaAd];
+		$("mkb-baslik").textContent = s[0];
+		$("mkb-geri").hidden = sayfaAd === "kisi" || sayfaAd === "sakin";
+		const ic = $("mkb-icerik"), y = ic.scrollTop;
+		ic.innerHTML = s[1]();
+		ic.scrollTop = y;
+	}
+	function git(ad) { sayfaAd = ad; ciz(); $("mkb-icerik").scrollTop = 0; }
+	// panel: 0 kapalı, 1 yarım, 2 tam; panel açıkken Kumanda düğmesi de kumanda da gizli (kullanıcı, 2026-11-06)
+	function arayuz() {
+		const sayfa = $("mkb-sayfa");
+		sayfa.classList.toggle("yarim", durum === 1);
+		sayfa.classList.toggle("tam", durum === 2);
+		$("mkb-panel").hidden = !karakter || durum > 0;
+		$("mkb-kumanda").hidden = !tel || durum > 0;
+		$("mkb-kumanda").classList.toggle("acik", kumandaAcik);
+		if (window.miniakentArayuz) window.miniakentArayuz(kumandaAcik && durum === 0, 0);
+	}
+	function ac(ad) {
+		sayfaAd = ad; kostumAcik = false; durum = durum || 1; ciz(); arayuz();
+		$("mkb-icerik").scrollTop = 0;
+	}
+	function kapat() {   // ×: kart kapanır, takip de biter (eski kartın × gibi)
+		durum = 0; arayuz();
+		if (window.miniakentBirak) window.miniakentBirak();
+	}
+
+	$("mkb-panel").addEventListener("click", () => ac("kisi"));
+	$("mkb-kapat").addEventListener("click", kapat);
+	$("mkb-geri").addEventListener("click", () => git("kisi"));
+	$("mkb-kumanda").addEventListener("click", () => { kumandaAcik = !kumandaAcik; arayuz(); });
+	$("mkb-ses").addEventListener("click", () => window.miniakentSes && window.miniakentSes());
+	// tutamaktan yukarı çekince tam, aşağı çekince yarım/kapalı; dokununca yarım <-> tam
+	let y0 = null;
+	["mkb-tutamak", "mkb-bas"].forEach((id) => {
+		$(id).addEventListener("pointerdown", (e) => { if (!e.target.closest("button")) y0 = e.clientY; });
+	});
+	window.addEventListener("pointerup", (e) => {
+		if (y0 === null) return;
+		const dy = e.clientY - y0;
+		y0 = null;
+		if (dy < -30) durum = 2;
+		else if (dy > 30 && durum === 1) durum = 0;   // aşağı çekince yalnız kart kapanır, takip sürer; takibi yalnız × bitirir (kullanıcı, 2026-11-06)
+		else if (dy > 30) durum = 1;
+		else durum = durum === 1 ? 2 : 1;
+		arayuz();
+	});
+
+	$("mkb-icerik").addEventListener("click", (e) => {
+		const b = e.target.closest("button");
+		if (!b) return;
+		const d = b.dataset;
+		if (d.git) git(d.git);
+		else if (d.takip) window.miniakentTakip && window.miniakentTakip(d.takip);
+		else if (d.evgoster) window.miniakentEvGoster && window.miniakentEvGoster();
+		else if (d.isgoster) window.miniakentIsGoster && window.miniakentIsGoster();
+		else if (d.kontrol) window.miniakentKontrolAc && window.miniakentKontrolAc(secilen.handle);
+		else if (d.kostumac) { kostumAcik = true; ciz(); }
+		else if (b.id === "mkb-ayril") { kapat(); window.miniakentAyril && window.miniakentAyril(); }
+		else if (b.id === "mkb-sifirla") { st = yeni(); kaydet(); ciz(); }
+		else if (d.ne) { st.ne = st.ne === d.ne ? "" : d.ne; kaydet(); ciz(); }
+		else if (d.sekme) { sekme = +d.sekme; ciz(); }
+		else if (d.kostum !== undefined && window.miniakentKostumSec) {
+			window.miniakentKostumSec(sayfaAd === "sakin" ? secilen.handle : karakter, d.kostum);
+			setTimeout(ciz, 600);
+		}
+		else if (d.al || d.basvur) onay(d.al ? "al" : "basvur", d.al || d.basvur);
+	});
+	function onay(tur, id) {
+		const il = IS_ILAN.concat(EV_ILAN).find((x) => x.id === id), fiyat = tur === "al" ? il.hemen : il.basvuru;
+		bekleyen = { tur, il, fiyat };
+		$("mkb-onay-baslik").textContent = tur === "al" ? "Hemen Al" : "Başvur";
+		$("mkb-onay-yazi").textContent = st.para < fiyat ? "Paran yetmiyor. Paran: " + sayi(st.para)
+			: tur === "basvur" ? sayi(fiyat) + " ödenecek. Kura ilan bitince çekilir. Seçilmezsen ücret geri ödenmez."
+			: il.meslek ? sayi(fiyat) + " ödenecek. " + il.meslek + " işine hemen geçeceksin. 7 gün yeniden iş değiştiremezsin."
+			: sayi(fiyat) + " ödenecek. " + il.adres + " hemen senin olur.";
+		$("mkb-ode").disabled = st.para < fiyat;
+		$("mkb-onay").hidden = false;
+	}
+	$("mkb-vazgec").addEventListener("click", () => { $("mkb-onay").hidden = true; });
+	$("mkb-ode").addEventListener("click", () => {
+		const { tur, il, fiyat } = bekleyen;
+		$("mkb-onay").hidden = true;
+		st.para -= fiyat;
+		if (tur === "basvur") st.basvuru[il.id] = true;
+		else {
+			st.alinan[il.id] = true;
+			if (il.meslek) { st.is = { meslek: il.meslek, yer: il.yer, grup: il.grup, ucret: il.ucret }; st.son = Date.now(); }
+			else st.ev = { adres: il.adres, kira: il.kira };
+		}
+		kaydet(); ciz();
+		$("mkb-tost").hidden = false;
+		setTimeout(() => { $("mkb-tost").hidden = true; }, 1800);
+	});
+
+	// arama ve öneriler (oyundaki kutunun yerine)
+	const ara = $("mkb-ara"), oneri = $("mkb-oneri");
+	const bul = (h) => { oneri.hidden = true; ara.blur(); window.minikentSearch && window.minikentSearch(h); };
+	ara.addEventListener("input", () => {
+		const q = ara.value.trim().toLowerCase().replace(/^@/, "");
+		const l = q.length < 2 ? [] : (window.minikentHandles || []).filter((h) => h.toLowerCase().indexOf(q) >= 0).slice(0, 6);
+		oneri.innerHTML = l.map((h) => `<button type="button" data-h="${esc(h)}">${esc(h)}</button>`).join("");
+		oneri.hidden = !l.length;
+	});
+	oneri.addEventListener("click", (e) => { const b = e.target.closest("button"); if (b) { ara.value = b.dataset.h; bul(b.dataset.h); } });
+	$("mkb-arama").addEventListener("submit", (e) => { e.preventDefault(); bul(ara.value); });
+	const bolge = $("mkb-bolge");
+	$("mkb-bolgeler").addEventListener("click", () => {
+		bolge.innerHTML = (window.miniakentBolgeler || []).map((z) => `<button type="button" class="${z[1] ? "" : "soluk"}" data-z="${esc(z[0])}">${esc(z[0])}</button>`).join("");
+		bolge.hidden = !bolge.hidden;
+	});
+	bolge.addEventListener("click", (e) => { const b = e.target.closest("button"); if (b) { bolge.hidden = true; window.miniakentBolgeGit && window.miniakentBolgeGit(b.dataset.z); } });
+
+	// oyunun durumu: yarım saniyede bir (oyun açılınca ana ekran görünür)
+	let sonBilgi = "", sonOturum = null, sonDk = -1, sonSecim = 0;
+	setInterval(() => {
+		const hud = window.miniakentHud;
+		if (!hud) return;
+		kok.hidden = false;
+		// oyunda biri seçildi (dokunma ya da arama): kendi karakteriyse Karakterim, değilse sakin kartı
+		if (window.miniakentSecimSurum && window.miniakentSecimSurum !== sonSecim) {
+			sonSecim = window.miniakentSecimSurum;
+			secilen = window.miniakentSecilen;
+			bolge.hidden = true;
+			ac(secilen.handle === karakter ? "kisi" : "sakin");
+		}
+		$("mkb-nufus").textContent = "Nüfus: " + sayi(hud.nufus) + " · Bekleyen: " + sayi(hud.bekleyen);
+		$("mkb-saat").textContent = hud.saat;
+		$("mkb-ses").innerHTML = hud.sessiz ? SVG.sessiz : SVG.ses;
+		const n = window.miniakentCevrimici;
+		$("mkb-cevrim").hidden = !(n >= 1);
+		$("mkb-cevrim").textContent = "Çevrimiçi: " + n;
+		if (window.miniakentOturum !== sonOturum) {
+			sonOturum = window.miniakentOturum;
+			let o = {};
+			try { o = JSON.parse(sonOturum || "{}"); } catch (e) {}
+			karakter = o.karakter || "";
+			$("mkb-harf").textContent = karakter.replace(/^@/, "").charAt(0).toUpperCase();
+			if (!karakter) kapat();
+			arayuz();
+		}
+		const b = JSON.stringify(window.miniakentKarakterBilgi || null);
+		const dk = new Date().getMinutes();
+		if (b !== sonBilgi || dk !== sonDk) {
+			sonBilgi = b; sonDk = dk;
+			bilgi = window.miniakentKarakterBilgi || null;
+			$("mkb-nokta").hidden = !acikIlan(IS_ILAN).length;
+			if (durum > 0 && $("mkb-onay").hidden && sayfaAd !== "gorunus") ciz();
+		}
+	}, 500);
+	window.addEventListener("resize", arayuz);
+}());
+		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611042315.pck","fileSizes":{"index-v202611042315.pck":6146660,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611061622.pck","fileSizes":{"index-v202611061622.pck":6172940,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
