@@ -993,6 +993,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		$("mkb-takip").hidden = !takipVar;
 		$("mkb-takip-ad").textContent = (hud.takip || "") + " takipte";
 		$("mkb-goz").textContent = hud.goz ? "Yukarıdan bak" : "Gözünden gör";
+		$("mkb-goz").hidden = !!hud.hayvan;   // hayvanda zaten arkasından bakılır
 		if (window.miniakentOturum !== sonOturum) {
 			sonOturum = window.miniakentOturum;
 			let o = {};
@@ -1016,7 +1017,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"beta/index-beta-v202611061647.pck","fileSizes":{"beta/index-beta-v202611061647.pck":6173740,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"beta/index-beta-v202611061726.pck","fileSizes":{"beta/index-beta-v202611061726.pck":6175068,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
