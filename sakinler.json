@@ -1229,12 +1229,12 @@
    "home": "Zeytin Sokağı No 3, Daire 2",
    "home_from": 1792735200,
    "job": [
-    "Hukuk Danışmanı",
-    "Miniakent Hukuk Bürosu · Miniakent Plaza, Kat 6",
+    "Oyun Geliştirici",
+    "Miniakent Oyun Stüdyosu · Miniakent Plaza 2, Kat 5",
     "office",
-    "plaza"
+    "plaza2"
    ],
-   "wp": "hukuk",
+   "wp": "oyun",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
@@ -7024,12 +7024,12 @@
    "home": "Mimoza Sokağı No 15, Daire 4",
    "home_from": 1792821600,
    "job": [
-    "Sigorta Uzmanı",
-    "Miniakent Sigorta A.Ş. · Miniakent Plaza 2, Kat 2",
+    "Rock Müzik Sanatçısı",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
-   "wp": "sigorta",
+   "wp": "medya",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -7046,11 +7046,11 @@
    "home_from": 1792821600,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 1792789200,
@@ -7227,11 +7227,11 @@
    "home_from": 1792821600,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -7353,11 +7353,11 @@
    "home_from": 1792821600,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -7773,11 +7773,11 @@
    "home_from": 1792821600,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 1792962000,
@@ -8277,11 +8277,11 @@
    "home_from": 1792821600,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -8819,11 +8819,11 @@
    "home_from": 1792821600,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
@@ -9903,11 +9903,11 @@
    "home_from": 1792821600,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -9966,11 +9966,11 @@
    "home_from": 1792821600,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
@@ -10680,11 +10680,11 @@
    "home_from": 1792821600,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -10722,11 +10722,11 @@
    "home_from": 1792821600,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
@@ -16689,11 +16689,11 @@
    "home_from": 1792821600,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -17210,11 +17210,11 @@
    "home_from": 1792821600,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
@@ -17920,11 +17920,11 @@
    "home_from": 1792821600,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -18877,11 +18877,11 @@
    "home_from": 1792821600,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -18936,11 +18936,11 @@
    "home_from": 1792821600,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -19080,11 +19080,11 @@
    "home_from": 1792821600,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0
@@ -20801,7 +20801,7 @@
    "home_from": 1792821600,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -20936,11 +20936,11 @@
    "home_from": 1792821600,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -21012,11 +21012,11 @@
    "home_from": 1792821600,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -21362,7 +21362,7 @@
    "home_from": 1792821600,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -21400,7 +21400,7 @@
    "home_from": 1792821600,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -21573,11 +21573,11 @@
    "home_from": 1792821600,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -22356,11 +22356,11 @@
    "home_from": 1792821600,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 1792875600
@@ -22740,11 +22740,11 @@
    "home_from": 1792821600,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -22795,7 +22795,7 @@
    "home_from": 1792821600,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -22998,11 +22998,11 @@
    "home_from": 1792821600,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 1793048400
@@ -23091,7 +23091,7 @@
    "home_from": 1792821600,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -23133,11 +23133,11 @@
    "home_from": 1792821600,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0
@@ -25849,11 +25849,11 @@
    "home_from": 1792821600,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
@@ -26276,11 +26276,11 @@
    "home_from": 1792821600,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 1793394000
@@ -27320,7 +27320,7 @@
    "home_from": 1792821600,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -27506,11 +27506,11 @@
    "home_from": 1792821600,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -27569,11 +27569,11 @@
    "home_from": 1792821600,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -29418,11 +29418,11 @@
    "home_from": 1792821600,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0
@@ -30599,11 +30599,11 @@
    "home_from": 1792821600,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0
@@ -31447,11 +31447,11 @@
    "home_from": 1792821600,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -31878,11 +31878,11 @@
    "home_from": 1792821600,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -32723,7 +32723,7 @@
    "home_from": 1792821600,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -32871,11 +32871,11 @@
    "home_from": 1792821600,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0
@@ -32926,11 +32926,11 @@
    "home_from": 1792821600,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0
@@ -32943,11 +32943,11 @@
    "home_from": 1792821600,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
@@ -32981,11 +32981,11 @@
    "home_from": 1792821600,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0
@@ -33061,7 +33061,7 @@
    "home_from": 1792821600,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -33133,7 +33133,7 @@
    "home_from": 1792821600,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -33572,11 +33572,11 @@
    "home_from": 1792821600,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0
@@ -35706,11 +35706,11 @@
    "home_from": 1792821600,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0
@@ -36694,11 +36694,11 @@
    "home_from": 1792821600,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -36749,11 +36749,11 @@
    "home_from": 1792821600,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 1792875600
@@ -37873,7 +37873,7 @@
    "home_from": 1792908000,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -38104,7 +38104,7 @@
    "home_from": 1792908000,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -40079,11 +40079,11 @@
    "home_from": 1792908000,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -52826,11 +52826,11 @@
    "home_from": 1792994400,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0
@@ -53574,11 +53574,11 @@
    "home_from": 1792994400,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -56856,7 +56856,7 @@
    "home_from": 1792994400,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -57955,7 +57955,7 @@
    "home_from": 1792994400,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -58162,7 +58162,7 @@
    "home_from": 1792994400,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -58496,11 +58496,11 @@
    "home_from": 1792994400,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0
@@ -59487,11 +59487,11 @@
    "home_from": 1792994400,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -59521,7 +59521,7 @@
    "home_from": 1792994400,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -59597,7 +59597,7 @@
    "home_from": 1792994400,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -62177,11 +62177,11 @@
    "home_from": 1792994400,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -62236,11 +62236,11 @@
    "home_from": 1792994400,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -62511,11 +62511,11 @@
    "home_from": 1792994400,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -62625,11 +62625,11 @@
    "home_from": 1792994400,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0
@@ -62659,11 +62659,11 @@
    "home_from": 1792994400,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0
@@ -63446,11 +63446,11 @@
    "home_from": 1792994400,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0
@@ -63594,11 +63594,11 @@
    "home_from": 1792994400,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0
@@ -63729,7 +63729,7 @@
    "home_from": 1792994400,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -64303,11 +64303,11 @@
    "home_from": 1792994400,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 1793566800
@@ -64341,11 +64341,11 @@
    "home_from": 1792994400,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
@@ -64476,11 +64476,11 @@
    "home_from": 1792994400,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0
@@ -66408,11 +66408,11 @@
    "home_from": 1792994400,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 1793221200
@@ -66577,7 +66577,7 @@
    "home_from": 1792994400,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -66877,11 +66877,11 @@
    "home_from": 1792994400,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0
@@ -67072,11 +67072,11 @@
    "home_from": 1792994400,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -67410,7 +67410,7 @@
    "home_from": 1792994400,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -67804,11 +67804,11 @@
    "home_from": 1792994400,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -68282,11 +68282,11 @@
    "home_from": 1792994400,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0
@@ -68996,11 +68996,11 @@
    "home_from": 1792994400,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -69757,11 +69757,11 @@
    "home_from": 1792994400,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -69816,11 +69816,11 @@
    "home_from": 1792994400,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0
@@ -70213,7 +70213,7 @@
    "home_from": 1792994400,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -70230,11 +70230,11 @@
    "home_from": 1792994400,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -70306,11 +70306,11 @@
    "home_from": 1792994400,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -70776,11 +70776,11 @@
    "home_from": 1792994400,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0
@@ -70852,11 +70852,11 @@
    "home_from": 1792994400,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0
@@ -72849,7 +72849,7 @@
    "home_from": 1793080800,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -73034,11 +73034,11 @@
    "home_from": 1793080800,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -73493,11 +73493,11 @@
    "home_from": 1793080800,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 1793394000,
@@ -73695,11 +73695,11 @@
    "home_from": 1793080800,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 1793394000
@@ -73830,11 +73830,11 @@
    "home_from": 1793080800,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -74019,7 +74019,7 @@
    "home_from": 1793080800,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -74542,11 +74542,11 @@
    "home_from": 1793080800,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0
@@ -75107,7 +75107,7 @@
    "home_from": 1793080800,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -76354,11 +76354,11 @@
    "home_from": 1793080800,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -76889,11 +76889,11 @@
    "home_from": 1793080800,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0
@@ -77861,11 +77861,11 @@
    "home_from": 1793080800,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -78497,11 +78497,11 @@
    "home_from": 1793080800,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -78990,11 +78990,11 @@
    "home_from": 1793080800,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -79079,11 +79079,11 @@
    "home_from": 1793080800,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0
@@ -79332,7 +79332,7 @@
    "home_from": 1793080800,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -79744,11 +79744,11 @@
    "home_from": 1793080800,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 1793826000
@@ -80153,11 +80153,11 @@
    "home_from": 1793080800,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0
@@ -80191,11 +80191,11 @@
    "home_from": 1793080800,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -80655,11 +80655,11 @@
    "home_from": 1793080800,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0
@@ -80819,11 +80819,11 @@
    "home_from": 1793080800,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
@@ -82192,11 +82192,11 @@
    "home_from": 1793080800,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -83097,7 +83097,7 @@
    "home_from": 1793080800,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -84540,11 +84540,11 @@
    "home_from": 1793167200,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -84798,11 +84798,11 @@
    "home_from": 1793167200,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Satranç",
    "queue": 0,
    "left": 1793998800
@@ -84904,8 +84904,8 @@
    "handle": "@ekinsu_usul",
    "arrive": 1793136600,
    "move": 1793167200,
-   "home": "Doğu Banliyö E Blok, Daire 33",
-   "home_from": 1793167200,
+   "home": "Bahçe Caddesi No 1, Daire 2",
+   "home_from": 1794009537,
    "job": [
     "Doktor",
     "Miniakent Devlet Hastanesi",
@@ -84915,7 +84915,12 @@
    "wp": "hastane",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "partner": "@sertanusul",
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@umutt_isa.akmese",
@@ -85529,11 +85534,11 @@
    "home_from": 1793167200,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 1793566800
@@ -86027,11 +86032,11 @@
    "home_from": 1793167200,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -86462,7 +86467,7 @@
    "home_from": 1793167200,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -86500,11 +86505,11 @@
    "home_from": 1793167200,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0
@@ -87344,11 +87349,11 @@
    "home_from": 1793167200,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0
@@ -87475,7 +87480,7 @@
    "home_from": 1793167200,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -87674,11 +87679,11 @@
    "home_from": 1793167200,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -87759,11 +87764,11 @@
    "home_from": 1793167200,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -89033,7 +89038,7 @@
    "home_from": 1793167200,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -89465,11 +89470,11 @@
    "home_from": 1793167200,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -89621,7 +89626,7 @@
    "home_from": 1793167200,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -89680,11 +89685,11 @@
    "home_from": 1793167200,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -89985,11 +89990,11 @@
    "home_from": 1793167200,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0
@@ -90290,11 +90295,11 @@
    "home_from": 1793167200,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0
@@ -90958,7 +90963,7 @@
    "home_from": 1793253600,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -90992,11 +90997,11 @@
    "home_from": 1793253600,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -91123,11 +91128,11 @@
    "home_from": 1793253600,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0
@@ -91322,11 +91327,11 @@
    "home_from": 1793253600,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0
@@ -91445,11 +91450,11 @@
    "home_from": 1793253600,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0
@@ -91580,11 +91585,11 @@
    "home_from": 1793253600,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
@@ -91800,11 +91805,11 @@
    "home_from": 1793253600,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0
@@ -91923,11 +91928,11 @@
    "home_from": 1793253600,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -91995,11 +92000,11 @@
    "home_from": 1793253600,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -92063,11 +92068,11 @@
    "home_from": 1793253600,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -92499,11 +92504,11 @@
    "home_from": 1793253600,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0
@@ -92935,11 +92940,11 @@
    "home_from": 1793253600,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
@@ -93235,11 +93240,11 @@
    "home_from": 1793253600,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0
@@ -93311,7 +93316,7 @@
    "home_from": 1793253600,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -93497,11 +93502,11 @@
    "home_from": 1793253600,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
@@ -95282,11 +95287,11 @@
    "home_from": 1793253600,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0
@@ -95460,11 +95465,11 @@
    "home_from": 1793253600,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0
@@ -96551,7 +96556,7 @@
    "home_from": 1793253600,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -96648,11 +96653,11 @@
    "home_from": 1793253600,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -96796,11 +96801,11 @@
    "home_from": 1793253600,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0
@@ -96889,11 +96894,11 @@
    "home_from": 1793253600,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -97075,7 +97080,7 @@
    "home_from": 1793253600,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -97219,11 +97224,11 @@
    "home_from": 1793253600,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -97388,7 +97393,7 @@
    "home_from": 1793253600,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -97879,7 +97884,7 @@
    "home_from": 1793340000,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -98252,11 +98257,11 @@
    "home_from": 1793340000,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0
@@ -98505,11 +98510,11 @@
    "home_from": 1793340000,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0
@@ -99076,11 +99081,11 @@
    "home_from": 1793340000,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -99321,11 +99326,11 @@
    "home_from": 1793340000,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0
@@ -99664,11 +99669,11 @@
    "home_from": 1793340000,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0
@@ -100290,11 +100295,11 @@
    "home_from": 1793340000,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0
@@ -105215,11 +105220,11 @@
    "home_from": 1793426400,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
@@ -105898,11 +105903,11 @@
    "home_from": 1793426400,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -106222,7 +106227,7 @@
    "home_from": 1793426400,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -116232,11 +116237,11 @@
    "home_from": 1793512800,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0
@@ -116422,11 +116427,11 @@
    "home_from": 1793512800,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -116717,11 +116722,11 @@
    "home_from": 1793512800,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 1793912400
@@ -137082,11 +137087,11 @@
    "home_from": 1793599200,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -137655,7 +137660,7 @@
    "home_from": 1793599200,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -138080,7 +138085,7 @@
    "home_from": 1793599200,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -147756,11 +147761,11 @@
    "home_from": 1793685600,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0
@@ -153494,11 +153499,11 @@
    "home_from": 1793772000,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -155108,7 +155113,7 @@
    "home_from": 1793772000,
    "job": [
     "Kurgucu",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
     "office",
     "plaza2"
    ],
@@ -158458,11 +158463,11 @@
    "home_from": 1793858400,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0
@@ -159104,11 +159109,11 @@
    "home_from": 1793858400,
    "job": [
     "Gazeteci",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -163744,11 +163749,11 @@
    "home_from": 1793944800,
    "job": [
     "Kameraman",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -166325,15 +166330,19 @@
    "home": "Doğu Banliyö I Blok, Daire 17",
    "home_from": 1793944800,
    "job": [
-    "Üretim İşçisi",
-    "Miniakent Fabrikası 2 · Sanayi Bölgesi",
-    "shop",
-    "fabrika_b"
+    "Rock Müzik Sanatçısı",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "fabrika_b",
+   "wp": "medya",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@orcunozk.n",
@@ -176914,11 +176923,11 @@
    "home_from": 1794031200,
    "job": [
     "Editör",
-    "Miniakent Medya · Miniakent Plaza 2, Kat 4",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "gazete",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -181647,22 +181656,23 @@
    "handle": "@sertanusul",
    "arrive": 1794002580,
    "move": 1794031200,
-   "home": "Batı Banliyö A Blok, Daire 13",
+   "home": "Bahçe Caddesi No 1, Daire 2",
    "home_from": 1794031200,
    "job": [
-    "Çöp Toplama Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Başmuhabir",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
-   "hobby": "Bisiklete binmek",
+   "wp": "gazete",
+   "hobby": "Para koleksiyonu yapmak",
    "queue": 0,
    "left": 0,
    "look": [
     3,
     0
-   ]
+   ],
+   "partner": "@ekinsu_usul"
   },
   {
    "handle": "@enes_qasdpoi",
