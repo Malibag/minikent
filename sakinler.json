@@ -176457,12 +176457,12 @@
    "home": "Doğu Banliyö A Blok, Daire 27",
    "home_from": 1794031200,
    "job": [
-    "Üretim Mühendisi",
-    "Miniakent Fabrikası 2 · Sanayi Bölgesi",
-    "shop",
-    "fabrika_b"
+    "Radyo Programcısı",
+    "Miniakent Radyo · Miniakent Plaza 3, Kat 8",
+    "office",
+    "plaza3"
    ],
-   "wp": "fabrika_b",
+   "wp": "radyo",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -176474,12 +176474,12 @@
    "home": "Doğu Banliyö B Blok, Daire 70",
    "home_from": 1794031200,
    "job": [
-    "Zabıta",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Gazeteci",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "gazete",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0
@@ -176491,12 +176491,12 @@
    "home": "Zeytin Sokağı No 1, Daire 22",
    "home_from": 1794031200,
    "job": [
-    "Güvenlik Görevlisi",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0
@@ -176567,12 +176567,12 @@
    "home": "Doğu Banliyö B Blok, Daire 87",
    "home_from": 1794031200,
    "job": [
-    "Hâkim",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -176588,12 +176588,12 @@
    "home": "Doğu Banliyö B Blok, Daire 134",
    "home_from": 1794031200,
    "job": [
-    "Sokak Temizlik Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Muhabir",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "gazete",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0
@@ -176605,12 +176605,12 @@
    "home": "Doğu Banliyö D Blok, Daire 25",
    "home_from": 1794031200,
    "job": [
-    "Banka Memuru",
-    "Miniakent Bankası",
+    "Fotoğrafçı",
+    "Miniakent Fotoğraf Stüdyosu · Miniakent Plaza 3, Kat 9",
     "office",
-    "banka"
+    "plaza3"
    ],
-   "wp": "banka",
+   "wp": "fotograf",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -176643,12 +176643,12 @@
    "home": "Doğu Banliyö D Blok, Daire 109",
    "home_from": 1794031200,
    "job": [
-    "Trafik Polisi",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Editör",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
+    "office",
+    "plaza3"
    ],
-   "wp": "emniyet",
+   "wp": "gazete",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -176681,12 +176681,12 @@
    "home": "Doğu Banliyö D Blok, Daire 130",
    "home_from": 1794031200,
    "job": [
-    "Büro Memuru",
-    "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "Gazeteci",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
+    "office",
+    "plaza3"
    ],
-   "wp": "emniyet",
+   "wp": "gazete",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0
@@ -176698,12 +176698,12 @@
    "home": "Batı Banliyö B Blok, Daire 26",
    "home_from": 1794031200,
    "job": [
-    "Veteriner",
-    "Miniakent Veteriner Kliniği",
-    "shop",
-    "veteriner"
+    "Ressam",
+    "Miniakent Sanat Atölyesi · Miniakent Plaza 3, Kat 10",
+    "office",
+    "plaza3"
    ],
-   "wp": "veteriner",
+   "wp": "sanat",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -176816,12 +176816,12 @@
    "home": "Doğu Banliyö E Blok, Daire 31",
    "home_from": 1794031200,
    "job": [
-    "Konteyner Planlama Uzmanı",
-    "Miniakent Limanı",
-    "area",
-    "liman"
+    "Moda Tasarımcısı",
+    "Miniakent Moda Evi · Miniakent Plaza 3, Kat 11",
+    "office",
+    "plaza3"
    ],
-   "wp": "liman",
+   "wp": "moda",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0
@@ -176833,12 +176833,12 @@
    "home": "Doğu Banliyö H Blok, Daire 121",
    "home_from": 1794031200,
    "job": [
-    "Aşçı",
-    "Miniakent Bankası",
+    "Tercüman",
+    "Miniakent Çeviri Bürosu · Miniakent Plaza 3, Kat 12",
     "office",
-    "banka"
+    "plaza3"
    ],
-   "wp": "banka",
+   "wp": "ceviri",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0
@@ -176850,12 +176850,12 @@
    "home": "Doğu Banliyö E Blok, Daire 70",
    "home_from": 1794031200,
    "job": [
-    "Sokak Temizlik Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Muhabir",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "gazete",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0
@@ -176867,12 +176867,12 @@
    "home": "Doğu Banliyö E Blok, Daire 83",
    "home_from": 1794031200,
    "job": [
-    "Hâkim",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -176888,12 +176888,12 @@
    "home": "Doğu Banliyö J Blok, Daire 20",
    "home_from": 1794031200,
    "job": [
-    "Pazarlama Uzmanı",
-    "Miniakent Bankası",
+    "İK Uzmanı",
+    "Miniakent İnsan Kaynakları · Miniakent Plaza 4, Kat 5",
     "office",
-    "banka"
+    "plaza4"
    ],
-   "wp": "banka",
+   "wp": "ik",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -176943,12 +176943,12 @@
    "home": "Doğu Banliyö G Blok, Daire 9",
    "home_from": 1794031200,
    "job": [
-    "Sokak Temizlik Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Editör",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "gazete",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -176964,12 +176964,12 @@
    "home": "Doğu Banliyö I Blok, Daire 9",
    "home_from": 1794031200,
    "job": [
-    "Vardiya Amiri",
-    "Miniakent Fabrikası 1 · Sanayi Bölgesi",
-    "shop",
-    "fabrika_a"
+    "Diş Hekimi",
+    "Miniakent Diş Kliniği · Miniakent Plaza 4, Kat 6",
+    "office",
+    "plaza4"
    ],
-   "wp": "fabrika_a",
+   "wp": "dis",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0
@@ -176981,12 +176981,12 @@
    "home": "Doğu Banliyö J Blok, Daire 51",
    "home_from": 1794031200,
    "job": [
-    "Güvenlik Görevlisi",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -177002,12 +177002,12 @@
    "home": "Doğu Banliyö J Blok, Daire 114",
    "home_from": 1794031200,
    "job": [
-    "Hâkim",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -177057,12 +177057,12 @@
    "home": "Doğu Banliyö J Blok, Daire 141",
    "home_from": 1794031200,
    "job": [
-    "Gişe Görevlisi",
-    "Miniakent Bankası",
+    "Organizasyon Uzmanı",
+    "Miniakent Organizasyon · Miniakent Plaza 4, Kat 7",
     "office",
-    "banka"
+    "plaza4"
    ],
-   "wp": "banka",
+   "wp": "organizasyon",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -177116,12 +177116,12 @@
    "home": "Batı Banliyö B Blok, Daire 26",
    "home_from": 1794031200,
    "job": [
-    "Veteriner",
-    "Miniakent Veteriner Kliniği",
-    "shop",
-    "veteriner"
+    "Kuaför",
+    "Miniakent Güzellik Merkezi · Miniakent Plaza 4, Kat 8",
+    "office",
+    "plaza4"
    ],
-   "wp": "veteriner",
+   "wp": "guzellik",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -177137,12 +177137,12 @@
    "home": "Batı Banliyö B Blok, Daire 27",
    "home_from": 1794031200,
    "job": [
-    "Diş Hekimi",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Gazeteci",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
+    "office",
+    "plaza3"
    ],
-   "wp": "hastane",
+   "wp": "gazete",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -177158,12 +177158,12 @@
    "home": "Doğu Banliyö I Blok, Daire 47",
    "home_from": 1794031200,
    "job": [
-    "Çöp Toplama Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Muhabir",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "gazete",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -177179,12 +177179,12 @@
    "home": "Doğu Banliyö I Blok, Daire 65",
    "home_from": 1794031200,
    "job": [
-    "Zabıt Kâtibi",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0
@@ -177196,12 +177196,12 @@
    "home": "Doğu Banliyö I Blok, Daire 100",
    "home_from": 1794031200,
    "job": [
-    "Komiser Yardımcısı",
-    "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "Editör",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
+    "office",
+    "plaza3"
    ],
-   "wp": "emniyet",
+   "wp": "gazete",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
@@ -177234,12 +177234,12 @@
    "home": "Batı Banliyö B Blok, Daire 27",
    "home_from": 1794031200,
    "job": [
-    "Hizmetli",
-    "Miniakent Koleji",
-    "shop",
-    "kolej"
+    "Eğitmen",
+    "Miniakent Bilişim Akademisi · Miniakent Plaza 4, Kat 9",
+    "office",
+    "plaza4"
    ],
-   "wp": "kolej",
+   "wp": "akademi",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -177255,12 +177255,12 @@
    "home": "Batı Banliyö B Blok, Daire 27",
    "home_from": 1794031200,
    "job": [
-    "Zabıt Kâtibi",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
@@ -177297,12 +177297,12 @@
    "home": "Batı Banliyö B Blok, Daire 28",
    "home_from": 1794031200,
    "job": [
-    "Paramedik",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Gazeteci",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
+    "office",
+    "plaza3"
    ],
-   "wp": "hastane",
+   "wp": "gazete",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -177318,12 +177318,12 @@
    "home": "Batı Banliyö B Blok, Daire 28",
    "home_from": 1794031200,
    "job": [
-    "Hâkim",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -177360,12 +177360,12 @@
    "home": "Batı Banliyö B Blok, Daire 28",
    "home_from": 1794031200,
    "job": [
-    "Zabıt Kâtibi",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -177423,12 +177423,12 @@
    "home": "Batı Banliyö B Blok, Daire 29",
    "home_from": 1794031200,
    "job": [
-    "Paketleme Görevlisi",
-    "Miniakent Fabrikası 1 · Sanayi Bölgesi",
-    "shop",
-    "fabrika_a"
+    "Finans Analisti",
+    "Miniakent Yatırım Danışmanlığı · Miniakent Plaza 4, Kat 10",
+    "office",
+    "plaza4"
    ],
-   "wp": "fabrika_a",
+   "wp": "yatirim",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0
@@ -177440,12 +177440,12 @@
    "home": "Batı Banliyö A Blok, Daire 1",
    "home_from": 1794031200,
    "job": [
-    "Zabıta",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Muhabir",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "gazete",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -177461,12 +177461,12 @@
    "home": "Batı Banliyö A Blok, Daire 1",
    "home_from": 1794031200,
    "job": [
-    "Trafik Polisi",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Editör",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
+    "office",
+    "plaza3"
    ],
-   "wp": "emniyet",
+   "wp": "gazete",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -177478,12 +177478,12 @@
    "home": "Batı Banliyö B Blok, Daire 29",
    "home_from": 1794031200,
    "job": [
-    "Psikolog",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Gazeteci",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
+    "office",
+    "plaza3"
    ],
-   "wp": "hastane",
+   "wp": "gazete",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -177520,12 +177520,12 @@
    "home": "Batı Banliyö B Blok, Daire 30",
    "home_from": 1794031200,
    "job": [
-    "Temizlik Görevlisi",
-    "Miniakent Bankası",
+    "Veri Analisti",
+    "Miniakent Veri Analitiği A.Ş. · Miniakent Plaza 4, Kat 11",
     "office",
-    "banka"
+    "plaza4"
    ],
-   "wp": "banka",
+   "wp": "veri",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -177541,12 +177541,12 @@
    "home": "Batı Banliyö A Blok, Daire 1",
    "home_from": 1794031200,
    "job": [
-    "Çöp Toplama Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Muhabir",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "gazete",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0
@@ -177558,12 +177558,12 @@
    "home": "Batı Banliyö B Blok, Daire 30",
    "home_from": 1794031200,
    "job": [
-    "Büro Memuru",
-    "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "Editör",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
+    "office",
+    "plaza3"
    ],
-   "wp": "emniyet",
+   "wp": "gazete",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -177579,12 +177579,12 @@
    "home": "Batı Banliyö B Blok, Daire 30",
    "home_from": 1794031200,
    "job": [
-    "Veteriner Yardımcısı",
-    "Miniakent Veteriner Kliniği",
-    "shop",
-    "veteriner"
+    "Proje Yöneticisi",
+    "Miniakent Holding · Miniakent Plaza 4, Kat 12",
+    "office",
+    "plaza4"
    ],
-   "wp": "veteriner",
+   "wp": "holding",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0
@@ -177596,12 +177596,12 @@
    "home": "Batı Banliyö B Blok, Daire 31",
    "home_from": 1794031200,
    "job": [
-    "Temizlik Görevlisi",
-    "Miniakent Bankası",
+    "DJ",
+    "Miniakent Radyo · Miniakent Plaza 3, Kat 8",
     "office",
-    "banka"
+    "plaza3"
    ],
-   "wp": "banka",
+   "wp": "radyo",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -177634,12 +177634,12 @@
    "home": "Batı Banliyö B Blok, Daire 31",
    "home_from": 1794031200,
    "job": [
-    "Postacı",
-    "Miniakent Postanesi · Doğu Mahallesi",
-    "shop",
-    "postane"
+    "Rötuş Uzmanı",
+    "Miniakent Fotoğraf Stüdyosu · Miniakent Plaza 3, Kat 9",
+    "office",
+    "plaza3"
    ],
-   "wp": "postane",
+   "wp": "fotograf",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0
@@ -177651,12 +177651,12 @@
    "home": "Batı Banliyö B Blok, Daire 31",
    "home_from": 1794031200,
    "job": [
-    "Banka Memuru",
-    "Miniakent Bankası",
+    "Heykeltıraş",
+    "Miniakent Sanat Atölyesi · Miniakent Plaza 3, Kat 10",
     "office",
-    "banka"
+    "plaza3"
    ],
-   "wp": "banka",
+   "wp": "sanat",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0
@@ -177668,12 +177668,12 @@
    "home": "Batı Banliyö B Blok, Daire 32",
    "home_from": 1794031200,
    "job": [
-    "Mübaşir",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -177689,12 +177689,12 @@
    "home": "Batı Banliyö B Blok, Daire 32",
    "home_from": 1794031200,
    "job": [
-    "Veteriner",
-    "Miniakent Veteriner Kliniği",
-    "shop",
-    "veteriner"
+    "Terzi",
+    "Miniakent Moda Evi · Miniakent Plaza 3, Kat 11",
+    "office",
+    "plaza3"
    ],
-   "wp": "veteriner",
+   "wp": "moda",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -177706,12 +177706,12 @@
    "home": "Batı Banliyö B Blok, Daire 32",
    "home_from": 1794031200,
    "job": [
-    "Kaynakçı",
-    "Miniakent Fabrikası 1 · Sanayi Bölgesi",
-    "shop",
-    "fabrika_a"
+    "Redaktör",
+    "Miniakent Çeviri Bürosu · Miniakent Plaza 3, Kat 12",
+    "office",
+    "plaza3"
    ],
-   "wp": "fabrika_a",
+   "wp": "ceviri",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
@@ -177727,12 +177727,12 @@
    "home": "Batı Banliyö A Blok, Daire 1",
    "home_from": 1794031200,
    "job": [
-    "Zabıta",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Gazeteci",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "gazete",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -177748,12 +177748,12 @@
    "home": "Batı Banliyö A Blok, Daire 2",
    "home_from": 1794031200,
    "job": [
-    "Zabıta",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Spiker",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "tv",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -177769,12 +177769,12 @@
    "home": "Batı Banliyö B Blok, Daire 32",
    "home_from": 1794031200,
    "job": [
-    "Psikolog",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Kameraman",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "hastane",
+   "wp": "tv",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -177807,12 +177807,12 @@
    "home": "Batı Banliyö B Blok, Daire 33",
    "home_from": 1794031200,
    "job": [
-    "Eczacı",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Ses Teknisyeni",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "hastane",
+   "wp": "tv",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -177828,12 +177828,12 @@
    "home": "Batı Banliyö B Blok, Daire 33",
    "home_from": 1794031200,
    "job": [
-    "Cerrah",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Spiker",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "hastane",
+   "wp": "tv",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0
@@ -177845,12 +177845,12 @@
    "home": "Batı Banliyö B Blok, Daire 33",
    "home_from": 1794031200,
    "job": [
-    "Rehber Öğretmen",
-    "Miniakent Koleji",
-    "shop",
-    "kolej"
+    "İşe Alım Uzmanı",
+    "Miniakent İnsan Kaynakları · Miniakent Plaza 4, Kat 5",
+    "office",
+    "plaza4"
    ],
-   "wp": "kolej",
+   "wp": "ik",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -177866,12 +177866,12 @@
    "home": "Batı Banliyö B Blok, Daire 33",
    "home_from": 1794031200,
    "job": [
-    "Veteriner Yardımcısı",
-    "Miniakent Veteriner Kliniği",
-    "shop",
-    "veteriner"
+    "Diş Teknisyeni",
+    "Miniakent Diş Kliniği · Miniakent Plaza 4, Kat 6",
+    "office",
+    "plaza4"
    ],
-   "wp": "veteriner",
+   "wp": "dis",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -177883,12 +177883,12 @@
    "home": "Batı Banliyö B Blok, Daire 34",
    "home_from": 1794031200,
    "job": [
-    "Kalite Kontrol Uzmanı",
-    "Miniakent Fabrikası 1 · Sanayi Bölgesi",
-    "shop",
-    "fabrika_a"
+    "Etkinlik Koordinatörü",
+    "Miniakent Organizasyon · Miniakent Plaza 4, Kat 7",
+    "office",
+    "plaza4"
    ],
-   "wp": "fabrika_a",
+   "wp": "organizasyon",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
@@ -177921,12 +177921,12 @@
    "home": "Batı Banliyö B Blok, Daire 34",
    "home_from": 1794031200,
    "job": [
-    "Gümrük Memuru",
-    "Miniakent Limanı",
-    "area",
-    "liman"
+    "Güzellik Uzmanı",
+    "Miniakent Güzellik Merkezi · Miniakent Plaza 4, Kat 8",
+    "office",
+    "plaza4"
    ],
-   "wp": "liman",
+   "wp": "guzellik",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -178035,12 +178035,12 @@
    "home": "Batı Banliyö B Blok, Daire 36",
    "home_from": 1794031200,
    "job": [
-    "Güvenlik Görevlisi",
-    "Miniakent Bankası",
+    "Yazılım Eğitmeni",
+    "Miniakent Bilişim Akademisi · Miniakent Plaza 4, Kat 9",
     "office",
-    "banka"
+    "plaza4"
    ],
-   "wp": "banka",
+   "wp": "akademi",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0
@@ -178052,12 +178052,12 @@
    "home": "Batı Banliyö A Blok, Daire 2",
    "home_from": 1794031200,
    "job": [
-    "Çöp Toplama Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Kameraman",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "tv",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -178073,12 +178073,12 @@
    "home": "Batı Banliyö B Blok, Daire 36",
    "home_from": 1794031200,
    "job": [
-    "Üretim İşçisi",
-    "Miniakent Fabrikası 2 · Sanayi Bölgesi",
-    "shop",
-    "fabrika_b"
+    "Yatırım Danışmanı",
+    "Miniakent Yatırım Danışmanlığı · Miniakent Plaza 4, Kat 10",
+    "office",
+    "plaza4"
    ],
-   "wp": "fabrika_b",
+   "wp": "yatirim",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -178115,12 +178115,12 @@
    "home": "Batı Banliyö B Blok, Daire 36",
    "home_from": 1794031200,
    "job": [
-    "Eczacı",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Ses Teknisyeni",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "hastane",
+   "wp": "tv",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -178157,12 +178157,12 @@
    "home": "Batı Banliyö B Blok, Daire 37",
    "home_from": 1794031200,
    "job": [
-    "Halkla İlişkiler Uzmanı",
-    "Miniakent Bankası",
+    "Veri Bilimci",
+    "Miniakent Veri Analitiği A.Ş. · Miniakent Plaza 4, Kat 11",
     "office",
-    "banka"
+    "plaza4"
    ],
-   "wp": "banka",
+   "wp": "veri",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -178178,12 +178178,12 @@
    "home": "Batı Banliyö B Blok, Daire 37",
    "home_from": 1794031200,
    "job": [
-    "İcra Memuru",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -178199,12 +178199,12 @@
    "home": "Batı Banliyö B Blok, Daire 37",
    "home_from": 1794031200,
    "job": [
-    "Banka Memuru",
-    "Miniakent Bankası",
+    "Yönetici Asistanı",
+    "Miniakent Holding · Miniakent Plaza 4, Kat 12",
     "office",
-    "banka"
+    "plaza4"
    ],
-   "wp": "banka",
+   "wp": "holding",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -178220,12 +178220,12 @@
    "home": "Batı Banliyö A Blok, Daire 2",
    "home_from": 1794031200,
    "job": [
-    "Çöp Toplama Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Spiker",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "tv",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
@@ -178262,12 +178262,12 @@
    "home": "Batı Banliyö B Blok, Daire 38",
    "home_from": 1794031200,
    "job": [
-    "Güvenlik Görevlisi",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0
@@ -178279,12 +178279,12 @@
    "home": "Batı Banliyö B Blok, Daire 38",
    "home_from": 1794031200,
    "job": [
-    "Cerrah",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Kameraman",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "hastane",
+   "wp": "tv",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -178300,12 +178300,12 @@
    "home": "Batı Banliyö B Blok, Daire 38",
    "home_from": 1794031200,
    "job": [
-    "Komiser Yardımcısı",
-    "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "Ses Teknisyeni",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "emniyet",
+   "wp": "tv",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -178321,12 +178321,12 @@
    "home": "Batı Banliyö B Blok, Daire 39",
    "home_from": 1794031200,
    "job": [
-    "Cerrah",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Spiker",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "hastane",
+   "wp": "tv",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -178338,12 +178338,12 @@
    "home": "Batı Banliyö B Blok, Daire 39",
    "home_from": 1794031200,
    "job": [
-    "Hat Bakım Ustası",
-    "Merkez İstasyonu",
-    "station",
-    ""
+    "Ses Teknisyeni",
+    "Miniakent Radyo · Miniakent Plaza 3, Kat 8",
+    "office",
+    "plaza3"
    ],
-   "wp": "gar",
+   "wp": "radyo",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -178359,12 +178359,12 @@
    "home": "Batı Banliyö B Blok, Daire 39",
    "home_from": 1794031200,
    "job": [
-    "Savcı",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -178401,12 +178401,12 @@
    "home": "Batı Banliyö B Blok, Daire 40",
    "home_from": 1794031200,
    "job": [
-    "Cerrah",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Kameraman",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "hastane",
+   "wp": "tv",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -178443,12 +178443,12 @@
    "home": "Batı Banliyö A Blok, Daire 2",
    "home_from": 1794031200,
    "job": [
-    "Çöp Toplama Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Ses Teknisyeni",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "tv",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -178464,12 +178464,12 @@
    "home": "Batı Banliyö A Blok, Daire 3",
    "home_from": 1794031200,
    "job": [
-    "Polis",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Spiker",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "emniyet",
+   "wp": "tv",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -178485,12 +178485,12 @@
    "home": "Batı Banliyö B Blok, Daire 40",
    "home_from": 1794031200,
    "job": [
-    "Veteriner Yardımcısı",
-    "Miniakent Veteriner Kliniği",
-    "shop",
-    "veteriner"
+    "Stüdyo Asistanı",
+    "Miniakent Fotoğraf Stüdyosu · Miniakent Plaza 3, Kat 9",
+    "office",
+    "plaza3"
    ],
-   "wp": "veteriner",
+   "wp": "fotograf",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0
@@ -178502,12 +178502,12 @@
    "home": "Batı Banliyö B Blok, Daire 40",
    "home_from": 1794031200,
    "job": [
-    "Komiser Yardımcısı",
-    "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "Kameraman",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "emniyet",
+   "wp": "tv",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0
@@ -178519,12 +178519,12 @@
    "home": "Batı Banliyö A Blok, Daire 3",
    "home_from": 1794031200,
    "job": [
-    "Zabıta",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Ses Teknisyeni",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "tv",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -178540,12 +178540,12 @@
    "home": "Batı Banliyö A Blok, Daire 3",
    "home_from": 1794031200,
    "job": [
-    "Çöp Toplama Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Spiker",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "tv",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0
@@ -178557,12 +178557,12 @@
    "home": "Batı Banliyö B Blok, Daire 40",
    "home_from": 1794031200,
    "job": [
-    "Hat Bakım Ustası",
-    "Merkez İstasyonu",
-    "station",
-    ""
+    "Seramik Sanatçısı",
+    "Miniakent Sanat Atölyesi · Miniakent Plaza 3, Kat 10",
+    "office",
+    "plaza3"
    ],
-   "wp": "gar",
+   "wp": "sanat",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
@@ -178578,12 +178578,12 @@
    "home": "Batı Banliyö A Blok, Daire 3",
    "home_from": 1794031200,
    "job": [
-    "Zabıta",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Kameraman",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "tv",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -178620,12 +178620,12 @@
    "home": "Batı Banliyö B Blok, Daire 41",
    "home_from": 1794031200,
    "job": [
-    "Mübaşir",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -178641,12 +178641,12 @@
    "home": "Batı Banliyö B Blok, Daire 41",
    "home_from": 1794031200,
    "job": [
-    "Gişe Görevlisi",
-    "Miniakent Bankası",
+    "Stilist",
+    "Miniakent Moda Evi · Miniakent Plaza 3, Kat 11",
     "office",
-    "banka"
+    "plaza3"
    ],
-   "wp": "banka",
+   "wp": "moda",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -178725,12 +178725,12 @@
    "home": "Batı Banliyö B Blok, Daire 42",
    "home_from": 1794031200,
    "job": [
-    "Mübaşir",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -178763,12 +178763,12 @@
    "home": "Batı Banliyö B Blok, Daire 43",
    "home_from": 1794031200,
    "job": [
-    "Veteriner Yardımcısı",
-    "Miniakent Veteriner Kliniği",
-    "shop",
-    "veteriner"
+    "Tercüman",
+    "Miniakent Çeviri Bürosu · Miniakent Plaza 3, Kat 12",
+    "office",
+    "plaza3"
    ],
-   "wp": "veteriner",
+   "wp": "ceviri",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -178822,12 +178822,12 @@
    "home": "Batı Banliyö B Blok, Daire 43",
    "home_from": 1794031200,
    "job": [
-    "Doktor",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Ses Teknisyeni",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "hastane",
+   "wp": "tv",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -178843,12 +178843,12 @@
    "home": "Batı Banliyö B Blok, Daire 43",
    "home_from": 1794031200,
    "job": [
-    "Banka Memuru",
-    "Miniakent Bankası",
+    "İK Uzmanı",
+    "Miniakent İnsan Kaynakları · Miniakent Plaza 4, Kat 5",
     "office",
-    "banka"
+    "plaza4"
    ],
-   "wp": "banka",
+   "wp": "ik",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0
@@ -178860,12 +178860,12 @@
    "home": "Batı Banliyö B Blok, Daire 44",
    "home_from": 1794031200,
    "job": [
-    "Veteriner Yardımcısı",
-    "Miniakent Veteriner Kliniği",
-    "shop",
-    "veteriner"
+    "Klinik Asistanı",
+    "Miniakent Diş Kliniği · Miniakent Plaza 4, Kat 6",
+    "office",
+    "plaza4"
    ],
-   "wp": "veteriner",
+   "wp": "dis",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -178877,12 +178877,12 @@
    "home": "Batı Banliyö A Blok, Daire 4",
    "home_from": 1794031200,
    "job": [
-    "Zabıta",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Spiker",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "tv",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0
@@ -178894,12 +178894,12 @@
    "home": "Batı Banliyö B Blok, Daire 44",
    "home_from": 1794031200,
    "job": [
-    "Reklamcı",
-    "Miniakent Bankası",
+    "Organizasyon Uzmanı",
+    "Miniakent Organizasyon · Miniakent Plaza 4, Kat 7",
     "office",
-    "banka"
+    "plaza4"
    ],
-   "wp": "banka",
+   "wp": "organizasyon",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -178915,12 +178915,12 @@
    "home": "Batı Banliyö B Blok, Daire 44",
    "home_from": 1794031200,
    "job": [
-    "Muhasebeci",
-    "Miniakent Bankası",
+    "Makyöz",
+    "Miniakent Güzellik Merkezi · Miniakent Plaza 4, Kat 8",
     "office",
-    "banka"
+    "plaza4"
    ],
-   "wp": "banka",
+   "wp": "guzellik",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -178936,12 +178936,12 @@
    "home": "Batı Banliyö A Blok, Daire 4",
    "home_from": 1794031200,
    "job": [
-    "Polis",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Kameraman",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "emniyet",
+   "wp": "tv",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0
@@ -178970,12 +178970,12 @@
    "home": "Batı Banliyö A Blok, Daire 4",
    "home_from": 1794031200,
    "job": [
-    "Trafik Polisi",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Ses Teknisyeni",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "emniyet",
+   "wp": "tv",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
@@ -179008,12 +179008,12 @@
    "home": "Batı Banliyö A Blok, Daire 4",
    "home_from": 1794031200,
    "job": [
-    "Zabıta",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Spiker",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "tv",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -179025,12 +179025,12 @@
    "home": "Batı Banliyö B Blok, Daire 45",
    "home_from": 1794031200,
    "job": [
-    "Büro Memuru",
-    "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "Kameraman",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "emniyet",
+   "wp": "tv",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -179046,12 +179046,12 @@
    "home": "Batı Banliyö A Blok, Daire 5",
    "home_from": 1794031200,
    "job": [
-    "Çöp Toplama Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Ses Teknisyeni",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "tv",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
@@ -179067,12 +179067,12 @@
    "home": "Batı Banliyö B Blok, Daire 45",
    "home_from": 1794031200,
    "job": [
-    "Aşçı",
-    "Miniakent Bankası",
+    "Eğitmen",
+    "Miniakent Bilişim Akademisi · Miniakent Plaza 4, Kat 9",
     "office",
-    "banka"
+    "plaza4"
    ],
-   "wp": "banka",
+   "wp": "akademi",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -179105,12 +179105,12 @@
    "home": "Batı Banliyö A Blok, Daire 5",
    "home_from": 1794031200,
    "job": [
-    "Çöp Toplama Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Spiker",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "tv",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0
@@ -179122,12 +179122,12 @@
    "home": "Batı Banliyö B Blok, Daire 45",
    "home_from": 1794031200,
    "job": [
-    "Zabıt Kâtibi",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -179143,12 +179143,12 @@
    "home": "Batı Banliyö B Blok, Daire 45",
    "home_from": 1794031200,
    "job": [
-    "İcra Memuru",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
@@ -179185,12 +179185,12 @@
    "home": "Batı Banliyö B Blok, Daire 46",
    "home_from": 1794031200,
    "job": [
-    "Hâkim",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0
@@ -179223,12 +179223,12 @@
    "home": "Batı Banliyö B Blok, Daire 46",
    "home_from": 1794031200,
    "job": [
-    "Savcı",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -179244,12 +179244,12 @@
    "home": "Batı Banliyö B Blok, Daire 47",
    "home_from": 1794031200,
    "job": [
-    "Temizlik Görevlisi",
-    "Miniakent Bankası",
+    "Finans Analisti",
+    "Miniakent Yatırım Danışmanlığı · Miniakent Plaza 4, Kat 10",
     "office",
-    "banka"
+    "plaza4"
    ],
-   "wp": "banka",
+   "wp": "yatirim",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0
@@ -179320,12 +179320,12 @@
    "home": "Batı Banliyö B Blok, Daire 47",
    "home_from": 1794031200,
    "job": [
-    "İcra Memuru",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -179341,12 +179341,12 @@
    "home": "Batı Banliyö B Blok, Daire 48",
    "home_from": 1794031200,
    "job": [
-    "Mübaşir",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -179362,12 +179362,12 @@
    "home": "Batı Banliyö A Blok, Daire 5",
    "home_from": 1794031200,
    "job": [
-    "Zabıta",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Kameraman",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "tv",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -179383,12 +179383,12 @@
    "home": "Batı Banliyö B Blok, Daire 48",
    "home_from": 1794031200,
    "job": [
-    "Komiser Yardımcısı",
-    "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "Ses Teknisyeni",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "emniyet",
+   "wp": "tv",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -179404,12 +179404,12 @@
    "home": "Batı Banliyö B Blok, Daire 48",
    "home_from": 1794031200,
    "job": [
-    "Vagon Temizlik Görevlisi",
-    "Merkez İstasyonu",
-    "station",
-    ""
+    "Veri Analisti",
+    "Miniakent Veri Analitiği A.Ş. · Miniakent Plaza 4, Kat 11",
+    "office",
+    "plaza4"
    ],
-   "wp": "gar",
+   "wp": "veri",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0
@@ -179421,12 +179421,12 @@
    "home": "Batı Banliyö A Blok, Daire 5",
    "home_from": 1794031200,
    "job": [
-    "Zabıta",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Spiker",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "tv",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -179438,12 +179438,12 @@
    "home": "Batı Banliyö B Blok, Daire 48",
    "home_from": 1794031200,
    "job": [
-    "Makine Operatörü",
-    "Miniakent Fabrikası 2 · Sanayi Bölgesi",
-    "shop",
-    "fabrika_b"
+    "İdari İşler Uzmanı",
+    "Miniakent Holding · Miniakent Plaza 4, Kat 12",
+    "office",
+    "plaza4"
    ],
-   "wp": "fabrika_b",
+   "wp": "holding",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -179459,12 +179459,12 @@
    "home": "Batı Banliyö B Blok, Daire 49",
    "home_from": 1794031200,
    "job": [
-    "Aşçı",
-    "Miniakent Bankası",
+    "Radyo Programcısı",
+    "Miniakent Radyo · Miniakent Plaza 3, Kat 8",
     "office",
-    "banka"
+    "plaza3"
    ],
-   "wp": "banka",
+   "wp": "radyo",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -179476,12 +179476,12 @@
    "home": "Batı Banliyö A Blok, Daire 6",
    "home_from": 1794031200,
    "job": [
-    "Zabıta",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Kameraman",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "tv",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -179493,12 +179493,12 @@
    "home": "Batı Banliyö B Blok, Daire 49",
    "home_from": 1794031200,
    "job": [
-    "Veteriner Yardımcısı",
-    "Miniakent Veteriner Kliniği",
-    "shop",
-    "veteriner"
+    "Fotoğrafçı",
+    "Miniakent Fotoğraf Stüdyosu · Miniakent Plaza 3, Kat 9",
+    "office",
+    "plaza3"
    ],
-   "wp": "veteriner",
+   "wp": "fotograf",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -179531,12 +179531,12 @@
    "home": "Batı Banliyö B Blok, Daire 49",
    "home_from": 1794031200,
    "job": [
-    "Doktor",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Ses Teknisyeni",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "hastane",
+   "wp": "tv",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -179552,12 +179552,12 @@
    "home": "Batı Banliyö B Blok, Daire 49",
    "home_from": 1794031200,
    "job": [
-    "Psikolog",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Spiker",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "hastane",
+   "wp": "tv",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0
@@ -179569,12 +179569,12 @@
    "home": "Batı Banliyö B Blok, Daire 50",
    "home_from": 1794031200,
    "job": [
-    "İcra Memuru",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -179590,12 +179590,12 @@
    "home": "Batı Banliyö B Blok, Daire 50",
    "home_from": 1794031200,
    "job": [
-    "Hâkim",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -179611,12 +179611,12 @@
    "home": "Batı Banliyö B Blok, Daire 50",
    "home_from": 1794031200,
    "job": [
-    "Veteriner Yardımcısı",
-    "Miniakent Veteriner Kliniği",
-    "shop",
-    "veteriner"
+    "Ressam",
+    "Miniakent Sanat Atölyesi · Miniakent Plaza 3, Kat 10",
+    "office",
+    "plaza3"
    ],
-   "wp": "veteriner",
+   "wp": "sanat",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -179645,12 +179645,12 @@
    "home": "Batı Banliyö B Blok, Daire 51",
    "home_from": 1794031200,
    "job": [
-    "Büro Memuru",
-    "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "Kameraman",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "emniyet",
+   "wp": "tv",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -179666,12 +179666,12 @@
    "home": "Batı Banliyö A Blok, Daire 6",
    "home_from": 1794031200,
    "job": [
-    "Zabıta",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Ses Teknisyeni",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "tv",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -179687,12 +179687,12 @@
    "home": "Batı Banliyö B Blok, Daire 51",
    "home_from": 1794031200,
    "job": [
-    "Psikiyatrist",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Spiker",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "hastane",
+   "wp": "tv",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -179725,12 +179725,12 @@
    "home": "Batı Banliyö A Blok, Daire 6",
    "home_from": 1794031200,
    "job": [
-    "Sokak Temizlik Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Kameraman",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "tv",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -179746,12 +179746,12 @@
    "home": "Batı Banliyö B Blok, Daire 51",
    "home_from": 1794031200,
    "job": [
-    "İcra Memuru",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
@@ -179767,12 +179767,12 @@
    "home": "Batı Banliyö B Blok, Daire 51",
    "home_from": 1794031200,
    "job": [
-    "Mübaşir",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0
@@ -179826,12 +179826,12 @@
    "home": "Batı Banliyö A Blok, Daire 6",
    "home_from": 1794031200,
    "job": [
-    "Polis",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Ses Teknisyeni",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "emniyet",
+   "wp": "tv",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -179864,12 +179864,12 @@
    "home": "Batı Banliyö B Blok, Daire 52",
    "home_from": 1794031200,
    "job": [
-    "Eczacı",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Spiker",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "hastane",
+   "wp": "tv",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -179948,12 +179948,12 @@
    "home": "Batı Banliyö B Blok, Daire 52",
    "home_from": 1794031200,
    "job": [
-    "Savcı",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -179969,12 +179969,12 @@
    "home": "Batı Banliyö B Blok, Daire 53",
    "home_from": 1794031200,
    "job": [
-    "Hemşire",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Kameraman",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "hastane",
+   "wp": "tv",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -179986,12 +179986,12 @@
    "home": "Batı Banliyö B Blok, Daire 53",
    "home_from": 1794031200,
    "job": [
-    "Veznedar",
-    "Miniakent Bankası",
+    "Moda Tasarımcısı",
+    "Miniakent Moda Evi · Miniakent Plaza 3, Kat 11",
     "office",
-    "banka"
+    "plaza3"
    ],
-   "wp": "banka",
+   "wp": "moda",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0
@@ -180024,12 +180024,12 @@
    "home": "Batı Banliyö B Blok, Daire 53",
    "home_from": 1794031200,
    "job": [
-    "Psikiyatrist",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Ses Teknisyeni",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "hastane",
+   "wp": "tv",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -180045,12 +180045,12 @@
    "home": "Batı Banliyö A Blok, Daire 7",
    "home_from": 1794031200,
    "job": [
-    "Zabıta",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Spiker",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "tv",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -180066,12 +180066,12 @@
    "home": "Batı Banliyö A Blok, Daire 7",
    "home_from": 1794031200,
    "job": [
-    "Sokak Temizlik Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Kameraman",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "tv",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -180087,12 +180087,12 @@
    "home": "Batı Banliyö B Blok, Daire 54",
    "home_from": 1794031200,
    "job": [
-    "İcra Memuru",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -180108,12 +180108,12 @@
    "home": "Batı Banliyö B Blok, Daire 54",
    "home_from": 1794031200,
    "job": [
-    "Savcı",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -180129,12 +180129,12 @@
    "home": "Batı Banliyö A Blok, Daire 7",
    "home_from": 1794031200,
    "job": [
-    "Çöp Toplama Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Ses Teknisyeni",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "tv",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -180150,12 +180150,12 @@
    "home": "Batı Banliyö B Blok, Daire 54",
    "home_from": 1794031200,
    "job": [
-    "Zabıt Kâtibi",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0
@@ -180167,12 +180167,12 @@
    "home": "Batı Banliyö B Blok, Daire 54",
    "home_from": 1794031200,
    "job": [
-    "Veteriner",
-    "Miniakent Veteriner Kliniği",
-    "shop",
-    "veteriner"
+    "Redaktör",
+    "Miniakent Çeviri Bürosu · Miniakent Plaza 3, Kat 12",
+    "office",
+    "plaza3"
    ],
-   "wp": "veteriner",
+   "wp": "ceviri",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -180188,12 +180188,12 @@
    "home": "Batı Banliyö B Blok, Daire 55",
    "home_from": 1794031200,
    "job": [
-    "İcra Memuru",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0
@@ -180205,12 +180205,12 @@
    "home": "Batı Banliyö A Blok, Daire 7",
    "home_from": 1794031200,
    "job": [
-    "Trafik Polisi",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Spiker",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "emniyet",
+   "wp": "tv",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -180247,12 +180247,12 @@
    "home": "Batı Banliyö B Blok, Daire 55",
    "home_from": 1794031200,
    "job": [
-    "Eczacı",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Kameraman",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "hastane",
+   "wp": "tv",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -180268,12 +180268,12 @@
    "home": "Batı Banliyö B Blok, Daire 55",
    "home_from": 1794031200,
    "job": [
-    "Eczacı",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Ses Teknisyeni",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "hastane",
+   "wp": "tv",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -180289,12 +180289,12 @@
    "home": "Batı Banliyö A Blok, Daire 8",
    "home_from": 1794031200,
    "job": [
-    "Polis",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Spiker",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "emniyet",
+   "wp": "tv",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -180327,12 +180327,12 @@
    "home": "Batı Banliyö B Blok, Daire 56",
    "home_from": 1794031200,
    "job": [
-    "Cerrah",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Kameraman",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "hastane",
+   "wp": "tv",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -180348,12 +180348,12 @@
    "home": "Batı Banliyö B Blok, Daire 56",
    "home_from": 1794031200,
    "job": [
-    "Muhasebeci",
-    "Miniakent Bankası",
+    "İşe Alım Uzmanı",
+    "Miniakent İnsan Kaynakları · Miniakent Plaza 4, Kat 5",
     "office",
-    "banka"
+    "plaza4"
    ],
-   "wp": "banka",
+   "wp": "ik",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -180365,12 +180365,12 @@
    "home": "Batı Banliyö B Blok, Daire 56",
    "home_from": 1794031200,
    "job": [
-    "Psikiyatrist",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Ses Teknisyeni",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "hastane",
+   "wp": "tv",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -180403,12 +180403,12 @@
    "home": "Batı Banliyö B Blok, Daire 56",
    "home_from": 1794031200,
    "job": [
-    "Paramedik",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Spiker",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "hastane",
+   "wp": "tv",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0
@@ -180420,12 +180420,12 @@
    "home": "Batı Banliyö B Blok, Daire 57",
    "home_from": 1794031200,
    "job": [
-    "Büro Memuru",
-    "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "Kameraman",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "emniyet",
+   "wp": "tv",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0
@@ -180437,12 +180437,12 @@
    "home": "Batı Banliyö A Blok, Daire 8",
    "home_from": 1794031200,
    "job": [
-    "Polis",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Ses Teknisyeni",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "emniyet",
+   "wp": "tv",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -180458,12 +180458,12 @@
    "home": "Batı Banliyö B Blok, Daire 57",
    "home_from": 1794031200,
    "job": [
-    "Hâkim",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -180479,12 +180479,12 @@
    "home": "Batı Banliyö A Blok, Daire 8",
    "home_from": 1794031200,
    "job": [
-    "Polis",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Spiker",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "emniyet",
+   "wp": "tv",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0
@@ -180534,12 +180534,12 @@
    "home": "Batı Banliyö A Blok, Daire 8",
    "home_from": 1794031200,
    "job": [
-    "Polis",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Kameraman",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "emniyet",
+   "wp": "tv",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -180555,12 +180555,12 @@
    "home": "Batı Banliyö A Blok, Daire 9",
    "home_from": 1794031200,
    "job": [
-    "Sokak Temizlik Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Ses Teknisyeni",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "tv",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0
@@ -180572,12 +180572,12 @@
    "home": "Batı Banliyö B Blok, Daire 57",
    "home_from": 1794031200,
    "job": [
-    "Rıhtım Vinci Operatörü",
-    "Miniakent Limanı",
-    "area",
-    "liman"
+    "Diş Hekimi",
+    "Miniakent Diş Kliniği · Miniakent Plaza 4, Kat 6",
+    "office",
+    "plaza4"
    ],
-   "wp": "liman",
+   "wp": "dis",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -180593,12 +180593,12 @@
    "home": "Batı Banliyö B Blok, Daire 58",
    "home_from": 1794031200,
    "job": [
-    "Eczacı",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Spiker",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "hastane",
+   "wp": "tv",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -180614,12 +180614,12 @@
    "home": "Batı Banliyö A Blok, Daire 9",
    "home_from": 1794031200,
    "job": [
-    "Zabıta",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Kameraman",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "tv",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -180635,12 +180635,12 @@
    "home": "Batı Banliyö B Blok, Daire 58",
    "home_from": 1794031200,
    "job": [
-    "Banka Memuru",
-    "Miniakent Bankası",
+    "Etkinlik Koordinatörü",
+    "Miniakent Organizasyon · Miniakent Plaza 4, Kat 7",
     "office",
-    "banka"
+    "plaza4"
    ],
-   "wp": "banka",
+   "wp": "organizasyon",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -180656,12 +180656,12 @@
    "home": "Batı Banliyö A Blok, Daire 9",
    "home_from": 1794031200,
    "job": [
-    "Polis",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Ses Teknisyeni",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "emniyet",
+   "wp": "tv",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -180677,12 +180677,12 @@
    "home": "Batı Banliyö B Blok, Daire 58",
    "home_from": 1794031200,
    "job": [
-    "Doktor",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Spiker",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "hastane",
+   "wp": "tv",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -180698,12 +180698,12 @@
    "home": "Batı Banliyö B Blok, Daire 58",
    "home_from": 1794031200,
    "job": [
-    "Komiser Yardımcısı",
-    "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "Kameraman",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "emniyet",
+   "wp": "tv",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -180719,12 +180719,12 @@
    "home": "Batı Banliyö B Blok, Daire 59",
    "home_from": 1794031200,
    "job": [
-    "Banka Memuru",
-    "Miniakent Bankası",
+    "Kuaför",
+    "Miniakent Güzellik Merkezi · Miniakent Plaza 4, Kat 8",
     "office",
-    "banka"
+    "plaza4"
    ],
-   "wp": "banka",
+   "wp": "guzellik",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -180761,12 +180761,12 @@
    "home": "Batı Banliyö A Blok, Daire 9",
    "home_from": 1794031200,
    "job": [
-    "Polis",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Ses Teknisyeni",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "emniyet",
+   "wp": "tv",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -180782,12 +180782,12 @@
    "home": "Batı Banliyö B Blok, Daire 59",
    "home_from": 1794031200,
    "job": [
-    "Banka Memuru",
-    "Miniakent Bankası",
+    "Yazılım Eğitmeni",
+    "Miniakent Bilişim Akademisi · Miniakent Plaza 4, Kat 9",
     "office",
-    "banka"
+    "plaza4"
    ],
-   "wp": "banka",
+   "wp": "akademi",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -180803,12 +180803,12 @@
    "home": "Batı Banliyö A Blok, Daire 10",
    "home_from": 1794031200,
    "job": [
-    "Çöp Toplama Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Spiker",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "tv",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0
@@ -180820,12 +180820,12 @@
    "home": "Batı Banliyö B Blok, Daire 59",
    "home_from": 1794031200,
    "job": [
-    "Paramedik",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Kameraman",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "hastane",
+   "wp": "tv",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0
@@ -180837,12 +180837,12 @@
    "home": "Batı Banliyö B Blok, Daire 59",
    "home_from": 1794031200,
    "job": [
-    "Veteriner",
-    "Miniakent Veteriner Kliniği",
-    "shop",
-    "veteriner"
+    "Yatırım Danışmanı",
+    "Miniakent Yatırım Danışmanlığı · Miniakent Plaza 4, Kat 10",
+    "office",
+    "plaza4"
    ],
-   "wp": "veteriner",
+   "wp": "yatirim",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -180854,12 +180854,12 @@
    "home": "Batı Banliyö A Blok, Daire 10",
    "home_from": 1794031200,
    "job": [
-    "Sokak Temizlik Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Ses Teknisyeni",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "sehir",
+   "wp": "tv",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -180871,12 +180871,12 @@
    "home": "Batı Banliyö B Blok, Daire 60",
    "home_from": 1794031200,
    "job": [
-    "Komiser Yardımcısı",
-    "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "Spiker",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "emniyet",
+   "wp": "tv",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -180892,12 +180892,12 @@
    "home": "Batı Banliyö B Blok, Daire 60",
    "home_from": 1794031200,
    "job": [
-    "Komiser Yardımcısı",
-    "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "Kameraman",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
    ],
-   "wp": "emniyet",
+   "wp": "tv",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -180909,12 +180909,12 @@
    "home": "Batı Banliyö B Blok, Daire 60",
    "home_from": 1794031200,
    "job": [
-    "Veteriner Yardımcısı",
-    "Miniakent Veteriner Kliniği",
-    "shop",
-    "veteriner"
+    "Veri Bilimci",
+    "Miniakent Veri Analitiği A.Ş. · Miniakent Plaza 4, Kat 11",
+    "office",
+    "plaza4"
    ],
-   "wp": "veteriner",
+   "wp": "veri",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -180930,12 +180930,12 @@
    "home": "Batı Banliyö B Blok, Daire 60",
    "home_from": 1794031200,
    "job": [
-    "Forklift Operatörü",
-    "Miniakent Fabrikası 2 · Sanayi Bölgesi",
-    "shop",
-    "fabrika_b"
+    "Proje Yöneticisi",
+    "Miniakent Holding · Miniakent Plaza 4, Kat 12",
+    "office",
+    "plaza4"
    ],
-   "wp": "fabrika_b",
+   "wp": "holding",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0
@@ -180947,12 +180947,12 @@
    "home": "Batı Banliyö B Blok, Daire 61",
    "home_from": 1794031200,
    "job": [
-    "Psikolog",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "hastane",
+   "wp": "medya",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -180968,12 +180968,12 @@
    "home": "Batı Banliyö A Blok, Daire 10",
    "home_from": 1794031200,
    "job": [
-    "Zabıta",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "sehir",
+   "wp": "medya",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -180989,12 +180989,12 @@
    "home": "Batı Banliyö B Blok, Daire 61",
    "home_from": 1794031200,
    "job": [
-    "Hâkim",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -181052,12 +181052,12 @@
    "home": "Batı Banliyö B Blok, Daire 61",
    "home_from": 1794031200,
    "job": [
-    "Pazarlama Uzmanı",
-    "Miniakent Bankası",
+    "DJ",
+    "Miniakent Radyo · Miniakent Plaza 3, Kat 8",
     "office",
-    "banka"
+    "plaza3"
    ],
-   "wp": "banka",
+   "wp": "radyo",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -181073,12 +181073,12 @@
    "home": "Batı Banliyö A Blok, Daire 10",
    "home_from": 1794031200,
    "job": [
-    "Zabıta",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "sehir",
+   "wp": "medya",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -181094,12 +181094,12 @@
    "home": "Batı Banliyö A Blok, Daire 11",
    "home_from": 1794031200,
    "job": [
-    "Trafik Polisi",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "emniyet",
+   "wp": "medya",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -181111,12 +181111,12 @@
    "home": "Batı Banliyö B Blok, Daire 61",
    "home_from": 1794031200,
    "job": [
-    "Hâkim",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0
@@ -181128,12 +181128,12 @@
    "home": "Batı Banliyö B Blok, Daire 62",
    "home_from": 1794031200,
    "job": [
-    "Diş Hekimi",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "hastane",
+   "wp": "medya",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0
@@ -181145,12 +181145,12 @@
    "home": "Batı Banliyö B Blok, Daire 62",
    "home_from": 1794031200,
    "job": [
-    "Büro Memuru",
-    "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "emniyet",
+   "wp": "medya",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0
@@ -181162,12 +181162,12 @@
    "home": "Batı Banliyö A Blok, Daire 11",
    "home_from": 1794031200,
    "job": [
-    "Trafik Polisi",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "emniyet",
+   "wp": "medya",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0
@@ -181179,12 +181179,12 @@
    "home": "Batı Banliyö B Blok, Daire 62",
    "home_from": 1794031200,
    "job": [
-    "Veteriner Yardımcısı",
-    "Miniakent Veteriner Kliniği",
-    "shop",
-    "veteriner"
+    "Rötuş Uzmanı",
+    "Miniakent Fotoğraf Stüdyosu · Miniakent Plaza 3, Kat 9",
+    "office",
+    "plaza3"
    ],
-   "wp": "veteriner",
+   "wp": "fotograf",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -181200,12 +181200,12 @@
    "home": "Batı Banliyö B Blok, Daire 62",
    "home_from": 1794031200,
    "job": [
-    "Psikiyatrist",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "hastane",
+   "wp": "medya",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
@@ -181221,12 +181221,12 @@
    "home": "Batı Banliyö A Blok, Daire 11",
    "home_from": 1794031200,
    "job": [
-    "Çöp Toplama Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "sehir",
+   "wp": "medya",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -181263,12 +181263,12 @@
    "home": "Batı Banliyö B Blok, Daire 63",
    "home_from": 1794031200,
    "job": [
-    "Psikolog",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "hastane",
+   "wp": "medya",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
@@ -181284,12 +181284,12 @@
    "home": "Batı Banliyö B Blok, Daire 63",
    "home_from": 1794031200,
    "job": [
-    "Zabıt Kâtibi",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -181343,12 +181343,12 @@
    "home": "Batı Banliyö B Blok, Daire 63",
    "home_from": 1794031200,
    "job": [
-    "İcra Memuru",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -181381,12 +181381,12 @@
    "home": "Batı Banliyö B Blok, Daire 63",
    "home_from": 1794031200,
    "job": [
-    "Cerrah",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "hastane",
+   "wp": "medya",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -181419,12 +181419,12 @@
    "home": "Batı Banliyö A Blok, Daire 11",
    "home_from": 1794031200,
    "job": [
-    "Zabıta",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "sehir",
+   "wp": "medya",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -181461,12 +181461,12 @@
    "home": "Batı Banliyö B Blok, Daire 64",
    "home_from": 1794031200,
    "job": [
-    "Eczacı",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "hastane",
+   "wp": "medya",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -181482,12 +181482,12 @@
    "home": "Batı Banliyö A Blok, Daire 12",
    "home_from": 1794031200,
    "job": [
-    "Trafik Polisi",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "emniyet",
+   "wp": "medya",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -181503,12 +181503,12 @@
    "home": "Batı Banliyö A Blok, Daire 12",
    "home_from": 1794031200,
    "job": [
-    "Sokak Temizlik Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "sehir",
+   "wp": "medya",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -181520,12 +181520,12 @@
    "home": "Batı Banliyö A Blok, Daire 12",
    "home_from": 1794031200,
    "job": [
-    "Polis",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "emniyet",
+   "wp": "medya",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -181541,12 +181541,12 @@
    "home": "Batı Banliyö A Blok, Daire 12",
    "home_from": 1794031200,
    "job": [
-    "Çöp Toplama Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "sehir",
+   "wp": "medya",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -181583,12 +181583,12 @@
    "home": "Batı Banliyö B Blok, Daire 64",
    "home_from": 1794031200,
    "job": [
-    "Zabıt Kâtibi",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0
@@ -181600,12 +181600,12 @@
    "home": "Batı Banliyö A Blok, Daire 13",
    "home_from": 1794031200,
    "job": [
-    "Zabıta",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "sehir",
+   "wp": "medya",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -181681,12 +181681,12 @@
    "home": "Batı Banliyö A Blok, Daire 13",
    "home_from": 1794031200,
    "job": [
-    "Polis",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "emniyet",
+   "wp": "medya",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -181702,12 +181702,12 @@
    "home": "Batı Banliyö B Blok, Daire 65",
    "home_from": 1794031200,
    "job": [
-    "Büro Memuru",
-    "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "emniyet",
+   "wp": "medya",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0
@@ -181740,12 +181740,12 @@
    "home": "Batı Banliyö B Blok, Daire 65",
    "home_from": 1794031200,
    "job": [
-    "Savcı",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -181761,12 +181761,12 @@
    "home": "Batı Banliyö B Blok, Daire 65",
    "home_from": 1794031200,
    "job": [
-    "Savcı",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -181782,12 +181782,12 @@
    "home": "Batı Banliyö A Blok, Daire 13",
    "home_from": 1794031200,
    "job": [
-    "Polis",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "emniyet",
+   "wp": "medya",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -181803,12 +181803,12 @@
    "home": "Batı Banliyö B Blok, Daire 65",
    "home_from": 1794031200,
    "job": [
-    "Komiser Yardımcısı",
-    "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "emniyet",
+   "wp": "medya",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -181824,12 +181824,12 @@
    "home": "Batı Banliyö A Blok, Daire 14",
    "home_from": 1794031200,
    "job": [
-    "Trafik Polisi",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "emniyet",
+   "wp": "medya",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -181883,12 +181883,12 @@
    "home": "Batı Banliyö B Blok, Daire 66",
    "home_from": 1794031200,
    "job": [
-    "Savcı",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0
@@ -181900,12 +181900,12 @@
    "home": "Batı Banliyö A Blok, Daire 14",
    "home_from": 1794031200,
    "job": [
-    "Çöp Toplama Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "sehir",
+   "wp": "medya",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0
@@ -181917,12 +181917,12 @@
    "home": "Batı Banliyö A Blok, Daire 14",
    "home_from": 1794031200,
    "job": [
-    "Zabıta",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "sehir",
+   "wp": "medya",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
@@ -181938,12 +181938,12 @@
    "home": "Batı Banliyö A Blok, Daire 14",
    "home_from": 1794031200,
    "job": [
-    "Polis",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "emniyet",
+   "wp": "medya",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -181955,12 +181955,12 @@
    "home": "Batı Banliyö A Blok, Daire 15",
    "home_from": 1794031200,
    "job": [
-    "Polis",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "emniyet",
+   "wp": "medya",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -181976,12 +181976,12 @@
    "home": "Batı Banliyö B Blok, Daire 66",
    "home_from": 1794031200,
    "job": [
-    "Eczacı",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "hastane",
+   "wp": "medya",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -182018,12 +182018,12 @@
    "home": "Batı Banliyö A Blok, Daire 15",
    "home_from": 1794031200,
    "job": [
-    "Trafik Polisi",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "emniyet",
+   "wp": "medya",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -182060,12 +182060,12 @@
    "home": "Batı Banliyö B Blok, Daire 66",
    "home_from": 1794031200,
    "job": [
-    "Diş Hekimi",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "hastane",
+   "wp": "medya",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -182081,12 +182081,12 @@
    "home": "Batı Banliyö A Blok, Daire 15",
    "home_from": 1794031200,
    "job": [
-    "Zabıta",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "sehir",
+   "wp": "medya",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -182102,12 +182102,12 @@
    "home": "Batı Banliyö B Blok, Daire 66",
    "home_from": 1794031200,
    "job": [
-    "Paramedik",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "hastane",
+   "wp": "medya",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -182123,12 +182123,12 @@
    "home": "Batı Banliyö A Blok, Daire 15",
    "home_from": 1794031200,
    "job": [
-    "Zabıta",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "sehir",
+   "wp": "medya",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0
@@ -182140,12 +182140,12 @@
    "home": "Batı Banliyö B Blok, Daire 67",
    "home_from": 1794031200,
    "job": [
-    "Paramedik",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "hastane",
+   "wp": "medya",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -182195,12 +182195,12 @@
    "home": "Batı Banliyö B Blok, Daire 67",
    "home_from": 1794031200,
    "job": [
-    "Doktor",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "hastane",
+   "wp": "medya",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0
@@ -182233,12 +182233,12 @@
    "home": "Batı Banliyö B Blok, Daire 67",
    "home_from": 1794031200,
    "job": [
-    "Savcı",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -182254,12 +182254,12 @@
    "home": "Batı Banliyö B Blok, Daire 67",
    "home_from": 1794031200,
    "job": [
-    "Komiser Yardımcısı",
-    "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "emniyet",
+   "wp": "medya",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0
@@ -182292,12 +182292,12 @@
    "home": "Batı Banliyö B Blok, Daire 68",
    "home_from": 1794031200,
    "job": [
-    "İcra Memuru",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -182313,12 +182313,12 @@
    "home": "Batı Banliyö A Blok, Daire 16",
    "home_from": 1794031200,
    "job": [
-    "Zabıta",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "sehir",
+   "wp": "medya",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0
@@ -182347,12 +182347,12 @@
    "home": "Batı Banliyö B Blok, Daire 68",
    "home_from": 1794031200,
    "job": [
-    "Veteriner",
-    "Miniakent Veteriner Kliniği",
-    "shop",
-    "veteriner"
+    "Heykeltıraş",
+    "Miniakent Sanat Atölyesi · Miniakent Plaza 3, Kat 10",
+    "office",
+    "plaza3"
    ],
-   "wp": "veteriner",
+   "wp": "sanat",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -182368,12 +182368,12 @@
    "home": "Batı Banliyö A Blok, Daire 16",
    "home_from": 1794031200,
    "job": [
-    "Trafik Polisi",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "emniyet",
+   "wp": "medya",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -182385,12 +182385,12 @@
    "home": "Batı Banliyö A Blok, Daire 16",
    "home_from": 1794031200,
    "job": [
-    "Trafik Polisi",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "emniyet",
+   "wp": "medya",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -182406,12 +182406,12 @@
    "home": "Batı Banliyö B Blok, Daire 68",
    "home_from": 1794031200,
    "job": [
-    "Güvenlik Görevlisi",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -182427,12 +182427,12 @@
    "home": "Batı Banliyö B Blok, Daire 68",
    "home_from": 1794031200,
    "job": [
-    "Hâkim",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -182448,12 +182448,12 @@
    "home": "Batı Banliyö A Blok, Daire 16",
    "home_from": 1794031200,
    "job": [
-    "Zabıta",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "sehir",
+   "wp": "medya",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -182469,12 +182469,12 @@
    "home": "Batı Banliyö A Blok, Daire 17",
    "home_from": 1794031200,
    "job": [
-    "Trafik Polisi",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "emniyet",
+   "wp": "medya",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -182503,12 +182503,12 @@
    "home": "Batı Banliyö B Blok, Daire 69",
    "home_from": 1794031200,
    "job": [
-    "Güvenlik Görevlisi",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -182520,12 +182520,12 @@
    "home": "Batı Banliyö B Blok, Daire 69",
    "home_from": 1794031200,
    "job": [
-    "Doktor",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "hastane",
+   "wp": "medya",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0
@@ -182600,12 +182600,12 @@
    "home": "Batı Banliyö B Blok, Daire 69",
    "home_from": 1794031200,
    "job": [
-    "Büro Memuru",
-    "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "emniyet",
+   "wp": "medya",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -182621,12 +182621,12 @@
    "home": "Batı Banliyö A Blok, Daire 17",
    "home_from": 1794031200,
    "job": [
-    "Sokak Temizlik Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "sehir",
+   "wp": "medya",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -182642,12 +182642,12 @@
    "home": "Batı Banliyö B Blok, Daire 69",
    "home_from": 1794031200,
    "job": [
-    "Büro Memuru",
-    "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "emniyet",
+   "wp": "medya",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0
@@ -182659,12 +182659,12 @@
    "home": "Batı Banliyö A Blok, Daire 17",
    "home_from": 1794031200,
    "job": [
-    "Çöp Toplama Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "sehir",
+   "wp": "medya",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0
@@ -182676,12 +182676,12 @@
    "home": "Batı Banliyö A Blok, Daire 17",
    "home_from": 1794031200,
    "job": [
-    "Polis",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "emniyet",
+   "wp": "medya",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -182693,12 +182693,12 @@
    "home": "Batı Banliyö B Blok, Daire 70",
    "home_from": 1794031200,
    "job": [
-    "Zabıt Kâtibi",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -182714,12 +182714,12 @@
    "home": "Batı Banliyö B Blok, Daire 70",
    "home_from": 1794031200,
    "job": [
-    "Mübaşir",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -182756,12 +182756,12 @@
    "home": "Batı Banliyö A Blok, Daire 18",
    "home_from": 1794031200,
    "job": [
-    "Çöp Toplama Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "sehir",
+   "wp": "medya",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -182773,12 +182773,12 @@
    "home": "Batı Banliyö A Blok, Daire 18",
    "home_from": 1794031200,
    "job": [
-    "Polis",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "emniyet",
+   "wp": "medya",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -182794,12 +182794,12 @@
    "home": "Batı Banliyö B Blok, Daire 70",
    "home_from": 1794031200,
    "job": [
-    "Güvenlik Görevlisi",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0
@@ -182811,12 +182811,12 @@
    "home": "Batı Banliyö A Blok, Daire 18",
    "home_from": 1794031200,
    "job": [
-    "Polis",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "emniyet",
+   "wp": "medya",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -182832,12 +182832,12 @@
    "home": "Batı Banliyö A Blok, Daire 18",
    "home_from": 1794031200,
    "job": [
-    "Çöp Toplama Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "sehir",
+   "wp": "medya",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -182853,12 +182853,12 @@
    "home": "Batı Banliyö B Blok, Daire 70",
    "home_from": 1794031200,
    "job": [
-    "Paramedik",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "hastane",
+   "wp": "medya",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -182891,12 +182891,12 @@
    "home": "Batı Banliyö B Blok, Daire 71",
    "home_from": 1794031200,
    "job": [
-    "Paramedik",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "hastane",
+   "wp": "medya",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -182933,12 +182933,12 @@
    "home": "Batı Banliyö B Blok, Daire 71",
    "home_from": 1794031200,
    "job": [
-    "Psikiyatrist",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "hastane",
+   "wp": "medya",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0
@@ -182950,12 +182950,12 @@
    "home": "Batı Banliyö B Blok, Daire 71",
    "home_from": 1794031200,
    "job": [
-    "Paramedik",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "hastane",
+   "wp": "medya",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -182971,12 +182971,12 @@
    "home": "Batı Banliyö B Blok, Daire 71",
    "home_from": 1794031200,
    "job": [
-    "İcra Memuru",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -182992,12 +182992,12 @@
    "home": "Batı Banliyö B Blok, Daire 72",
    "home_from": 1794031200,
    "job": [
-    "Komiser Yardımcısı",
-    "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "emniyet",
+   "wp": "medya",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0
@@ -183009,12 +183009,12 @@
    "home": "Batı Banliyö B Blok, Daire 72",
    "home_from": 1794031200,
    "job": [
-    "Komiser Yardımcısı",
-    "Miniakent Emniyet Müdürlüğü",
-    "shop",
-    "emniyet"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "emniyet",
+   "wp": "medya",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
@@ -183030,12 +183030,12 @@
    "home": "Batı Banliyö B Blok, Daire 72",
    "home_from": 1794031200,
    "job": [
-    "Psikiyatrist",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "hastane",
+   "wp": "medya",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -183051,12 +183051,12 @@
    "home": "Batı Banliyö A Blok, Daire 19",
    "home_from": 1794031200,
    "job": [
-    "Sokak Temizlik Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "sehir",
+   "wp": "medya",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0
@@ -183068,12 +183068,12 @@
    "home": "Batı Banliyö B Blok, Daire 72",
    "home_from": 1794031200,
    "job": [
-    "Psikolog",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "hastane",
+   "wp": "medya",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -183089,12 +183089,12 @@
    "home": "Batı Banliyö A Blok, Daire 19",
    "home_from": 1794031200,
    "job": [
-    "Trafik Polisi",
-    "Miniakent Emniyet Müdürlüğü",
-    "patrol_all",
-    ""
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "emniyet",
+   "wp": "medya",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
@@ -183110,12 +183110,12 @@
    "home": "Batı Banliyö A Blok, Daire 19",
    "home_from": 1794031200,
    "job": [
-    "Sokak Temizlik Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
+    "Kameraman",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "sehir",
+   "wp": "medya",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0
@@ -183148,12 +183148,12 @@
    "home": "Batı Banliyö B Blok, Daire 73",
    "home_from": 1794031200,
    "job": [
-    "Mübaşir",
-    "Miniakent Adliyesi",
-    "shop",
-    "adliye"
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
    ],
-   "wp": "adliye",
+   "wp": "medya",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
