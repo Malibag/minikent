@@ -918,7 +918,15 @@ body.gece #mkb { --krem: #22304f; --krem2: #2c3b5e; --yazi: #fbe9cb; --kenar: #0
 body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: var(--yazi); }
 #mkb .tost { position: absolute; left: 50%; top: calc(110px + env(safe-area-inset-top, 0px)); z-index: 10; transform: translateX(-50%); padding: 8px 14px; border-radius: 12px;
 	background: var(--yazi); color: var(--krem2); font-size: 13px; font-weight: 700; white-space: nowrap; }
-@media (prefers-reduced-motion: reduce) { #mkb .mkb-pano, #mkb .ray { transition: none; } }`;
+@media (prefers-reduced-motion: reduce) { #mkb .mkb-pano, #mkb .ray { transition: none; } }
+/* bilgisayarda (fare, geniş ekran) ayarlar, ses ve Bölgeler sağ kenarda (kullanıcı, 2026-11-08) */
+@media (hover: hover) and (pointer: fine) and (min-width: 700px) {
+	#mkb #mkb-disli { position: fixed; right: 12px; top: calc(12px + env(safe-area-inset-top, 0px)); }
+	#mkb #mkb-bolgeler { position: fixed; right: 12px; top: calc(60px + env(safe-area-inset-top, 0px)); height: 37px; }
+	#mkb .ses-alt { left: auto; right: 12px; }
+	#mkb .ayarlar { left: auto; right: 12px; }
+	#mkb #mkb-bolge { left: auto; right: 12px; }
+}`;
 	document.head.appendChild(css);
 
 	const SVG = {
