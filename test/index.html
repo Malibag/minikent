@@ -690,6 +690,9 @@ try {
 				if (u.emailVerified) { clearInterval(bekle); tamam(u).catch(hata); }
 			}, 4000);
 		};
+		// doğrulama bağlantısı Firebase sayfasında kalmaz, kod bu sayfaya getirilir ve doğrulama burada yapılır
+		// (kullanıcı, 2026-11-08; alan adı Firebase'de izinli). Aşağıda "baglanti".
+		const DONUS = { url: location.origin + location.pathname, handleCodeInApp: true };
 		// Giriş Yap (form) ve altta ayrı duran Kayıt Ol aynı e-posta ve şifreyi kullanır (kullanıcı, 2026-11-08)
 		const gir = async (kayit) => {
 			gonder.disabled = kayitDugme.disabled = true;
@@ -699,11 +702,11 @@ try {
 					? await fa.createUserWithEmailAndPassword(auth, eposta.value.trim(), sifre.value)
 					: await fa.signInWithEmailAndPassword(auth, eposta.value.trim(), sifre.value);
 				if (kayit) {
-					await fa.sendEmailVerification(k.user);
+					await fa.sendEmailVerification(k.user, DONUS);
 					yaz("Doğrulama bağlantısını e-postana gönderdik.");
 					dogrulamaBekle();
 				} else if (!k.user.emailVerified) {
-					await fa.sendEmailVerification(k.user);  // doğrulanmamış girişte bağlantı yeniden gider (2026-11-05)
+					await fa.sendEmailVerification(k.user, DONUS);  // doğrulanmamış girişte bağlantı yeniden gider (2026-11-05)
 					yaz("E-postan henüz doğrulanmadı, yeni doğrulama bağlantısını gönderdik.");
 					dogrulamaBekle();
 				} else {
@@ -843,7 +846,7 @@ try {
 			try {
 				await fa.applyActionCode(auth, B.get("oobCode"));
 			} catch (err) {
-				baglantiHata = true;  // süresi dolmuş ya da daha önce kullanılmış
+				baglantiHata = err && err.code === "auth/expired-action-code";  // daha önce kullanılmışsa uyarı yok
 			}
 		})();
 		// yükleme ekranı kalkınca: giriş yapmamışa hesap penceresi; doğrulanmış ama karakteri bağlı olmayana "Karakterini bul"
