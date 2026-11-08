@@ -52615,12 +52615,12 @@
    "home": "Doğu Banliyö F Blok, Daire 119",
    "home_from": 1792908000,
    "job": [
-    "Konteyner Planlama Uzmanı",
-    "Miniakent Limanı",
-    "area",
-    "liman"
+    "Psikolog",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "liman",
+   "wp": "hastane",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
@@ -183088,7 +183088,7 @@
    "home": "Zeytin Sokağı No 1, Daire 28",
    "home_from": 1794117600,
    "job": [
-    "İnşaat Mühendisi",
+    "Proje Uzmanı",
     "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
     "office",
     "plaza2"
@@ -183341,12 +183341,12 @@
    "home": "Doğu Banliyö F Blok, Daire 96",
    "home_from": 1794117600,
    "job": [
-    "Elektrik-Elektronik Mühendisi",
-    "Miniakent Enerji A.Ş. · Miniakent Plaza, Kat 9",
+    "Emlak Danışmanı",
+    "Miniakent Gayrimenkul · Miniakent Plaza 2, Kat 9",
     "office",
-    "plaza"
+    "plaza2"
    ],
-   "wp": "enerji",
+   "wp": "gayrimenkul",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -183442,7 +183442,7 @@
    "home": "Doğu Banliyö C Blok, Daire 61",
    "home_from": 1794117600,
    "job": [
-    "Diş Hekimi",
+    "Klinik Asistanı",
     "Miniakent Diş Kliniği · Miniakent Plaza 4, Kat 6",
     "office",
     "plaza4"
@@ -183607,7 +183607,7 @@
    "home": "Doğu Banliyö E Blok, Daire 10",
    "home_from": 1794117600,
    "job": [
-    "Makine Mühendisi",
+    "Proje Uzmanı",
     "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
     "office",
     "plaza2"
@@ -183624,7 +183624,7 @@
    "home": "Doğu Banliyö E Blok, Daire 22",
    "home_from": 1794117600,
    "job": [
-    "Stajyer Avukat",
+    "Hukuk Danışmanı",
     "Miniakent Avukatlık Bürosu · Miniakent Plaza 3, Kat 4",
     "office",
     "plaza3"
@@ -184333,7 +184333,7 @@
    "home": "Batı Banliyö B Blok, Daire 77",
    "home_from": 1794117600,
    "job": [
-    "İnşaat Mühendisi",
+    "Proje Uzmanı",
     "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
     "office",
     "plaza2"
@@ -184392,7 +184392,7 @@
    "home": "Batı Banliyö B Blok, Daire 77",
    "home_from": 1794117600,
    "job": [
-    "İnşaat Mühendisi",
+    "Proje Uzmanı",
     "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
     "office",
     "plaza2"
@@ -185227,12 +185227,12 @@
    "home": "Batı Banliyö B Blok, Daire 88",
    "home_from": 1794117600,
    "job": [
-    "Elektrik-Elektronik Mühendisi",
-    "Miniakent Enerji A.Ş. · Miniakent Plaza, Kat 9",
+    "Koreograf",
+    "Miniakent Dans Kursu · Miniakent Plaza 3, Kat 3",
     "office",
-    "plaza"
+    "plaza3"
    ],
-   "wp": "enerji",
+   "wp": "dans",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -185792,7 +185792,7 @@
    "home": "Batı Banliyö B Blok, Daire 95",
    "home_from": 1794117600,
    "job": [
-    "Stajyer Avukat",
+    "Hukuk Danışmanı",
     "Miniakent Avukatlık Bürosu · Miniakent Plaza 3, Kat 4",
     "office",
     "plaza3"
@@ -186159,7 +186159,7 @@
    "home": "Batı Banliyö B Blok, Daire 100",
    "home_from": 1794117600,
    "job": [
-    "Diş Hekimi",
+    "Klinik Asistanı",
     "Miniakent Diş Kliniği · Miniakent Plaza 4, Kat 6",
     "office",
     "plaza4"
@@ -186201,7 +186201,7 @@
    "home": "Batı Banliyö B Blok, Daire 100",
    "home_from": 1794117600,
    "job": [
-    "Makine Mühendisi",
+    "Proje Uzmanı",
     "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
     "office",
     "plaza2"
@@ -186315,7 +186315,7 @@
    "home": "Batı Banliyö B Blok, Daire 102",
    "home_from": 1794117600,
    "job": [
-    "Diş Hekimi",
+    "Klinik Asistanı",
     "Miniakent Diş Kliniği · Miniakent Plaza 4, Kat 6",
     "office",
     "plaza4"
@@ -186505,12 +186505,12 @@
    "home": "Batı Banliyö B Blok, Daire 104",
    "home_from": 1794117600,
    "job": [
-    "Endüstri Mühendisi",
-    "Miniakent Enerji A.Ş. · Miniakent Plaza, Kat 9",
+    "Mali Müşavir",
+    "Miniakent Mali Müşavirlik · Miniakent Plaza 4, Kat 3",
     "office",
-    "plaza"
+    "plaza4"
    ],
-   "wp": "enerji",
+   "wp": "mali",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -186539,7 +186539,7 @@
    "home": "Batı Banliyö B Blok, Daire 104",
    "home_from": 1794117600,
    "job": [
-    "Diş Hekimi",
+    "Diş Teknisyeni",
     "Miniakent Diş Kliniği · Miniakent Plaza 4, Kat 6",
     "office",
     "plaza4"
@@ -186640,7 +186640,7 @@
    "home": "Batı Banliyö B Blok, Daire 106",
    "home_from": 1794117600,
    "job": [
-    "Stajyer Avukat",
+    "Hukuk Danışmanı",
     "Miniakent Avukatlık Bürosu · Miniakent Plaza 3, Kat 4",
     "office",
     "plaza3"
@@ -187112,7 +187112,7 @@
    "home": "Batı Banliyö B Blok, Daire 111",
    "home_from": 1794117600,
    "job": [
-    "Diş Hekimi",
+    "Klinik Asistanı",
     "Miniakent Diş Kliniği · Miniakent Plaza 4, Kat 6",
     "office",
     "plaza4"
@@ -187513,7 +187513,7 @@
    "home": "Batı Banliyö B Blok, Daire 117",
    "home_from": 1794117600,
    "job": [
-    "Makine Mühendisi",
+    "Proje Uzmanı",
     "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
     "office",
     "plaza2"
@@ -187720,7 +187720,7 @@
    "home": "Batı Banliyö B Blok, Daire 119",
    "home_from": 1794117600,
    "job": [
-    "Avukat",
+    "Hukuk Danışmanı",
     "Miniakent Avukatlık Bürosu · Miniakent Plaza 3, Kat 4",
     "office",
     "plaza3"
@@ -187741,7 +187741,7 @@
    "home": "Batı Banliyö B Blok, Daire 120",
    "home_from": 1794117600,
    "job": [
-    "Diş Hekimi",
+    "Klinik Asistanı",
     "Miniakent Diş Kliniği · Miniakent Plaza 4, Kat 6",
     "office",
     "plaza4"
@@ -187960,7 +187960,7 @@
    "home": "Batı Banliyö B Blok, Daire 122",
    "home_from": 1794117600,
    "job": [
-    "Avukat",
+    "Hukuk Danışmanı",
     "Miniakent Avukatlık Bürosu · Miniakent Plaza 3, Kat 4",
     "office",
     "plaza3"
@@ -188432,7 +188432,7 @@
    "home": "Batı Banliyö B Blok, Daire 128",
    "home_from": 1794117600,
    "job": [
-    "İnşaat Mühendisi",
+    "Proje Uzmanı",
     "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
     "office",
     "plaza2"
@@ -188588,12 +188588,12 @@
    "home": "Batı Banliyö B Blok, Daire 130",
    "home_from": 1794117600,
    "job": [
-    "Elektrik-Elektronik Mühendisi",
-    "Miniakent Enerji A.Ş. · Miniakent Plaza, Kat 9",
+    "Sosyal Medya Uzmanı",
+    "Miniakent Reklam Ajansı · Miniakent Plaza 4, Kat 2",
     "office",
-    "plaza"
+    "plaza4"
    ],
-   "wp": "enerji",
+   "wp": "reklam",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -188719,12 +188719,12 @@
    "home": "Batı Banliyö B Blok, Daire 131",
    "home_from": 1794117600,
    "job": [
-    "Elektrik-Elektronik Mühendisi",
-    "Miniakent Enerji A.Ş. · Miniakent Plaza, Kat 9",
+    "Yazılımcı",
+    "Miniakent Beta Yazılım A.Ş. · Miniakent Plaza 3, Kat 5",
     "office",
-    "plaza"
+    "plaza3"
    ],
-   "wp": "enerji",
+   "wp": "beta_yazilim",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -188757,7 +188757,7 @@
    "home": "Batı Banliyö B Blok, Daire 132",
    "home_from": 1794117600,
    "job": [
-    "Stajyer Avukat",
+    "Hukuk Danışmanı",
     "Miniakent Avukatlık Bürosu · Miniakent Plaza 3, Kat 4",
     "office",
     "plaza3"
@@ -188998,7 +188998,7 @@
    "home": "Batı Banliyö B Blok, Daire 135",
    "home_from": 1794117600,
    "job": [
-    "Doktor",
+    "Diş Teknisyeni",
     "Miniakent Sağlık Merkezi · Miniakent Plaza, Kat 2",
     "office",
     "plaza"
@@ -189145,12 +189145,12 @@
    "home": "Batı Banliyö B Blok, Daire 137",
    "home_from": 1794117600,
    "job": [
-    "Endüstri Mühendisi",
-    "Miniakent Enerji A.Ş. · Miniakent Plaza, Kat 9",
+    "Koreograf",
+    "Miniakent Dans Kursu · Miniakent Plaza 3, Kat 3",
     "office",
-    "plaza"
+    "plaza3"
    ],
-   "wp": "enerji",
+   "wp": "dans",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -189368,7 +189368,7 @@
    "home": "Batı Banliyö B Blok, Daire 139",
    "home_from": 1794117600,
    "job": [
-    "Avukat",
+    "Hukuk Danışmanı",
     "Miniakent Hukuk Bürosu · Miniakent Plaza, Kat 6",
     "office",
     "plaza"
@@ -189630,7 +189630,7 @@
    "home": "Batı Banliyö B Blok, Daire 143",
    "home_from": 1794117600,
    "job": [
-    "İnşaat Mühendisi",
+    "Proje Uzmanı",
     "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
     "office",
     "plaza2"
@@ -189992,7 +189992,7 @@
    "home": "Batı Banliyö D Blok, Daire 16",
    "home_from": 1794117600,
    "job": [
-    "Avukat",
+    "Hukuk Danışmanı",
     "Miniakent Hukuk Bürosu · Miniakent Plaza, Kat 6",
     "office",
     "plaza"
@@ -190451,12 +190451,12 @@
    "home": "Batı Banliyö D Blok, Daire 22",
    "home_from": 1794117600,
    "job": [
-    "Elektrik-Elektronik Mühendisi",
-    "Miniakent Enerji A.Ş. · Miniakent Plaza, Kat 9",
+    "Ressam",
+    "Miniakent Sanat Atölyesi · Miniakent Plaza 3, Kat 10",
     "office",
-    "plaza"
+    "plaza3"
    ],
-   "wp": "enerji",
+   "wp": "sanat",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -190510,12 +190510,12 @@
    "home": "Batı Banliyö D Blok, Daire 23",
    "home_from": 1794117600,
    "job": [
-    "Elektrik-Elektronik Mühendisi",
-    "Miniakent Enerji A.Ş. · Miniakent Plaza, Kat 9",
+    "Emlak Danışmanı",
+    "Miniakent Ticaret A.Ş. · Miniakent Plaza, Kat 10",
     "office",
     "plaza"
    ],
-   "wp": "enerji",
+   "wp": "ticaret",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -190590,12 +190590,12 @@
    "home": "Batı Banliyö D Blok, Daire 24",
    "home_from": 1794117600,
    "job": [
-    "Endüstri Mühendisi",
-    "Miniakent Enerji A.Ş. · Miniakent Plaza, Kat 9",
+    "Gitar Öğretmeni",
+    "Miniakent Müzik Kursu · Miniakent Plaza 3, Kat 2",
     "office",
-    "plaza"
+    "plaza3"
    ],
-   "wp": "enerji",
+   "wp": "muzik",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0
@@ -190704,7 +190704,7 @@
    "home": "Batı Banliyö D Blok, Daire 25",
    "home_from": 1794117600,
    "job": [
-    "Avukat",
+    "Hukuk Danışmanı",
     "Miniakent Hukuk Bürosu · Miniakent Plaza, Kat 6",
     "office",
     "plaza"
@@ -191034,7 +191034,7 @@
    "home": "Batı Banliyö D Blok, Daire 30",
    "home_from": 1794117600,
    "job": [
-    "Avukat",
+    "Hukuk Danışmanı",
     "Miniakent Avukatlık Bürosu · Miniakent Plaza 3, Kat 4",
     "office",
     "plaza3"
@@ -191211,7 +191211,7 @@
    "home": "Batı Banliyö D Blok, Daire 32",
    "home_from": 1794117600,
    "job": [
-    "İnşaat Mühendisi",
+    "Proje Uzmanı",
     "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
     "office",
     "plaza2"
@@ -191245,12 +191245,12 @@
    "home": "Batı Banliyö D Blok, Daire 32",
    "home_from": 1794117600,
    "job": [
-    "Endüstri Mühendisi",
-    "Miniakent Enerji A.Ş. · Miniakent Plaza, Kat 9",
+    "Editör",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
     "office",
-    "plaza"
+    "plaza3"
    ],
-   "wp": "enerji",
+   "wp": "gazete",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -191477,12 +191477,12 @@
    "home": "Batı Banliyö D Blok, Daire 35",
    "home_from": 1794117600,
    "job": [
-    "Elektrik-Elektronik Mühendisi",
-    "Miniakent Enerji A.Ş. · Miniakent Plaza, Kat 9",
+    "Yönetici Asistanı",
+    "Miniakent Holding · Miniakent Plaza 4, Kat 12",
     "office",
-    "plaza"
+    "plaza4"
    ],
-   "wp": "enerji",
+   "wp": "holding",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0
