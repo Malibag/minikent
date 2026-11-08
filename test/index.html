@@ -581,9 +581,10 @@ try {
 #kontrol h2 { margin: 0; font-size: 19px; text-align: center; }
 #kontrol .kim { margin: 2px 0 14px; font-size: 14px; color: #776d60; text-align: center; }
 #kontrol .kapat { position: absolute; top: 8px; right: 10px; border: 0; background: none; font-size: 24px; color: #776d60; cursor: pointer; }
-#kontrol .sekme { display: flex; gap: 6px; margin-bottom: 14px; }
-#kontrol .sekme button { flex: 1; padding: 8px; border: 1px solid #2a2620; border-radius: 10px; background: none; color: #2a2620; font-size: 14px; cursor: pointer; }
-#kontrol .sekme button.secili { background: #2a2620; color: #faf5eb; }
+#kontrol .alt { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 12px; padding-top: 14px;
+	border-top: 1px dashed #cfc5b4; font-size: 14px; color: #776d60; }
+#kontrol .alt .kayit { padding: 8px 18px; border: 1px solid #2a2620; border-radius: 10px; background: none; color: #2a2620; font-size: 14px; cursor: pointer; }
+#kontrol .simdilik { display: block; margin: 14px auto 0; border: 0; background: none; color: #776d60; font-size: 14px; font-weight: 600; cursor: pointer; }
 #kontrol label { display: block; margin: 8px 0 4px; font-size: 13px; color: #776d60; }
 #kontrol input { width: 100%; box-sizing: border-box; padding: 10px; border: 1px solid #cfc5b4; border-radius: 10px; font-size: 16px; background: #fff; color: #2a2620; }
 #kontrol .gonder { width: 100%; margin-top: 16px; padding: 11px; border: 0; border-radius: 12px; background: #2a2620; color: #faf5eb; font-size: 15px; cursor: pointer; }
@@ -602,15 +603,14 @@ try {
 		pen.hidden = true;
 		pen.innerHTML = `<form class="kutu" novalidate>
 	<button type="button" class="kapat" aria-label="Kapat">×</button>
-	<h2>Kontrolü Al</h2>
+	<h2></h2>
 	<div class="kim"></div>
 	<div class="giris">
-	<div class="sekme"><button type="button" data-mod="kayit">Kayıt Ol</button><button type="button" data-mod="giris">Giriş Yap</button></div>
 	<label for="kontrol-eposta">E-posta</label>
 	<input id="kontrol-eposta" type="email" autocomplete="email" required>
 	<label for="kontrol-sifre">Şifre</label>
-	<input id="kontrol-sifre" type="password" required>
-	<button type="submit" class="gonder"></button>
+	<input id="kontrol-sifre" type="password" autocomplete="current-password" required>
+	<button type="submit" class="gonder">Giriş Yap</button>
 	<button type="button" class="unuttum">Şifremi unuttum</button>
 	</div>
 	<div class="dogrula" hidden>
@@ -620,24 +620,21 @@ try {
 		<p class="not">Kod 24 saat geçerli. Mesajı gönderdikten sonra karakterin birkaç dakika içinde hesabına bağlanır. Bu pencereyi kapatabilirsin.</p>
 	</div>
 	<div class="mesaj" role="status"></div>
+	<div class="giris-alt">
+		<div class="alt"><span>Hesabın yok mu?</span><button type="button" class="kayit">Kayıt Ol</button></div>
+		<button type="button" class="simdilik">Şimdilik geç</button>
+	</div>
 </form>`;
 		document.body.appendChild(pen);
 		const q = (s) => pen.querySelector(s);
 		const eposta = q("#kontrol-eposta");
 		const sifre = q("#kontrol-sifre");
 		const gonder = q(".gonder");
+		const kayitDugme = q(".kayit");
 		const mesaj = q(".mesaj");
-		let mod = "kayit";
-		let aday = "";
+		let aday = "";   // boşsa hesap penceresi (Giriş Yap), doluysa o karakter için Kontrolü Al
+		let bekle = null;
 		const yaz = (t, hata) => { mesaj.textContent = t; mesaj.classList.toggle("hata", !!hata); };
-		const modSec = (m) => {
-			mod = m;
-			pen.querySelectorAll(".sekme button").forEach((b) => b.classList.toggle("secili", b.dataset.mod === m));
-			gonder.textContent = m === "kayit" ? "Kayıt Ol" : "Giriş Yap";
-			sifre.autocomplete = m === "kayit" ? "new-password" : "current-password";
-			q(".unuttum").hidden = m === "kayit";
-			yaz("");
-		};
 		const HATA = {
 			"auth/invalid-credential": "E-posta ya da şifre yanlış.",
 			"auth/wrong-password": "E-posta ya da şifre yanlış.",
@@ -649,32 +646,46 @@ try {
 			"auth/too-many-requests": "Çok fazla deneme yapıldı, biraz sonra tekrar dene.",
 		};
 		const hata = (e) => yaz(HATA[e && e.code] || "Bir sorun çıktı, tekrar dene.", true);
-		const kapat = () => { pen.hidden = true; };
-		pen.querySelectorAll(".sekme button").forEach((b) => b.addEventListener("click", () => modSec(b.dataset.mod)));
+		const kapat = () => { pen.hidden = true; clearInterval(bekle); };
 		q(".kapat").addEventListener("click", kapat);
+		q(".simdilik").addEventListener("click", kapat);
 		pen.addEventListener("click", (e) => { if (e.target === pen) kapat(); });
-		q("form").addEventListener("submit", async (e) => {
-			e.preventDefault();
-			gonder.disabled = true;
+		// doğrulama bağlantısına başka sekmede ya da telefonda basılınca pencere kendiliğinden ilerler
+		const dogrulamaBekle = () => {
+			clearInterval(bekle);
+			bekle = setInterval(async () => {
+				const u = auth.currentUser;
+				if (!u || pen.hidden) { clearInterval(bekle); return; }
+				try { await u.reload(); } catch (err) { return; }
+				if (u.emailVerified) { clearInterval(bekle); tamam(u).catch(hata); }
+			}, 4000);
+		};
+		// Giriş Yap (form) ve altta ayrı duran Kayıt Ol aynı e-posta ve şifreyi kullanır (kullanıcı, 2026-11-08)
+		const gir = async (kayit) => {
+			gonder.disabled = kayitDugme.disabled = true;
 			yaz("");
 			try {
-				const k = mod === "kayit"
+				const k = kayit
 					? await fa.createUserWithEmailAndPassword(auth, eposta.value.trim(), sifre.value)
 					: await fa.signInWithEmailAndPassword(auth, eposta.value.trim(), sifre.value);
-				if (mod === "kayit") {
+				if (kayit) {
 					await fa.sendEmailVerification(k.user);
 					yaz("Doğrulama bağlantısını e-postana gönderdik.");
+					dogrulamaBekle();
 				} else if (!k.user.emailVerified) {
 					await fa.sendEmailVerification(k.user);  // doğrulanmamış girişte bağlantı yeniden gider (2026-11-05)
 					yaz("E-postan henüz doğrulanmadı, yeni doğrulama bağlantısını gönderdik.");
+					dogrulamaBekle();
 				} else {
-					await baglan(k.user);
+					await tamam(k.user);
 				}
 			} catch (err) {
 				hata(err);
 			}
-			gonder.disabled = false;
-		});
+			gonder.disabled = kayitDugme.disabled = false;
+		};
+		q("form").addEventListener("submit", (e) => { e.preventDefault(); gir(false); });
+		kayitDugme.addEventListener("click", () => gir(true));
 		q(".unuttum").addEventListener("click", async () => {
 			if (!eposta.value.trim()) {
 				yaz("Önce e-postanı yaz.", true);
@@ -705,25 +716,52 @@ try {
 			yaz("Doğrulandı. Karakterin artık senin.");
 			setTimeout(kapat, 1500);
 		};
+		// e-postası doğrulanmış oyuncu: kartta açıldıysa Instagram koduna geçilir; hesap penceresindeyse, karakteri
+		// bağlı değilse ne yapacağı söylenir ve pencere kapanır (kullanıcı, 2026-11-08)
+		const tamam = async (u) => {
+			await u.getIdToken(true);
+			oturum();
+			if (aday) { await baglan(u); return; }
+			if ((await get(ref(db, "oyuncu/" + u.uid + "/karakter"))).val()) { kapat(); return; }
+			q(".giris").hidden = q(".giris-alt").hidden = true;
+			yaz("E-postan doğrulandı. Arama kutusuna Instagram adını yaz, karakterine dokun, Kontrolü Al'a bas.");
+			setTimeout(kapat, 7000);
+		};
+		// h boşsa hesap penceresi (yükleme sonrası ve profil menüsünden), doluysa o karakterin Kontrolü Al penceresi
 		window.miniakentKontrolAc = async (h) => {
-			aday = h;
-			q(".kim").textContent = h;
+			aday = h || "";
+			q("h2").textContent = aday ? "Kontrolü Al" : "Giriş Yap";
+			q(".kim").textContent = aday;
+			q(".kim").hidden = !aday;
 			sifre.value = "";
-			q(".giris").hidden = false;
+			q(".giris").hidden = q(".giris-alt").hidden = false;
+			q(".simdilik").hidden = !!aday;
 			q(".dogrula").hidden = true;
-			modSec("kayit");
+			yaz("");
 			pen.hidden = false;
 			const u = auth.currentUser;
-			if (u) {  // zaten girişli: e-postası doğrulandıysa doğrudan Instagram koduna geçilir
+			if (u) {  // zaten girişli: e-postası doğrulandıysa doğrudan ilerler, değilse doğrulama beklenir
+				eposta.value = u.email || "";
 				try {
 					await u.reload();
-					if (u.emailVerified) await baglan(u);
+					if (u.emailVerified) await tamam(u);
+					else dogrulamaBekle();
 				} catch (err) {
 					hata(err);
 				}
 				return;
 			}
-			eposta.focus();
+			if (aday) eposta.focus();
+		};
+		// yükleme ekranı kalkınca: giriş yapmamış ya da e-postasını doğrulamamış ziyaretçiye hesap penceresi
+		window.miniakentGirisAc = async () => {
+			await auth.authStateReady();
+			const u = auth.currentUser;
+			if (u) {
+				try { await u.reload(); } catch (err) {}
+				if (u.emailVerified) return;
+			}
+			window.miniakentKontrolAc("");
 		};
 		window.miniakentAyril = () => fa.signOut(auth);
 		// beta kartlarındaki tik: "lacivert" (Premium), "sari" (Instagram'la doğrulanmış) ya da ""
@@ -897,6 +935,9 @@ body.gece #mkb { --krem: #22304f; --krem2: #2c3b5e; --yazi: #fbe9cb; --kenar: #0
 #mkb .anahtar[aria-checked="true"] i::after { left: 24px; }
 #mkb .anahtar:disabled { opacity: .5; cursor: default; }
 #mkb .ayarlar hr { border: 0; border-top: 2px dashed var(--kum); margin: 0; }
+#mkb .profil { display: flex; flex-direction: column; gap: 2px; }
+#mkb .profil b { font: 600 16px var(--fb); overflow-wrap: anywhere; }
+#mkb .profil small { color: var(--soluk); font-size: 13px; font-weight: 700; }
 #mkb .ayril { display: flex; flex-direction: column; gap: 2px; text-align: left; padding: 8px 12px; border-radius: 12px; border: 2px solid var(--kenar); background: transparent; }
 #mkb .ayril b { font: 600 16px var(--fb); }
 #mkb .ayril small { color: var(--soluk); font-size: 12px; }
@@ -933,6 +974,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		ses: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16.5 8.5a5 5 0 0 1 0 7"/></svg>',
 		sessiz: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16 9l5 6M21 9l-5 6"/></svg>',
 		disli: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.6 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>',
+		kisi: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg>',
 		buyut: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></svg>',
 		kapat: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>',
 		ok: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>',
@@ -948,7 +990,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	kok.hidden = true;
 	kok.innerHTML = `
 <div class="ust"><div class="serit"><span id="mkb-nufus"></span><span class="saat" id="mkb-saat"></span></div>
-	<button class="yuvarlak" id="mkb-disli" aria-label="Ayarlar" aria-expanded="false">${SVG.disli}</button></div>
+	<button class="yuvarlak" id="mkb-disli" aria-label="Profil" aria-expanded="false">${SVG.kisi}</button></div>
 <div class="ust2"><form class="arama" id="mkb-arama"><input id="mkb-ara" type="search" placeholder="Sakinini bul: @kullanıcıadı" autocomplete="off"
 	autocapitalize="none" spellcheck="false" enterkeyhint="search" aria-label="Sakinini bul"><button class="cip" type="submit">Bul</button></form>
 	<button class="cip" id="mkb-bolgeler">Bölgeler</button></div>
@@ -970,12 +1012,15 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	<div class="icerik" id="mkb-icerik"></div>
 </section>
 <section class="ayarlar" id="mkb-ayarlar" hidden>
+	<div class="ikili" id="mkb-p-giris"><button class="evet" data-giris="1">Giriş Yap</button><button class="hayir" data-giris="1">Kayıt Ol</button></div>
+	<div class="profil" id="mkb-p-hesap" hidden><b id="mkb-p-eposta"></b><small id="mkb-p-karakter"></small></div>
+	<hr>
 	<h2>Ayarlar</h2>
 	<button class="anahtar" role="switch" aria-checked="false" id="mkb-a-kumanda"><b>Kumanda</b><small>Ekranın sağ altında yön kumandası</small><i></i></button>
 	<hr id="mkb-a-cizgi">
 	<button class="anahtar" role="switch" aria-checked="false" disabled><b>Lite sürüm</b><small>Telefon için hafif görünüm · yakında</small><i></i></button>
 	<hr id="mkb-a-cizgi2">
-	<button class="ayril" id="mkb-ayril"><b>Ayrıl</b><small>Karakterin otomatik moda döner</small></button>
+	<button class="ayril" id="mkb-ayril"><b>Çıkış Yap</b><small id="mkb-ayril-not">Karakterin otomatik moda döner</small></button>
 </section>
 <div class="takip" id="mkb-takip" hidden><span class="kim-ad" id="mkb-takip-ad"></span>
 	<div class="dugmeler"><button id="mkb-goz">Gözünden gör</button><button class="koyu" id="mkb-birak">Takibi bırak</button></div></div>
@@ -1016,7 +1061,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	const kaydet = () => { try { localStorage.setItem("miniakent_beta_ornek", JSON.stringify(st)); } catch (e) {} };
 	const kiraOf = (a) => /Banliy/.test(a) ? 150 : /Koyu|Köy/.test(a) ? 300 : /Sokağı/.test(a) ? 250 : 400;
 
-	let bilgi = null, karakter = "", sayfaAd = "", kumandaAcik = false, sekme = 0, bekleyen = null, takipVar = false;
+	let bilgi = null, karakter = "", eposta = "", sayfaAd = "", kumandaAcik = false, sekme = 0, bekleyen = null, takipVar = false;
 	let uye = { premium: false, seri: 0, gun: 0 };   // girişteki Firebase kaydından (miniakentOturum)
 	try { kumandaAcik = localStorage.getItem("miniakent_kumanda") === "1"; } catch (e) {}
 	const isim = () => st.is || { meslek: (bilgi && bilgi.meslek) || "—", yer: (bilgi && bilgi.isyeri) || "", grup: "Uzman", ucret: 220 };
@@ -1196,7 +1241,14 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		for (const s of $("mkb-ray").children) s.setAttribute("aria-selected", String(s.dataset.ad === sayfaAd));
 		$("mkb-a-kumanda").hidden = $("mkb-a-cizgi").hidden = !tel;
 		$("mkb-a-kumanda").setAttribute("aria-checked", String(kumandaAcik));
-		$("mkb-ayril").hidden = $("mkb-a-cizgi2").hidden = !karakter;
+		// profil menüsü: girişsizken Giriş Yap / Kayıt Ol, girişliyken e-posta ve karakter, en altta Çıkış Yap (kullanıcı, 2026-11-08)
+		$("mkb-p-giris").hidden = !!eposta;
+		$("mkb-p-hesap").hidden = !eposta;
+		$("mkb-p-eposta").textContent = eposta;
+		$("mkb-p-karakter").textContent = karakter;
+		$("mkb-p-karakter").hidden = !karakter;
+		$("mkb-ayril").hidden = $("mkb-a-cizgi2").hidden = !eposta;
+		$("mkb-ayril-not").hidden = !karakter;
 		if (window.miniakentArayuz) window.miniakentArayuz(tel && kumandaAcik && !tam, takipVar ? 84 : 0);
 	}
 	function ac(ad) {
@@ -1244,6 +1296,12 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		kumandaAcik = !kumandaAcik;
 		try { localStorage.setItem("miniakent_kumanda", kumandaAcik ? "1" : "0"); } catch (e) {}
 		arayuz();
+	});
+	$("mkb-p-giris").addEventListener("click", (e) => {
+		if (!e.target.closest("button")) return;
+		$("mkb-ayarlar").hidden = true;
+		$("mkb-disli").setAttribute("aria-expanded", "false");
+		window.miniakentKontrolAc && window.miniakentKontrolAc("");
 	});
 	$("mkb-ayril").addEventListener("click", () => {
 		$("mkb-ayarlar").hidden = true;
@@ -1388,6 +1446,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			try { o = JSON.parse(sonOturum || "{}"); } catch (e) {}
 			const yeniKarakter = !karakter && o.karakter;
 			karakter = o.karakter || "";
+			eposta = o.eposta || "";
 			uye = { premium: !!o.premium, seri: o.seri || 0, gun: o.gun || 0 };
 			$("mkb-harf").textContent = karakter.replace(/^@/, "").charAt(0).toUpperCase();
 			if (!karakter && sayfaAd !== "sakin") kapat();
@@ -1488,6 +1547,7 @@ const engine = new Engine(GODOT_CONFIG);
 			const kaldir = function () {
 				yukleme.classList.add('bitti');  // ev çubuğun ucuna varınca ekran kaybolur
 				setTimeout(function () { yukleme.remove(); }, 700);
+				if (window.miniakentGirisAc) window.miniakentGirisAc();  // ardından hesap penceresi (kullanıcı, 2026-11-08)
 			};
 			// betadaki yükleme tanıtımı açıksa ekran "Şehre gir"e basılınca kalkar
 			if (!(window.miniakentYuklemeTanitim && window.miniakentYuklemeTanitim(kaldir))) {
