@@ -197,12 +197,12 @@
    "home": "Defne Sokağı No 4, Daire 1",
    "home_from": 1792648800,
    "job": [
-    "İşsiz",
-    "—",
-    "none",
-    ""
+    "Elektrik-Elektronik Mühendisi",
+    "Miniakent Enerji A.Ş. · Miniakent Plaza, Kat 9",
+    "office",
+    "plaza"
    ],
-   "wp": "",
+   "wp": "enerji",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -369,12 +369,12 @@
    "home": "Defne Sokağı No 4, Daire 2",
    "home_from": 1792648800,
    "job": [
-    "Psikolog",
-    "Miniakent Sağlık Merkezi · Miniakent Plaza, Kat 2",
-    "office",
-    "plaza"
+    "Öğretmen",
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "saglik",
+   "wp": "kolej",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -509,12 +509,12 @@
    "home": "Çınar Sokağı No 3, Daire 3",
    "home_from": 1792648800,
    "job": [
-    "Grafik Tasarımcı",
-    "Miniakent Tasarım Stüdyosu · Miniakent Plaza, Kat 8",
-    "office",
-    "plaza"
+    "Çocuk Gelişimi Uzmanı",
+    "Miniakent Devlet Hastanesi",
+    "shop",
+    "hastane"
    ],
-   "wp": "tasarim",
+   "wp": "hastane",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -5549,7 +5549,7 @@
    "home": "Defne Sokağı No 6, Daire 10",
    "home_from": 1792735200,
    "job": [
-    "Bakım Teknisyeni",
+    "Elektrik Mühendisi",
     "Miniakent Fabrikası 2 · Sanayi Bölgesi",
     "shop",
     "fabrika_b"
@@ -29379,12 +29379,12 @@
    "home": "Kıyı Caddesi No 12, Daire 4",
    "home_from": 1792821600,
    "job": [
-    "Müşteri Hizmetleri Uzmanı",
-    "Miniakent E-Ticaret A.Ş. · Miniakent Plaza 2, Kat 8",
+    "Yazılımcı",
+    "Miniakent Gama Yazılım A.Ş. · Miniakent Plaza 4, Kat 4",
     "office",
-    "plaza2"
+    "plaza4"
    ],
-   "wp": "eticaret",
+   "wp": "gama_yazilim",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -104327,12 +104327,12 @@
    "home": "Begonvil Sokağı No 15, Daire 7",
    "home_from": 1793340000,
    "job": [
-    "Pazarlama Uzmanı",
-    "Miniakent Bankası",
+    "Elektrik-Elektronik Mühendisi",
+    "Miniakent Enerji A.Ş. · Miniakent Plaza, Kat 9",
     "office",
-    "banka"
+    "plaza"
    ],
-   "wp": "banka",
+   "wp": "enerji",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -181161,12 +181161,12 @@
    "home": "Batı Banliyö D Blok, Daire 5",
    "home_from": 1794031200,
    "job": [
-    "Kalıpçı",
-    "Miniakent Yapı Mühendislik A.Ş. · Miniakent Arena şantiyesi",
-    "area",
-    "site"
+    "Banka Memuru",
+    "Miniakent Bankası",
+    "office",
+    "banka"
    ],
-   "wp": "santiye",
+   "wp": "banka",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
