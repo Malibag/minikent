@@ -1290,6 +1290,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	<button class="cip" id="mkb-bolgeler">Bölgeler</button></div>
 <button class="yuvarlak ses-alt" id="mkb-ses" aria-label="Ses"></button>
 <div class="cevrim" id="mkb-cevrim" hidden></div>
+<div class="cevrim" id="mkb-fps" style="top: calc(114px + env(safe-area-inset-top, 0px))" hidden></div>
 <div class="mkb-liste" id="mkb-oneri" hidden></div>
 <div class="mkb-liste" id="mkb-bolge" hidden></div>
 <div class="ray" id="mkb-ray" role="tablist" aria-label="Karakterim" hidden>
@@ -1753,6 +1754,9 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		const n = window.miniakentCevrimici;
 		$("mkb-cevrim").hidden = !(n >= 1);
 		$("mkb-cevrim").textContent = "Çevrimiçi: " + n;
+		// kare hızı (yalnız test sayfası; kullanıcı, 2026-11-09: Lite açık/kapalı farkı telefonda görülsün)
+		$("mkb-fps").hidden = !(hud.fps >= 0);
+		$("mkb-fps").textContent = "Kare hızı: " + Math.round(hud.fps) + (window.miniakentLiteAcik ? " · Lite" : "");
 		// takip edilen kişi: altta "Gözünden gör" ve "Takibi bırak"
 		if (!!hud.takip !== takipVar) { takipVar = !!hud.takip; arayuz(); }
 		$("mkb-takip").hidden = !takipVar;
@@ -1785,7 +1789,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611090225.pck","fileSizes":{"test/index-test-v202611090225.pck":6215956,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611090247.pck","fileSizes":{"test/index-test-v202611090247.pck":6215924,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
