@@ -595,7 +595,9 @@ try {
 #kontrol .mesaj { min-height: 18px; margin-top: 10px; font-size: 13px; text-align: center; }
 #kontrol .mesaj.hata { color: #b23b2e; }
 #kontrol .dogrula p { margin: 0 0 12px; font-size: 14px; line-height: 1.45; text-align: center; }
-#kontrol .dogrula .kod { margin-bottom: 4px; padding: 10px; border: 2px dashed #cfc5b4; border-radius: 12px; text-align: center;
+#kontrol .kod-satir { display: flex; gap: 8px; margin-bottom: 4px; }
+#kontrol .kopyala { flex: none; padding: 0 14px; border: 1px solid #2a2620; border-radius: 12px; background: none; color: #2a2620; font-size: 14px; cursor: pointer; }
+#kontrol .dogrula .kod { flex: 1; padding: 10px; border: 2px dashed #cfc5b4; border-radius: 12px; text-align: center;
 	font: 700 30px ui-monospace, Menlo, Consolas, monospace; letter-spacing: .2em; user-select: all; }
 #kontrol a.gonder { display: block; box-sizing: border-box; text-align: center; text-decoration: none; }
 #kontrol .dogrula .not { margin: 12px 0 0; font-size: 12.5px; color: #776d60; }`;
@@ -617,7 +619,7 @@ try {
 	</div>
 	<div class="dogrula" hidden>
 		<p>Son adım: Instagram'da <b>@miniakent</b> hesabına özelden bu kodu yaz.</p>
-		<div class="kod"></div>
+		<div class="kod-satir"><div class="kod"></div><button type="button" class="kopyala">Kopyala</button></div>
 		<a class="gonder" href="https://ig.me/m/miniakent" target="_blank" rel="noopener">Instagram'da mesaj yaz</a>
 		<p class="not">Kod 24 saat geçerli. Mesajı gönderdikten sonra karakterin birkaç dakika içinde hesabına bağlanır. Bu pencereyi kapatabilirsin.</p>
 	</div>
@@ -651,6 +653,21 @@ try {
 		const kapat = () => { pen.hidden = true; clearInterval(bekle); };
 		q(".kapat").addEventListener("click", kapat);
 		q(".simdilik").addEventListener("click", kapat);
+		// kodun yanında Kopyala; kopyalanınca kısa süre tik görünür (kullanıcı, 2026-11-08)
+		q(".kopyala").addEventListener("click", async () => {
+			const b = q(".kopyala"), kod = q(".kod").textContent;
+			try {
+				await navigator.clipboard.writeText(kod);
+			} catch (err) {  // pano izni yoksa: kodu seçip eski yolla kopyala
+				const r = document.createRange();
+				r.selectNodeContents(q(".kod"));
+				getSelection().removeAllRanges();
+				getSelection().addRange(r);
+				document.execCommand("copy");
+			}
+			b.textContent = "✓";
+			setTimeout(() => { b.textContent = "Kopyala"; }, 1500);
+		});
 		pen.addEventListener("click", (e) => { if (e.target === pen) kapat(); });
 		// doğrulama bağlantısına başka sekmede ya da telefonda basılınca pencere kendiliğinden ilerler
 		const dogrulamaBekle = () => {
