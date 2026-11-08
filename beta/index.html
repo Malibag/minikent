@@ -244,6 +244,213 @@ function gtag() { dataLayer.push(arguments); }
 	document.getElementById('ev-resim').src = 'yukleme_ev_' + zaman + '.webp';
 }());
 		</script>
+		<script>
+// Yükleme tanıtımı (kullanıcı, 2026-11-08; şimdilik yalnız betada): oyun inerken 6 kart, İleri / Geç. Sıra kişinin yolu:
+// takip et → gece treniyle gel → şehirde yaşa → kendini bul → peşinden git → sen de gel. Oyun hazır olunca ekran kendiliğinden
+// kalkmaz, "Şehre gir" çıkar. Hareketler yalnız HTML öğelerinde transform/opacity: motor açılırken sayfa betiği dursa da
+// tarayıcı bunları çizmeye devam eder (SVG içi hareket durur, o yüzden çizimler kıpırdayan kutuların içinde).
+if (window.miniakentBeta) (function () {
+	const ADAM = '<svg viewBox="0 0 14 28" width="14" height="28"><circle cx="7" cy="5" r="4.2" fill="#f1c9a0" stroke="#162132" stroke-width="1.6"/><rect x="2" y="10" width="10" height="11" rx="3" fill="#b87449" stroke="#162132" stroke-width="1.6"/><rect x="3" y="20" width="3" height="7.5" rx="1.5" fill="#162132"/><rect x="8" y="20" width="3" height="7.5" rx="1.5" fill="#162132"/></svg>';
+	const TREN = '<svg viewBox="0 0 130 44" width="130" height="44"><rect x="12" y="2" width="8" height="10" rx="2" fill="#162132"/><rect x="4" y="10" width="54" height="26" rx="8" fill="#b87449" stroke="#162132" stroke-width="2.5"/><rect x="36" y="4" width="20" height="10" rx="3" fill="#b87449" stroke="#162132" stroke-width="2.5"/><rect x="38" y="16" width="13" height="9" rx="2" fill="#fbe9cb" stroke="#162132" stroke-width="2"/><rect x="62" y="10" width="64" height="26" rx="6" fill="#629fa3" stroke="#162132" stroke-width="2.5"/><rect x="69" y="16" width="14" height="9" rx="2" fill="#fbe9cb" stroke="#162132" stroke-width="2"/><rect x="87" y="16" width="14" height="9" rx="2" fill="#fbe9cb" stroke="#162132" stroke-width="2"/><rect x="105" y="16" width="14" height="9" rx="2" fill="#fbe9cb" stroke="#162132" stroke-width="2"/><circle cx="18" cy="38" r="5" fill="#162132"/><circle cx="44" cy="38" r="5" fill="#162132"/><circle cx="76" cy="38" r="5" fill="#162132"/><circle cx="112" cy="38" r="5" fill="#162132"/></svg>';
+	const EV = '<svg viewBox="0 0 40 38" width="40" height="38"><polygon points="2,18 20,3 38,18" fill="#b87449" stroke="#162132" stroke-width="2.5" stroke-linejoin="round"/><rect x="6" y="17" width="28" height="19" fill="#e0c9af" stroke="#162132" stroke-width="2.5"/><rect x="16" y="24" width="8" height="12" fill="#162132"/></svg>';
+	const IS = '<svg viewBox="0 0 34 58" width="34" height="58"><rect x="2" y="2" width="30" height="54" rx="3" fill="#629fa3" stroke="#162132" stroke-width="2.5"/><rect x="8" y="9" width="6" height="6" fill="#fbe9cb"/><rect x="20" y="9" width="6" height="6" fill="#fbe9cb"/><rect x="8" y="21" width="6" height="6" fill="#fbe9cb"/><rect x="20" y="21" width="6" height="6" fill="#fbe9cb"/><rect x="8" y="33" width="6" height="6" fill="#fbe9cb"/><rect x="20" y="33" width="6" height="6" fill="#fbe9cb"/><rect x="13" y="45" width="8" height="11" fill="#162132"/></svg>';
+	const IGNE = '<svg viewBox="0 0 20 26" width="20" height="26"><path d="M10 25 C4 16 2 13 2 9 a8 8 0 0 1 16 0 c0 4 -2 7 -8 16z" fill="#b87449" stroke="#162132" stroke-width="2"/><circle cx="10" cy="9" r="3" fill="#fff6e4"/></svg>';
+	const BUYUTEC = '<svg viewBox="0 0 18 18" width="16" height="16"><circle cx="7.5" cy="7.5" r="5.5" fill="none" stroke="#162132" stroke-width="2.4"/><path d="M12 12 L16.5 16.5" stroke="#162132" stroke-width="2.6" stroke-linecap="round"/></svg>';
+	const SERIT = "url(\"data:image/svg+xml," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="120" height="82"><rect x="6" y="22" width="26" height="40" rx="3" fill="#e0c9af" stroke="#162132" stroke-width="2"/><rect x="12" y="30" width="5" height="5" fill="#162132"/><rect x="21" y="30" width="5" height="5" fill="#162132"/><rect x="12" y="42" width="5" height="5" fill="#162132"/><rect x="21" y="42" width="5" height="5" fill="#162132"/><polygon points="40,40 55,28 70,40" fill="#b87449" stroke="#162132" stroke-width="2" stroke-linejoin="round"/><rect x="43" y="39" width="24" height="23" fill="#fbe9cb" stroke="#162132" stroke-width="2"/><rect x="51" y="48" width="7" height="14" fill="#162132"/><rect x="80" y="12" width="30" height="50" rx="3" fill="#629fa3" stroke="#162132" stroke-width="2"/><rect x="86" y="19" width="6" height="6" fill="#fbe9cb"/><rect x="98" y="19" width="6" height="6" fill="#fbe9cb"/><rect x="86" y="31" width="6" height="6" fill="#fbe9cb"/><rect x="98" y="31" width="6" height="6" fill="#fbe9cb"/><rect x="86" y="43" width="6" height="6" fill="#fbe9cb"/><rect x="98" y="43" width="6" height="6" fill="#fbe9cb"/><rect x="0" y="62" width="120" height="20" fill="#9eac70"/><rect x="10" y="70" width="24" height="4" rx="2" fill="#fbe9cb"/><rect x="70" y="70" width="24" height="4" rx="2" fill="#fbe9cb"/></svg>') + "\")";
+	const RAY = '<div class="yer"></div><div class="ray"></div>';
+
+	const KARTLAR = [
+		["Takip et", "@miniakent'i Instagram'da takip et.",
+			'<div class="yer"></div><div class="s1-kart"><div class="s1-av">M</div><div class="s1-cizgi"><i></i><i></i></div>' +
+			'<div class="s1-btn"><b class="a">Takip et</b><b class="b">✓</b></div></div><div class="s1-el"></div>'],
+		["Trenle gel", "Takip ettikten sonraki ilk gece trenle şehre gelirsin, Instagram adınla.",
+			'<div class="dongu d2">' + RAY + '<div class="s2-tren">' + TREN + '</div><div class="s2-adam">' + ADAM + '</div>' +
+			'<div class="s2-etiket"><b>@</b><i></i></div></div>'],
+		["Şehirde yaşa", "Burada bir gün gerçekte bir saat sürer. Karakterin sabah işe gider, akşam evine döner.",
+			'<div class="s3-gece"></div><div class="s3-kol"><i class="gunes"></i><i class="ay"></i></div>' +
+			'<div class="s3-ev">' + EV + '</div><div class="s3-is">' + IS + '</div><div class="yer"></div>' +
+			'<div class="s3-yol"><div class="s3-adam"><div class="sek">' + ADAM + '</div></div></div>'],
+		["Kendini bul", "Arama kutusuna adını yaz, karakterini şehirde bul.",
+			'<div class="yer"></div><div class="s4-kutu">' + BUYUTEC + '<b>@</b><div class="s4-harf"><i></i><i></i><i></i><i></i><i></i><span></span></div></div>' +
+			'<div class="s4-kisiler">' + ADAM + ADAM + ADAM + ADAM + ADAM + '</div><div class="s4-igne">' + IGNE + '</div>'],
+		["Peşinden git", "Karakterine dokun, onu takip et ya da şehri onun gözünden gör.",
+			'<div class="s5-serit"></div><div class="s5-adam"><div class="sek">' + ADAM + '</div></div><div class="s5-cerceve"></div>'],
+		["Sen de gel", "Takip et, Instagram adın ile şehre taşın, karakterini izle.",
+			'<div class="dongu d6">' + RAY + '<div class="s6-tren">' + TREN + '<i class="duman"></i><i class="duman"></i><i class="duman"></i></div></div>'],
+	];
+
+	const css = document.createElement("style");
+	css.textContent = `
+#yukleme.tanitimli { gap: 2.2vh; }
+#yukleme.tanitimli #yukleme-logo { width: min(48vw, 230px); max-height: 15vh; }
+#yk-tanitim { box-sizing: border-box; width: min(92vw, 420px); padding: 14px; display: flex; flex-direction: column; gap: 10px;
+	background: #fff6e4; color: #162132; border: 3px solid #162132; border-radius: 22px; box-shadow: 0 4px 0 #162132;
+	font: 15px 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+body.gece #yk-tanitim { background: #22304f; color: #fbe9cb; border-color: #0b1220; box-shadow: 0 4px 0 #0b1220; }
+#yk-tanitim h2 { margin: 2px 0 0; font: 600 21px 'Fredoka', 'Nunito', system-ui, sans-serif; }
+#yk-tanitim p { margin: 0; line-height: 1.45; min-height: 4.35em; }
+#yk-tanitim .yk-alt { display: flex; align-items: center; gap: 10px; min-height: 42px; }
+#yk-tanitim .yk-nokta { flex: 1; display: flex; justify-content: center; gap: 6px; }
+#yk-tanitim .yk-nokta i { width: 8px; height: 8px; border-radius: 50%; background: #e0c9af; }
+#yk-tanitim .yk-nokta i.bu { background: currentColor; }
+body.gece #yk-tanitim .yk-nokta i { background: #46597f; }
+body.gece #yk-tanitim .yk-nokta i.bu { background: currentColor; }
+#yk-tanitim button { cursor: pointer; font-family: 'Fredoka', 'Nunito', system-ui, sans-serif; }
+#yk-tanitim .yk-gec { border: 0; background: none; color: inherit; padding: 8px 4px; font-size: 15px; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+#yk-tanitim .yk-ileri, #yk-gir { border: 2.5px solid #162132; background: #162132; color: #fff6e4; border-radius: 999px; padding: 8px 22px; font-size: 16px; font-weight: 600; }
+body.gece #yk-tanitim .yk-ileri, body.gece #yk-gir { background: #fbe9cb; color: #162132; border-color: #0b1220; }
+#yk-tanitim .yk-gec[hidden], #yk-tanitim .yk-ileri[hidden], #yk-gir[hidden] { display: none; }
+#yk-gir { cursor: pointer; font-family: 'Fredoka', 'Nunito', system-ui, sans-serif; padding: 11px 34px; font-size: 18px; box-shadow: 0 4px 0 #0b1220; }
+
+.yk-sahne { position: relative; height: 120px; border-radius: 14px; overflow: hidden; background: #cfe5e2; border: 2px solid #162132; }
+body.gece .yk-sahne { background: #3a4d74; border-color: #0b1220; }
+.yk-sahne > *, .yk-sahne .dongu > * { position: absolute; }
+.yk-sahne svg { display: block; }
+.yk-sahne .dongu { inset: 0; }
+.yk-sahne .yer { left: 0; right: 0; bottom: 0; height: 22px; background: #9eac70; border-top: 2px solid #162132; }
+.yk-sahne .ray { left: 0; right: 0; bottom: 16px; height: 4px; background: #5d6680; }
+.yk-sahne .sek { animation: yk-sek .36s ease-in-out infinite alternate; }
+@keyframes yk-sek { to { transform: translateY(-2px); } }
+@keyframes yk-dongu { 0% { opacity: 0; } 6%, 86% { opacity: 1; } 94%, 100% { opacity: 0; } }
+
+.s1-kart { left: 50%; top: 22px; width: 230px; height: 56px; margin-left: -115px; box-sizing: border-box; display: flex; align-items: center; gap: 8px; padding: 0 10px;
+	background: #fff6e4; border: 2px solid #162132; border-radius: 14px; }
+.s1-av { width: 34px; height: 34px; flex: 0 0 34px; border-radius: 50%; background: #629fa3; border: 2px solid #162132; box-sizing: border-box;
+	display: grid; place-items: center; color: #fff6e4; font: 700 16px 'Fredoka', system-ui, sans-serif; }
+.s1-cizgi { flex: 1; }
+.s1-cizgi i { display: block; height: 7px; border-radius: 4px; background: #e0c9af; margin: 5px 0; }
+.s1-cizgi i + i { width: 60%; }
+.s1-btn { position: relative; width: 76px; height: 30px; flex: 0 0 76px; }
+.s1-btn b { position: absolute; inset: 0; display: grid; place-items: center; border-radius: 999px; font: 700 13px 'Nunito', system-ui, sans-serif; box-sizing: border-box; }
+.s1-btn .a { background: #162132; color: #fff6e4; animation: s1-a 3.2s infinite; }
+.s1-btn .b { background: #9eac70; color: #162132; border: 2px solid #162132; font-size: 16px; opacity: 0; animation: s1-b 3.2s infinite; }
+.s1-el { left: 50%; top: 37px; width: 26px; height: 26px; margin-left: 56px; box-sizing: border-box; border-radius: 50%;
+	border: 3px solid #162132; background: rgba(255, 255, 255, .75); animation: s1-el 3.2s ease-in-out infinite; }
+@keyframes s1-el { 0% { transform: translate(46px, 54px); opacity: 0; } 12% { opacity: 1; } 38% { transform: none; } 44% { transform: scale(.75); }
+	50% { transform: none; } 78% { transform: none; opacity: 1; } 88%, 100% { transform: none; opacity: 0; } }
+@keyframes s1-a { 0%, 44% { opacity: 1; } 48%, 92% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes s1-b { 0%, 44% { opacity: 0; transform: none; } 48% { opacity: 1; transform: scale(1.12); } 56%, 92% { opacity: 1; transform: none; } 100% { opacity: 0; } }
+
+.d2 { animation: yk-dongu 4.4s infinite; }
+.s2-tren { left: 50%; bottom: 16px; margin-left: -96px; animation: s2-tren 4.4s cubic-bezier(.2, .7, .3, 1) infinite; }
+.s2-adam { left: 50%; bottom: 10px; margin-left: 44px; animation: s2-adam 4.4s infinite; }
+.s2-etiket { left: 50%; bottom: 44px; margin-left: 30px; display: flex; align-items: center; gap: 4px; padding: 3px 8px; border-radius: 999px;
+	background: #162132; color: #fff6e4; font: 800 12px 'Nunito', system-ui, sans-serif; animation: s2-etiket 4.4s infinite; }
+.s2-etiket i { width: 18px; height: 5px; border-radius: 3px; background: #fff6e4; }
+@keyframes s2-tren { 0% { transform: translateX(300px); } 40%, 100% { transform: none; } }
+@keyframes s2-adam { 0%, 44% { opacity: 0; transform: translate(-14px, -4px); } 56%, 100% { opacity: 1; transform: none; } }
+@keyframes s2-etiket { 0%, 60% { opacity: 0; transform: scale(.5); } 68% { opacity: 1; transform: scale(1.1); } 74%, 100% { opacity: 1; transform: none; } }
+
+.s3-gece { inset: 0; background: #22304f; opacity: 0; animation: s3-gece 7s infinite; }
+@keyframes s3-gece { 0%, 22% { opacity: 0; } 34%, 66% { opacity: 1; } 78%, 100% { opacity: 0; } }
+.s3-kol { left: 50%; bottom: 22px; width: 0; height: 0; animation: s3-kol 7s linear infinite; }
+.s3-kol i { position: absolute; border-radius: 50%; }
+.s3-kol .gunes { width: 26px; height: 26px; left: -13px; top: -95px; background: #f2c230; border: 2px solid #162132; box-sizing: border-box; }
+.s3-kol .ay { width: 22px; height: 22px; left: -11px; top: 73px; background: #fbe9cb; box-shadow: inset -6px -3px 0 #cdb79d; }
+@keyframes s3-kol { from { transform: rotate(-30deg); } to { transform: rotate(330deg); } }
+.s3-ev { left: 12%; bottom: 22px; }
+.s3-is { right: 12%; bottom: 22px; }
+.s3-yol { left: 0; right: 0; bottom: 12px; height: 28px; animation: s3-yol 7s ease-in-out infinite; }
+.s3-adam { left: calc(12% + 40px); bottom: 0; }
+@keyframes s3-yol { 0%, 4% { transform: none; } 18%, 26% { transform: translateX(calc(76% - 104px)); } 42%, 100% { transform: none; } }
+
+.s4-kutu { left: 50%; top: 14px; width: 210px; height: 34px; margin-left: -105px; box-sizing: border-box; display: flex; align-items: center; gap: 6px; padding: 0 12px;
+	background: #fff6e4; border: 2px solid #162132; border-radius: 999px; color: #162132; font: 800 15px 'Nunito', system-ui, sans-serif; }
+.s4-harf { position: relative; display: flex; gap: 4px; overflow: hidden; }
+.s4-harf i { width: 18px; height: 8px; border-radius: 4px; background: #b87449; }
+.s4-harf span { position: absolute; inset: 0; background: #fff6e4; animation: s4-yaz 4.6s steps(5, end) infinite; }
+@keyframes s4-yaz { 0%, 8% { transform: none; } 46%, 100% { transform: translateX(100%); } }
+.s4-kisiler { left: 50%; bottom: 10px; width: 210px; margin-left: -105px; display: flex; justify-content: space-between; }
+.s4-igne { left: 50%; bottom: 42px; margin-left: -10px; opacity: 0; animation: s4-igne 4.6s infinite; }
+@keyframes s4-igne { 0%, 52% { opacity: 0; transform: translateY(-26px); } 62% { opacity: 1; transform: none; } 68% { transform: translateY(-6px); } 74%, 92% { opacity: 1; transform: none; } 100% { opacity: 0; transform: none; } }
+
+.s5-serit { left: 0; bottom: 0; width: 960px; height: 82px; background: ${SERIT} 0 0 / 120px 82px repeat-x; animation: s5-serit 5s linear infinite; }
+@keyframes s5-serit { to { transform: translateX(-480px); } }
+.s5-adam { left: 50%; bottom: 8px; margin-left: -7px; }
+.s5-cerceve { left: 50%; bottom: 2px; width: 40px; height: 44px; margin-left: -20px; box-sizing: border-box; border: 2.5px dashed #162132; border-radius: 12px; animation: s5-cerceve 1s ease-in-out infinite alternate; }
+@keyframes s5-cerceve { to { transform: scale(1.1); } }
+
+.d6 { animation: s6-dongu 4.8s infinite; }
+@keyframes s6-dongu { 0% { opacity: 0; } 5%, 72% { opacity: 1; } 79%, 100% { opacity: 0; } }
+.s6-tren { left: 50%; bottom: 16px; margin-left: -65px; animation: s6-tren 4.8s cubic-bezier(.55, 0, .8, .4) infinite; }
+@keyframes s6-tren { 0%, 30% { transform: none; } 80% { transform: translateX(-360px); } 81%, 100% { transform: none; } }
+.s6-tren .duman { position: absolute; left: 10px; top: -8px; width: 12px; height: 12px; border-radius: 50%; background: #fff6e4; border: 2px solid #162132;
+	box-sizing: border-box; opacity: 0; animation: s6-duman 1.2s ease-out infinite; }
+.s6-tren .duman:nth-of-type(2) { animation-delay: .4s; }
+.s6-tren .duman:nth-of-type(3) { animation-delay: .8s; }
+@keyframes s6-duman { 0% { opacity: 0; transform: scale(.4); } 20% { opacity: 1; } 100% { opacity: 0; transform: translate(14px, -38px) scale(1.5); } }
+`;
+	document.head.appendChild(css);
+
+	const yuk = document.getElementById("yukleme");
+	const cubuk = document.getElementById("yukleme-cubuk");
+	const kart = document.createElement("div");
+	kart.id = "yk-tanitim";
+	kart.innerHTML = '<div class="yk-sahne"></div><h2></h2><p></p><div class="yk-alt"><button type="button" class="yk-gec">Geç</button>' +
+		'<div class="yk-nokta"></div><button type="button" class="yk-ileri">İleri</button></div>';
+	yuk.insertBefore(kart, cubuk);
+	yuk.classList.add("tanitimli");
+	const gir = document.createElement("button");
+	gir.type = "button";
+	gir.id = "yk-gir";
+	gir.textContent = "Şehre gir";
+	gir.hidden = true;
+	cubuk.after(gir);
+	const gec = kart.querySelector(".yk-gec");
+	const ileri = kart.querySelector(".yk-ileri");
+	let sira = 0;
+	let acik = true;
+	let hazir = null;  // oyun hazır olunca ekranı kaldıran işlev
+
+	function ciz() {
+		const k = KARTLAR[sira];
+		kart.querySelector(".yk-sahne").innerHTML = k[2];
+		kart.querySelector("h2").textContent = k[0];
+		kart.querySelector("p").textContent = k[1];
+		kart.querySelector(".yk-nokta").innerHTML = KARTLAR.map((_, i) => '<i class="' + (i === sira ? "bu" : "") + '"></i>').join("");
+		dugmeler();
+	}
+	function dugmeler() {
+		ileri.hidden = sira === KARTLAR.length - 1;
+		gec.hidden = !!hazir;
+	}
+	ileri.addEventListener("click", function () {
+		if (sira < KARTLAR.length - 1) {
+			sira++;
+			ciz();
+		}
+	});
+	gec.addEventListener("click", function () {
+		acik = false;
+		kart.remove();
+		gir.remove();
+		yuk.classList.remove("tanitimli");
+	});
+	gir.addEventListener("click", function () {
+		if (hazir) {
+			hazir();
+		}
+	});
+	// kabuğun kapat() işlevi ev çubuğun ucuna varınca sorar: tanıtım açıksa ekranı o kaldırmaz, "Şehre gir" beklenir
+	window.miniakentYuklemeTanitim = function (kaldir) {
+		if (!acik) {
+			return false;
+		}
+		let bir = false;
+		hazir = function () {
+			if (!bir) {
+				bir = true;
+				kaldir();
+			}
+		};
+		cubuk.style.display = "none";
+		gir.hidden = false;
+		dugmeler();
+		return true;
+	};
+	ciz();
+}());
+		</script>
 		<script type="module">
 // Çevrimiçi ve günlük ziyaretçi (kullanıcı, 2026-10-25): Firebase Realtime Database (proje miniakent, europe-west1).
 // Her ziyaretçi cevrimici/<kimlik> yazar, sekme kapanınca silinir; oyun sayıyı window.miniakentCevrimici'den okur.
@@ -1270,8 +1477,14 @@ const engine = new Engine(GODOT_CONFIG);
 		sonaDogru();
 		anims.forEach((an) => an.updatePlaybackRate(6));
 		Promise.all(anims.map((an) => an.finished)).then(() => kay(0.96, 1, 350)).then(() => {
-			yukleme.classList.add('bitti');  // ev çubuğun ucuna varınca ekran kaybolur
-			setTimeout(function () { yukleme.remove(); }, 700);
+			const kaldir = function () {
+				yukleme.classList.add('bitti');  // ev çubuğun ucuna varınca ekran kaybolur
+				setTimeout(function () { yukleme.remove(); }, 700);
+			};
+			// betadaki yükleme tanıtımı açıksa ekran "Şehre gir"e basılınca kalkar
+			if (!(window.miniakentYuklemeTanitim && window.miniakentYuklemeTanitim(kaldir))) {
+				kaldir();
+			}
 		});
 	}
 	// main.gd şehir ilk kez çizilince çağırır
