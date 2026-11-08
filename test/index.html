@@ -577,7 +577,7 @@ try {
 		css.textContent = `
 #kontrol { position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center;
 	background: rgba(20, 18, 15, 0.55); font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; }
-#kontrol[hidden], #kontrol [hidden] { display: none; }
+#kontrol[hidden], #kontrol [hidden] { display: none !important; }
 #kontrol .kutu { position: relative; width: min(340px, calc(100vw - 32px)); box-sizing: border-box; padding: 22px 20px 18px;
 	border-radius: 14px; background: #faf5eb; color: #2a2620; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35); }
 #kontrol h2 { margin: 0; font-size: 19px; text-align: center; }
@@ -600,7 +600,12 @@ try {
 #kontrol .dogrula .kod { flex: 1; padding: 10px; border: 2px dashed #cfc5b4; border-radius: 12px; text-align: center;
 	font: 700 30px ui-monospace, Menlo, Consolas, monospace; letter-spacing: .2em; user-select: all; }
 #kontrol a.gonder { display: block; box-sizing: border-box; text-align: center; text-decoration: none; }
-#kontrol .dogrula .not { margin: 12px 0 0; font-size: 12.5px; color: #776d60; }`;
+#kontrol .dogrula .not { margin: 12px 0 0; font-size: 12.5px; color: #776d60; }
+#kontrol .bul p { margin: 4px 0 12px; font-size: 14px; line-height: 1.45; text-align: center; }
+#kontrol .oneri { margin-top: 4px; border: 1px solid #cfc5b4; border-radius: 10px; overflow: hidden; background: #fff; }
+#kontrol .oneri button { display: block; width: 100%; padding: 9px 10px; border: 0; border-bottom: 1px solid #eee4d3; background: none;
+	color: #2a2620; font-size: 15px; text-align: left; cursor: pointer; }
+#kontrol .oneri button:last-child { border-bottom: 0; }`;
 		document.head.appendChild(css);
 		const pen = document.createElement("div");
 		pen.id = "kontrol";
@@ -616,6 +621,12 @@ try {
 	<input id="kontrol-sifre" type="password" autocomplete="current-password" required>
 	<button type="submit" class="gonder">Giriş Yap</button>
 	<button type="button" class="unuttum">Şifremi unuttum</button>
+	</div>
+	<div class="bul" hidden>
+		<p>E-postan doğrulandı. Instagram'da @miniakent'i takip ettiğin hesabının adını yaz.</p>
+		<input id="kontrol-ad" type="text" placeholder="@kullanıcıadı" autocomplete="off" autocapitalize="none" spellcheck="false" aria-label="Instagram adın">
+		<div class="oneri" hidden></div>
+		<button type="button" class="gonder bul-git">Kontrolü Al</button>
 	</div>
 	<div class="dogrula" hidden>
 		<p>Son adım: Instagram'da <b>@miniakent</b> hesabına özelden bu kodu yaz.</p>
@@ -726,25 +737,70 @@ try {
 			const kod = String(100000 + crypto.getRandomValues(new Uint32Array(1))[0] % 900000);
 			await set(ref(db, "dogrulama/" + u.uid), { h: aday, kod: kod, t: serverTimestamp() });
 			q(".kod").textContent = kod;
-			q(".giris").hidden = true;
+			q(".giris").hidden = q(".bul").hidden = q(".giris-alt").hidden = true;
 			q(".dogrula").hidden = false;
 			yaz("");
 		};
+		// "Karakterini bul" (kullanıcı, 2026-11-08): e-posta doğrulanınca Instagram adı yazılır, şehirdeki adlar önerilir;
+		// ad bulununca kamera o karaktere gider ve Kontrolü Al ile Instagram kodu adımına geçilir
+		const ad = q("#kontrol-ad"), oneri = q(".oneri");
+		const sade = (h) => h.trim().replace(/^@/, "").toLowerCase();
+		const bulGoster = () => {
+			q("h2").textContent = "Karakterini bul";
+			q(".kim").hidden = true;
+			q(".giris").hidden = q(".dogrula").hidden = q(".alt").hidden = true;
+			q(".bul").hidden = q(".giris-alt").hidden = q(".simdilik").hidden = false;
+			ad.value = "";
+			oneri.hidden = true;
+			yaz("");
+		};
+		ad.addEventListener("input", () => {
+			const s = sade(ad.value);
+			const l = s.length < 2 ? [] : (window.minikentHandles || []).filter((h) => sade(h).indexOf(s) >= 0).slice(0, 5);
+			oneri.innerHTML = "";
+			for (const h of l) {
+				const b = document.createElement("button");
+				b.type = "button";
+				b.textContent = h;
+				oneri.appendChild(b);
+			}
+			oneri.hidden = !l.length;
+		});
+		oneri.addEventListener("click", (e) => {
+			const b = e.target.closest("button");
+			if (b) { ad.value = b.textContent; oneri.hidden = true; }
+		});
+		ad.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); q(".bul-git").click(); } });
+		q(".bul-git").addEventListener("click", async () => {
+			const h = (window.minikentHandles || []).find((x) => sade(x) === sade(ad.value));
+			if (!h) { yaz("Bu ad şehirde yok. Takip ettikten sonraki ilk gece trenle şehre gelirsin.", true); return; }
+			oneri.hidden = true;
+			if (window.minikentSearch) window.minikentSearch(h);  // kamera karaktere gider
+			aday = h;
+			q("h2").textContent = "Kontrolü Al";
+			q(".kim").textContent = h;
+			q(".kim").hidden = false;
+			q(".bul-git").disabled = true;
+			try {
+				await baglan(auth.currentUser);
+			} catch (err) {
+				hata(err);
+			}
+			q(".bul-git").disabled = false;
+		});
 		const dogrulandi = () => {
 			if (pen.hidden || q(".dogrula").hidden) return;
 			yaz("Doğrulandı. Karakterin artık senin.");
 			setTimeout(kapat, 1500);
 		};
 		// e-postası doğrulanmış oyuncu: kartta açıldıysa Instagram koduna geçilir; hesap penceresindeyse, karakteri
-		// bağlı değilse ne yapacağı söylenir ve pencere kapanır (kullanıcı, 2026-11-08)
+		// bağlı değilse "Karakterini bul" adımı açılır (kullanıcı, 2026-11-08)
 		const tamam = async (u) => {
 			await u.getIdToken(true);
 			oturum();
 			if (aday) { await baglan(u); return; }
 			if ((await get(ref(db, "oyuncu/" + u.uid + "/karakter"))).val()) { kapat(); return; }
-			q(".giris").hidden = q(".giris-alt").hidden = true;
-			yaz("E-postan doğrulandı. Arama kutusuna Instagram adını yaz, karakterine dokun, Kontrolü Al'a bas.");
-			setTimeout(kapat, 7000);
+			bulGoster();
 		};
 		// h boşsa hesap penceresi (yükleme sonrası ve profil menüsünden), doluysa o karakterin Kontrolü Al penceresi
 		window.miniakentKontrolAc = async (h) => {
@@ -753,9 +809,9 @@ try {
 			q(".kim").textContent = aday;
 			q(".kim").hidden = !aday;
 			sifre.value = "";
-			q(".giris").hidden = q(".giris-alt").hidden = false;
+			q(".giris").hidden = q(".giris-alt").hidden = q(".alt").hidden = false;
 			q(".simdilik").hidden = !!aday;
-			q(".dogrula").hidden = true;
+			q(".dogrula").hidden = q(".bul").hidden = true;
 			yaz("");
 			pen.hidden = false;
 			const u = auth.currentUser;
@@ -772,15 +828,37 @@ try {
 			}
 			if (aday) eposta.focus();
 		};
-		// yükleme ekranı kalkınca: giriş yapmamış ya da e-postasını doğrulamamış ziyaretçiye hesap penceresi
+		// e-postadaki doğrulama bağlantısı bu sayfayı açar (?mode=verifyEmail&oobCode=…; Firebase'de e-posta bağlantı adresi
+		// bu sayfa, kullanıcı 2026-11-08): doğrulama burada yapılır, adres temizlenir. Şifre yenileme gibi öteki bağlantılar
+		// Firebase'in kendi sayfasına gönderilir.
+		const B = new URLSearchParams(location.search);
+		let baglantiHata = false;
+		const baglanti = (async () => {
+			if (!B.get("mode") || !B.get("oobCode")) return;
+			if (B.get("mode") !== "verifyEmail") {
+				location.replace("https://miniakent.firebaseapp.com/__/auth/action" + location.search);
+				return;
+			}
+			history.replaceState(null, "", location.pathname);
+			try {
+				await fa.applyActionCode(auth, B.get("oobCode"));
+			} catch (err) {
+				baglantiHata = true;  // süresi dolmuş ya da daha önce kullanılmış
+			}
+		})();
+		// yükleme ekranı kalkınca: giriş yapmamışa hesap penceresi; doğrulanmış ama karakteri bağlı olmayana "Karakterini bul"
 		window.miniakentGirisAc = async () => {
+			await baglanti;
 			await auth.authStateReady();
 			const u = auth.currentUser;
 			if (u) {
 				try { await u.reload(); } catch (err) {}
-				if (u.emailVerified) return;
+				if (u.emailVerified && (await get(ref(db, "oyuncu/" + u.uid + "/karakter"))).val()) return;
 			}
 			window.miniakentKontrolAc("");
+			if (baglantiHata && !(u && u.emailVerified)) {
+				yaz("Bu doğrulama bağlantısının süresi dolmuş. Giriş yap, yeni bağlantı gönderelim.", true);
+			}
 		};
 		window.miniakentAyril = () => fa.signOut(auth);
 		// beta kartlarındaki tik: "lacivert" (Premium), "sari" (Instagram'la doğrulanmış) ya da ""
