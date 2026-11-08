@@ -465,6 +465,10 @@ try {
 		projectId: "miniakent",
 		appId: "1:591368262283:web:65292bb355bc8c55287a8e",
 	});
+	// giriş bölümü veritabanından ÖNCE kurulur: veritabanı bağlantıyı girişle birlikte açar, oyuncu kaydı açılışta
+	// girişten önce sorulup reddedilmez (kullanıcı, 2026-11-08). Giriş bölümü yalnız Kontrolü Al açık sayfalarda yüklenir.
+	const fa = window.miniakentKontrolDeneme ? await import("https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js") : null;
+	const auth = fa ? fa.getAuth(app) : null;
 	const db = getDatabase(app);
 	const id = crypto.randomUUID ? crypto.randomUUID() : String(Math.random()).slice(2) + "-" + Date.now();
 	const ben = ref(db, "cevrimici/" + id);
@@ -524,8 +528,6 @@ try {
 	// sonra oyuncunun karakteri bu tarayıcıda saklanır (miniakent_karakter) ve kartında "Ayrıl" görünür. Oyun durumu
 	// window.miniakentOturum'dan okur (JSON; boşsa giriş yok), her değişimde window.miniakentOturumSurum artar.
 	if (window.miniakentKontrolDeneme) {
-		const fa = await import("https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js");
-		const auth = fa.getAuth(app);
 		auth.languageCode = "tr";
 		// 2026-11-07 (kullanıcı): karakter Instagram doğrulamasıyla bağlanır. E-postası doğrulanmış oyuncu 6 haneli kodu
 		// @miniakent'e özelden yazar; dogrulama.py (bilgisayarda Windows görevi) oyuncu/<uid>/karakter'i yazar. Premium
