@@ -244,7 +244,7 @@ function gtag() { dataLayer.push(arguments); }
 // Her ziyaretçi cevrimici/<kimlik> yazar, sekme kapanınca silinir; oyun sayıyı window.miniakentCevrimici'den okur.
 // gunluk/<Türkiye tarihi> her tarayıcıda günde bir kez 1 artar. Bağlantı kurulamazsa oyun etkilenmez.
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getDatabase, ref, set, onDisconnect, onValue, runTransaction, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+import { getDatabase, ref, set, get, onDisconnect, onValue, runTransaction, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
 try {
 	const app = initializeApp({
 		apiKey: "AIzaSyCC0HI_bln18UBMEDHdAO7CmtMEM3JtM5I",
@@ -315,13 +315,50 @@ try {
 		const fa = await import("https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js");
 		const auth = fa.getAuth(app);
 		auth.languageCode = "tr";
-		let karakter = "";
-		try { karakter = localStorage.getItem("miniakent_karakter") || ""; } catch (e) {}
-		const oturum = (u) => {
-			window.miniakentOturum = u ? JSON.stringify({ eposta: u.email, dogrulandi: u.emailVerified, karakter: karakter }) : "";
+		// 2026-11-07 (kullanıcı): karakter Instagram doğrulamasıyla bağlanır. E-postası doğrulanmış oyuncu 6 haneli kodu
+		// @miniakent'e özelden yazar; dogrulama.py (bilgisayarda Windows görevi) oyuncu/<uid>/karakter'i yazar. Premium
+		// işaretini kullanıcı verir (premium/<ad>); giriş serisi oyuncu/<uid>/giris'te (Türkiye günü).
+		let karakter = "", premium = false, giris = null, oyuncuBirak = null, premiumBirak = null;
+		const anahtar = (h) => h.replace(/^@/, "").toLowerCase().replace(/\./g, ",");
+		const oturum = () => {
+			const u = auth.currentUser;
+			window.miniakentOturum = u ? JSON.stringify({ eposta: u.email, dogrulandi: u.emailVerified, karakter: karakter,
+				premium: premium, seri: giris ? giris.seri : 0, gun: giris ? giris.gun : 0 }) : "";
 			window.miniakentOturumSurum = (window.miniakentOturumSurum || 0) + 1;
 		};
-		fa.onAuthStateChanged(auth, oturum);
+		const trGun = (ms) => new Date(ms + 3 * 3600 * 1000).toISOString().slice(0, 10);
+		const seriSay = (uid) => runTransaction(ref(db, "oyuncu/" + uid + "/giris"), (c) => {
+			const bugun = trGun(Date.now());
+			if (c && c.son === bugun) return;  // bugün zaten sayıldı
+			return { son: bugun, seri: c && c.son === trGun(Date.now() - 86400000) ? c.seri + 1 : 1, gun: (c ? c.gun : 0) + 1 };
+		}).catch((e) => console.warn("giris", e));
+		const premiumDinle = () => {
+			if (premiumBirak) premiumBirak();
+			premiumBirak = null;
+			premium = false;
+			if (karakter) premiumBirak = onValue(ref(db, "premium/" + anahtar(karakter)), (s) => { premium = s.val() === true; oturum(); });
+		};
+		fa.onAuthStateChanged(auth, (u) => {
+			if (oyuncuBirak) oyuncuBirak();
+			oyuncuBirak = null;
+			karakter = ""; giris = null;
+			premiumDinle();
+			if (u) {
+				let sayildi = false;
+				oyuncuBirak = onValue(ref(db, "oyuncu/" + u.uid), (s) => {
+					const v = s.val() || {};
+					giris = v.giris || null;
+					if ((v.karakter || "") !== karakter) {
+						karakter = v.karakter || "";
+						premiumDinle();
+						if (karakter) dogrulandi();
+					}
+					if (karakter && !sayildi) { sayildi = true; seriSay(u.uid); }
+					oturum();
+				}, (e) => console.warn("oyuncu", e));
+			}
+			oturum();
+		});
 		const css = document.createElement("style");
 		css.textContent = `
 #kontrol { position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center;
@@ -341,7 +378,12 @@ try {
 #kontrol .gonder:disabled { opacity: 0.6; }
 #kontrol .unuttum { display: block; margin: 10px auto 0; border: 0; background: none; color: #776d60; font-size: 13px; text-decoration: underline; cursor: pointer; }
 #kontrol .mesaj { min-height: 18px; margin-top: 10px; font-size: 13px; text-align: center; }
-#kontrol .mesaj.hata { color: #b23b2e; }`;
+#kontrol .mesaj.hata { color: #b23b2e; }
+#kontrol .dogrula p { margin: 0 0 12px; font-size: 14px; line-height: 1.45; text-align: center; }
+#kontrol .dogrula .kod { margin-bottom: 4px; padding: 10px; border: 2px dashed #cfc5b4; border-radius: 12px; text-align: center;
+	font: 700 30px ui-monospace, Menlo, Consolas, monospace; letter-spacing: .2em; user-select: all; }
+#kontrol a.gonder { display: block; box-sizing: border-box; text-align: center; text-decoration: none; }
+#kontrol .dogrula .not { margin: 12px 0 0; font-size: 12.5px; color: #776d60; }`;
 		document.head.appendChild(css);
 		const pen = document.createElement("div");
 		pen.id = "kontrol";
@@ -350,6 +392,7 @@ try {
 	<button type="button" class="kapat" aria-label="Kapat">×</button>
 	<h2>Kontrolü Al</h2>
 	<div class="kim"></div>
+	<div class="giris">
 	<div class="sekme"><button type="button" data-mod="kayit">Kayıt Ol</button><button type="button" data-mod="giris">Giriş Yap</button></div>
 	<label for="kontrol-eposta">E-posta</label>
 	<input id="kontrol-eposta" type="email" autocomplete="email" required>
@@ -357,6 +400,13 @@ try {
 	<input id="kontrol-sifre" type="password" required>
 	<button type="submit" class="gonder"></button>
 	<button type="button" class="unuttum">Şifremi unuttum</button>
+	</div>
+	<div class="dogrula" hidden>
+		<p>Son adım: Instagram'da <b>@miniakent</b> hesabına özelden bu kodu yaz.</p>
+		<div class="kod"></div>
+		<a class="gonder" href="https://ig.me/m/miniakent" target="_blank" rel="noopener">Instagram'da mesaj yaz</a>
+		<p class="not">Kod 24 saat geçerli. Mesajı gönderdikten sonra karakterin birkaç dakika içinde hesabına bağlanır. Bu pencereyi kapatabilirsin.</p>
+	</div>
 	<div class="mesaj" role="status"></div>
 </form>`;
 		document.body.appendChild(pen);
@@ -399,9 +449,6 @@ try {
 				const k = mod === "kayit"
 					? await fa.createUserWithEmailAndPassword(auth, eposta.value.trim(), sifre.value)
 					: await fa.signInWithEmailAndPassword(auth, eposta.value.trim(), sifre.value);
-				karakter = aday;
-				try { localStorage.setItem("miniakent_karakter", karakter); } catch (e2) {}
-				oturum(k.user);
 				if (mod === "kayit") {
 					await fa.sendEmailVerification(k.user);
 					yaz("Doğrulama bağlantısını e-postana gönderdik.");
@@ -409,7 +456,7 @@ try {
 					await fa.sendEmailVerification(k.user);  // doğrulanmamış girişte bağlantı yeniden gider (2026-11-05)
 					yaz("E-postan henüz doğrulanmadı, yeni doğrulama bağlantısını gönderdik.");
 				} else {
-					kapat();
+					await baglan(k.user);
 				}
 			} catch (err) {
 				hata(err);
@@ -428,18 +475,50 @@ try {
 				hata(err);
 			}
 		});
-		window.miniakentKontrolAc = (h) => {
+		// e-postası doğrulanmış oyuncu: karakteri bağlıysa pencere kapanır, değilse Instagram kodu gösterilir
+		const baglan = async (u) => {
+			if ((await get(ref(db, "oyuncu/" + u.uid + "/karakter"))).val()) { kapat(); return; }
+			const s = (await get(ref(db, "sahip/" + anahtar(aday)))).val();
+			if (s && s !== u.uid) { yaz("Bu karakter başka bir hesaba bağlı.", true); return; }
+			await u.getIdToken(true);  // e-posta doğrulaması veritabanı kurallarına da yansısın
+			const kod = String(100000 + crypto.getRandomValues(new Uint32Array(1))[0] % 900000);
+			await set(ref(db, "dogrulama/" + u.uid), { h: aday, kod: kod, t: serverTimestamp() });
+			q(".kod").textContent = kod;
+			q(".giris").hidden = true;
+			q(".dogrula").hidden = false;
+			yaz("");
+		};
+		const dogrulandi = () => {
+			if (pen.hidden || q(".dogrula").hidden) return;
+			yaz("Doğrulandı. Karakterin artık senin.");
+			setTimeout(kapat, 1500);
+		};
+		window.miniakentKontrolAc = async (h) => {
 			aday = h;
 			q(".kim").textContent = h;
 			sifre.value = "";
+			q(".giris").hidden = false;
+			q(".dogrula").hidden = true;
 			modSec("kayit");
 			pen.hidden = false;
+			const u = auth.currentUser;
+			if (u) {  // zaten girişli: e-postası doğrulandıysa doğrudan Instagram koduna geçilir
+				try {
+					await u.reload();
+					if (u.emailVerified) await baglan(u);
+				} catch (err) {
+					hata(err);
+				}
+				return;
+			}
 			eposta.focus();
 		};
-		window.miniakentAyril = () => {
-			karakter = "";
-			try { localStorage.removeItem("miniakent_karakter"); } catch (e) {}
-			fa.signOut(auth);
+		window.miniakentAyril = () => fa.signOut(auth);
+		// beta kartlarındaki tik: "lacivert" (Premium), "sari" (Instagram'la doğrulanmış) ya da ""
+		window.miniakentRozet = async (h) => {
+			const k = anahtar(h);
+			const [s, p] = await Promise.all([get(ref(db, "sahip/" + k)), get(ref(db, "premium/" + k))]);
+			return p.val() === true ? "lacivert" : s.exists() ? "sari" : "";
 		};
 	}
 } catch (e) {
@@ -565,6 +644,25 @@ body.gece #mkb { --krem: #22304f; --krem2: #2c3b5e; --yazi: #fbe9cb; --kenar: #0
 #mkb .git em { grid-column: 2; grid-row: 1 / span 2; align-self: center; font-style: normal; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 999px; background: var(--kum); color: #162132; }
 #mkb .git em.iyi { background: var(--cimen); }
 #mkb .git.secili { border-color: var(--deniz); box-shadow: inset 0 0 0 2px var(--deniz); }
+#mkb .git:disabled { opacity: .55; cursor: default; }
+/* Premium'da açılan her şey (kullanıcı, 2026-11-07): görünür ama soluk, kesik kenarlı, kilitli rozetle */
+#mkb .git.kilitli { border-style: dashed; }
+#mkb .git em.kilit, #mkb .kadro button.kilit:disabled { display: inline-flex; align-items: center; gap: 4px; background: var(--yazi); color: var(--krem2); opacity: .8; }
+#mkb .kadro button.kilit:disabled { border-style: dashed; }
+#mkb .kilit svg { width: 12px; height: 12px; flex: 0 0 auto; }
+/* tik: Instagram onaylı sarı, Premium lacivert (kullanıcı, 2026-11-07) */
+#mkb .tik { display: inline-grid; place-items: center; width: 18px; height: 18px; margin-left: 5px; border-radius: 50%; vertical-align: -2px; }
+#mkb .tik svg { width: 11px; height: 11px; }
+#mkb .tik.sari { background: #f2c230; color: #162132; }
+#mkb .tik.lacivert { background: #162132; color: #fbe9cb; box-shadow: 0 0 0 1.5px #fbe9cb; }
+/* tanıtım: karakter ilk bağlandığında bir kez */
+#mkb .tanitim { position: absolute; inset: 0; z-index: 11; display: flex; align-items: center; justify-content: center; padding: 16px; background: rgba(11,18,32,.55); pointer-events: auto; }
+#mkb .tanitim .kutu { width: min(100%, 420px); box-shadow: 0 4px 0 var(--golge); }
+#mkb .tanitim h3 { font-size: 21px; }
+#mkb .tanitim p { margin: 0; font-size: 15px; line-height: 1.5; }
+#mkb .tanitim .noktalar { display: flex; justify-content: center; gap: 6px; }
+#mkb .tanitim .noktalar i { width: 8px; height: 8px; border-radius: 50%; background: var(--kum); }
+#mkb .tanitim .noktalar i.bu { background: var(--yazi); }
 #mkb .sekmeler { display: flex; gap: 4px; }
 #mkb .sekmeler button { flex: 1; padding: 7px 4px; border-radius: 10px; border: 2px solid var(--kenar); background: transparent; font-weight: 800; font-size: 13px; }
 #mkb .sekmeler button.secili { background: var(--yazi); color: var(--krem2); }
@@ -618,6 +716,8 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		buyut: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></svg>',
 		kapat: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>',
 		ok: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>',
+		kilit: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>',
+		tik: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>',
 		is: '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"><rect x="4" y="10" width="24" height="16" rx="3"/><path d="M12 10V7a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v3M4 17h24"/></svg>',
 		ev: '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"><path d="M5 15L16 6l11 9M8 13v13h16V13"/><path d="M13 26v-7h6v7"/></svg>',
 		ne: '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"><path d="M16 29s9-8.2 9-15a9 9 0 0 0-18 0c0 6.8 9 15 9 15z"/><circle cx="16" cy="14" r="3.4"/></svg>',
@@ -661,7 +761,10 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	<div class="dugmeler"><button id="mkb-goz">Gözünden gör</button><button class="koyu" id="mkb-birak">Takibi bırak</button></div></div>
 <div class="mkb-onay" id="mkb-onay" hidden><div class="kutu"><h3 id="mkb-onay-baslik"></h3><p id="mkb-onay-yazi"></p>
 	<div class="ikili"><button class="hayir" id="mkb-vazgec">Vazgeç</button><button class="evet" id="mkb-ode">Öde</button></div></div></div>
-<div class="tost" id="mkb-tost" hidden>Örnek işlem yapıldı</div>`;
+<div class="tost" id="mkb-tost" hidden>Örnek işlem yapıldı</div>
+<div class="tanitim" id="mkb-tanitim" hidden><div class="kutu"><h3 id="mkb-t-baslik"></h3><p id="mkb-t-yazi"></p>
+	<div class="noktalar" id="mkb-t-nokta"></div>
+	<div class="ikili"><button class="hayir" id="mkb-t-gec">Geç</button><button class="evet" id="mkb-t-devam">Devam</button></div></div></div>`;
 	document.body.appendChild(kok);
 	const $ = (id) => document.getElementById(id);
 	const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
@@ -694,6 +797,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	const kiraOf = (a) => /Banliy/.test(a) ? 150 : /Koyu|Köy/.test(a) ? 300 : /Sokağı/.test(a) ? 250 : 400;
 
 	let bilgi = null, karakter = "", sayfaAd = "", kumandaAcik = false, sekme = 0, bekleyen = null, takipVar = false;
+	let uye = { premium: false, seri: 0, gun: 0 };   // girişteki Firebase kaydından (miniakentOturum)
 	try { kumandaAcik = localStorage.getItem("miniakent_kumanda") === "1"; } catch (e) {}
 	const isim = () => st.is || { meslek: (bilgi && bilgi.meslek) || "—", yer: (bilgi && bilgi.isyeri) || "", grup: "Uzman", ucret: 220 };
 	const evim = () => st.ev || { adres: (bilgi && bilgi.ev) || "—", kira: kiraOf((bilgi && bilgi.ev) || "") };
@@ -702,40 +806,69 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	const acikIlan = (l) => l.filter((il) => kalan(il) > 0);
 	const isBekleme = () => st.son && Date.now() - st.son < 7 * GUN;
 
-	function mesai() {
-		const d = new Date(), h = d.getHours() + d.getMinutes() / 60, iste = h >= 9 && h < 17;
-		return { iste, oran: iste ? (h - 9) / 8 : h >= 17 ? 1 : 0,
-			yazi: iste ? "Mesai 17:00'de biter" : h < 9 ? "Mesai 09:00'da başlar" : "Mesai yarın 09:00'da başlar" };
+	// Mesai oyun saatiyle (clock.gd: 1 oyun günü = 1 gerçek saat, şehrin kuruluşu 17 Ekim 2026 00:00 UTC). Betada 4 saat
+	// iş + 1 saat öğle arası + 4 saat iş; başlangıç kişiye göre 08:00, 08:30 ya da 09:00; 6 günde bir herkes tatilde
+	// (kullanıcı, 2026-11-07). Başkasının başlangıcı bilinmez: kartında saat yazılmaz.
+	const oyunSaat = () => (Date.now() - Date.UTC(2026, 9, 17)) / 1000 % 3600 / 150;
+	const saatYaz = (h) => String(Math.floor(h)).padStart(2, "0") + ":" + String(Math.round(h % 1 * 60)).padStart(2, "0");
+	function mesai(bas) {
+		const h = oyunSaat(), b = bas || 8.5, tatil = !!(window.miniakentHud && window.miniakentHud.tatil);
+		const ara = h >= b + 4 && h < b + 5, iste = !tatil && h >= b && h < b + 9 && !ara;
+		return { iste, tatil, ara, aralik: saatYaz(b) + "–" + saatYaz(b + 9), oran: tatil ? 0 : Math.max(0, Math.min(1, (h - b) / 9)),
+			yazi: tatil ? "Bugün tatil" : !bas ? "4 saat iş · 1 saat öğle arası · 4 saat iş"
+				: saatYaz(b) + "–" + saatYaz(b + 9) + " · öğle arası " + saatYaz(b + 4) + "–" + saatYaz(b + 5) };
 	}
 	function durumYazi() {
 		const ne = NE.find((n) => n[0] === st.ne);
 		if (ne) return [ne[5], ne[0] === "mesai"];
-		const m = mesai();
-		return m.iste ? ["İşte · 09:00–17:00", true] : ["Evde", false];
+		const m = mesai(bilgi && bilgi.mesai);
+		return m.tatil ? ["Tatilde", false] : m.ara ? ["Öğle arasında", false] : m.iste ? ["İşte · " + m.aralik, true] : ["Evde", false];
 	}
+	// kıdem: şehre gelişten bu yana her 720 oyun gününde (gerçekte 30 gün) %2, tavan yok; ustalık: oyuna girilen her gün
+	// %0,2, en çok %20 (kullanıcı, 2026-11-07)
+	function kidem() {
+		if (!bilgi || !bilgi.gelis) return null;
+		const adim = Math.max(0, Math.floor((Date.now() / 1000 - bilgi.gelis) / 3600 / 720));
+		return { oran: adim * 2, sonraki: new Date((bilgi.gelis + (adim + 1) * 720 * 3600) * 1000).toLocaleDateString("tr-TR", { day: "numeric", month: "long" }) };
+	}
+	const yuzde = (x) => "%" + x.toLocaleString("tr-TR", { maximumFractionDigits: 1 });
+	// adın yanındaki tik: Instagram'la doğrulanmış sarı, Premium lacivert; başkalarınınki Firebase'den bir kez sorulur
+	const rozetler = {};
+	function rozet(h) {
+		const r = h === karakter ? (uye.premium ? "lacivert" : "sari") : rozetler[h] || "";
+		return r ? `<i class="tik ${r}" title="${r === "lacivert" ? "Premium" : "Instagram onaylı"}">${SVG.tik}</i>` : "";
+	}
+	function rozetGetir(h) {
+		if (h in rozetler || typeof window.miniakentRozet !== "function") return;
+		rozetler[h] = "";
+		window.miniakentRozet(h).then((r) => { rozetler[h] = r; if (r && sayfaAd) ciz(); }).catch(() => {});
+	}
+	const ORNEK_G = [.62, .35, .9];   // örnek göstergeler: yorgunluk, stres, sağlık
 	const ada = (oran) => `<div class="ada"><i style="width:${Math.round(Math.max(0, Math.min(1, oran)) * 100)}%"></i></div>`;
 
 	function ilanKutu(il, tur) {
 		const k = kalan(il), alindi = il.dolu || st.alinan[il.id], basvurdu = st.basvuru[il.id];
 		const kilit = tur === "is" && isBekleme();
+		// standart üyelik (kullanıcı, 2026-11-07): ilana yalnız başvurur, Hemen Al ve ev değiştirme Premium'da
+		const pAl = !uye.premium, pBas = !uye.premium && tur === "ev";
 		const bas = tur === "is" ? `<h3>${esc(il.meslek)}</h3><p class="alt">${esc(il.yer)}</p>
 			<div class="satir"><span>Meslek grubu</span><b>${esc(il.grup)} · saatlik ${il.ucret}</b></div>`
 			: `<h3>${esc(il.adres)}</h3><div class="satir"><span>Günlük kira</span><b>${il.kira}</b></div>`;
 		return `<div class="kutu ilan"><span class="ornek">Örnek</span>${bas}
 			<div class="gosterge tek">${ada(k / GUN)}<span class="kucuk">Kalan süre ${sure(k)} · ${il.kisi + (basvurdu ? 1 : 0)} kişi başvurdu</span></div>
 			<div class="kadro"><b>1. kadro · Hemen Al</b><p>Ödersin, ${tur === "is" ? "iş" : "ev"} hemen senin olur.</p><span class="fiyat">${sayi(il.hemen)}</span>
-				<button class="hemen" data-al="${il.id}" ${alindi || kilit ? "disabled" : ""}>${alindi ? "Alındı" : "Hemen Al"}</button></div>
+				<button class="hemen ${pAl ? "kilit" : ""}" data-al="${il.id}" ${alindi || kilit || pAl ? "disabled" : ""}>${alindi ? "Alındı" : pAl ? SVG.kilit + "Premium" : "Hemen Al"}</button></div>
 			<div class="kadro"><b>2. kadro · Başvur</b><p>İlan bitince başvuranlar arasından kura çekilir. Başvuru ücreti geri ödenmez.</p><span class="fiyat">${sayi(il.basvuru)}</span>
-				<button class="basvur" data-basvur="${il.id}" ${basvurdu || kilit ? "disabled" : ""}>${basvurdu ? "Başvurdun" : "Başvur"}</button></div></div>`;
+				<button class="basvur ${pBas ? "kilit" : ""}" data-basvur="${il.id}" ${basvurdu || kilit || pBas ? "disabled" : ""}>${basvurdu ? "Başvurdun" : pBas ? SVG.kilit + "Premium" : "Başvur"}</button></div></div>`;
 	}
 
 	// Kişi kartının üst kısmı (kullanıcı, 2026-11-05: başkasının kartı da kendi kartı gibi, yalnız seçmeli menüler yok).
 	// İsme dokununca kamera o kişiyi takip eder.
 	function kart(k, dy, iste) {
-		const m = mesai();
+		const m = mesai(k.handle === karakter && bilgi ? bilgi.mesai : null);
 		return `<button class="kim" data-takip="${esc(k.handle)}" style="border:0;background:none;padding:0;text-align:left">
 				<span class="avatar">${esc(k.handle.replace(/^@/, "").charAt(0).toUpperCase())}</span><div>
-				<b>${esc(k.handle)}</b><span>${esc(k.meslek)}${k.yer ? " · " + esc(k.yer.split(" · ")[0]) : ""}</span><span>${esc(k.ev)}</span></div></button>
+				<b>${esc(k.handle)}${rozet(k.handle)}</b><span>${esc(k.meslek)}${k.yer ? " · " + esc(k.yer.split(" · ")[0]) : ""}</span><span>${esc(k.ev)}</span></div></button>
 			<span class="durum ${iste ? "" : "evde"}">${esc(dy)}</span>
 			<div class="kutu para"><span class="ornek">Örnek</span><div><span class="etiket">Para</span><strong>${sayi(k.para)}</strong></div>
 				<div class="bugun"><span class="etiket">Bugün</span><span class="arti">+${sayi(k.ucret * 8)}</span> maaş<br><span class="eksi">−${sayi(k.kira)}</span> kira</div></div>
@@ -773,8 +906,13 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 
 	const SAYFA = {
 		kisi: ["Karakterim", () => {
-			const is = isim(), ev = evim(), [dy, iste] = durumYazi();
-			return kart({ handle: karakter, meslek: is.meslek, yer: is.yer, ev: ev.adres, kira: ev.kira, ucret: is.ucret, para: st.para, g: [.62, .35, .9] }, dy, iste) + `
+			const is = isim(), ev = evim(), [dy, iste] = durumYazi(), k = kidem();
+			return kart({ handle: karakter, meslek: is.meslek, yer: is.yer, ev: ev.adres, kira: ev.kira, ucret: is.ucret, para: st.para, g: ORNEK_G }, dy, iste) + `
+			<div class="kutu"><div class="satir"><span>Üyelik</span><b>${uye.premium ? "Premium" : "Standart"}</b></div>
+				<div class="satir"><span>Kıdem</span><b>${k ? yuzde(k.oran) : "—"}</b></div>
+				${k ? `<span class="kucuk">Her ay %2 artar, iş değiştirsen de kalır. Sonraki artış: ${k.sonraki}</span>` : ""}
+				<div class="satir"><span>Ustalık</span><b>${yuzde(Math.min(20, uye.gun * 0.2))}</b></div>
+				<span class="kucuk">Oyuna girdiğin her gün %0,2 artar, en çok %20. Giriş serin: ${uye.seri} gün</span></div>
 			<div class="alt-dugmeler"><button class="bag" id="mkb-sifirla">Örnekleri sıfırla</button></div>`;
 		}],
 		is: ["İş", () => {
@@ -784,7 +922,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 				: "İş değiştirmek ücretlidir. Değiştirdikten sonra 7 gün yeniden değiştiremezsin.";
 			return `<div class="kutu"><span class="ornek">Örnek ücret</span><span class="etiket">Şu anki işin</span><h3>${esc(is.meslek)}</h3><p class="alt">${esc(is.yer)}</p>
 				<div class="satir"><span>Meslek grubu</span><b>${esc(is.grup)}</b></div><div class="satir"><span>Saatlik ücret</span><b>${is.ucret}</b></div>
-				<div class="satir"><span>Fazla mesai saati</span><b>${Math.round(is.ucret * 1.5)}</b></div><div class="satir"><span>Mesai</span><b>09:00–17:00</b></div></div>
+				<div class="satir"><span>Fazla mesai saati</span><b>${Math.round(is.ucret * 1.5)}</b></div><div class="satir"><span>Mesai</span><b>${mesai(bilgi && bilgi.mesai).aralik}</b></div></div>
 			<p class="bilgi">${bilgiYazi}</p><div class="bolum">Açık ilanlar</div>
 			${l.length ? l.map((il) => ilanKutu(il, "is")).join("") : `<div class="kutu bos"><p class="bilgi">Şu an açık ilan yok. İlanlar gün içinde farklı saatlerde çıkar.</p></div>`}`;
 		}],
@@ -792,14 +930,20 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			const ev = evim(), l = acikIlan(EV_ILAN);
 			return `<div class="kutu"><span class="ornek">Örnek kira</span><span class="etiket">Evin</span><h3>${esc(ev.adres)}</h3>
 				<div class="satir"><span>Günlük kira</span><b>${ev.kira}</b></div><p class="bilgi">Kira her gece 00:00'da paradan kesilir.</p></div>
+			${uye.premium ? "" : `<p class="bilgi">Ev değiştirmek Premium üyelikle açılır.</p>`}
 			<div class="bolum">Açık ilanlar</div>
 			${l.length ? l.map((il) => ilanKutu(il, "ev")).join("") : `<div class="kutu bos"><p class="bilgi">Şu an açık ilan yok. İlanlar gün içinde farklı saatlerde çıkar.</p></div>`}`;
 		}],
+		// standart üyelikte yalnız zorunlular: yorgunsa eve, hastaysa hastaneye (kullanıcı, 2026-11-07); gerisi Premium
 		ne: ["Ne yapsın?", () => {
 			const [dy, iste] = durumYazi(), is = isim();
+			const sart = { ev: ORNEK_G[0] >= 0.6 ? "" : "Yorgun olduğunda açılır", hastane: ORNEK_G[2] < 0.5 ? "" : "Hasta olduğunda açılır" };
 			return `<span class="durum ${iste ? "" : "evde"}">Şu an: ${esc(dy.split(" · ")[0])}</span><div class="liste">
-				${NE.map((n) => `<button class="git ${st.ne === n[0] ? "secili" : ""}" data-ne="${n[0]}"><b>${n[1]}</b>
-					<span>${n[2] || "Mesaiden sonra, saatlik " + Math.round(is.ucret * 1.5)}</span><em class="${n[4] ? "iyi" : ""}">${n[3]}</em></button>`).join("")}</div>
+				${NE.map((n) => {
+					const kilit = !uye.premium && !(n[0] in sart), kosul = uye.premium ? "" : sart[n[0]] || "";
+					return `<button class="git ${st.ne === n[0] ? "secili" : ""} ${kilit ? "kilitli" : ""}" data-ne="${n[0]}" ${kilit || kosul ? "disabled" : ""}><b>${n[1]}</b>
+					<span>${kosul || n[2] || "Mesaiden sonra, saatlik " + Math.round(is.ucret * 1.5)}</span><em class="${kilit ? "kilit" : n[4] ? "iyi" : ""}">${kilit ? SVG.kilit + "Premium" : n[3]}</em></button>`;
+				}).join("")}</div>
 			<p class="bilgi">Mesai bitince karakterin eve döner.</p><p class="bilgi">Betada karakter henüz seçilen yere gitmez.</p>`;
 		}],
 		gorunus: ["Görünüş", () => kostumVar() ? kostumIzgara(karakter) : `<p class="bilgi">Kostümler şu an kapalı.</p>`],
@@ -808,7 +952,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		sakin: ["Sakin", () => {
 			const s = secilen, o = ozet(s.handle), m = mesai();
 			return kart({ handle: s.handle, meslek: s.meslek || "—", yer: s.isyeri, ev: s.ev || "—", kira: kiraOf(s.ev || ""), ucret: 220, para: o.para, g: o.g },
-				m.iste ? "İşte · 09:00–17:00" : "Evde", m.iste) + `
+				m.tatil ? "Tatilde" : m.iste ? "İşte" : "Evde", m.iste) + `
 			<div class="ikili"><button class="hayir" data-evgoster="1">Evini göster</button>${s.is_var ? `<button class="hayir" data-isgoster="1">İş yerini göster</button>` : ""}</div>
 			${karakter ? "" : `<div class="ikili"><button class="evet" data-kontrol="1">Kontrolü Al</button></div>`}
 			${kostumVar() ? (kostumAcik ? kostumIzgara(s.handle) : `<button class="git" data-kostumac="1"><b>Kostüm giydir</b><span>Cadılar Bayramı kostümleri</span><em>40 kostüm</em></button>`) : ""}`;
@@ -939,6 +1083,34 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		setTimeout(() => { $("mkb-tost").hidden = true; }, 1800);
 	});
 
+	// tanıtım (kullanıcı, 2026-11-07: "yeni olan her şeyi anlatacağız"): karakter bağlandığında bir kez
+	const TANITIM = [
+		["Karakterin artık senin", "Şehirde Instagram adınla yaşayan karakterin kontrolü artık sende. Sen oyunda olmasan da işine gider, evine döner."],
+		["Mesai ve tatil", "Oyunda bir gün gerçekte bir saat sürer. Karakterin 4 saat çalışır, 1 saat öğle arası verir, 4 saat daha çalışır. 5 gün çalışır, 6. gün bütün şehir tatildedir."],
+		["Kıdem ve ustalık", "Şehirde geçirdiğin her ay maaşına %2 kıdem eklenir, iş değiştirsen de kalır. Her gün oyuna girersen ustalığın artar; iş değiştirince ustalık sıfırlanır."],
+		["Standart ve Premium", "Standart üyelikle iş ilanlarına başvurabilir, yorgunsan eve, hastaysan hastaneye gidebilirsin. Hemen Al, ev değiştirme, fazla mesai, kafe ve diğer yerler Premium üyelikle açılır."],
+		["Para şimdilik örnek", "Para, maaş ve kira betada örnek rakamlarla görünür. Kurallar kesinleşince gerçek hesaplara geçilecek."],
+	];
+	let tSira = 0;
+	function tanitimCiz() {
+		$("mkb-t-baslik").textContent = TANITIM[tSira][0];
+		$("mkb-t-yazi").textContent = TANITIM[tSira][1];
+		$("mkb-t-nokta").innerHTML = TANITIM.map((_, i) => `<i class="${i === tSira ? "bu" : ""}"></i>`).join("");
+		$("mkb-t-devam").textContent = tSira === TANITIM.length - 1 ? "Başla" : "Devam";
+	}
+	function tanitim(zorla) {
+		try { if (!zorla && localStorage.getItem("miniakent_tanitim_1")) return; } catch (e) {}
+		tSira = 0;
+		tanitimCiz();
+		$("mkb-tanitim").hidden = false;
+	}
+	function tanitimBitir() {
+		$("mkb-tanitim").hidden = true;
+		try { localStorage.setItem("miniakent_tanitim_1", "1"); } catch (e) {}
+	}
+	$("mkb-t-gec").addEventListener("click", tanitimBitir);
+	$("mkb-t-devam").addEventListener("click", () => { if (++tSira >= TANITIM.length) tanitimBitir(); else tanitimCiz(); });
+
 	// arama ve öneriler (oyundaki kutunun yerine)
 	const ara = $("mkb-ara"), oneri = $("mkb-oneri");
 	const bul = (h) => { oneri.hidden = true; ara.blur(); window.minikentSearch && window.minikentSearch(h); };
@@ -968,6 +1140,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			sonSecim = window.miniakentSecimSurum;
 			secilen = window.miniakentSecilen;
 			bolge.hidden = true;
+			rozetGetir(secilen.handle);
 			ac(secilen.handle === karakter ? "kisi" : "sakin");
 		}
 		// oyunda bir binaya dokunuldu: bina kartı
@@ -993,10 +1166,14 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			sonOturum = window.miniakentOturum;
 			let o = {};
 			try { o = JSON.parse(sonOturum || "{}"); } catch (e) {}
+			const yeniKarakter = !karakter && o.karakter;
 			karakter = o.karakter || "";
+			uye = { premium: !!o.premium, seri: o.seri || 0, gun: o.gun || 0 };
 			$("mkb-harf").textContent = karakter.replace(/^@/, "").charAt(0).toUpperCase();
 			if (!karakter && sayfaAd !== "sakin") kapat();
+			else if (sayfaAd) ciz();
 			arayuz();
+			if (yeniKarakter) tanitim(false);
 		}
 		const b = JSON.stringify(window.miniakentKarakterBilgi || null);
 		const dk = new Date().getMinutes();
@@ -1012,7 +1189,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611070846.pck","fileSizes":{"index-v202611070846.pck":6175756,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611080325.pck","fileSizes":{"index-v202611080325.pck":6207844,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
