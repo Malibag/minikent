@@ -627,6 +627,8 @@ try {
 	<input id="kontrol-eposta" type="email" autocomplete="email" required>
 	<label for="kontrol-sifre">Şifre</label>
 	<input id="kontrol-sifre" type="password" autocomplete="current-password" required>
+	<label for="kontrol-sifre2" class="kayitta" hidden>Şifre tekrar</label>
+	<input id="kontrol-sifre2" class="kayitta" type="password" autocomplete="new-password" hidden>
 	<button type="submit" class="gonder">Giriş Yap</button>
 	<button type="button" class="unuttum">Şifremi unuttum</button>
 	</div>
@@ -644,7 +646,7 @@ try {
 	</div>
 	<div class="mesaj" role="status"></div>
 	<div class="giris-alt">
-		<div class="alt"><span>Hesabın yok mu?</span><button type="button" class="kayit">Kayıt Ol</button></div>
+		<div class="alt"><span class="alt-yazi">Hesabın yok mu?</span><button type="button" class="kayit">Kayıt Ol</button></div>
 		<button type="button" class="simdilik">Şimdilik geç</button>
 	</div>
 </form>`;
@@ -725,8 +727,28 @@ try {
 			}
 			gonder.disabled = kayitDugme.disabled = false;
 		};
-		q("form").addEventListener("submit", (e) => { e.preventDefault(); gir(false); });
-		kayitDugme.addEventListener("click", () => gir(true));
+		// Kayıt Ol ayrı ekran (kullanıcı, 2026-11-09): başlık ve düğme "Kayıt Ol", Şifre tekrar alanı, Şifremi unuttum yok;
+		// altta "Hesabın var mı? Giriş Yap" ile giriş ekranına dönülür
+		const sifre2 = q("#kontrol-sifre2");
+		let kayitModu = false;
+		const mod = (k) => {
+			kayitModu = k;
+			q("h2").textContent = aday ? "Kontrolü Al" : k ? "Kayıt Ol" : "Giriş Yap";
+			gonder.textContent = k ? "Kayıt Ol" : "Giriş Yap";
+			pen.querySelectorAll(".kayitta").forEach((x) => { x.hidden = !k; });
+			q(".unuttum").hidden = k;
+			q(".alt-yazi").textContent = k ? "Hesabın var mı?" : "Hesabın yok mu?";
+			kayitDugme.textContent = k ? "Giriş Yap" : "Kayıt Ol";
+			sifre.autocomplete = k ? "new-password" : "current-password";
+			sifre2.value = "";
+			yaz("");
+		};
+		q("form").addEventListener("submit", (e) => {
+			e.preventDefault();
+			if (kayitModu && sifre.value !== sifre2.value) { yaz("Şifreler aynı değil.", true); return; }
+			gir(kayitModu);
+		});
+		kayitDugme.addEventListener("click", () => mod(!kayitModu));
 		q(".unuttum").addEventListener("click", async () => {
 			if (!eposta.value.trim()) {
 				yaz("Önce e-postanı yaz.", true);
@@ -814,9 +836,9 @@ try {
 			bulGoster();
 		};
 		// h boşsa hesap penceresi (yükleme sonrası ve profil menüsünden), doluysa o karakterin Kontrolü Al penceresi
-		window.miniakentKontrolAc = async (h) => {
+		window.miniakentKontrolAc = async (h, kayit) => {
 			aday = h || "";
-			q("h2").textContent = aday ? "Kontrolü Al" : "Giriş Yap";
+			mod(!!kayit);
 			q(".kim").textContent = aday;
 			q(".kim").hidden = !aday;
 			sifre.value = "";
@@ -1394,10 +1416,11 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		arayuz();
 	});
 	$("mkb-p-giris").addEventListener("click", (e) => {
-		if (!e.target.closest("button")) return;
+		const b = e.target.closest("button");
+		if (!b) return;
 		$("mkb-ayarlar").hidden = true;
 		$("mkb-disli").setAttribute("aria-expanded", "false");
-		window.miniakentKontrolAc && window.miniakentKontrolAc("");
+		window.miniakentKontrolAc && window.miniakentKontrolAc("", b.classList.contains("hayir"));  // Kayıt Ol kayıt ekranını açar
 	});
 	$("mkb-ayril").addEventListener("click", () => {
 		$("mkb-ayarlar").hidden = true;
