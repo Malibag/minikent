@@ -456,7 +456,7 @@ body.gece .yk-sahne { background: #3a4d74; border-color: #0b1220; }
 // Her ziyaretçi cevrimici/<kimlik> yazar, sekme kapanınca silinir; oyun sayıyı window.miniakentCevrimici'den okur.
 // gunluk/<Türkiye tarihi> her tarayıcıda günde bir kez 1 artar. Bağlantı kurulamazsa oyun etkilenmez.
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getDatabase, ref, set, get, onDisconnect, onValue, runTransaction, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+import { getDatabase, ref, set, get, onDisconnect, onValue, runTransaction, serverTimestamp, goOffline, goOnline } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
 try {
 	const app = initializeApp({
 		apiKey: "AIzaSyCC0HI_bln18UBMEDHdAO7CmtMEM3JtM5I",
@@ -552,7 +552,14 @@ try {
 			premium = false;
 			if (karakter) premiumBirak = onValue(ref(db, "premium/" + anahtar(karakter)), (s) => { premium = s.val() === true; oturum(); });
 		};
-		fa.onAuthStateChanged(auth, (u) => {
+		// telefonda Instagram'a geçince sayfanın bağlantısı kopabilir: sayfaya dönülünce bağlantı yeniden kurulur ve
+		// oyuncu kaydı baştan dinlenir, doğrulama yenilemeden görünür (kullanıcı, 2026-11-09)
+		document.addEventListener("visibilitychange", () => {
+			if (document.visibilityState !== "visible" || !auth.currentUser || karakter) return;
+			goOffline(db); goOnline(db);
+			oyuncuDinle(auth.currentUser);
+		});
+		const oyuncuDinle = (u) => {
 			if (oyuncuBirak) oyuncuBirak();
 			oyuncuBirak = null;
 			karakter = ""; giris = null;
@@ -572,7 +579,8 @@ try {
 				}, (e) => console.warn("oyuncu", e));
 			}
 			oturum();
-		});
+		};
+		fa.onAuthStateChanged(auth, oyuncuDinle);
 		const css = document.createElement("style");
 		css.textContent = `
 #kontrol { position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center;
@@ -1099,10 +1107,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 <div class="mkb-liste" id="mkb-oneri" hidden></div>
 <div class="mkb-liste" id="mkb-bolge" hidden></div>
 <div class="ray" id="mkb-ray" role="tablist" aria-label="Karakterim" hidden>
-	<button class="sekme" role="tab" aria-selected="false" aria-label="Para ve durum" data-ad="kisi"><span class="avatar" id="mkb-harf"></span>${SVG.ok}</button>
-	<button class="sekme" role="tab" aria-selected="false" aria-label="İş" data-ad="is"><span class="simge">${SVG.is}</span><span class="nokta" id="mkb-nokta"></span>${SVG.ok}</button>
-	<button class="sekme" role="tab" aria-selected="false" aria-label="Ev" data-ad="ev"><span class="simge">${SVG.ev}</span>${SVG.ok}</button>
-	<button class="sekme" role="tab" aria-selected="false" aria-label="Ne yapsın?" data-ad="ne"><span class="simge">${SVG.ne}</span>${SVG.ok}</button>
+	<button class="sekme" role="tab" aria-selected="false" aria-label="Karakterim" data-ad="kisi"><span class="avatar" id="mkb-harf"></span>${SVG.ok}</button>
 	<button class="sekme" role="tab" aria-selected="false" aria-label="Görünüş" data-ad="gorunus"><span class="simge">${SVG.gorunus}</span>${SVG.ok}</button>
 </div>
 <section class="mkb-pano" id="mkb-pano" aria-hidden="true">
@@ -1200,8 +1205,8 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	// adın yanındaki tik: Instagram'la doğrulanmış sarı, Premium lacivert; başkalarınınki Firebase'den bir kez sorulur
 	const rozetler = {};
 	function rozet(h) {
-		const r = h === karakter ? (uye.premium ? "lacivert" : "sari") : rozetler[h] || "";
-		return r ? `<i class="tik ${r}" title="${r === "lacivert" ? "Premium" : "Instagram onaylı"}">${SVG.tik}</i>` : "";
+		// başlangıç sürümü (kullanıcı, 2026-11-09): Premium yok, doğrulanmış herkes sarı tik
+		return h === karakter || rozetler[h] ? `<i class="tik sari" title="Instagram onaylı">${SVG.tik}</i>` : "";
 	}
 	function rozetGetir(h) {
 		if (h in rozetler || typeof window.miniakentRozet !== "function") return;
@@ -1235,11 +1240,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 				<span class="avatar">${esc(k.handle.replace(/^@/, "").charAt(0).toUpperCase())}</span><div>
 				<b>${esc(k.handle)}${rozet(k.handle)}</b><span>${esc(k.meslek)}${k.yer ? " · " + esc(k.yer.split(" · ")[0]) : ""}</span><span>${esc(k.ev)}</span></div></button>
 			<span class="durum ${iste ? "" : "evde"}">${esc(dy)}</span>
-			<div class="kutu para"><span class="ornek">Örnek</span><div><span class="etiket">Para</span><strong>${sayi(k.para)}</strong></div>
-				<div class="bugun"><span class="etiket">Bugün</span><span class="arti">+${sayi(k.ucret * 8)}</span> maaş<br><span class="eksi">−${sayi(k.kira)}</span> kira</div></div>
-			<div class="kutu"><span class="ornek">Örnek</span><div class="gosterge">
-				<span>Mesai</span>${ada(m.oran)}<span class="kucuk">${m.yazi}</span>
-				<span>Yorgunluk</span>${ada(k.g[0])}<span>Stres</span>${ada(k.g[1])}<span>Sağlık</span>${ada(k.g[2])}</div></div>`;
+			<div class="kutu"><div class="gosterge"><span>Mesai</span>${ada(m.oran)}<span class="kucuk">${m.yazi}</span></div></div>`;
 	}
 	// başka sakinin örnek parası ve göstergeleri: kullanıcı adından (her açılışta aynı)
 	function ozet(h) {
@@ -1271,14 +1272,9 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 
 	const SAYFA = {
 		kisi: ["Karakterim", () => {
-			const is = isim(), ev = evim(), [dy, iste] = durumYazi(), k = kidem();
-			return kart({ handle: karakter, meslek: is.meslek, yer: is.yer, ev: ev.adres, kira: ev.kira, ucret: is.ucret, para: st.para, g: ORNEK_G }, dy, iste) + `
-			<div class="kutu"><div class="satir"><span>Üyelik</span><b>${uye.premium ? "Premium" : "Standart"}</b></div>
-				<div class="satir"><span>Kıdem</span><b>${k ? yuzde(k.oran) : "—"}</b></div>
-				${k ? `<span class="kucuk">Her ay %2 artar, iş değiştirsen de kalır. Sonraki artış: ${k.sonraki}</span>` : ""}
-				<div class="satir"><span>Ustalık</span><b>${yuzde(Math.min(20, uye.gun * 0.2))}</b></div>
-				<span class="kucuk">Oyuna girdiğin her gün %0,2 artar, en çok %20. Giriş serin: ${uye.seri} gün</span></div>
-			<div class="alt-dugmeler"><button class="bag" id="mkb-sifirla">Örnekleri sıfırla</button></div>`;
+			// başlangıç sürümü (kullanıcı, 2026-11-09): para, kıdem, üyelik yok
+			const is = isim(), ev = evim(), [dy, iste] = durumYazi();
+			return kart({ handle: karakter, meslek: is.meslek, yer: is.yer, ev: ev.adres }, dy, iste);
 		}],
 		is: ["İş", () => {
 			const is = isim(), l = acikIlan(IS_ILAN);
@@ -1315,8 +1311,8 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		bina: [() => bina.baslik, () => `${bina.alt ? `<p class="bilgi">${esc(bina.alt)}</p>` : ""}${bina.is ? binaGrup("is") : ""}${bina.ev ? binaGrup("ev") : ""}`],
 		// başka sakinin kartı: para ve göstergeler, Evini/İş yerini göster; kostüm yalnız etkinlik süresince (kullanıcı, 2026-11-05)
 		sakin: ["Sakin", () => {
-			const s = secilen, o = ozet(s.handle), m = mesai();
-			return kart({ handle: s.handle, meslek: s.meslek || "—", yer: s.isyeri, ev: s.ev || "—", kira: kiraOf(s.ev || ""), ucret: 220, para: o.para, g: o.g },
+			const s = secilen, m = mesai();
+			return kart({ handle: s.handle, meslek: s.meslek || "—", yer: s.isyeri, ev: s.ev || "—" },
 				m.tatil ? "Tatilde" : m.iste ? "İşte" : "Evde", m.iste) + `
 			<div class="ikili"><button class="hayir" data-evgoster="1">Evini göster</button>${s.is_var ? `<button class="hayir" data-isgoster="1">İş yerini göster</button>` : ""}</div>
 			${karakter ? "" : `<div class="ikili"><button class="evet" data-kontrol="1">Kontrolü Al</button></div>`}
@@ -1544,7 +1540,6 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			sonOturum = window.miniakentOturum;
 			let o = {};
 			try { o = JSON.parse(sonOturum || "{}"); } catch (e) {}
-			const yeniKarakter = !karakter && o.karakter;
 			karakter = o.karakter || "";
 			eposta = o.eposta || "";
 			uye = { premium: !!o.premium, seri: o.seri || 0, gun: o.gun || 0 };
@@ -1552,14 +1547,12 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			if (!karakter && sayfaAd !== "sakin") kapat();
 			else if (sayfaAd) ciz();
 			arayuz();
-			if (yeniKarakter) tanitim(false);
 		}
 		const b = JSON.stringify(window.miniakentKarakterBilgi || null);
 		const dk = new Date().getMinutes();
 		if (b !== sonBilgi || dk !== sonDk) {
 			sonBilgi = b; sonDk = dk;
 			bilgi = window.miniakentKarakterBilgi || null;
-			$("mkb-nokta").hidden = !acikIlan(IS_ILAN).length;
 			if (sayfaAd && $("mkb-onay").hidden && sayfaAd !== "gorunus") ciz();
 		}
 	}, 500);
