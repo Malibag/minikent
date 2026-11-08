@@ -183106,15 +183106,15 @@
    "handle": "@_dissizkral2014",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Zeytin Sokağı No 1, Daire 41",
+   "home": "Balıkçı Koyu No 12",
    "home_from": 1794117600,
    "job": [
-    "Grafik Tasarımcı",
-    "Miniakent Tasarım Stüdyosu · Miniakent Plaza, Kat 8",
-    "office",
-    "plaza"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "9"
    ],
-   "wp": "tasarim",
+   "wp": "koy",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0
@@ -183199,15 +183199,15 @@
    "handle": "@snurs.yldz",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Doğu Banliyö B Blok, Daire 12",
+   "home": "Balıkçı Koyu No 31",
    "home_from": 1794117600,
    "job": [
-    "Yazılımcı",
-    "Miniakent Alfa Yazılım A.Ş. · Miniakent Plaza, Kat 7",
-    "office",
-    "plaza"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "10"
    ],
-   "wp": "yazilim",
+   "wp": "koy",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -183279,15 +183279,15 @@
    "handle": "@soulofthsunflowers",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Doğu Banliyö D Blok, Daire 134",
+   "home": "Balıkçı Koyu No 1",
    "home_from": 1794117600,
    "job": [
-    "Dans Eğitmeni",
-    "Miniakent Dans Kursu · Miniakent Plaza 3, Kat 3",
-    "office",
-    "plaza3"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "11"
    ],
-   "wp": "dans",
+   "wp": "koy",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0
@@ -183401,15 +183401,15 @@
    "handle": "@013dogukan",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Doğu Banliyö A Blok, Daire 129",
+   "home": "Balıkçı Koyu No 18",
    "home_from": 1794117600,
    "job": [
-    "Oyun Geliştirici",
-    "Miniakent Oyun Stüdyosu · Miniakent Plaza 2, Kat 5",
-    "office",
-    "plaza2"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "12"
    ],
-   "wp": "oyun",
+   "wp": "koy",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0,
@@ -183752,15 +183752,15 @@
    "handle": "@yagiz_odnc",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Doğu Banliyö G Blok, Daire 84",
+   "home": "Balıkçı Koyu No 17",
    "home_from": 1794117600,
    "job": [
-    "Pilates Eğitmeni",
-    "Miniakent Spor Salonu · Miniakent Plaza, Kat 1",
-    "office",
-    "plaza"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "13"
    ],
-   "wp": "spor",
+   "wp": "koy",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -183870,15 +183870,15 @@
    "handle": "@gullerranxx",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Doğu Banliyö I Blok, Daire 74",
+   "home": "Balıkçı Koyu No 2",
    "home_from": 1794117600,
    "job": [
-    "Seramik Sanatçısı",
-    "Miniakent Sanat Atölyesi · Miniakent Plaza 3, Kat 10",
-    "office",
-    "plaza3"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "14"
    ],
-   "wp": "sanat",
+   "wp": "koy",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -183891,15 +183891,15 @@
    "handle": "@ayybenimoldugunnzamannn",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Doğu Banliyö I Blok, Daire 102",
+   "home": "Balıkçı Koyu No 17",
    "home_from": 1794117600,
    "job": [
-    "Hukuk Danışmanı",
-    "Miniakent Hukuk Bürosu · Miniakent Plaza, Kat 6",
-    "office",
-    "plaza"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "15"
    ],
-   "wp": "hukuk",
+   "wp": "koy",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -183925,15 +183925,15 @@
    "handle": "@seycanakman",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Doğu Banliyö I Blok, Daire 129",
+   "home": "Balıkçı Koyu No 13",
    "home_from": 1794117600,
    "job": [
-    "Oyun Geliştirici",
-    "Miniakent Oyun Stüdyosu · Miniakent Plaza 2, Kat 5",
-    "office",
-    "plaza2"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "16"
    ],
-   "wp": "oyun",
+   "wp": "koy",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -183959,15 +183959,15 @@
    "handle": "@roryoloiv",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 30",
+   "home": "Balıkçı Koyu No 30",
    "home_from": 1794117600,
    "job": [
-    "Laboratuvar Teknisyeni",
-    "Miniakent Ar-Ge Merkezi · Miniakent Plaza, Kat 12",
-    "office",
-    "plaza"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "17"
    ],
-   "wp": "arge",
+   "wp": "koy",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0
@@ -183976,15 +183976,15 @@
    "handle": "@kadiraydn50",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 38",
+   "home": "Balıkçı Koyu No 23",
    "home_from": 1794117600,
    "job": [
-    "Seramik Sanatçısı",
-    "Miniakent Sanat Atölyesi · Miniakent Plaza 3, Kat 10",
-    "office",
-    "plaza3"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "18"
    ],
-   "wp": "sanat",
+   "wp": "koy",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -184056,15 +184056,15 @@
    "handle": "@rengts.synex",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 73",
+   "home": "Balıkçı Koyu No 18",
    "home_from": 1794117600,
    "job": [
-    "Yatırım Danışmanı",
-    "Miniakent Yatırım Danışmanlığı · Miniakent Plaza 4, Kat 10",
-    "office",
-    "plaza4"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "19"
    ],
-   "wp": "yatirim",
+   "wp": "koy",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0
@@ -184655,15 +184655,15 @@
    "handle": "@songul.alimm",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 81",
+   "home": "Balıkçı Koyu No 7",
    "home_from": 1794117600,
    "job": [
-    "Sigorta Uzmanı",
-    "Miniakent Ticaret A.Ş. · Miniakent Plaza, Kat 10",
-    "office",
-    "plaza"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "0"
    ],
-   "wp": "ticaret",
+   "wp": "koy",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -184735,15 +184735,15 @@
    "handle": "@mert__0998",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 82",
+   "home": "Balıkçı Koyu No 22",
    "home_from": 1794117600,
    "job": [
-    "Veri Bilimci",
-    "Miniakent Ar-Ge Merkezi · Miniakent Plaza, Kat 12",
-    "office",
-    "plaza"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "1"
    ],
-   "wp": "arge",
+   "wp": "koy",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -184929,15 +184929,15 @@
    "handle": "@zehirlerden_zeynepgile",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 84",
+   "home": "Balıkçı Koyu No 15",
    "home_from": 1794117600,
    "job": [
-    "Tercüman",
-    "Miniakent Çeviri Bürosu · Miniakent Plaza 3, Kat 12",
-    "office",
-    "plaza3"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "2"
    ],
-   "wp": "ceviri",
+   "wp": "koy",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
@@ -185013,15 +185013,15 @@
    "handle": "@ecr.in0638",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 85",
+   "home": "Balıkçı Koyu No 11",
    "home_from": 1794117600,
    "job": [
-    "Seramik Sanatçısı",
-    "Miniakent Sanat Atölyesi · Miniakent Plaza 3, Kat 10",
-    "office",
-    "plaza3"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "3"
    ],
-   "wp": "sanat",
+   "wp": "koy",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -185034,15 +185034,15 @@
    "handle": "@priww_4510",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 86",
+   "home": "Balıkçı Koyu No 12",
    "home_from": 1794117600,
    "job": [
-    "Yazılımcı",
-    "Miniakent Gama Yazılım A.Ş. · Miniakent Plaza 4, Kat 4",
-    "office",
-    "plaza4"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "4"
    ],
-   "wp": "gama_yazilim",
+   "wp": "koy",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0
@@ -185072,15 +185072,15 @@
    "handle": "@zeynoshhiremiee",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 86",
+   "home": "Balıkçı Koyu No 27",
    "home_from": 1794117600,
    "job": [
-    "Eğitmen",
-    "Miniakent Bilişim Akademisi · Miniakent Plaza 4, Kat 9",
-    "office",
-    "plaza4"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "5"
    ],
-   "wp": "akademi",
+   "wp": "koy",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -185422,15 +185422,15 @@
    "handle": "@vezoelchavo",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 90",
+   "home": "Balıkçı Koyu No 25",
    "home_from": 1794117600,
    "job": [
-    "Lojistik Uzmanı",
-    "Miniakent Lojistik A.Ş. · Miniakent Plaza 2, Kat 3",
-    "office",
-    "plaza2"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "6"
    ],
-   "wp": "lojistik",
+   "wp": "koy",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0
@@ -185519,15 +185519,15 @@
    "handle": "@hirahebele_hubele",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 92",
+   "home": "Balıkçı Koyu No 13",
    "home_from": 1794117600,
    "job": [
-    "Editör",
-    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
-    "office",
-    "plaza3"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "7"
    ],
-   "wp": "gazete",
+   "wp": "koy",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -185578,15 +185578,15 @@
    "handle": "@56892a111",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 92",
+   "home": "Balıkçı Koyu No 4",
    "home_from": 1794117600,
    "job": [
-    "Spiker",
-    "Miniakent TV · Miniakent Plaza 3, Kat 7",
-    "office",
-    "plaza3"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "8"
    ],
-   "wp": "tv",
+   "wp": "koy",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -185751,15 +185751,15 @@
    "handle": "@gezgin1kadinnn",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 94",
+   "home": "Balıkçı Koyu No 24",
    "home_from": 1794117600,
    "job": [
-    "Eğitmen",
-    "Miniakent Bilişim Akademisi · Miniakent Plaza 4, Kat 9",
-    "office",
-    "plaza4"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "9"
    ],
-   "wp": "akademi",
+   "wp": "koy",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -185772,15 +185772,15 @@
    "handle": "@ndngbulgur",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 95",
+   "home": "Balıkçı Koyu No 22",
    "home_from": 1794117600,
    "job": [
-    "Metin Yazarı",
-    "Miniakent Reklam Ajansı · Miniakent Plaza 4, Kat 2",
-    "office",
-    "plaza4"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "10"
    ],
-   "wp": "reklam",
+   "wp": "koy",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0
@@ -186945,15 +186945,15 @@
    "handle": "@_havintrn_",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 109",
+   "home": "Balıkçı Koyu No 25",
    "home_from": 1794117600,
    "job": [
-    "Tercüman",
-    "Miniakent Çeviri Bürosu · Miniakent Plaza 3, Kat 12",
-    "office",
-    "plaza3"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "11"
    ],
-   "wp": "ceviri",
+   "wp": "koy",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -187358,15 +187358,15 @@
    "handle": "@simoonyxx",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 115",
+   "home": "Balıkçı Koyu No 28",
    "home_from": 1794117600,
    "job": [
-    "Reklamcı",
-    "Miniakent Reklam Ajansı · Miniakent Plaza 4, Kat 2",
-    "office",
-    "plaza4"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "12"
    ],
-   "wp": "reklam",
+   "wp": "koy",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -187396,15 +187396,15 @@
    "handle": "@sosyales",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 115",
+   "home": "Balıkçı Koyu No 26",
    "home_from": 1794117600,
    "job": [
-    "Redaktör",
-    "Miniakent Yayınevi · Miniakent Plaza, Kat 11",
-    "office",
-    "plaza"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "13"
    ],
-   "wp": "yayinevi",
+   "wp": "koy",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0
@@ -187472,15 +187472,15 @@
    "handle": "@1is2mi50yorla",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 116",
+   "home": "Balıkçı Koyu No 20",
    "home_from": 1794117600,
    "job": [
-    "Diş Teknisyeni",
-    "Miniakent Sağlık Merkezi · Miniakent Plaza, Kat 2",
-    "office",
-    "plaza"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "14"
    ],
-   "wp": "saglik",
+   "wp": "koy",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
@@ -187995,15 +187995,15 @@
    "handle": "@_erayjkk_",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 123",
+   "home": "Balıkçı Koyu No 9",
    "home_from": 1794117600,
    "job": [
-    "Etkinlik Koordinatörü",
-    "Miniakent Organizasyon · Miniakent Plaza 4, Kat 7",
-    "office",
-    "plaza4"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "15"
    ],
-   "wp": "organizasyon",
+   "wp": "koy",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -188075,15 +188075,15 @@
    "handle": "@larplord16",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 124",
+   "home": "Balıkçı Koyu No 29",
    "home_from": 1794117600,
    "job": [
-    "Proje Uzmanı",
-    "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
-    "office",
-    "plaza2"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "16"
    ],
-   "wp": "muhendislik",
+   "wp": "koy",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0
@@ -188282,15 +188282,15 @@
    "handle": "@nursima_krdge",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 126",
+   "home": "Balıkçı Koyu No 28",
    "home_from": 1794117600,
    "job": [
-    "İç Mimar",
-    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
-    "office",
-    "plaza"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "17"
    ],
-   "wp": "mimarlik",
+   "wp": "koy",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -188303,15 +188303,15 @@
    "handle": "@yagmayanyagmurmusr",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 126",
+   "home": "Balıkçı Koyu No 32",
    "home_from": 1794117600,
    "job": [
-    "İşe Alım Uzmanı",
-    "Miniakent İnsan Kaynakları · Miniakent Plaza 4, Kat 5",
-    "office",
-    "plaza4"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "18"
    ],
-   "wp": "ik",
+   "wp": "koy",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -188568,15 +188568,15 @@
    "handle": "@b1lsyx",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 130",
+   "home": "Balıkçı Koyu No 21",
    "home_from": 1794117600,
    "job": [
-    "E-Ticaret Uzmanı",
-    "Miniakent E-Ticaret A.Ş. · Miniakent Plaza 2, Kat 8",
-    "office",
-    "plaza2"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "19"
    ],
-   "wp": "eticaret",
+   "wp": "koy",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0
@@ -188657,15 +188657,15 @@
    "handle": "@_mustafacanoz_",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 131",
+   "home": "Balıkçı Koyu No 16",
    "home_from": 1794117600,
    "job": [
-    "Yazılımcı",
-    "Miniakent Gama Yazılım A.Ş. · Miniakent Plaza 4, Kat 4",
-    "office",
-    "plaza4"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "0"
    ],
-   "wp": "gama_yazilim",
+   "wp": "koy",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -188978,15 +188978,15 @@
    "handle": "@irisaa_._08",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 135",
+   "home": "Balıkçı Koyu No 27",
    "home_from": 1794117600,
    "job": [
-    "Moda Tasarımcısı",
-    "Miniakent Moda Evi · Miniakent Plaza 3, Kat 11",
-    "office",
-    "plaza3"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "1"
    ],
-   "wp": "moda",
+   "wp": "koy",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0
@@ -189572,15 +189572,15 @@
    "handle": "@stella.ymis",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 142",
+   "home": "Balıkçı Koyu No 15",
    "home_from": 1794117600,
    "job": [
-    "Yoga Eğitmeni",
-    "Miniakent Fitness Kulübü · Miniakent Plaza 3, Kat 1",
-    "office",
-    "plaza3"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "2"
    ],
-   "wp": "fitness",
+   "wp": "koy",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -189669,15 +189669,15 @@
    "handle": "@koftecar",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 143",
+   "home": "Balıkçı Koyu No 23",
    "home_from": 1794117600,
    "job": [
-    "Stüdyo Asistanı",
-    "Miniakent Fotoğraf Stüdyosu · Miniakent Plaza 3, Kat 9",
-    "office",
-    "plaza3"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "3"
    ],
-   "wp": "fotograf",
+   "wp": "koy",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -189867,15 +189867,15 @@
    "handle": "@samwd_19",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö D Blok, Daire 15",
+   "home": "Balıkçı Koyu No 6",
    "home_from": 1794117600,
    "job": [
-    "Güzellik Uzmanı",
-    "Miniakent Güzellik Merkezi · Miniakent Plaza 4, Kat 8",
-    "office",
-    "plaza4"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "4"
    ],
-   "wp": "guzellik",
+   "wp": "koy",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -190368,15 +190368,15 @@
    "handle": "@k.dursun59_",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö D Blok, Daire 21",
+   "home": "Balıkçı Koyu No 24",
    "home_from": 1794117600,
    "job": [
-    "Finans Analisti",
-    "Miniakent Yatırım Danışmanlığı · Miniakent Plaza 4, Kat 10",
-    "office",
-    "plaza4"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "5"
    ],
-   "wp": "yatirim",
+   "wp": "koy",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -190528,15 +190528,15 @@
    "handle": "@burakkqr7",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö D Blok, Daire 23",
+   "home": "Balıkçı Koyu No 14",
    "home_from": 1794117600,
    "job": [
-    "Spor Hocası",
-    "Miniakent Spor Salonu · Miniakent Plaza, Kat 1",
-    "office",
-    "plaza"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "6"
    ],
-   "wp": "spor",
+   "wp": "koy",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -190900,15 +190900,15 @@
    "handle": "@yasi.n063401",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö D Blok, Daire 28",
+   "home": "Balıkçı Koyu No 21",
    "home_from": 1794117600,
    "job": [
-    "Kameraman",
-    "Miniakent TV · Miniakent Plaza 3, Kat 7",
-    "office",
-    "plaza3"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "7"
    ],
-   "wp": "tv",
+   "wp": "koy",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -191263,15 +191263,15 @@
    "handle": "@kartalsahin_1903",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö D Blok, Daire 33",
+   "home": "Balıkçı Koyu No 10",
    "home_from": 1794117600,
    "job": [
-    "DJ",
-    "Miniakent Radyo · Miniakent Plaza 3, Kat 8",
-    "office",
-    "plaza3"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "8"
    ],
-   "wp": "radyo",
+   "wp": "koy",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0
@@ -191832,15 +191832,15 @@
    "handle": "@serap_akyld",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö D Blok, Daire 40",
+   "home": "Balıkçı Koyu No 16",
    "home_from": 1794117600,
    "job": [
-    "İç Mimar",
-    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
-    "office",
-    "plaza"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "9"
    ],
-   "wp": "mimarlik",
+   "wp": "koy",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -191912,15 +191912,15 @@
    "handle": "@bekirkrgln",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö D Blok, Daire 41",
+   "home": "Balıkçı Koyu No 5",
    "home_from": 1794117600,
    "job": [
-    "Stilist",
-    "Miniakent Moda Evi · Miniakent Plaza 3, Kat 11",
-    "office",
-    "plaza3"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "10"
    ],
-   "wp": "moda",
+   "wp": "koy",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -192030,15 +192030,15 @@
    "handle": "@king_ghidora__",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö D Blok, Daire 42",
+   "home": "Balıkçı Koyu No 14",
    "home_from": 1794117600,
    "job": [
-    "Tur Rehberi",
-    "Miniakent Turizm · Miniakent Plaza 2, Kat 7",
-    "office",
-    "plaza2"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "11"
    ],
-   "wp": "turizm",
+   "wp": "koy",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0
@@ -192144,15 +192144,15 @@
    "handle": "@gokdeniz.sahin_",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö D Blok, Daire 44",
+   "home": "Balıkçı Koyu No 26",
    "home_from": 1794117600,
    "job": [
-    "Koreograf",
-    "Miniakent Dans Kursu · Miniakent Plaza 3, Kat 3",
-    "office",
-    "plaza3"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "12"
    ],
-   "wp": "dans",
+   "wp": "koy",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -192165,15 +192165,15 @@
    "handle": "@anonim_012356",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö D Blok, Daire 44",
+   "home": "Balıkçı Koyu No 20",
    "home_from": 1794117600,
    "job": [
-    "Veri Bilimci",
-    "Miniakent Ar-Ge Merkezi · Miniakent Plaza, Kat 12",
-    "office",
-    "plaza"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "13"
    ],
-   "wp": "arge",
+   "wp": "koy",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -192300,15 +192300,15 @@
    "handle": "@ali_ozturk.tr",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö D Blok, Daire 46",
+   "home": "Balıkçı Koyu No 19",
    "home_from": 1794117600,
    "job": [
-    "Hasar Uzmanı",
-    "Miniakent Sigorta A.Ş. · Miniakent Plaza 2, Kat 2",
-    "office",
-    "plaza2"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "14"
    ],
-   "wp": "sigorta",
+   "wp": "koy",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -192359,15 +192359,15 @@
    "handle": "@verstappenfankerem",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö D Blok, Daire 47",
+   "home": "Balıkçı Koyu No 19",
    "home_from": 1794117600,
    "job": [
-    "Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "15"
    ],
-   "wp": "dershane",
+   "wp": "koy",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -192523,15 +192523,15 @@
    "handle": "@porselen_tabaginolayim_",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö D Blok, Daire 49",
+   "home": "Balıkçı Koyu No 3",
    "home_from": 1794117600,
    "job": [
-    "Gitar Öğretmeni",
-    "Miniakent Müzik Kursu · Miniakent Plaza 3, Kat 2",
-    "office",
-    "plaza3"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "16"
    ],
-   "wp": "muzik",
+   "wp": "koy",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0
@@ -192599,15 +192599,15 @@
    "handle": "@yarenmlnn",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö D Blok, Daire 50",
+   "home": "Balıkçı Koyu No 8",
    "home_from": 1794117600,
    "job": [
-    "Yazılımcı",
-    "Miniakent Alfa Yazılım A.Ş. · Miniakent Plaza, Kat 7",
-    "office",
-    "plaza"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "17"
    ],
-   "wp": "yazilim",
+   "wp": "koy",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -192637,15 +192637,15 @@
    "handle": "@davulcu._.cocuk",
    "arrive": 1794089100,
    "move": 1794117600,
-   "home": "Batı Banliyö D Blok, Daire 50",
+   "home": "Balıkçı Koyu No 29",
    "home_from": 1794117600,
    "job": [
-    "Gazeteci",
-    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
-    "office",
-    "plaza3"
+    "Balıkçı",
+    "Miniakent Balıkçı Kooperatifi · Balıkçı Koyu",
+    "boat",
+    "18"
    ],
-   "wp": "gazete",
+   "wp": "koy",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0
