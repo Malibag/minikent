@@ -5,7 +5,15 @@
 		<meta name="robots" content="noindex, nofollow">
 		<!-- Beta sayfası (kullanıcı, 2026-11-05; yalnız kullanıcı görecek): onaylı panel taslağı. Motor dosyaları canlı
 		sitedekiler (base ../), oyun paketi ve kostüm resmi bu klasörde; Kontrolü Al açık, kostümler kostum_deneme bölümüne yazılır. -->
-		<script>window.miniakentKostumYol = "kostum_deneme"; window.miniakentKontrolDeneme = true; window.miniakentBeta = true;</script>
+		<script>window.miniakentKostumYol = "kostum_deneme"; window.miniakentKontrolDeneme = true; window.miniakentBeta = true;
+		// Lite sürüm (kullanıcı, 2026-11-09): seçim bu tarayıcıda saklanır; ilk açılışta telefonda açık, bilgisayarda kapalı.
+		// Oyun açılışta window.miniakentLiteAcik'i okur; Ayarlar'daki anahtar window.miniakentLiteSec(bool) çağırır.
+		(function () {
+			var s = null;
+			try { s = localStorage.getItem("miniakent_lite"); } catch (e) {}
+			var tel = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+			window.miniakentLiteAcik = s === null ? tel : s === "1";
+		})();</script>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 		<title>Miniakent</title>
@@ -1308,7 +1316,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	<h2>Ayarlar</h2>
 	<button class="anahtar" role="switch" aria-checked="false" id="mkb-a-kumanda"><b>Kumanda</b><small>Ekranın sağ altında yön kumandası</small><i></i></button>
 	<hr id="mkb-a-cizgi">
-	<button class="anahtar" role="switch" aria-checked="false" disabled><b>Lite sürüm</b><small>Telefon için hafif görünüm · yakında</small><i></i></button>
+	<button class="anahtar" role="switch" aria-checked="false" id="mkb-a-lite"><b>Lite sürüm</b><small>Telefon için hafif görünüm</small><i></i></button>
 	<hr id="mkb-a-cizgi2">
 	<button class="ayril" id="mkb-ayril"><b>Çıkış Yap</b><small id="mkb-ayril-not">Karakterin otomatik moda döner</small></button>
 	<a class="p-dugme" href="test/gizlilik.html" target="_blank" rel="noopener">Gizlilik Politikası</a>
@@ -1582,6 +1590,15 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		try { localStorage.setItem("miniakent_kumanda", kumandaAcik ? "1" : "0"); } catch (e) {}
 		arayuz();
 	});
+	// Lite sürüm: görüntü ayarları hemen değişir, ağaçlar sayfa yeniden açılınca (kullanıcı, 2026-11-09)
+	const liteCiz = () => $("mkb-a-lite").setAttribute("aria-checked", String(!!window.miniakentLiteAcik));
+	liteCiz();
+	$("mkb-a-lite").addEventListener("click", () => {
+		window.miniakentLiteAcik = !window.miniakentLiteAcik;
+		try { localStorage.setItem("miniakent_lite", window.miniakentLiteAcik ? "1" : "0"); } catch (e) {}
+		liteCiz();
+		if (window.miniakentLiteSec) window.miniakentLiteSec(window.miniakentLiteAcik);
+	});
 	$("mkb-p-giris").addEventListener("click", (e) => {
 		const b = e.target.closest("button");
 		if (!b) return;
@@ -1768,7 +1785,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"beta/index-beta-v202611071703.pck","fileSizes":{"beta/index-beta-v202611071703.pck":6186604,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611090225.pck","fileSizes":{"test/index-test-v202611090225.pck":6215956,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
