@@ -5,7 +5,7 @@
 		<meta name="robots" content="noindex, nofollow">
 		<!-- Beta sayfası (kullanıcı, 2026-11-05; yalnız kullanıcı görecek): onaylı panel taslağı. Motor dosyaları canlı
 		sitedekiler (base ../), oyun paketi ve kostüm resmi bu klasörde; Kontrolü Al açık, kostümler kostum_deneme bölümüne yazılır. -->
-		<script>window.miniakentKostumYol = "kostum_deneme"; window.miniakentKontrolDeneme = true; window.miniakentBeta = true;
+		<script>window.miniakentKostumYol = "kostum_deneme"; window.miniakentKontrolDeneme = true; window.miniakentBeta = true; window.miniakentKiyafetYol = "kiyafet_deneme";
 		// Lite sürüm (kullanıcı, 2026-11-09): seçim bu tarayıcıda saklanır; ilk açılışta telefonda açık, bilgisayarda kapalı.
 		// Oyun açılışta window.miniakentLiteAcik'i okur; Ayarlar'daki anahtar window.miniakentLiteSec(bool) çağırır.
 		(function () {
@@ -531,6 +531,17 @@ try {
 			setTimeout(kostumKapat, Math.max(0, KOSTUM_BIT - Date.now()));
 		}, Math.max(0, KOSTUM_BAS - Date.now()));
 	}
+	// oyuncunun seçtiği kıyafetler (kullanıcı, 2026-11-09; yalnız test sayfası): herkes okur, oyun 2 sn'de bir uygular.
+	// Anahtar sahip/ ile aynı (küçük harf, "."→","), değer "a:kot3|s:fotr0|d:sisme2|y:bot1|x:gunes0,atki4" (kiyafet.gd)
+	if (window.miniakentKiyafetYol) {
+		window.miniakentKiyafetler = {};
+		onValue(ref(db, window.miniakentKiyafetYol), (s) => {
+			const o = {};
+			s.forEach((c) => { o["@" + c.key.replace(/,/g, ".")] = c.val(); });
+			window.miniakentKiyafetler = o;
+			window.miniakentKiyafetSurum = (window.miniakentKiyafetSurum || 0) + 1;
+		});
+	}
 	// Kontrolü Al (kullanıcı, 2026-11-05; 1. adım: yalnız e-posta + şifreyle kayıt ve giriş, Instagram doğrulaması yok):
 	// şimdilik yalnız deneme sayfasında (window.miniakentKontrolDeneme). Kartta "Kontrolü Al" pencereyi açar; girişten
 	// sonra oyuncunun karakteri bu tarayıcıda saklanır (miniakent_karakter) ve kartında "Ayrıl" görünür. Oyun durumu
@@ -545,6 +556,13 @@ try {
 		// oyuncu/<uid>/izin {reklam, bildirim: verildiği an (ms)}; hepsi isteğe bağlı, oyuncu istediği an siler
 		let profil = {}, izin = {};
 		const anahtar = (h) => h.replace(/^@/, "").toLowerCase().replace(/\./g, ",");
+		// kendi karakterinin kıyafeti (boş = kendi kıyafetine döner, kayıt silinir); ekranda hemen görünür
+		window.miniakentKiyafetSec = (s) => {
+			if (!karakter || !window.miniakentKiyafetYol) return Promise.resolve();
+			window.miniakentKiyafetler = Object.assign({}, window.miniakentKiyafetler, { [karakter.toLowerCase()]: s });
+			window.miniakentKiyafetSurum = (window.miniakentKiyafetSurum || 0) + 1;
+			return set(ref(db, window.miniakentKiyafetYol + "/" + anahtar(karakter)), s || null);
+		};
 		const oturum = () => {
 			const u = auth.currentUser;
 			window.miniakentOturum = u ? JSON.stringify({ eposta: u.email, dogrulandi: u.emailVerified, karakter: karakter,
@@ -911,6 +929,7 @@ try {
 					await fa.reauthenticateWithCredential(u, fa.EmailAuthProvider.credential(u.email, sifre3.value));
 					const d = { ["oyuncu/" + u.uid]: null, ["dogrulama/" + u.uid]: null };
 					if (karakter) d["sahip/" + anahtar(karakter)] = null;
+					if (karakter && window.miniakentKiyafetYol) d[window.miniakentKiyafetYol + "/" + anahtar(karakter)] = null;
 					await update(ref(db), d);
 					await u.delete();
 					// silindikten sonra bilgi ekranı (kullanıcı, 2026-11-09)
@@ -1243,6 +1262,18 @@ body.gece #mkb { --krem: #22304f; --krem2: #2c3b5e; --yazi: #fbe9cb; --kenar: #0
 #mkb .sekmeler { display: flex; gap: 4px; }
 #mkb .sekmeler button { flex: 1; padding: 7px 4px; border-radius: 10px; border: 2px solid var(--kenar); background: transparent; font-weight: 800; font-size: 13px; }
 #mkb .sekmeler button.secili { background: var(--yazi); color: var(--krem2); }
+#mkb .kiy-sekmeler { flex-wrap: wrap; }
+#mkb .kiy-sekmeler button { flex: 1 0 auto; }
+#mkb .kiyafet { display: flex; flex-direction: column; gap: 6px; }
+#mkb .kiy-grup { margin-top: 6px; font-size: 12px; font-weight: 800; color: var(--soluk); }
+#mkb .kiy-satir { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 6px 8px; border-radius: 10px; border: 2px solid transparent; background: var(--krem2); }
+#mkb .kiy-satir.secili { border-color: var(--deniz); }
+#mkb .kiy-satir span { font-weight: 700; font-size: 14px; }
+#mkb .renkler { display: flex; gap: 5px; flex-shrink: 0; }
+#mkb .renkler button { width: 26px; height: 26px; border-radius: 50%; border: 2px solid rgba(22,33,50,.35); padding: 0; }
+#mkb .renkler button.secili { outline: 3px solid var(--deniz); outline-offset: 2px; }
+#mkb .kiy-yok { align-self: flex-start; padding: 7px 16px; border-radius: 10px; border: 2px solid var(--kenar); background: transparent; font-weight: 800; }
+#mkb .kiy-yok.secili { background: var(--yazi); color: var(--krem2); }
 #mkb .kostumler { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
 #mkb .kostumler button { aspect-ratio: 4 / 5; border-radius: 10px; border: 2px solid transparent; background: url("beta/kostumler.png") 0 0 / 500% 800% no-repeat, var(--krem2); padding: 0; }
 #mkb .kostumler button.secili { border-color: var(--deniz); }
@@ -1481,6 +1512,61 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		for (const c of h) x = (x * 31 + c.charCodeAt(0)) >>> 0;
 		return { para: 3000 + x % 17000, g: [((x >> 3) % 70 + 20) / 100, ((x >> 7) % 70 + 15) / 100, ((x >> 11) % 40 + 60) / 100] };
 	}
+	// kıyafet seçimi (kullanıcı, 2026-11-09; onaylı liste): alt tek (pantolon/etek/şort), palto ya da mont en çok bir,
+	// şapka isteğe bağlı, ayakkabı bir, aksesuarlar birlikte (iki gözlük birden olmaz); her parçada 6 renk
+	const KIY = [
+		["Alt", "a", false, [["Pantolon", [["duz", "Düz pantolon"], ["kot", "Kot pantolon"], ["esofman", "Eşofman altı"], ["genis", "Geniş paça"], ["dar", "Dar pantolon"]]],
+			["Etek", [["kisaetek", "Kısa etek"], ["dizetek", "Diz boyu etek"], ["uzunetek", "Uzun etek"]]],
+			["Şort", [["kisasort", "Kısa şort"], ["bermuda", "Bermuda"], ["deniz", "Deniz şortu"]]]]],
+		["Şapka", "s", true, [["", [["kep", "Kep"], ["fotr", "Fötr"], ["bere", "Bere"], ["hasir", "Hasır şapka"], ["silindir", "Silindir şapka"]]]]],
+		["Palto/Mont", "d", true, [["Palto", [["kisapalto", "Kısa palto"], ["uzunpalto", "Uzun palto"], ["trenc", "Trençkot"]]],
+			["Mont", [["sisme", "Şişme mont"], ["deri", "Deri ceket"], ["kotceket", "Kot ceket"], ["yagmur", "Yağmurluk"]]]]],
+		["Ayakkabı", "y", false, [["", [["spor", "Spor ayakkabı"], ["klasik", "Klasik ayakkabı"], ["bot", "Bot"], ["sandalet", "Sandalet"], ["topuklu", "Topuklu"]]]]],
+		["Aksesuar", "x", true, [["", [["gunes", "Güneş gözlüğü"], ["gozluk", "Gözlük"], ["atki", "Atkı"], ["kravat", "Kravat"], ["sirt", "Sırt çantası"], ["canta", "El çantası"]]]]],
+	];
+	const RENKLER = [["Siyah", "#26272b"], ["Beyaz", "#f1efe9"], ["Gri", "#8a8d93"], ["Lacivert", "#22304f"], ["Kırmızı", "#c0392b"], ["Kahverengi", "#7a4f2e"]];
+	const GOZ = ["gunes", "gozluk"];
+	let kSekme = 0;
+	const parca = (v) => v.slice(0, -1);
+	function kiyCoz(s) {
+		const d = { x: [] };
+		for (const p of (s || "").split("|")) {
+			const [k, v] = p.split(":");
+			if (!v) continue;
+			if (k === "x") d.x = v.split(",").filter(Boolean); else d[k] = v;
+		}
+		return d;
+	}
+	const kiyYaz = (d) => ["a", "s", "d", "y"].filter((k) => d[k]).map((k) => k + ":" + d[k]).concat(d.x.length ? ["x:" + d.x.join(",")] : []).join("|");
+	const kiyBu = () => kiyCoz((window.miniakentKiyafetler || {})[karakter.toLowerCase()]);
+	function kiyafetPanel() {
+		const d = kiyBu(), t = KIY[kSekme];
+		const secim = (id) => t[1] === "x" ? (d.x.find((v) => parca(v) === id) || "") : (d[t[1]] && parca(d[t[1]]) === id ? d[t[1]] : "");
+		let h = `<div class="etiket">Kıyafetini seç</div><div class="sekmeler kiy-sekmeler">${KIY.map((x, i) => `<button class="${i === kSekme ? "secili" : ""}" data-ksekme="${i}">${x[0]}</button>`).join("")}</div><div class="kiyafet">`;
+		if (t[2]) h += `<button class="kiy-yok ${(t[1] === "x" ? !d.x.length : !d[t[1]]) ? "secili" : ""}" data-kyok="1">Yok</button>`;
+		for (const [grup, parcalar] of t[3]) {
+			if (grup) h += `<div class="kiy-grup">${grup}</div>`;
+			for (const [id, ad] of parcalar) {
+				const s = secim(id);
+				h += `<div class="kiy-satir ${s ? "secili" : ""}"><span>${ad}</span><div class="renkler">${RENKLER.map((r, i) =>
+					`<button class="${s === id + i ? "secili" : ""}" style="background:${r[1]}" data-kiy="${id}${i}" aria-label="${ad}, ${r[0]}"></button>`).join("")}</div></div>`;
+			}
+		}
+		return h + `</div><p class="bilgi">Seçtiğin kıyafet şehirde herkese görünür.</p>`;
+	}
+	// dokunulan renk giyilir; isteğe bağlı parçada (şapka, palto/mont, aksesuar) seçili renge yeniden dokunmak çıkarır
+	function kiySec(v) {
+		if (!window.miniakentKiyafetSec) return;
+		const t = KIY[kSekme], k = t[1], d = kiyBu();
+		if (k === "x") {
+			const id = v ? parca(v) : "", vardi = d.x.includes(v);
+			d.x = v ? d.x.filter((x) => parca(x) !== id && !(GOZ.includes(id) && GOZ.includes(parca(x)))) : [];
+			if (v && !vardi) d.x.push(v);
+		} else if (!v) d[k] = "";
+		else d[k] = d[k] === v && t[2] ? "" : v;
+		window.miniakentKiyafetSec(kiyYaz(d)).catch((e) => console.warn("kiyafet", e));
+		ciz();
+	}
 	const kostumVar = () => window.miniakentKostumListe && typeof window.miniakentKostumSec === "function";
 	function kostumIzgara(h) {
 		const L = window.miniakentKostumListe, giyili = (window.miniakentKostumlar || {})[h] || "", g = L.gruplar[sekme];
@@ -1540,7 +1626,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 				}).join("")}</div>
 			<p class="bilgi">Mesai bitince karakterin eve döner.</p><p class="bilgi">Betada karakter henüz seçilen yere gitmez.</p>`;
 		}],
-		gorunus: ["Görünüş", () => kostumVar() ? kostumIzgara(karakter) : `<p class="bilgi">Kostümler şu an kapalı.</p>`],
+		gorunus: ["Görünüş", () => kiyafetPanel() + (kostumVar() ? kostumIzgara(karakter) : "")],
 		bina: [() => bina.baslik, () => `${bina.alt ? `<p class="bilgi">${esc(bina.alt)}</p>` : ""}${bina.is ? binaGrup("is") : ""}${bina.ev ? binaGrup("ev") : ""}`],
 		// başka sakinin kartı: para ve göstergeler, Evini/İş yerini göster; kostüm yalnız etkinlik süresince (kullanıcı, 2026-11-05)
 		sakin: ["Sakin", () => {
@@ -1690,6 +1776,8 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		else if (d.kostumac) { kostumAcik = true; ciz(); }
 		else if (b.id === "mkb-sifirla") { st = yeni(); kaydet(); ciz(); }
 		else if (d.ne) { st.ne = st.ne === d.ne ? "" : d.ne; kaydet(); ciz(); }
+		else if (d.ksekme) { kSekme = +d.ksekme; ciz(); }
+		else if (d.kiy || d.kyok) kiySec(d.kiy || "");
 		else if (d.sekme) { sekme = +d.sekme; ciz(); }
 		else if (d.kostum !== undefined && window.miniakentKostumSec) {
 			window.miniakentKostumSec(sayfaAd === "sakin" ? secilen.handle : karakter, d.kostum);
@@ -1832,7 +1920,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611090247.pck","fileSizes":{"test/index-test-v202611090247.pck":6215924,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611091857.pck","fileSizes":{"test/index-test-v202611091857.pck":6426072,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
