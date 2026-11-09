@@ -24966,11 +24966,11 @@
    "home_from": 1792821600,
    "job": [
     "Su Sporları Eğitmeni",
-    "Miniakent Plajı",
+    "Miniakent Su Sporları Merkezi",
     "area",
-    "beach"
+    "su_sporlari"
    ],
-   "wp": "plaj",
+   "wp": "su_sporlari",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0
@@ -128136,11 +128136,11 @@
    "home_from": 1793512800,
    "job": [
     "Sörf Eğitmeni",
-    "Miniakent Plajı",
+    "Miniakent Su Sporları Merkezi",
     "area",
-    "beach"
+    "su_sporlari"
    ],
-   "wp": "plaj",
+   "wp": "su_sporlari",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -200087,15 +200087,15 @@
    "handle": "@cerenburr",
    "arrive": 1794175560,
    "move": 1794204000,
-   "home": "Batı Banliyö D Blok, Daire 115",
+   "home": "Balıkçı Koyu No 16",
    "home_from": 1794204000,
    "job": [
-    "Redaktör",
-    "Miniakent Çeviri Bürosu · Miniakent Plaza 3, Kat 12",
-    "office",
-    "plaza3"
+    "Sörf Eğitmeni",
+    "Miniakent Su Sporları Merkezi",
+    "area",
+    "su_sporlari"
    ],
-   "wp": "ceviri",
+   "wp": "su_sporlari",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -200145,12 +200145,12 @@
    "home": "Balıkçı Koyu No 16",
    "home_from": 1794204000,
    "job": [
-    "Paketleme Görevlisi",
-    "Miniakent Gıda Ürünleri Fabrikası · Balıkçı Koyu",
+    "Doktor",
+    "Miniakent Devlet Hastanesi",
     "shop",
-    "gida_fabrika"
+    "hastane"
    ],
-   "wp": "gida_fabrika",
+   "wp": "hastane",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
