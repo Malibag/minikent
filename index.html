@@ -451,7 +451,7 @@ body.gece .yk-sahne { background: #3a4d74; border-color: #0b1220; }
 // Her ziyaretçi cevrimici/<kimlik> yazar, sekme kapanınca silinir; oyun sayıyı window.miniakentCevrimici'den okur.
 // gunluk/<Türkiye tarihi> her tarayıcıda günde bir kez 1 artar. Bağlantı kurulamazsa oyun etkilenmez.
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getDatabase, ref, set, get, onDisconnect, onValue, runTransaction, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+import { getDatabase, ref, set, get, onDisconnect, onValue, runTransaction, serverTimestamp, push, onChildAdded, query, limitToLast } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
 try {
 	const app = initializeApp({
 		apiKey: "AIzaSyCC0HI_bln18UBMEDHdAO7CmtMEM3JtM5I",
@@ -513,6 +513,46 @@ try {
 			kostumAc("kostum");
 			setTimeout(kostumKapat, Math.max(0, KOSTUM_BIT - Date.now()));
 		}, Math.max(0, KOSTUM_BAS - Date.now()));
+	}
+	// 10 Kasım (kullanıcı, 2026-11-09): kişi kartında "Karanfil bırak" (herkes, her karakter için, sınırsız), Türkiye
+	// saatiyle 10 Kasım 06:00–24:00. Her basış <yol>/olay'a {h, t} eklenir ve <yol>/sayi 1 artar; oyun toplamı
+	// window.miniakentKaranfilSayi'dan okur, sayfa açıkken başka ekranlarda basılan karakterler
+	// window.miniakentKaranfilKuyruk'a düşer (oyun o kişiyi büste yürütür). 24:00'te tuş ve karanfiller kalkar.
+	const KARANFIL_BAS = Date.parse("2026-11-10T06:00:00+03:00");
+	const KARANFIL_BIT = Date.parse("2026-11-11T00:00:00+03:00");
+	const karanfilAc = (yol) => {
+		window.miniakentKaranfilKuyruk = [];
+		const benim = new Set();
+		const birak = [onValue(ref(db, yol + "/sayi"), (s) => { window.miniakentKaranfilSayi = s.val() || 0; })];
+		const olaylar = query(ref(db, yol + "/olay"), limitToLast(30));
+		get(query(ref(db, yol + "/olay"), limitToLast(1))).then((ilk) => {
+			let son = "";   // sayfa açılmadan önceki basışlar yürütülmez
+			ilk.forEach((c) => { son = c.key; });
+			birak.push(onChildAdded(olaylar, (c) => {
+				if (c.key <= son || benim.has(c.key)) return;
+				const v = c.val() || {};
+				(window.miniakentKaranfilKuyruk = window.miniakentKaranfilKuyruk || []).push(String(v.h || ""));
+			}));
+		}).catch(() => {});
+		window.miniakentKaranfil = (h) => {
+			const r = push(ref(db, yol + "/olay"));
+			benim.add(r.key);
+			set(r, { h: String(h), t: serverTimestamp() }).catch(() => {});
+			runTransaction(ref(db, yol + "/sayi"), (v) => (v || 0) + 1).catch(() => {});
+		};
+		return () => {
+			birak.forEach((f) => f());
+			delete window.miniakentKaranfil;
+			window.miniakentKaranfilSayi = 0;
+		};
+	};
+	if (window.miniakentKaranfilYol) {
+		karanfilAc(window.miniakentKaranfilYol);
+	} else if (Date.now() < KARANFIL_BIT) {
+		setTimeout(() => {
+			const kapat = karanfilAc("karanfil");
+			setTimeout(kapat, Math.max(0, KARANFIL_BIT - Date.now()));
+		}, Math.max(0, KARANFIL_BAS - Date.now()));
 	}
 	// Kontrolü Al (kullanıcı, 2026-11-05; 1. adım: yalnız e-posta + şifreyle kayıt ve giriş, Instagram doğrulaması yok):
 	// şimdilik yalnız deneme sayfasında (window.miniakentKontrolDeneme). Kartta "Kontrolü Al" pencereyi açar; girişten
@@ -1404,7 +1444,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611091647.pck","fileSizes":{"index-v202611091647.pck":6274512,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611092217.pck","fileSizes":{"index-v202611092217.pck":6424100,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
