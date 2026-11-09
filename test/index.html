@@ -633,6 +633,9 @@ try {
 #kontrol .unuttum { display: block; margin: 10px auto 0; border: 0; background: none; color: #776d60; font-size: 13px; text-decoration: underline; cursor: pointer; }
 #kontrol .mesaj { min-height: 18px; margin-top: 10px; font-size: 13px; text-align: center; }
 #kontrol .mesaj.hata { color: #b23b2e; }
+#kontrol .bekle p { margin: 10px 0 0; font-size: 14px; line-height: 1.45; text-align: center; }
+#kontrol .bekle .uyari { padding: 10px 12px; border: 1px solid #e6c77a; border-radius: 10px; background: #fff3d6; font-weight: 600; }
+#kontrol .bekle .not { font-size: 12.5px; color: #776d60; }
 #kontrol .dogrula p { margin: 0 0 12px; font-size: 14px; line-height: 1.45; text-align: center; }
 #kontrol .kod-satir { display: flex; gap: 8px; margin-bottom: 4px; }
 #kontrol .kopyala { flex: none; padding: 0 14px; border: 1px solid #2a2620; border-radius: 12px; background: none; color: #2a2620; font-size: 14px; cursor: pointer; }
@@ -674,6 +677,11 @@ try {
 	</div>
 	<button type="submit" class="gonder">Giriş Yap</button>
 	<button type="button" class="unuttum">Şifremi unuttum</button>
+	</div>
+	<div class="bekle" hidden>
+		<p class="bekle-yazi"></p>
+		<p class="uyari">E-posta birkaç dakika içinde gelmezse Spam ya da Gereksiz klasörüne bak.</p>
+		<p class="not">Doğrulayınca bu ekran kendiliğinden ilerler.</p>
 	</div>
 	<div class="sil" hidden>
 		<p class="sil-yazi"></p>
@@ -752,6 +760,17 @@ try {
 		// doğrulama bağlantısı Firebase sayfasında kalmaz, kod bu sayfaya getirilir ve doğrulama burada yapılır
 		// (kullanıcı, 2026-11-08; alan adı Firebase'de izinli). Aşağıda "baglanti".
 		const DONUS = { url: location.origin + location.pathname, handleCodeInApp: true };
+		// kayıttan / doğrulanmamış girişten sonra ayrı ekran: e-postayı doğrula, Spam'e bak (kullanıcı, 2026-11-09)
+		const bekleGoster = (adres, kayit) => {
+			q("h2").textContent = kayit ? "Kaydın tamam" : "E-postanı doğrula";
+			const b = document.createElement("b");
+			b.textContent = adres;
+			q(".bekle-yazi").replaceChildren(kayit ? "Son bir adım kaldı: " : "E-postan henüz doğrulanmadı. ", b,
+				(kayit ? " adresine bir" : " adresine yeni bir") + " doğrulama bağlantısı gönderdik. E-postanı aç ve bağlantıya dokun.");
+			q(".giris").hidden = q(".giris-alt").hidden = true;
+			q(".bekle").hidden = false;
+			yaz("");
+		};
 		// Giriş Yap (form) ve altta ayrı duran Kayıt Ol aynı e-posta ve şifreyi kullanır (kullanıcı, 2026-11-08)
 		const gir = async (kayit) => {
 			gonder.disabled = kayitDugme.disabled = true;
@@ -764,11 +783,11 @@ try {
 					// isteğe bağlı bilgiler kaydı durdurmaz: yazılamazsa profilden yeniden doldurulur
 					await ekKaydet(k.user.uid).catch((err) => console.warn("profil", err));
 					await fa.sendEmailVerification(k.user, DONUS);
-					yaz("Doğrulama bağlantısını e-postana gönderdik.");
+					bekleGoster(k.user.email, true);
 					dogrulamaBekle();
 				} else if (!k.user.emailVerified) {
 					await fa.sendEmailVerification(k.user, DONUS);  // doğrulanmamış girişte bağlantı yeniden gider (2026-11-05)
-					yaz("E-postan henüz doğrulanmadı, yeni doğrulama bağlantısını gönderdik.");
+					bekleGoster(k.user.email, false);
 					dogrulamaBekle();
 				} else {
 					await tamam(k.user);
@@ -820,7 +839,7 @@ try {
 			kayitDugme.textContent = k ? "Giriş Yap" : "Kayıt Ol";
 			sifre.autocomplete = k ? "new-password" : "current-password";
 			sifre2.value = "";
-			q(".sil").hidden = true;
+			q(".sil").hidden = q(".bekle").hidden = true;
 			if (k) ekDoldur({}, {});         // kayıt ekranı boş gelir, kutular işaretsiz
 			else if (p) ekDoldur(profil, izin);
 			yaz("");
@@ -846,7 +865,7 @@ try {
 		const pencereSade = () => {
 			aday = "";
 			q(".kim").hidden = true;
-			q(".giris-alt").hidden = q(".dogrula").hidden = q(".bul").hidden = true;
+			q(".giris-alt").hidden = q(".dogrula").hidden = q(".bul").hidden = q(".bekle").hidden = true;
 			pen.hidden = false;
 		};
 		window.miniakentProfilAc = () => {
@@ -926,6 +945,7 @@ try {
 		});
 		// e-postası doğrulanmış oyuncu: karakteri bağlıysa pencere kapanır, değilse Instagram kodu gösterilir
 		const baglan = async (u) => {
+			q(".bekle").hidden = true;
 			if ((await get(ref(db, "oyuncu/" + u.uid + "/karakter"))).val()) { kapat(); return; }
 			const s = (await get(ref(db, "sahip/" + anahtar(aday)))).val();
 			if (s && s !== u.uid) { yaz("Bu karakter başka bir hesaba bağlı.", true); return; }
@@ -944,7 +964,7 @@ try {
 		const bulGoster = () => {
 			q("h2").textContent = "Karakterini bul";
 			q(".kim").hidden = true;
-			q(".giris").hidden = q(".dogrula").hidden = q(".alt").hidden = true;
+			q(".giris").hidden = q(".dogrula").hidden = q(".alt").hidden = q(".bekle").hidden = true;
 			q(".bul").hidden = q(".giris-alt").hidden = q(".simdilik").hidden = false;
 			ad.value = "";
 			oneri.hidden = true;
@@ -1007,7 +1027,7 @@ try {
 			sifre.value = "";
 			q(".giris").hidden = q(".giris-alt").hidden = q(".alt").hidden = false;
 			q(".simdilik").hidden = !!aday;
-			q(".dogrula").hidden = q(".bul").hidden = true;
+			q(".dogrula").hidden = q(".bul").hidden = q(".bekle").hidden = true;
 			yaz("");
 			pen.hidden = false;
 			const u = auth.currentUser;
@@ -1511,10 +1531,11 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		// başka sakinin kartı: para ve göstergeler, Evini/İş yerini göster; kostüm yalnız etkinlik süresince (kullanıcı, 2026-11-05)
 		sakin: ["Sakin", () => {
 			const s = secilen, m = mesai();
+			rozetGetir(s.handle);
 			return kart({ handle: s.handle, meslek: s.meslek || "—", yer: s.isyeri, ev: s.ev || "—" },
 				m.tatil ? "Tatilde" : m.iste ? "İşte" : "Evde", m.iste) + `
 			<div class="ikili"><button class="hayir" data-evgoster="1">Evini göster</button>${s.is_var ? `<button class="hayir" data-isgoster="1">İş yerini göster</button>` : ""}</div>
-			${karakter ? "" : `<div class="ikili"><button class="evet" data-kontrol="1">Kontrolü Al</button></div>`}
+			${karakter ? "" : rozetler[s.handle] ? `<p class="bilgi">Bu karakterin kontrolü sahibinde.</p>` : `<div class="ikili"><button class="evet" data-kontrol="1">Kontrolü Al</button></div>`}
 			${kostumVar() ? (kostumAcik ? kostumIzgara(s.handle) : `<button class="git" data-kostumac="1"><b>Kostüm giydir</b><span>Cadılar Bayramı kostümleri</span><em>40 kostüm</em></button>`) : ""}`;
 		}],
 	};
