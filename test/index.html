@@ -983,6 +983,7 @@ try {
 			yaz("");
 		};
 		ad.addEventListener("input", () => {
+			yaz("");  // yazmaya başlayınca eski uyarı silinir (kullanıcı, 2026-11-09)
 			const s = sade(ad.value);
 			const l = s.length < 2 ? [] : (window.minikentHandles || []).filter((h) => sade(h).indexOf(s) >= 0).slice(0, 5);
 			oneri.innerHTML = "";
@@ -1000,6 +1001,7 @@ try {
 		});
 		ad.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); q(".bul-git").click(); } });
 		q(".bul-git").addEventListener("click", async () => {
+			if (!sade(ad.value)) { yaz("Önce Instagram adını yaz.", true); return; }
 			const h = (window.minikentHandles || []).find((x) => sade(x) === sade(ad.value));
 			if (!h) { yaz("Bu ad şehirde yok. Takip ettikten sonraki ilk gece trenle şehre gelirsin.", true); return; }
 			oneri.hidden = true;
