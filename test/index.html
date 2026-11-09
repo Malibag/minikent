@@ -1668,7 +1668,11 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		$("mkb-ayril").hidden = $("mkb-a-cizgi2").hidden = $("mkb-p-sil").hidden = !eposta;
 		$("mkb-ayril-not").hidden = !karakter;
 		if (window.miniakentArayuz) window.miniakentArayuz(tel && kumandaAcik && !tam, takipVar ? 84 : 0);
+		// Görünüş açıkken kamera karaktere yaklaşır, karakter panelin dışında kalan alanda durur (kullanıcı, 2026-11-10)
+		const oniz = sayfaAd === "gorunus" && karakter && !tam ? p.offsetWidth / innerWidth : 0;
+		if (window.miniakentOnizle && oniz !== sonOnizle) { sonOnizle = oniz; window.miniakentOnizle(karakter, oniz); }
 	}
+	let sonOnizle = 0;
 	function ac(ad) {
 		sayfaAd = ad; kostumAcik = false; binaTum = {};
 		$("mkb-pano").classList.add("acik");
@@ -1920,7 +1924,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611092135.pck","fileSizes":{"test/index-test-v202611092135.pck":6423460,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611100146.pck","fileSizes":{"test/index-test-v202611100146.pck":6782044,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
