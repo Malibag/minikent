@@ -1334,7 +1334,6 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		<button class="p-dugme" data-p="duzenle">Profil bilgilerimi düzenle</button>
 		<button class="anahtar" role="switch" aria-checked="false" id="mkb-p-bildirim"><b>Bildirim izni</b><small>Instagram ve e-posta ile yenilikler ve promosyonlar</small><i></i></button>
 		<button class="anahtar" role="switch" aria-checked="false" id="mkb-p-reklam"><b>Reklam izni</b><small>Yaşın ve cinsiyetin istatistik ve reklam için kullanılır</small><i></i></button>
-		<button class="p-dugme kirmizi" data-p="hesap">Hesabımı sil</button>
 	</div>
 	<hr>
 	<h2>Ayarlar</h2>
@@ -1343,6 +1342,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	<button class="anahtar" role="switch" aria-checked="false" id="mkb-a-lite"><b>Lite sürüm</b><small>Telefon için hafif görünüm</small><i></i></button>
 	<hr id="mkb-a-cizgi2">
 	<button class="ayril" id="mkb-ayril"><b>Çıkış Yap</b><small id="mkb-ayril-not">Karakterin otomatik moda döner</small></button>
+	<button class="p-dugme kirmizi" id="mkb-p-sil">Hesabımı sil</button>
 	<a class="p-dugme" href="test/gizlilik.html" target="_blank" rel="noopener">Gizlilik Politikası</a>
 </section>
 <div class="takip" id="mkb-takip" hidden><span class="kim-ad" id="mkb-takip-ad"></span>
@@ -1565,7 +1565,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		$("mkb-p-reklam").setAttribute("aria-checked", String(!!izinler.reklam));
 		$("mkb-p-karakter").textContent = karakter;
 		$("mkb-p-karakter").hidden = !karakter;
-		$("mkb-ayril").hidden = $("mkb-a-cizgi2").hidden = !eposta;
+		$("mkb-ayril").hidden = $("mkb-a-cizgi2").hidden = $("mkb-p-sil").hidden = !eposta;
 		$("mkb-ayril-not").hidden = !karakter;
 		if (window.miniakentArayuz) window.miniakentArayuz(tel && kumandaAcik && !tam, takipVar ? 84 : 0);
 	}
@@ -1645,7 +1645,12 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		$("mkb-ayarlar").hidden = true;
 		$("mkb-disli").setAttribute("aria-expanded", "false");
 		if (b.dataset.p === "duzenle") window.miniakentProfilAc && window.miniakentProfilAc();
-		else if (b.dataset.p === "hesap") window.miniakentSilAc && window.miniakentSilAc("hesap");
+	});
+	// Hesabımı sil: Çıkış Yap'ın altında, Gizlilik Politikası'nın üstünde (kullanıcı, 2026-11-09)
+	$("mkb-p-sil").addEventListener("click", () => {
+		$("mkb-ayarlar").hidden = true;
+		$("mkb-disli").setAttribute("aria-expanded", "false");
+		window.miniakentSilAc && window.miniakentSilAc("hesap");
 	});
 	$("mkb-ayril").addEventListener("click", () => {
 		$("mkb-ayarlar").hidden = true;
