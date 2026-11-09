@@ -83028,7 +83028,11 @@
    "wp": "yazilim",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@batuhanozturkten",
