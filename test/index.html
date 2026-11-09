@@ -610,6 +610,7 @@ try {
 #kontrol .cins button.secili { border-color: #2a2620; background: #2a2620; color: #faf5eb; }
 #kontrol label.onay { display: flex; gap: 8px; align-items: flex-start; margin: 10px 0 0; font-size: 12.5px; line-height: 1.4; color: #2a2620; cursor: pointer; }
 #kontrol label.onay input { width: 18px; height: 18px; flex: none; margin: 1px 0 0; padding: 0; }
+#kontrol .silindi p { margin: 4px 0 0; font-size: 14px; line-height: 1.45; text-align: center; }
 #kontrol .sil p { margin: 4px 0 8px; font-size: 14px; line-height: 1.45; text-align: center; }
 #kontrol .ikili { display: flex; gap: 8px; margin-top: 16px; }
 #kontrol .ikili button { flex: 1; padding: 11px; border-radius: 12px; font-size: 15px; cursor: pointer; }
@@ -682,6 +683,10 @@ try {
 		<p class="bekle-yazi"></p>
 		<p class="uyari">E-posta birkaç dakika içinde gelmezse Spam ya da Gereksiz klasörüne bak.</p>
 		<p class="not">Doğrulayınca bu ekran kendiliğinden ilerler.</p>
+	</div>
+	<div class="silindi" hidden>
+		<p>Hesap bilgilerin kalıcı olarak silindi. Karakterin şehirde otomatik yaşamaya devam ediyor.</p>
+		<button type="button" class="gonder silindi-tamam">Tamam</button>
 	</div>
 	<div class="sil" hidden>
 		<p class="sil-yazi"></p>
@@ -839,7 +844,7 @@ try {
 			kayitDugme.textContent = k ? "Giriş Yap" : "Kayıt Ol";
 			sifre.autocomplete = k ? "new-password" : "current-password";
 			sifre2.value = "";
-			q(".sil").hidden = q(".bekle").hidden = true;
+			q(".sil").hidden = q(".bekle").hidden = q(".silindi").hidden = true;
 			if (k) ekDoldur({}, {});         // kayıt ekranı boş gelir, kutular işaretsiz
 			else if (p) ekDoldur(profil, izin);
 			yaz("");
@@ -865,7 +870,7 @@ try {
 		const pencereSade = () => {
 			aday = "";
 			q(".kim").hidden = true;
-			q(".giris-alt").hidden = q(".dogrula").hidden = q(".bul").hidden = q(".bekle").hidden = true;
+			q(".giris-alt").hidden = q(".dogrula").hidden = q(".bul").hidden = q(".bekle").hidden = q(".silindi").hidden = true;
 			pen.hidden = false;
 		};
 		window.miniakentProfilAc = () => {
@@ -891,6 +896,7 @@ try {
 			yaz("");
 		};
 		q(".profil-sil").addEventListener("click", () => window.miniakentSilAc("profil"));
+		q(".silindi-tamam").addEventListener("click", kapat);
 		q(".vazgec").addEventListener("click", () => { if (silTur === "profil") window.miniakentProfilAc(); else kapat(); });
 		q(".sil-onay").addEventListener("click", async () => {
 			const u = auth.currentUser, b = q(".sil-onay");
@@ -907,6 +913,12 @@ try {
 					if (karakter) d["sahip/" + anahtar(karakter)] = null;
 					await update(ref(db), d);
 					await u.delete();
+					// silindikten sonra bilgi ekranı (kullanıcı, 2026-11-09)
+					q("h2").textContent = "Hesabın silindi";
+					q(".sil").hidden = true;
+					q(".silindi").hidden = false;
+					b.disabled = false;
+					return;
 				}
 				kapat();
 			} catch (err) {
@@ -1027,7 +1039,7 @@ try {
 			sifre.value = "";
 			q(".giris").hidden = q(".giris-alt").hidden = q(".alt").hidden = false;
 			q(".simdilik").hidden = !!aday;
-			q(".dogrula").hidden = q(".bul").hidden = q(".bekle").hidden = true;
+			q(".dogrula").hidden = q(".bul").hidden = q(".bekle").hidden = q(".silindi").hidden = true;
 			yaz("");
 			pen.hidden = false;
 			const u = auth.currentUser;
