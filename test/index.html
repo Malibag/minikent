@@ -1905,6 +1905,19 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 
 	// arama ve öneriler (oyundaki kutunun yerine)
 	const ara = $("mkb-ara"), oneri = $("mkb-oneri");
+	// klavye açılınca tarayıcı sayfayı yukarı kaydırır; arayüz görünen alana oturur: üst şerit ve düğmeler en üstte kalır,
+	// arama satırı klavyenin hemen üstüne çıkar, klavye kapanınca yerine iner (kullanıcı, 2026-11-11)
+	const gorunen = window.visualViewport;
+	if (gorunen) {
+		const otur = () => {
+			const acik = gorunen.height < innerHeight - 1 || gorunen.offsetTop > 1;
+			kok.style.top = acik ? gorunen.offsetTop + "px" : "";
+			kok.style.height = acik ? gorunen.height + "px" : "";
+			kok.style.bottom = acik ? "auto" : "";
+		};
+		gorunen.addEventListener("resize", otur);
+		gorunen.addEventListener("scroll", otur);
+	}
 	const bul = (h) => { oneri.hidden = true; ara.blur(); window.minikentSearch && window.minikentSearch(h); };
 	ara.addEventListener("input", () => {
 		const q = ara.value.trim().toLowerCase().replace(/^@/, "");
