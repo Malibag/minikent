@@ -180,6 +180,24 @@ function gtag() { dataLayer.push(arguments); }
 	window.miniakentOlay = function (ad, bilgi) {
 		try { gtag("event", ad, bilgi || {}); } catch (e) {}
 	};
+	// çerez seçimi sonradan Hesap Ayarları > Çerez Tercihleri'nden değişir (kullanıcı, 2026-11-11); kapatınca Analytics
+	// çerezleri (_ga) silinir
+	window.miniakentCerez = function (acik) {
+		try { localStorage.setItem("miniakent_cerez", acik ? "evet" : "hayir"); } catch (e) {}
+		gtag("consent", "update", {analytics_storage: acik ? "granted" : "denied"});
+		if (!acik) {
+			document.cookie.split(";").forEach(function (c) {
+				const ad = c.split("=")[0].trim();
+				if (ad.indexOf("_ga") === 0) {
+					["", "; domain=" + location.hostname, "; domain=." + location.hostname].forEach(function (d) {
+						document.cookie = ad + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/" + d;
+					});
+				}
+			});
+		}
+		const s = document.getElementById("mk-cerez");
+		if (s) s.remove();
+	};
 	if (secim === "evet" || secim === "hayir") {
 		return;
 	}
@@ -194,7 +212,14 @@ function gtag() { dataLayer.push(arguments); }
 			"box-shadow:0 4px 18px rgba(61,46,26,.18);font:13px/1.35 system-ui,-apple-system,sans-serif";
 		const yazi = document.createElement("span");
 		yazi.style.cssText = "flex:1 1 220px";
-		yazi.textContent = "Miniakent, ziyaret istatistiklerini (ziyaretçi sayısı, süre, cihaz türü) ölçmek için çerez kullanır.";
+		yazi.textContent = "Miniakent, ziyaret istatistiklerini (ziyaretçi sayısı, süre, cihaz türü) ölçmek için çerez kullanır. ";
+		const ayr = document.createElement("a");
+		ayr.href = "test/gizlilik.html";
+		ayr.target = "_blank";
+		ayr.rel = "noopener";
+		ayr.style.color = "#1f5fa8";
+		ayr.textContent = "Ayrıntılar";
+		yazi.appendChild(ayr);
 		s.appendChild(yazi);
 		[["Kabul et", "evet", "#2a2620", "#faf5eb"], ["Reddet", "hayir", "#ece4d6", "#2a2620"]].forEach(function (d) {
 			const b = document.createElement("button");
@@ -464,7 +489,7 @@ body.gece .yk-sahne { background: #3a4d74; border-color: #0b1220; }
 // Her ziyaretçi cevrimici/<kimlik> yazar, sekme kapanınca silinir; oyun sayıyı window.miniakentCevrimici'den okur.
 // gunluk/<Türkiye tarihi> her tarayıcıda günde bir kez 1 artar. Bağlantı kurulamazsa oyun etkilenmez.
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getDatabase, ref, set, get, update, onDisconnect, onValue, runTransaction, serverTimestamp, goOffline, goOnline } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+import { getDatabase, ref, set, get, update, push, onDisconnect, onValue, runTransaction, serverTimestamp, goOffline, goOnline } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
 try {
 	const app = initializeApp({
 		apiKey: "AIzaSyCC0HI_bln18UBMEDHdAO7CmtMEM3JtM5I",
@@ -556,6 +581,18 @@ try {
 		// oyuncu/<uid>/izin {reklam, bildirim: verildiği an (ms)}; hepsi isteğe bağlı, oyuncu istediği an siler
 		let profil = {}, izin = {};
 		const anahtar = (h) => h.replace(/^@/, "").toLowerCase().replace(/\./g, ",");
+		// onaylar (kullanıcı, 2026-11-11; 6563 s. Kanun, Ticari İletişim Yönetmeliği m.7 ve m.13): güncel durum oyuncu/<uid>/izin/<tür>
+		// (verildiği an ya da yok); her açma ve kapatma izin_gecmis/<uid>'e tarih, e-posta ve kaynakla ayrı satır olarak eklenir.
+		// Geçmiş yalnız eklenir, değiştirilemez ve hesap silinse de kalır (ispat için, onay bittikten sonra 3 yıl).
+		const izinYaz = (d, uid, yeni, kaynak) => {
+			for (const [tur, v] of Object.entries(yeni)) {
+				if (v === !!izin[tur]) continue;
+				d["oyuncu/" + uid + "/izin/" + tur] = v ? serverTimestamp() : null;
+				const s = { tur: tur, durum: v, t: serverTimestamp(), eposta: auth.currentUser.email, kaynak: kaynak };
+				if (karakter) s.karakter = karakter;
+				d["izin_gecmis/" + uid + "/" + push(ref(db, "izin_gecmis/" + uid)).key] = s;
+			}
+		};
 		// kendi karakterinin kıyafeti (boş = kendi kıyafetine döner, kayıt silinir); ekranda hemen görünür
 		window.miniakentKiyafetSec = (s) => {
 			if (!karakter || !window.miniakentKiyafetYol) return Promise.resolve();
@@ -567,7 +604,7 @@ try {
 			const u = auth.currentUser;
 			window.miniakentOturum = u ? JSON.stringify({ eposta: u.email, dogrulandi: u.emailVerified, karakter: karakter,
 				premium: premium, seri: giris ? giris.seri : 0, gun: giris ? giris.gun : 0,
-				izin: { reklam: !!izin.reklam, bildirim: !!izin.bildirim } }) : "";
+				izin: { eposta: !!izin.eposta, instagram: !!izin.instagram, reklam: !!izin.reklam } }) : "";
 			window.miniakentOturumSurum = (window.miniakentOturumSurum || 0) + 1;
 		};
 		const trGun = (ms) => new Date(ms + 3 * 3600 * 1000).toISOString().slice(0, 10);
@@ -628,6 +665,8 @@ try {
 #kontrol .cins button.secili { border-color: #2a2620; background: #2a2620; color: #faf5eb; }
 #kontrol label.onay { display: flex; gap: 8px; align-items: flex-start; margin: 10px 0 0; font-size: 12.5px; line-height: 1.4; color: #2a2620; cursor: pointer; }
 #kontrol label.onay input { width: 18px; height: 18px; flex: none; margin: 1px 0 0; padding: 0; }
+#kontrol label.onay a, #kontrol .aydinlatma a { color: #1f5fa8; }
+#kontrol .aydinlatma { margin: 8px 0 0; font-size: 12.5px; line-height: 1.4; color: #776d60; text-align: center; }
 #kontrol .silindi p { margin: 4px 0 0; font-size: 14px; line-height: 1.45; text-align: center; }
 #kontrol .sil p { margin: 4px 0 8px; font-size: 14px; line-height: 1.45; text-align: center; }
 #kontrol .ikili { display: flex; gap: 8px; margin-top: 16px; }
@@ -691,10 +730,13 @@ try {
 		<label for="kontrol-dogum">Doğum tarihi</label>
 		<input id="kontrol-dogum" type="date" min="1900-01-01">
 		<button type="button" class="profil-sil" hidden>Profil bilgilerimi sil</button>
-		<label class="onay"><input type="checkbox" id="kontrol-reklam"><span>Yaş ve cinsiyet bilgimin istatistik ve reklam amacıyla kullanılmasını kabul ediyorum.</span></label>
-		<label class="onay"><input type="checkbox" id="kontrol-bildirim"><span>Miniakent'teki yenilikler ve promosyonlarla ilgili Instagram ve e-posta üzerinden bildirim almak istiyorum.</span></label>
+		<div class="kayitta" hidden>
+		<label class="onay"><input type="checkbox" id="kontrol-bildirim"><span>Yenilik, etkinlik ve kampanya duyurularını e-posta ve Instagram mesajıyla almak istiyorum. <a href="test/duyuru-onay.html" target="_blank" rel="noopener">Duyuru Onay Metni</a></span></label>
+		<label class="onay"><input type="checkbox" id="kontrol-reklam"><span>Yaşıma ve cinsiyetime göre kişiselleştirilmiş reklam gösterilmesini, bu bilgilerin adım verilmeden istatistik ve sponsor raporlarında kullanılmasını kabul ediyorum. <a href="test/acik-riza.html" target="_blank" rel="noopener">Açık Rıza Metni</a></span></label>
+		</div>
 	</div>
 	<button type="submit" class="gonder">Giriş Yap</button>
+	<p class="aydinlatma kayitta" hidden>Kişisel verilerinin nasıl işlendiğini <a href="test/gizlilik.html" target="_blank" rel="noopener">Gizlilik Politikası ve KVKK Aydınlatma Metni</a>'nde okuyabilirsin.</p>
 	<button type="button" class="unuttum">Şifremi unuttum</button>
 	</div>
 	<div class="bekle" hidden>
@@ -804,7 +846,7 @@ try {
 					: await fa.signInWithEmailAndPassword(auth, eposta.value.trim(), sifre.value);
 				if (kayit) {
 					// isteğe bağlı bilgiler kaydı durdurmaz: yazılamazsa profilden yeniden doldurulur
-					await ekKaydet(k.user.uid).catch((err) => console.warn("profil", err));
+					await ekKaydet(k.user.uid, true).catch((err) => console.warn("profil", err));
 					await fa.sendEmailVerification(k.user, DONUS);
 					bekleGoster(k.user.email, true);
 					dogrulamaBekle();
@@ -840,11 +882,11 @@ try {
 			reklamK.checked = !!i.reklam;
 			bildirimK.checked = !!i.bildirim;
 		};
-		const ekKaydet = (uid) => {
+		// onaylar yalnız kayıtta bu kutulardan alınır; sonra Hesap Ayarları'ndan değişir (izinYaz, kullanıcı 2026-11-11)
+		const ekKaydet = (uid, kayit) => {
 			const y = "oyuncu/" + uid + "/";
 			const d = { [y + "profil/cinsiyet"]: cins || null, [y + "profil/dogum"]: dogum.value || null };
-			if (reklamK.checked !== !!izin.reklam) d[y + "izin/reklam"] = reklamK.checked ? serverTimestamp() : null;
-			if (bildirimK.checked !== !!izin.bildirim) d[y + "izin/bildirim"] = bildirimK.checked ? serverTimestamp() : null;
+			if (kayit) izinYaz(d, uid, { eposta: bildirimK.checked, instagram: bildirimK.checked, reklam: reklamK.checked }, "kayit");
 			return update(ref(db), d);
 		};
 		const mod = (m) => {
@@ -904,7 +946,7 @@ try {
 			const h = tur === "hesap";
 			q("h2").textContent = h ? "Hesabımı sil" : "Profil bilgilerimi sil";
 			q(".sil-yazi").textContent = h
-				? "Hesabın, e-postan, profil bilgilerin ve izinlerin kalıcı olarak silinecek. Karakterin şehirde otomatik yaşamaya devam eder. Emin misin?"
+				? "Hesabın, e-postan ve profil bilgilerin kalıcı olarak silinecek. Onay kayıtların kanun gereği 3 yıl saklanır. Karakterin şehirde otomatik yaşamaya devam eder. Emin misin?"
 				: "Cinsiyet ve doğum tarihin silinecek. Emin misin?";
 			pen.querySelectorAll(".sil-sifre").forEach((x) => { x.hidden = !h; });
 			q(".sil-onay").textContent = h ? "Hesabımı sil" : "Sil";
@@ -927,7 +969,11 @@ try {
 				} else {
 					// hesap silme: şifreyle yeniden doğrulanır, sonra kayıtlar ve hesap silinir; karakter şehirde kalır
 					await fa.reauthenticateWithCredential(u, fa.EmailAuthProvider.credential(u.email, sifre3.value));
-					const d = { ["oyuncu/" + u.uid]: null, ["dogrulama/" + u.uid]: null };
+					const d = {};
+					izinYaz(d, u.uid, { eposta: false, instagram: false, reklam: false }, "hesap_silme");  // onayların bittiği an kayda geçer
+					d["oyuncu/" + u.uid] = null;
+					d["dogrulama/" + u.uid] = null;
+					for (const k of Object.keys(d)) if (k.startsWith("oyuncu/" + u.uid + "/")) delete d[k];  // üst yol zaten siliniyor
 					if (karakter) d["sahip/" + anahtar(karakter)] = null;
 					if (karakter && window.miniakentKiyafetYol) d[window.miniakentKiyafetYol + "/" + anahtar(karakter)] = null;
 					await update(ref(db), d);
@@ -945,8 +991,13 @@ try {
 			}
 			b.disabled = false;
 		});
-		window.miniakentIzin = (ad, v) => auth.currentUser
-			&& set(ref(db, "oyuncu/" + auth.currentUser.uid + "/izin/" + ad), v ? serverTimestamp() : null).catch((e) => console.warn("izin", e));
+		window.miniakentIzin = (ad, v) => {
+			const u = auth.currentUser;
+			if (!u) return;
+			const d = {};
+			izinYaz(d, u.uid, { [ad]: v }, "ayarlar");
+			if (Object.keys(d).length) update(ref(db), d).catch((e) => console.warn("izin", e));
+		};
 		// telefon klavyesi: pencere görünen alana sığar, dokunulan alan klavyenin üstüne kayar (kullanıcı, 2026-11-09)
 		const vv = window.visualViewport;
 		if (vv) {
@@ -1299,6 +1350,8 @@ body.gece #mkb { --krem: #22304f; --krem2: #2c3b5e; --yazi: #fbe9cb; --kenar: #0
 /* profil bilgileri, izinler ve silme (kullanıcı, 2026-11-09); menü uzunsa kendi içinde kayar */
 #mkb .ayarlar { max-height: calc(100dvh - 80px - env(safe-area-inset-top, 0px)); overflow-y: auto; box-sizing: border-box; }
 #mkb .p-ayar { display: flex; flex-direction: column; gap: 12px; }
+#mkb .p-izin { display: flex; flex-direction: column; gap: 12px; }
+#mkb .ayarlar .grup { margin-bottom: -4px; color: var(--soluk); font: 800 12px var(--fb); letter-spacing: .03em; text-transform: uppercase; }
 #mkb .p-dugme { align-self: flex-start; border: 0; background: none; padding: 0; color: inherit; font: 600 15px var(--fb); text-decoration: underline; text-underline-offset: 3px; text-align: left; }
 #mkb .p-dugme.kirmizi { color: #b23b2e; }
 #mkb .ayril { display: flex; flex-direction: column; gap: 2px; text-align: left; padding: 8px 12px; border-radius: 12px; border: 2px solid var(--kenar); background: transparent; }
@@ -1377,14 +1430,23 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	<div class="profil" id="mkb-p-hesap" hidden><b id="mkb-p-eposta"></b><small id="mkb-p-karakter"></small></div>
 	<div class="p-ayar" id="mkb-p-ayar" hidden>
 		<button class="p-dugme" data-p="duzenle">Profil bilgilerimi düzenle</button>
-		<button class="anahtar" role="switch" aria-checked="false" id="mkb-p-bildirim"><b>Bildirim izni</b><small>Instagram ve e-posta ile yenilikler ve promosyonlar</small><i></i></button>
-		<button class="anahtar" role="switch" aria-checked="false" id="mkb-p-reklam"><b>Reklam izni</b><small>Yaşın ve cinsiyetin istatistik ve reklam için kullanılır</small><i></i></button>
 	</div>
 	<hr>
 	<h2>Ayarlar</h2>
 	<button class="anahtar" role="switch" aria-checked="false" id="mkb-a-kumanda"><b>Kumanda</b><small>Ekranın sağ altında yön kumandası</small><i></i></button>
 	<hr id="mkb-a-cizgi">
 	<button class="anahtar" role="switch" aria-checked="false" id="mkb-a-lite"><b>Lite sürüm</b><small>Telefon için hafif görünüm</small><i></i></button>
+	<hr>
+	<h2>Hesap Ayarları</h2>
+	<div class="p-izin" id="mkb-p-izinler" hidden>
+		<span class="grup">Duyuru Tercihlerim</span>
+		<button class="anahtar" role="switch" aria-checked="false" data-izin="eposta"><b>E-posta</b><small>Yenilik, etkinlik ve kampanya duyuruları e-postana gelir.</small><i></i></button>
+		<button class="anahtar" role="switch" aria-checked="false" data-izin="instagram"><b>Instagram</b><small>Yenilik, etkinlik ve kampanya duyuruları Instagram'dan mesaj olarak gelir.</small><i></i></button>
+		<span class="grup">Reklam Tercihleri</span>
+		<button class="anahtar" role="switch" aria-checked="false" data-izin="reklam"><b>Kişiselleştirilmiş reklamlar</b><small>Yaşına ve cinsiyetine uygun reklamlar görürsün. Bu bilgiler adın verilmeden istatistiklerde ve sponsor raporlarında da kullanılır.</small><i></i></button>
+	</div>
+	<span class="grup">Çerez Tercihleri</span>
+	<button class="anahtar" role="switch" aria-checked="false" id="mkb-a-cerez"><b>İstatistik çerezleri</b><small>Ziyaretçi sayısı, kalma süresi ve cihaz türü ölçülür.</small><i></i></button>
 	<hr id="mkb-a-cizgi2">
 	<button class="ayril" id="mkb-ayril"><b>Çıkış Yap</b><small id="mkb-ayril-not">Karakterin otomatik moda döner</small></button>
 	<button class="p-dugme kirmizi" id="mkb-p-sil">Hesabımı sil</button>
@@ -1680,8 +1742,11 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		$("mkb-p-giris").hidden = !!eposta;
 		$("mkb-p-hesap").hidden = $("mkb-p-ayar").hidden = !eposta;
 		$("mkb-p-eposta").textContent = eposta;
-		$("mkb-p-bildirim").setAttribute("aria-checked", String(!!izinler.bildirim));
-		$("mkb-p-reklam").setAttribute("aria-checked", String(!!izinler.reklam));
+		$("mkb-p-izinler").hidden = !eposta;
+		for (const b of $("mkb-p-izinler").querySelectorAll("[data-izin]")) b.setAttribute("aria-checked", String(!!izinler[b.dataset.izin]));
+		let cerez = false;
+		try { cerez = localStorage.getItem("miniakent_cerez") === "evet"; } catch (e) {}
+		$("mkb-a-cerez").setAttribute("aria-checked", String(cerez));
 		$("mkb-p-karakter").textContent = karakter;
 		$("mkb-p-karakter").hidden = !karakter;
 		$("mkb-ayril").hidden = $("mkb-a-cizgi2").hidden = $("mkb-p-sil").hidden = !eposta;
@@ -1747,6 +1812,21 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		liteCiz();
 		if (window.miniakentLiteSec) window.miniakentLiteSec(window.miniakentLiteAcik);
 	});
+	// Hesap Ayarları (kullanıcı, 2026-11-11): duyuru ve reklam onayları menünün altında; her değişiklik geçmişe yazılır (miniakentIzin)
+	$("mkb-p-izinler").addEventListener("click", (e) => {
+		const b = e.target.closest("[data-izin]");
+		if (!b) return;
+		const ad = b.dataset.izin;
+		izinler[ad] = !izinler[ad];   // anında görünsün; kayıt gelince oturumdan yeniden okunur
+		arayuz();
+		window.miniakentIzin && window.miniakentIzin(ad, izinler[ad]);
+	});
+	$("mkb-a-cerez").addEventListener("click", () => {
+		let acik = false;
+		try { acik = localStorage.getItem("miniakent_cerez") === "evet"; } catch (e) {}
+		window.miniakentCerez && window.miniakentCerez(!acik);
+		arayuz();
+	});
 	$("mkb-p-giris").addEventListener("click", (e) => {
 		const b = e.target.closest("button");
 		if (!b) return;
@@ -1758,13 +1838,6 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	$("mkb-p-ayar").addEventListener("click", (e) => {
 		const b = e.target.closest("button");
 		if (!b) return;
-		if (b.id === "mkb-p-bildirim" || b.id === "mkb-p-reklam") {
-			const ad = b.id === "mkb-p-bildirim" ? "bildirim" : "reklam";
-			izinler[ad] = !izinler[ad];   // anında görünsün; kayıt gelince oturumdan yeniden okunur
-			arayuz();
-			window.miniakentIzin && window.miniakentIzin(ad, izinler[ad]);
-			return;
-		}
 		$("mkb-ayarlar").hidden = true;
 		$("mkb-disli").setAttribute("aria-expanded", "false");
 		if (b.dataset.p === "duzenle") window.miniakentProfilAc && window.miniakentProfilAc();
