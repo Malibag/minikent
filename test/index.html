@@ -1514,7 +1514,9 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	}
 	// kıyafet seçimi (kullanıcı, 2026-11-09; onaylı liste): alt tek (pantolon/etek/şort), palto ya da mont en çok bir,
 	// şapka isteğe bağlı, ayakkabı bir, aksesuarlar birlikte (iki gözlük birden olmaz); her parçada 6 renk
+	const SAC_RENKLER = [["Siyah", "#1f1a17"], ["Kahverengi", "#5a3a26"], ["Kumral", "#8b6a43"], ["Sarı", "#e3c16f"], ["Kızıl", "#b4471f"], ["Beyaz", "#e8e6e1"]];
 	const KIY = [
+		["Saç Modeli", "h", false, [["", [["kisa", "Kısa"], ["uzun", "Uzun"], ["topuz", "Topuz"], ["kivircik", "Kıvırcık"], ["atkuyrugu", "At kuyruğu"], ["orgu", "Örgü"], ["kakullu", "Kâküllü"], ["dazlak", "Dazlak"]]]], SAC_RENKLER],
 		["Alt", "a", false, [["Pantolon", [["duz", "Düz pantolon"], ["kot", "Kot pantolon"], ["esofman", "Eşofman altı"], ["genis", "Geniş paça"], ["dar", "Dar pantolon"]]],
 			["Etek", [["kisaetek", "Kısa etek"], ["dizetek", "Diz boyu etek"], ["uzunetek", "Uzun etek"]]],
 			["Şort", [["kisasort", "Kısa şort"], ["bermuda", "Bermuda"], ["deniz", "Deniz şortu"]]]]],
@@ -1537,7 +1539,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		}
 		return d;
 	}
-	const kiyYaz = (d) => ["a", "s", "d", "y"].filter((k) => d[k]).map((k) => k + ":" + d[k]).concat(d.x.length ? ["x:" + d.x.join(",")] : []).join("|");
+	const kiyYaz = (d) => ["h", "a", "s", "d", "y"].filter((k) => d[k]).map((k) => k + ":" + d[k]).concat(d.x.length ? ["x:" + d.x.join(",")] : []).join("|");
 	const kiyBu = () => kiyCoz((window.miniakentKiyafetler || {})[karakter.toLowerCase()]);
 	function kiyafetPanel() {
 		const d = kiyBu(), t = KIY[kSekme];
@@ -1548,7 +1550,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			if (grup) h += `<div class="kiy-grup">${grup}</div>`;
 			for (const [id, ad] of parcalar) {
 				const s = secim(id);
-				h += `<div class="kiy-satir ${s ? "secili" : ""}"><span>${ad}</span><div class="renkler">${RENKLER.map((r, i) =>
+				h += `<div class="kiy-satir ${s ? "secili" : ""}"><span>${ad}</span><div class="renkler">${(t[4] || RENKLER).map((r, i) =>
 					`<button class="${s === id + i ? "secili" : ""}" style="background:${r[1]}" data-kiy="${id}${i}" aria-label="${ad}, ${r[0]}"></button>`).join("")}</div></div>`;
 			}
 		}
@@ -1924,7 +1926,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611101441.pck","fileSizes":{"test/index-test-v202611101441.pck":6795308,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611101454.pck","fileSizes":{"test/index-test-v202611101454.pck":6796684,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
