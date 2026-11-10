@@ -1171,18 +1171,19 @@ body.gece #mkb { --krem: #22304f; --krem2: #2c3b5e; --yazi: #fbe9cb; --kenar: #0
 #mkb .yuvarlak { width: 38px; height: 38px; flex: 0 0 38px; display: grid; place-items: center; border-radius: 50%; background: var(--krem); border: 2px solid var(--kenar); padding: 0; }
 #mkb .yuvarlak svg { width: 18px; height: 18px; }
 #mkb .yuvarlak[aria-expanded="true"] { background: var(--yazi); color: var(--krem2); }
-#mkb .ses-alt { position: absolute; top: calc(108px + env(safe-area-inset-top, 0px)); left: calc(12px + var(--en) - 38px); }
-#mkb .ust2 { position: absolute; top: calc(60px + env(safe-area-inset-top, 0px)); left: 12px; width: var(--en); display: flex; gap: 8px; }
+#mkb .ses-alt { position: absolute; top: calc(60px + env(safe-area-inset-top, 0px)); left: calc(12px + var(--en) - 38px); }
+/* arama satırı altta ortada, tek elle kolay (kullanıcı, 2026-11-11) */
+#mkb .ust2 { position: absolute; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); left: 50%; transform: translateX(-50%); width: var(--en); display: flex; gap: 8px; }
 #mkb .arama { display: flex; gap: 6px; flex: 1; min-width: 0; }
 #mkb .arama input { flex: 1; min-width: 0; padding: 7px 12px; border-radius: 999px; border: 2px solid var(--kenar); background: var(--krem2); color: var(--yazi); font: 14px var(--fg); outline: 0; }
 #mkb .cip { padding: 6px 12px; border-radius: 999px; background: var(--krem); border: 2px solid var(--kenar); font-weight: 700; font-size: 13px; }
-#mkb .cevrim { position: absolute; top: calc(98px + env(safe-area-inset-top, 0px)); left: 16px; font-size: 12px; font-weight: 700; color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,.6); }
+#mkb .cevrim { position: absolute; top: calc(60px + env(safe-area-inset-top, 0px)); left: 16px; font-size: 12px; font-weight: 700; color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,.6); }
 #mkb .mkb-liste { position: absolute; top: calc(98px + env(safe-area-inset-top, 0px)); z-index: 9; display: flex; flex-direction: column; gap: 4px; max-height: 60vh; overflow-y: auto;
 	padding: 6px; border-radius: 14px; background: var(--krem); border: 2px solid var(--kenar); }
 #mkb .mkb-liste button { text-align: left; border: 0; background: none; padding: 7px 10px; border-radius: 10px; font-weight: 700; font-size: 14px; }
 #mkb .mkb-liste button.soluk { color: var(--soluk); }
-#mkb #mkb-oneri { left: 12px; width: var(--en); }
-#mkb #mkb-bolge { left: calc(12px + var(--en) - 210px); width: 210px; }
+#mkb #mkb-oneri { top: auto; bottom: calc(62px + env(safe-area-inset-bottom, 0px)); left: 50%; transform: translateX(-50%); width: var(--en); }
+#mkb #mkb-bolge { top: auto; bottom: calc(62px + env(safe-area-inset-bottom, 0px)); left: calc(50% + var(--en) / 2 - 210px); width: 210px; }
 #mkb .avatar { width: 36px; height: 36px; flex: 0 0 auto; border-radius: 50%; display: grid; place-items: center; background: var(--deniz); color: #fbe9cb;
 	font: 700 17px/1 var(--fb); border: 2px solid var(--kenar); }
 #mkb .nokta { position: absolute; top: 2px; left: 32px; width: 12px; height: 12px; border-radius: 50%; background: var(--kiremit); border: 2px solid var(--krem); }
@@ -1323,7 +1324,7 @@ body.gece #mkb { --krem: #22304f; --krem2: #2c3b5e; --yazi: #fbe9cb; --kenar: #0
 #mkb .ayril b { font: 600 16px var(--fb); }
 #mkb .ayril small { color: var(--soluk); font-size: 12px; }
 /* takip: bir kişi takip edilirken altta ortada */
-#mkb .takip { position: absolute; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); z-index: 6;
+#mkb .takip { position: absolute; left: 50%; bottom: calc(64px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); z-index: 6;
 	display: flex; flex-direction: column; align-items: center; gap: 6px; }
 #mkb .takip .kim-ad { padding: 3px 10px; border-radius: 999px; background: var(--yazi); color: var(--krem2); font-weight: 800; font-size: 12.5px; white-space: nowrap; }
 #mkb .takip .dugmeler { display: flex; gap: 4px; padding: 4px; border-radius: 999px; background: var(--krem); border: 2.5px solid var(--kenar); box-shadow: 0 3px 0 var(--golge); }
@@ -1347,7 +1348,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	#mkb #mkb-bolgeler { position: fixed; right: 12px; top: calc(60px + env(safe-area-inset-top, 0px)); height: 37px; }
 	#mkb .ses-alt { left: auto; right: 12px; }
 	#mkb .ayarlar { left: auto; right: 12px; }
-	#mkb #mkb-bolge { left: auto; right: 12px; }
+	#mkb #mkb-bolge { left: auto; right: 12px; top: calc(98px + env(safe-area-inset-top, 0px)); bottom: auto; }
 }`;
 	document.head.appendChild(css);
 
@@ -1377,7 +1378,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	<button class="cip" id="mkb-bolgeler">Bölgeler</button></div>
 <button class="yuvarlak ses-alt" id="mkb-ses" aria-label="Ses"></button>
 <div class="cevrim" id="mkb-cevrim" hidden></div>
-<div class="cevrim" id="mkb-fps" style="top: calc(114px + env(safe-area-inset-top, 0px))" hidden></div>
+<div class="cevrim" id="mkb-fps" style="top: calc(76px + env(safe-area-inset-top, 0px))" hidden></div>
 <div class="mkb-liste" id="mkb-oneri" hidden></div>
 <div class="mkb-liste" id="mkb-bolge" hidden></div>
 <div class="ray" id="mkb-ray" role="tablist" aria-label="Karakterim" hidden>
