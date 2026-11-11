@@ -939,6 +939,10 @@ try {
 			q(".giris").hidden = false;
 		};
 		let silTur = "";
+		// kutu işaretlenince uyarı da değişir (kullanıcı, 2026-11-11)
+		const silYazi = (cik) => "Hesabın, e-postan ve profil bilgilerin kalıcı olarak silinecek. Onay kayıtların kanun gereği 3 yıl saklanır. " +
+			(cik ? "Karakterin bu gece trenle şehirden ayrılır." : "Karakterin şehirde otomatik yaşamaya devam eder.") + " Emin misin?";
+		q("#kontrol-karakter-sil").addEventListener("change", (e) => { if (silTur === "hesap") q(".sil-yazi").textContent = silYazi(e.target.checked); });
 		const sifre3 = q("#kontrol-sifre3");
 		window.miniakentSilAc = (tur) => {  // "profil" (Düzenle ekranından) | "hesap"
 			pencereSade();
@@ -946,7 +950,7 @@ try {
 			const h = tur === "hesap";
 			q("h2").textContent = h ? "Hesabımı sil" : "Profil bilgilerimi sil";
 			q(".sil-yazi").textContent = h
-				? "Hesabın, e-postan ve profil bilgilerin kalıcı olarak silinecek. Onay kayıtların kanun gereği 3 yıl saklanır. Karakterin şehirde otomatik yaşamaya devam eder. Emin misin?"
+				? silYazi(false)
 				: "Cinsiyet ve doğum tarihin silinecek. Emin misin?";
 			pen.querySelectorAll(".sil-sifre").forEach((x) => { x.hidden = !h; });
 			pen.querySelectorAll(".sil-karakter").forEach((x) => { x.hidden = !(h && karakter); });
