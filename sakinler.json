@@ -209708,15 +209708,19 @@
    "home": "Batı Banliyö F Blok, Daire 60",
    "home_from": 1794376800,
    "job": [
-    "Gitar Öğretmeni",
-    "Miniakent Müzik Kursu · Miniakent Plaza 3, Kat 2",
+    "Solist",
+    "Miniakent Sanat Atölyesi · Miniakent Plaza 3, Kat 10",
     "office",
     "plaza3"
    ],
-   "wp": "muzik",
+   "wp": "sanat",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@yigit.nisanci",
