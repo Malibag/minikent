@@ -1210,7 +1210,7 @@ body.gece #mkb { --krem: #22304f; --krem2: #2c3b5e; --yazi: #fbe9cb; --kenar: #0
 #mkb .mkb-pano.tam .bas { padding-top: 16px; }
 #mkb .ikon { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; border: 0; background: transparent; padding: 0; }
 #mkb .ikon svg { width: 20px; height: 20px; }
-#mkb .icerik { flex: 1; overflow-y: auto; padding: 4px 12px 16px 14px; display: flex; flex-direction: column; gap: 12px; }
+#mkb .icerik { flex: 1; overflow-y: auto; overflow-x: hidden; padding: 4px 12px 16px 14px; display: flex; flex-direction: column; gap: 12px; }
 #mkb .kim { display: flex; gap: 12px; align-items: center; }
 #mkb .kim .avatar { width: 52px; height: 52px; font-size: 20.5px; }
 #mkb .kim b { display: block; font: 600 15.5px var(--fb); }
@@ -1284,12 +1284,13 @@ body.gece #mkb { --krem: #22304f; --krem2: #2c3b5e; --yazi: #fbe9cb; --kenar: #0
 #mkb .kiy-sekmeler button { flex: 1 0 auto; }
 #mkb .kiyafet { display: flex; flex-direction: column; gap: 6px; }
 #mkb .kiy-grup { margin-top: 6px; font-size: 10px; font-weight: 800; color: var(--soluk); }
-#mkb .kiy-satir { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 6px 8px; border-radius: 10px; border: 2px solid transparent; background: var(--krem2); }
+#mkb .kiy-satir { display: flex; align-items: center; justify-content: space-between; gap: 6px; padding: 6px 7px; border-radius: 10px; border: 2px solid transparent; background: var(--krem2); }
 #mkb .kiy-satir.secili { border-color: var(--deniz); }
-#mkb .kiy-satir span { font-weight: 700; font-size: 12px; }
-#mkb .renkler { display: flex; gap: 5px; flex-shrink: 0; }
-#mkb .renkler button { width: 26px; height: 26px; border-radius: 50%; border: 2px solid rgba(22,33,50,.35); padding: 0; }
-#mkb .renkler button.secili { outline: 3px solid var(--deniz); outline-offset: 2px; }
+#mkb .kiy-satir span { min-width: 0; font-weight: 700; font-size: 11px; line-height: 1.25; }
+/* renk noktaları satıra sığar, sağa taşmaz (kullanıcı, 2026-11-11) */
+#mkb .renkler { display: flex; gap: 4px; flex-shrink: 0; }
+#mkb .renkler button { width: 20px; height: 20px; border-radius: 50%; border: 2px solid rgba(22,33,50,.35); padding: 0; }
+#mkb .renkler button.secili { outline: 2px solid var(--deniz); outline-offset: 1px; }
 #mkb .kiy-yok { align-self: flex-start; padding: 7px 16px; border-radius: 10px; border: 2px solid var(--kenar); background: transparent; font-weight: 800; }
 #mkb .kiy-yok.secili { background: var(--yazi); color: var(--krem2); }
 #mkb .kostumler { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
