@@ -164,9 +164,9 @@ body.gece #yukleme-yazi {
 	text-align: center;
 }
 		</style>
-		<!-- Google Analytics (kullanıcı, 2026-10-30: reklam verenlere sunulacak istatistikler). KVKK: ziyaretçi "Kabul et"
-		     demeden çerez yazılmaz (onay modu); seçim tarayıcıda saklanır. Oyun olayları window.miniakentOlay ile gelir. -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-8871X5M15R"></script>
+		<!-- Google Analytics (kullanıcı, 2026-10-30: reklam verenlere sunulacak istatistikler). KVKK (2026-11-11): Google'ın
+		     betiği yalnız istatistik çerezlerine onay verilince yüklenir; onaydan önce Google'a hiçbir şey gitmez. Seçim
+		     tarayıcıda saklanır. Oyun olayları window.miniakentOlay ile gelir (onaysızken yalnız sayfada birikir, gönderilmez). -->
 		<script>
 window.dataLayer = window.dataLayer || [];
 function gtag() { dataLayer.push(arguments); }
@@ -177,6 +177,16 @@ function gtag() { dataLayer.push(arguments); }
 		ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied"});
 	gtag("js", new Date());
 	gtag("config", "G-8871X5M15R");
+	let yuklendi = false;
+	const yukle = function () {
+		if (yuklendi) return;
+		yuklendi = true;
+		const b = document.createElement("script");
+		b.async = true;
+		b.src = "https://www.googletagmanager.com/gtag/js?id=G-8871X5M15R";
+		document.head.appendChild(b);
+	};
+	if (secim === "evet") yukle();
 	window.miniakentOlay = function (ad, bilgi) {
 		try { gtag("event", ad, bilgi || {}); } catch (e) {}
 	};
@@ -185,6 +195,10 @@ function gtag() { dataLayer.push(arguments); }
 	window.miniakentCerez = function (acik) {
 		try { localStorage.setItem("miniakent_cerez", acik ? "evet" : "hayir"); } catch (e) {}
 		gtag("consent", "update", {analytics_storage: acik ? "granted" : "denied"});
+		if (acik) {
+			yukle();
+			window.dispatchEvent(new Event("miniakent-cerez-onay"));  // günlük sayaç da şimdi sayar (A.3)
+		}
 		if (!acik) {
 			document.cookie.split(";").forEach(function (c) {
 				const ad = c.split("=")[0].trim();
@@ -483,14 +497,19 @@ try {
 		}
 	});
 	onValue(ref(db, "cevrimici"), (s) => { window.miniakentCevrimici = s.size; });
-	const gun = new Date(Date.now() + 3 * 3600 * 1000).toISOString().slice(0, 10);
-	let sayildi = null;
-	try { sayildi = localStorage.getItem("miniakent_gun"); } catch (e) {}
-	if (sayildi !== gun) {
+	// günlük ziyaretçi sayısı yalnız istatistik çerezlerine onay verenlerde sayılır (kullanıcı, 2026-11-11, KVKK A.3):
+	// tarayıcıya yazılan "bugün sayıldı" işareti istatistik amaçlı, zorunlu değil
+	const gunlukSay = () => {
+		let onay = false, sayildi = null;
+		try { onay = localStorage.getItem("miniakent_cerez") === "evet"; sayildi = localStorage.getItem("miniakent_gun"); } catch (e) {}
+		const gun = new Date(Date.now() + 3 * 3600 * 1000).toISOString().slice(0, 10);
+		if (!onay || sayildi === gun) return;
 		runTransaction(ref(db, "gunluk/" + gun), (v) => (v || 0) + 1).then(() => {
 			try { localStorage.setItem("miniakent_gun", gun); } catch (e) {}
 		});
-	}
+	};
+	gunlukSay();
+	window.addEventListener("miniakent-cerez-onay", gunlukSay);
 	// Cadılar Bayramı kostümleri (kullanıcı, 2026-11-02): kartta seçilen kostüm <yol>/<kullanıcı adı> olarak yazılır,
 	// herkes görür; sınır yok. Kullanıcı adında "@" atılır, "." yerine "," (Firebase anahtarında nokta olamaz).
 	// Canlıda "kostum" bölümü yalnız Salı 3 Kasım 09:00 – Pazar 8 Kasım 06:00 arası açık (Türkiye saati; kullanıcı,
