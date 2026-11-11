@@ -637,7 +637,8 @@ try {
 #kontrol .cins button.secili { border-color: #2a2620; background: #2a2620; color: #faf5eb; }
 #kontrol label.onay { display: flex; gap: 8px; align-items: flex-start; margin: 10px 0 0; font-size: 12.5px; line-height: 1.4; color: #2a2620; cursor: pointer; }
 #kontrol label.onay input { width: 18px; height: 18px; flex: none; margin: 1px 0 0; padding: 0; }
-#kontrol label.onay a, #kontrol .aydinlatma a { color: #1f5fa8; }
+#kontrol label.onay a { color: #1f5fa8; }
+#kontrol label.onay.zorunlu { margin: 12px 0 10px; }
 #kontrol .aydinlatma { margin: 8px 0 0; font-size: 12.5px; line-height: 1.4; color: #776d60; text-align: center; }
 #kontrol .silindi p { margin: 4px 0 0; font-size: 14px; line-height: 1.45; text-align: center; }
 #kontrol .sil p { margin: 4px 0 8px; font-size: 14px; line-height: 1.45; text-align: center; }
@@ -707,8 +708,8 @@ try {
 		<label class="onay"><input type="checkbox" id="kontrol-reklam"><span>Yaşıma ve cinsiyetime göre kişiselleştirilmiş reklam gösterilmesini, bu bilgilerin adım verilmeden istatistik ve sponsor raporlarında kullanılmasını kabul ediyorum. <a href="test/acik-riza.html" target="_blank" rel="noopener">Açık Rıza Metni</a></span></label>
 		</div>
 	</div>
+	<label class="onay kayitta zorunlu" hidden><input type="checkbox" id="kontrol-aydinlatma"><span><a href="test/gizlilik.html" target="_blank" rel="noopener">Gizlilik Politikası ve KVKK Aydınlatma Metni</a>'ni okudum.</span></label>
 	<button type="submit" class="gonder">Giriş Yap</button>
-	<p class="aydinlatma kayitta" hidden>Kişisel verilerinin nasıl işlendiğini <a href="test/gizlilik.html" target="_blank" rel="noopener">Gizlilik Politikası ve KVKK Aydınlatma Metni</a>'nde okuyabilirsin.</p>
 	<button type="button" class="unuttum">Şifremi unuttum</button>
 	</div>
 	<div class="bekle" hidden>
@@ -877,6 +878,7 @@ try {
 			sifre.autocomplete = k ? "new-password" : "current-password";
 			sifre2.value = "";
 			q(".sil").hidden = q(".bekle").hidden = q(".silindi").hidden = true;
+			q("#kontrol-aydinlatma").checked = false;
 			if (k) ekDoldur({}, {});         // kayıt ekranı boş gelir, kutular işaretsiz
 			else if (p) ekDoldur(profil, izin);
 			yaz("");
@@ -895,6 +897,8 @@ try {
 				return;
 			}
 			if (kip === "kayit" && sifre.value !== sifre2.value) { yaz("Şifreler aynı değil.", true); return; }
+			// aydınlatma metni kayıtta okundu olarak işaretlenir (kullanıcı, 2026-11-11); onay/rıza değil, bilgilendirme
+			if (kip === "kayit" && !q("#kontrol-aydinlatma").checked) { yaz("Kayıt olmak için Gizlilik Politikası ve KVKK Aydınlatma Metni'ni okuduğunu işaretle.", true); return; }
 			gir(kip === "kayit");
 		});
 		kayitDugme.addEventListener("click", () => mod(kip === "kayit" ? "giris" : "kayit"));
@@ -1423,7 +1427,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	<button class="ayril" id="mkb-ayril"><b>Çıkış Yap</b><small id="mkb-ayril-not">Karakterin otomatik moda döner</small></button>
 	<button class="p-dugme kirmizi" id="mkb-p-sil">Hesabımı sil</button>
 	<button class="p-dugme" id="mkb-p-ayarlar">Hesap Ayarları</button>
-	<a class="p-dugme" href="test/gizlilik.html" target="_blank" rel="noopener">Gizlilik Politikası</a>
+	<a class="p-dugme" href="test/gizlilik.html" target="_blank" rel="noopener">Gizlilik Politikası ve KVKK Aydınlatma Metni</a>
 </section>
 <div class="takip" id="mkb-takip" hidden><span class="kim-ad" id="mkb-takip-ad"></span>
 	<div class="dugmeler"><button id="mkb-goz">Gözünden gör</button><button class="koyu" id="mkb-birak">Takibi bırak</button></div></div>
