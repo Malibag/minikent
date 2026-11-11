@@ -1327,11 +1327,13 @@ body.gece #mkb { --krem: #22304f; --krem2: #2c3b5e; --yazi: #fbe9cb; --kenar: #0
 #mkb .p-ayar { display: flex; flex-direction: column; gap: 12px; }
 #mkb .p-izin { display: flex; flex-direction: column; gap: 12px; }
 #mkb .tercih { max-height: 80vh; overflow-y: auto; }
+#mkb .tercih > *, #mkb .tr-grup > * { flex-shrink: 0; }
+#mkb .tr-satir > span { flex: 1; min-width: 0; }
 #mkb .tr-grup { display: flex; flex-direction: column; gap: 10px; }
-#mkb .tik { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; }
-#mkb .tik input { width: 18px; height: 18px; flex: none; margin: 1px 0 0; accent-color: var(--deniz); }
-#mkb .tik b { display: block; font: 600 13.5px var(--fb); }
-#mkb .tik small { display: block; color: var(--soluk); font-size: 11px; line-height: 1.35; }
+#mkb .tr-satir { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; }
+#mkb .tr-satir input { width: 18px; height: 18px; flex: none; margin: 1px 0 0; accent-color: var(--deniz); }
+#mkb .tr-satir b { display: block; font: 600 13.5px var(--fb); }
+#mkb .tr-satir small { display: block; color: var(--soluk); font-size: 11px; line-height: 1.35; }
 #mkb .tercih .grup, #mkb .ayarlar .grup { margin-bottom: -4px; color: var(--soluk); font: 800 10px var(--fb); letter-spacing: .03em; text-transform: uppercase; }
 #mkb .p-dugme { align-self: flex-start; border: 0; background: none; padding: 0; color: inherit; font: 600 13px var(--fb); text-decoration: underline; text-underline-offset: 3px; text-align: left; }
 #mkb .p-dugme.kirmizi { color: #b23b2e; }
@@ -1430,13 +1432,13 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 <div class="mkb-onay" id="mkb-tercih" hidden><div class="kutu tercih"><h3>Hesap Ayarları</h3>
 	<div class="tr-grup" id="mkb-tr-hesap">
 		<span class="grup">Duyuru Tercihlerim</span>
-		<label class="tik"><input type="checkbox" data-izin="eposta"><span><b>E-posta</b><small>Yenilik, etkinlik ve kampanya duyuruları e-postana gelir.</small></span></label>
-		<label class="tik"><input type="checkbox" data-izin="instagram"><span><b>Instagram</b><small>Yenilik, etkinlik ve kampanya duyuruları Instagram'dan mesaj olarak gelir.</small></span></label>
+		<label class="tr-satir"><input type="checkbox" data-izin="eposta"><span><b>E-posta</b><small>Yenilik, etkinlik ve kampanya duyuruları e-postana gelir.</small></span></label>
+		<label class="tr-satir"><input type="checkbox" data-izin="instagram"><span><b>Instagram</b><small>Yenilik, etkinlik ve kampanya duyuruları Instagram'dan mesaj olarak gelir.</small></span></label>
 		<span class="grup">Reklam Tercihleri</span>
-		<label class="tik"><input type="checkbox" data-izin="reklam"><span><b>Kişiselleştirilmiş reklamlar</b><small>Yaşına ve cinsiyetine uygun reklamlar görürsün. Bu bilgiler adın verilmeden istatistiklerde ve sponsor raporlarında da kullanılır.</small></span></label>
+		<label class="tr-satir"><input type="checkbox" data-izin="reklam"><span><b>Kişiselleştirilmiş reklamlar</b><small>Yaşına ve cinsiyetine uygun reklamlar görürsün. Bu bilgiler adın verilmeden istatistiklerde ve sponsor raporlarında da kullanılır.</small></span></label>
 	</div>
 	<span class="grup">Çerez Tercihleri</span>
-	<label class="tik"><input type="checkbox" id="mkb-tr-cerez"><span><b>İstatistik çerezleri</b><small>Ziyaretçi sayısı, kalma süresi ve cihaz türü ölçülür.</small></span></label>
+	<label class="tr-satir"><input type="checkbox" id="mkb-tr-cerez"><span><b>İstatistik çerezleri</b><small>Ziyaretçi sayısı, kalma süresi ve cihaz türü ölçülür.</small></span></label>
 	<div class="ikili"><button class="hayir" id="mkb-tr-vazgec">Vazgeç</button><button class="evet" id="mkb-tr-kaydet">Kaydet</button></div></div></div>
 <div class="tost" id="mkb-tost" hidden>Örnek işlem yapıldı</div>
 <div class="tanitim" id="mkb-tanitim" hidden><div class="kutu"><h3 id="mkb-t-baslik"></h3><p id="mkb-t-yazi"></p>
