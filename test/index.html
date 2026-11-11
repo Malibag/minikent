@@ -575,6 +575,14 @@ try {
 		// onaylar (kullanıcı, 2026-11-11; 6563 s. Kanun, Ticari İletişim Yönetmeliği m.7 ve m.13): güncel durum oyuncu/<uid>/izin/<tür>
 		// (verildiği an ya da yok); her açma ve kapatma izin_gecmis/<uid>'e tarih, e-posta ve kaynakla ayrı satır olarak eklenir.
 		// Geçmiş yalnız eklenir, değiştirilemez ve hesap silinse de kalır (ispat için, onay bittikten sonra 3 yıl).
+		// doğum tarihinden bugünkü yaş ("YYYY-AA-GG"; boşsa null) — 18 yaş altına reklam onayı sorulmaz (KVKK B.10)
+		const yas = (g) => {
+			if (!g) return null;
+			const b = new Date(g + "T00:00:00"), n = new Date();
+			let y = n.getFullYear() - b.getFullYear();
+			if (n.getMonth() < b.getMonth() || (n.getMonth() === b.getMonth() && n.getDate() < b.getDate())) y--;
+			return y;
+		};
 		const izinYaz = (d, uid, yeni, kaynak) => {
 			for (const [tur, v] of Object.entries(yeni)) {
 				if (v === !!izin[tur]) continue;
@@ -595,6 +603,7 @@ try {
 			const u = auth.currentUser;
 			window.miniakentOturum = u ? JSON.stringify({ eposta: u.email, dogrulandi: u.emailVerified, karakter: karakter,
 				premium: premium, seri: giris ? giris.seri : 0, gun: giris ? giris.gun : 0,
+				resit: profil.dogum ? yas(profil.dogum) >= 18 : null,
 				izin: { eposta: !!izin.eposta, instagram: !!izin.instagram, reklam: !!izin.reklam } }) : "";
 			window.miniakentOturumSurum = (window.miniakentOturumSurum || 0) + 1;
 		};
@@ -872,18 +881,28 @@ try {
 			const b = e.target.closest("button");
 			if (b) { cins = cins === b.dataset.c ? "" : b.dataset.c; cinsCiz(); }
 		});
+		const reklamGoster = () => {
+			const y = yas(dogum.value);
+			const kucuk = y !== null && y < 18;
+			reklamK.closest("label").hidden = kucuk;
+			if (kucuk) reklamK.checked = false;
+		};
+		dogum.addEventListener("input", reklamGoster);
+		dogum.addEventListener("change", reklamGoster);
 		const ekDoldur = (p, i) => {
 			cins = p.cinsiyet || "";
 			cinsCiz();
 			dogum.value = p.dogum || "";
 			reklamK.checked = !!i.reklam;
 			bildirimK.checked = !!i.bildirim;
+			reklamGoster();
 		};
 		// onaylar yalnız kayıtta bu kutulardan alınır; sonra Hesap Ayarları'ndan değişir (izinYaz, kullanıcı 2026-11-11)
 		const ekKaydet = (uid, kayit) => {
 			const y = "oyuncu/" + uid + "/";
 			const d = { [y + "profil/cinsiyet"]: cins || null, [y + "profil/dogum"]: dogum.value || null };
 			if (kayit) izinYaz(d, uid, { eposta: bildirimK.checked, instagram: bildirimK.checked, reklam: reklamK.checked }, "kayit");
+			else if (izin.reklam && yas(dogum.value) !== null && yas(dogum.value) < 18) izinYaz(d, uid, { reklam: false }, "ayarlar");
 			return update(ref(db), d);
 		};
 		const mod = (m) => {
@@ -1476,8 +1495,8 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		<span class="grup">Duyuru Tercihlerim</span>
 		<label class="tr-satir"><input type="checkbox" data-izin="eposta"><span><b>E-posta</b><small>Yenilik, etkinlik ve kampanya duyuruları e-postana gelir.</small></span></label>
 		<label class="tr-satir"><input type="checkbox" data-izin="instagram"><span><b>Instagram</b><small>Yenilik, etkinlik ve kampanya duyuruları Instagram'dan mesaj olarak gelir.</small></span></label>
-		<span class="grup">Reklam Tercihleri</span>
-		<label class="tr-satir"><input type="checkbox" data-izin="reklam"><span><b>Kişiselleştirilmiş reklamlar</b><small>Yaşına ve cinsiyetine uygun reklamlar görürsün.</small></span></label>
+		<span class="grup tr-reklam">Reklam Tercihleri</span>
+		<label class="tr-satir tr-reklam"><input type="checkbox" data-izin="reklam"><span><b>Kişiselleştirilmiş reklamlar</b><small>Yaşına ve cinsiyetine uygun reklamlar görürsün.</small></span></label>
 	</div>
 	<span class="grup">Çerez Tercihleri</span>
 	<label class="tr-satir"><input type="checkbox" id="mkb-tr-cerez"><span><b>İstatistik çerezleri</b><small>Ziyaretçi sayısı, kalma süresi ve cihaz türü ölçülür.</small></span></label>
@@ -1519,6 +1538,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 
 	let bilgi = null, karakter = "", eposta = "", sayfaAd = "", kumandaAcik = false, sekme = 0, bekleyen = null, takipVar = false;
 	let uye = { premium: false, seri: 0, gun: 0 };   // girişteki Firebase kaydından (miniakentOturum)
+	let resit = null;   // doğum tarihine göre 18 ve üstü mü (null: girilmemiş); 18 altına reklam seçeneği yok (KVKK B.10)
 	let izinler = {};   // bildirim ve reklam izni (miniakentOturum)
 	try { kumandaAcik = localStorage.getItem("miniakent_kumanda") === "1"; } catch (e) {}
 	const isim = () => st.is || { meslek: (bilgi && bilgi.meslek) || "—", yer: (bilgi && bilgi.isyeri) || "", grup: "Uzman", ucret: 220 };
@@ -1840,6 +1860,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		$("mkb-ayarlar").hidden = true;
 		$("mkb-disli").setAttribute("aria-expanded", "false");
 		$("mkb-tr-hesap").hidden = !eposta;
+		for (const x of $("mkb-tr-hesap").querySelectorAll(".tr-reklam")) x.hidden = resit === false;
 		for (const k of $("mkb-tr-hesap").querySelectorAll("[data-izin]")) k.checked = !!izinler[k.dataset.izin];
 		$("mkb-tr-cerez").checked = cerezAcik();
 		$("mkb-tercih").hidden = false;
@@ -2041,6 +2062,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			eposta = o.eposta || "";
 			uye = { premium: !!o.premium, seri: o.seri || 0, gun: o.gun || 0 };
 			izinler = o.izin || {};
+			resit = o.resit === undefined ? null : o.resit;
 			$("mkb-harf").textContent = karakter.replace(/^@/, "").charAt(0).toUpperCase();
 			if (!karakter && sayfaAd !== "sakin") kapat();
 			else if (sayfaAd) ciz();
