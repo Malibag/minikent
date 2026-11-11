@@ -693,6 +693,7 @@ try {
 #kontrol .dogrula .kod { flex: 1; padding: 10px; border: 2px dashed #cfc5b4; border-radius: 12px; text-align: center;
 	font: 700 30px ui-monospace, Menlo, Consolas, monospace; letter-spacing: .2em; user-select: all; }
 #kontrol a.gonder { display: block; box-sizing: border-box; text-align: center; text-decoration: none; }
+#kontrol .sil .not { margin: 4px 0 0 26px; font-size: 12.5px; color: #776d60; }
 #kontrol .dogrula .not { margin: 12px 0 0; font-size: 12.5px; color: #776d60; }
 #kontrol .bul p { margin: 4px 0 12px; font-size: 14px; line-height: 1.45; text-align: center; }
 #kontrol .oneri { margin-top: 4px; border: 1px solid #cfc5b4; border-radius: 10px; overflow: hidden; background: #fff; }
@@ -745,6 +746,8 @@ try {
 		<p class="sil-yazi"></p>
 		<label for="kontrol-sifre3" class="sil-sifre">Şifren</label>
 		<input id="kontrol-sifre3" class="sil-sifre" type="password" autocomplete="current-password">
+		<label class="onay sil-karakter"><input type="checkbox" id="kontrol-karakter-sil"><span>Karakterimi de şehirden çıkar</span></label>
+		<p class="not sil-karakter">Geri dönmek istersen @miniakent'e yazman yeterli.</p>
 		<div class="ikili"><button type="button" class="vazgec">Vazgeç</button><button type="button" class="sil-onay"></button></div>
 	</div>
 	<div class="bul" hidden>
@@ -946,6 +949,8 @@ try {
 				? "Hesabın, e-postan ve profil bilgilerin kalıcı olarak silinecek. Onay kayıtların kanun gereği 3 yıl saklanır. Karakterin şehirde otomatik yaşamaya devam eder. Emin misin?"
 				: "Cinsiyet ve doğum tarihin silinecek. Emin misin?";
 			pen.querySelectorAll(".sil-sifre").forEach((x) => { x.hidden = !h; });
+			pen.querySelectorAll(".sil-karakter").forEach((x) => { x.hidden = !(h && karakter); });
+			q("#kontrol-karakter-sil").checked = false;
 			q(".sil-onay").textContent = h ? "Hesabımı sil" : "Sil";
 			sifre3.value = "";
 			q(".giris").hidden = true;
@@ -968,6 +973,10 @@ try {
 					await fa.reauthenticateWithCredential(u, fa.EmailAuthProvider.credential(u.email, sifre3.value));
 					const d = {};
 					izinYaz(d, u.uid, { eposta: false, instagram: false, reklam: false }, "hesap_silme");  // onayların bittiği an kayda geçer
+					// "Karakterimi de şehirden çıkar": gece treni bu isteği okur, ad bu gece şehirden ayrılır ve geri
+					// gelmez (cikarilanlar.txt); kural yalnız karakterin sahibine izin verir (kullanıcı, 2026-11-11)
+					const cik = !!karakter && q("#kontrol-karakter-sil").checked;
+					if (cik) d["cikis_istegi/" + anahtar(karakter)] = serverTimestamp();
 					d["oyuncu/" + u.uid] = null;
 					d["dogrulama/" + u.uid] = null;
 					for (const k of Object.keys(d)) if (k.startsWith("oyuncu/" + u.uid + "/")) delete d[k];  // üst yol zaten siliniyor
@@ -977,6 +986,9 @@ try {
 					await u.delete();
 					// silindikten sonra bilgi ekranı (kullanıcı, 2026-11-09)
 					q("h2").textContent = "Hesabın silindi";
+					q(".silindi p").textContent = cik
+						? "Hesap bilgilerin kalıcı olarak silindi. Karakterin bu gece trenle şehirden ayrılacak."
+						: "Hesap bilgilerin kalıcı olarak silindi. Karakterin şehirde otomatik yaşamaya devam ediyor.";
 					q(".sil").hidden = true;
 					q(".silindi").hidden = false;
 					b.disabled = false;
