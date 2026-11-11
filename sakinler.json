@@ -22055,7 +22055,11 @@
    "wp": "banka",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@melikemni",
@@ -200507,15 +200511,19 @@
    "home": "Batı Banliyö D Blok, Daire 122",
    "home_from": 1794204000,
    "job": [
-    "Ses Teknisyeni",
-    "Miniakent TV · Miniakent Plaza 3, Kat 7",
-    "office",
-    "plaza3"
+    "Harita Mühendisi",
+    "Miniakent Yapı Mühendislik A.Ş. · Miniakent Arena şantiyesi",
+    "area",
+    "site"
    ],
-   "wp": "tv",
+   "wp": "santiye",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@t.melissaurus",
@@ -202479,12 +202487,12 @@
    "home": "Batı Banliyö B Blok, Daire 104",
    "home_from": 1794290400,
    "job": [
-    "Yazılım Test Uzmanı",
-    "Miniakent Alfa Yazılım A.Ş. · Miniakent Plaza, Kat 7",
-    "office",
-    "plaza"
+    "Aşçı",
+    "Grand Miniakent Oteli",
+    "hotel",
+    ""
    ],
-   "wp": "yazilim",
+   "wp": "otel",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0,
@@ -205740,12 +205748,12 @@
    "home": "Batı Banliyö F Blok, Daire 27",
    "home_from": 1794290400,
    "job": [
-    "Müşteri Temsilcisi",
-    "Miniakent Sigorta A.Ş. · Miniakent Plaza 2, Kat 2",
+    "Şarkıcı",
+    "Miniakent Sanat Atölyesi · Miniakent Plaza 3, Kat 10",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "sigorta",
+   "wp": "sanat",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -206292,12 +206300,12 @@
    "home": "Batı Banliyö F Blok, Daire 34",
    "home_from": 1794290400,
    "job": [
-    "Makyöz",
-    "Miniakent Güzellik Merkezi · Miniakent Plaza 4, Kat 8",
+    "Voleybol Oyuncusu",
+    "Miniakent Spor Salonu · Miniakent Plaza, Kat 1",
     "office",
-    "plaza4"
+    "plaza"
    ],
-   "wp": "guzellik",
+   "wp": "spor",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -206376,12 +206384,12 @@
    "home": "Batı Banliyö F Blok, Daire 35",
    "home_from": 1794290400,
    "job": [
-    "Metin Yazarı",
-    "Miniakent Reklam Ajansı · Miniakent Plaza 4, Kat 2",
+    "Gitarist",
+    "Miniakent Sanat Atölyesi · Miniakent Plaza 3, Kat 10",
     "office",
-    "plaza4"
+    "plaza3"
    ],
-   "wp": "reklam",
+   "wp": "sanat",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -207290,12 +207298,12 @@
    "home": "Doğu Banliyö G Blok, Daire 88",
    "home_from": 1794376800,
    "job": [
-    "Kameraman",
-    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "Haber Sunucusu",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza2"
+    "plaza3"
    ],
-   "wp": "medya",
+   "wp": "tv",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -208103,15 +208111,19 @@
    "home": "Batı Banliyö F Blok, Daire 40",
    "home_from": 1794376800,
    "job": [
-    "İşe Alım Uzmanı",
-    "Miniakent İnsan Kaynakları · Miniakent Plaza 4, Kat 5",
+    "Radyo Programcısı",
+    "Miniakent Radyo · Miniakent Plaza 3, Kat 8",
     "office",
-    "plaza4"
+    "plaza3"
    ],
-   "wp": "ik",
+   "wp": "radyo",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@sonerc1965",
@@ -209085,12 +209097,12 @@
    "home": "Batı Banliyö F Blok, Daire 53",
    "home_from": 1794376800,
    "job": [
-    "Yazılımcı",
-    "Miniakent Alfa Yazılım A.Ş. · Miniakent Plaza, Kat 7",
-    "office",
-    "plaza"
+    "İngilizce Öğretmeni",
+    "Miniakent Koleji",
+    "shop",
+    "kolej"
    ],
-   "wp": "yazilim",
+   "wp": "kolej",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
@@ -209106,12 +209118,12 @@
    "home": "Batı Banliyö F Blok, Daire 53",
    "home_from": 1794376800,
    "job": [
-    "Terzi",
-    "Miniakent Moda Evi · Miniakent Plaza 3, Kat 11",
+    "Mimar",
+    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
     "office",
-    "plaza3"
+    "plaza"
    ],
-   "wp": "moda",
+   "wp": "mimarlik",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -209439,12 +209451,12 @@
    "home": "Batı Banliyö F Blok, Daire 57",
    "home_from": 1794376800,
    "job": [
-    "Proje Yöneticisi",
-    "Miniakent Holding · Miniakent Plaza 4, Kat 12",
+    "Muhabir",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
-    "plaza4"
+    "plaza3"
    ],
-   "wp": "holding",
+   "wp": "tv",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -209771,12 +209783,12 @@
    "home": "Batı Banliyö F Blok, Daire 61",
    "home_from": 1794376800,
    "job": [
-    "Kuaför",
-    "Miniakent Güzellik Merkezi · Miniakent Plaza 4, Kat 8",
-    "office",
-    "plaza4"
+    "Sörfçü",
+    "Miniakent Su Sporları Merkezi",
+    "area",
+    "su_sporlari"
    ],
-   "wp": "guzellik",
+   "wp": "su_sporlari",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -210471,12 +210483,12 @@
    "home": "Batı Banliyö F Blok, Daire 69",
    "home_from": 1794376800,
    "job": [
-    "Seramik Sanatçısı",
-    "Miniakent Sanat Atölyesi · Miniakent Plaza 3, Kat 10",
+    "AI Görsel Uzmanı",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
     "office",
     "plaza3"
    ],
-   "wp": "sanat",
+   "wp": "tv",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
