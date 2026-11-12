@@ -1272,6 +1272,13 @@ body.mk-foto #mk-cerez, body.mk-foto #kontrol, body.mk-foto #yk-ilk, body.mk-fot
 #mkb .fo-eylem { display: flex; gap: 8px; }
 #mkb .fo-eylem button { padding: 10px 16px; border-radius: 999px; border: 2px solid var(--kenar); background: var(--krem); color: var(--yazi); font: 700 13px var(--fb); }
 #mkb .fo-eylem .paylas { background: #e23b2e; border-color: #e23b2e; color: #fff; }
+#mkb .fk-sira { display: flex; align-items: center; gap: 22px; }
+#mkb .fk-poz, #mkb .fk-bos { width: 92px; }
+#mkb .fk-poz { padding: 9px 0; border-radius: 999px; background: var(--krem); border: 2px solid var(--kenar); color: var(--yazi); font: 700 13px var(--fb); }
+#mkb .fo-renkler { display: flex; gap: 8px; justify-content: center; }
+#mkb .fo-renkler[hidden] { display: none; }
+#mkb .fo-renkler button { width: 26px; height: 26px; border-radius: 50%; border: 2px solid rgba(255, 255, 255, .55); padding: 0; }
+#mkb .fo-renkler button.secili { border: 3px solid #fff; box-shadow: 0 0 0 2px #e23b2e; }
 /* arama satırı altta ortada, tek elle kolay (kullanıcı, 2026-11-11) */
 #mkb .ust2 { position: absolute; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); left: 50%; transform: translateX(-50%); width: var(--en); display: flex; gap: 8px; }
 #mkb .arama { display: flex; gap: 6px; flex: 1; min-width: 0; }
@@ -1491,11 +1498,12 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 <button class="yuvarlak foto-alt" id="mkb-foto" aria-label="Fotoğraf çek">${SVG.foto}</button>
 <div id="mkb-foto-kip" hidden><button class="fk-kapat" id="mkb-fk-kapat" aria-label="Vazgeç">×</button>
 	<div class="fk-alt"><div class="fk-adlar" id="mkb-fk-adlar"><button data-ad="herkes">Herkes</button><button data-ad="secili">Sadece seçili</button><button data-ad="yok">Hiçbiri</button></div>
-	<button class="fk-deklansor" id="mkb-fk-cek" aria-label="Çek"></button></div></div>
+	<div class="fk-sira"><button class="fk-poz" id="mkb-fk-poz">Poz ver</button><button class="fk-deklansor" id="mkb-fk-cek" aria-label="Çek"></button><span class="fk-bos"></span></div></div></div>
 <div class="fk-flas" id="mkb-fk-flas"></div>
 <div id="mkb-foto-onizle" hidden><button class="fo-kapat" id="mkb-fo-kapat" aria-label="Vazgeç">×</button>
 	<div class="fo-resim"><canvas id="mkb-fo-tuval" width="1080" height="1920"></canvas></div>
-	<div class="fo-cerceveler" id="mkb-fo-cerceveler"><button data-c="sade">Sade</button><button data-c="polaroid">Polaroid</button><button data-c="kartpostal">Kartpostal</button><button data-c="cikartma">Çıkartmalı</button></div>
+	<div class="fo-cerceveler" id="mkb-fo-cerceveler"><button data-c="sade">Sade</button><button data-c="polaroid">Polaroid</button><button data-c="kartpostal">Kartpostal</button><button data-c="cikartma">Çıkartmalı</button><button data-c="gokkusagi">Gökkuşağı</button><button data-c="seker">Şeker</button><button data-c="gece">Gece</button></div>
+	<div class="fo-renkler" id="mkb-fo-renkler"><button data-r="krem" style="background:#fbf0dc" aria-label="Krem"></button><button data-r="pembe" style="background:#f7b7cf" aria-label="Pembe"></button><button data-r="mavi" style="background:#a9d8f5" aria-label="Gök mavisi"></button><button data-r="limon" style="background:#ffe36e" aria-label="Limon"></button><button data-r="nane" style="background:#a8e6c5" aria-label="Nane"></button><button data-r="lavanta" style="background:#cdb8f2" aria-label="Lavanta"></button><button data-r="gece" style="background:#1f2a4d" aria-label="Gece mavisi"></button></div>
 	<div class="fo-eylem"><button id="mkb-fo-tekrar">Tekrar çek</button><button id="mkb-fo-kaydet">Kaydet</button><button class="paylas" id="mkb-fo-paylas">Paylaş</button></div></div>
 <div class="cevrim" id="mkb-cevrim" hidden></div>
 <div class="cevrim" id="mkb-fps" style="top: calc(76px + env(safe-area-inset-top, 0px))" hidden></div>
@@ -1864,12 +1872,23 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	$("mkb-buyut").addEventListener("click", () => { $("mkb-pano").classList.toggle("tam"); arayuz(); });
 	$("mkb-ses").addEventListener("click", () => window.miniakentSes && window.miniakentSes());
 	// Fotoğraf (kullanıcı, 2026-11-12): çekim kipinde sayfanın öğeleri kalkar; deklanşör oyunun kendi görüntüsünü alır (sayfanın
-	// düğmeleri zaten içinde değil). Adlar: Herkes / Sadece seçili (takip edilen, yoksa kendi karakteri) / Hiçbiri. Sonra
-	// çerçeve seçilir; Paylaş telefonun paylaşım menüsünü açar, Kaydet indirir. Fotoğraf hiçbir yere gönderilmez.
-	let fotoAd = "herkes", fotoResim = null, fotoCerceve = "sade";
+	// düğmeleri zaten içinde değil). Adlar: Herkes / Sadece seçili (takip edilen, yoksa kendi karakteri) / Hiçbiri. "Poz ver":
+	// seçili (ya da ekrandaki yakın herkes) durup kameraya döner, her basışta başka poz (yalnız bu ekranda). Sonra çerçeve ve renk
+	// seçilir; Paylaş telefonun paylaşım menüsünü açar, Kaydet indirir. Fotoğraf hiçbir yere gönderilmez.
+	let fotoAd = "herkes", fotoResim = null, fotoCerceve = "sade", fotoRenk = "";
 	const IG_SVG = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" stroke="RENK" stroke-width="4"><rect x="5" y="5" width="38" height="38" rx="11"/><circle cx="24" cy="24" r="8.6"/><circle cx="35" cy="13" r="1.6" fill="RENK" stroke="none"/></svg>';
-	const igResim = (renk) => { const im = new Image(); im.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(IG_SVG.replaceAll("RENK", renk)); return im; };
-	const IG_KOYU = igResim("#2a2620"), IG_ACIK = igResim("#ffffff");
+	const IG_RESIM = {};
+	const igResim = (renk) => {
+		if (!IG_RESIM[renk]) {
+			const im = new Image();
+			im.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(IG_SVG.replaceAll("RENK", renk));
+			IG_RESIM[renk] = im;
+		}
+		return IG_RESIM[renk];
+	};
+	for (const r of ["#2a2620", "#ffffff", "#fbf0dc", "#c2185b", "#7ff3ff"]) igResim(r);
+	const RENKLER = { krem: "#fbf0dc", pembe: "#f7b7cf", mavi: "#a9d8f5", limon: "#ffe36e", nane: "#a8e6c5", lavanta: "#cdb8f2", gece: "#1f2a4d" };
+	const koyu = (h) => { const n = parseInt(h.slice(1), 16); return ((n >> 16) * 299 + ((n >> 8) & 255) * 587 + (n & 255) * 114) / 1000 < 110; };
 	const LOGO = new Image();
 	LOGO.src = "yukleme_logo_gunduz.webp";
 	const fotoTakip = () => (window.miniakentHud && window.miniakentHud.takip) || "";
@@ -1900,6 +1919,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		fotoAd = b.dataset.ad;
 		fotoAdYaz();
 	});
+	$("mkb-fk-poz").addEventListener("click", () => window.miniakentFoto && window.miniakentFoto("poz"));
 	$("mkb-fk-cek").addEventListener("click", () => {
 		if (!window.miniakentFoto) return;
 		const f = $("mkb-fk-flas");
@@ -1927,41 +1947,59 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		x.moveTo(X + r, Y); x.arcTo(X + W, Y, X + W, Y + H, r); x.arcTo(X + W, Y + H, X, Y + H, r);
 		x.arcTo(X, Y + H, X, Y, r); x.arcTo(X, Y, X + W, Y, r); x.closePath();
 	};
-	// Instagram amblemi ve "@miniakent"; hiza: sol (X'ten başlar), orta (X ortası), sag (X'te biter)
-	const igYaz = (x, X, Y, acik, hiza, boy) => {
+	// Instagram amblemi ve "@miniakent" (renk: yazı ve amblem); hiza: sol (X'ten başlar), orta (X ortası)
+	const igYaz = (x, X, Y, renk, hiza, boy) => {
 		boy = boy || 36;
 		x.font = `700 ${boy}px Nunito, sans-serif`;
 		const t = "@miniakent", w = x.measureText(t).width, s = boy * 1.15, gen = s + 10 + w;
-		const x0 = hiza === "sag" ? X - gen : hiza === "orta" ? X - gen / 2 : X;
-		x.drawImage(acik ? IG_ACIK : IG_KOYU, x0, Y - s / 2, s, s);
-		x.fillStyle = acik ? "#fff" : "#2a2620";
+		const x0 = hiza === "orta" ? X - gen / 2 : X;
+		x.drawImage(igResim(renk), x0, Y - s / 2, s, s);
+		x.fillStyle = renk;
 		x.textAlign = "left";
 		x.textBaseline = "middle";
 		x.fillText(t, x0 + s + 10, Y + 2);
 	};
 	const golgeli = (x, f) => { x.save(); x.shadowColor = "rgba(0,0,0,.55)"; x.shadowBlur = 10; x.shadowOffsetY = 2; f(); x.restore(); };
+	const emoji = (x, e, X, Y, boy, aci) => {
+		x.save(); x.translate(X, Y); x.rotate(aci || 0); x.font = `${boy}px sans-serif`; x.textAlign = "center"; x.textBaseline = "middle";
+		x.shadowColor = "rgba(0,0,0,.35)"; x.shadowBlur = 8; x.fillText(e, 0, 0); x.restore();
+	};
 	function fotoCiz() {
 		if (!fotoResim) return;
 		for (const b of $("mkb-fo-cerceveler").children) b.classList.toggle("secili", b.dataset.c === fotoCerceve);
+		$("mkb-fo-renkler").hidden = fotoCerceve === "gokkusagi" || fotoCerceve === "gece";
+		for (const b of $("mkb-fo-renkler").children) b.classList.toggle("secili", b.dataset.r === fotoRenk);
 		const c = $("mkb-fo-tuval"), x = c.getContext("2d"), W = 1080, H = 1920, ad = karakter || "";
+		const zemin = (v) => (fotoRenk ? RENKLER[fotoRenk] : v);
+		const yaziRengi = (z, v) => (koyu(z) ? "#fbf0dc" : v || "#2a2620");
+		const altYazi = (Y, renk) => {
+			x.font = "700 42px Fredoka, Nunito, sans-serif";
+			x.fillStyle = renk;
+			x.textAlign = "center";
+			x.textBaseline = "middle";
+			x.fillText(ad ? ad + " · miniakent.com" : "miniakent.com", W / 2, Y);
+			igYaz(x, W / 2, Y + 66, renk, "orta", 34);
+		};
 		x.setTransform(1, 0, 0, 1, 0, 0);
 		x.clearRect(0, 0, W, H);
 		if (fotoCerceve === "sade") {   // altta amblemli şerit
+			const z = zemin("#fbf0dc"), y = yaziRengi(z);
 			kapla(x, fotoResim, 0, 0, W, H);
-			x.fillStyle = "rgba(251,240,220,.96)";
+			x.fillStyle = z;
 			x.fillRect(0, H - 200, W, 200);
 			x.fillStyle = "#2a2620";
 			x.fillRect(0, H - 204, W, 4);
 			const lh = 150, lw = LOGO.width ? LOGO.width * lh / LOGO.height : 0;
 			if (lw) x.drawImage(LOGO, 36, H - 175, lw, lh);
 			x.font = "700 40px Fredoka, Nunito, sans-serif";
-			x.fillStyle = "#2a2620";
+			x.fillStyle = y;
 			x.textAlign = "left";
 			x.textBaseline = "middle";
 			x.fillText(ad ? ad + " · miniakent.com" : "miniakent.com", 36 + lw + 24, H - 130);
-			igYaz(x, 36 + lw + 24, H - 66, false, "sol", 34);
-		} else if (fotoCerceve === "polaroid") {   // beyaz kenar, altta ad
-			x.fillStyle = "#fbf7ef";
+			igYaz(x, 36 + lw + 24, H - 66, y, "sol", 34);
+		} else if (fotoCerceve === "polaroid") {   // renkli kenar, altta ad
+			const z = zemin("#fbf7ef"), y = yaziRengi(z);
+			x.fillStyle = z;
 			x.fillRect(0, 0, W, H);
 			x.save();
 			x.shadowColor = "rgba(0,0,0,.25)";
@@ -1971,22 +2009,23 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			x.restore();
 			kapla(x, fotoResim, 64, 64, W - 128, 1500);
 			x.font = "600 68px Fredoka, Nunito, sans-serif";
-			x.fillStyle = "#2a2620";
+			x.fillStyle = y;
 			x.textAlign = "center";
 			x.textBaseline = "middle";
 			x.fillText(ad ? ad + " Miniakent'te" : "Miniakent'te", W / 2, 1690);
-			igYaz(x, W / 2, 1810, false, "orta", 34);
+			igYaz(x, W / 2, 1810, y, "orta", 34);
 		} else if (fotoCerceve === "kartpostal") {   // üstte selam, köşede pul
+			const z = zemin("#fbf0dc"), y = yaziRengi(z, "#c8623a");
 			kapla(x, fotoResim, 0, 0, W, H);
-			x.fillStyle = "#fbf0dc";
+			x.fillStyle = z;
 			x.fillRect(0, 0, W, 240);
-			x.strokeStyle = "#c8623a";
+			x.strokeStyle = y;
 			x.lineWidth = 5;
 			x.setLineDash([22, 14]);
 			x.beginPath(); x.moveTo(0, 238); x.lineTo(W, 238); x.stroke();
 			x.setLineDash([]);
 			x.font = "700 70px Fredoka, Nunito, sans-serif";
-			x.fillStyle = "#c8623a";
+			x.fillStyle = y;
 			x.textAlign = "left";
 			x.textBaseline = "middle";
 			x.fillText("Miniakent'ten", 50, 92);
@@ -1999,39 +2038,91 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			x.shadowBlur = 12;
 			x.fillRect(-120, -140, 240, 280);
 			x.shadowColor = "transparent";
-			x.fillStyle = "#fbf0dc";
+			x.fillStyle = z;
 			for (let i = -120; i <= 120; i += 20) { for (const yy of [-140, 140]) { x.beginPath(); x.arc(i, yy, 7, 0, 7); x.fill(); } }
 			for (let j = -140; j <= 140; j += 20) { for (const xx of [-120, 120]) { x.beginPath(); x.arc(xx, j, 7, 0, 7); x.fill(); } }
 			x.fillStyle = "#e8f1f2";
 			x.fillRect(-98, -118, 196, 236);
 			if (LOGO.width) { const s = Math.min(180 / LOGO.width, 210 / LOGO.height); x.drawImage(LOGO, -LOGO.width * s / 2, -LOGO.height * s / 2, LOGO.width * s, LOGO.height * s); }
 			x.restore();
-			golgeli(x, () => igYaz(x, 50, H - 80, true, "sol", 40));
-		} else {   // çıkartmalı: kenarlarda sevimli çıkartmalar, altta site
+			golgeli(x, () => igYaz(x, 50, H - 80, "#ffffff", "sol", 40));
+		} else if (fotoCerceve === "cikartma") {   // kenarlarda sevimli çıkartmalar, altta site
+			const z = zemin("#fbf0dc"), y = yaziRengi(z);
 			kapla(x, fotoResim, 0, 0, W, H);
-			x.textAlign = "center";
-			x.textBaseline = "middle";
 			for (const [e, X, Y, boy, aci] of [["☀️", 130, 150, 150, -0.15], ["❤️", 950, 170, 120, 0.2], ["⭐", 90, 760, 110, -0.2],
-					["🏙️", 985, 900, 130, 0.12], ["🌸", 110, 1350, 110, 0.15], ["✨", 960, 1420, 110, -0.1]]) {
-				x.save(); x.translate(X, Y); x.rotate(aci); x.font = `${boy}px sans-serif`;
-				x.shadowColor = "rgba(0,0,0,.35)"; x.shadowBlur = 8; x.fillText(e, 0, 0); x.restore();
-			}
-			x.fillStyle = "#fbf0dc";
+					["🏙️", 985, 900, 130, 0.12], ["🌸", 110, 1350, 110, 0.15], ["✨", 960, 1420, 110, -0.1]]) emoji(x, e, X, Y, boy, aci);
+			x.fillStyle = z;
 			x.strokeStyle = "#2a2620";
 			x.lineWidth = 5;
 			yuvarlakYol(x, 120, H - 250, W - 240, 170, 85);
 			x.fill();
 			x.stroke();
 			x.font = "700 48px Fredoka, Nunito, sans-serif";
-			x.fillStyle = "#2a2620";
+			x.fillStyle = y;
+			x.textAlign = "center";
+			x.textBaseline = "middle";
 			x.fillText("miniakent.com", W / 2, H - 197);
-			igYaz(x, W / 2, H - 133, false, "orta", 34);
+			igYaz(x, W / 2, H - 133, y, "orta", 34);
+		} else if (fotoCerceve === "gokkusagi") {   // gökkuşağı renkli kalın kenar
+			["#e23b2e", "#f28c28", "#f6c90e", "#3dbb5c", "#2f8fdc", "#7a4fd0"].forEach((r, i) => {
+				const k = i * 12;
+				x.fillStyle = r;
+				yuvarlakYol(x, k, k, W - 2 * k, H - 2 * k, 60);
+				x.fill();
+			});
+			x.fillStyle = "#fff";
+			yuvarlakYol(x, 72, 72, W - 144, H - 144, 40);
+			x.fill();
+			kapla(x, fotoResim, 96, 96, W - 192, 1500);
+			altYazi(1700, "#2a2620");
+		} else if (fotoCerceve === "seker") {   // şeritli kenar, köşelerde kalpler
+			const s = fotoRenk ? RENKLER[fotoRenk] : "#f7a8c8";
+			x.fillStyle = "#fff";
+			x.fillRect(0, 0, W, H);
+			x.fillStyle = s;
+			for (let i = -H; i < W + H; i += 70) { x.beginPath(); x.moveTo(i, 0); x.lineTo(i + 35, 0); x.lineTo(i + 35 + H, H); x.lineTo(i + H, H); x.closePath(); x.fill(); }
+			x.fillStyle = "#fff4f8";
+			yuvarlakYol(x, 60, 60, W - 120, H - 120, 40);
+			x.fill();
+			kapla(x, fotoResim, 90, 90, W - 180, 1480);
+			for (const [X, Y] of [[90, 90], [W - 90, 90], [90, 1570], [W - 90, 1570]]) emoji(x, "💗", X, Y, 90, 0);
+			altYazi(1690, fotoRenk ? "#2a2620" : "#c2185b");
+		} else {   // gece: koyu lacivert, yıldızlar, neon "Miniakent"
+			x.fillStyle = "#141b3c";
+			x.fillRect(0, 0, W, H);
+			let r = 7;
+			const rnd = () => ((r = (r * 16807) % 2147483647) / 2147483647);
+			x.fillStyle = "#fff8d6";
+			for (let i = 0; i < 140; i++) { x.beginPath(); x.arc(rnd() * W, rnd() * H, 1 + rnd() * 2.2, 0, 7); x.fill(); }
+			kapla(x, fotoResim, 70, 230, W - 140, 1380);
+			x.strokeStyle = "#ff5fd2";
+			x.lineWidth = 6;
+			x.strokeRect(70, 230, W - 140, 1380);
+			x.save();
+			x.font = "700 120px Fredoka, Nunito, sans-serif";
+			x.textAlign = "center";
+			x.textBaseline = "middle";
+			x.shadowColor = "#ff5fd2";
+			x.shadowBlur = 34;
+			x.fillStyle = "#ff5fd2";
+			x.fillText("Miniakent", W / 2, 122);
+			x.shadowBlur = 12;
+			x.fillStyle = "#ffe3f6";
+			x.fillText("Miniakent", W / 2, 122);
+			x.restore();
+			altYazi(1720, "#7ff3ff");
 		}
 	}
 	$("mkb-fo-cerceveler").addEventListener("click", (e) => {
 		const b = e.target.closest("button");
 		if (!b) return;
 		fotoCerceve = b.dataset.c;
+		fotoCiz();
+	});
+	$("mkb-fo-renkler").addEventListener("click", (e) => {
+		const b = e.target.closest("button");
+		if (!b) return;
+		fotoRenk = b.dataset.r;
 		fotoCiz();
 	});
 	$("mkb-fo-tekrar").addEventListener("click", () => {
@@ -2314,7 +2405,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611121435.pck","fileSizes":{"test/index-test-v202611121435.pck":6979296,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611121530.pck","fileSizes":{"test/index-test-v202611121530.pck":6980736,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
