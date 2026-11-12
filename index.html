@@ -1062,8 +1062,12 @@ try {
 			const s = (await get(ref(db, "sahip/" + anahtar(aday)))).val();
 			if (s && s !== u.uid) { yaz("Bu karakter başka bir hesaba bağlı.", true); return; }
 			await u.getIdToken(true);  // e-posta doğrulaması veritabanı kurallarına da yansısın
-			const kod = String(100000 + crypto.getRandomValues(new Uint32Array(1))[0] % 900000);
-			await set(ref(db, "dogrulama/" + u.uid), { h: aday, kod: kod, t: serverTimestamp() });
+			// aynı karakter için 23 saati dolmamış kod varsa o gösterilir; "Kontrolü Al"a yeniden basınca yeni kod çıkıp
+			// gönderilen eski kod geçersiz olmasın (kullanıcı, 2026-11-12: "bazı kullanıcılar 2 kod atıyor")
+			const eski = (await get(ref(db, "dogrulama/" + u.uid))).val();
+			const kod = eski && eski.h === aday && typeof eski.t === "number" && Date.now() - eski.t < 23 * 3600 * 1000 ? eski.kod
+				: String(100000 + crypto.getRandomValues(new Uint32Array(1))[0] % 900000);
+			if (!eski || kod !== eski.kod) await set(ref(db, "dogrulama/" + u.uid), { h: aday, kod: kod, t: serverTimestamp() });
 			q(".kod").textContent = kod;
 			q(".giris").hidden = q(".bul").hidden = q(".giris-alt").hidden = true;
 			q(".dogrula").hidden = false;
