@@ -15,6 +15,17 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 		<title>Miniakent</title>
+		<meta name="description" content="Instagram'da @miniakent'i takip eden herkes kendi adıyla bu şehirde yaşıyor.">
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="Miniakent">
+		<meta property="og:title" content="Miniakent">
+		<meta property="og:description" content="Instagram'da @miniakent'i takip eden herkes kendi adıyla bu şehirde yaşıyor.">
+		<meta property="og:url" content="https://miniakent.com/">
+		<meta property="og:image" content="https://miniakent.com/paylasim-karti.jpg">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="630">
+		<meta name="twitter:card" content="summary_large_image">
+		<link rel="canonical" href="https://miniakent.com/">
 		<!--
 		Miniakent yükleme ekranı (kullanıcı, 2026-10-20): Godot'un yükleme ekranı yerine logo ve kullanıcının
 		tasarladığı ada çubuğu; ev, yükleme ilerledikçe sağa ilerler. Ziyaretçinin saatine göre 07:00–19:00
@@ -1026,7 +1037,7 @@ try {
 			if (!u) return;
 			const d = {};
 			izinYaz(d, u.uid, { [ad]: v }, "ayarlar");
-			if (Object.keys(d).length) update(ref(db), d).catch((e) => console.warn("izin", e));
+			return Object.keys(d).length ? update(ref(db), d) : Promise.resolve();   // yazılamazsa sayfa uyarır (inceleme raporu, 2026-11-12)
 		};
 		// telefon klavyesi: pencere görünen alana sığar, dokunulan alan klavyenin üstüne kayar (kullanıcı, 2026-11-09)
 		const vv = window.visualViewport;
@@ -2197,7 +2208,15 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 				const ad = k.dataset.izin;
 				if (k.checked === !!izinler[ad]) continue;
 				izinler[ad] = k.checked;
-				window.miniakentIzin && window.miniakentIzin(ad, k.checked);
+				const v = k.checked;
+				if (window.miniakentIzin) Promise.resolve(window.miniakentIzin(ad, v)).catch((e) => {   // kaydedilemezse eski hâline döner, uyarı çıkar
+					console.warn("izin", e);
+					izinler[ad] = !v;
+					const t = $("mkb-tost");
+					t.textContent = "Tercihin kaydedilemedi. İnternet bağlantını kontrol edip tekrar dene.";
+					t.hidden = false;
+					setTimeout(() => { t.hidden = true; t.textContent = "Örnek işlem yapıldı"; }, 4500);
+				});
 			}
 		}
 		if ($("mkb-tr-cerez").checked !== cerezAcik()) window.miniakentCerez && window.miniakentCerez($("mkb-tr-cerez").checked);
