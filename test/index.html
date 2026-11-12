@@ -1887,7 +1887,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		return IG_RESIM[renk];
 	};
 	for (const r of ["#2a2620", "#ffffff", "#fbf0dc", "#c2185b", "#7ff3ff"]) igResim(r);
-	const RENKLER = { krem: "#fbf0dc", pembe: "#f7b7cf", mavi: "#a9d8f5", limon: "#ffe36e", nane: "#a8e6c5", lavanta: "#cdb8f2", gece: "#1f2a4d" };
+	const FOTO_RENK = { krem: "#fbf0dc", pembe: "#f7b7cf", mavi: "#a9d8f5", limon: "#ffe36e", nane: "#a8e6c5", lavanta: "#cdb8f2", gece: "#1f2a4d" };
 	const koyu = (h) => { const n = parseInt(h.slice(1), 16); return ((n >> 16) * 299 + ((n >> 8) & 255) * 587 + (n & 255) * 114) / 1000 < 110; };
 	const LOGO = new Image();
 	LOGO.src = "yukleme_logo_gunduz.webp";
@@ -1970,7 +1970,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		$("mkb-fo-renkler").hidden = fotoCerceve === "gokkusagi" || fotoCerceve === "gece";
 		for (const b of $("mkb-fo-renkler").children) b.classList.toggle("secili", b.dataset.r === fotoRenk);
 		const c = $("mkb-fo-tuval"), x = c.getContext("2d"), W = 1080, H = 1920, ad = karakter || "";
-		const zemin = (v) => (fotoRenk ? RENKLER[fotoRenk] : v);
+		const zemin = (v) => (fotoRenk ? FOTO_RENK[fotoRenk] : v);
 		const yaziRengi = (z, v) => (koyu(z) ? "#fbf0dc" : v || "#2a2620");
 		const altYazi = (Y, renk) => {
 			x.font = "700 42px Fredoka, Nunito, sans-serif";
@@ -2076,7 +2076,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			kapla(x, fotoResim, 96, 96, W - 192, 1500);
 			altYazi(1700, "#2a2620");
 		} else if (fotoCerceve === "seker") {   // şeritli kenar, köşelerde kalpler
-			const s = fotoRenk ? RENKLER[fotoRenk] : "#f7a8c8";
+			const s = fotoRenk ? FOTO_RENK[fotoRenk] : "#f7a8c8";
 			x.fillStyle = "#fff";
 			x.fillRect(0, 0, W, H);
 			x.fillStyle = s;
