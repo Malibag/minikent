@@ -4314,12 +4314,12 @@
    "home": "Martı Caddesi No 5, Daire 1",
    "home_from": 1792735200,
    "job": [
-    "Fizyoterapist",
-    "Miniakent Sağlık Merkezi · Miniakent Plaza, Kat 2",
-    "office",
-    "plaza"
+    "Cankurtaran",
+    "Miniakent Plajı",
+    "area",
+    "tower_2"
    ],
-   "wp": "saglik",
+   "wp": "plaj",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0,
@@ -6541,12 +6541,12 @@
    "home": "Mimoza Sokağı No 7, Daire 2",
    "home_from": 1792821600,
    "job": [
-    "Müşteri Temsilcisi",
-    "Miniakent Sigorta A.Ş. · Miniakent Plaza 2, Kat 2",
-    "office",
-    "plaza2"
+    "Cankurtaran",
+    "Miniakent Plajı",
+    "area",
+    "tower_3"
    ],
-   "wp": "sigorta",
+   "wp": "plaj",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -7479,11 +7479,11 @@
    "home_from": 1792735200,
    "job": [
     "Profesyonel Boğulan",
-    "Miniakent Belediyesi",
-    "shop",
-    "belediye"
+    "Miniakent Su Sporları Merkezi",
+    "area",
+    "su_sporlari"
    ],
-   "wp": "sehir",
+   "wp": "su_sporlari",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
@@ -10049,12 +10049,12 @@
    "home": "Zeytin Sokağı No 1, Daire 7",
    "home_from": 1792735200,
    "job": [
-    "Duvar Ustası",
-    "Miniakent Yapı Mühendislik A.Ş. · Miniakent Arena şantiyesi",
+    "Cankurtaran",
+    "Miniakent Plajı",
     "area",
-    "site"
+    "tower_2"
    ],
-   "wp": "santiye",
+   "wp": "plaj",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
@@ -17677,12 +17677,12 @@
    "home": "Kıyı Caddesi No 16, Daire 2",
    "home_from": 1792821600,
    "job": [
-    "Proje Uzmanı",
-    "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
-    "office",
-    "plaza2"
+    "Cankurtaran",
+    "Miniakent Plajı",
+    "area",
+    "tower_1"
    ],
-   "wp": "muhendislik",
+   "wp": "plaj",
    "hobby": "Bahçe işleri",
    "queue": 0,
    "left": 0
@@ -31485,12 +31485,12 @@
    "home": "Doğu Banliyö A Blok, Daire 14",
    "home_from": 1792908000,
    "job": [
-    "Müşteri Temsilcisi",
-    "Miniakent Sigorta A.Ş. · Miniakent Plaza 2, Kat 2",
-    "office",
-    "plaza2"
+    "Cankurtaran",
+    "Miniakent Plajı",
+    "area",
+    "tower_3"
    ],
-   "wp": "sigorta",
+   "wp": "plaj",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -47921,12 +47921,12 @@
    "home": "Doğu Banliyö A Blok, Daire 59",
    "home_from": 1792994400,
    "job": [
-    "Makine Mühendisi",
-    "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
-    "office",
-    "plaza2"
+    "Cankurtaran",
+    "Miniakent Plajı",
+    "area",
+    "tower_6"
    ],
-   "wp": "muhendislik",
+   "wp": "plaj",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -54186,12 +54186,12 @@
    "home": "Doğu Banliyö B Blok, Daire 76",
    "home_from": 1792994400,
    "job": [
-    "Yoga Eğitmeni",
-    "Miniakent Spor Salonu · Miniakent Plaza, Kat 1",
-    "office",
-    "plaza"
+    "Cankurtaran",
+    "Miniakent Plajı",
+    "area",
+    "tower_0"
    ],
-   "wp": "spor",
+   "wp": "plaj",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0
@@ -62291,12 +62291,12 @@
    "home": "Doğu Banliyö C Blok, Daire 107",
    "home_from": 1793080800,
    "job": [
-    "Grafik Tasarımcı",
-    "Miniakent Tasarım Stüdyosu · Miniakent Plaza, Kat 8",
-    "office",
-    "plaza"
+    "Cankurtaran",
+    "Miniakent Plajı",
+    "area",
+    "tower_2"
    ],
-   "wp": "tasarim",
+   "wp": "plaj",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -66374,12 +66374,12 @@
    "home": "Doğu Banliyö D Blok, Daire 39",
    "home_from": 1793080800,
    "job": [
-    "Müşteri Hizmetleri Uzmanı",
-    "Miniakent E-Ticaret A.Ş. · Miniakent Plaza 2, Kat 8",
-    "office",
-    "plaza2"
+    "Cankurtaran",
+    "Miniakent Plajı",
+    "area",
+    "tower_0"
    ],
-   "wp": "eticaret",
+   "wp": "plaj",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0,
@@ -67494,12 +67494,12 @@
    "home": "Doğu Banliyö D Blok, Daire 60",
    "home_from": 1793080800,
    "job": [
-    "Gazeteci",
-    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
-    "office",
-    "plaza3"
+    "Cankurtaran",
+    "Miniakent Plajı",
+    "area",
+    "tower_0"
    ],
-   "wp": "gazete",
+   "wp": "plaj",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -68249,12 +68249,12 @@
    "home": "Doğu Banliyö D Blok, Daire 76",
    "home_from": 1793080800,
    "job": [
-    "Oyun Tasarımcısı",
-    "Miniakent Oyun Stüdyosu · Miniakent Plaza 2, Kat 5",
-    "office",
-    "plaza2"
+    "Cankurtaran",
+    "Miniakent Plajı",
+    "area",
+    "tower"
    ],
-   "wp": "oyun",
+   "wp": "plaj",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -70763,12 +70763,12 @@
    "home": "Doğu Banliyö D Blok, Daire 127",
    "home_from": 1793080800,
    "job": [
-    "Diş Teknisyeni",
-    "Miniakent Sağlık Merkezi · Miniakent Plaza, Kat 2",
-    "office",
-    "plaza"
+    "Cankurtaran",
+    "Miniakent Plajı",
+    "area",
+    "tower_1"
    ],
-   "wp": "saglik",
+   "wp": "plaj",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
@@ -72609,12 +72609,12 @@
    "home": "Doğu Banliyö E Blok, Daire 26",
    "home_from": 1793167200,
    "job": [
-    "Müşteri Hizmetleri Uzmanı",
-    "Miniakent E-Ticaret A.Ş. · Miniakent Plaza 2, Kat 8",
-    "office",
-    "plaza2"
+    "Cankurtaran",
+    "Miniakent Plajı",
+    "area",
+    "tower_1"
    ],
-   "wp": "eticaret",
+   "wp": "plaj",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -82521,12 +82521,12 @@
    "home": "Doğu Banliyö F Blok, Daire 99",
    "home_from": 1793253600,
    "job": [
-    "Gişe Görevlisi",
-    "Miniakent Bankası",
-    "office",
-    "banka"
+    "Cankurtaran",
+    "Miniakent Plajı",
+    "area",
+    "tower_3"
    ],
-   "wp": "banka",
+   "wp": "plaj",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
@@ -101367,12 +101367,12 @@
    "home": "Zeytin Sokağı No 3, Daire 37",
    "home_from": 1793512800,
    "job": [
-    "Proje Uzmanı",
-    "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
-    "office",
-    "plaza2"
+    "Cankurtaran",
+    "Miniakent Plajı",
+    "area",
+    "tower"
    ],
-   "wp": "muhendislik",
+   "wp": "plaj",
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0,
@@ -116192,12 +116192,12 @@
    "home": "Doğu Banliyö C Blok, Daire 109",
    "home_from": 1793512800,
    "job": [
-    "Güvenlik Görevlisi",
-    "Miniakent Bankası",
-    "office",
-    "banka"
+    "Cankurtaran",
+    "Miniakent Plajı",
+    "area",
+    "tower"
    ],
-   "wp": "banka",
+   "wp": "plaj",
    "hobby": "Kitap okumak",
    "queue": 0,
    "left": 0
@@ -117440,12 +117440,12 @@
    "home": "Doğu Banliyö J Blok, Daire 19",
    "home_from": 1793512800,
    "job": [
-    "Çağrı Merkezi Görevlisi",
-    "Miniakent Bankası",
-    "office",
-    "banka"
+    "Cankurtaran",
+    "Miniakent Plajı",
+    "area",
+    "tower_5"
    ],
-   "wp": "banka",
+   "wp": "plaj",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0,
@@ -126357,12 +126357,12 @@
    "home": "Doğu Banliyö E Blok, Daire 132",
    "home_from": 1793619423,
    "job": [
-    "Üretim Mühendisi",
-    "Miniakent Fabrikası 2 · Sanayi Bölgesi",
-    "shop",
-    "fabrika_b"
+    "Cankurtaran",
+    "Miniakent Plajı",
+    "area",
+    "tower_5"
    ],
-   "wp": "fabrika_b",
+   "wp": "plaj",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0
@@ -138548,12 +138548,12 @@
    "home": "Doğu Banliyö G Blok, Daire 83",
    "home_from": 1793772000,
    "job": [
-    "Hemşire",
-    "Miniakent Devlet Hastanesi",
-    "shop",
-    "hastane"
+    "Cankurtaran",
+    "Miniakent Plajı",
+    "area",
+    "tower_6"
    ],
-   "wp": "hastane",
+   "wp": "plaj",
    "hobby": "Yüzmek",
    "queue": 0,
    "left": 0,
@@ -142295,12 +142295,12 @@
    "home": "Doğu Banliyö G Blok, Daire 124",
    "home_from": 1793858400,
    "job": [
-    "Depo Görevlisi",
-    "Miniakent Fabrikası 2 · Sanayi Bölgesi",
-    "shop",
-    "fabrika_b"
+    "Cankurtaran",
+    "Miniakent Plajı",
+    "area",
+    "tower_7"
    ],
-   "wp": "fabrika_b",
+   "wp": "plaj",
    "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0,
@@ -147909,12 +147909,12 @@
    "home": "Doğu Banliyö C Blok, Daire 86",
    "home_from": 1793981674,
    "job": [
-    "Hukuk Danışmanı",
-    "Miniakent Avukatlık Bürosu · Miniakent Plaza 3, Kat 4",
-    "office",
-    "plaza3"
+    "Cankurtaran",
+    "Miniakent Plajı",
+    "area",
+    "tower_5"
    ],
-   "wp": "avukatlik",
+   "wp": "plaj",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
    "left": 0
@@ -184403,12 +184403,12 @@
    "home": "Doğu Banliyö B Blok, Daire 101",
    "home_from": 1794376800,
    "job": [
-    "Hukuk Danışmanı",
-    "Miniakent Hukuk Bürosu · Miniakent Plaza, Kat 6",
-    "office",
-    "plaza"
+    "Cankurtaran",
+    "Miniakent Plajı",
+    "area",
+    "tower_7"
    ],
-   "wp": "hukuk",
+   "wp": "plaj",
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0,
