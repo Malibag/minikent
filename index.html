@@ -325,6 +325,9 @@ if (window.miniakentBeta) (function () {
 	// ("Takip et" kartı çıktı); 4. ve 5. kartın metni yeni, diğerleri 2026-11-08 onaylı metinler
 	const ADAM_GIY = ADAM.replace('fill="#b87449"', 'class="s8-gomlek" fill="#b87449"');
 	const KARTLAR = [
+		["Trenle gel", "Takip ettikten sonraki ilk gece trenle şehre gelirsin, Instagram adınla.",
+			'<div class="dongu d2">' + RAY + '<div class="s2-tren">' + TREN + '</div><div class="s2-adam">' + ADAM + '</div>' +
+			'<div class="s2-etiket"><b>@</b><i></i></div></div>'],
 		["Şehirde yaşa", "Burada bir gün gerçekte bir saat sürer. Karakterin sabah işe gider, akşam evine döner.",
 			'<div class="s3-gece"></div><div class="s3-kol"><i class="gunes"></i><i class="ay"></i></div>' +
 			'<div class="s3-ev">' + EV + '</div><div class="s3-is">' + IS + '</div><div class="yer"></div>' +
@@ -339,11 +342,9 @@ if (window.miniakentBeta) (function () {
 			'<div class="s1-btn s7-btn"><b class="a">Kontrolü Al</b><b class="b">✓</b></div></div><div class="s1-el"></div>'],
 		["Giydir, çek, paylaş", "Görünüş'ten karakterinin kıyafetini seç. Fotoğraf çek, çerçevesini seç, paylaş.",
 			'<div class="yer"></div><div class="s8-adam">' + ADAM_GIY + '</div><div class="s8-flas"></div>'],
-		["Trenle gel", "Takip ettikten sonraki ilk gece trenle şehre gelirsin, Instagram adınla.",
-			'<div class="dongu d2">' + RAY + '<div class="s2-tren">' + TREN + '</div><div class="s2-adam">' + ADAM + '</div>' +
-			'<div class="s2-etiket"><b>@</b><i></i></div></div>'],
-		["Sen de gel", "Takip et, Instagram adın ile şehre taşın, karakterini izle.",
-			'<div class="dongu d6">' + RAY + '<div class="s6-tren">' + TREN + '<i class="duman"></i><i class="duman"></i><i class="duman"></i></div></div>'],
+		["Sen de gel", "Takip et, Instagram adın ile şehre taşın, karakterini izle.",   // takip düğmesi çizimi (kullanıcı, 2026-11-13)
+			'<div class="yer"></div><div class="s1-kart"><div class="s1-av">M</div><div class="s1-cizgi"><i></i><i></i></div>' +
+			'<div class="s1-btn"><b class="a">Takip et</b><b class="b">✓</b></div></div><div class="s1-el"></div>'],
 	];
 
 	const css = document.createElement("style");
