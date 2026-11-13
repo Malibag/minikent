@@ -321,13 +321,10 @@ if (window.miniakentBeta) (function () {
 	const SERIT = "url(\"data:image/svg+xml," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="120" height="82"><rect x="6" y="22" width="26" height="40" rx="3" fill="#e0c9af" stroke="#162132" stroke-width="2"/><rect x="12" y="30" width="5" height="5" fill="#162132"/><rect x="21" y="30" width="5" height="5" fill="#162132"/><rect x="12" y="42" width="5" height="5" fill="#162132"/><rect x="21" y="42" width="5" height="5" fill="#162132"/><polygon points="40,40 55,28 70,40" fill="#b87449" stroke="#162132" stroke-width="2" stroke-linejoin="round"/><rect x="43" y="39" width="24" height="23" fill="#fbe9cb" stroke="#162132" stroke-width="2"/><rect x="51" y="48" width="7" height="14" fill="#162132"/><rect x="80" y="12" width="30" height="50" rx="3" fill="#629fa3" stroke="#162132" stroke-width="2"/><rect x="86" y="19" width="6" height="6" fill="#fbe9cb"/><rect x="98" y="19" width="6" height="6" fill="#fbe9cb"/><rect x="86" y="31" width="6" height="6" fill="#fbe9cb"/><rect x="98" y="31" width="6" height="6" fill="#fbe9cb"/><rect x="86" y="43" width="6" height="6" fill="#fbe9cb"/><rect x="98" y="43" width="6" height="6" fill="#fbe9cb"/><rect x="0" y="62" width="120" height="20" fill="#9eac70"/><rect x="10" y="70" width="24" height="4" rx="2" fill="#fbe9cb"/><rect x="70" y="70" width="24" height="4" rx="2" fill="#fbe9cb"/></svg>') + "\")";
 	const RAY = '<div class="yer"></div><div class="ray"></div>';
 
+	// 2026-11-13 (kullanıcı onaylı sıra): şehirle başlar, Kontrolü al ve Giydir/çek/paylaş eklendi, takip isteği yalnız sonda
+	// ("Takip et" kartı çıktı); 4. ve 5. kartın metni yeni, diğerleri 2026-11-08 onaylı metinler
+	const ADAM_GIY = ADAM.replace('fill="#b87449"', 'class="s8-gomlek" fill="#b87449"');
 	const KARTLAR = [
-		["Takip et", "@miniakent'i Instagram'da takip et.",
-			'<div class="yer"></div><div class="s1-kart"><div class="s1-av">M</div><div class="s1-cizgi"><i></i><i></i></div>' +
-			'<div class="s1-btn"><b class="a">Takip et</b><b class="b">✓</b></div></div><div class="s1-el"></div>'],
-		["Trenle gel", "Takip ettikten sonraki ilk gece trenle şehre gelirsin, Instagram adınla.",
-			'<div class="dongu d2">' + RAY + '<div class="s2-tren">' + TREN + '</div><div class="s2-adam">' + ADAM + '</div>' +
-			'<div class="s2-etiket"><b>@</b><i></i></div></div>'],
 		["Şehirde yaşa", "Burada bir gün gerçekte bir saat sürer. Karakterin sabah işe gider, akşam evine döner.",
 			'<div class="s3-gece"></div><div class="s3-kol"><i class="gunes"></i><i class="ay"></i></div>' +
 			'<div class="s3-ev">' + EV + '</div><div class="s3-is">' + IS + '</div><div class="yer"></div>' +
@@ -337,6 +334,14 @@ if (window.miniakentBeta) (function () {
 			'<div class="s4-kisiler">' + ADAM + ADAM + ADAM + ADAM + ADAM + '</div><div class="s4-igne">' + IGNE + '</div>'],
 		["Peşinden git", "Karakterine dokun, onu takip et ya da şehri onun gözünden gör.",
 			'<div class="s5-serit"></div><div class="s5-adam"><div class="sek">' + ADAM + '</div></div><div class="s5-cerceve"></div>'],
+		["Kontrolü al", "Hesabını aç, karakterinde Kontrolü Al'a bas. Kodu Instagram'dan @miniakent'e gönder, sarı tikin gelsin.",
+			'<div class="yer"></div><div class="s1-kart s7-kart"><div class="s1-av">M</div><div class="s1-cizgi"><i></i><i></i></div>' +
+			'<div class="s1-btn s7-btn"><b class="a">Kontrolü Al</b><b class="b">✓</b></div></div><div class="s1-el"></div>'],
+		["Giydir, çek, paylaş", "Görünüş'ten karakterinin kıyafetini seç. Fotoğraf çek, çerçevesini seç, paylaş.",
+			'<div class="yer"></div><div class="s8-adam">' + ADAM_GIY + '</div><div class="s8-flas"></div>'],
+		["Trenle gel", "Takip ettikten sonraki ilk gece trenle şehre gelirsin, Instagram adınla.",
+			'<div class="dongu d2">' + RAY + '<div class="s2-tren">' + TREN + '</div><div class="s2-adam">' + ADAM + '</div>' +
+			'<div class="s2-etiket"><b>@</b><i></i></div></div>'],
 		["Sen de gel", "Takip et, Instagram adın ile şehre taşın, karakterini izle.",
 			'<div class="dongu d6">' + RAY + '<div class="s6-tren">' + TREN + '<i class="duman"></i><i class="duman"></i><i class="duman"></i></div></div>'],
 	];
@@ -439,6 +444,16 @@ body.gece .yk-sahne { background: #3a4d74; border-color: #0b1220; }
 .s6-tren .duman:nth-of-type(2) { animation-delay: .4s; }
 .s6-tren .duman:nth-of-type(3) { animation-delay: .8s; }
 @keyframes s6-duman { 0% { opacity: 0; transform: scale(.4); } 20% { opacity: 1; } 100% { opacity: 0; transform: translate(14px, -38px) scale(1.5); } }
+/* Kontrolü al: "Takip et" kartının sahnesi, düğmede "Kontrolü Al", dokununca sarı tik */
+.s7-kart { width: 250px; margin-left: -125px; }
+.s7-btn { width: 96px; flex-basis: 96px; }
+.s7-btn .b { background: #f2c230; }
+/* Giydir, çek, paylaş: kıyafetin rengi değişir, sonra fotoğraf flaşı */
+.s8-adam { left: 50%; bottom: 20px; width: 14px; height: 28px; margin-left: -7px; transform: scale(2.2); transform-origin: 50% 100%; }
+.s8-gomlek { animation: s8-renk 4s infinite; }
+@keyframes s8-renk { 0%, 22% { fill: #b87449; } 25%, 47% { fill: #e23b2e; } 50%, 72% { fill: #2f8fdc; } 75%, 100% { fill: #3dbb5c; } }
+.s8-flas { inset: 0; background: #fff; opacity: 0; animation: s8-flas 4s infinite; }
+@keyframes s8-flas { 0%, 84% { opacity: 0; } 86% { opacity: .9; } 100% { opacity: 0; } }
 #yk-ilk { position: fixed; inset: 0; z-index: 40; display: flex; align-items: center; justify-content: center; padding: 16px;
 	box-sizing: border-box; background: rgba(22, 33, 50, .55); }
 `;
