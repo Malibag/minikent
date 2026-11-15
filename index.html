@@ -624,6 +624,9 @@ try {
 			window.miniakentKiyafetSurum = (window.miniakentKiyafetSurum || 0) + 1;
 			return set(ref(db, window.miniakentKiyafetYol + "/" + anahtar(karakter)), s || null);
 		};
+		// "Boğulmaya git" (kullanıcı, 2026-11-15): kendi karakteri sahilde belirir, boğulur, cankurtaran kurtarır; herkes
+		// görür (oyun bogulma/'ya 3 sn'de bir bakar: scripts/bogulma.gd). Kural: yalnız karakterin sahibi, sunucu zamanı.
+		window.miniakentBogul = () => karakter ? set(ref(db, "bogulma/" + anahtar(karakter)), serverTimestamp()) : Promise.resolve();
 		const oturum = () => {
 			const u = auth.currentUser;
 			window.miniakentOturum = u ? JSON.stringify({ eposta: u.email, dogrulandi: u.emailVerified, karakter: karakter,
@@ -1798,7 +1801,9 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		kisi: ["Karakterim", () => {
 			// başlangıç sürümü (kullanıcı, 2026-11-09): para, kıdem, üyelik yok
 			const is = isim(), ev = evim(), [dy, iste] = durumYazi();
-			return kart({ handle: karakter, meslek: is.meslek, yer: is.yer, ev: ev.adres }, dy, iste);
+			// "Boğulmaya git" (kullanıcı, 2026-11-15): yalnız iş dışında, mesaide kapalı
+			return kart({ handle: karakter, meslek: is.meslek, yer: is.yer, ev: ev.adres }, dy, iste)
+				+ `<div class="ikili"><button class="evet" data-bogul="1" ${iste ? "disabled" : ""}>Boğulmaya git</button></div>`;
 		}],
 		is: ["İş", () => {
 			const is = isim(), l = acikIlan(IS_ILAN);
@@ -2280,6 +2285,10 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		else if (d.evgoster) window.miniakentEvGoster && window.miniakentEvGoster();
 		else if (d.isgoster) window.miniakentIsGoster && window.miniakentIsGoster();
 		else if (d.kontrol) window.miniakentKontrolAc && window.miniakentKontrolAc(secilen.handle);
+		else if (d.bogul) {   // kamera karakteri izler, birkaç saniye içinde sahilde belirir
+			window.miniakentBogul && window.miniakentBogul().catch((e) => console.warn("bogulma", e));
+			window.minikentSearch && window.minikentSearch(karakter);
+		}
 		else if (d.kostumac) { kostumAcik = true; ciz(); }
 		else if (b.id === "mkb-sifirla") { st = yeni(); kaydet(); ciz(); }
 		else if (d.ne) { st.ne = st.ne === d.ne ? "" : d.ne; kaydet(); ciz(); }
@@ -2441,7 +2450,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611142142.pck","fileSizes":{"index-v202611142142.pck":9091612,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611150705.pck","fileSizes":{"index-v202611150705.pck":9105944,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
