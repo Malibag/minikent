@@ -11,6 +11,24 @@
 			try { s = localStorage.getItem("miniakent_lite"); } catch (e) {}
 			var tel = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
 			window.miniakentLiteAcik = s === null ? tel : s === "1";
+		})();
+		// Sunucu saati (kullanıcı, 2026-11-15: cihazın saati/tarihi değişince gün sayısı ve takvim kayıyordu): sayfanın
+		// kendi "Date" başlığıyla cihaz saati arasındaki fark (sn; 5 sn'den küçüğü yok sayılır). Oyun (main.gd _saat_esle)
+		// ve sayfadaki takvim, mesai, kıdem gibi hesaplar şimdiyi miniakentSimdi()'den alır. Sekmeye dönülünce yeniden ölçülür.
+		window.miniakentSaatFarki = 0;
+		window.miniakentSimdi = function () { return Date.now() + window.miniakentSaatFarki * 1000; };
+		(function () {
+			function esle() {
+				var t0 = Date.now();
+				fetch(location.href.split("#")[0], { method: "HEAD", cache: "no-store" }).then(function (r) {
+					var s = Date.parse(r.headers.get("Date") || "");
+					if (isNaN(s)) return;
+					var f = (s + 500 - (t0 + Date.now()) / 2) / 1000;   // başlık saniyeye yuvarlı; isteğin ortası
+					window.miniakentSaatFarki = Math.abs(f) < 5 ? 0 : f;
+				}).catch(function () {});
+			}
+			esle();
+			document.addEventListener("visibilitychange", function () { if (!document.hidden) esle(); });
 		})();</script>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
@@ -641,9 +659,9 @@ try {
 		};
 		const trGun = (ms) => new Date(ms + 3 * 3600 * 1000).toISOString().slice(0, 10);
 		const seriSay = (uid) => runTransaction(ref(db, "oyuncu/" + uid + "/giris"), (c) => {
-			const bugun = trGun(Date.now());
+			const bugun = trGun(miniakentSimdi());
 			if (c && c.son === bugun) return;  // bugün zaten sayıldı
-			return { son: bugun, seri: c && c.son === trGun(Date.now() - 86400000) ? c.seri + 1 : 1, gun: (c ? c.gun : 0) + 1 };
+			return { son: bugun, seri: c && c.son === trGun(miniakentSimdi() - 86400000) ? c.seri + 1 : 1, gun: (c ? c.gun : 0) + 1 };
 		}).catch((e) => console.warn("giris", e));
 		const premiumDinle = () => {
 			if (premiumBirak) premiumBirak();
@@ -1615,7 +1633,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		["hastane", "Hastaneye git", "Miniakent Devlet Hastanesi", "Sağlık artar", true, "Hastanede"],
 	];
 	const GUN = 86400000;
-	const yeni = () => ({ para: 12480, is: null, son: 0, ev: null, alinan: {}, basvuru: {}, ne: "", bas: Date.now() });
+	const yeni = () => ({ para: 12480, is: null, son: 0, ev: null, alinan: {}, basvuru: {}, ne: "", bas: miniakentSimdi() });
 	let st;
 	try { st = JSON.parse(localStorage.getItem("miniakent_beta_ornek")) || yeni(); } catch (e) { st = yeni(); }
 	const kaydet = () => { try { localStorage.setItem("miniakent_beta_ornek", JSON.stringify(st)); } catch (e) {} };
@@ -1629,21 +1647,21 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	try { kumandaAcik = localStorage.getItem("miniakent_kumanda") === "1"; } catch (e) {}
 	const isim = () => st.is || { meslek: (bilgi && bilgi.meslek) || "—", yer: (bilgi && bilgi.isyeri) || "", grup: "Uzman", ucret: 220 };
 	const evim = () => st.ev || { adres: (bilgi && bilgi.ev) || "—", kira: kiraOf((bilgi && bilgi.ev) || "") };
-	const kalan = (il) => st.bas + il.dk * 60000 - Date.now();
+	const kalan = (il) => st.bas + il.dk * 60000 - miniakentSimdi();
 	const sure = (ms) => { const m = Math.max(0, Math.round(ms / 60000)); return Math.floor(m / 60) + " sa " + (m % 60) + " dk"; };
 	const acikIlan = (l) => l.filter((il) => kalan(il) > 0);
-	const isBekleme = () => st.son && Date.now() - st.son < 7 * GUN;
+	const isBekleme = () => st.son && miniakentSimdi() - st.son < 7 * GUN;
 
 	// Mesai oyun saatiyle (clock.gd: 1 oyun günü = 1 gerçek saat, şehrin kuruluşu 17 Ekim 2026 00:00 UTC). Betada 6 saat
 	// iş, öğle arası yok; başlangıç kişiye göre 08:00, 09:00 ya da 10:00 (kullanıcı, 2026-11-15; clock.gd mesai ile
 	// aynı); 6 günde bir herkes tatilde (2026-11-07). Başkasının kartında saat yazılmaz (gizli), durum onun saatiyle.
 	const MESAI_SURE = 6;
-	const oyunSaat = () => (Date.now() - Date.UTC(2026, 9, 17)) / 1000 % 3600 / 150;
+	const oyunSaat = () => (miniakentSimdi() - Date.UTC(2026, 9, 17)) / 1000 % 3600 / 150;
 	const saatYaz = (h) => String(Math.floor(h)).padStart(2, "0") + ":" + String(Math.round(h % 1 * 60)).padStart(2, "0");
 	// Takvim (kullanıcı, 2026-11-15; uygulamada ana_ekran.gd _takvim): 1 oyun ayı = 1 gerçek gün, Türkiye saatiyle
 	// 12:00'de başlar; 1 oyun yılı = 1 takvim ayı (Ekim 2026 = 1. yıl). Saat oyunun kendi saati (hud.saat'in sonu).
 	function takvim(saat) {
-		const d = new Date(Date.now() - 9 * 3600e3);
+		const d = new Date(miniakentSimdi() - 9 * 3600e3);
 		const yil = (d.getUTCFullYear() - 2026) * 12 + d.getUTCMonth() + 1 - 9;
 		return yil + ". Yıl " + d.getUTCDate() + ". Ay\nGün: " + (d.getUTCHours() + 1) + " · " + String(saat || "").split(" · ").pop();
 	}
@@ -1663,7 +1681,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	// %0,2, en çok %20 (kullanıcı, 2026-11-07)
 	function kidem() {
 		if (!bilgi || !bilgi.gelis) return null;
-		const adim = Math.max(0, Math.floor((Date.now() / 1000 - bilgi.gelis) / 3600 / 720));
+		const adim = Math.max(0, Math.floor((miniakentSimdi() / 1000 - bilgi.gelis) / 3600 / 720));
 		return { oran: adim * 2, sonraki: new Date((bilgi.gelis + (adim + 1) * 720 * 3600) * 1000).toLocaleDateString("tr-TR", { day: "numeric", month: "long" }) };
 	}
 	const yuzde = (x) => "%" + x.toLocaleString("tr-TR", { maximumFractionDigits: 1 });
@@ -1821,7 +1839,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		is: ["İş", () => {
 			const is = isim(), l = acikIlan(IS_ILAN);
 			const bilgiYazi = isBekleme()
-				? `İş değiştirdin. ${Math.ceil((st.son + 7 * GUN - Date.now()) / GUN)} gün sonra yeniden değiştirebilirsin.`
+				? `İş değiştirdin. ${Math.ceil((st.son + 7 * GUN - miniakentSimdi()) / GUN)} gün sonra yeniden değiştirebilirsin.`
 				: "İş değiştirmek ücretlidir. Değiştirdikten sonra 7 gün yeniden değiştiremezsin.";
 			return `<div class="kutu"><span class="ornek">Örnek ücret</span><span class="etiket">Şu anki işin</span><h3>${esc(is.meslek)}</h3><p class="alt">${esc(is.yer)}</p>
 				<div class="satir"><span>Meslek grubu</span><b>${esc(is.grup)}</b></div><div class="satir"><span>Saatlik ücret</span><b>${is.ucret}</b></div>
@@ -2339,7 +2357,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		if (tur === "basvur") st.basvuru[il.id] = true;
 		else {
 			st.alinan[il.id] = true;
-			if (il.meslek) { st.is = { meslek: il.meslek, yer: il.yer, grup: il.grup, ucret: il.ucret }; st.son = Date.now(); }
+			if (il.meslek) { st.is = { meslek: il.meslek, yer: il.yer, grup: il.grup, ucret: il.ucret }; st.son = miniakentSimdi(); }
 			else st.ev = { adres: il.adres, kira: il.kira };
 		}
 		kaydet(); ciz();
@@ -2470,7 +2488,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611151833.pck","fileSizes":{"index-v202611151833.pck":9132504,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611152115.pck","fileSizes":{"index-v202611152115.pck":9138296,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
