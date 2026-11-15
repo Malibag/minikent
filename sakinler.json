@@ -1,8 +1,8 @@
 {
  "elektrik_yok": false,
- "updated": 1794717234,
+ "updated": 1794780018,
  "trains": [
-  1794717180
+  1794780000
  ],
  "residents": [
   {
@@ -2702,7 +2702,11 @@
    "wp": "plaj",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@hangiefe1",
@@ -2972,27 +2976,6 @@
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0
-  },
-  {
-   "handle": "@furkankedici",
-   "arrive": 1792702800,
-   "move": 1792735200,
-   "home": "Akasya Sokağı No 2, Daire 12",
-   "home_from": 1792735200,
-   "job": [
-    "Yazılım Test Uzmanı",
-    "Miniakent Alfa Yazılım A.Ş. · Miniakent Plaza, Kat 7",
-    "office",
-    "plaza"
-   ],
-   "wp": "yazilim",
-   "hobby": "Kitap okumak",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    4,
-    0
-   ]
   },
   {
    "handle": "@mert.icyer",
@@ -6811,27 +6794,6 @@
    ]
   },
   {
-   "handle": "@yakup_wqe",
-   "arrive": 1792702800,
-   "move": 1792735200,
-   "home": "Lavanta Sokağı No 6, Daire 2",
-   "home_from": 1792821600,
-   "job": [
-    "İş Analisti",
-    "Miniakent Danışmanlık · Miniakent Plaza 2, Kat 12",
-    "office",
-    "plaza2"
-   ],
-   "wp": "danismanlik",
-   "hobby": "Gitar çalmak",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    3,
-    0
-   ]
-  },
-  {
    "handle": "@seytan.et0",
    "arrive": 1792702800,
    "move": 1792735200,
@@ -10084,27 +10046,6 @@
    "left": 0
   },
   {
-   "handle": "@ahmetozhantarhan",
-   "arrive": 1792702800,
-   "move": 1792735200,
-   "home": "Zeytin Sokağı No 1, Daire 18",
-   "home_from": 1792735200,
-   "job": [
-    "Valeci",
-    "Grand Miniakent Oteli",
-    "hotel",
-    ""
-   ],
-   "wp": "otel",
-   "hobby": "Fotoğraf çekmek",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    0,
-    0
-   ]
-  },
-  {
    "handle": "@erenkurt.psd",
    "arrive": 1792702800,
    "move": 1792735200,
@@ -11946,27 +11887,6 @@
    ]
   },
   {
-   "handle": "@gokhan.ozmen00",
-   "arrive": 1792702800,
-   "move": 1792735200,
-   "home": "Akasya Sokağı No 2, Daire 21",
-   "home_from": 1792735200,
-   "job": [
-    "Reklam ve Pazarlama Personeli",
-    "Grand Miniakent Oteli",
-    "hotel",
-    ""
-   ],
-   "wp": "otel",
-   "hobby": "Yüzmek",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    3,
-    0
-   ]
-  },
-  {
    "handle": "@denizkrgz__",
    "arrive": 1792702800,
    "move": 1792735200,
@@ -12716,27 +12636,6 @@
    "look": [
     1,
     1
-   ]
-  },
-  {
-   "handle": "@serqanaslan",
-   "arrive": 1792702800,
-   "move": 1792735200,
-   "home": "Sahil Caddesi No 8, Daire 1",
-   "home_from": 1792735200,
-   "job": [
-    "Çöp Toplama Görevlisi",
-    "Miniakent Belediyesi",
-    "none",
-    ""
-   ],
-   "wp": "sehir",
-   "hobby": "Resim yapmak",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    3,
-    0
    ]
   },
   {
@@ -15561,27 +15460,6 @@
    "left": 0,
    "look": [
     3,
-    0
-   ]
-  },
-  {
-   "handle": "@zeki_gdk",
-   "arrive": 1792702800,
-   "move": 1792735200,
-   "home": "Kıyı Caddesi No 16, Daire 3",
-   "home_from": 1792821600,
-   "job": [
-    "Sigorta Uzmanı",
-    "Miniakent Sigorta A.Ş. · Miniakent Plaza 2, Kat 2",
-    "office",
-    "plaza2"
-   ],
-   "wp": "sigorta",
-   "hobby": "Yemek yapmak",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    4,
     0
    ]
   },
@@ -19579,7 +19457,11 @@
    "wp": "fabrika_a",
    "hobby": "Kuşları izlemek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@b.e.r.k_o",
@@ -25124,23 +25006,6 @@
    "left": 0
   },
   {
-   "handle": "@yukis_ss0",
-   "arrive": 1792796820,
-   "move": 1792821600,
-   "home": "Begonvil Sokağı No 4, Daire 3",
-   "home_from": 1792821600,
-   "job": [
-    "Reklamcı",
-    "Miniakent Tasarım Stüdyosu · Miniakent Plaza, Kat 8",
-    "office",
-    "plaza"
-   ],
-   "wp": "tasarim",
-   "hobby": "Kuşları izlemek",
-   "queue": 0,
-   "left": 0
-  },
-  {
    "handle": "@nur.ozgee1",
    "arrive": 1792796820,
    "move": 1792821600,
@@ -26260,7 +26125,7 @@
    "left": 0
   },
   {
-   "handle": "@uras37979",
+   "handle": "@uras_tas_",
    "arrive": 1792796820,
    "move": 1792821600,
    "home": "Yasemin Sokağı No 6, Daire 2",
@@ -29373,27 +29238,6 @@
    "left": 0
   },
   {
-   "handle": "@merye_.nisanur22",
-   "arrive": 1792796820,
-   "move": 1792821600,
-   "home": "Begonvil Sokağı No 1, Daire 4",
-   "home_from": 1792821600,
-   "job": [
-    "Ağ Uzmanı",
-    "Miniakent Telekom · Miniakent Plaza 2, Kat 11",
-    "office",
-    "plaza2"
-   ],
-   "wp": "telekom",
-   "hobby": "Yemek yapmak",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    2,
-    1
-   ]
-  },
-  {
    "handle": "@altunborman",
    "arrive": 1792796820,
    "move": 1792821600,
@@ -30751,27 +30595,6 @@
    "look": [
     2,
     1
-   ]
-  },
-  {
-   "handle": "@cemali_987",
-   "arrive": 1792796820,
-   "move": 1792821600,
-   "home": "Begonvil Sokağı No 4, Daire 1",
-   "home_from": 1792821600,
-   "job": [
-    "Gazeteci",
-    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
-    "office",
-    "plaza3"
-   ],
-   "wp": "gazete",
-   "hobby": "Kuşları izlemek",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    3,
-    0
    ]
   },
   {
@@ -32273,7 +32096,7 @@
    ]
   },
   {
-   "handle": "@vmazlvemelis",
+   "handle": "@limoonlumeybuuuz",
    "arrive": 1792898400,
    "move": 1792908000,
    "home": "Doğu Banliyö A Blok, Daire 65",
@@ -34206,7 +34029,7 @@
    ]
   },
   {
-   "handle": "@deep1234xzb",
+   "handle": "@sulo_3434_",
    "arrive": 1792898400,
    "move": 1792908000,
    "home": "Doğu Banliyö B Blok, Daire 56",
@@ -35718,7 +35541,7 @@
    ]
   },
   {
-   "handle": "@tumerabi_sizofren",
+   "handle": "@pasahazretleri0209",
    "arrive": 1792898400,
    "move": 1792908000,
    "home": "Doğu Banliyö C Blok, Daire 12",
@@ -38679,7 +38502,7 @@
    ]
   },
   {
-   "handle": "@baba.nburda54",
+   "handle": "@yaratiga_baklan_ber2",
    "arrive": 1792898400,
    "move": 1792908000,
    "home": "Doğu Banliyö D Blok, Daire 32",
@@ -39414,7 +39237,7 @@
    ]
   },
   {
-   "handle": "@wannabe.assencion",
+   "handle": "@true.ascender",
    "arrive": 1792898400,
    "move": 1792908000,
    "home": "Doğu Banliyö D Blok, Daire 72",
@@ -44412,27 +44235,6 @@
    ]
   },
   {
-   "handle": "@cc_nehir",
-   "arrive": 1792898400,
-   "move": 1792908000,
-   "home": "Doğu Banliyö F Blok, Daire 118",
-   "home_from": 1792908000,
-   "job": [
-    "Konteyner Planlama Uzmanı",
-    "Miniakent Limanı",
-    "area",
-    "liman"
-   ],
-   "wp": "liman",
-   "hobby": "Bahçe işleri",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    1,
-    1
-   ]
-  },
-  {
    "handle": "@klinikpsikologfatmanurcelik",
    "arrive": 1792898400,
    "move": 1792908000,
@@ -44753,7 +44555,7 @@
    ]
   },
   {
-   "handle": "@danielkuzeyaycelik1",
+   "handle": "@rampagezt3",
    "arrive": 1792971000,
    "move": 1792994400,
    "home": "Doğu Banliyö A Blok, Daire 3",
@@ -46105,27 +45907,6 @@
    "left": 0
   },
   {
-   "handle": "@yusufdnmz011",
-   "arrive": 1792971000,
-   "move": 1792994400,
-   "home": "Doğu Banliyö A Blok, Daire 31",
-   "home_from": 1792994400,
-   "job": [
-    "Laboratuvar Teknisyeni",
-    "Miniakent Ar-Ge Merkezi · Miniakent Plaza, Kat 12",
-    "office",
-    "plaza"
-   ],
-   "wp": "arge",
-   "hobby": "Fotoğraf çekmek",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    4,
-    0
-   ]
-  },
-  {
    "handle": "@y.er.3423",
    "arrive": 1792971000,
    "move": 1792994400,
@@ -47470,7 +47251,11 @@
    "wp": "hastane",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@ketcaplikumpirr_",
@@ -48248,23 +48033,6 @@
     2,
     1
    ]
-  },
-  {
-   "handle": "@dmrergun",
-   "arrive": 1792971000,
-   "move": 1792994400,
-   "home": "Doğu Banliyö A Blok, Daire 71",
-   "home_from": 1792994400,
-   "job": [
-    "Teknik Servis Görevlisi",
-    "Miniakent Plaza",
-    "office",
-    "plaza"
-   ],
-   "wp": "plaza_hizmet",
-   "hobby": "Uçurtma uçurmak",
-   "queue": 0,
-   "left": 0
   },
   {
    "handle": "@nursu_202",
@@ -50875,7 +50643,7 @@
    ]
   },
   {
-   "handle": "@tuff_miguel_82837",
+   "handle": "@tuff_miguel_tiki_tiki",
    "arrive": 1792971000,
    "move": 1792994400,
    "home": "Doğu Banliyö B Blok, Daire 15",
@@ -51461,23 +51229,6 @@
     4,
     0
    ]
-  },
-  {
-   "handle": "@wymen02",
-   "arrive": 1792971000,
-   "move": 1792994400,
-   "home": "Doğu Banliyö B Blok, Daire 27",
-   "home_from": 1792994400,
-   "job": [
-    "Halkla İlişkiler Uzmanı",
-    "Miniakent Ticaret A.Ş. · Miniakent Plaza, Kat 10",
-    "office",
-    "plaza"
-   ],
-   "wp": "ticaret",
-   "hobby": "Fotoğraf çekmek",
-   "queue": 0,
-   "left": 0
   },
   {
    "handle": "@yigitscopain",
@@ -52267,7 +52018,7 @@
    "left": 0
   },
   {
-   "handle": "@ucube52nesibe",
+   "handle": "@52nesibe",
    "arrive": 1792971000,
    "move": 1792994400,
    "home": "Doğu Banliyö B Blok, Daire 45",
@@ -52895,27 +52646,6 @@
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
-  },
-  {
-   "handle": "@ciftkavrulmustahin",
-   "arrive": 1792971000,
-   "move": 1792994400,
-   "home": "Doğu Banliyö B Blok, Daire 58",
-   "home_from": 1792994400,
-   "job": [
-    "Redaktör",
-    "Miniakent Yayınevi · Miniakent Plaza, Kat 11",
-    "office",
-    "plaza"
-   ],
-   "wp": "yayinevi",
-   "hobby": "Satranç",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    2,
-    1
-   ]
   },
   {
    "handle": "@ibrahim_suleymanari9065",
@@ -53992,27 +53722,6 @@
    "left": 0
   },
   {
-   "handle": "@ulkubuthomeless",
-   "arrive": 1792971000,
-   "move": 1792994400,
-   "home": "Doğu Banliyö B Blok, Daire 79",
-   "home_from": 1792994400,
-   "job": [
-    "Seyahat Danışmanı",
-    "Miniakent Turizm · Miniakent Plaza 2, Kat 7",
-    "office",
-    "plaza2"
-   ],
-   "wp": "turizm",
-   "hobby": "Resim yapmak",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    2,
-    1
-   ]
-  },
-  {
    "handle": "@eren.bicer.73307",
    "arrive": 1792971000,
    "move": 1792994400,
@@ -54481,7 +54190,7 @@
    "left": 0
   },
   {
-   "handle": "@yasin_hereze_",
+   "handle": "@yasin_ege_akca",
    "arrive": 1792971000,
    "move": 1792994400,
    "home": "Doğu Banliyö B Blok, Daire 89",
@@ -55027,7 +54736,11 @@
    "wp": "spor",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@haciosmansarp",
@@ -57093,23 +56806,6 @@
    "left": 0
   },
   {
-   "handle": "@bakisekmen",
-   "arrive": 1792971000,
-   "move": 1792994400,
-   "home": "Doğu Banliyö C Blok, Daire 19",
-   "home_from": 1792994400,
-   "job": [
-    "Endüstri Mühendisi",
-    "Miniakent Enerji A.Ş. · Miniakent Plaza, Kat 9",
-    "office",
-    "plaza"
-   ],
-   "wp": "enerji",
-   "hobby": "Resim yapmak",
-   "queue": 0,
-   "left": 0
-  },
-  {
    "handle": "@newpressing",
    "arrive": 1792971000,
    "move": 1792994400,
@@ -57169,7 +56865,7 @@
    ]
   },
   {
-   "handle": "@m.gltkn00",
+   "handle": "@rivriv_de_mambo",
    "arrive": 1792971000,
    "move": 1792994400,
    "home": "Doğu Banliyö C Blok, Daire 20",
@@ -62046,23 +61742,6 @@
    "partner": "@lamiatalak"
   },
   {
-   "handle": "@14.09fm",
-   "arrive": 1793061000,
-   "move": 1793080800,
-   "home": "Doğu Banliyö C Blok, Daire 109",
-   "home_from": 1793080800,
-   "job": [
-    "Çağrı Merkezi Görevlisi",
-    "Miniakent Telekom · Miniakent Plaza 2, Kat 11",
-    "office",
-    "plaza2"
-   ],
-   "wp": "telekom",
-   "hobby": "Bisiklete binmek",
-   "queue": 0,
-   "left": 0
-  },
-  {
    "handle": "@l_mehmet_yigit_l",
    "arrive": 1793061000,
    "move": 1793080800,
@@ -64068,7 +63747,7 @@
    ]
   },
   {
-   "handle": "@saek0.ponn",
+   "handle": "@de4r.myst",
    "arrive": 1793061000,
    "move": 1793080800,
    "home": "Doğu Banliyö D Blok, Daire 4",
@@ -64439,27 +64118,6 @@
    "left": 0,
    "look": [
     4,
-    0
-   ]
-  },
-  {
-   "handle": "@binyr0",
-   "arrive": 1793061000,
-   "move": 1793080800,
-   "home": "Lavanta Sokağı No 4, Daire 3",
-   "home_from": 1793297956,
-   "job": [
-    "Öğretmen",
-    "Miniakent Koleji",
-    "shop",
-    "kolej"
-   ],
-   "wp": "kolej",
-   "hobby": "Satranç",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    3,
     0
    ]
   },
@@ -69894,27 +69552,6 @@
    "left": 0
   },
   {
-   "handle": "@beyzakkaragoz",
-   "arrive": 1793061000,
-   "move": 1793080800,
-   "home": "Doğu Banliyö D Blok, Daire 119",
-   "home_from": 1793080800,
-   "job": [
-    "Rezervasyon Uzmanı",
-    "Miniakent Turizm · Miniakent Plaza 2, Kat 7",
-    "office",
-    "plaza2"
-   ],
-   "wp": "turizm",
-   "hobby": "Balık tutmak",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    1,
-    1
-   ]
-  },
-  {
    "handle": "@kkerem_f",
    "arrive": 1793061000,
    "move": 1793080800,
@@ -73707,23 +73344,6 @@
    ]
   },
   {
-   "handle": "@bokfikirli",
-   "arrive": 1793136600,
-   "move": 1793167200,
-   "home": "Doğu Banliyö E Blok, Daire 57",
-   "home_from": 1793167200,
-   "job": [
-    "Diş Teknisyeni",
-    "Miniakent Sağlık Merkezi · Miniakent Plaza, Kat 2",
-    "office",
-    "plaza"
-   ],
-   "wp": "saglik",
-   "hobby": "Gitar çalmak",
-   "queue": 0,
-   "left": 0
-  },
-  {
    "handle": "@nazlicanyildiz13",
    "arrive": 1793136600,
    "move": 1793167200,
@@ -73776,7 +73396,11 @@
    "wp": "tasarim",
    "hobby": "Balık tutmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@_barserin_",
@@ -79456,23 +79080,6 @@
    ]
   },
   {
-   "handle": "@zeeynepcann_",
-   "arrive": 1793228400,
-   "move": 1793253600,
-   "home": "Doğu Banliyö F Blok, Daire 46",
-   "home_from": 1793253600,
-   "job": [
-    "Mali Müşavir",
-    "Miniakent Muhasebe · Miniakent Plaza, Kat 4",
-    "office",
-    "plaza"
-   ],
-   "wp": "muhasebe",
-   "hobby": "Satranç",
-   "queue": 0,
-   "left": 0
-  },
-  {
    "handle": "@alya.bagcii",
    "arrive": 1793228400,
    "move": 1793253600,
@@ -80052,7 +79659,7 @@
    ]
   },
   {
-   "handle": "@ays.bjd.avyk.972",
+   "handle": "@guven_burak4",
    "arrive": 1793228400,
    "move": 1793253600,
    "home": "Doğu Banliyö F Blok, Daire 58",
@@ -80066,7 +79673,11 @@
    "wp": "medya",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@enes__soykan",
@@ -81895,23 +81506,6 @@
    "left": 0
   },
   {
-   "handle": "@ebossh_",
-   "arrive": 1793228400,
-   "move": 1793253600,
-   "home": "Doğu Banliyö F Blok, Daire 97",
-   "home_from": 1793253600,
-   "job": [
-    "Rehber Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
-   ],
-   "wp": "dershane",
-   "hobby": "Kitap okumak",
-   "queue": 0,
-   "left": 0
-  },
-  {
    "handle": "@doanldi",
    "arrive": 1793228400,
    "move": 1793253600,
@@ -82178,27 +81772,6 @@
    ]
   },
   {
-   "handle": "@ata.klc.25",
-   "arrive": 1793228400,
-   "move": 1793253600,
-   "home": "Doğu Banliyö F Blok, Daire 102",
-   "home_from": 1793253600,
-   "job": [
-    "Yoga Eğitmeni",
-    "Miniakent Spor Salonu · Miniakent Plaza, Kat 1",
-    "office",
-    "plaza"
-   ],
-   "wp": "spor",
-   "hobby": "Resim yapmak",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    3,
-    0
-   ]
-  },
-  {
    "handle": "@_d3fkh4n_",
    "arrive": 1793228400,
    "move": 1793253600,
@@ -82408,7 +81981,11 @@
    "wp": "eticaret",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
   },
   {
    "handle": "@dilerfiratt",
@@ -83666,27 +83243,6 @@
    "left": 0
   },
   {
-   "handle": "@seyitalisevim",
-   "arrive": 1793228400,
-   "move": 1793253600,
-   "home": "Begonvil Sokağı No 9, Daire 4",
-   "home_from": 1793253600,
-   "job": [
-    "Spor Hocası",
-    "Miniakent Spor Salonu · Miniakent Plaza, Kat 1",
-    "office",
-    "plaza"
-   ],
-   "wp": "spor",
-   "hobby": "Bahçe işleri",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    3,
-    0
-   ]
-  },
-  {
    "handle": "@hln.n4r1n",
    "arrive": 1793228400,
    "move": 1793253600,
@@ -83963,23 +83519,6 @@
    ],
    "wp": "arge",
    "hobby": "Bisiklete binmek",
-   "queue": 0,
-   "left": 0
-  },
-  {
-   "handle": "@1itsrda",
-   "arrive": 1793323080,
-   "move": 1793340000,
-   "home": "Doğu Banliyö C Blok, Daire 122",
-   "home_from": 1793340000,
-   "job": [
-    "Kurgucu",
-    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
-    "office",
-    "plaza2"
-   ],
-   "wp": "medya",
-   "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0
   },
@@ -86045,23 +85584,6 @@
     1,
     1
    ]
-  },
-  {
-   "handle": "@25.3mr3",
-   "arrive": 1793323080,
-   "move": 1793340000,
-   "home": "Yasemin Sokağı No 1, Daire 4",
-   "home_from": 1793340000,
-   "job": [
-    "İçerik Yazarı",
-    "Miniakent Tasarım Stüdyosu · Miniakent Plaza, Kat 8",
-    "office",
-    "plaza"
-   ],
-   "wp": "tasarim",
-   "hobby": "Bisiklete binmek",
-   "queue": 0,
-   "left": 0
   },
   {
    "handle": "@saluyuyor",
@@ -88542,7 +88064,11 @@
    "wp": "saglik",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@haticeykya",
@@ -89792,7 +89318,7 @@
    ]
   },
   {
-   "handle": "@kalelssecret",
+   "handle": "@sepkent",
    "arrive": 1793323080,
    "move": 1793340000,
    "home": "Begonvil Sokağı No 2, Daire 2",
@@ -92196,27 +91722,6 @@
    "left": 0
   },
   {
-   "handle": "@kaanyelek_3441",
-   "arrive": 1793404800,
-   "move": 1793426400,
-   "home": "Lavanta Sokağı No 7, Daire 2",
-   "home_from": 1793426400,
-   "job": [
-    "Muhasebeci",
-    "Miniakent Bankası",
-    "office",
-    "banka"
-   ],
-   "wp": "banka",
-   "hobby": "Yüzmek",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    0,
-    0
-   ]
-  },
-  {
    "handle": "@svgiarslnn",
    "arrive": 1793404800,
    "move": 1793426400,
@@ -93552,23 +93057,6 @@
     1,
     1
    ]
-  },
-  {
-   "handle": "@redhoodyiyenmandalina",
-   "arrive": 1793404800,
-   "move": 1793426400,
-   "home": "Mimoza Sokağı No 11, Daire 8",
-   "home_from": 1793426400,
-   "job": [
-    "Aşçı",
-    "Miniakent Bankası",
-    "office",
-    "banka"
-   ],
-   "wp": "banka",
-   "hobby": "Balık tutmak",
-   "queue": 0,
-   "left": 0
   },
   {
    "handle": "@erhannyaprak",
@@ -98548,7 +98036,7 @@
    ]
   },
   {
-   "handle": "@nehirin_icindeki_pembe_balik",
+   "handle": "@nehirinicindeki_pembebalik",
    "arrive": 1793404800,
    "move": 1793426400,
    "home": "Doğu Banliyö D Blok, Daire 139",
@@ -98813,7 +98301,7 @@
    ]
   },
   {
-   "handle": "@unlubaysinem_",
+   "handle": "@sinemgonenc_",
    "arrive": 1793404800,
    "move": 1793426400,
    "home": "Doğu Banliyö D Blok, Daire 143",
@@ -99134,27 +98622,6 @@
    "look": [
     2,
     1
-   ]
-  },
-  {
-   "handle": "@ayhantoprak.48",
-   "arrive": 1793404800,
-   "move": 1793426400,
-   "home": "Doğu Banliyö E Blok, Daire 116",
-   "home_from": 1793451171,
-   "job": [
-    "Reklamcı",
-    "Miniakent Bankası",
-    "office",
-    "banka"
-   ],
-   "wp": "banka",
-   "hobby": "Gitar çalmak",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    3,
-    0
    ]
   },
   {
@@ -99953,7 +99420,11 @@
    "wp": "gazete",
    "hobby": "Gitar çalmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@elifnurgoktepee",
@@ -100791,7 +100262,7 @@
    "left": 0
   },
   {
-   "handle": "@grrpaoww_.13",
+   "handle": "@elsmisx12",
    "arrive": 1793484300,
    "move": 1793512800,
    "home": "Zeytin Sokağı No 3, Daire 40",
@@ -101078,27 +100549,6 @@
    "left": 0,
    "look": [
     2,
-    1
-   ]
-  },
-  {
-   "handle": "@ily.zeyno",
-   "arrive": 1793484300,
-   "move": 1793512800,
-   "home": "Akasya Sokağı No 2, Daire 32",
-   "home_from": 1793512800,
-   "job": [
-    "Muhasebeci",
-    "Miniakent Muhasebe · Miniakent Plaza, Kat 4",
-    "office",
-    "plaza"
-   ],
-   "wp": "muhasebe",
-   "hobby": "Yemek yapmak",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    1,
     1
    ]
   },
@@ -101757,7 +101207,7 @@
    "left": 0
   },
   {
-   "handle": "@3ylul_shn",
+   "handle": "@eylukbaba",
    "arrive": 1793484300,
    "move": 1793512800,
    "home": "Zeytin Sokağı No 5, Daire 34",
@@ -102773,7 +102223,7 @@
    ]
   },
   {
-   "handle": "@asosyalmarketposetii",
+   "handle": "@elifarsln.1w",
    "arrive": 1793484300,
    "move": 1793512800,
    "home": "Akasya Sokağı No 4, Daire 35",
@@ -102787,7 +102237,11 @@
    "wp": "banka",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@edacftc2037",
@@ -104392,7 +103846,7 @@
    "left": 0
   },
   {
-   "handle": "@ais.eelif06",
+   "handle": "@onlyelif06",
    "arrive": 1793484300,
    "move": 1793512800,
    "home": "Doğu Banliyö F Blok, Daire 137",
@@ -104551,27 +104005,6 @@
    "home_from": 1793512800,
    "job": [
     "Temizlik Görevlisi",
-    "Miniakent Bankası",
-    "office",
-    "banka"
-   ],
-   "wp": "banka",
-   "hobby": "Kuşları izlemek",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    1,
-    1
-   ]
-  },
-  {
-   "handle": "@aleyna.4877",
-   "arrive": 1793484300,
-   "move": 1793512800,
-   "home": "Doğu Banliyö F Blok, Daire 140",
-   "home_from": 1793512800,
-   "job": [
-    "Güvenlik Görevlisi",
     "Miniakent Bankası",
     "office",
     "banka"
@@ -106907,27 +106340,6 @@
    ]
   },
   {
-   "handle": "@_nehir.kelebek_",
-   "arrive": 1793484300,
-   "move": 1793512800,
-   "home": "Doğu Banliyö H Blok, Daire 27",
-   "home_from": 1793512800,
-   "job": [
-    "Pazarlama Uzmanı",
-    "Miniakent Bankası",
-    "office",
-    "banka"
-   ],
-   "wp": "banka",
-   "hobby": "Fotoğraf çekmek",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    1,
-    1
-   ]
-  },
-  {
    "handle": "@zehr.aulku",
    "arrive": 1793484300,
    "move": 1793512800,
@@ -108083,27 +107495,6 @@
    ]
   },
   {
-   "handle": "@esmk_44",
-   "arrive": 1793484300,
-   "move": 1793512800,
-   "home": "Doğu Banliyö H Blok, Daire 45",
-   "home_from": 1793512800,
-   "job": [
-    "Pazarlama Uzmanı",
-    "Miniakent Bankası",
-    "office",
-    "banka"
-   ],
-   "wp": "banka",
-   "hobby": "Balık tutmak",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    1,
-    1
-   ]
-  },
-  {
    "handle": "@halilsefagrr",
    "arrive": 1793484300,
    "move": 1793512800,
@@ -108500,7 +107891,7 @@
    "left": 0
   },
   {
-   "handle": "@mwnolya2012",
+   "handle": "@mwnolyam_",
    "arrive": 1793484300,
    "move": 1793512800,
    "home": "Doğu Banliyö H Blok, Daire 50",
@@ -109129,7 +108520,7 @@
    "left": 0
   },
   {
-   "handle": "@tuu0anaa",
+   "handle": "@ttw0ana",
    "arrive": 1793484300,
    "move": 1793512800,
    "home": "Doğu Banliyö H Blok, Daire 59",
@@ -112822,7 +112213,7 @@
    "left": 0
   },
   {
-   "handle": "@zeynepppgkfc_ada_bay",
+   "handle": "@zeynep_olabilir_anladin",
    "arrive": 1793484300,
    "move": 1793512800,
    "home": "Doğu Banliyö H Blok, Daire 110",
@@ -113952,23 +113343,6 @@
    ]
   },
   {
-   "handle": "@alti6_ustu1ask",
-   "arrive": 1793484300,
-   "move": 1793512800,
-   "home": "Doğu Banliyö H Blok, Daire 126",
-   "home_from": 1793512800,
-   "job": [
-    "Veznedar",
-    "Miniakent Bankası",
-    "office",
-    "banka"
-   ],
-   "wp": "banka",
-   "hobby": "Bisiklete binmek",
-   "queue": 0,
-   "left": 0
-  },
-  {
    "handle": "@kdrnlgnbaba",
    "arrive": 1793484300,
    "move": 1793512800,
@@ -114087,27 +113461,6 @@
    "left": 0,
    "look": [
     4,
-    0
-   ]
-  },
-  {
-   "handle": "@islamdegerr",
-   "arrive": 1793484300,
-   "move": 1793512800,
-   "home": "Doğu Banliyö H Blok, Daire 128",
-   "home_from": 1793512800,
-   "job": [
-    "Temizlik Görevlisi",
-    "Miniakent Bankası",
-    "office",
-    "banka"
-   ],
-   "wp": "banka",
-   "hobby": "Satranç",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    3,
     0
    ]
   },
@@ -114965,23 +114318,6 @@
     1,
     1
    ]
-  },
-  {
-   "handle": "@aman_duktur_canm_duktur",
-   "arrive": 1793484300,
-   "move": 1793512800,
-   "home": "Doğu Banliyö H Blok, Daire 140",
-   "home_from": 1793512800,
-   "job": [
-    "Öğretmen",
-    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
-    "office",
-    "plaza2"
-   ],
-   "wp": "dershane",
-   "hobby": "Fotoğraf çekmek",
-   "queue": 0,
-   "left": 0
   },
   {
    "handle": "@eneseglmz",
@@ -116303,27 +115639,6 @@
    "left": 0
   },
   {
-   "handle": "@ipekkaya2524",
-   "arrive": 1793484300,
-   "move": 1793512800,
-   "home": "Doğu Banliyö J Blok, Daire 15",
-   "home_from": 1793512800,
-   "job": [
-    "Muhasebeci",
-    "Miniakent Bankası",
-    "office",
-    "banka"
-   ],
-   "wp": "banka",
-   "hobby": "Kitap okumak",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    2,
-    1
-   ]
-  },
-  {
    "handle": "@doruk_enes.17",
    "arrive": 1793484300,
    "move": 1793512800,
@@ -117446,7 +116761,7 @@
    ]
   },
   {
-   "handle": "@badesnn.9",
+   "handle": "@badesnn.7",
    "arrive": 1793484300,
    "move": 1793512800,
    "home": "Doğu Banliyö J Blok, Daire 31",
@@ -118201,23 +117516,6 @@
    "left": 0
   },
   {
-   "handle": "@afroo01",
-   "arrive": 1793484300,
-   "move": 1793512800,
-   "home": "Doğu Banliyö J Blok, Daire 42",
-   "home_from": 1793512800,
-   "job": [
-    "Güvenlik Görevlisi",
-    "Miniakent Bankası",
-    "office",
-    "banka"
-   ],
-   "wp": "banka",
-   "hobby": "Bahçe işleri",
-   "queue": 0,
-   "left": 0
-  },
-  {
    "handle": "@furkngndz",
    "arrive": 1793484300,
    "move": 1793512800,
@@ -118568,23 +117866,6 @@
    ]
   },
   {
-   "handle": "@captain_niki.1",
-   "arrive": 1793570520,
-   "move": 1793599200,
-   "home": "Zeytin Sokağı No 1, Daire 29",
-   "home_from": 1793599200,
-   "job": [
-    "Editör",
-    "Miniakent Yayınevi · Miniakent Plaza, Kat 11",
-    "office",
-    "plaza"
-   ],
-   "wp": "yayinevi",
-   "hobby": "Kitap okumak",
-   "queue": 0,
-   "left": 0
-  },
-  {
    "handle": "@lady_shitpostt2",
    "arrive": 1793570520,
    "move": 1793599200,
@@ -118705,23 +117986,6 @@
     1,
     1
    ]
-  },
-  {
-   "handle": "@miuwsaa.7",
-   "arrive": 1793570520,
-   "move": 1793599200,
-   "home": "Akasya Sokağı No 4, Daire 8",
-   "home_from": 1793599200,
-   "job": [
-    "Banka Memuru",
-    "Miniakent Bankası",
-    "office",
-    "banka"
-   ],
-   "wp": "banka",
-   "hobby": "Yemek yapmak",
-   "queue": 0,
-   "left": 0
   },
   {
    "handle": "@uhhcei",
@@ -120795,27 +120059,6 @@
    "look": [
     2,
     1
-   ]
-  },
-  {
-   "handle": "@mahallenindayisi",
-   "arrive": 1793570520,
-   "move": 1793599200,
-   "home": "Doğu Banliyö J Blok, Daire 65",
-   "home_from": 1793599200,
-   "job": [
-    "Kredi Uzmanı",
-    "Miniakent Bankası",
-    "office",
-    "banka"
-   ],
-   "wp": "banka",
-   "hobby": "Satranç",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    3,
-    0
    ]
   },
   {
@@ -123811,7 +123054,7 @@
    ]
   },
   {
-   "handle": "@yagmusspriwwcanum",
+   "handle": "@yagmuryagiyooi",
    "arrive": 1793570520,
    "move": 1793599200,
    "home": "Doğu Banliyö J Blok, Daire 107",
@@ -125342,27 +124585,6 @@
    "left": 0
   },
   {
-   "handle": "@locationasya",
-   "arrive": 1793570520,
-   "move": 1793599200,
-   "home": "Doğu Banliyö E Blok, Daire 131",
-   "home_from": 1793619423,
-   "job": [
-    "Palamar Görevlisi",
-    "Miniakent Limanı",
-    "area",
-    "liman"
-   ],
-   "wp": "liman",
-   "hobby": "Yemek yapmak",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    2,
-    1
-   ]
-  },
-  {
    "handle": "@oyarenbuyarendegil",
    "arrive": 1793570520,
    "move": 1793599200,
@@ -126093,7 +125315,11 @@
    "wp": "kolej",
    "hobby": "Yemek yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@aseninpriwiss",
@@ -126985,7 +126211,7 @@
    ]
   },
   {
-   "handle": "@blupblupada",
+   "handle": "@bugunsalcaliysayarinsade",
    "arrive": 1793570520,
    "move": 1793599200,
    "home": "Doğu Banliyö J Blok, Daire 119",
@@ -129280,7 +128506,11 @@
    "wp": "banka",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@kimsloverstw_",
@@ -133328,7 +132558,11 @@
    "wp": "adliye",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@yagmuritooo",
@@ -133774,7 +133008,7 @@
    "left": 0
   },
   {
-   "handle": "@diet.m0untian.dew",
+   "handle": "@tarcinist26",
    "arrive": 1793752260,
    "move": 1793772000,
    "home": "Doğu Banliyö G Blok, Daire 33",
@@ -134679,7 +133913,7 @@
    ]
   },
   {
-   "handle": "@ayceculll",
+   "handle": "@aysegul_62626",
    "arrive": 1793752260,
    "move": 1793772000,
    "home": "Doğu Banliyö G Blok, Daire 44",
@@ -135079,7 +134313,7 @@
    ]
   },
   {
-   "handle": "@nyannyannyannyannn",
+   "handle": "@edoslovesnyancat",
    "arrive": 1793752260,
    "move": 1793772000,
    "home": "Doğu Banliyö G Blok, Daire 49",
@@ -135539,7 +134773,7 @@
    "left": 0
   },
   {
-   "handle": "@corumleblebisiym",
+   "handle": "@zakkumcicegininozu",
    "arrive": 1793752260,
    "move": 1793772000,
    "home": "Doğu Banliyö G Blok, Daire 55",
@@ -135760,7 +134994,11 @@
    "wp": "adliye",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@su_karabela2",
@@ -137145,27 +136383,6 @@
    "left": 0,
    "look": [
     1,
-    1
-   ]
-  },
-  {
-   "handle": "@haviinurun",
-   "arrive": 1793752260,
-   "move": 1793772000,
-   "home": "Doğu Banliyö G Blok, Daire 77",
-   "home_from": 1793772000,
-   "job": [
-    "Forklift Operatörü",
-    "Miniakent Fabrikası 1 · Sanayi Bölgesi",
-    "shop",
-    "fabrika_a"
-   ],
-   "wp": "fabrika_a",
-   "hobby": "Satranç",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    2,
     1
    ]
   },
@@ -138687,23 +137904,6 @@
    ]
   },
   {
-   "handle": "@ayicikbomboonerdessinnn4",
-   "arrive": 1793830020,
-   "move": 1793858400,
-   "home": "Batı Banliyö B Blok, Daire 4",
-   "home_from": 1793858400,
-   "job": [
-    "İngilizce Öğretmeni",
-    "Miniakent Koleji",
-    "shop",
-    "kolej"
-   ],
-   "wp": "kolej",
-   "hobby": "Balık tutmak",
-   "queue": 0,
-   "left": 0
-  },
-  {
    "handle": "@ben_mukmin",
    "arrive": 1793830020,
    "move": 1793858400,
@@ -138815,27 +138015,6 @@
    "look": [
     1,
     1
-   ]
-  },
-  {
-   "handle": "@hasirci_ozkan",
-   "arrive": 1793830020,
-   "move": 1793858400,
-   "home": "Doğu Banliyö G Blok, Daire 89",
-   "home_from": 1793858400,
-   "job": [
-    "Çevirmen",
-    "Miniakent Ticaret A.Ş. · Miniakent Plaza, Kat 10",
-    "office",
-    "plaza"
-   ],
-   "wp": "ticaret",
-   "hobby": "Resim yapmak",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    4,
-    0
    ]
   },
   {
@@ -144578,23 +143757,6 @@
    ]
   },
   {
-   "handle": "@vex_alkapon_tek31",
-   "arrive": 1793938080,
-   "move": 1793944800,
-   "home": "Doğu Banliyö I Blok, Daire 12",
-   "home_from": 1793944800,
-   "job": [
-    "Depo Görevlisi",
-    "Miniakent Fabrikası 1 · Sanayi Bölgesi",
-    "shop",
-    "fabrika_a"
-   ],
-   "wp": "fabrika_a",
-   "hobby": "Fotoğraf çekmek",
-   "queue": 0,
-   "left": 0
-  },
-  {
    "handle": "@alparslanmom35",
    "arrive": 1793938080,
    "move": 1793944800,
@@ -144881,7 +144043,7 @@
    ]
   },
   {
-   "handle": "@ssnip.64",
+   "handle": "@danceittillumakeit",
    "arrive": 1793938080,
    "move": 1793944800,
    "home": "Doğu Banliyö I Blok, Daire 15",
@@ -145715,7 +144877,7 @@
    ]
   },
   {
-   "handle": "@f5dyaa",
+   "handle": "@esilatuncaa_",
    "arrive": 1793938080,
    "move": 1793944800,
    "home": "Doğu Banliyö I Blok, Daire 26",
@@ -145729,7 +144891,11 @@
    "wp": "fabrika_b",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@mnsse.e",
@@ -149288,7 +148454,7 @@
    "left": 0
   },
   {
-   "handle": "@bananaleclerc91",
+   "handle": "@adolfh1tler98362",
    "arrive": 1793938080,
    "move": 1793944800,
    "home": "Doğu Banliyö I Blok, Daire 74",
@@ -149440,7 +148606,7 @@
    ]
   },
   {
-   "handle": "@elenn_q7",
+   "handle": "@elenn_gokmen",
    "arrive": 1793938080,
    "move": 1793944800,
    "home": "Doğu Banliyö I Blok, Daire 76",
@@ -149644,23 +148810,6 @@
     2,
     1
    ]
-  },
-  {
-   "handle": "@yolda.kaldik.reis",
-   "arrive": 1793938080,
-   "move": 1793944800,
-   "home": "Doğu Banliyö I Blok, Daire 79",
-   "home_from": 1793981674,
-   "job": [
-    "Şan Öğretmeni",
-    "Miniakent Müzik Kursu · Miniakent Plaza 3, Kat 2",
-    "office",
-    "plaza3"
-   ],
-   "wp": "muzik",
-   "hobby": "Kitap okumak",
-   "queue": 0,
-   "left": 0
   },
   {
    "handle": "@emiray.kutay",
@@ -149934,27 +149083,6 @@
    "look": [
     4,
     0
-   ]
-  },
-  {
-   "handle": "@aricanberen",
-   "arrive": 1793938080,
-   "move": 1793944800,
-   "home": "Doğu Banliyö I Blok, Daire 83",
-   "home_from": 1793981674,
-   "job": [
-    "Muhasebeci",
-    "Miniakent Mali Müşavirlik · Miniakent Plaza 4, Kat 3",
-    "office",
-    "plaza4"
-   ],
-   "wp": "mali",
-   "hobby": "Yemek yapmak",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    2,
-    1
    ]
   },
   {
@@ -151458,7 +150586,7 @@
    ]
   },
   {
-   "handle": "@poyrazinsandevistani",
+   "handle": "@poyraiste",
    "arrive": 1793938080,
    "move": 1793944800,
    "home": "Doğu Banliyö I Blok, Daire 104",
@@ -152108,27 +151236,6 @@
    ]
   },
   {
-   "handle": "@havinisss1q",
-   "arrive": 1793938080,
-   "move": 1793944800,
-   "home": "Doğu Banliyö I Blok, Daire 113",
-   "home_from": 1793981674,
-   "job": [
-    "Hukuk Danışmanı",
-    "Miniakent Avukatlık Bürosu · Miniakent Plaza 3, Kat 4",
-    "office",
-    "plaza3"
-   ],
-   "wp": "avukatlik",
-   "hobby": "Yemek yapmak",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    2,
-    1
-   ]
-  },
-  {
    "handle": "@napoeron",
    "arrive": 1793938080,
    "move": 1793944800,
@@ -152243,27 +151350,6 @@
    "left": 0,
    "look": [
     2,
-    1
-   ]
-  },
-  {
-   "handle": "@llzeynwp.7",
-   "arrive": 1793938080,
-   "move": 1793944800,
-   "home": "Doğu Banliyö I Blok, Daire 115",
-   "home_from": 1793981674,
-   "job": [
-    "Koreograf",
-    "Miniakent Dans Kursu · Miniakent Plaza 3, Kat 3",
-    "office",
-    "plaza3"
-   ],
-   "wp": "dans",
-   "hobby": "Yüzmek",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    1,
     1
    ]
   },
@@ -153900,7 +152986,7 @@
    "left": 0
   },
   {
-   "handle": "@ahmetekberatala8",
+   "handle": "@ahmetekberatala17",
    "arrive": 1793938080,
    "move": 1793944800,
    "home": "Doğu Banliyö I Blok, Daire 138",
@@ -154164,27 +153250,6 @@
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0
-  },
-  {
-   "handle": "@emrullahckr._",
-   "arrive": 1793938080,
-   "move": 1793944800,
-   "home": "Doğu Banliyö I Blok, Daire 142",
-   "home_from": 1793981674,
-   "job": [
-    "İngilizce Öğretmeni",
-    "Miniakent Dil Okulu · Miniakent Plaza 4, Kat 1",
-    "office",
-    "plaza4"
-   ],
-   "wp": "dil",
-   "hobby": "Kuşları izlemek",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    3,
-    0
-   ]
   },
   {
    "handle": "@cinar_is_me",
@@ -154478,23 +153543,6 @@
    ],
    "wp": "dans",
    "hobby": "Kitap okumak",
-   "queue": 0,
-   "left": 0
-  },
-  {
-   "handle": "@rr.sevd_a",
-   "arrive": 1794002580,
-   "move": 1794031200,
-   "home": "Doğu Banliyö A Blok, Daire 27",
-   "home_from": 1794031200,
-   "job": [
-    "Radyo Programcısı",
-    "Miniakent Radyo · Miniakent Plaza 3, Kat 8",
-    "office",
-    "plaza3"
-   ],
-   "wp": "radyo",
-   "hobby": "Resim yapmak",
    "queue": 0,
    "left": 0
   },
@@ -156152,7 +155200,7 @@
    ]
   },
   {
-   "handle": "@amphitrite_song",
+   "handle": "@midori_tutorials",
    "arrive": 1794002580,
    "move": 1794031200,
    "home": "Batı Banliyö B Blok, Daire 38",
@@ -160780,23 +159828,6 @@
    "left": 0
   },
   {
-   "handle": "@kul_lan1c",
-   "arrive": 1794089100,
-   "move": 1794117600,
-   "home": "Zeytin Sokağı No 3, Daire 22",
-   "home_from": 1794117600,
-   "job": [
-    "Radyo Programcısı",
-    "Miniakent Radyo · Miniakent Plaza 3, Kat 8",
-    "office",
-    "plaza3"
-   ],
-   "wp": "radyo",
-   "hobby": "Uçurtma uçurmak",
-   "queue": 0,
-   "left": 0
-  },
-  {
    "handle": "@senamastee",
    "arrive": 1794089100,
    "move": 1794117600,
@@ -162084,7 +161115,7 @@
    "left": 0
   },
   {
-   "handle": "@gariban666666",
+   "handle": "@gariban66666",
    "arrive": 1794089100,
    "move": 1794117600,
    "home": "Batı Banliyö B Blok, Daire 80",
@@ -166520,27 +165551,6 @@
    ]
   },
   {
-   "handle": "@fatisss8966",
-   "arrive": 1794089100,
-   "move": 1794117600,
-   "home": "Batı Banliyö B Blok, Daire 139",
-   "home_from": 1794117600,
-   "job": [
-    "İç Mimar",
-    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
-    "office",
-    "plaza"
-   ],
-   "wp": "mimarlik",
-   "hobby": "Kitap okumak",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    1,
-    1
-   ]
-  },
-  {
    "handle": "@alptugaydogmus",
    "arrive": 1794089100,
    "move": 1794117600,
@@ -167276,7 +166286,11 @@
    "wp": "tv",
    "hobby": "Kitap okumak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@esrac_ustun",
@@ -168822,7 +167836,7 @@
    ]
   },
   {
-   "handle": "@gamzossss._",
+   "handle": "@gaamzzeeee._",
    "arrive": 1794089100,
    "move": 1794117600,
    "home": "Batı Banliyö D Blok, Daire 39",
@@ -169017,7 +168031,11 @@
    "wp": "muhasebe",
    "hobby": "Resim yapmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
   },
   {
    "handle": "@89oerm",
@@ -170243,27 +169261,6 @@
    "left": 0
   },
   {
-   "handle": "@daghanyldrm_",
-   "arrive": 1794175560,
-   "move": 1794204000,
-   "home": "Doğu Banliyö H Blok, Daire 106",
-   "home_from": 1794204000,
-   "job": [
-    "Tıbbi Sekreter",
-    "Miniakent Sağlık Merkezi · Miniakent Plaza, Kat 2",
-    "office",
-    "plaza"
-   ],
-   "wp": "saglik",
-   "hobby": "Yüzmek",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    4,
-    0
-   ]
-  },
-  {
    "handle": "@zeynep.nur.seymennn",
    "arrive": 1794175560,
    "move": 1794204000,
@@ -170610,7 +169607,7 @@
    ]
   },
   {
-   "handle": "@hirakayaa_777",
+   "handle": "@hirakayaa_77",
    "arrive": 1794175560,
    "move": 1794204000,
    "home": "Doğu Banliyö G Blok, Daire 87",
@@ -171652,7 +170649,11 @@
    "wp": "muhendislik",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@ibrahim73163",
@@ -172864,7 +171865,7 @@
    ]
   },
   {
-   "handle": "@plase_atamayanpasor",
+   "handle": "@koreli_kopkee",
    "arrive": 1794175560,
    "move": 1794204000,
    "home": "Batı Banliyö D Blok, Daire 64",
@@ -173434,27 +172435,6 @@
    "left": 0
   },
   {
-   "handle": "@zeyyneva",
-   "arrive": 1794175560,
-   "move": 1794204000,
-   "home": "Batı Banliyö D Blok, Daire 72",
-   "home_from": 1794204000,
-   "job": [
-    "Müşteri Hizmetleri Uzmanı",
-    "Miniakent E-Ticaret A.Ş. · Miniakent Plaza 2, Kat 8",
-    "office",
-    "plaza2"
-   ],
-   "wp": "eticaret",
-   "hobby": "Kuşları izlemek",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    2,
-    1
-   ]
-  },
-  {
    "handle": "@enesakbulut_06",
    "arrive": 1794175560,
    "move": 1794204000,
@@ -173550,27 +172530,6 @@
    "hobby": "Satranç",
    "queue": 0,
    "left": 0
-  },
-  {
-   "handle": "@_sergenyaalc",
-   "arrive": 1794175560,
-   "move": 1794204000,
-   "home": "Batı Banliyö D Blok, Daire 73",
-   "home_from": 1794204000,
-   "job": [
-    "Değerleme Uzmanı",
-    "Miniakent Gayrimenkul · Miniakent Plaza 2, Kat 9",
-    "office",
-    "plaza2"
-   ],
-   "wp": "gayrimenkul",
-   "hobby": "Bahçe işleri",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    0,
-    0
-   ]
   },
   {
    "handle": "@n1da_tt",
@@ -173928,23 +172887,6 @@
    ],
    "wp": "medya",
    "hobby": "Kitap okumak",
-   "queue": 0,
-   "left": 0
-  },
-  {
-   "handle": "@tequelam",
-   "arrive": 1794175560,
-   "move": 1794204000,
-   "home": "Batı Banliyö D Blok, Daire 79",
-   "home_from": 1794204000,
-   "job": [
-    "Spor Hocası",
-    "Miniakent Spor Salonu · Miniakent Plaza, Kat 1",
-    "office",
-    "plaza"
-   ],
-   "wp": "spor",
-   "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
   },
@@ -174616,7 +173558,11 @@
    "wp": "oyun",
    "hobby": "Uçurtma uçurmak",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
   },
   {
    "handle": "@piyanist.anais",
@@ -178292,23 +177238,6 @@
     1,
     1
    ]
-  },
-  {
-   "handle": "@xp_seko_",
-   "arrive": 1794260040,
-   "move": 1794290400,
-   "home": "Doğu Banliyö F Blok, Daire 110",
-   "home_from": 1794290400,
-   "job": [
-    "Mimar",
-    "Miniakent Yapı Mühendislik A.Ş. · Miniakent Arena şantiyesi",
-    "area",
-    "site"
-   ],
-   "wp": "santiye",
-   "hobby": "Yüzmek",
-   "queue": 0,
-   "left": 0
   },
   {
    "handle": "@svcnkstkc",
@@ -182452,27 +181381,6 @@
    ]
   },
   {
-   "handle": "@hilmi.kutmur",
-   "arrive": 1794260040,
-   "move": 1794290400,
-   "home": "Batı Banliyö F Blok, Daire 33",
-   "home_from": 1794290400,
-   "job": [
-    "Şan Öğretmeni",
-    "Miniakent Müzik Kursu · Miniakent Plaza 3, Kat 2",
-    "office",
-    "plaza3"
-   ],
-   "wp": "muzik",
-   "hobby": "Bisiklete binmek",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    0,
-    0
-   ]
-  },
-  {
    "handle": "@damlaharikagultekin",
    "arrive": 1794260040,
    "move": 1794290400,
@@ -183582,27 +182490,6 @@
    "hobby": "Satranç",
    "queue": 0,
    "left": 0
-  },
-  {
-   "handle": "@gaye.akcl",
-   "arrive": 1794348120,
-   "move": 1794376800,
-   "home": "Batı Banliyö D Blok, Daire 115",
-   "home_from": 1794376800,
-   "job": [
-    "Kuaför",
-    "Miniakent Güzellik Merkezi · Miniakent Plaza 4, Kat 8",
-    "office",
-    "plaza4"
-   ],
-   "wp": "guzellik",
-   "hobby": "Yemek yapmak",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    1,
-    1
-   ]
   },
   {
    "handle": "@caglayamaan",
@@ -190446,7 +189333,7 @@
    "left": 0
   },
   {
-   "handle": "@e.y.ld.n.m.z",
+   "handle": "@e.y.l_d.n.m.z",
    "arrive": 1794526200,
    "move": 1794549600,
    "home": "Doğu Banliyö E Blok, Daire 87",
@@ -190480,7 +189367,7 @@
    "left": 0
   },
   {
-   "handle": "@takisindantellisutyeni",
+   "handle": "@kuccukcengz",
    "arrive": 1794526200,
    "move": 1794549600,
    "home": "Doğu Banliyö J Blok, Daire 30",
@@ -190676,7 +189563,11 @@
    "wp": "organizasyon",
    "hobby": "Bahçe işleri",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@aygulsertbas",
@@ -191127,23 +190018,6 @@
    ],
    "wp": "organizasyon",
    "hobby": "Satranç",
-   "queue": 0,
-   "left": 0
-  },
-  {
-   "handle": "@whereiishappines",
-   "arrive": 1794526200,
-   "move": 1794549600,
-   "home": "Batı Banliyö F Blok, Daire 47",
-   "home_from": 1794549600,
-   "job": [
-    "Fitness Eğitmeni",
-    "Miniakent Fitness Kulübü · Miniakent Plaza 3, Kat 1",
-    "office",
-    "plaza3"
-   ],
-   "wp": "fitness",
-   "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0
   },
@@ -192509,27 +191383,6 @@
    "hobby": "Balık tutmak",
    "queue": 0,
    "left": 0
-  },
-  {
-   "handle": "@beydaisbilen",
-   "arrive": 1794526200,
-   "move": 1794549600,
-   "home": "Batı Banliyö F Blok, Daire 116",
-   "home_from": 1794549600,
-   "job": [
-    "İş Analisti",
-    "Miniakent Danışmanlık · Miniakent Plaza 2, Kat 12",
-    "office",
-    "plaza2"
-   ],
-   "wp": "danismanlik",
-   "hobby": "Resim yapmak",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    1,
-    1
-   ]
   },
   {
    "handle": "@zanteiks",
@@ -194809,23 +193662,6 @@
    "left": 0
   },
   {
-   "handle": "@nurettinshitpost",
-   "arrive": 1794607080,
-   "move": 1794636000,
-   "home": "Batı Banliyö F Blok, Daire 136",
-   "home_from": 1794636000,
-   "job": [
-    "İşe Alım Uzmanı",
-    "Miniakent İnsan Kaynakları · Miniakent Plaza 4, Kat 5",
-    "office",
-    "plaza4"
-   ],
-   "wp": "ik",
-   "hobby": "Fotoğraf çekmek",
-   "queue": 0,
-   "left": 0
-  },
-  {
    "handle": "@samimert_siler",
    "arrive": 1794607080,
    "move": 1794636000,
@@ -195200,27 +194036,6 @@
    "hobby": "Yemek yapmak",
    "queue": 0,
    "left": 0
-  },
-  {
-   "handle": "@cecentolgakartal1",
-   "arrive": 1794607080,
-   "move": 1794636000,
-   "home": "Balıkçı Koyu No 13",
-   "home_from": 1794636000,
-   "job": [
-    "Soğuk Depo Görevlisi",
-    "Miniakent Ton Balığı Fabrikası · Balıkçı Koyu",
-    "shop",
-    "ton_fabrika"
-   ],
-   "wp": "ton_fabrika",
-   "hobby": "Yüzmek",
-   "queue": 0,
-   "left": 0,
-   "look": [
-    3,
-    0
-   ]
   },
   {
    "handle": "@mrboombasitc",
@@ -195933,23 +194748,6 @@
    ]
   },
   {
-   "handle": "@spudixx",
-   "arrive": 1794607080,
-   "move": 1794636000,
-   "home": "Batı Banliyö H Blok, Daire 6",
-   "home_from": 1794636000,
-   "job": [
-    "Siber Güvenlik Uzmanı",
-    "Miniakent Gama Yazılım A.Ş. · Miniakent Plaza 4, Kat 4",
-    "office",
-    "plaza4"
-   ],
-   "wp": "gama_yazilim",
-   "hobby": "Satranç",
-   "queue": 0,
-   "left": 0
-  },
-  {
    "handle": "@mirsoo_8181",
    "arrive": 1794607080,
    "move": 1794636000,
@@ -196480,7 +195278,11 @@
    "wp": "ton_fabrika",
    "hobby": "Yüzmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@incimeliss_",
@@ -197165,7 +195967,11 @@
    "wp": "danismanlik",
    "hobby": "Bisiklete binmek",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
   },
   {
    "handle": "@adilefebasturkk",
@@ -197198,23 +196004,6 @@
    ],
    "wp": "organizasyon",
    "hobby": "Bahçe işleri",
-   "queue": 0,
-   "left": 0
-  },
-  {
-   "handle": "@ozbeekmantisii",
-   "arrive": 1794717180,
-   "move": 1794722400,
-   "home": "Batı Banliyö H Blok, Daire 11",
-   "home_from": 1794722400,
-   "job": [
-    "Organizasyon Uzmanı",
-    "Miniakent Organizasyon · Miniakent Plaza 4, Kat 7",
-    "office",
-    "plaza4"
-   ],
-   "wp": "organizasyon",
-   "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0
   },
@@ -197440,7 +196229,11 @@
    "wp": "muzik",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@omercinarnezirogullari",
@@ -198599,7 +197392,11 @@
    "wp": "dil",
    "hobby": "Satranç",
    "queue": 0,
-   "left": 0
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
   },
   {
    "handle": "@muhammedcankaya_",
@@ -199350,23 +198147,6 @@
    "left": 0
   },
   {
-   "handle": "@babystitchyyyy",
-   "arrive": 1794717180,
-   "move": 1794722400,
-   "home": "Batı Banliyö H Blok, Daire 39",
-   "home_from": 1794722400,
-   "job": [
-    "Tercüman",
-    "Miniakent Çeviri Bürosu · Miniakent Plaza 3, Kat 12",
-    "office",
-    "plaza3"
-   ],
-   "wp": "ceviri",
-   "hobby": "Yüzmek",
-   "queue": 0,
-   "left": 0
-  },
-  {
    "handle": "@vedatgc",
    "arrive": 1794717180,
    "move": 1794722400,
@@ -199388,23 +198168,6 @@
    ]
   },
   {
-   "handle": "@isa_gune.s",
-   "arrive": 1794717180,
-   "move": 1794722400,
-   "home": "Batı Banliyö H Blok, Daire 40",
-   "home_from": 1794722400,
-   "job": [
-    "Forklift Operatörü",
-    "Miniakent Fabrikası 4 · Sanayi Bölgesi",
-    "shop",
-    "fabrika_d"
-   ],
-   "wp": "fabrika_d",
-   "hobby": "Yemek yapmak",
-   "queue": 0,
-   "left": 0
-  },
-  {
    "handle": "@abdullahdmrl21",
    "arrive": 1794717180,
    "move": 1794722400,
@@ -199423,6 +198186,3403 @@
    "look": [
     3,
     0
+   ]
+  },
+  {
+   "handle": "@nrsimk",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Zeytin Sokağı No 1, Daire 18",
+   "home_from": 1794808800,
+   "job": [
+    "Mobil Uygulama Geliştirici",
+    "Miniakent Beta Yazılım A.Ş. · Miniakent Plaza 3, Kat 5",
+    "office",
+    "plaza3"
+   ],
+   "wp": "beta_yazilim",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@mami.35ww",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Zeytin Sokağı No 1, Daire 29",
+   "home_from": 1794808800,
+   "job": [
+    "Kurye",
+    "Miniakent Plaza",
+    "office",
+    "plaza"
+   ],
+   "wp": "plaza_hizmet",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@elife.aydinoglu1",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Zeytin Sokağı No 3, Daire 22",
+   "home_from": 1794808800,
+   "job": [
+    "Redaktör",
+    "Miniakent Yayınevi · Miniakent Plaza, Kat 11",
+    "office",
+    "plaza"
+   ],
+   "wp": "yayinevi",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@eren__nihqt",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Akasya Sokağı No 2, Daire 12",
+   "home_from": 1794808800,
+   "job": [
+    "Bekçi",
+    "Miniakent Yapı Mühendislik A.Ş. · Miniakent Arena şantiyesi",
+    "area",
+    "site"
+   ],
+   "wp": "santiye",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@omer.kck01",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Akasya Sokağı No 2, Daire 21",
+   "home_from": 1794808800,
+   "job": [
+    "Yazılımcı",
+    "Miniakent Alfa Yazılım A.Ş. · Miniakent Plaza, Kat 7",
+    "office",
+    "plaza"
+   ],
+   "wp": "yazilim",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@tunakimya",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Akasya Sokağı No 2, Daire 32",
+   "home_from": 1794808800,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Sigorta A.Ş. · Miniakent Plaza 2, Kat 2",
+    "office",
+    "plaza2"
+   ],
+   "wp": "sigorta",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@smyragunr",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Akasya Sokağı No 4, Daire 8",
+   "home_from": 1794808800,
+   "job": [
+    "Finans Analisti",
+    "Miniakent Yatırım Danışmanlığı · Miniakent Plaza 4, Kat 10",
+    "office",
+    "plaza4"
+   ],
+   "wp": "yatirim",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ibrahimmozerr",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö B Blok, Daire 27",
+   "home_from": 1794808800,
+   "job": [
+    "Moda Tasarımcısı",
+    "Miniakent Moda Evi · Miniakent Plaza 3, Kat 11",
+    "office",
+    "plaza3"
+   ],
+   "wp": "moda",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@bensabanruzgarakkus",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Balıkçı Koyu No 13",
+   "home_from": 1794808800,
+   "job": [
+    "Forklift Operatörü",
+    "Miniakent Ton Balığı Fabrikası · Balıkçı Koyu",
+    "shop",
+    "ton_fabrika"
+   ],
+   "wp": "ton_fabrika",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@emir17.08",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö B Blok, Daire 58",
+   "home_from": 1794808800,
+   "job": [
+    "Organizasyon Uzmanı",
+    "Miniakent Organizasyon · Miniakent Plaza 4, Kat 7",
+    "office",
+    "plaza4"
+   ],
+   "wp": "organizasyon",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@berkantzopa",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö B Blok, Daire 79",
+   "home_from": 1794808800,
+   "job": [
+    "Almanca Öğretmeni",
+    "Miniakent Dil Okulu · Miniakent Plaza 4, Kat 1",
+    "office",
+    "plaza4"
+   ],
+   "wp": "dil",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@lfrknn_",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö D Blok, Daire 119",
+   "home_from": 1794808800,
+   "job": [
+    "İş Analisti",
+    "Miniakent Danışmanlık · Miniakent Plaza 2, Kat 12",
+    "office",
+    "plaza2"
+   ],
+   "wp": "danismanlik",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@mirel_iste_tanimazsin",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö F Blok, Daire 46",
+   "home_from": 1794808800,
+   "job": [
+    "İçerik Yazarı",
+    "Miniakent Tasarım Stüdyosu · Miniakent Plaza, Kat 8",
+    "office",
+    "plaza"
+   ],
+   "wp": "tasarim",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@furkan1cann",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö F Blok, Daire 97",
+   "home_from": 1794808800,
+   "job": [
+    "İşe Alım Uzmanı",
+    "Miniakent İnsan Kaynakları · Miniakent Plaza 4, Kat 5",
+    "office",
+    "plaza4"
+   ],
+   "wp": "ik",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@eraysaglamm_25",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö F Blok, Daire 102",
+   "home_from": 1794808800,
+   "job": [
+    "Etkinlik Koordinatörü",
+    "Miniakent Organizasyon · Miniakent Plaza 4, Kat 7",
+    "office",
+    "plaza4"
+   ],
+   "wp": "organizasyon",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@htdhe_",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö F Blok, Daire 110",
+   "home_from": 1794808800,
+   "job": [
+    "Yazılımcı",
+    "Miniakent Gama Yazılım A.Ş. · Miniakent Plaza 4, Kat 4",
+    "office",
+    "plaza4"
+   ],
+   "wp": "gama_yazilim",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@namli_ikinciel",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö F Blok, Daire 118",
+   "home_from": 1794808800,
+   "job": [
+    "Laboratuvar Teknisyeni",
+    "Miniakent Ar-Ge Merkezi · Miniakent Plaza, Kat 12",
+    "office",
+    "plaza"
+   ],
+   "wp": "arge",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@can_oncu_",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö F Blok, Daire 140",
+   "home_from": 1794808800,
+   "job": [
+    "Spor Salonu Resepsiyonisti",
+    "Miniakent Fitness Kulübü · Miniakent Plaza 3, Kat 1",
+    "office",
+    "plaza3"
+   ],
+   "wp": "fitness",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@redhotmaraspepper",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö A Blok, Daire 27",
+   "home_from": 1794808800,
+   "job": [
+    "Sosyal Medya Uzmanı",
+    "Miniakent Tasarım Stüdyosu · Miniakent Plaza, Kat 8",
+    "office",
+    "plaza"
+   ],
+   "wp": "tasarim",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@zeynepzumrakaplan",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö A Blok, Daire 31",
+   "home_from": 1794808800,
+   "job": [
+    "Ses Teknisyeni",
+    "Miniakent Radyo · Miniakent Plaza 3, Kat 8",
+    "office",
+    "plaza3"
+   ],
+   "wp": "radyo",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@nurozturk.w",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö A Blok, Daire 71",
+   "home_from": 1794808800,
+   "job": [
+    "Moda Tasarımcısı",
+    "Miniakent Moda Evi · Miniakent Plaza 3, Kat 11",
+    "office",
+    "plaza3"
+   ],
+   "wp": "moda",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@aysee_nur_g",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Balıkçı Koyu No 18",
+   "home_from": 1794808800,
+   "job": [
+    "Kalite Kontrol Teknisyeni",
+    "Miniakent Ton Balığı Fabrikası · Balıkçı Koyu",
+    "shop",
+    "ton_fabrika"
+   ],
+   "wp": "ton_fabrika",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@mirqy.unlu",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö H Blok, Daire 27",
+   "home_from": 1794808800,
+   "job": [
+    "Dans Eğitmeni",
+    "Miniakent Dans Kursu · Miniakent Plaza 3, Kat 3",
+    "office",
+    "plaza3"
+   ],
+   "wp": "dans",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@c.ponzii",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö H Blok, Daire 45",
+   "home_from": 1794808800,
+   "job": [
+    "Stüdyo Asistanı",
+    "Miniakent Fotoğraf Stüdyosu · Miniakent Plaza 3, Kat 9",
+    "office",
+    "plaza3"
+   ],
+   "wp": "fotograf",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@busenazteke",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö C Blok, Daire 19",
+   "home_from": 1794808800,
+   "job": [
+    "Rezervasyon Uzmanı",
+    "Miniakent Turizm · Miniakent Plaza 2, Kat 7",
+    "office",
+    "plaza2"
+   ],
+   "wp": "turizm",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@aykutokk",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö H Blok, Daire 106",
+   "home_from": 1794808800,
+   "job": [
+    "Spiker",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
+   ],
+   "wp": "tv",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@whites0nshine",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö H Blok, Daire 126",
+   "home_from": 1794808800,
+   "job": [
+    "Hemşire",
+    "Miniakent Sağlık Merkezi · Miniakent Plaza, Kat 2",
+    "office",
+    "plaza"
+   ],
+   "wp": "saglik",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@selins_cattloverr",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö H Blok, Daire 128",
+   "home_from": 1794808800,
+   "job": [
+    "Redaktör",
+    "Miniakent Çeviri Bürosu · Miniakent Plaza 3, Kat 12",
+    "office",
+    "plaza3"
+   ],
+   "wp": "ceviri",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@o6.____.murat",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö H Blok, Daire 140",
+   "home_from": 1794808800,
+   "job": [
+    "Hukuk Danışmanı",
+    "Miniakent Hukuk Bürosu · Miniakent Plaza, Kat 6",
+    "office",
+    "plaza"
+   ],
+   "wp": "hukuk",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@kimlikbunalimii",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö C Blok, Daire 109",
+   "home_from": 1794808800,
+   "job": [
+    "Psikolog",
+    "Miniakent Sağlık Merkezi · Miniakent Plaza, Kat 2",
+    "office",
+    "plaza"
+   ],
+   "wp": "saglik",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@murderdrones_lover",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö C Blok, Daire 122",
+   "home_from": 1794808800,
+   "job": [
+    "Pilates Eğitmeni",
+    "Miniakent Fitness Kulübü · Miniakent Plaza 3, Kat 1",
+    "office",
+    "plaza3"
+   ],
+   "wp": "fitness",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@aysereyhansrdmr",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö J Blok, Daire 15",
+   "home_from": 1794808800,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Mali Müşavirlik · Miniakent Plaza 4, Kat 3",
+    "office",
+    "plaza4"
+   ],
+   "wp": "mali",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@ttalhaislr",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö E Blok, Daire 57",
+   "home_from": 1794808800,
+   "job": [
+    "Eğitim Danışmanı",
+    "Miniakent Dershanesi · Miniakent Plaza 2, Kat 6",
+    "office",
+    "plaza2"
+   ],
+   "wp": "dershane",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@selma.ustnn",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö E Blok, Daire 116",
+   "home_from": 1794808800,
+   "job": [
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
+   ],
+   "wp": "medya",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@yuzumebibaaaakkk",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö E Blok, Daire 131",
+   "home_from": 1794808800,
+   "job": [
+    "Spiker",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
+   ],
+   "wp": "tv",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@erenyldn_",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö J Blok, Daire 42",
+   "home_from": 1794808800,
+   "job": [
+    "Proje Uzmanı",
+    "Miniakent Mühendislik A.Ş. · Miniakent Plaza 2, Kat 10",
+    "office",
+    "plaza2"
+   ],
+   "wp": "muhendislik",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@hanifeecrin_ctn",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö J Blok, Daire 65",
+   "home_from": 1794808800,
+   "job": [
+    "Hukuk Danışmanı",
+    "Miniakent Avukatlık Bürosu · Miniakent Plaza 3, Kat 4",
+    "office",
+    "plaza3"
+   ],
+   "wp": "avukatlik",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@cayyolundannefretediyorum",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Balıkçı Koyu No 19",
+   "home_from": 1794808800,
+   "job": [
+    "Forklift Operatörü",
+    "Miniakent Gıda Ürünleri Fabrikası · Balıkçı Koyu",
+    "shop",
+    "gida_fabrika"
+   ],
+   "wp": "gida_fabrika",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@armntatr01",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö G Blok, Daire 77",
+   "home_from": 1794808800,
+   "job": [
+    "Fotoğrafçı",
+    "Miniakent Fotoğraf Stüdyosu · Miniakent Plaza 3, Kat 9",
+    "office",
+    "plaza3"
+   ],
+   "wp": "fotograf",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@moonthetherian",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö G Blok, Daire 89",
+   "home_from": 1794808800,
+   "job": [
+    "Güzellik Uzmanı",
+    "Miniakent Güzellik Merkezi · Miniakent Plaza 4, Kat 8",
+    "office",
+    "plaza4"
+   ],
+   "wp": "guzellik",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@istanbul_elifh",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö I Blok, Daire 12",
+   "home_from": 1794808800,
+   "job": [
+    "İş Analisti",
+    "Miniakent Danışmanlık · Miniakent Plaza 2, Kat 12",
+    "office",
+    "plaza2"
+   ],
+   "wp": "danismanlik",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@m.hamza27918",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö I Blok, Daire 79",
+   "home_from": 1794808800,
+   "job": [
+    "Yönetici Asistanı",
+    "Miniakent Holding · Miniakent Plaza 4, Kat 12",
+    "office",
+    "plaza4"
+   ],
+   "wp": "holding",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@doruk__ddgg",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö I Blok, Daire 83",
+   "home_from": 1794808800,
+   "job": [
+    "Ses Teknisyeni",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
+   ],
+   "wp": "tv",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@tataesswy",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö I Blok, Daire 113",
+   "home_from": 1794808800,
+   "job": [
+    "Yazılım Test Uzmanı",
+    "Miniakent Alfa Yazılım A.Ş. · Miniakent Plaza, Kat 7",
+    "office",
+    "plaza"
+   ],
+   "wp": "yazilim",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@l_lawliettsz",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö I Blok, Daire 115",
+   "home_from": 1794808800,
+   "job": [
+    "Fizyoterapist",
+    "Miniakent Sağlık Merkezi · Miniakent Plaza, Kat 2",
+    "office",
+    "plaza"
+   ],
+   "wp": "saglik",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@medinek.7",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Doğu Banliyö I Blok, Daire 142",
+   "home_from": 1794808800,
+   "job": [
+    "Vardiya Amiri",
+    "Miniakent Fabrikası 4 · Sanayi Bölgesi",
+    "shop",
+    "fabrika_d"
+   ],
+   "wp": "fabrika_d",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@elfnz_mrt",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö B Blok, Daire 4",
+   "home_from": 1794808800,
+   "job": [
+    "Pilates Eğitmeni",
+    "Miniakent Fitness Kulübü · Miniakent Plaza 3, Kat 1",
+    "office",
+    "plaza3"
+   ],
+   "wp": "fitness",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@aligokhn.0",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö D Blok, Daire 72",
+   "home_from": 1794808800,
+   "job": [
+    "Mimar",
+    "Miniakent Yapı Mühendislik A.Ş. · Miniakent Arena şantiyesi",
+    "area",
+    "site"
+   ],
+   "wp": "santiye",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@mirac_oppa_faniii",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö B Blok, Daire 139",
+   "home_from": 1794808800,
+   "job": [
+    "Kalite Kontrol Uzmanı",
+    "Miniakent Fabrikası 3 · Sanayi Bölgesi",
+    "shop",
+    "fabrika_c"
+   ],
+   "wp": "fabrika_c",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@bulutxxd",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö D Blok, Daire 73",
+   "home_from": 1794808800,
+   "job": [
+    "Klinik Asistanı",
+    "Miniakent Diş Kliniği · Miniakent Plaza 4, Kat 6",
+    "office",
+    "plaza4"
+   ],
+   "wp": "dis",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@buketyzggltnn",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö D Blok, Daire 79",
+   "home_from": 1794808800,
+   "job": [
+    "Tercüman",
+    "Miniakent Çeviri Bürosu · Miniakent Plaza 3, Kat 12",
+    "office",
+    "plaza3"
+   ],
+   "wp": "ceviri",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@eren._yavuzz",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö D Blok, Daire 115",
+   "home_from": 1794808800,
+   "job": [
+    "Ağ Uzmanı",
+    "Miniakent Telekom · Miniakent Plaza 2, Kat 11",
+    "office",
+    "plaza2"
+   ],
+   "wp": "telekom",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@daml.cc",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö F Blok, Daire 33",
+   "home_from": 1794808800,
+   "job": [
+    "Hukuk Danışmanı",
+    "Miniakent Avukatlık Bürosu · Miniakent Plaza 3, Kat 4",
+    "office",
+    "plaza3"
+   ],
+   "wp": "avukatlik",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@dervijx",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö F Blok, Daire 47",
+   "home_from": 1794808800,
+   "job": [
+    "Yazılımcı",
+    "Miniakent Gama Yazılım A.Ş. · Miniakent Plaza 4, Kat 4",
+    "office",
+    "plaza4"
+   ],
+   "wp": "gama_yazilim",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@fatimaishaa10",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö F Blok, Daire 116",
+   "home_from": 1794808800,
+   "job": [
+    "DJ",
+    "Miniakent Radyo · Miniakent Plaza 3, Kat 8",
+    "office",
+    "plaza3"
+   ],
+   "wp": "radyo",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@elvincmm",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö F Blok, Daire 136",
+   "home_from": 1794808800,
+   "job": [
+    "Almanca Öğretmeni",
+    "Miniakent Dil Okulu · Miniakent Plaza 4, Kat 1",
+    "office",
+    "plaza4"
+   ],
+   "wp": "dil",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@sudmu.my",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 6",
+   "home_from": 1794808800,
+   "job": [
+    "Etkinlik Koordinatörü",
+    "Miniakent Organizasyon · Miniakent Plaza 4, Kat 7",
+    "office",
+    "plaza4"
+   ],
+   "wp": "organizasyon",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@withsellinn",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 11",
+   "home_from": 1794808800,
+   "job": [
+    "Muhabir",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
+    "office",
+    "plaza3"
+   ],
+   "wp": "gazete",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@flzhlc",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 39",
+   "home_from": 1794808800,
+   "job": [
+    "Stüdyo Asistanı",
+    "Miniakent Fotoğraf Stüdyosu · Miniakent Plaza 3, Kat 9",
+    "office",
+    "plaza3"
+   ],
+   "wp": "fotograf",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@arda_alphan",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 40",
+   "home_from": 1794808800,
+   "job": [
+    "Diş Teknisyeni",
+    "Miniakent Diş Kliniği · Miniakent Plaza 4, Kat 6",
+    "office",
+    "plaza4"
+   ],
+   "wp": "dis",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@hanefi_parlak",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 40",
+   "home_from": 1794808800,
+   "job": [
+    "Kameraman",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
+   ],
+   "wp": "tv",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@halisvnl",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 40",
+   "home_from": 1794808800,
+   "job": [
+    "Reklamcı",
+    "Miniakent Reklam Ajansı · Miniakent Plaza 4, Kat 2",
+    "office",
+    "plaza4"
+   ],
+   "wp": "reklam",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@mlkd_beren",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 41",
+   "home_from": 1794808800,
+   "job": [
+    "Pilates Eğitmeni",
+    "Miniakent Fitness Kulübü · Miniakent Plaza 3, Kat 1",
+    "office",
+    "plaza3"
+   ],
+   "wp": "fitness",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@humoli_41",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 41",
+   "home_from": 1794808800,
+   "job": [
+    "Radyo Programcısı",
+    "Miniakent Radyo · Miniakent Plaza 3, Kat 8",
+    "office",
+    "plaza3"
+   ],
+   "wp": "radyo",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@acca.l1a",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 41",
+   "home_from": 1794808800,
+   "job": [
+    "Spor Salonu Resepsiyonisti",
+    "Miniakent Fitness Kulübü · Miniakent Plaza 3, Kat 1",
+    "office",
+    "plaza3"
+   ],
+   "wp": "fitness",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@b.alikayaoglu1",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 41",
+   "home_from": 1794808800,
+   "job": [
+    "Müşteri Temsilcisi",
+    "Miniakent Ticaret A.Ş. · Miniakent Plaza, Kat 10",
+    "office",
+    "plaza"
+   ],
+   "wp": "ticaret",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@hasannargul",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 42",
+   "home_from": 1794808800,
+   "job": [
+    "Mobil Uygulama Geliştirici",
+    "Miniakent Beta Yazılım A.Ş. · Miniakent Plaza 3, Kat 5",
+    "office",
+    "plaza3"
+   ],
+   "wp": "beta_yazilim",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@fn.dmz",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 42",
+   "home_from": 1794808800,
+   "job": [
+    "Seramik Sanatçısı",
+    "Miniakent Sanat Atölyesi · Miniakent Plaza 3, Kat 10",
+    "office",
+    "plaza3"
+   ],
+   "wp": "sanat",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@verdayldirim",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 42",
+   "home_from": 1794808800,
+   "job": [
+    "Depo Görevlisi",
+    "Miniakent Fabrikası 4 · Sanayi Bölgesi",
+    "shop",
+    "fabrika_d"
+   ],
+   "wp": "fabrika_d",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@damlamklc",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 42",
+   "home_from": 1794808800,
+   "job": [
+    "İngilizce Öğretmeni",
+    "Miniakent Dil Okulu · Miniakent Plaza 4, Kat 1",
+    "office",
+    "plaza4"
+   ],
+   "wp": "dil",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@elaclk.34",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 43",
+   "home_from": 1794808800,
+   "job": [
+    "Finans Analisti",
+    "Miniakent Yatırım Danışmanlığı · Miniakent Plaza 4, Kat 10",
+    "office",
+    "plaza4"
+   ],
+   "wp": "yatirim",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@_canerete34",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 43",
+   "home_from": 1794808800,
+   "job": [
+    "Spor Hocası",
+    "Miniakent Spor Salonu · Miniakent Plaza, Kat 1",
+    "office",
+    "plaza"
+   ],
+   "wp": "spor",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@kavurma.1",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 43",
+   "home_from": 1794808800,
+   "job": [
+    "Heykeltıraş",
+    "Miniakent Sanat Atölyesi · Miniakent Plaza 3, Kat 10",
+    "office",
+    "plaza3"
+   ],
+   "wp": "sanat",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@mnixksk",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 43",
+   "home_from": 1794808800,
+   "job": [
+    "Etkinlik Koordinatörü",
+    "Miniakent Organizasyon · Miniakent Plaza 4, Kat 7",
+    "office",
+    "plaza4"
+   ],
+   "wp": "organizasyon",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@bervenaz_aydinn",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 44",
+   "home_from": 1794808800,
+   "job": [
+    "Diş Teknisyeni",
+    "Miniakent Diş Kliniği · Miniakent Plaza 4, Kat 6",
+    "office",
+    "plaza4"
+   ],
+   "wp": "dis",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@benezeldenberidir1881",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Balıkçı Koyu No 20",
+   "home_from": 1794808800,
+   "job": [
+    "Depo Görevlisi",
+    "Miniakent Gıda Ürünleri Fabrikası · Balıkçı Koyu",
+    "shop",
+    "gida_fabrika"
+   ],
+   "wp": "gida_fabrika",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@as_ya4779",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 44",
+   "home_from": 1794808800,
+   "job": [
+    "Emlak Danışmanı",
+    "Miniakent Gayrimenkul · Miniakent Plaza 2, Kat 9",
+    "office",
+    "plaza2"
+   ],
+   "wp": "gayrimenkul",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@mete.9552g",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 44",
+   "home_from": 1794808800,
+   "job": [
+    "Hukuk Danışmanı",
+    "Miniakent Avukatlık Bürosu · Miniakent Plaza 3, Kat 4",
+    "office",
+    "plaza3"
+   ],
+   "wp": "avukatlik",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@taktirsiz",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 44",
+   "home_from": 1794808800,
+   "job": [
+    "Tercüman",
+    "Miniakent Çeviri Bürosu · Miniakent Plaza 3, Kat 12",
+    "office",
+    "plaza3"
+   ],
+   "wp": "ceviri",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@melikeewi",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 45",
+   "home_from": 1794808800,
+   "job": [
+    "Radyo Programcısı",
+    "Miniakent Radyo · Miniakent Plaza 3, Kat 8",
+    "office",
+    "plaza3"
+   ],
+   "wp": "radyo",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@senaygibi",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 45",
+   "home_from": 1794808800,
+   "job": [
+    "Operasyon Uzmanı",
+    "Miniakent Lojistik A.Ş. · Miniakent Plaza 2, Kat 3",
+    "office",
+    "plaza2"
+   ],
+   "wp": "lojistik",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@rasityillmaz",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 45",
+   "home_from": 1794808800,
+   "job": [
+    "İç Mimar",
+    "Miniakent Mimarlık Atölyesi · Miniakent Plaza, Kat 5",
+    "office",
+    "plaza"
+   ],
+   "wp": "mimarlik",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@keepingupwiththe.ozii",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 45",
+   "home_from": 1794808800,
+   "job": [
+    "Kameraman",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
+   ],
+   "wp": "tv",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@yuce_heromahed_sabeti",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 46",
+   "home_from": 1794808800,
+   "job": [
+    "Etkinlik Koordinatörü",
+    "Miniakent Organizasyon · Miniakent Plaza 4, Kat 7",
+    "office",
+    "plaza4"
+   ],
+   "wp": "organizasyon",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ecrin_81114",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 46",
+   "home_from": 1794808800,
+   "job": [
+    "Hukuk Danışmanı",
+    "Miniakent Avukatlık Bürosu · Miniakent Plaza 3, Kat 4",
+    "office",
+    "plaza3"
+   ],
+   "wp": "avukatlik",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@furkanevmez",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 46",
+   "home_from": 1794808800,
+   "job": [
+    "Klinik Asistanı",
+    "Miniakent Diş Kliniği · Miniakent Plaza 4, Kat 6",
+    "office",
+    "plaza4"
+   ],
+   "wp": "dis",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@ibrahim75770",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 46",
+   "home_from": 1794808800,
+   "job": [
+    "Veri Analisti",
+    "Miniakent Veri Analitiği A.Ş. · Miniakent Plaza 4, Kat 11",
+    "office",
+    "plaza4"
+   ],
+   "wp": "veri",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@muhammedb117",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 47",
+   "home_from": 1794808800,
+   "job": [
+    "Heykeltıraş",
+    "Miniakent Sanat Atölyesi · Miniakent Plaza 3, Kat 10",
+    "office",
+    "plaza3"
+   ],
+   "wp": "sanat",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@redsungame",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 47",
+   "home_from": 1794808800,
+   "job": [
+    "Fitness Eğitmeni",
+    "Miniakent Fitness Kulübü · Miniakent Plaza 3, Kat 1",
+    "office",
+    "plaza3"
+   ],
+   "wp": "fitness",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@atakanmerly",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 47",
+   "home_from": 1794808800,
+   "job": [
+    "Paketleme Görevlisi",
+    "Miniakent Fabrikası 4 · Sanayi Bölgesi",
+    "shop",
+    "fabrika_d"
+   ],
+   "wp": "fabrika_d",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@emirfurkanmaden",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 47",
+   "home_from": 1794808800,
+   "job": [
+    "Reklamcı",
+    "Miniakent Reklam Ajansı · Miniakent Plaza 4, Kat 2",
+    "office",
+    "plaza4"
+   ],
+   "wp": "reklam",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@jrke_ro92025",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 48",
+   "home_from": 1794808800,
+   "job": [
+    "Makine Operatörü",
+    "Miniakent Fabrikası 4 · Sanayi Bölgesi",
+    "shop",
+    "fabrika_d"
+   ],
+   "wp": "fabrika_d",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@cerennppolat",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 48",
+   "home_from": 1794808800,
+   "job": [
+    "İşe Alım Uzmanı",
+    "Miniakent İnsan Kaynakları · Miniakent Plaza 4, Kat 5",
+    "office",
+    "plaza4"
+   ],
+   "wp": "ik",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@d3fne_es4n",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 48",
+   "home_from": 1794808800,
+   "job": [
+    "Çevirmen",
+    "Miniakent Yayınevi · Miniakent Plaza, Kat 11",
+    "office",
+    "plaza"
+   ],
+   "wp": "yayinevi",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@azonazocano",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 48",
+   "home_from": 1794808800,
+   "job": [
+    "Grafik Tasarımcı",
+    "Miniakent Reklam Ajansı · Miniakent Plaza 4, Kat 2",
+    "office",
+    "plaza4"
+   ],
+   "wp": "reklam",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@cwylinnnss",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 49",
+   "home_from": 1794808800,
+   "job": [
+    "Değerleme Uzmanı",
+    "Miniakent Gayrimenkul · Miniakent Plaza 2, Kat 9",
+    "office",
+    "plaza2"
+   ],
+   "wp": "gayrimenkul",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@planeairlines8227",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 49",
+   "home_from": 1794808800,
+   "job": [
+    "Dans Eğitmeni",
+    "Miniakent Dans Kursu · Miniakent Plaza 3, Kat 3",
+    "office",
+    "plaza3"
+   ],
+   "wp": "dans",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@wq_ahmetmurat",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 49",
+   "home_from": 1794808800,
+   "job": [
+    "Diş Teknisyeni",
+    "Miniakent Diş Kliniği · Miniakent Plaza 4, Kat 6",
+    "office",
+    "plaza4"
+   ],
+   "wp": "dis",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@cagriikraa",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 49",
+   "home_from": 1794808800,
+   "job": [
+    "Ses Teknisyeni",
+    "Miniakent Radyo · Miniakent Plaza 3, Kat 8",
+    "office",
+    "plaza3"
+   ],
+   "wp": "radyo",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@arhatozkann",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Balıkçı Koyu No 21",
+   "home_from": 1794808800,
+   "job": [
+    "Soğuk Depo Görevlisi",
+    "Miniakent Ton Balığı Fabrikası · Balıkçı Koyu",
+    "shop",
+    "ton_fabrika"
+   ],
+   "wp": "ton_fabrika",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@aybuke_8ayay",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 50",
+   "home_from": 1794808800,
+   "job": [
+    "Kuaför",
+    "Miniakent Güzellik Merkezi · Miniakent Plaza 4, Kat 8",
+    "office",
+    "plaza4"
+   ],
+   "wp": "guzellik",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@ieveryy",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 50",
+   "home_from": 1794808800,
+   "job": [
+    "Veri Analisti",
+    "Miniakent Veri Analitiği A.Ş. · Miniakent Plaza 4, Kat 11",
+    "office",
+    "plaza4"
+   ],
+   "wp": "veri",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@abdulrezzaktoprak",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 50",
+   "home_from": 1794808800,
+   "job": [
+    "Mali Müşavir",
+    "Miniakent Mali Müşavirlik · Miniakent Plaza 4, Kat 3",
+    "office",
+    "plaza4"
+   ],
+   "wp": "mali",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@muratt_ates",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 50",
+   "home_from": 1794808800,
+   "job": [
+    "Almanca Öğretmeni",
+    "Miniakent Dil Okulu · Miniakent Plaza 4, Kat 1",
+    "office",
+    "plaza4"
+   ],
+   "wp": "dil",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@kardelenerdan1903",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 51",
+   "home_from": 1794808800,
+   "job": [
+    "Çevirmen",
+    "Miniakent Yayınevi · Miniakent Plaza, Kat 11",
+    "office",
+    "plaza"
+   ],
+   "wp": "yayinevi",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@sinem.kose0028",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 51",
+   "home_from": 1794808800,
+   "job": [
+    "İdari İşler Uzmanı",
+    "Miniakent Holding · Miniakent Plaza 4, Kat 12",
+    "office",
+    "plaza4"
+   ],
+   "wp": "holding",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@its___badee",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 51",
+   "home_from": 1794808800,
+   "job": [
+    "Klinik Asistanı",
+    "Miniakent Diş Kliniği · Miniakent Plaza 4, Kat 6",
+    "office",
+    "plaza4"
+   ],
+   "wp": "dis",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@efilimismi",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 51",
+   "home_from": 1794808800,
+   "job": [
+    "Redaktör",
+    "Miniakent Çeviri Bürosu · Miniakent Plaza 3, Kat 12",
+    "office",
+    "plaza3"
+   ],
+   "wp": "ceviri",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@seruim_s",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 52",
+   "home_from": 1794808800,
+   "job": [
+    "Veri Analisti",
+    "Miniakent Veri Analitiği A.Ş. · Miniakent Plaza 4, Kat 11",
+    "office",
+    "plaza4"
+   ],
+   "wp": "veri",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@kevsershn09",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 52",
+   "home_from": 1794808800,
+   "job": [
+    "Finans Analisti",
+    "Miniakent Yatırım Danışmanlığı · Miniakent Plaza 4, Kat 10",
+    "office",
+    "plaza4"
+   ],
+   "wp": "yatirim",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@xkaev1",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 52",
+   "home_from": 1794808800,
+   "job": [
+    "Güzellik Uzmanı",
+    "Miniakent Güzellik Merkezi · Miniakent Plaza 4, Kat 8",
+    "office",
+    "plaza4"
+   ],
+   "wp": "guzellik",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@hsahin350",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 52",
+   "home_from": 1794808800,
+   "job": [
+    "Güzellik Uzmanı",
+    "Miniakent Güzellik Merkezi · Miniakent Plaza 4, Kat 8",
+    "office",
+    "plaza4"
+   ],
+   "wp": "guzellik",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@bekirefecivelek",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 53",
+   "home_from": 1794808800,
+   "job": [
+    "Moda Tasarımcısı",
+    "Miniakent Moda Evi · Miniakent Plaza 3, Kat 11",
+    "office",
+    "plaza3"
+   ],
+   "wp": "moda",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@cerrahpasalieren_",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 53",
+   "home_from": 1794808800,
+   "job": [
+    "Çevirmen",
+    "Miniakent Yayınevi · Miniakent Plaza, Kat 11",
+    "office",
+    "plaza"
+   ],
+   "wp": "yayinevi",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@muhalleebiogglani",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 53",
+   "home_from": 1794808800,
+   "job": [
+    "Vardiya Amiri",
+    "Miniakent Fabrikası 3 · Sanayi Bölgesi",
+    "shop",
+    "fabrika_c"
+   ],
+   "wp": "fabrika_c",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@rana_kc0201",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 53",
+   "home_from": 1794808800,
+   "job": [
+    "Koreograf",
+    "Miniakent Dans Kursu · Miniakent Plaza 3, Kat 3",
+    "office",
+    "plaza3"
+   ],
+   "wp": "dans",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@yusuf.altas42",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 54",
+   "home_from": 1794808800,
+   "job": [
+    "Mali Müşavir",
+    "Miniakent Mali Müşavirlik · Miniakent Plaza 4, Kat 3",
+    "office",
+    "plaza4"
+   ],
+   "wp": "mali",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@emredirici",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 54",
+   "home_from": 1794808800,
+   "job": [
+    "Heykeltıraş",
+    "Miniakent Sanat Atölyesi · Miniakent Plaza 3, Kat 10",
+    "office",
+    "plaza3"
+   ],
+   "wp": "sanat",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@ramazan_anit",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 54",
+   "home_from": 1794808800,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Mali Müşavirlik · Miniakent Plaza 4, Kat 3",
+    "office",
+    "plaza4"
+   ],
+   "wp": "mali",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@semiha_naz_bzkrtt",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 54",
+   "home_from": 1794808800,
+   "job": [
+    "Editör",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
+    "office",
+    "plaza3"
+   ],
+   "wp": "gazete",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@eslemm5158",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 55",
+   "home_from": 1794808800,
+   "job": [
+    "Müşteri Hizmetleri Uzmanı",
+    "Miniakent E-Ticaret A.Ş. · Miniakent Plaza 2, Kat 8",
+    "office",
+    "plaza2"
+   ],
+   "wp": "eticaret",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@paraylaedit",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 55",
+   "home_from": 1794808800,
+   "job": [
+    "Klinik Asistanı",
+    "Miniakent Diş Kliniği · Miniakent Plaza 4, Kat 6",
+    "office",
+    "plaza4"
+   ],
+   "wp": "dis",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@yusufatih35",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 55",
+   "home_from": 1794808800,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Mali Müşavirlik · Miniakent Plaza 4, Kat 3",
+    "office",
+    "plaza4"
+   ],
+   "wp": "mali",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@06_rabiss",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 55",
+   "home_from": 1794808800,
+   "job": [
+    "Web Tasarımcı",
+    "Miniakent Gama Yazılım A.Ş. · Miniakent Plaza 4, Kat 4",
+    "office",
+    "plaza4"
+   ],
+   "wp": "gama_yazilim",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@elif_nil_17",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 56",
+   "home_from": 1794808800,
+   "job": [
+    "Finans Analisti",
+    "Miniakent Yatırım Danışmanlığı · Miniakent Plaza 4, Kat 10",
+    "office",
+    "plaza4"
+   ],
+   "wp": "yatirim",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@sensizdahabetterim",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 56",
+   "home_from": 1794808800,
+   "job": [
+    "Web Tasarımcı",
+    "Miniakent Gama Yazılım A.Ş. · Miniakent Plaza 4, Kat 4",
+    "office",
+    "plaza4"
+   ],
+   "wp": "gama_yazilim",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@mavi.nazif",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 56",
+   "home_from": 1794808800,
+   "job": [
+    "Paketleme Görevlisi",
+    "Miniakent Fabrikası 4 · Sanayi Bölgesi",
+    "shop",
+    "fabrika_d"
+   ],
+   "wp": "fabrika_d",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@suleyman__uysal",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 56",
+   "home_from": 1794808800,
+   "job": [
+    "Çaycı",
+    "Miniakent Yapı Mühendislik A.Ş. · Miniakent Arena şantiyesi",
+    "area",
+    "site"
+   ],
+   "wp": "santiye",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@melih_surucuu",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 57",
+   "home_from": 1794808800,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Mali Müşavirlik · Miniakent Plaza 4, Kat 3",
+    "office",
+    "plaza4"
+   ],
+   "wp": "mali",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@maksatcg.com.tr",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 57",
+   "home_from": 1794808800,
+   "job": [
+    "Üretim İşçisi",
+    "Miniakent Fabrikası 4 · Sanayi Bölgesi",
+    "shop",
+    "fabrika_d"
+   ],
+   "wp": "fabrika_d",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ulanberenq17",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 57",
+   "home_from": 1794808800,
+   "job": [
+    "Ses Teknisyeni",
+    "Miniakent Radyo · Miniakent Plaza 3, Kat 8",
+    "office",
+    "plaza3"
+   ],
+   "wp": "radyo",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@bebzazu",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 57",
+   "home_from": 1794808800,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Muhasebe · Miniakent Plaza, Kat 4",
+    "office",
+    "plaza"
+   ],
+   "wp": "muhasebe",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@eymenbiliir_",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 58",
+   "home_from": 1794808800,
+   "job": [
+    "Redaktör",
+    "Miniakent Çeviri Bürosu · Miniakent Plaza 3, Kat 12",
+    "office",
+    "plaza3"
+   ],
+   "wp": "ceviri",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@torbalihaberleri",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 58",
+   "home_from": 1794808800,
+   "job": [
+    "Almanca Öğretmeni",
+    "Miniakent Dil Okulu · Miniakent Plaza 4, Kat 1",
+    "office",
+    "plaza4"
+   ],
+   "wp": "dil",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@efsuuuus",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 58",
+   "home_from": 1794808800,
+   "job": [
+    "Organizasyon Uzmanı",
+    "Miniakent Organizasyon · Miniakent Plaza 4, Kat 7",
+    "office",
+    "plaza4"
+   ],
+   "wp": "organizasyon",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ugur_canyilmaz90",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 58",
+   "home_from": 1794808800,
+   "job": [
+    "Hasar Uzmanı",
+    "Miniakent Sigorta A.Ş. · Miniakent Plaza 2, Kat 2",
+    "office",
+    "plaza2"
+   ],
+   "wp": "sigorta",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@afk_scropy",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 59",
+   "home_from": 1794808800,
+   "job": [
+    "Seyahat Danışmanı",
+    "Miniakent Turizm · Miniakent Plaza 2, Kat 7",
+    "office",
+    "plaza2"
+   ],
+   "wp": "turizm",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@07ozdemiir",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 59",
+   "home_from": 1794808800,
+   "job": [
+    "Kameraman",
+    "Miniakent TV · Miniakent Plaza 3, Kat 7",
+    "office",
+    "plaza3"
+   ],
+   "wp": "tv",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@yusuf_v5mp",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 59",
+   "home_from": 1794808800,
+   "job": [
+    "Gazeteci",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
+    "office",
+    "plaza3"
+   ],
+   "wp": "gazete",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@emir__gztk",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 59",
+   "home_from": 1794808800,
+   "job": [
+    "Yoga Eğitmeni",
+    "Miniakent Spor Salonu · Miniakent Plaza, Kat 1",
+    "office",
+    "plaza"
+   ],
+   "wp": "spor",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@xingrbse",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 60",
+   "home_from": 1794808800,
+   "job": [
+    "Hasar Uzmanı",
+    "Miniakent Sigorta A.Ş. · Miniakent Plaza 2, Kat 2",
+    "office",
+    "plaza2"
+   ],
+   "wp": "sigorta",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@eymenkovmen1907",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 60",
+   "home_from": 1794808800,
+   "job": [
+    "İK Uzmanı",
+    "Miniakent İnsan Kaynakları · Miniakent Plaza 4, Kat 5",
+    "office",
+    "plaza4"
+   ],
+   "wp": "ik",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@nida_denliii",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 60",
+   "home_from": 1794808800,
+   "job": [
+    "3B Sanatçı",
+    "Miniakent Oyun Stüdyosu · Miniakent Plaza 2, Kat 5",
+    "office",
+    "plaza2"
+   ],
+   "wp": "oyun",
+   "hobby": "Kitap okumak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@emirhancelebi77",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 60",
+   "home_from": 1794808800,
+   "job": [
+    "Yazılımcı",
+    "Miniakent Beta Yazılım A.Ş. · Miniakent Plaza 3, Kat 5",
+    "office",
+    "plaza3"
+   ],
+   "wp": "beta_yazilim",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@felekosman2332",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 61",
+   "home_from": 1794808800,
+   "job": [
+    "Forklift Operatörü",
+    "Miniakent Fabrikası 3 · Sanayi Bölgesi",
+    "shop",
+    "fabrika_c"
+   ],
+   "wp": "fabrika_c",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@duruangel2000",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 61",
+   "home_from": 1794808800,
+   "job": [
+    "Web Tasarımcı",
+    "Miniakent Gama Yazılım A.Ş. · Miniakent Plaza 4, Kat 4",
+    "office",
+    "plaza4"
+   ],
+   "wp": "gama_yazilim",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@dyt.senagozde",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 61",
+   "home_from": 1794808800,
+   "job": [
+    "Finans Analisti",
+    "Miniakent Yatırım Danışmanlığı · Miniakent Plaza 4, Kat 10",
+    "office",
+    "plaza4"
+   ],
+   "wp": "yatirim",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@kosif_emre",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 61",
+   "home_from": 1794808800,
+   "job": [
+    "Mali Müşavir",
+    "Miniakent Mali Müşavirlik · Miniakent Plaza 4, Kat 3",
+    "office",
+    "plaza4"
+   ],
+   "wp": "mali",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@edanr_20",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 62",
+   "home_from": 1794808800,
+   "job": [
+    "İK Uzmanı",
+    "Miniakent İnsan Kaynakları · Miniakent Plaza 4, Kat 5",
+    "office",
+    "plaza4"
+   ],
+   "wp": "ik",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@zeyzeyzeynep24",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 62",
+   "home_from": 1794808800,
+   "job": [
+    "İşe Alım Uzmanı",
+    "Miniakent İnsan Kaynakları · Miniakent Plaza 4, Kat 5",
+    "office",
+    "plaza4"
+   ],
+   "wp": "ik",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@mehmetbayinn",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 62",
+   "home_from": 1794808800,
+   "job": [
+    "E-Ticaret Uzmanı",
+    "Miniakent E-Ticaret A.Ş. · Miniakent Plaza 2, Kat 8",
+    "office",
+    "plaza2"
+   ],
+   "wp": "eticaret",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@cemilesvn",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 62",
+   "home_from": 1794808800,
+   "job": [
+    "Terzi",
+    "Miniakent Moda Evi · Miniakent Plaza 3, Kat 11",
+    "office",
+    "plaza3"
+   ],
+   "wp": "moda",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
+   ]
+  },
+  {
+   "handle": "@tahatiryaki12",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 63",
+   "home_from": 1794808800,
+   "job": [
+    "Editör",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
+    "office",
+    "plaza3"
+   ],
+   "wp": "gazete",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@m.emir_213",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 63",
+   "home_from": 1794808800,
+   "job": [
+    "Hasar Uzmanı",
+    "Miniakent Sigorta A.Ş. · Miniakent Plaza 2, Kat 2",
+    "office",
+    "plaza2"
+   ],
+   "wp": "sigorta",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    0,
+    0
+   ]
+  },
+  {
+   "handle": "@edanazkapanci",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 63",
+   "home_from": 1794808800,
+   "job": [
+    "Satış Uzmanı",
+    "Miniakent Ticaret A.Ş. · Miniakent Plaza, Kat 10",
+    "office",
+    "plaza"
+   ],
+   "wp": "ticaret",
+   "hobby": "Bahçe işleri",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@serkanv",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 63",
+   "home_from": 1794808800,
+   "job": [
+    "Etkinlik Koordinatörü",
+    "Miniakent Organizasyon · Miniakent Plaza 4, Kat 7",
+    "office",
+    "plaza4"
+   ],
+   "wp": "organizasyon",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@s.sarmanow",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 64",
+   "home_from": 1794808800,
+   "job": [
+    "Finans Analisti",
+    "Miniakent Yatırım Danışmanlığı · Miniakent Plaza 4, Kat 10",
+    "office",
+    "plaza4"
+   ],
+   "wp": "yatirim",
+   "hobby": "Uçurtma uçurmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@enerjitasarufuu",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 64",
+   "home_from": 1794808800,
+   "job": [
+    "İngilizce Öğretmeni",
+    "Miniakent Dil Okulu · Miniakent Plaza 4, Kat 1",
+    "office",
+    "plaza4"
+   ],
+   "wp": "dil",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@gkdnzoz",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 64",
+   "home_from": 1794808800,
+   "job": [
+    "Veri Analisti",
+    "Miniakent Beta Yazılım A.Ş. · Miniakent Plaza 3, Kat 5",
+    "office",
+    "plaza3"
+   ],
+   "wp": "beta_yazilim",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@zeyne_belabrn",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 64",
+   "home_from": 1794808800,
+   "job": [
+    "Eğitmen",
+    "Miniakent Bilişim Akademisi · Miniakent Plaza 4, Kat 9",
+    "office",
+    "plaza4"
+   ],
+   "wp": "akademi",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ebu.cehil123_",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 65",
+   "home_from": 1794808800,
+   "job": [
+    "Tıbbi Sekreter",
+    "Miniakent Sağlık Merkezi · Miniakent Plaza, Kat 2",
+    "office",
+    "plaza"
+   ],
+   "wp": "saglik",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@hsynsnjk",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 65",
+   "home_from": 1794808800,
+   "job": [
+    "Etkinlik Koordinatörü",
+    "Miniakent Organizasyon · Miniakent Plaza 4, Kat 7",
+    "office",
+    "plaza4"
+   ],
+   "wp": "organizasyon",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@umbralumbralar",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 65",
+   "home_from": 1794808800,
+   "job": [
+    "Organizasyon Uzmanı",
+    "Miniakent Organizasyon · Miniakent Plaza 4, Kat 7",
+    "office",
+    "plaza4"
+   ],
+   "wp": "organizasyon",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@yusfidar34_67_",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 65",
+   "home_from": 1794808800,
+   "job": [
+    "Çevirmen",
+    "Miniakent Ticaret A.Ş. · Miniakent Plaza, Kat 10",
+    "office",
+    "plaza"
+   ],
+   "wp": "ticaret",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@misigin_",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 66",
+   "home_from": 1794808800,
+   "job": [
+    "Bale Eğitmeni",
+    "Miniakent Dans Kursu · Miniakent Plaza 3, Kat 3",
+    "office",
+    "plaza3"
+   ],
+   "wp": "dans",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@eknnrmak",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 66",
+   "home_from": 1794808800,
+   "job": [
+    "Finans Analisti",
+    "Miniakent Yatırım Danışmanlığı · Miniakent Plaza 4, Kat 10",
+    "office",
+    "plaza4"
+   ],
+   "wp": "yatirim",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@berat.iyikasap",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 66",
+   "home_from": 1794808800,
+   "job": [
+    "Sosyal Medya Uzmanı",
+    "Miniakent Reklam Ajansı · Miniakent Plaza 4, Kat 2",
+    "office",
+    "plaza4"
+   ],
+   "wp": "reklam",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@can.egz",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 66",
+   "home_from": 1794808800,
+   "job": [
+    "Mobil Uygulama Geliştirici",
+    "Miniakent Beta Yazılım A.Ş. · Miniakent Plaza 3, Kat 5",
+    "office",
+    "plaza3"
+   ],
+   "wp": "beta_yazilim",
+   "hobby": "Yemek yapmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@_yusufislam_",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 67",
+   "home_from": 1794808800,
+   "job": [
+    "Veri Analisti",
+    "Miniakent Veri Analitiği A.Ş. · Miniakent Plaza 4, Kat 11",
+    "office",
+    "plaza4"
+   ],
+   "wp": "veri",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    3,
+    0
+   ]
+  },
+  {
+   "handle": "@_wolveren_",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 67",
+   "home_from": 1794808800,
+   "job": [
+    "Güzellik Uzmanı",
+    "Miniakent Güzellik Merkezi · Miniakent Plaza 4, Kat 8",
+    "office",
+    "plaza4"
+   ],
+   "wp": "guzellik",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@summ_ss_",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 67",
+   "home_from": 1794808800,
+   "job": [
+    "Hukuk Danışmanı",
+    "Miniakent Avukatlık Bürosu · Miniakent Plaza 3, Kat 4",
+    "office",
+    "plaza3"
+   ],
+   "wp": "avukatlik",
+   "hobby": "Kuşları izlemek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@ozcanmuslu",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 67",
+   "home_from": 1794808800,
+   "job": [
+    "Muhasebeci",
+    "Miniakent Yapı Mühendislik A.Ş. · Miniakent Arena şantiyesi",
+    "area",
+    "site"
+   ],
+   "wp": "santiye",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@hamzajujur17",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 68",
+   "home_from": 1794808800,
+   "job": [
+    "Kurgucu",
+    "Miniakent Medya Yapım · Miniakent Plaza 2, Kat 4",
+    "office",
+    "plaza2"
+   ],
+   "wp": "medya",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@aepp2_3",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 68",
+   "home_from": 1794808800,
+   "job": [
+    "İş Güvenliği Uzmanı",
+    "Miniakent Yapı Mühendislik A.Ş. · Miniakent Arena şantiyesi",
+    "area",
+    "site"
+   ],
+   "wp": "santiye",
+   "hobby": "Yüzmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@myalune.frost",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Balıkçı Koyu No 22",
+   "home_from": 1794808800,
+   "job": [
+    "Soğuk Depo Görevlisi",
+    "Miniakent Ton Balığı Fabrikası · Balıkçı Koyu",
+    "shop",
+    "ton_fabrika"
+   ],
+   "wp": "ton_fabrika",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@rba.slmz",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 68",
+   "home_from": 1794808800,
+   "job": [
+    "Dans Eğitmeni",
+    "Miniakent Dans Kursu · Miniakent Plaza 3, Kat 3",
+    "office",
+    "plaza3"
+   ],
+   "wp": "dans",
+   "hobby": "Balık tutmak",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@zafer_buyukkupcu",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 68",
+   "home_from": 1794808800,
+   "job": [
+    "Ses Teknisyeni",
+    "Miniakent Radyo · Miniakent Plaza 3, Kat 8",
+    "office",
+    "plaza3"
+   ],
+   "wp": "radyo",
+   "hobby": "Fotoğraf çekmek",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    4,
+    0
+   ]
+  },
+  {
+   "handle": "@jenniekalpsude",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 69",
+   "home_from": 1794808800,
+   "job": [
+    "Fotoğrafçı",
+    "Miniakent Fotoğraf Stüdyosu · Miniakent Plaza 3, Kat 9",
+    "office",
+    "plaza3"
+   ],
+   "wp": "fotograf",
+   "hobby": "Satranç",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@bslrfrht",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 69",
+   "home_from": 1794808800,
+   "job": [
+    "Finans Analisti",
+    "Miniakent Yatırım Danışmanlığı · Miniakent Plaza 4, Kat 10",
+    "office",
+    "plaza4"
+   ],
+   "wp": "yatirim",
+   "hobby": "Bisiklete binmek",
+   "queue": 0,
+   "left": 0
+  },
+  {
+   "handle": "@sudeontrkk",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 69",
+   "home_from": 1794808800,
+   "job": [
+    "Muhabir",
+    "Miniakent Gazetesi · Miniakent Plaza 3, Kat 6",
+    "office",
+    "plaza3"
+   ],
+   "wp": "gazete",
+   "hobby": "Resim yapmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    2,
+    1
+   ]
+  },
+  {
+   "handle": "@hazalrcaa_3137",
+   "arrive": 1794780000,
+   "move": 1794808800,
+   "home": "Batı Banliyö H Blok, Daire 69",
+   "home_from": 1794808800,
+   "job": [
+    "Organizasyon Uzmanı",
+    "Miniakent Organizasyon · Miniakent Plaza 4, Kat 7",
+    "office",
+    "plaza4"
+   ],
+   "wp": "organizasyon",
+   "hobby": "Gitar çalmak",
+   "queue": 0,
+   "left": 0,
+   "look": [
+    1,
+    1
    ]
   }
  ]
