@@ -626,7 +626,11 @@ try {
 		};
 		// "Boğulmaya git" (kullanıcı, 2026-11-15): kendi karakteri sahilde belirir, boğulur, cankurtaran kurtarır; herkes
 		// görür (oyun bogulma/'ya 3 sn'de bir bakar: scripts/bogulma.gd). Kural: yalnız karakterin sahibi, sunucu zamanı.
-		window.miniakentBogul = () => karakter ? set(ref(db, "bogulma/" + anahtar(karakter)), serverTimestamp()) : Promise.resolve();
+		// 2026-11-15: başkasının kartında "Boğulmaya gönder" (h): e-postası doğrulanmış her oyuncu yazar
+		window.miniakentBogul = (h) => {
+			const k = h || karakter;
+			return k && auth.currentUser ? set(ref(db, "bogulma/" + anahtar(k)), serverTimestamp()) : Promise.resolve();
+		};
 		const oturum = () => {
 			const u = auth.currentUser;
 			window.miniakentOturum = u ? JSON.stringify({ eposta: u.email, dogrulandi: u.emailVerified, karakter: karakter,
@@ -1619,6 +1623,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 
 	let bilgi = null, karakter = "", eposta = "", sayfaAd = "", kumandaAcik = false, sekme = 0, bekleyen = null, takipVar = false;
 	let uye = { premium: false, seri: 0, gun: 0 };   // girişteki Firebase kaydından (miniakentOturum)
+	let dogrulandiMi = false;   // giriş yapmış, e-postası doğrulanmış ("Boğulmaya gönder" yalnız ona)
 	let resit = null;   // doğum tarihine göre 18 ve üstü mü (null: girilmemiş); 18 altına reklam seçeneği yok (KVKK B.10)
 	let izinler = {};   // bildirim ve reklam izni (miniakentOturum)
 	try { kumandaAcik = localStorage.getItem("miniakent_kumanda") === "1"; } catch (e) {}
@@ -1845,6 +1850,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			return kart({ handle: s.handle, meslek: s.meslek || "—", yer: s.isyeri, ev: s.ev || "—" },
 				m.tatil ? "Tatilde" : m.iste ? "İşte" : "Evde", m.iste) + `
 			<div class="ikili"><button class="hayir" data-evgoster="1">Evini göster</button>${s.is_var ? `<button class="hayir" data-isgoster="1">İş yerini göster</button>` : ""}</div>
+			${dogrulandiMi ? `<div class="ikili"><button class="evet" data-bogulsakin="1" ${m.iste ? "disabled" : ""}>Boğulmaya gönder</button></div>` : ""}
 			${karakter ? "" : rozetler[s.handle] ? `<p class="bilgi">Bu karakterin kontrolü sahibinde.</p>` : `<div class="ikili"><button class="evet" data-kontrol="1">Kontrolü Al</button></div>`}
 			${kostumVar() ? (kostumAcik ? kostumIzgara(s.handle) : `<button class="git" data-kostumac="1"><b>Kostüm giydir</b><span>Cadılar Bayramı kostümleri</span><em>40 kostüm</em></button>`) : ""}`;
 		}],
@@ -2289,6 +2295,11 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			window.miniakentBogul && window.miniakentBogul().catch((e) => console.warn("bogulma", e));
 			window.minikentSearch && window.minikentSearch(karakter);
 		}
+		else if (d.bogulsakin && secilen) {   // başkasının karakteri (kullanıcı, 2026-11-15); kamera onu izler
+			const h = secilen.handle;
+			window.miniakentBogul && window.miniakentBogul(h).catch((e) => console.warn("bogulma", e));
+			window.minikentSearch && window.minikentSearch(h);
+		}
 		else if (d.kostumac) { kostumAcik = true; ciz(); }
 		else if (b.id === "mkb-sifirla") { st = yeni(); kaydet(); ciz(); }
 		else if (d.ne) { st.ne = st.ne === d.ne ? "" : d.ne; kaydet(); ciz(); }
@@ -2429,7 +2440,8 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			try { o = JSON.parse(sonOturum || "{}"); } catch (e) {}
 			karakter = o.karakter || "";
 			eposta = o.eposta || "";
-			uye = { premium: !!o.premium, seri: o.seri || 0, gun: o.gun || 0 };
+			dogrulandiMi = o.dogrulandi === true;
+			uye ={ premium: !!o.premium, seri: o.seri || 0, gun: o.gun || 0 };
 			izinler = o.izin || {};
 			resit = o.resit === undefined ? null : o.resit;
 			$("mkb-harf").textContent = karakter.replace(/^@/, "").charAt(0).toUpperCase();
@@ -2450,7 +2462,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611151113.pck","fileSizes":{"index-v202611151113.pck":9110472,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611151210.pck","fileSizes":{"index-v202611151210.pck":9110984,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
