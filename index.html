@@ -1634,17 +1634,17 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	const acikIlan = (l) => l.filter((il) => kalan(il) > 0);
 	const isBekleme = () => st.son && Date.now() - st.son < 7 * GUN;
 
-	// Mesai oyun saatiyle (clock.gd: 1 oyun günü = 1 gerçek saat, şehrin kuruluşu 17 Ekim 2026 00:00 UTC). Betada 4 saat
-	// iş + 1 saat öğle arası + 4 saat iş; başlangıç kişiye göre 08:00, 08:30 ya da 09:00; 6 günde bir herkes tatilde
-	// (kullanıcı, 2026-11-07). Başkasının başlangıcı bilinmez: kartında saat yazılmaz.
+	// Mesai oyun saatiyle (clock.gd: 1 oyun günü = 1 gerçek saat, şehrin kuruluşu 17 Ekim 2026 00:00 UTC). Betada 6 saat
+	// iş, öğle arası yok; başlangıç kişiye göre 08:00, 09:00 ya da 10:00 (kullanıcı, 2026-11-15; clock.gd mesai ile
+	// aynı); 6 günde bir herkes tatilde (2026-11-07). Başkasının kartında saat yazılmaz (gizli), durum onun saatiyle.
+	const MESAI_SURE = 6;
 	const oyunSaat = () => (Date.now() - Date.UTC(2026, 9, 17)) / 1000 % 3600 / 150;
 	const saatYaz = (h) => String(Math.floor(h)).padStart(2, "0") + ":" + String(Math.round(h % 1 * 60)).padStart(2, "0");
-	function mesai(bas) {
-		const h = oyunSaat(), b = bas || 8.5, tatil = !!(window.miniakentHud && window.miniakentHud.tatil);
-		const ara = h >= b + 4 && h < b + 5, iste = !tatil && h >= b && h < b + 9 && !ara;
-		return { iste, tatil, ara, aralik: saatYaz(b) + "–" + saatYaz(b + 9), oran: tatil ? 0 : Math.max(0, Math.min(1, (h - b) / 9)),
-			yazi: tatil ? "Bugün tatil" : !bas ? "4 saat iş · 1 saat öğle arası · 4 saat iş"
-				: saatYaz(b) + "–" + saatYaz(b + 9) + " · öğle arası " + saatYaz(b + 4) + "–" + saatYaz(b + 5) };
+	function mesai(bas, gizli) {
+		const h = oyunSaat(), b = bas || 9, tatil = !!(window.miniakentHud && window.miniakentHud.tatil);
+		const iste = !tatil && h >= b && h < b + MESAI_SURE;
+		return { iste, tatil, ara: false, aralik: saatYaz(b) + "–" + saatYaz(b + MESAI_SURE), oran: tatil ? 0 : Math.max(0, Math.min(1, (h - b) / MESAI_SURE)),
+			yazi: tatil ? "Bugün tatil" : !bas || gizli ? "6 saat iş" : saatYaz(b) + "–" + saatYaz(b + MESAI_SURE) };
 	}
 	function durumYazi() {
 		const ne = NE.find((n) => n[0] === st.ne);
@@ -1693,7 +1693,8 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	// Kişi kartının üst kısmı (kullanıcı, 2026-11-05: başkasının kartı da kendi kartı gibi, yalnız seçmeli menüler yok).
 	// İsme dokununca kamera o kişiyi takip eder.
 	function kart(k, dy, iste) {
-		const m = mesai(k.handle === karakter && bilgi ? bilgi.mesai : null);
+		const m = k.handle === karakter && bilgi ? mesai(bilgi.mesai)
+			: mesai(secilen && secilen.handle === k.handle ? secilen.bas : null, true);
 		return `<button class="kim" data-takip="${esc(k.handle)}" style="border:0;background:none;padding:0;text-align:left">
 				<span class="avatar">${esc(k.handle.replace(/^@/, "").charAt(0).toUpperCase())}</span><div>
 				<b>${esc(k.handle)}${rozet(k.handle)}</b><span>${esc(k.meslek)}${k.yer ? " · " + esc(k.yer.split(" · ")[0]) : ""}</span><span>${esc(k.ev)}</span></div></button>
@@ -1845,7 +1846,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		bina: [() => bina.baslik, () => `${bina.alt ? `<p class="bilgi">${esc(bina.alt)}</p>` : ""}${bina.is ? binaGrup("is") : ""}${bina.ev ? binaGrup("ev") : ""}`],
 		// başka sakinin kartı: para ve göstergeler, Evini/İş yerini göster; kostüm yalnız etkinlik süresince (kullanıcı, 2026-11-05)
 		sakin: ["Sakin", () => {
-			const s = secilen, m = mesai();
+			const s = secilen, m = mesai(s.bas, true);
 			rozetGetir(s.handle);
 			return kart({ handle: s.handle, meslek: s.meslek || "—", yer: s.isyeri, ev: s.ev || "—" },
 				m.tatil ? "Tatilde" : m.iste ? "İşte" : "Evde", m.iste) + `
@@ -2462,7 +2463,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611151210.pck","fileSizes":{"index-v202611151210.pck":9110984,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611151244.pck","fileSizes":{"index-v202611151244.pck":9110776,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
