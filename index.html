@@ -1272,7 +1272,7 @@ body.gece #mkb { --krem: #22304f; --krem2: #2c3b5e; --yazi: #fbe9cb; --kenar: #0
 #mkb .serit { flex: 1; min-width: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 0 8px; padding: 6px 10px; border-radius: 14px; background: var(--krem);
 	border: 2px solid var(--kenar); font: 600 11.5px var(--fb); font-variant-numeric: tabular-nums; }
 #mkb .serit span { white-space: nowrap; }  /* nüfus ve saat iç içe girmez; sığmazsa saat alt satıra (kullanıcı, 2026-11-11) */
-#mkb .serit .saat { margin-left: auto; font-size: 13px; }
+#mkb .serit .saat { margin-left: auto; font-size: 13px; white-space: pre; text-align: right; line-height: 1.25; }  /* takvim iki satır (2026-11-15) */
 #mkb .yuvarlak { width: 38px; height: 38px; flex: 0 0 38px; display: grid; place-items: center; border-radius: 50%; background: var(--krem); border: 2px solid var(--kenar); padding: 0; }
 #mkb .yuvarlak svg { width: 18px; height: 18px; }
 #mkb .yuvarlak[aria-expanded="true"] { background: var(--yazi); color: var(--krem2); }
@@ -1640,6 +1640,13 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	const MESAI_SURE = 6;
 	const oyunSaat = () => (Date.now() - Date.UTC(2026, 9, 17)) / 1000 % 3600 / 150;
 	const saatYaz = (h) => String(Math.floor(h)).padStart(2, "0") + ":" + String(Math.round(h % 1 * 60)).padStart(2, "0");
+	// Takvim (kullanıcı, 2026-11-15; uygulamada ana_ekran.gd _takvim): 1 oyun ayı = 1 gerçek gün, Türkiye saatiyle
+	// 12:00'de başlar; 1 oyun yılı = 1 takvim ayı (Ekim 2026 = 1. yıl). Saat oyunun kendi saati (hud.saat'in sonu).
+	function takvim(saat) {
+		const d = new Date(Date.now() - 9 * 3600e3);
+		const yil = (d.getUTCFullYear() - 2026) * 12 + d.getUTCMonth() + 1 - 9;
+		return yil + ". Yıl " + d.getUTCDate() + ". Ay\nGün: " + (d.getUTCHours() + 1) + " · " + String(saat || "").split(" · ").pop();
+	}
 	function mesai(bas, gizli) {
 		const h = oyunSaat(), b = bas || 9, tatil = !!(window.miniakentHud && window.miniakentHud.tatil);
 		const iste = !tatil && h >= b && h < b + MESAI_SURE;
@@ -2421,7 +2428,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			ac("bina");
 		}
 		$("mkb-nufus").textContent = "Nüfus: " + sayi(hud.nufus) + " · Bekleyen: " + sayi(hud.bekleyen);
-		$("mkb-saat").textContent = hud.saat;
+		$("mkb-saat").textContent = takvim(hud.saat);
 		$("mkb-ses").innerHTML = hud.sessiz ? SVG.sessiz : SVG.ses;
 		const n = window.miniakentCevrimici;
 		$("mkb-cevrim").hidden = !(n >= 1);
@@ -2463,7 +2470,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611151527.pck","fileSizes":{"index-v202611151527.pck":9129976,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611151833.pck","fileSizes":{"index-v202611151833.pck":9132504,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
