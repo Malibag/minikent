@@ -1609,6 +1609,22 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	<div class="noktalar" id="mkb-t-nokta"></div>
 	<div class="ikili"><button class="hayir" id="mkb-t-gec">Geç</button><button class="evet" id="mkb-t-devam">Devam</button></div></div></div>`;
 	document.body.appendChild(kok);
+	// Test sayfası (window.miniakentTest; tramvay denemesi, 2026-11-15): oyunun saatini yoğun saatlere almak için düğmeler
+	if (window.miniakentTest) {
+		const sb = document.createElement("div");
+		sb.style.cssText = "position:fixed;left:12px;bottom:calc(120px + env(safe-area-inset-bottom,0px));z-index:30;display:flex;" +
+			"flex-wrap:wrap;gap:4px;max-width:180px;padding:6px;border-radius:10px;background:rgba(251,233,203,.92);border:2px solid #162132;" +
+			"font:600 11px Fredoka,Nunito,sans-serif;color:#162132";
+		sb.innerHTML = "<span style='width:100%'>Saati al (test)</span>";
+		[["06:30", 6.5], ["08:30", 8.5], ["13:30", 13.5], ["15:00", 15.0], ["20:00", 20.0]].forEach(function (s) {
+			const b = document.createElement("button");
+			b.textContent = s[0];
+			b.style.cssText = "font:inherit;padding:3px 6px;border-radius:7px;border:1.5px solid #162132;background:#fff6e6;color:#162132";
+			b.onclick = function () { if (window.miniakentSaatAyarla) window.miniakentSaatAyarla(s[1]); };
+			sb.appendChild(b);
+		});
+		document.body.appendChild(sb);
+	}
 	const $ = (id) => document.getElementById(id);
 	const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
 	const sayi = (n) => Number(n).toLocaleString("tr-TR");
@@ -2488,7 +2504,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611152115.pck","fileSizes":{"index-v202611152115.pck":9138296,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611160219.pck","fileSizes":{"index-v202611160219.pck":9165908,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
