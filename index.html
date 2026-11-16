@@ -540,6 +540,9 @@ try {
 		}
 	});
 	onValue(ref(db, "cevrimici"), (s) => { window.miniakentCevrimici = s.size; });
+	// "Şu an şehirde" listesi (2026-11-16): sehirde/<ad anahtarı> = son görüldüğü an, girisli/ = giriş yapmış ziyaretçiler
+	onValue(ref(db, "girisli"), (s) => { window.miniakentGirisli = s.size; });
+	onValue(ref(db, "sehirde"), (s) => { window.miniakentSehirde = s.val() || {}; });
 	// günlük ziyaretçi sayısı yalnız istatistik çerezlerine onay verenlerde sayılır (kullanıcı, 2026-11-11, KVKK A.3):
 	// tarayıcıya yazılan "bugün sayıldı" işareti istatistik amaçlı, zorunlu değil
 	const gunlukSay = () => {
@@ -611,6 +614,7 @@ try {
 		// @miniakent'e özelden yazar; dogrulama.py (bilgisayarda Windows görevi) oyuncu/<uid>/karakter'i yazar. Premium
 		// işaretini kullanıcı verir (premium/<ad>); giriş serisi oyuncu/<uid>/giris'te (Türkiye günü).
 		let karakter = "", premium = false, giris = null, oyuncuBirak = null, premiumBirak = null;
+		let gorunum = "";   // oyuncu/<uid>/gorunum: "cevrimici" ya da "" (Dışarıda, varsayılan; kullanıcı 2026-11-16)
 		// profil bilgileri ve izinler (kullanıcı, 2026-11-09): oyuncu/<uid>/profil {cinsiyet: "kadin"|"erkek", dogum: "YYYY-AA-GG"},
 		// oyuncu/<uid>/izin {reklam, bildirim: verildiği an (ms)}; hepsi isteğe bağlı, oyuncu istediği an siler
 		let profil = {}, izin = {};
@@ -652,7 +656,7 @@ try {
 		const oturum = () => {
 			const u = auth.currentUser;
 			window.miniakentOturum = u ? JSON.stringify({ eposta: u.email, dogrulandi: u.emailVerified, karakter: karakter,
-				premium: premium, seri: giris ? giris.seri : 0, gun: giris ? giris.gun : 0,
+				premium: premium, gorunum: gorunum, seri: giris ? giris.seri : 0, gun: giris ? giris.gun : 0,
 				resit: profil.dogum ? yas(profil.dogum) >= 18 : null,
 				izin: { eposta: !!izin.eposta, instagram: !!izin.instagram, reklam: !!izin.reklam } }) : "";
 			window.miniakentOturumSurum = (window.miniakentOturumSurum || 0) + 1;
@@ -679,7 +683,7 @@ try {
 		const oyuncuDinle = (u) => {
 			if (oyuncuBirak) oyuncuBirak();
 			oyuncuBirak = null;
-			karakter = ""; giris = null; profil = {}; izin = {};
+			karakter = ""; giris = null; profil = {}; izin = {}; gorunum = "";
 			premiumDinle();
 			if (u) {
 				let sayildi = false;
@@ -688,6 +692,7 @@ try {
 					giris = v.giris || null;
 					profil = v.profil || {};
 					izin = v.izin || {};
+					gorunum = v.gorunum === "cevrimici" ? "cevrimici" : "";
 					if ((v.karakter || "") !== karakter) {
 						karakter = v.karakter || "";
 						premiumDinle();
@@ -695,10 +700,40 @@ try {
 					}
 					if (karakter && !sayildi) { sayildi = true; seriSay(u.uid); }
 					oturum();
+					sehirde();
 				}, (e) => console.warn("oyuncu", e));
 			}
 			oturum();
+			sehirde();
 		};
+		// "Şu an şehirde" (kullanıcı, 2026-11-16): profil menüsünde "Çevrimiçi" seçen oyuncunun (oyuncu/<uid>/gorunum =
+		// "cevrimici"; varsayılan "Dışarıda") karakteri sayfa açıkken sehirde/<ad anahtarı>'na sunucu zamanıyla yazılır,
+		// dakikada bir yenilenir, sayfa kapanınca silinir (liste 3 dakikadan eski kaydı göstermez: uygulama kapanınca
+		// silemeyebilir). "Dışarıda"ysa önceki açılıştan kalmış kayıt silinir. Giriş yapmış ziyaretçinin rastgele kimliği
+		// girisli/'ye de yazılır: listedeki "Giriş yapmamış (N)" = cevrimici − girisli. KVKK: gizlilik.html (2026-11-16).
+		let sehirdeYol = null, eskiSilindi = false;
+		const girisliRef = ref(db, "girisli/" + id);
+		const sehirde = () => {
+			const u = auth.currentUser;
+			if (u) { onDisconnect(girisliRef).remove().then(() => set(girisliRef, serverTimestamp())).catch(() => {}); }
+			else { onDisconnect(girisliRef).cancel().catch(() => {}); set(girisliRef, null).catch(() => {}); }
+			const k = u && u.emailVerified && karakter ? anahtar(karakter) : "";
+			const yol = k && gorunum === "cevrimici" ? "sehirde/" + k : null;
+			if (sehirdeYol && sehirdeYol !== yol) {
+				onDisconnect(ref(db, sehirdeYol)).cancel().catch(() => {});
+				set(ref(db, sehirdeYol), null).catch(() => {});
+			} else if (k && !yol && !eskiSilindi) set(ref(db, "sehirde/" + k), null).catch(() => {});
+			if (k) eskiSilindi = true;
+			if (yol && yol !== sehirdeYol) {
+				const r = ref(db, yol);
+				onDisconnect(r).remove().then(() => set(r, serverTimestamp())).catch((e) => console.warn("sehirde", e));
+			}
+			sehirdeYol = yol;
+		};
+		onValue(ref(db, ".info/connected"), (s) => { if (s.val() === true) { sehirdeYol = null; sehirde(); } });
+		setInterval(() => { if (sehirdeYol) set(ref(db, sehirdeYol), serverTimestamp()).catch(() => {}); }, 60000);
+		window.miniakentGorunum = (acik) => auth.currentUser
+			? set(ref(db, "oyuncu/" + auth.currentUser.uid + "/gorunum"), acik ? "cevrimici" : null) : Promise.resolve();
 		fa.onAuthStateChanged(auth, oyuncuDinle);
 		const css = document.createElement("style");
 		css.textContent = `
@@ -1055,6 +1090,7 @@ try {
 					for (const k of Object.keys(d)) if (k.startsWith("oyuncu/" + u.uid + "/")) delete d[k];  // üst yol zaten siliniyor
 					if (karakter) d["sahip/" + anahtar(karakter)] = null;
 					if (karakter && window.miniakentKiyafetYol) d[window.miniakentKiyafetYol + "/" + anahtar(karakter)] = null;
+					if (karakter) d["sehirde/" + anahtar(karakter)] = null;   // "Şu an şehirde" kaydı (2026-11-16)
 					await update(ref(db), d);
 					await u.delete();
 					// silindikten sonra bilgi ekranı (kullanıcı, 2026-11-09)
@@ -1297,6 +1333,17 @@ body.gece #mkb { --krem: #22304f; --krem2: #2c3b5e; --yazi: #fbe9cb; --kenar: #0
 #mkb .ses-alt { position: absolute; top: calc(60px + env(safe-area-inset-top, 0px)); left: calc(12px + var(--en) - 38px); }
 /* fotoğraf (kullanıcı, 2026-11-12): ses düğmesinin altında; çekim kipinde sayfanın öğeleri kalkar, ortada kırmızı deklanşör */
 #mkb .foto-alt { position: absolute; top: calc(106px + env(safe-area-inset-top, 0px)); left: calc(12px + var(--en) - 38px); }
+/* "Şu an şehirde" (kullanıcı, 2026-11-16): fotoğraf düğmesinin altında; sağdan kayan panelde çevrimiçi oyuncular alfabetik */
+#mkb .sehirde-alt { position: absolute; top: calc(152px + env(safe-area-inset-top, 0px)); left: calc(12px + var(--en) - 38px); }
+#mkb .sehirde { position: absolute; right: 0; top: calc(198px + env(safe-area-inset-top, 0px)); width: min(60%, 260px); min-height: 120px;
+	max-height: calc(100% - 314px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px)); z-index: 7; display: flex; flex-direction: column;
+	pointer-events: auto; background: var(--krem); border: 3px solid var(--kenar); border-right: 0; border-radius: 24px 0 0 24px; box-shadow: 0 4px 0 var(--golge);
+	transform: translateX(105%); transition: transform .3s cubic-bezier(.2,.8,.2,1); }
+#mkb .sehirde.acik { transform: none; }
+#mkb .sehirde .liste { flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; padding: 0 8px; }
+#mkb .sehirde .liste button { text-align: left; border: 0; background: none; padding: 7px 8px; border-radius: 10px; font-weight: 700; font-size: 12.5px; overflow-wrap: anywhere; }
+#mkb .sehirde small { padding: 6px 16px 12px; color: var(--soluk); font-weight: 700; font-size: 11px; }
+#mkb .p-gorun { display: flex; flex-direction: column; gap: 6px; }
 #mkb.foto > :not(#mkb-foto-kip):not(#mkb-foto-onizle):not(#mkb-fk-flas) { display: none !important; }
 body.mk-foto #mk-cerez, body.mk-foto #kontrol, body.mk-foto #yk-ilk, body.mk-foto #mkb-tanitim { display: none !important; }
 #mkb-foto-kip { position: fixed; inset: 0; z-index: 30; pointer-events: none; }
@@ -1510,13 +1557,14 @@ body.mk-foto #mk-cerez, body.mk-foto #kontrol, body.mk-foto #yk-ilk, body.mk-fot
 body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: var(--yazi); }
 #mkb .tost { position: absolute; left: 50%; top: calc(110px + env(safe-area-inset-top, 0px)); z-index: 10; transform: translateX(-50%); padding: 8px 14px; border-radius: 12px;
 	background: var(--yazi); color: var(--krem2); font-size: 11px; font-weight: 700; white-space: nowrap; }
-@media (prefers-reduced-motion: reduce) { #mkb .mkb-pano, #mkb .ray { transition: none; } }
+@media (prefers-reduced-motion: reduce) { #mkb .mkb-pano, #mkb .ray, #mkb .sehirde { transition: none; } }
 /* bilgisayarda (fare, geniş ekran) ayarlar, ses ve Bölgeler sağ kenarda (kullanıcı, 2026-11-08) */
 @media (hover: hover) and (pointer: fine) and (min-width: 700px) {
 	#mkb #mkb-disli { position: fixed; right: 12px; top: calc(12px + env(safe-area-inset-top, 0px)); }
 	#mkb #mkb-bolgeler { position: fixed; right: 12px; top: calc(60px + env(safe-area-inset-top, 0px)); height: 37px; }
 	#mkb .ses-alt { left: auto; right: 12px; }
 	#mkb .foto-alt { left: auto; right: 12px; }
+	#mkb .sehirde-alt { left: auto; right: 12px; }
 	#mkb .ayarlar { left: auto; right: 12px; }
 	#mkb #mkb-bolge { left: auto; right: 12px; top: calc(98px + env(safe-area-inset-top, 0px)); bottom: auto; }
 }`;
@@ -1524,6 +1572,8 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 
 	const SVG = {
 		foto: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"><path d="M3.5 8h3.5l2-3h6l2 3h3.5v11h-17z"/><circle cx="12" cy="13" r="3.6"/></svg>',
+		// çevrimiçi (kullanıcının gönderdiği simge, 2026-11-16): dört kişi, biri önde
+		kisiler: '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="16" cy="7.5" r="2.8"/><path d="M11.8 15.2a4.6 4.6 0 0 1 8.4 0"/><circle cx="8.6" cy="13.8" r="2.8"/><path d="M3.4 23a5.6 5.6 0 0 1 8.9-4.2"/><circle cx="23.4" cy="13.8" r="2.8"/><path d="M28.6 23a5.6 5.6 0 0 0-8.9-4.2"/><circle cx="16" cy="18.2" r="3.2"/><path d="M9.6 28.5a6.4 6.4 0 0 1 12.8 0"/></svg>',
 		ses: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16.5 8.5a5 5 0 0 1 0 7"/></svg>',
 		sessiz: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16 9l5 6M21 9l-5 6"/></svg>',
 		disli: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.6 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>',
@@ -1549,6 +1599,10 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	<button class="cip" id="mkb-bolgeler">Bölgeler</button></div>
 <button class="yuvarlak ses-alt" id="mkb-ses" aria-label="Ses"></button>
 <button class="yuvarlak foto-alt" id="mkb-foto" aria-label="Fotoğraf çek">${SVG.foto}</button>
+<button class="yuvarlak sehirde-alt" id="mkb-sehirde-ac" aria-label="Şu an şehirde" aria-expanded="false">${SVG.kisiler}</button>
+<section class="sehirde" id="mkb-sehirde" aria-hidden="true"><div class="bas"><h2>Şu an şehirde</h2>
+	<button class="ikon" id="mkb-sehirde-kapat" aria-label="Kapat">${SVG.kapat}</button></div>
+	<div class="liste" id="mkb-sehirde-liste"></div><small id="mkb-sehirde-anonim"></small></section>
 <div id="mkb-foto-kip" hidden><button class="fk-kapat" id="mkb-fk-kapat" aria-label="Vazgeç">×</button>
 	<div class="fk-alt"><div class="fk-adlar" id="mkb-fk-adlar"><button data-ad="herkes">Herkes</button><button data-ad="secili">Sadece seçili</button><button data-ad="yok">Hiçbiri</button></div>
 	<div class="fk-sira"><button class="fk-poz" id="mkb-fk-poz">Poz ver</button><button class="fk-deklansor" id="mkb-fk-cek" aria-label="Çek"></button><span class="fk-bos"></span></div></div></div>
@@ -1575,6 +1629,8 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 <section class="ayarlar" id="mkb-ayarlar" hidden>
 	<div class="ikili" id="mkb-p-giris"><button class="evet" data-giris="1">Giriş Yap</button><button class="hayir" data-giris="1">Kayıt Ol</button></div>
 	<div class="profil" id="mkb-p-hesap" hidden><b id="mkb-p-eposta"></b><small id="mkb-p-karakter"></small></div>
+	<div class="p-gorun" id="mkb-p-gorun" hidden><span class="grup">Görünürlük</span>
+		<div class="sekmeler"><button data-gorun="1">Çevrimiçi</button><button data-gorun="0">Dışarıda</button></div></div>
 	<div class="p-ayar" id="mkb-p-ayar" hidden>
 		<button class="p-dugme" data-p="duzenle">Profil bilgilerimi düzenle</button>
 	</div>
@@ -1656,6 +1712,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	const kiraOf = (a) => /Banliy/.test(a) ? 150 : /Koyu|Köy/.test(a) ? 300 : /Sokağı/.test(a) ? 250 : 400;
 
 	let bilgi = null, karakter = "", eposta = "", sayfaAd = "", kumandaAcik = false, sekme = 0, bekleyen = null, takipVar = false;
+	let gorunAcik = false, sehirdeAcik = false, sonSehirde = "";   // "Şu an şehirde" (2026-11-16)
 	let uye = { premium: false, seri: 0, gun: 0 };   // girişteki Firebase kaydından (miniakentOturum)
 	let dogrulandiMi = false;   // giriş yapmış, e-postası doğrulanmış ("Boğulmaya gönder" yalnız ona)
 	let resit = null;   // doğum tarihine göre 18 ve üstü mü (null: girilmemiş); 18 altına reklam seçeneği yok (KVKK B.10)
@@ -1923,6 +1980,9 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		$("mkb-p-karakter").hidden = !karakter;
 		$("mkb-ayril").hidden = $("mkb-a-cizgi2").hidden = $("mkb-p-sil").hidden = !eposta;
 		$("mkb-ayril-not").hidden = !karakter;
+		// Görünürlük (kullanıcı, 2026-11-16): "Çevrimiçi" / "Dışarıda" (varsayılan), yalnız karakteri bağlı oyuncuya
+		$("mkb-p-gorun").hidden = !eposta || !karakter;
+		for (const b of $("mkb-p-gorun").querySelectorAll("button")) b.classList.toggle("secili", (b.dataset.gorun === "1") === gorunAcik);
 		if (window.miniakentArayuz) window.miniakentArayuz(tel && kumandaAcik && !tam && !fotoKip, takipVar ? 84 : 0);
 		// Görünüş açıkken kamera karaktere yaklaşır, karakter panelin dışında kalan alanda durur (kullanıcı, 2026-11-10)
 		const oniz = sayfaAd === "gorunus" && karakter && !tam ? p.offsetWidth / innerWidth : 0;
@@ -2319,6 +2379,44 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		window.miniakentAyril && window.miniakentAyril();
 	});
 
+	// Görünürlük seçimi (profil menüsü): kaydedilemezse eski hâline döner
+	$("mkb-p-gorun").addEventListener("click", (e) => {
+		const b = e.target.closest("button[data-gorun]");
+		if (!b) return;
+		const ac = b.dataset.gorun === "1";
+		if (ac === gorunAcik) return;
+		gorunAcik = ac;
+		arayuz();
+		if (window.miniakentGorunum) Promise.resolve(window.miniakentGorunum(ac)).catch((err) => { console.warn("gorunum", err); gorunAcik = !ac; arayuz(); });
+	});
+	// "Şu an şehirde" (kullanıcı, 2026-11-16): fotoğraf düğmesinin altındaki düğme sağdan paneli açar; "Çevrimiçi" seçmiş
+	// oyuncular alfabetik, alt alta (3 dakikadan eski kayıt gösterilmez); dokununca o karakter takip edilir; en altta
+	// giriş yapmamış ziyaretçi sayısı (çevrimiçi − giriş yapmış)
+	const sehirdeCiz = () => {
+		const v = window.miniakentSehirde || {}, simdi = miniakentSimdi();
+		const adlar = Object.keys(v).filter((k) => typeof v[k] === "number" && simdi - v[k] < 180000)
+			.map((k) => "@" + k.replace(/,/g, ".")).sort((a, b) => a.localeCompare(b, "tr"));
+		const anonim = Math.max(0, (window.miniakentCevrimici || 0) - (window.miniakentGirisli || 0));
+		const imza = adlar.join("|") + "#" + anonim;
+		if (imza === sonSehirde) return;
+		sonSehirde = imza;
+		$("mkb-sehirde-liste").innerHTML = adlar.map((h) => `<button data-takip="${esc(h)}">${esc(h)}</button>`).join("");
+		$("mkb-sehirde-anonim").textContent = "Giriş yapmamış (" + anonim + ")";
+	};
+	const sehirdeAc = (ac) => {
+		sehirdeAcik = ac;
+		$("mkb-sehirde").classList.toggle("acik", ac);
+		$("mkb-sehirde").setAttribute("aria-hidden", String(!ac));
+		$("mkb-sehirde-ac").setAttribute("aria-expanded", String(ac));
+		if (ac) { sonSehirde = ""; sehirdeCiz(); }
+	};
+	$("mkb-sehirde-ac").addEventListener("click", () => sehirdeAc(!sehirdeAcik));
+	$("mkb-sehirde-kapat").addEventListener("click", () => sehirdeAc(false));
+	$("mkb-sehirde-liste").addEventListener("click", (e) => {
+		const b = e.target.closest("button[data-takip]");
+		if (b) window.miniakentTakip && window.miniakentTakip(b.dataset.takip);
+	});
+
 	// takip düğmeleri
 	$("mkb-goz").addEventListener("click", () => window.miniakentGoz && window.miniakentGoz());
 	$("mkb-birak").addEventListener("click", () => window.miniakentBirak && window.miniakentBirak());
@@ -2467,6 +2565,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		const n = window.miniakentCevrimici;
 		$("mkb-cevrim").hidden = !(n >= 1);
 		$("mkb-cevrim").textContent = "Çevrimiçi: " + n;
+		if (sehirdeAcik) sehirdeCiz();
 		// kare hızı (yalnız test sayfası; kullanıcı, 2026-11-09: Lite açık/kapalı farkı telefonda görülsün)
 		$("mkb-fps").hidden = !(window.miniakentTest && hud.fps >= 0);  // yalnız test sayfasında
 		$("mkb-fps").textContent = "Kare hızı: " + Math.round(hud.fps) + (window.miniakentLiteAcik ? " · Lite" : "");
@@ -2482,6 +2581,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			try { o = JSON.parse(sonOturum || "{}"); } catch (e) {}
 			karakter = o.karakter || "";
 			eposta = o.eposta || "";
+			gorunAcik = o.gorunum === "cevrimici";
 			dogrulandiMi = o.dogrulandi === true;
 			uye ={ premium: !!o.premium, seri: o.seri || 0, gun: o.gun || 0 };
 			izinler = o.izin || {};
@@ -2504,7 +2604,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611161130.pck","fileSizes":{"index-v202611161130.pck":9188772,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611161639.pck","fileSizes":{"index-v202611161639.pck":9195924,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
