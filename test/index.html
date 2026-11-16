@@ -1943,7 +1943,9 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			// başlangıç sürümü (kullanıcı, 2026-11-09): para, kıdem, üyelik yok
 			const is = isim(), ev = evim(), [dy, iste] = durumYazi();
 			// "Boğulmaya git" (kullanıcı, 2026-11-15): yalnız iş dışında, mesaide kapalı
-			return kart({ handle: karakter, meslek: is.meslek, yer: is.yer, ev: ev.adres }, dy, iste) + ekoKutu(bilgi && bilgi.ekonomi, true)
+			// teşhis (yalnız test sayfası, geçici): ekonomi izni ve oyundan gelen hesap
+			const ekoTeshis = window.miniakentTest ? `<p class="bilgi">Ekonomi: izin ${window.miniakentEkonomi ? "var" : "yok"} · hesap ${bilgi && bilgi.ekonomi ? "var" : "yok"}</p>` : "";
+			return kart({ handle: karakter, meslek: is.meslek, yer: is.yer, ev: ev.adres }, dy, iste) + ekoKutu(bilgi && bilgi.ekonomi, true) + ekoTeshis
 				+ `<div class="ikili"><button class="evet" data-bogul="1" ${iste ? "disabled" : ""}>Boğulmaya git</button></div>`;
 		}],
 		is: ["İş", () => {
@@ -2656,7 +2658,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611162053.pck","fileSizes":{"test/index-test-v202611162053.pck":9203712,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611162149.pck","fileSizes":{"test/index-test-v202611162149.pck":9203776,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
