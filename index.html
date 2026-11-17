@@ -541,7 +541,6 @@ try {
 	});
 	onValue(ref(db, "cevrimici"), (s) => { window.miniakentCevrimici = s.size; });
 	// "Şu an şehirde" listesi (2026-11-16): sehirde/<ad anahtarı> = son görüldüğü an, girisli/ = giriş yapmış ziyaretçiler
-	onValue(ref(db, "girisli"), (s) => { window.miniakentGirisli = s.size; });
 	onValue(ref(db, "sehirde"), (s) => { window.miniakentSehirde = s.val() || {}; });
 	// günlük ziyaretçi sayısı yalnız istatistik çerezlerine onay verenlerde sayılır (kullanıcı, 2026-11-11, KVKK A.3):
 	// tarayıcıya yazılan "bugün sayıldı" işareti istatistik amaçlı, zorunlu değil
@@ -725,7 +724,7 @@ try {
 		// "cevrimici"; varsayılan "Dışarıda") karakteri sayfa açıkken sehirde/<ad anahtarı>'na sunucu zamanıyla yazılır,
 		// dakikada bir yenilenir, sayfa kapanınca silinir (liste 3 dakikadan eski kaydı göstermez: uygulama kapanınca
 		// silemeyebilir). "Dışarıda"ysa önceki açılıştan kalmış kayıt silinir. Giriş yapmış ziyaretçinin rastgele kimliği
-		// girisli/'ye de yazılır: listedeki "Giriş yapmamış (N)" = cevrimici − girisli. KVKK: gizlilik.html (2026-11-16).
+		// girisli/'ye de yazılır: (2026-11-17'den beri listede kullanılmıyor: "Ve N kişi daha" = cevrimici − listedekiler.) KVKK: gizlilik.html (2026-11-16).
 		let sehirdeYol = null, eskiSilindi = false;
 		const girisliRef = ref(db, "girisli/" + id);
 		const sehirde = () => {
@@ -1656,7 +1655,6 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	<div class="fo-cerceveler" id="mkb-fo-cerceveler"><button data-c="sade">Sade</button><button data-c="polaroid">Polaroid</button><button data-c="kartpostal">Kartpostal</button><button data-c="cikartma">Çıkartmalı</button><button data-c="gokkusagi">Gökkuşağı</button><button data-c="seker">Şeker</button><button data-c="gece">Gece</button></div>
 	<div class="fo-renkler" id="mkb-fo-renkler"><button data-r="krem" style="background:#fbf0dc" aria-label="Krem"></button><button data-r="pembe" style="background:#f7b7cf" aria-label="Pembe"></button><button data-r="mavi" style="background:#a9d8f5" aria-label="Gök mavisi"></button><button data-r="limon" style="background:#ffe36e" aria-label="Limon"></button><button data-r="nane" style="background:#a8e6c5" aria-label="Nane"></button><button data-r="lavanta" style="background:#cdb8f2" aria-label="Lavanta"></button><button data-r="gece" style="background:#1f2a4d" aria-label="Gece mavisi"></button></div>
 	<div class="fo-eylem"><button id="mkb-fo-tekrar">Tekrar çek</button><button id="mkb-fo-kaydet">Kaydet</button><button class="paylas" id="mkb-fo-paylas">Paylaş</button></div></div>
-<div class="cevrim" id="mkb-cevrim" hidden></div>
 <div class="cevrim" id="mkb-fps" style="top: calc(76px + env(safe-area-inset-top, 0px))" hidden></div>
 <div class="mkb-liste" id="mkb-oneri" hidden></div>
 <div class="mkb-liste" id="mkb-bolge" hidden></div>
@@ -2060,6 +2058,8 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	function ac(ad) {
 		if (YENI && ad === "kisi") ad = "finans";   // yeni düzende Karakterim Finans bölümüyle açılır
 		sayfaAd = ad; kostumAcik = false; binaTum = {};
+		if (ayarlarAcik) ayarlarAc(false);   // kart, profil ve "Şu an şehirde" aynı anda açık kalmaz (kullanıcı, 2026-11-17)
+		if (sehirdeAcik) sehirdeAc(false);
 		$("mkb-pano").classList.add("acik");
 		$("mkb-pano").setAttribute("aria-hidden", "false");
 		ciz(); arayuz();
@@ -2380,6 +2380,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		$("mkb-disli").setAttribute("aria-expanded", String(ac));
 		if (ac) {
 			if (sehirdeAcik) sehirdeAc(false);   // tıklamada çağrılır: sehirdeAc o zaman tanımlı
+			if (sayfaAd) kapat();   // kart, profil ve "Şu an şehirde" aynı anda açık kalmaz (kullanıcı, 2026-11-17)
 			a.hidden = false;
 			void a.offsetWidth;   // gizliyken kayma başlamaz: önce çizilsin
 			a.classList.add("acik");
@@ -2477,20 +2478,21 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	});
 	// "Şu an şehirde" (kullanıcı, 2026-11-16): fotoğraf düğmesinin altındaki düğme sağdan paneli açar; "Çevrimiçi" seçmiş
 	// oyuncular alfabetik, alt alta (3 dakikadan eski kayıt gösterilmez); dokununca o karakter takip edilir; en altta
-	// giriş yapmamış ziyaretçi sayısı (çevrimiçi − giriş yapmış)
+	// "Ve N kişi daha" (kullanıcı, 2026-11-17): listede görünmeyen herkes (giriş yapmamış + "Dışarıda"); 0 ise yazı yok
 	const sehirdeCiz = () => {
 		const v = window.miniakentSehirde || {}, simdi = miniakentSimdi();
 		const adlar = Object.keys(v).filter((k) => typeof v[k] === "number" && simdi - v[k] < 180000)
 			.map((k) => "@" + k.replace(/,/g, ".")).sort((a, b) => a.localeCompare(b, "tr"));
-		const anonim = Math.max(0, (window.miniakentCevrimici || 0) - (window.miniakentGirisli || 0));
+		const anonim = Math.max(0, (window.miniakentCevrimici || 0) - adlar.length);
 		const imza = adlar.join("|") + "#" + anonim;
 		if (imza === sonSehirde) return;
 		sonSehirde = imza;
 		$("mkb-sehirde-liste").innerHTML = adlar.map((h) => `<button data-takip="${esc(h)}">${esc(h)}</button>`).join("");
-		$("mkb-sehirde-anonim").textContent = "Giriş yapmamış (" + anonim + ")";
+		$("mkb-sehirde-anonim").textContent = anonim > 0 ? "Ve " + anonim + " kişi daha" : "";
 	};
 	const sehirdeAc = (ac) => {
 		if (ac && ayarlarAcik) ayarlarAc(false);
+		if (ac && sayfaAd) kapat();   // kart, profil ve bu panel aynı anda açık kalmaz (kullanıcı, 2026-11-17)
 		sehirdeAcik = ac;
 		$("mkb-sehirde").classList.toggle("acik", ac);
 		$("mkb-sehirde").setAttribute("aria-hidden", String(!ac));
@@ -2624,6 +2626,12 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		bolge.hidden = !bolge.hidden;
 	});
 	bolge.addEventListener("click", (e) => { const b = e.target.closest("button"); if (b) { bolge.hidden = true; window.miniakentBolgeGit && window.miniakentBolgeGit(b.dataset.z); } });
+	// arama açılınca kart, profil ve "Şu an şehirde" kapanır (kullanıcı, 2026-11-17)
+	ara.addEventListener("focus", () => {
+		if (sayfaAd) kapat();
+		if (ayarlarAcik) ayarlarAc(false);
+		if (sehirdeAcik) sehirdeAc(false);
+	});
 
 	// oyunun durumu: yarım saniyede bir (oyun açılınca ana ekran görünür)
 	let sonBilgi = "", sonOturum = null, sonDk = -1, sonSecim = 0, sonBina = 0;
@@ -2649,9 +2657,6 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		$("mkb-nufus").textContent = "Nüfus: " + sayi(hud.nufus) + " · Bekleyen: " + sayi(hud.bekleyen);
 		$("mkb-saat").textContent = takvim(hud.saat);
 		$("mkb-ses").innerHTML = hud.sessiz ? SVG.sessiz : SVG.ses;
-		const n = window.miniakentCevrimici;
-		$("mkb-cevrim").hidden = !(n >= 1);
-		$("mkb-cevrim").textContent = "Çevrimiçi: " + n;
 		if (sehirdeAcik) sehirdeCiz();
 		// kare hızı (yalnız test sayfası; kullanıcı, 2026-11-09: Lite açık/kapalı farkı telefonda görülsün)
 		$("mkb-fps").hidden = !(window.miniakentTest && hud.fps >= 0);  // yalnız test sayfasında
@@ -2691,7 +2696,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611171719.pck","fileSizes":{"index-v202611171719.pck":9253764,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611171931.pck","fileSizes":{"index-v202611171931.pck":9253732,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
