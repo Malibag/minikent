@@ -1588,8 +1588,8 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 #mkb.yeni .sekme { padding: 3px 5px 3px 3px; }
 #mkb.yeni .sekme .simge.kucuk { width: 26px; height: 26px; }
 #mkb.yeni .sekme .simge.kucuk svg { width: 17px; height: 17px; }
-#mkb .pbas { position: sticky; top: -4px; z-index: 2; background: var(--krem); padding: 4px 0 8px; display: flex; flex-direction: column; gap: 6px;
-	border-bottom: 2px solid var(--kenar); }
+#mkb .pbas { padding: 4px 0 8px; display: flex; flex-direction: column; gap: 6px; border-bottom: 2px solid var(--kenar); }   /* sabit değil, içerikle kayar (kullanıcı, 2026-11-17) */
+#mkb.yeni .mkb-pano { height: calc(100% - 150px - 76px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px)); }   /* arama çubuğuna kadar */
 #mkb .pbas .avatar { display: none; }
 #mkb .pbas .kutu { padding: 6px 10px; }
 #mkb .pbas .bogul { align-self: flex-start; font: inherit; font-size: 12px; padding: 4px 10px; border-radius: 999px; border: 2px solid var(--kenar);
@@ -2690,7 +2690,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611170258.pck","fileSizes":{"test/index-test-v202611170258.pck":9205824,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611170347.pck","fileSizes":{"test/index-test-v202611170347.pck":9205696,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
