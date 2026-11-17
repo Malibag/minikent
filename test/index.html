@@ -544,7 +544,6 @@ try {
 	});
 	onValue(ref(db, "cevrimici"), (s) => { window.miniakentCevrimici = s.size; });
 	// "Şu an şehirde" listesi (2026-11-16): sehirde/<ad anahtarı> = son görüldüğü an, girisli/ = giriş yapmış ziyaretçiler
-	onValue(ref(db, "girisli"), (s) => { window.miniakentGirisli = s.size; });
 	onValue(ref(db, "sehirde"), (s) => { window.miniakentSehirde = s.val() || {}; });
 	// günlük ziyaretçi sayısı yalnız istatistik çerezlerine onay verenlerde sayılır (kullanıcı, 2026-11-11, KVKK A.3):
 	// tarayıcıya yazılan "bugün sayıldı" işareti istatistik amaçlı, zorunlu değil
@@ -656,6 +655,12 @@ try {
 			const k = h || karakter;
 			return k && auth.currentUser ? set(ref(db, "bogulma/" + anahtar(k)), serverTimestamp()) : Promise.resolve();
 		};
+		// Etkinliğe katılanlar (kullanıcı, 2026-11-17; test sayfası): katilim/<ad anahtarı> = {y, b, d}; herkes okur, oyun
+		// karakteri her ekranda o etkinliğe götürür (scripts/durum.gd)
+		if (window.miniakentTest) onValue(ref(db, "katilim"), (s) => {
+			window.miniakentKatilimAkis = JSON.stringify(s.val() || {});
+			window.miniakentKatilimSurum = (window.miniakentKatilimSurum || 0) + 1;
+		}, (e) => console.warn("katilim", e));
 		const oturum = () => {
 			const u = auth.currentUser;
 			window.miniakentOturum = u ? JSON.stringify({ eposta: u.email, dogrulandi: u.emailVerified, karakter: karakter,
@@ -686,6 +691,12 @@ try {
 			window.miniakentEkonomi = izinli;
 			if (!izinli || !karakter) return;
 			set(ref(db, "ustalik/" + anahtar(karakter) + "/" + ayGun(miniakentSimdi())), true).catch((e) => console.warn("ustalik", e));
+			// Durum çubukları (kullanıcı, 2026-11-17; scripts/durum.gd): kayıt durum/<uid>; oyun okur ve yazar
+			window.miniakentDurumYaz = (j) => set(ref(db, "durum/" + uid), JSON.parse(j)).catch((e) => console.warn("durum", e));
+			window.miniakentKatilimYaz = (y, d) => karakter ? set(ref(db, "katilim/" + anahtar(karakter)),
+				y ? { y: y, b: serverTimestamp(), d: d ? 1 : 0 } : null).catch((e) => console.warn("katilim", e)) : Promise.resolve();
+			try { window.miniakentDurumKayit = JSON.stringify((await get(ref(db, "durum/" + uid))).val() || {}); }
+			catch (e) { console.warn("durum", e); }
 			if (ekoBirak) ekoBirak();
 			ekoBirak = onValue(ref(db, "ustalik"), (s) => { window.miniakentUstalik = s.val() || {}; });
 		};
@@ -728,7 +739,7 @@ try {
 		// "cevrimici"; varsayılan "Dışarıda") karakteri sayfa açıkken sehirde/<ad anahtarı>'na sunucu zamanıyla yazılır,
 		// dakikada bir yenilenir, sayfa kapanınca silinir (liste 3 dakikadan eski kaydı göstermez: uygulama kapanınca
 		// silemeyebilir). "Dışarıda"ysa önceki açılıştan kalmış kayıt silinir. Giriş yapmış ziyaretçinin rastgele kimliği
-		// girisli/'ye de yazılır: listedeki "Giriş yapmamış (N)" = cevrimici − girisli. KVKK: gizlilik.html (2026-11-16).
+		// girisli/'ye de yazılır: (2026-11-17'den beri listede kullanılmıyor: "Ve N kişi daha" = cevrimici − listedekiler.) KVKK: gizlilik.html (2026-11-16).
 		let sehirdeYol = null, eskiSilindi = false;
 		const girisliRef = ref(db, "girisli/" + id);
 		const sehirde = () => {
@@ -1604,6 +1615,21 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 #mkb .amenu button { display: flex; flex-direction: column; align-items: center; gap: 2px; font: inherit; font-size: 11px; background: none; border: 0;
 	color: var(--yazi); opacity: .6; padding: 2px 10px; }
 #mkb .amenu button[aria-selected="true"] { opacity: 1; font-weight: 700; }
+/* Durum ve Etkinlikler (kullanıcı, 2026-11-17; test sayfası): menünün altında tek, geniş Etkinlikler düğmesi; iki uçlu terazi çubuklar */
+#mkb .amenu { flex-wrap: wrap; row-gap: 6px; }
+#mkb .amenu .etk { flex-basis: 100%; flex-direction: row; justify-content: center; margin: 0 10px; padding: 9px; border-radius: 12px;
+	border: 2px solid var(--kenar); background: var(--yazi); color: var(--krem2); font-size: 13px; font-weight: 800; opacity: 1; }
+#mkb .tbar { margin: 14px 0 18px; }
+#mkb .tbar .ust { display: flex; justify-content: space-between; align-items: baseline; font-size: 11px; color: var(--soluk); }
+#mkb .tbar .ust b { color: var(--yazi); font-size: 13px; }
+#mkb .tbar .iz { position: relative; height: 14px; margin-top: 22px; border-radius: 999px; background: var(--krem2); border: 2px solid var(--kenar); }
+#mkb .tbar .orta { position: absolute; left: 50%; top: -5px; bottom: -5px; width: 2px; margin-left: -1px; background: var(--kenar); }
+#mkb .tbar .dolu { position: absolute; top: 0; bottom: 0; border-radius: 999px; }
+#mkb .tbar .dolu.iyi { background: #2fa35a; }
+#mkb .tbar .dolu.kotu { background: #d8433b; }
+#mkb .tbar .deger { position: absolute; top: -20px; transform: translateX(-50%); font-style: normal; font-size: 11px; font-weight: 800; }
+#mkb .ikili button:disabled { opacity: .45; }
+#mkb .etk-yer small { color: var(--soluk); font-weight: 400; }
 #mkb .amenu svg { width: 18px; height: 18px; }
 @media (prefers-reduced-motion: reduce) { #mkb .mkb-pano, #mkb .ray, #mkb .sehirde, #mkb .ayarlar { transition: none; } }
 /* bilgisayarda (fare, geniş ekran) ayarlar, ses ve Bölgeler sağ kenarda (kullanıcı, 2026-11-08) */
@@ -1659,7 +1685,6 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	<div class="fo-cerceveler" id="mkb-fo-cerceveler"><button data-c="sade">Sade</button><button data-c="polaroid">Polaroid</button><button data-c="kartpostal">Kartpostal</button><button data-c="cikartma">Çıkartmalı</button><button data-c="gokkusagi">Gökkuşağı</button><button data-c="seker">Şeker</button><button data-c="gece">Gece</button></div>
 	<div class="fo-renkler" id="mkb-fo-renkler"><button data-r="krem" style="background:#fbf0dc" aria-label="Krem"></button><button data-r="pembe" style="background:#f7b7cf" aria-label="Pembe"></button><button data-r="mavi" style="background:#a9d8f5" aria-label="Gök mavisi"></button><button data-r="limon" style="background:#ffe36e" aria-label="Limon"></button><button data-r="nane" style="background:#a8e6c5" aria-label="Nane"></button><button data-r="lavanta" style="background:#cdb8f2" aria-label="Lavanta"></button><button data-r="gece" style="background:#1f2a4d" aria-label="Gece mavisi"></button></div>
 	<div class="fo-eylem"><button id="mkb-fo-tekrar">Tekrar çek</button><button id="mkb-fo-kaydet">Kaydet</button><button class="paylas" id="mkb-fo-paylas">Paylaş</button></div></div>
-<div class="cevrim" id="mkb-cevrim" hidden></div>
 <div class="cevrim" id="mkb-fps" style="top: calc(76px + env(safe-area-inset-top, 0px))" hidden></div>
 <div class="mkb-liste" id="mkb-oneri" hidden></div>
 <div class="mkb-liste" id="mkb-bolge" hidden></div>
@@ -1694,7 +1719,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	<a class="p-dugme" href="gizlilik.html" target="_blank" rel="noopener">Gizlilik Politikası ve KVKK Aydınlatma Metni</a>
 </section>
 <div class="takip" id="mkb-takip" hidden><span class="kim-ad" id="mkb-takip-ad"></span>
-	<div class="dugmeler"><button id="mkb-goz">Gözünden gör</button><button class="koyu" id="mkb-birak">Takibi bırak</button></div></div>
+	<div class="dugmeler"><button id="mkb-hizli" hidden>Hızlı yürü</button><button id="mkb-goz">Gözünden gör</button><button class="koyu" id="mkb-birak">Takibi bırak</button></div></div>
 <div class="mkb-onay" id="mkb-onay" hidden><div class="kutu"><h3 id="mkb-onay-baslik"></h3><p id="mkb-onay-yazi"></p>
 	<div class="ikili"><button class="hayir" id="mkb-vazgec">Vazgeç</button><button class="evet" id="mkb-ode">Öde</button></div></div></div>
 <div class="mkb-onay" id="mkb-tercih" hidden><div class="kutu tercih"><h3>Hesap Ayarları</h3>
@@ -1946,19 +1971,31 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	const MENU_SVG = {
 		para: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/></svg>',
 		ilan: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9zM8.5 11h7M8.5 15h5"/></svg>',
+		durum: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg>',
 	};
+	// Durum çubukları (kullanıcı, 2026-11-17; scripts/durum.gd): iki uçlu terazi, ortada 0; iyi tarafa yeşil (+50), kötüye kırmızı (−50)
+	const dur = () => (bilgi && bilgi.durum && bilgi.durum.yerler ? bilgi.durum : null);
+	const isaret = (n) => (n > 0 ? "+" : n < 0 ? "−" : "") + Math.abs(n).toLocaleString("tr-TR", { maximumFractionDigits: 1 });
+	function tbar(ad, sol, sag, v) {
+		v = Math.max(-50, Math.min(50, Math.round(v || 0)));
+		return `<div class="tbar"><div class="ust"><span>${sol}</span><b>${ad}</b><span>${sag}</span></div>
+			<div class="iz"><i class="dolu ${v >= 0 ? "iyi" : "kotu"}" style="left:${v >= 0 ? 50 : 50 + v}%;width:${Math.abs(v)}%"></i><i class="orta"></i>
+			<em class="deger" style="left:${50 + v}%">${isaret(v) || "0"}</em></div></div>`;
+	}
+	const DURUM_YOK = `<p class="bilgi">Durum bilgileri bu hesap için açık değil.</p>`;
 	function profilBas() {
 		const is = isim(), ev = evim(), [dy, iste] = durumYazi();
 		return `<div class="pbas">${kart({ handle: karakter, meslek: is.meslek, yer: is.yer, ev: ev.adres }, dy, iste)}
 			<button class="bogul" data-bogul="1" ${iste ? "disabled" : ""}>Boğulmaya git</button></div>`;
 	}
 	function altMenu() {
-		const m = [["gorunus", "Görünüş", SVG.gorunus], ["finans", "Finans", MENU_SVG.para], ["ilan", "İlanlar", MENU_SVG.ilan]];
-		return `<nav class="amenu">${m.map((x) => `<button data-menu="${x[0]}" aria-selected="${sayfaAd === x[0]}">${x[2]}<span>${x[1]}</span></button>`).join("")}</nav>`;
+		const m = [["durum", "Durum", MENU_SVG.durum], ["gorunus", "Görünüş", SVG.gorunus], ["finans", "Finans", MENU_SVG.para], ["ilan", "İlanlar", MENU_SVG.ilan]];
+		return `<nav class="amenu">${m.map((x) => `<button data-menu="${x[0]}" aria-selected="${sayfaAd === x[0]}">${x[2]}<span>${x[1]}</span></button>`).join("")}
+			<button class="etk" data-menu="etkinlik" aria-selected="${sayfaAd === "etkinlik"}">Etkinlikler</button></nav>`;
 	}
 	function ekoKutu(e, tam) {
 		if (!e || !window.miniakentEkonomi) return "";
-		let h = `<div class="kutu"><div class="satir"><span>Bakiye</span><b>${papel(e.bakiye)}</b></div>`;
+		let h = `<div class="kutu"><div class="satir"><span>${e.bakiye < 0 ? "Borç" : "Bakiye"}</span><b>${papel(Math.abs(e.bakiye))}</b></div>`;
 		if (tam) h += `<span class="etiket">Bu ay</span>
 			<div class="satir"><span>Maaş</span><b>${papel(e.maas)}</b></div><div class="satir"><span>Vergi</span><b>${papel(e.vergi)}</b></div>
 			<div class="satir"><span>Geçim</span><b>${papel(e.gecim)}</b></div><div class="satir"><span>Kira</span><b>${papel(e.kira)}</b></div>
@@ -2007,8 +2044,49 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			<p class="bilgi">Mesai bitince karakterin eve döner.</p><p class="bilgi">Betada karakter henüz seçilen yere gitmez.</p>`;
 		}],
 		gorunus: ["Görünüş", () => kiyafetPanel() + (kostumVar() ? kostumIzgara(karakter) : "")],
-		finans: ["Karakterim", () => (ekoKutu(bilgi && bilgi.ekonomi, true) || `<p class="bilgi">Finans bilgileri bu hesap için açık değil.</p>`)
-			+ `<p class="bilgi">Ekonomi: izin ${window.miniakentEkonomi ? "var" : "yok"} · hesap ${bilgi && bilgi.ekonomi ? "var" : "yok"}</p>`],
+		finans: ["Karakterim", () => {
+			const e = bilgi && bilgi.ekonomi, k = ekoKutu(e, true);
+			if (!k) return `<p class="bilgi">Finans bilgileri bu hesap için açık değil.</p>`;
+			const ek = [["Fazla mesai kazancı", e.fazla], ["Etkinlik ve taksi", e.etkinlik], ["Hastane", e.hastane], ["İzin / hastane kesintisi", e.kesinti]].filter((x) => x[1]);
+			let h = k + (ek.length ? `<div class="kutu"><span class="etiket">Bu ay ayrıca</span>${ek.map((x) => `<div class="satir"><span>${x[0]}</span><b>${papel(x[1])}</b></div>`).join("")}</div>` : "");
+			const d = dur();
+			if (d) {   // fazla mesai (kullanıcı, 2026-11-17): hafta içi mesaiden sonra en çok 2, tatil günü en çok 4 saat; saatlik ücretin 1,5 katı
+				const f = d.fazla, sec = (n, s, a, b2) => `<button class="${s === n ? "secili" : ""}" data-fmsec="${a}|${b2}">${n ? n + " saat" : "Yok"}</button>`;
+				h += `<div class="bolum">Fazla mesai</div><div class="kutu"><p class="bilgi">Saatlik ${papel(f.saatlik)} (ücretinin 1,5 katı). Fazla mesai enerjini ve huzurunu daha çok düşürür.</p>
+					<span class="etiket">Hafta içi (mesaiden sonra)</span><div class="sekmeler">${[0, 1, 2].map((n) => sec(n, f.h, n, f.t)).join("")}</div>
+					<span class="etiket">Tatil günü</span><div class="sekmeler">${[0, 1, 2, 3, 4].map((n) => sec(n, f.t, f.h, n)).join("")}</div></div>`;
+			}
+			return h;
+		}],
+		durum: ["Karakterim", () => {
+			const d = dur();
+			if (!d) return DURUM_YOK;
+			return (d.hastane ? `<div class="kutu"><span class="etiket">Hastanede</span><p class="bilgi">Taburcu olmana ${Math.ceil(d.hastane / 60)} dakika kaldı.</p></div>` : "")
+				+ tbar("Durum", "Kötü", "İyi", d.durum) + tbar("Enerji", "Yorgun", "Enerjik", d.enerji)
+				+ tbar("Huzur", "Stresli", "Huzurlu", d.huzur) + tbar("Sağlık", "Hasta", "Sağlıklı", d.saglik)
+				+ `<p class="bilgi">Durum; enerji, huzur ve sağlığın ortalamasıdır. Enerji ya da huzur çok düşerse sağlık bozulur; sağlık çok düşerse karakterin hastaneye kaldırılır (${papel(3000)}).</p>`;
+		}],
+		// Etkinlikler (kullanıcı, 2026-11-17): yer seçilir, karakter yürüyerek ya da doğrudan (taksi) gider, 1 oyun saati katılır
+		etkinlik: ["Karakterim", () => {
+			const d = dur();
+			if (!d) return DURUM_YOK;
+			const adi = (id) => (d.yerler.find((y) => y.id === id) || {}).ad || id;
+			let h = "";
+			if (d.aktif) {
+				const a = d.aktif, as = a.asama === "yol" ? "Yolda" : a.asama === "bekliyor" ? `Kalkışı bekliyor · ${a.kalan} sn` : `Katılıyor · ${Math.max(1, Math.ceil(a.kalan / 60))} dakika kaldı`;
+				h += `<div class="kutu"><span class="etiket">Şu an</span><h3>${esc(adi(a.id))}</h3><p class="alt">${as}</p></div>`
+					+ (a.asama !== "suruyor" ? `<div class="ikili"><button class="hayir" data-etkvazgec="1">Vazgeç</button></div>` : "");
+			} else if (d.serbest === "Mesaide") {
+				const iz = d.izin;
+				h += `<div class="kutu"><p class="bilgi">Mesaidesin. İzin alırsan günün kalan mesaisinden para kazanmazsın. Bu ay ${iz.kalan} izin hakkın var.</p></div>`
+					+ (iz.kalan > 0 && !iz.bugun ? `<div class="ikili"><button class="evet" data-izinal="1">İzin iste</button></div>` : "");
+			} else if (d.serbest) h += `<div class="kutu"><p class="bilgi">${esc(d.serbest)}: şu an etkinliğe gidemezsin.</p></div>`;
+			const kapali = !!d.serbest;
+			h += d.yerler.map((y) => `<div class="kutu etk-yer"><div class="satir"><span><b>${esc(y.ad)}</b><br><small>${esc(y.alt)}</small></span><b>${y.ucret ? papel(y.ucret) : "Ücretsiz"}</b></div>
+				<p class="bilgi">Saatte: Enerji ${isaret(y.enerji) || "0"} · Huzur ${isaret(y.huzur) || "0"}</p>
+				<div class="ikili"><button class="hayir" data-etk="${y.id}|0" ${kapali || !y.yeter ? "disabled" : ""}>Yürüyerek</button><button class="evet" data-etk="${y.id}|1" ${kapali || !y.taksi ? "disabled" : ""}>Doğrudan · ${papel(20)}</button></div></div>`).join("");
+			return h + `<p class="bilgi">Bir etkinlik 1 oyun saati sürer, ücreti varınca ödenir. Yürüyerek gitmek ücretsizdir; doğrudan gitmek taksi ücretidir.</p>`;
+		}],
 		ilan: ["Karakterim", () => `<div class="kutu bos"><p class="bilgi">Şu an açık ilan yok. İlanlar gün içinde farklı saatlerde çıkar.</p></div>`],
 		bina: [() => bina.baslik, () => `${bina.kasa && bina.kasa.toplam != null && window.miniakentEkonomi ? `<div class="kutu"><span class="etiket">Belediye kasası</span><h3>${papel(bina.kasa.toplam)}</h3>
 			<div class="satir"><span>Son ay vergi</span><b>${papel(bina.kasa.vergi)}</b></div><div class="satir"><span>Son ay kira</span><b>${papel(bina.kasa.kira)}</b></div></div>` : ""}${bina.alt ? `<p class="bilgi">${esc(bina.alt)}</p>` : ""}${bina.is ? binaGrup("is") : ""}${bina.ev ? binaGrup("ev") : ""}`],
@@ -2028,7 +2106,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 
 	function ciz() {
 		const s = SAYFA[sayfaAd];
-		const yeniDuzen = YENI && karakter && ["finans", "ilan", "gorunus"].includes(sayfaAd);
+		const yeniDuzen = YENI && karakter && ["finans", "ilan", "gorunus", "durum", "etkinlik"].includes(sayfaAd);
 		$("mkb-baslik").textContent = yeniDuzen ? "Karakterim" : typeof s[0] === "function" ? s[0]() : s[0];
 		const ic = $("mkb-icerik"), y = ic.scrollTop;
 		ic.innerHTML = yeniDuzen ? profilBas() + s[1]() + altMenu() : s[1]();
@@ -2063,6 +2141,8 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	function ac(ad) {
 		if (YENI && ad === "kisi") ad = "finans";   // yeni düzende Karakterim Finans bölümüyle açılır
 		sayfaAd = ad; kostumAcik = false; binaTum = {};
+		if (ayarlarAcik) ayarlarAc(false);   // kart, profil ve "Şu an şehirde" aynı anda açık kalmaz (kullanıcı, 2026-11-17)
+		if (sehirdeAcik) sehirdeAc(false);
 		$("mkb-pano").classList.add("acik");
 		$("mkb-pano").setAttribute("aria-hidden", "false");
 		ciz(); arayuz();
@@ -2383,6 +2463,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		$("mkb-disli").setAttribute("aria-expanded", String(ac));
 		if (ac) {
 			if (sehirdeAcik) sehirdeAc(false);   // tıklamada çağrılır: sehirdeAc o zaman tanımlı
+			if (sayfaAd) kapat();   // kart, profil ve "Şu an şehirde" aynı anda açık kalmaz (kullanıcı, 2026-11-17)
 			a.hidden = false;
 			void a.offsetWidth;   // gizliyken kayma başlamaz: önce çizilsin
 			a.classList.add("acik");
@@ -2480,20 +2561,21 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	});
 	// "Şu an şehirde" (kullanıcı, 2026-11-16): fotoğraf düğmesinin altındaki düğme sağdan paneli açar; "Çevrimiçi" seçmiş
 	// oyuncular alfabetik, alt alta (3 dakikadan eski kayıt gösterilmez); dokununca o karakter takip edilir; en altta
-	// giriş yapmamış ziyaretçi sayısı (çevrimiçi − giriş yapmış)
+	// "Ve N kişi daha" (kullanıcı, 2026-11-17): listede görünmeyen herkes (giriş yapmamış + "Dışarıda"); 0 ise yazı yok
 	const sehirdeCiz = () => {
 		const v = window.miniakentSehirde || {}, simdi = miniakentSimdi();
 		const adlar = Object.keys(v).filter((k) => typeof v[k] === "number" && simdi - v[k] < 180000)
 			.map((k) => "@" + k.replace(/,/g, ".")).sort((a, b) => a.localeCompare(b, "tr"));
-		const anonim = Math.max(0, (window.miniakentCevrimici || 0) - (window.miniakentGirisli || 0));
+		const anonim = Math.max(0, (window.miniakentCevrimici || 0) - adlar.length);
 		const imza = adlar.join("|") + "#" + anonim;
 		if (imza === sonSehirde) return;
 		sonSehirde = imza;
 		$("mkb-sehirde-liste").innerHTML = adlar.map((h) => `<button data-takip="${esc(h)}">${esc(h)}</button>`).join("");
-		$("mkb-sehirde-anonim").textContent = "Giriş yapmamış (" + anonim + ")";
+		$("mkb-sehirde-anonim").textContent = anonim > 0 ? "Ve " + anonim + " kişi daha" : "";
 	};
 	const sehirdeAc = (ac) => {
 		if (ac && ayarlarAcik) ayarlarAc(false);
+		if (ac && sayfaAd) kapat();   // kart, profil ve bu panel aynı anda açık kalmaz (kullanıcı, 2026-11-17)
 		sehirdeAcik = ac;
 		$("mkb-sehirde").classList.toggle("acik", ac);
 		$("mkb-sehirde").setAttribute("aria-hidden", String(!ac));
@@ -2509,6 +2591,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 
 	// takip düğmeleri
 	$("mkb-goz").addEventListener("click", () => window.miniakentGoz && window.miniakentGoz());
+	$("mkb-hizli").addEventListener("click", () => window.miniakentHizli && window.miniakentHizli());
 	$("mkb-birak").addEventListener("click", () => window.miniakentBirak && window.miniakentBirak());
 
 	$("mkb-icerik").addEventListener("click", (e) => {
@@ -2530,6 +2613,14 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			window.miniakentBogul && window.miniakentBogul(h).catch((e) => console.warn("bogulma", e));
 			window.minikentSearch && window.minikentSearch(h);
 		}
+		else if (d.etk) {   // etkinliğe git (kamera karakteri izler)
+			const [id, dg] = d.etk.split("|");
+			window.miniakentEtkinlik && window.miniakentEtkinlik(id, dg === "1");
+			window.minikentSearch && window.minikentSearch(karakter);
+		}
+		else if (d.etkvazgec) window.miniakentEtkinlikVazgec && window.miniakentEtkinlikVazgec();
+		else if (d.izinal) window.miniakentIzin && window.miniakentIzin();
+		else if (d.fmsec) { const [a, b2] = d.fmsec.split("|"); window.miniakentFazla && window.miniakentFazla(+a, +b2); }
 		else if (d.kostumac) { kostumAcik = true; ciz(); }
 		else if (b.id === "mkb-sifirla") { st = yeni(); kaydet(); ciz(); }
 		else if (d.ne) { st.ne = st.ne === d.ne ? "" : d.ne; kaydet(); ciz(); }
@@ -2627,6 +2718,12 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		bolge.hidden = !bolge.hidden;
 	});
 	bolge.addEventListener("click", (e) => { const b = e.target.closest("button"); if (b) { bolge.hidden = true; window.miniakentBolgeGit && window.miniakentBolgeGit(b.dataset.z); } });
+	// arama açılınca kart, profil ve "Şu an şehirde" kapanır (kullanıcı, 2026-11-17)
+	ara.addEventListener("focus", () => {
+		if (sayfaAd) kapat();
+		if (ayarlarAcik) ayarlarAc(false);
+		if (sehirdeAcik) sehirdeAc(false);
+	});
 
 	// oyunun durumu: yarım saniyede bir (oyun açılınca ana ekran görünür)
 	let sonBilgi = "", sonOturum = null, sonDk = -1, sonSecim = 0, sonBina = 0;
@@ -2652,9 +2749,6 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		$("mkb-nufus").textContent = "Nüfus: " + sayi(hud.nufus) + " · Bekleyen: " + sayi(hud.bekleyen);
 		$("mkb-saat").textContent = takvim(hud.saat);
 		$("mkb-ses").innerHTML = hud.sessiz ? SVG.sessiz : SVG.ses;
-		const n = window.miniakentCevrimici;
-		$("mkb-cevrim").hidden = !(n >= 1);
-		$("mkb-cevrim").textContent = "Çevrimiçi: " + n;
 		if (sehirdeAcik) sehirdeCiz();
 		// kare hızı (yalnız test sayfası; kullanıcı, 2026-11-09: Lite açık/kapalı farkı telefonda görülsün)
 		$("mkb-fps").hidden = !(window.miniakentTest && hud.fps >= 0);  // yalnız test sayfasında
@@ -2664,7 +2758,16 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		$("mkb-takip").hidden = !takipVar;
 		$("mkb-takip-ad").textContent = (hud.takip || "") + " takipte";
 		$("mkb-goz").textContent = hud.goz ? "Yukarıdan bak" : "Gözünden gör";
-		$("mkb-goz").hidden = !!hud.hayvan;   // hayvanda zaten arkasından bakılır
+		$("mkb-goz").hidden = !!hud.hayvan || YENI;   // hayvanda zaten arkasından bakılır; test sayfasında kalktı (kullanıcı, 2026-11-17: işlevsiz)
+		// Hızlı yürü (kullanıcı, 2026-11-17; kendi karakteri takipteyken): 30 sn 2 kat hız, düğme bar gibi boşalır, 30 sn'de dolar
+		const hz = hud.hizli;
+		$("mkb-hizli").hidden = !hz;
+		if (hz) {
+			const k = Math.round(hz.k * 100), renk = hz.d === "aktif" ? "#2fa35a" : "#e8c547";
+			$("mkb-hizli").style.background = hz.d === "hazir" ? "" : `linear-gradient(90deg, ${renk} ${k}%, transparent ${k}%)`;
+			$("mkb-hizli").disabled = hz.d !== "hazir";
+			$("mkb-hizli").textContent = hz.d === "aktif" ? "Hızlı yürüyor" : hz.d === "dolum" ? "Doluyor" : "Hızlı yürü";
+		}
 		if (window.miniakentOturum !== sonOturum) {
 			sonOturum = window.miniakentOturum;
 			let o = {};
@@ -2694,7 +2797,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611171132.pck","fileSizes":{"test/index-test-v202611171132.pck":9217728,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611172053.pck","fileSizes":{"test/index-test-v202611172053.pck":9283008,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
