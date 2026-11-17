@@ -1603,13 +1603,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 #mkb.yeni .sekme { padding: 3px 5px 3px 3px; }
 #mkb.yeni .sekme .simge.kucuk { width: 26px; height: 26px; }
 #mkb.yeni .sekme .simge.kucuk svg { width: 17px; height: 17px; }
-#mkb .pbas { padding: 4px 0 8px; display: flex; flex-direction: column; gap: 6px; border-bottom: 2px solid var(--kenar); }   /* sabit değil, içerikle kayar (kullanıcı, 2026-11-17) */
 #mkb.yeni .mkb-pano { height: calc(100% - 150px - 76px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px)); }   /* arama çubuğuna kadar */
-#mkb .pbas .avatar { display: none; }
-#mkb .pbas .kutu { padding: 6px 10px; }
-#mkb .pbas .bogul { align-self: flex-start; font: inherit; font-size: 12px; padding: 4px 10px; border-radius: 999px; border: 2px solid var(--kenar);
-	background: var(--krem2); color: var(--yazi); }
-#mkb .pbas .bogul:disabled { opacity: .5; }
 #mkb .amenu { position: sticky; bottom: -16px; z-index: 2; margin-top: auto; display: flex; justify-content: space-around; background: var(--krem);
 	border-top: 2px solid var(--kenar); padding: 6px 0 8px; }
 #mkb .amenu button { display: flex; flex-direction: column; align-items: center; gap: 2px; font: inherit; font-size: 11px; background: none; border: 0;
@@ -1631,6 +1625,22 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 #mkb.yeni.takipli .mkb-pano { height: calc(100% - 150px - 76px - 84px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px)); }   /* takip çubuğu (Hızlı yürü) Etkinlikler düğmesinin üstüne binmesin */
 #mkb .ikili button:disabled { opacity: .45; }
 #mkb .etk-yer small { color: var(--soluk); font-weight: 400; }
+/* sade kart (kullanıcı, 2026-11-17: "tuşlar çok büyük", "yazıların yanında çok boşluk"): küçük menü, tek satırlık etkinlikler */
+#mkb .amenu { padding: 4px 0 6px; }
+#mkb .amenu button { font-size: 10px; padding: 1px 6px; gap: 1px; }
+#mkb .amenu svg { width: 16px; height: 16px; }
+#mkb .amenu .etk { padding: 6px; margin: 0 8px; font-size: 12px; }
+#mkb .etk-l { display: flex; flex-direction: column; gap: 5px; }
+#mkb .etk-s { display: flex; align-items: center; gap: 6px; padding: 5px 6px 5px 9px; border: 2px solid var(--kenar); border-radius: 11px; background: var(--krem2); }
+#mkb .etk-s .ad { flex: 1; min-width: 0; font-size: 11.5px; font-weight: 800; line-height: 1.2; }
+#mkb .etk-s .ad small { display: block; margin-top: 1px; font-size: 9.5px; font-weight: 400; color: var(--soluk); }
+#mkb .etk-s .fiyat { font-size: 10.5px; font-weight: 800; white-space: nowrap; }
+#mkb .etk-s button, #mkb .kucuk-d { font: inherit; font-size: 10px; font-weight: 800; padding: 3px 8px; border-radius: 999px; border: 2px solid var(--kenar);
+	background: transparent; color: var(--yazi); white-space: nowrap; }
+#mkb .etk-s button.koyu { background: var(--yazi); color: var(--krem2); }
+#mkb .etk-s button:disabled, #mkb .kucuk-d:disabled { opacity: .4; }
+#mkb .etk-ust { display: flex; justify-content: flex-end; }
+#mkb .takip .kim-ad { cursor: pointer; }
 #mkb .amenu svg { width: 18px; height: 18px; }
 @media (prefers-reduced-motion: reduce) { #mkb .mkb-pano, #mkb .ray, #mkb .sehirde, #mkb .ayarlar { transition: none; } }
 /* bilgisayarda (fare, geniş ekran) ayarlar, ses ve Bölgeler sağ kenarda (kullanıcı, 2026-11-08) */
@@ -1984,11 +1994,6 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			<em class="deger" style="left:${50 + v}%">${isaret(v) || "0"}</em></div></div>`;
 	}
 	const DURUM_YOK = `<p class="bilgi">Durum bilgileri bu hesap için açık değil.</p>`;
-	function profilBas() {
-		const is = isim(), ev = evim(), [dy, iste] = durumYazi();
-		return `<div class="pbas">${kart({ handle: karakter, meslek: is.meslek, yer: is.yer, ev: ev.adres }, dy, iste)}
-			<button class="bogul" data-bogul="1" ${iste ? "disabled" : ""}>Boğulmaya git</button></div>`;
-	}
 	function altMenu() {
 		const m = [["durum", "Durum", MENU_SVG.durum], ["gorunus", "Görünüş", SVG.gorunus], ["finans", "Finans", MENU_SVG.para], ["ilan", "İlanlar", MENU_SVG.ilan]];
 		return `<nav class="amenu">${m.map((x) => `<button data-menu="${x[0]}" aria-selected="${sayfaAd === x[0]}">${x[2]}<span>${x[1]}</span></button>`).join("")}
@@ -2072,22 +2077,23 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			const d = dur();
 			if (!d) return DURUM_YOK;
 			const adi = (id) => (d.yerler.find((y) => y.id === id) || {}).ad || id;
-			let h = "";
+			const iste = durumYazi()[1];
+			let h = `<div class="etk-ust"><button class="kucuk-d" data-bogul="1" ${iste ? "disabled" : ""}>Boğulmaya git</button></div>`;
 			if (d.aktif) {
-				const a = d.aktif, as = a.asama === "yol" ? "Yolda" : a.asama === "bekliyor" ? `Kalkışı bekliyor · ${a.kalan} sn` : `Katılıyor · ${Math.max(1, Math.ceil(a.kalan / 60))} dakika kaldı`;
-				h += `<div class="kutu"><span class="etiket">Şu an</span><h3>${esc(adi(a.id))}</h3><p class="alt">${as}</p></div>`
-					+ (a.asama !== "suruyor" ? `<div class="ikili"><button class="hayir" data-etkvazgec="1">Vazgeç</button></div>`
-						: `<div class="ikili"><button class="hayir" data-etkvazgec="1">Etkinlikten çık</button></div><p class="bilgi">Erken çıkarsan ücret geri verilmez.</p>`);   // erken çıkış (kullanıcı, 2026-11-17)
+				const a = d.aktif, sur = a.asama === "suruyor";
+				const as = a.asama === "yol" ? "Yolda" : a.asama === "bekliyor" ? `Kalkışı bekliyor · ${a.kalan} sn` : `Katılıyor · ${Math.max(1, Math.ceil(a.kalan / 60))} dakika kaldı`;
+				h += `<div class="etk-s"><div class="ad">${esc(adi(a.id))}<small>${as}${sur ? " · erken çıkarsan ücret geri verilmez" : ""}</small></div>
+					<button data-etkvazgec="1">${sur ? "Çık" : "Vazgeç"}</button></div>`;   // erken çıkış (kullanıcı, 2026-11-17)
 			} else if (d.serbest === "Mesaide") {
 				const iz = d.izin;
-				h += `<div class="kutu"><p class="bilgi">Mesaidesin. İzin alırsan günün kalan mesaisinden para kazanmazsın. Bu ay ${iz.kalan} izin hakkın var.</p></div>`
-					+ (iz.kalan > 0 && !iz.bugun ? `<div class="ikili"><button class="evet" data-izinal="1">İzin iste</button></div>` : "");
-			} else if (d.serbest) h += `<div class="kutu"><p class="bilgi">${esc(d.serbest)}: şu an etkinliğe gidemezsin.</p></div>`;
+				h += `<div class="etk-s"><div class="ad">Mesaidesin<small>İzin alırsan günün kalan mesaisinden para kazanmazsın · bu ay ${iz.kalan} hakkın var</small></div>
+					${iz.kalan > 0 && !iz.bugun ? `<button class="koyu" data-izinal="1">İzin iste</button>` : ""}</div>`;
+			} else if (d.serbest) h += `<p class="bilgi">${esc(d.serbest)}: şu an etkinliğe gidemezsin.</p>`;
 			const kapali = !!d.serbest;
-			h += d.yerler.map((y) => `<div class="kutu etk-yer"><div class="satir"><span><b>${esc(y.ad)}</b><br><small>${esc(y.alt)}</small></span><b>${y.ucret ? papel(y.ucret) : "Ücretsiz"}</b></div>
-				<p class="bilgi">Saatte: Enerji ${isaret(y.enerji) || "0"} · Huzur ${isaret(y.huzur) || "0"}</p>
-				<div class="ikili"><button class="hayir" data-etk="${y.id}|0" ${kapali || !y.yeter ? "disabled" : ""}>Yürüyerek</button><button class="evet" data-etk="${y.id}|1" ${kapali || !y.taksi ? "disabled" : ""}>Doğrudan · ${papel(20)}</button></div></div>`).join("");
-			return h + `<p class="bilgi">Bir etkinlik 1 oyun saati sürer, ücreti varınca ödenir. Yürüyerek gitmek ücretsizdir; doğrudan gitmek taksi ücretidir.</p>`;
+			h += `<div class="etk-l">${d.yerler.map((y) => `<div class="etk-s"><div class="ad">${esc(y.ad)}<small>${esc(y.alt)} · Enerji ${isaret(y.enerji) || "0"} · Huzur ${isaret(y.huzur) || "0"}</small></div>
+				<span class="fiyat">${y.ucret ? papel(y.ucret) : "Ücretsiz"}</span>
+				<button data-etk="${y.id}|0" ${kapali || !y.yeter ? "disabled" : ""}>Yürü</button><button class="koyu" data-etk="${y.id}|1" ${kapali || !y.taksi ? "disabled" : ""}>Taksi</button></div>`).join("")}</div>`;
+			return h + `<p class="bilgi">Bir etkinlik 1 oyun saati sürer, ücreti varınca ödenir. Taksi ${papel(20)}; yürümek ücretsiz. Değerler oyun saati başına.</p>`;
 		}],
 		ilan: ["Karakterim", () => `<div class="kutu bos"><p class="bilgi">Şu an açık ilan yok. İlanlar gün içinde farklı saatlerde çıkar.</p></div>`],
 		bina: [() => bina.baslik, () => `${bina.kasa && bina.kasa.toplam != null && window.miniakentEkonomi ? `<div class="kutu"><span class="etiket">Belediye kasası</span><h3>${papel(bina.kasa.toplam)}</h3>
@@ -2111,7 +2117,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		const yeniDuzen = YENI && karakter && ["finans", "ilan", "gorunus", "durum", "etkinlik"].includes(sayfaAd);
 		$("mkb-baslik").textContent = yeniDuzen ? "Karakterim" : typeof s[0] === "function" ? s[0]() : s[0];
 		const ic = $("mkb-icerik"), y = ic.scrollTop;
-		ic.innerHTML = yeniDuzen ? profilBas() + s[1]() + altMenu() : s[1]();
+		ic.innerHTML = yeniDuzen ? s[1]() + altMenu() : s[1]();
 		ic.scrollTop = y;
 	}
 	// sekmeler panel açıkken panelin sağ kenarına yapışır; tam ekranda gizlenir. Kumanda panel tam ekranken gizli,
@@ -2140,8 +2146,15 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		if (window.miniakentOnizle && oniz !== sonOnizle) { sonOnizle = oniz; window.miniakentOnizle(karakter, oniz); }
 	}
 	let sonOnizle = 0, fotoKip = false;   // fotoKip: fotoğraf çekim kipi (kumanda gizli)
+	// Karakterim en son açık kalan sekmeyle açılır (kullanıcı, 2026-11-17); ilk kez Finans
+	var sonSekme = "finans";   // var: ac() erken çağrılırsa da hata vermesin
+	try { sonSekme = localStorage.getItem("mkb_sekme") || "finans"; } catch (e) {}
 	function ac(ad) {
-		if (YENI && ad === "kisi") ad = "finans";   // yeni düzende Karakterim Finans bölümüyle açılır
+		if (YENI && ad === "kisi") ad = sonSekme;
+		if (["durum", "gorunus", "finans", "ilan", "etkinlik"].includes(ad)) {
+			sonSekme = ad;
+			try { localStorage.setItem("mkb_sekme", ad); } catch (e) {}
+		}
 		sayfaAd = ad; kostumAcik = false; binaTum = {};
 		if (ayarlarAcik) ayarlarAc(false);   // kart, profil ve "Şu an şehirde" aynı anda açık kalmaz (kullanıcı, 2026-11-17)
 		if (sehirdeAcik) sehirdeAc(false);
@@ -2594,6 +2607,14 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	// takip düğmeleri
 	$("mkb-goz").addEventListener("click", () => window.miniakentGoz && window.miniakentGoz());
 	$("mkb-hizli").addEventListener("click", () => window.miniakentHizli && window.miniakentHizli());
+	let kartIste = false;
+	$("mkb-takip-ad").addEventListener("click", () => {   // takip edilenin kartı (kendi karakteriyse Karakterim)
+		const hud = window.miniakentHud || {}, h = hud.takip || "";
+		if (!h || hud.hayvan) return;
+		if (h === karakter) ac("kisi");
+		else if (secilen && secilen.handle === h) ac("sakin");
+		else { kartIste = true; window.minikentSearch && window.minikentSearch(h); }
+	});
 	$("mkb-birak").addEventListener("click", () => window.miniakentBirak && window.miniakentBirak());
 
 	$("mkb-icerik").addEventListener("click", (e) => {
@@ -2739,7 +2760,9 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			secilen = window.miniakentSecilen;
 			bolge.hidden = true;
 			rozetGetir(secilen.handle);
-			ac(secilen.handle === karakter ? "kisi" : "sakin");
+			// test sayfasında dokunuş yalnız seçer ve takip eder; kart "@ad takipte" yazısından (kullanıcı, 2026-11-17)
+			if (!YENI || kartIste) ac(secilen.handle === karakter ? "kisi" : "sakin");
+			kartIste = false;
 		}
 		// oyunda bir binaya dokunuldu: bina kartı
 		if (window.miniakentBinaSurum && window.miniakentBinaSurum !== sonBina) {
@@ -2800,7 +2823,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611172218.pck","fileSizes":{"test/index-test-v202611172218.pck":9290976,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611172344.pck","fileSizes":{"test/index-test-v202611172344.pck":9292720,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
