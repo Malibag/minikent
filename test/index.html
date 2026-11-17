@@ -521,7 +521,7 @@ body.gece .yk-sahne { background: #3a4d74; border-color: #0b1220; }
 // Her ziyaretçi cevrimici/<kimlik> yazar, sekme kapanınca silinir; oyun sayıyı window.miniakentCevrimici'den okur.
 // gunluk/<Türkiye tarihi> her tarayıcıda günde bir kez 1 artar. Bağlantı kurulamazsa oyun etkilenmez.
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getDatabase, ref, set, get, update, push, onDisconnect, onValue, runTransaction, serverTimestamp, goOffline, goOnline } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+import { getDatabase, ref, set, get, update, push, remove, query, orderByChild, startAt, endAt, onDisconnect, onValue, runTransaction, serverTimestamp, goOffline, goOnline } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
 try {
 	const app = initializeApp({
 		apiKey: "AIzaSyCC0HI_bln18UBMEDHdAO7CmtMEM3JtM5I",
@@ -683,7 +683,7 @@ try {
 		};
 		// Ekonomi (kullanıcı, 2026-11-16): yalnız test sayfasında ve izin listesindeki hesaba (ekonomi_izin/<uid>). İzinli
 		// oyuncunun girdiği oyun ayı (12:00'de döner) ustalık için kaydedilir; herkesin ustalık günleri oyuna verilir.
-		let ekoBirak = null;
+		let ekoBirak = null, sohbetBirak = null;
 		const ayGun = (ms) => new Date(ms - 9 * 3600 * 1000).toISOString().slice(0, 10).replace(/-/g, "");
 		const ekonomiAc = async (uid) => {
 			let izinli = false;
@@ -697,6 +697,22 @@ try {
 				y ? { y: y, b: serverTimestamp(), d: d ? 1 : 0 } : null).catch((e) => console.warn("katilim", e)) : Promise.resolve();
 			try { window.miniakentDurumKayit = JSON.stringify((await get(ref(db, "durum/" + uid))).val() || {}); }
 			catch (e) { console.warn("durum", e); }
+			// Kafe sohbeti (kullanıcı, 2026-11-18; test sayfası, izinli hesap): kafe_sohbet/<push> = {k, h, m (≤120), t};
+			// kafedeyken yazılır ve görülür, 1 saatten eski mesajlar silinir. Şikâyet: sikayet/<push> (yalnız yönetici okur).
+			const SOHBET_SURE = 3600000;
+			window.miniakentSohbetYaz = (m) => karakter ? push(ref(db, "kafe_sohbet"), { k: anahtar(karakter), h: karakter, m: m, t: serverTimestamp() })
+				.catch((e) => console.warn("sohbet", e)) : Promise.resolve();
+			window.miniakentSikayet = (x) => push(ref(db, "sikayet"), { mesaj_id: x.id, h: x.h, m: x.m, mt: x.t || 0, kim: uid, t: serverTimestamp() })
+				.catch((e) => console.warn("sikayet", e));
+			if (sohbetBirak) sohbetBirak();
+			sohbetBirak = onValue(query(ref(db, "kafe_sohbet"), orderByChild("t"), startAt(miniakentSimdi() - SOHBET_SURE)), (sn) => {
+				const l = [];
+				sn.forEach((c) => { const v = c.val(); if (v && v.m) l.push({ id: c.key, h: v.h || "", m: v.m, t: v.t || 0 }); });
+				window.miniakentSohbet = l;
+				window.miniakentSohbetSurum = (window.miniakentSohbetSurum || 0) + 1;
+			}, (e) => console.warn("sohbet", e));
+			get(query(ref(db, "kafe_sohbet"), orderByChild("t"), endAt(miniakentSimdi() - SOHBET_SURE)))   // eskiler silinir
+				.then((sn) => sn.forEach((c) => { remove(c.ref).catch(() => {}); })).catch(() => {});
 			if (ekoBirak) ekoBirak();
 			ekoBirak = onValue(ref(db, "ustalik"), (s) => { window.miniakentUstalik = s.val() || {}; });
 		};
@@ -1641,6 +1657,19 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 #mkb .etk-s button:disabled, #mkb .kucuk-d:disabled { opacity: .4; }
 #mkb .etk-ust { display: flex; justify-content: flex-end; }
 #mkb .takip .kim-ad { cursor: pointer; }
+/* kafe sohbeti (kullanıcı, 2026-11-18) */
+#mkb .sohbet { display: flex; flex-direction: column; gap: 6px; }
+#mkb .s-liste { max-height: 190px; overflow-y: auto; display: flex; flex-direction: column; gap: 3px; padding: 6px 8px; border: 2px solid var(--kenar);
+	border-radius: 11px; background: var(--krem2); font-size: 11.5px; }
+#mkb .s-m { line-height: 1.3; overflow-wrap: anywhere; }
+#mkb .s-m b { margin-right: 4px; }
+#mkb .s-sik { margin-left: 6px; font: inherit; font-size: 9.5px; font-weight: 800; padding: 0 6px; border-radius: 999px; border: 1.5px solid var(--soluk);
+	background: none; color: var(--soluk); }
+#mkb .s-yaz { display: flex; gap: 6px; }
+#mkb .s-yaz input { flex: 1; min-width: 0; font: inherit; font-size: 16px; padding: 5px 10px; border-radius: 999px; border: 2px solid var(--kenar);
+	background: var(--krem2); color: var(--yazi); }
+#mkb .s-yaz button { font: inherit; font-size: 11px; font-weight: 800; padding: 4px 12px; border-radius: 999px; border: 2px solid var(--kenar);
+	background: var(--yazi); color: var(--krem2); }
 #mkb h2.kendim { cursor: pointer; }
 #mkb .yer-b { display: flex; justify-content: space-between; gap: 10px; width: 100%; padding: 0; border: 0; background: none; font: inherit; font-size: 12px;
 	color: var(--yazi); text-align: left; cursor: pointer; }
@@ -1999,6 +2028,29 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			<em class="deger" style="left:${50 + v}%">${isaret(v) || "0"}</em></div></div>`;
 	}
 	const DURUM_YOK = `<p class="bilgi">Durum bilgileri bu hesap için açık değil.</p>`;
+	// Kafe sohbeti (kullanıcı, 2026-11-18): küfür süzgeci (yıldızla gizlenir), şikâyet, 3 sn ara, 120 harf
+	const KUFUR = [/orospu\S*/giu, /(?<!\p{L})o[cç](?!\p{L})/giu, /(?<!\p{L})pi[cç](?!\p{L})\S*/giu, /(?<!\p{L})sik(?!ayet|ke|lon)\S*/giu, /siktir\S*/giu,
+		/(?<!\p{L})yarr?ak\S*/giu, /(?<!\p{L})g[oö]t(?!\p{L})/giu, /(?<!\p{L})am[iı]na\S*/giu, /am[cç][iı]k\S*/giu, /(?<!\p{L})anan[iı](?!\p{L})/giu,
+		/pezevenk\S*/giu, /kahpe\S*/giu, /(?<!\p{L})ibne\S*/giu, /(?<!\p{L})gavat\S*/giu, /[sş]erefsiz\S*/giu, /yav[sş]ak\S*/giu,
+		/(?<!\p{L})pu[sş]t(?!\p{L})/giu, /(?<!\p{L})am[kq](?!\p{L})/giu, /(?<!\p{L})aq(?!\p{L})/giu, /dalyarak\S*/giu, /(?<!\p{L})ta[sş]ak\S*/giu];
+	const suzgec = (m) => KUFUR.reduce((a, r) => a.replace(r, (w) => "*".repeat(w.length)), String(m || ""));
+	let sonGonder = 0;
+	const sikayetEdilen = {};
+	function sohbetListe() {
+		const l = (window.miniakentSohbet || []).filter((x) => x.t > miniakentSimdi() - 3600000).slice(-40);
+		return l.length ? l.map((x) => `<div class="s-m"><b>${esc(x.h)}</b>${esc(suzgec(x.m))}${x.h !== karakter
+			? `<button class="s-sik" data-sikayet="${esc(x.id)}">${sikayetEdilen[x.id] ? "Şikâyet edildi" : "Şikâyet et"}</button>` : ""}</div>`).join("")
+			: `<p class="bilgi">Henüz mesaj yok. İlk sen yaz.</p>`;
+	}
+	function sohbetGonder() {
+		const inp = $("mkb-sohbet-yaz");
+		if (!inp || !window.miniakentSohbetYaz) return;
+		const m = suzgec(inp.value.trim()).slice(0, 120);
+		if (!m || Date.now() - sonGonder < 3000) return;
+		sonGonder = Date.now();
+		window.miniakentSohbetYaz(m);
+		inp.value = "";
+	}
 	function altMenu() {
 		const m = [["durum", "Durum", MENU_SVG.durum], ["gorunus", "Görünüş", SVG.gorunus], ["finans", "Finans", MENU_SVG.para], ["ilan", "İlanlar", MENU_SVG.ilan]];
 		return `<nav class="amenu">${m.map((x) => `<button data-menu="${x[0]}" aria-selected="${sayfaAd === x[0]}">${x[2]}<span>${x[1]}</span></button>`).join("")}
@@ -2093,6 +2145,9 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 				const as = a.asama === "yol" ? "Yolda" : a.asama === "bekliyor" ? `Kalkışı bekliyor · ${a.kalan} sn` : `Katılıyor · ${Math.max(1, Math.ceil(a.kalan / 60))} dakika kaldı`;
 				h += `<div class="etk-s"><div class="ad">${esc(adi(a.id))}<small>${as}${sur ? " · erken çıkarsan ücret geri verilmez" : ""}</small></div>
 					<button data-etkvazgec="1">${sur ? "Çık" : "Vazgeç"}</button></div>`;   // erken çıkış (kullanıcı, 2026-11-17)
+				if (a.id === "kafe" && sur) h += `<div class="sohbet"><span class="etiket">Kafe sohbeti</span><div class="s-liste" id="mkb-s-liste">${sohbetListe()}</div>
+					<div class="s-yaz"><input id="mkb-sohbet-yaz" maxlength="120" placeholder="Kafedekilere yaz…" autocomplete="off" enterkeyhint="send"><button data-sohbetgonder="1">Gönder</button></div>
+					<p class="bilgi">Kafedeyken yazılır ve görülür; mesajlar 1 saat sonra silinir.</p></div>`;
 			} else if (d.serbest === "Mesaide") {
 				const iz = d.izin;
 				h += `<div class="etk-s"><div class="ad">Mesaidesin<small>İzin alırsan günün kalan mesaisinden para kazanmazsın · bu ay ${iz.kalan} hakkın var</small></div>
@@ -2128,7 +2183,11 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		$("mkb-baslik").textContent = yeniDuzen ? karakter : typeof s[0] === "function" ? s[0]() : s[0];
 		$("mkb-baslik").classList.toggle("kendim", !!yeniDuzen);
 		const ic = $("mkb-icerik"), y = ic.scrollTop;
+		const yz = $("mkb-sohbet-yaz"), yzDeger = yz ? yz.value : null;
 		ic.innerHTML = yeniDuzen ? s[1]() + altMenu() : s[1]();
+		const yz2 = $("mkb-sohbet-yaz"), sl = $("mkb-s-liste");
+		if (yz2 && yzDeger) yz2.value = yzDeger;
+		if (sl) sl.scrollTop = sl.scrollHeight;
 		ic.scrollTop = y;
 	}
 	// sekmeler panel açıkken panelin sağ kenarına yapışır; tam ekranda gizlenir. Kumanda panel tam ekranken gizli,
@@ -2619,6 +2678,9 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	$("mkb-goz").addEventListener("click", () => window.miniakentGoz && window.miniakentGoz());
 	$("mkb-hizli").addEventListener("click", () => window.miniakentHizli && window.miniakentHizli());
 	let kartIste = false;
+	$("mkb-icerik").addEventListener("keydown", (e) => {   // sohbette Enter gönderir
+		if (e.target && e.target.id === "mkb-sohbet-yaz" && e.key === "Enter") { e.preventDefault(); sohbetGonder(); }
+	});
 	$("mkb-baslik").addEventListener("click", () => {   // başlıktaki ad: kendi karakterini bul ve takip et (her sekmede)
 		if ($("mkb-baslik").classList.contains("kendim") && karakter) window.miniakentTakip && window.miniakentTakip(karakter);
 	});
@@ -2657,6 +2719,11 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		}
 		else if (d.etkvazgec) window.miniakentEtkinlikVazgec && window.miniakentEtkinlikVazgec();
 		else if (d.izinal) window.miniakentIzin && window.miniakentIzin();
+		else if (d.sohbetgonder) sohbetGonder();
+		else if (d.sikayet && !sikayetEdilen[d.sikayet]) {
+			const x = (window.miniakentSohbet || []).find((m) => m.id === d.sikayet);
+			if (x && window.miniakentSikayet) { window.miniakentSikayet(x); sikayetEdilen[d.sikayet] = true; b.textContent = "Şikâyet edildi"; }
+		}
 		else if (d.kendiev || d.kendiis) {   // kendi evine / iş yerine git (önce kendi karakteri seçilir)
 			window.miniakentTakip && window.miniakentTakip(karakter);
 			const f = d.kendiev ? window.miniakentEvGoster : window.miniakentIsGoster;
@@ -2768,7 +2835,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	});
 
 	// oyunun durumu: yarım saniyede bir (oyun açılınca ana ekran görünür)
-	let sonBilgi = "", sonOturum = null, sonDk = -1, sonSecim = 0, sonBina = 0;
+	let sonBilgi = "", sonOturum = null, sonDk = -1, sonSecim = 0, sonBina = 0, sonSohbet = 0;
 	setInterval(() => {
 		const hud = window.miniakentHud;
 		if (!hud) return;
@@ -2829,12 +2896,18 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			else if (sayfaAd) ciz();
 			arayuz();
 		}
+		if (window.miniakentSohbetSurum !== sonSohbet) {   // kafe sohbetine yeni mesaj: yalnız liste yenilenir
+			sonSohbet = window.miniakentSohbetSurum;
+			const sl = $("mkb-s-liste");
+			if (sl) { sl.innerHTML = sohbetListe(); sl.scrollTop = sl.scrollHeight; }
+		}
 		const b = JSON.stringify(window.miniakentKarakterBilgi || null);
 		const dk = new Date().getMinutes();
 		if (b !== sonBilgi || dk !== sonDk) {
 			sonBilgi = b; sonDk = dk;
 			bilgi = window.miniakentKarakterBilgi || null;
-			if (sayfaAd && $("mkb-onay").hidden && sayfaAd !== "gorunus") ciz();
+			const yaziyor = document.activeElement && document.activeElement.id === "mkb-sohbet-yaz";
+			if (sayfaAd && $("mkb-onay").hidden && sayfaAd !== "gorunus" && !yaziyor) ciz();
 		}
 	}, 500);
 	window.addEventListener("resize", arayuz);
@@ -2842,7 +2915,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611180103.pck","fileSizes":{"test/index-test-v202611180103.pck":9294240,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611180152.pck","fileSizes":{"test/index-test-v202611180152.pck":9294240,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
