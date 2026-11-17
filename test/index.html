@@ -1641,6 +1641,11 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 #mkb .etk-s button:disabled, #mkb .kucuk-d:disabled { opacity: .4; }
 #mkb .etk-ust { display: flex; justify-content: flex-end; }
 #mkb .takip .kim-ad { cursor: pointer; }
+#mkb h2.kendim { cursor: pointer; }
+#mkb .yer-b { display: flex; justify-content: space-between; gap: 10px; width: 100%; padding: 0; border: 0; background: none; font: inherit; font-size: 12px;
+	color: var(--yazi); text-align: left; cursor: pointer; }
+#mkb .yer-b span { color: var(--soluk); }
+#mkb .yer-b b { text-align: right; text-decoration: underline dotted; }
 #mkb .amenu svg { width: 18px; height: 18px; }
 @media (prefers-reduced-motion: reduce) { #mkb .mkb-pano, #mkb .ray, #mkb .sehirde, #mkb .ayarlar { transition: none; } }
 /* bilgisayarda (fare, geniş ekran) ayarlar, ses ve Bölgeler sağ kenarda (kullanıcı, 2026-11-08) */
@@ -2052,9 +2057,13 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		gorunus: ["Görünüş", () => kiyafetPanel() + (kostumVar() ? kostumIzgara(karakter) : "")],
 		finans: ["Karakterim", () => {
 			const e = bilgi && bilgi.ekonomi, k = ekoKutu(e, true);
-			if (!k) return `<p class="bilgi">Finans bilgileri bu hesap için açık değil.</p>`;
+			// ev ve iş yeri alt alta; dokununca oraya gidilir (kullanıcı, 2026-11-18)
+			const evAd = (bilgi && bilgi.ev) || "", isAd = (bilgi && bilgi.isyeri) || "";
+			const yer = `<div class="kutu"><button class="yer-b" data-kendiev="1"><span>Ev</span><b>${esc(evAd || "—")}</b></button>${isAd
+				? `<button class="yer-b" data-kendiis="1"><span>İş yeri</span><b>${esc(isAd)}</b></button>` : ""}</div>`;
+			if (!k) return yer + `<p class="bilgi">Finans bilgileri bu hesap için açık değil.</p>`;
 			const ek = [["Fazla mesai kazancı", e.fazla], ["Etkinlik ve taksi", e.etkinlik], ["Hastane", e.hastane], ["İzin / hastane kesintisi", e.kesinti]].filter((x) => x[1]);
-			let h = k + (ek.length ? `<div class="kutu"><span class="etiket">Bu ay ayrıca</span>${ek.map((x) => `<div class="satir"><span>${x[0]}</span><b>${papel(x[1])}</b></div>`).join("")}</div>` : "");
+			let h = yer + k + (ek.length ? `<div class="kutu"><span class="etiket">Bu ay ayrıca</span>${ek.map((x) => `<div class="satir"><span>${x[0]}</span><b>${papel(x[1])}</b></div>`).join("")}</div>` : "");
 			const d = dur();
 			if (d) {   // fazla mesai (kullanıcı, 2026-11-17): hafta içi mesaiden sonra en çok 2, tatil günü en çok 4 saat; saatlik ücretin 1,5 katı
 				const f = d.fazla, sec = (n, s, a, b2) => `<button class="${s === n ? "secili" : ""}" data-fmsec="${a}|${b2}">${n ? n + " saat" : "Yok"}</button>`;
@@ -2115,7 +2124,9 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	function ciz() {
 		const s = SAYFA[sayfaAd];
 		const yeniDuzen = YENI && karakter && ["finans", "ilan", "gorunus", "durum", "etkinlik"].includes(sayfaAd);
-		$("mkb-baslik").textContent = yeniDuzen ? "Karakterim" : typeof s[0] === "function" ? s[0]() : s[0];
+		// başlıkta oyuncunun adı; dokununca karakteri bulunur ve takip edilir (kullanıcı, 2026-11-18)
+		$("mkb-baslik").textContent = yeniDuzen ? karakter : typeof s[0] === "function" ? s[0]() : s[0];
+		$("mkb-baslik").classList.toggle("kendim", !!yeniDuzen);
 		const ic = $("mkb-icerik"), y = ic.scrollTop;
 		ic.innerHTML = yeniDuzen ? s[1]() + altMenu() : s[1]();
 		ic.scrollTop = y;
@@ -2608,6 +2619,9 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	$("mkb-goz").addEventListener("click", () => window.miniakentGoz && window.miniakentGoz());
 	$("mkb-hizli").addEventListener("click", () => window.miniakentHizli && window.miniakentHizli());
 	let kartIste = false;
+	$("mkb-baslik").addEventListener("click", () => {   // başlıktaki ad: kendi karakterini bul ve takip et (her sekmede)
+		if ($("mkb-baslik").classList.contains("kendim") && karakter) window.miniakentTakip && window.miniakentTakip(karakter);
+	});
 	$("mkb-takip-ad").addEventListener("click", () => {   // takip edilenin kartı (kendi karakteriyse Karakterim)
 		const hud = window.miniakentHud || {}, h = hud.takip || "";
 		if (!h || hud.hayvan) return;
@@ -2643,6 +2657,11 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		}
 		else if (d.etkvazgec) window.miniakentEtkinlikVazgec && window.miniakentEtkinlikVazgec();
 		else if (d.izinal) window.miniakentIzin && window.miniakentIzin();
+		else if (d.kendiev || d.kendiis) {   // kendi evine / iş yerine git (önce kendi karakteri seçilir)
+			window.miniakentTakip && window.miniakentTakip(karakter);
+			const f = d.kendiev ? window.miniakentEvGoster : window.miniakentIsGoster;
+			f && f();
+		}
 		else if (d.fmsec) { const [a, b2] = d.fmsec.split("|"); window.miniakentFazla && window.miniakentFazla(+a, +b2); }
 		else if (d.kostumac) { kostumAcik = true; ciz(); }
 		else if (b.id === "mkb-sifirla") { st = yeni(); kaydet(); ciz(); }
@@ -2823,7 +2842,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611172344.pck","fileSizes":{"test/index-test-v202611172344.pck":9292720,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611180015.pck","fileSizes":{"test/index-test-v202611180015.pck":9292720,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
