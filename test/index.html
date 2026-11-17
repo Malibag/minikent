@@ -1620,14 +1620,15 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 #mkb .amenu .etk { flex-basis: 100%; flex-direction: row; justify-content: center; margin: 0 10px; padding: 9px; border-radius: 12px;
 	border: 2px solid var(--kenar); background: var(--yazi); color: var(--krem2); font-size: 13px; font-weight: 800; opacity: 1; }
 #mkb .tbar { margin: 14px 0 18px; }
-#mkb .tbar .ust { display: flex; justify-content: space-between; align-items: baseline; font-size: 11px; color: var(--soluk); }
-#mkb .tbar .ust b { color: var(--yazi); font-size: 13px; }
+#mkb .tbar .tb-ad { display: flex; justify-content: space-between; align-items: baseline; font-size: 11px; color: var(--soluk); }
+#mkb .tbar .tb-ad b { color: var(--yazi); font-size: 13px; }
 #mkb .tbar .iz { position: relative; height: 14px; margin-top: 22px; border-radius: 999px; background: var(--krem2); border: 2px solid var(--kenar); }
 #mkb .tbar .orta { position: absolute; left: 50%; top: -5px; bottom: -5px; width: 2px; margin-left: -1px; background: var(--kenar); }
 #mkb .tbar .dolu { position: absolute; top: 0; bottom: 0; border-radius: 999px; }
 #mkb .tbar .dolu.iyi { background: #2fa35a; }
 #mkb .tbar .dolu.kotu { background: #d8433b; }
 #mkb .tbar .deger { position: absolute; top: -20px; transform: translateX(-50%); font-style: normal; font-size: 11px; font-weight: 800; }
+#mkb.yeni.takipli .mkb-pano { height: calc(100% - 150px - 76px - 84px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px)); }   /* takip çubuğu (Hızlı yürü) Etkinlikler düğmesinin üstüne binmesin */
 #mkb .ikili button:disabled { opacity: .45; }
 #mkb .etk-yer small { color: var(--soluk); font-weight: 400; }
 #mkb .amenu svg { width: 18px; height: 18px; }
@@ -1978,7 +1979,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	const isaret = (n) => (n > 0 ? "+" : n < 0 ? "−" : "") + Math.abs(n).toLocaleString("tr-TR", { maximumFractionDigits: 1 });
 	function tbar(ad, sol, sag, v) {
 		v = Math.max(-50, Math.min(50, Math.round(v || 0)));
-		return `<div class="tbar"><div class="ust"><span>${sol}</span><b>${ad}</b><span>${sag}</span></div>
+		return `<div class="tbar"><div class="tb-ad"><span>${sol}</span><b>${ad}</b><span>${sag}</span></div>
 			<div class="iz"><i class="dolu ${v >= 0 ? "iyi" : "kotu"}" style="left:${v >= 0 ? 50 : 50 + v}%;width:${Math.abs(v)}%"></i><i class="orta"></i>
 			<em class="deger" style="left:${50 + v}%">${isaret(v) || "0"}</em></div></div>`;
 	}
@@ -2757,6 +2758,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		// takip edilen kişi: altta "Gözünden gör" ve "Takibi bırak"
 		if (!!hud.takip !== takipVar) { takipVar = !!hud.takip; arayuz(); }
 		$("mkb-takip").hidden = !takipVar;
+		kok.classList.toggle("takipli", takipVar);
 		$("mkb-takip-ad").textContent = (hud.takip || "") + " takipte";
 		$("mkb-goz").textContent = hud.goz ? "Yukarıdan bak" : "Gözünden gör";
 		$("mkb-goz").hidden = !!hud.hayvan || YENI;   // hayvanda zaten arkasından bakılır; test sayfasında kalktı (kullanıcı, 2026-11-17: işlevsiz)
@@ -2798,7 +2800,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611172156.pck","fileSizes":{"test/index-test-v202611172156.pck":9290976,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611172218.pck","fileSizes":{"test/index-test-v202611172218.pck":9290976,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
