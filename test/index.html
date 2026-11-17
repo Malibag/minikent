@@ -2075,7 +2075,8 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			if (d.aktif) {
 				const a = d.aktif, as = a.asama === "yol" ? "Yolda" : a.asama === "bekliyor" ? `Kalkışı bekliyor · ${a.kalan} sn` : `Katılıyor · ${Math.max(1, Math.ceil(a.kalan / 60))} dakika kaldı`;
 				h += `<div class="kutu"><span class="etiket">Şu an</span><h3>${esc(adi(a.id))}</h3><p class="alt">${as}</p></div>`
-					+ (a.asama !== "suruyor" ? `<div class="ikili"><button class="hayir" data-etkvazgec="1">Vazgeç</button></div>` : "");
+					+ (a.asama !== "suruyor" ? `<div class="ikili"><button class="hayir" data-etkvazgec="1">Vazgeç</button></div>`
+						: `<div class="ikili"><button class="hayir" data-etkvazgec="1">Etkinlikten çık</button></div><p class="bilgi">Erken çıkarsan ücret geri verilmez.</p>`);   // erken çıkış (kullanıcı, 2026-11-17)
 			} else if (d.serbest === "Mesaide") {
 				const iz = d.izin;
 				h += `<div class="kutu"><p class="bilgi">Mesaidesin. İzin alırsan günün kalan mesaisinden para kazanmazsın. Bu ay ${iz.kalan} izin hakkın var.</p></div>`
@@ -2797,7 +2798,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611172053.pck","fileSizes":{"test/index-test-v202611172053.pck":9283008,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611172156.pck","fileSizes":{"test/index-test-v202611172156.pck":9290976,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
