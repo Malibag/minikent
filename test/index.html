@@ -521,7 +521,7 @@ body.gece .yk-sahne { background: #3a4d74; border-color: #0b1220; }
 // Her ziyaretçi cevrimici/<kimlik> yazar, sekme kapanınca silinir; oyun sayıyı window.miniakentCevrimici'den okur.
 // gunluk/<Türkiye tarihi> her tarayıcıda günde bir kez 1 artar. Bağlantı kurulamazsa oyun etkilenmez.
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getDatabase, ref, set, get, update, push, query, orderByChild, orderByValue, startAt, endAt, limitToFirst, onDisconnect, onValue, runTransaction, serverTimestamp, goOffline, goOnline } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+import { getDatabase, ref, set, get, update, push, query, orderByChild, orderByValue, startAt, endAt, limitToFirst, limitToLast, onDisconnect, onValue, onChildAdded, onChildRemoved, runTransaction, serverTimestamp, goOffline, goOnline } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
 try {
 	const app = initializeApp({
 		apiKey: "AIzaSyCC0HI_bln18UBMEDHdAO7CmtMEM3JtM5I",
@@ -698,7 +698,9 @@ try {
 			try { window.miniakentDurumKayit = JSON.stringify((await get(ref(db, "durum/" + uid))).val() || {}); }
 			catch (e) { console.warn("durum", e); }
 			// Şehir sohbeti (kullanıcı, 2026-11-18; test sayfası, izinli hesap). sehir_sohbet/<id> = {k, h, m (≤120), t}; aynı anahtarla
-			// sohbet_zaman/<id> = t (içeriksiz; 1 yılı dolanları bulmak için). Kullanıcı yalnız son 1 günü okuyabilir (kural da böyle).
+			// sohbet_zaman/<id> = t (içeriksiz; 1 yılı dolanları bulmak için). Kullanıcı yalnız son 1 günü görür.
+			// Firebase kuralı sorgunun başlangıcını sayıyla karşılaştıramıyor: kural her mesajda "t son 1 gün içinde mi" diye bakar;
+			// sayfa içeriksiz sohbet_zaman listesinden son 1 günü alır, mesajları tek tek okur. 1 günden eskisi kimseye açılmaz.
 			// Mesajlar ve şikâyetler 1 yıl saklanır; 1 yılı dolanlar açılışta silinir. Şikâyet: sikayet/<id> (yalnız yönetici okur).
 			const GUN = 86400000, YIL = 365 * GUN;
 			window.miniakentSohbetYaz = (m) => {
@@ -712,15 +714,24 @@ try {
 				if (aciklama) v.aciklama = aciklama;
 				return update(ref(db), { ["sikayet/" + id]: v, ["sikayet_zaman/" + id]: serverTimestamp() }).catch((e) => console.warn("sikayet", e));
 			};
-			// bağlantı koparsa dinleme eski başlangıçla reddedilir; o zaman güncel "son 1 gün" ile yeniden dinlenir
+			const sohbetler = {};
+			const sohbetYay = () => {
+				window.miniakentSohbet = Object.values(sohbetler).sort((x, y) => x.t - y.t);
+				window.miniakentSohbetSurum = (window.miniakentSohbetSurum || 0) + 1;
+			};
+			const sohbetOku = (id, kez) => get(ref(db, "sehir_sohbet/" + id)).then((sn) => {
+				const v = sn.val();
+				if (v && v.m) { sohbetler[id] = { id: id, h: v.h || "", m: v.m, t: v.t || 0 }; sohbetYay(); }
+				else if (kez < 3) setTimeout(() => sohbetOku(id, kez + 1), 1500);   // yeni yazılan mesaj sunucuya henüz ulaşmamış olabilir
+			}).catch(() => { if (kez < 3) setTimeout(() => sohbetOku(id, kez + 1), 1500); });
+			let sohbetBirak2 = null;
 			const sohbetDinle = () => {
 				if (sohbetBirak) sohbetBirak();
-				sohbetBirak = onValue(query(ref(db, "sehir_sohbet"), orderByChild("t"), startAt(miniakentSimdi() - GUN + 60000)), (sn) => {
-					const l = [];
-					sn.forEach((c) => { const v = c.val(); if (v && v.m) l.push({ id: c.key, h: v.h || "", m: v.m, t: v.t || 0 }); });
-					window.miniakentSohbet = l;
-					window.miniakentSohbetSurum = (window.miniakentSohbetSurum || 0) + 1;
-				}, (e) => { console.warn("sohbet", e); sohbetBirak = null; setTimeout(sohbetDinle, 5000); });
+				if (sohbetBirak2) sohbetBirak2();
+				const q = query(ref(db, "sohbet_zaman"), orderByValue(), startAt(miniakentSimdi() - GUN + 60000), limitToLast(200));
+				sohbetBirak = onChildAdded(q, (c) => { if (!sohbetler[c.key]) sohbetOku(c.key, 0); },
+					(e) => { console.warn("sohbet", e); setTimeout(sohbetDinle, 5000); });
+				sohbetBirak2 = onChildRemoved(q, (c) => { if (sohbetler[c.key]) { delete sohbetler[c.key]; sohbetYay(); } });
 			};
 			sohbetDinle();
 			for (const [yer, zaman] of [["sehir_sohbet", "sohbet_zaman"], ["sikayet", "sikayet_zaman"]])   // 1 yılı dolanlar silinir
@@ -1673,8 +1684,8 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 #mkb .etk-s button:disabled, #mkb .kucuk-d:disabled { opacity: .4; }
 #mkb .etk-ust { display: flex; justify-content: flex-end; }
 #mkb .takip .kim-ad { cursor: pointer; }
-/* şehir sohbeti (kullanıcı, 2026-11-18): arama satırındaki düğmeyle alttan açılır, ekranı kaplar; gece de bej */
-#mkb .sohbet-ekran { position: absolute; inset: 0; z-index: 20; display: flex; flex-direction: column; background: #fbe9cb; color: #162132; color-scheme: light;
+/* şehir sohbeti (kullanıcı, 2026-11-18): arama satırındaki düğmeyle alttan açılır; bilgisayarda sağda 9:16 ince uzun, telefonda ekranı kaplar; gece de bej */
+#mkb .sohbet-ekran { position: absolute; top: 0; bottom: 0; right: 0; width: min(100%, calc(100dvh * 9 / 16)); border-left: 2px solid #162132; z-index: 20; display: flex; flex-direction: column; background: #fbe9cb; color: #162132; color-scheme: light;
 	padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px); pointer-events: auto; transform: translateY(100%); visibility: hidden;
 	transition: transform .3s cubic-bezier(.2,.8,.2,1), visibility 0s .3s; }
 #mkb .sohbet-ekran.acik { transform: none; visibility: visible; transition: transform .3s cubic-bezier(.2,.8,.2,1); }
@@ -1682,7 +1693,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 #mkb .s-bas h2 { flex: 1; margin: 0; font: 700 16px var(--fb); }
 #mkb .s-kapat { width: 34px; height: 34px; display: grid; place-items: center; padding: 0; border-radius: 50%; border: 2px solid #162132; background: #fff6e4; color: #162132; }
 #mkb .s-kapat svg { width: 16px; height: 16px; }
-#mkb .s-liste { flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 6px; padding: 12px max(12px, calc(50% - 320px)); }
+#mkb .s-liste { flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 6px; padding: 12px; }
 #mkb .s-bos { margin: auto; color: #5d6680; font-size: 12px; text-align: center; }
 #mkb .s-b { align-self: flex-start; max-width: 80%; padding: 6px 10px 4px; border-radius: 14px 14px 14px 4px; background: #fff6e4; border: 1.5px solid #162132;
 	font-size: 13.5px; line-height: 1.35; overflow-wrap: anywhere; }
@@ -1691,7 +1702,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 #mkb .s-alt { display: flex; justify-content: flex-end; align-items: center; gap: 10px; margin-top: 2px; font-size: 10px; color: #5d6680; }
 #mkb .s-b.ben .s-alt { color: #a9b3c7; }
 #mkb .s-alt button { margin-right: auto; padding: 0; border: 0; background: none; font-size: 10px; font-weight: 700; color: #5d6680; text-decoration: underline; }
-#mkb .s-yaz { display: flex; gap: 8px; padding: 10px max(12px, calc(50% - 320px)); border-top: 2px solid #162132; }
+#mkb .s-yaz { display: flex; gap: 8px; padding: 10px 12px; border-top: 2px solid #162132; }
 #mkb .s-yaz input { flex: 1; min-width: 0; font: 16px var(--fg); padding: 7px 14px; border-radius: 999px; border: 2px solid #162132; background: #fff6e4; color: #162132; outline: 0; }
 #mkb .s-yaz button { padding: 0 16px; border-radius: 999px; border: 2px solid #162132; background: #162132; color: #fbe9cb; font-weight: 800; font-size: 12px; }
 #mkb .s-pencere { position: absolute; inset: 0; z-index: 2; display: grid; place-items: center; padding: 16px; background: rgba(22, 33, 50, .45); }
@@ -2999,7 +3010,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611180811.pck","fileSizes":{"test/index-test-v202611180811.pck":9305008,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611181129.pck","fileSizes":{"test/index-test-v202611181129.pck":9305008,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
