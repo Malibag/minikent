@@ -518,7 +518,7 @@ body.gece .yk-sahne { background: #3a4d74; border-color: #0b1220; }
 // Her ziyaretçi cevrimici/<kimlik> yazar, sekme kapanınca silinir; oyun sayıyı window.miniakentCevrimici'den okur.
 // gunluk/<Türkiye tarihi> her tarayıcıda günde bir kez 1 artar. Bağlantı kurulamazsa oyun etkilenmez.
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getDatabase, ref, set, get, update, push, remove, query, orderByChild, startAt, endAt, onDisconnect, onValue, runTransaction, serverTimestamp, goOffline, goOnline } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+import { getDatabase, ref, set, get, update, push, query, orderByChild, orderByValue, startAt, endAt, limitToFirst, limitToLast, onDisconnect, onValue, onChildAdded, onChildRemoved, runTransaction, serverTimestamp, goOffline, goOnline } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
 try {
 	const app = initializeApp({
 		apiKey: "AIzaSyCC0HI_bln18UBMEDHdAO7CmtMEM3JtM5I",
@@ -694,22 +694,49 @@ try {
 				y ? { y: y, b: serverTimestamp(), d: d ? 1 : 0 } : null).catch((e) => console.warn("katilim", e)) : Promise.resolve();
 			try { window.miniakentDurumKayit = JSON.stringify((await get(ref(db, "durum/" + uid))).val() || {}); }
 			catch (e) { console.warn("durum", e); }
-			// Kafe sohbeti (kullanıcı, 2026-11-18; test sayfası, izinli hesap): kafe_sohbet/<push> = {k, h, m (≤120), t};
-			// kafedeyken yazılır ve görülür, 1 saatten eski mesajlar silinir. Şikâyet: sikayet/<push> (yalnız yönetici okur).
-			const SOHBET_SURE = 3600000;
-			window.miniakentSohbetYaz = (m) => karakter ? push(ref(db, "kafe_sohbet"), { k: anahtar(karakter), h: karakter, m: m, t: serverTimestamp() })
-				.catch((e) => console.warn("sohbet", e)) : Promise.resolve();
-			window.miniakentSikayet = (x) => push(ref(db, "sikayet"), { mesaj_id: x.id, h: x.h, m: x.m, mt: x.t || 0, kim: uid, t: serverTimestamp() })
-				.catch((e) => console.warn("sikayet", e));
-			if (sohbetBirak) sohbetBirak();
-			sohbetBirak = onValue(query(ref(db, "kafe_sohbet"), orderByChild("t"), startAt(miniakentSimdi() - SOHBET_SURE)), (sn) => {
-				const l = [];
-				sn.forEach((c) => { const v = c.val(); if (v && v.m) l.push({ id: c.key, h: v.h || "", m: v.m, t: v.t || 0 }); });
-				window.miniakentSohbet = l;
+			// Şehir sohbeti (kullanıcı, 2026-11-18; test sayfası, izinli hesap). sehir_sohbet/<id> = {k, h, m (≤120), t}; aynı anahtarla
+			// sohbet_zaman/<id> = t (içeriksiz; 1 yılı dolanları bulmak için). Kullanıcı yalnız son 1 günü görür.
+			// Firebase kuralı sorgunun başlangıcını sayıyla karşılaştıramıyor: kural her mesajda "t son 1 gün içinde mi" diye bakar;
+			// sayfa içeriksiz sohbet_zaman listesinden son 1 günü alır, mesajları tek tek okur. 1 günden eskisi kimseye açılmaz.
+			// Mesajlar ve şikâyetler 1 yıl saklanır; 1 yılı dolanlar açılışta silinir. Şikâyet: sikayet/<id> (yalnız yönetici okur).
+			const GUN = 86400000, YIL = 365 * GUN;
+			window.miniakentSohbetYaz = (m) => {
+				if (!karakter) return Promise.resolve();
+				const id = push(ref(db, "sehir_sohbet")).key;
+				return update(ref(db), { ["sehir_sohbet/" + id]: { k: anahtar(karakter), h: karakter, m: m, t: serverTimestamp() },
+					["sohbet_zaman/" + id]: serverTimestamp() }).catch((e) => console.warn("sohbet", e));
+			};
+			window.miniakentSikayet = (x, neden, aciklama) => {
+				const id = push(ref(db, "sikayet")).key, v = { mesaj_id: x.id, h: x.h, m: x.m, mt: x.t || 0, kim: uid, neden: neden, t: serverTimestamp() };
+				if (aciklama) v.aciklama = aciklama;
+				return update(ref(db), { ["sikayet/" + id]: v, ["sikayet_zaman/" + id]: serverTimestamp() }).catch((e) => console.warn("sikayet", e));
+			};
+			const sohbetler = {};
+			const sohbetYay = () => {
+				window.miniakentSohbet = Object.values(sohbetler).sort((x, y) => x.t - y.t);
 				window.miniakentSohbetSurum = (window.miniakentSohbetSurum || 0) + 1;
-			}, (e) => console.warn("sohbet", e));
-			get(query(ref(db, "kafe_sohbet"), orderByChild("t"), endAt(miniakentSimdi() - SOHBET_SURE)))   // eskiler silinir
-				.then((sn) => sn.forEach((c) => { remove(c.ref).catch(() => {}); })).catch(() => {});
+			};
+			const sohbetOku = (id, kez) => get(ref(db, "sehir_sohbet/" + id)).then((sn) => {
+				const v = sn.val();
+				if (v && v.m) { sohbetler[id] = { id: id, h: v.h || "", m: v.m, t: v.t || 0 }; sohbetYay(); }
+				else if (kez < 3) setTimeout(() => sohbetOku(id, kez + 1), 1500);   // yeni yazılan mesaj sunucuya henüz ulaşmamış olabilir
+			}).catch(() => { if (kez < 3) setTimeout(() => sohbetOku(id, kez + 1), 1500); });
+			let sohbetBirak2 = null;
+			const sohbetDinle = () => {
+				if (sohbetBirak) sohbetBirak();
+				if (sohbetBirak2) sohbetBirak2();
+				const q = query(ref(db, "sohbet_zaman"), orderByValue(), startAt(miniakentSimdi() - GUN + 60000), limitToLast(200));
+				sohbetBirak = onChildAdded(q, (c) => { if (!sohbetler[c.key]) sohbetOku(c.key, 0); },
+					(e) => { console.warn("sohbet", e); setTimeout(sohbetDinle, 5000); });
+				sohbetBirak2 = onChildRemoved(q, (c) => { if (sohbetler[c.key]) { delete sohbetler[c.key]; sohbetYay(); } });
+			};
+			sohbetDinle();
+			for (const [yer, zaman] of [["sehir_sohbet", "sohbet_zaman"], ["sikayet", "sikayet_zaman"]])   // 1 yılı dolanlar silinir
+				get(query(ref(db, zaman), orderByValue(), endAt(miniakentSimdi() - YIL - 60000), limitToFirst(100))).then((sn) => {
+					const sil = {};
+					sn.forEach((c) => { sil[yer + "/" + c.key] = null; sil[zaman + "/" + c.key] = null; });
+					if (Object.keys(sil).length) return update(ref(db), sil);
+				}).catch(() => {});
 			if (ekoBirak) ekoBirak();
 			ekoBirak = onValue(ref(db, "ustalik"), (s) => { window.miniakentUstalik = s.val() || {}; });
 		};
@@ -1654,19 +1681,38 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 #mkb .etk-s button:disabled, #mkb .kucuk-d:disabled { opacity: .4; }
 #mkb .etk-ust { display: flex; justify-content: flex-end; }
 #mkb .takip .kim-ad { cursor: pointer; }
-/* kafe sohbeti (kullanıcı, 2026-11-18) */
-#mkb .sohbet { display: flex; flex-direction: column; gap: 6px; }
-#mkb .s-liste { max-height: 190px; overflow-y: auto; display: flex; flex-direction: column; gap: 3px; padding: 6px 8px; border: 2px solid var(--kenar);
-	border-radius: 11px; background: var(--krem2); font-size: 11.5px; }
-#mkb .s-m { line-height: 1.3; overflow-wrap: anywhere; }
-#mkb .s-m b { margin-right: 4px; }
-#mkb .s-sik { margin-left: 6px; font: inherit; font-size: 9.5px; font-weight: 800; padding: 0 6px; border-radius: 999px; border: 1.5px solid var(--soluk);
-	background: none; color: var(--soluk); }
-#mkb .s-yaz { display: flex; gap: 6px; }
-#mkb .s-yaz input { flex: 1; min-width: 0; font: inherit; font-size: 16px; padding: 5px 10px; border-radius: 999px; border: 2px solid var(--kenar);
-	background: var(--krem2); color: var(--yazi); }
-#mkb .s-yaz button { font: inherit; font-size: 11px; font-weight: 800; padding: 4px 12px; border-radius: 999px; border: 2px solid var(--kenar);
-	background: var(--yazi); color: var(--krem2); }
+/* şehir sohbeti (kullanıcı, 2026-11-18): arama satırındaki düğmeyle alttan açılır; bilgisayarda sağda 9:16 ince uzun, telefonda ekranı kaplar; gece de bej */
+#mkb .sohbet-ekran { position: absolute; top: 0; bottom: 0; right: 0; width: min(100%, calc(100dvh * 9 / 16)); border-left: 2px solid #162132; z-index: 20; display: flex; flex-direction: column; background: #fbe9cb; color: #162132; color-scheme: light;
+	padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px); pointer-events: auto; transform: translateY(100%); visibility: hidden;
+	transition: transform .3s cubic-bezier(.2,.8,.2,1), visibility 0s .3s; }
+#mkb .sohbet-ekran.acik { transform: none; visibility: visible; transition: transform .3s cubic-bezier(.2,.8,.2,1); }
+#mkb .s-bas { display: flex; align-items: center; gap: 8px; padding: 10px 12px 8px 16px; border-bottom: 2px solid #162132; }
+#mkb .s-bas h2 { flex: 1; margin: 0; font: 700 16px var(--fb); }
+#mkb .s-kapat { width: 34px; height: 34px; display: grid; place-items: center; padding: 0; border-radius: 50%; border: 2px solid #162132; background: #fff6e4; color: #162132; }
+#mkb .s-kapat svg { width: 16px; height: 16px; }
+#mkb .s-liste { flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 6px; padding: 12px; }
+#mkb .s-bos { margin: auto; color: #5d6680; font-size: 12px; text-align: center; }
+#mkb .s-b { align-self: flex-start; max-width: 80%; padding: 6px 10px 4px; border-radius: 14px 14px 14px 4px; background: #fff6e4; border: 1.5px solid #162132;
+	font-size: 13.5px; line-height: 1.35; overflow-wrap: anywhere; }
+#mkb .s-ad { display: block; font-weight: 800; font-size: 12.5px; margin-bottom: 1px; }
+#mkb .s-b.ben { align-self: flex-end; background: #162132; color: #fbe9cb; border-radius: 14px 14px 4px 14px; }
+#mkb .s-alt { display: flex; justify-content: flex-end; align-items: center; gap: 10px; margin-top: 2px; font-size: 10px; color: #5d6680; }
+#mkb .s-b.ben .s-alt { color: #a9b3c7; }
+#mkb .s-alt button { margin-right: auto; padding: 0; border: 0; background: none; font-size: 10px; font-weight: 700; color: #5d6680; text-decoration: underline; }
+#mkb .s-yaz { display: flex; gap: 8px; padding: 10px 12px; border-top: 2px solid #162132; }
+#mkb .s-yaz input { flex: 1; min-width: 0; font: 16px var(--fg); padding: 7px 14px; border-radius: 999px; border: 2px solid #162132; background: #fff6e4; color: #162132; outline: 0; }
+#mkb .s-yaz button { padding: 0 16px; border-radius: 999px; border: 2px solid #162132; background: #162132; color: #fbe9cb; font-weight: 800; font-size: 12px; }
+#mkb .s-pencere { position: absolute; inset: 0; z-index: 2; display: grid; place-items: center; padding: 16px; background: rgba(22, 33, 50, .45); }
+#mkb .s-kutu { width: min(100%, 340px); display: flex; flex-direction: column; gap: 6px; padding: 14px 16px; border-radius: 18px; background: #fff6e4; border: 2.5px solid #162132; }
+#mkb .s-kutu h3 { margin: 0; font: 700 15px var(--fb); }
+#mkb .s-alinti { margin: 0 0 4px; font-size: 12px; color: #5d6680; overflow-wrap: anywhere; }
+#mkb .s-kutu label { display: flex; align-items: center; gap: 8px; padding: 3px 0; font-size: 13px; cursor: pointer; }
+#mkb .s-kutu input[type="radio"] { accent-color: #162132; width: 16px; height: 16px; margin: 0; }
+#mkb .s-kutu textarea { min-height: 64px; resize: none; font: 16px var(--fg); padding: 6px 8px; border-radius: 10px; border: 2px solid #162132; background: #fbe9cb; color: #162132; }
+#mkb .s-eylem { display: flex; justify-content: flex-end; gap: 8px; margin-top: 4px; }
+#mkb .s-eylem button { padding: 6px 14px; border-radius: 999px; border: 2px solid #162132; background: transparent; color: #162132; font-weight: 800; font-size: 12px; }
+#mkb .s-eylem button.koyu { background: #162132; color: #fbe9cb; }
+#mkb .s-eylem button:disabled { opacity: .4; cursor: default; }
 #mkb h2.kendim { cursor: pointer; }
 #mkb .yer-b { display: flex; justify-content: space-between; gap: 10px; width: 100%; padding: 0; border: 0; background: none; font: inherit; font-size: 12px;
 	color: var(--yazi); text-align: left; cursor: pointer; }
@@ -1711,13 +1757,25 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	<button class="yuvarlak" id="mkb-disli" aria-label="Profil" aria-expanded="false">${SVG.kisi}</button></div>
 <div class="ust2"><form class="arama" id="mkb-arama"><input id="mkb-ara" type="search" placeholder="Sakinini bul: @kullanıcıadı" autocomplete="off"
 	autocapitalize="none" spellcheck="false" enterkeyhint="search" aria-label="Sakinini bul"><button class="cip" type="submit">Bul</button></form>
-	<button class="cip" id="mkb-bolgeler">Bölgeler</button></div>
+	<button class="cip" id="mkb-sohbet-ac" hidden>Sohbet</button><button class="cip" id="mkb-bolgeler">Bölgeler</button></div>
 <button class="yuvarlak ses-alt" id="mkb-ses" aria-label="Ses"></button>
 <button class="yuvarlak foto-alt" id="mkb-foto" aria-label="Fotoğraf çek">${SVG.foto}</button>
 <button class="yuvarlak sehirde-alt" id="mkb-sehirde-ac" aria-label="Şu an şehirde" aria-expanded="false">${SVG.kisiler}</button>
 <section class="sehirde" id="mkb-sehirde" aria-hidden="true"><div class="bas"><h2>Şu an şehirde</h2>
 	<button class="ikon" id="mkb-sehirde-kapat" aria-label="Kapat">${SVG.kapat}</button></div>
 	<div class="liste" id="mkb-sehirde-liste"></div><small id="mkb-sehirde-anonim"></small></section>
+<section class="sohbet-ekran" id="mkb-sohbet" aria-hidden="true"><div class="s-bas"><h2>Şehir sohbeti</h2>
+	<button class="s-kapat" id="mkb-sohbet-kapat" aria-label="Kapat">${SVG.kapat}</button></div>
+	<div class="s-liste" id="mkb-s-liste"></div>
+	<form class="s-yaz" id="mkb-s-form"><input id="mkb-sohbet-yaz" maxlength="120" placeholder="Şehre yaz…" autocomplete="off" enterkeyhint="send" aria-label="Mesaj"><button type="submit">Gönder</button></form>
+	<div class="s-pencere" id="mkb-s-pencere" hidden><div class="s-kutu" role="dialog" aria-label="Şikâyet et"><h3>Şikâyet et</h3><p class="s-alinti" id="mkb-s-alinti"></p>
+		<label><input type="radio" name="mkb-neden" value="hakaret">Hakaret / Taciz</label>
+		<label><input type="radio" name="mkb-neden" value="rahatsiz">Rahatsız edici</label>
+		<label><input type="radio" name="mkb-neden" value="zararli">Zararlı alışkanlık (madde, alkol, kumar)</label>
+		<label><input type="radio" name="mkb-neden" value="reklam">Reklam / Spam</label>
+		<label><input type="radio" name="mkb-neden" value="diger">Diğer</label>
+		<textarea id="mkb-s-aciklama" maxlength="200" placeholder="Gerekçeni yaz" hidden></textarea>
+		<div class="s-eylem"><button type="button" id="mkb-s-vazgec">Vazgeç</button><button type="button" class="koyu" id="mkb-s-gonder" disabled>Gönder</button></div></div></div></section>
 <div id="mkb-foto-kip" hidden><button class="fk-kapat" id="mkb-fk-kapat" aria-label="Vazgeç">×</button>
 	<div class="fk-alt"><div class="fk-adlar" id="mkb-fk-adlar"><button data-ad="herkes">Herkes</button><button data-ad="secili">Sadece seçili</button><button data-ad="yok">Hiçbiri</button></div>
 	<div class="fk-sira"><button class="fk-poz" id="mkb-fk-poz">Poz ver</button><button class="fk-deklansor" id="mkb-fk-cek" aria-label="Çek"></button><span class="fk-bos"></span></div></div></div>
@@ -2025,29 +2083,12 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			<em class="deger" style="left:${50 + v}%">${isaret(v) || "0"}</em></div></div>`;
 	}
 	const DURUM_YOK = `<p class="bilgi">Durum bilgileri bu hesap için açık değil.</p>`;
-	// Kafe sohbeti (kullanıcı, 2026-11-18): küfür süzgeci (yıldızla gizlenir), şikâyet, 3 sn ara, 120 harf
+	// Şehir sohbeti (kullanıcı, 2026-11-18): küfür süzgeci (yıldızla gizlenir), 3 sn ara, 120 harf, gerekçeli şikâyet
 	const KUFUR = [/orospu\S*/giu, /(?<!\p{L})o[cç](?!\p{L})/giu, /(?<!\p{L})pi[cç](?!\p{L})\S*/giu, /(?<!\p{L})sik(?!ayet|ke|lon)\S*/giu, /siktir\S*/giu,
 		/(?<!\p{L})yarr?ak\S*/giu, /(?<!\p{L})g[oö]t(?!\p{L})/giu, /(?<!\p{L})am[iı]na\S*/giu, /am[cç][iı]k\S*/giu, /(?<!\p{L})anan[iı](?!\p{L})/giu,
 		/pezevenk\S*/giu, /kahpe\S*/giu, /(?<!\p{L})ibne\S*/giu, /(?<!\p{L})gavat\S*/giu, /[sş]erefsiz\S*/giu, /yav[sş]ak\S*/giu,
 		/(?<!\p{L})pu[sş]t(?!\p{L})/giu, /(?<!\p{L})am[kq](?!\p{L})/giu, /(?<!\p{L})aq(?!\p{L})/giu, /dalyarak\S*/giu, /(?<!\p{L})ta[sş]ak\S*/giu];
 	const suzgec = (m) => KUFUR.reduce((a, r) => a.replace(r, (w) => "*".repeat(w.length)), String(m || ""));
-	let sonGonder = 0;
-	const sikayetEdilen = {};
-	function sohbetListe() {
-		const l = (window.miniakentSohbet || []).filter((x) => x.t > miniakentSimdi() - 3600000).slice(-40);
-		return l.length ? l.map((x) => `<div class="s-m"><b>${esc(x.h)}</b>${esc(suzgec(x.m))}${x.h !== karakter
-			? `<button class="s-sik" data-sikayet="${esc(x.id)}">${sikayetEdilen[x.id] ? "Şikâyet edildi" : "Şikâyet et"}</button>` : ""}</div>`).join("")
-			: `<p class="bilgi">Henüz mesaj yok. İlk sen yaz.</p>`;
-	}
-	function sohbetGonder() {
-		const inp = $("mkb-sohbet-yaz");
-		if (!inp || !window.miniakentSohbetYaz) return;
-		const m = suzgec(inp.value.trim()).slice(0, 120);
-		if (!m || Date.now() - sonGonder < 3000) return;
-		sonGonder = Date.now();
-		window.miniakentSohbetYaz(m);
-		inp.value = "";
-	}
 	function altMenu() {
 		const m = [["durum", "Durum", MENU_SVG.durum], ["gorunus", "Görünüş", SVG.gorunus], ["finans", "Finans", MENU_SVG.para], ["ilan", "İlanlar", MENU_SVG.ilan]];
 		return `<nav class="amenu">${m.map((x) => `<button data-menu="${x[0]}" aria-selected="${sayfaAd === x[0]}">${x[2]}<span>${x[1]}</span></button>`).join("")}
@@ -2142,9 +2183,6 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 				const as = a.asama === "yol" ? "Yolda" : a.asama === "bekliyor" ? `Kalkışı bekliyor · ${a.kalan} sn` : `Katılıyor · ${Math.max(1, Math.ceil(a.kalan / 60))} dakika kaldı`;
 				h += `<div class="etk-s"><div class="ad">${esc(adi(a.id))}<small>${as}${sur ? " · erken çıkarsan ücret geri verilmez" : ""}</small></div>
 					<button data-etkvazgec="1">${sur ? "Çık" : "Vazgeç"}</button></div>`;   // erken çıkış (kullanıcı, 2026-11-17)
-				if (a.id === "kafe" && sur) h += `<div class="sohbet"><span class="etiket">Kafe sohbeti</span><div class="s-liste" id="mkb-s-liste">${sohbetListe()}</div>
-					<div class="s-yaz"><input id="mkb-sohbet-yaz" maxlength="120" placeholder="Kafedekilere yaz…" autocomplete="off" enterkeyhint="send"><button data-sohbetgonder="1">Gönder</button></div>
-					<p class="bilgi">Kafedeyken yazılır ve görülür; mesajlar 1 saat sonra silinir.</p></div>`;
 			} else if (d.serbest === "Mesaide") {
 				const iz = d.izin;
 				h += `<div class="etk-s"><div class="ad">Mesaidesin<small>İzin alırsan günün kalan mesaisinden para kazanmazsın · bu ay ${iz.kalan} hakkın var</small></div>
@@ -2180,11 +2218,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		$("mkb-baslik").textContent = yeniDuzen ? karakter : typeof s[0] === "function" ? s[0]() : s[0];
 		$("mkb-baslik").classList.toggle("kendim", !!yeniDuzen);
 		const ic = $("mkb-icerik"), y = ic.scrollTop;
-		const yz = $("mkb-sohbet-yaz"), yzDeger = yz ? yz.value : null;
 		ic.innerHTML = yeniDuzen ? s[1]() + altMenu() : s[1]();
-		const yz2 = $("mkb-sohbet-yaz"), sl = $("mkb-s-liste");
-		if (yz2 && yzDeger) yz2.value = yzDeger;
-		if (sl) sl.scrollTop = sl.scrollHeight;
 		ic.scrollTop = y;
 	}
 	// sekmeler panel açıkken panelin sağ kenarına yapışır; tam ekranda gizlenir. Kumanda panel tam ekranken gizli,
@@ -2675,9 +2709,6 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	$("mkb-goz").addEventListener("click", () => window.miniakentGoz && window.miniakentGoz());
 	$("mkb-hizli").addEventListener("click", () => window.miniakentHizli && window.miniakentHizli());
 	let kartIste = false;
-	$("mkb-icerik").addEventListener("keydown", (e) => {   // sohbette Enter gönderir
-		if (e.target && e.target.id === "mkb-sohbet-yaz" && e.key === "Enter") { e.preventDefault(); sohbetGonder(); }
-	});
 	$("mkb-baslik").addEventListener("click", () => {   // başlıktaki ad: kendi karakterini bul ve takip et (her sekmede)
 		if ($("mkb-baslik").classList.contains("kendim") && karakter) window.miniakentTakip && window.miniakentTakip(karakter);
 	});
@@ -2716,11 +2747,6 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		}
 		else if (d.etkvazgec) window.miniakentEtkinlikVazgec && window.miniakentEtkinlikVazgec();
 		else if (d.izinal) window.miniakentIzin && window.miniakentIzin();
-		else if (d.sohbetgonder) sohbetGonder();
-		else if (d.sikayet && !sikayetEdilen[d.sikayet]) {
-			const x = (window.miniakentSohbet || []).find((m) => m.id === d.sikayet);
-			if (x && window.miniakentSikayet) { window.miniakentSikayet(x); sikayetEdilen[d.sikayet] = true; b.textContent = "Şikâyet edildi"; }
-		}
 		else if (d.kendiev || d.kendiis) {   // kendi evine / iş yerine git (önce kendi karakteri seçilir)
 			window.miniakentTakip && window.miniakentTakip(karakter);
 			const f = d.kendiev ? window.miniakentEvGoster : window.miniakentIsGoster;
@@ -2831,6 +2857,82 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		if (sehirdeAcik) sehirdeAc(false);
 	});
 
+	// Şehir sohbeti (kullanıcı, 2026-11-18): alttan açılır, ekranı kaplar. "@ad: mesaj" balonu, sağ altta saat; kendi mesajın sağda lacivert.
+	// Son 1 günün mesajları görünür. Şikâyet: gerekçe seçilen pencereyle (yanlışlıkla basılmasın diye tek tuş değil).
+	let sohbetAcik = false, sonGonder = 0, sikayetId = "";
+	const sikayetEdilen = {};
+	const sEkran = $("mkb-sohbet"), sListe = $("mkb-s-liste"), sYaz = $("mkb-sohbet-yaz"), sPencere = $("mkb-s-pencere");
+	const sAd = (h) => (h.charAt(0) === "@" ? h : "@" + h);
+	// başkalarının adı üst satırda, her kullanıcıya hep aynı renk (WhatsApp grupları gibi)
+	const S_RENK = ["#c2410c", "#15803d", "#1d4ed8", "#7e22ce", "#be123c", "#0f766e", "#92400e", "#a21caf"];
+	const sRenk = (h) => { let n = 0; for (const c of h) n = (n * 31 + c.charCodeAt(0)) >>> 0; return S_RENK[n % S_RENK.length]; };
+	const sSaat = (t) => {
+		const d = new Date(t), hm = d.toLocaleTimeString("tr-TR", { hour: "2-digit", minute: "2-digit" });
+		return d.toDateString() === new Date().toDateString() ? hm : "Dün " + hm;
+	};
+	function sohbetCiz(enAlta) {
+		const l = (window.miniakentSohbet || []).filter((x) => x.t > miniakentSimdi() - 86400000).slice(-200);
+		const altta = sListe.scrollHeight - sListe.scrollTop - sListe.clientHeight < 60;
+		sListe.innerHTML = l.length ? l.map((x) => {
+			const ben = x.h === karakter;
+			return `<div class="s-b${ben ? " ben" : ""}">${ben ? "" : `<b class="s-ad" style="color:${sRenk(x.h)}">${esc(sAd(x.h))}</b>`}${esc(suzgec(x.m))}<div class="s-alt">${ben ? ""
+				: `<button type="button" data-sikayet="${esc(x.id)}" ${sikayetEdilen[x.id] ? "disabled" : ""}>${sikayetEdilen[x.id] ? "Şikâyet edildi" : "Şikâyet et"}</button>`}<span>${sSaat(x.t)}</span></div></div>`;
+		}).join("") : `<p class="s-bos">Henüz mesaj yok. İlk sen yaz.</p>`;
+		if (enAlta || altta) sListe.scrollTop = sListe.scrollHeight;
+	}
+	function sohbetAc(ac) {
+		if (ac) {
+			if (sayfaAd) kapat();
+			if (ayarlarAcik) ayarlarAc(false);
+			if (sehirdeAcik) sehirdeAc(false);
+			oneri.hidden = true; bolge.hidden = true;
+		} else { sYaz.blur(); sPencere.hidden = true; }
+		sohbetAcik = ac;
+		sEkran.classList.toggle("acik", ac);
+		sEkran.setAttribute("aria-hidden", String(!ac));
+		if (ac) { sonSohbet = window.miniakentSohbetSurum; sohbetCiz(true); }
+	}
+	$("mkb-sohbet-ac").addEventListener("click", () => sohbetAc(true));
+	$("mkb-sohbet-kapat").addEventListener("click", () => sohbetAc(false));
+	$("mkb-s-form").addEventListener("submit", (e) => {
+		e.preventDefault();
+		const m = suzgec(sYaz.value.trim()).slice(0, 120);
+		if (!m || !window.miniakentSohbetYaz || Date.now() - sonGonder < 3000) return;
+		sonGonder = Date.now();
+		window.miniakentSohbetYaz(m);
+		sYaz.value = "";
+		sListe.scrollTop = sListe.scrollHeight;
+	});
+	const sNeden = () => (sPencere.querySelector('input[name="mkb-neden"]:checked') || {}).value || "";
+	const sDenetle = () => {
+		const n = sNeden(), ac = $("mkb-s-aciklama");
+		ac.hidden = n !== "diger";
+		$("mkb-s-gonder").disabled = !n || (n === "diger" && ac.value.trim().length < 3);
+	};
+	sListe.addEventListener("click", (e) => {
+		const b = e.target.closest("button[data-sikayet]");
+		if (!b || sikayetEdilen[b.dataset.sikayet]) return;
+		const x = (window.miniakentSohbet || []).find((m) => m.id === b.dataset.sikayet);
+		if (!x) return;
+		sikayetId = x.id;
+		$("mkb-s-alinti").textContent = sAd(x.h) + ": " + suzgec(x.m);
+		sPencere.querySelectorAll('input[name="mkb-neden"]').forEach((r) => { r.checked = false; });
+		$("mkb-s-aciklama").value = "";
+		sDenetle();
+		sPencere.hidden = false;
+	});
+	sPencere.addEventListener("change", sDenetle);
+	$("mkb-s-aciklama").addEventListener("input", sDenetle);
+	$("mkb-s-vazgec").addEventListener("click", () => { sPencere.hidden = true; });
+	$("mkb-s-gonder").addEventListener("click", () => {
+		const x = (window.miniakentSohbet || []).find((m) => m.id === sikayetId), n = sNeden();
+		if (!x || !n || !window.miniakentSikayet) return;
+		window.miniakentSikayet(x, n, n === "diger" ? $("mkb-s-aciklama").value.trim().slice(0, 200) : "");
+		sikayetEdilen[x.id] = true;
+		sPencere.hidden = true;
+		sohbetCiz(false);
+	});
+
 	// oyunun durumu: yarım saniyede bir (oyun açılınca ana ekran görünür)
 	let sonBilgi = "", sonOturum = null, sonDk = -1, sonSecim = 0, sonBina = 0, sonSohbet = 0;
 	setInterval(() => {
@@ -2893,18 +2995,14 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			else if (sayfaAd) ciz();
 			arayuz();
 		}
-		if (window.miniakentSohbetSurum !== sonSohbet) {   // kafe sohbetine yeni mesaj: yalnız liste yenilenir
-			sonSohbet = window.miniakentSohbetSurum;
-			const sl = $("mkb-s-liste");
-			if (sl) { sl.innerHTML = sohbetListe(); sl.scrollTop = sl.scrollHeight; }
-		}
+		$("mkb-sohbet-ac").hidden = !window.miniakentSohbetYaz;   // şehir sohbeti yalnız izinli hesapta
+		if (sohbetAcik && window.miniakentSohbetSurum !== sonSohbet) { sonSohbet = window.miniakentSohbetSurum; sohbetCiz(false); }
 		const b = JSON.stringify(window.miniakentKarakterBilgi || null);
 		const dk = new Date().getMinutes();
 		if (b !== sonBilgi || dk !== sonDk) {
 			sonBilgi = b; sonDk = dk;
 			bilgi = window.miniakentKarakterBilgi || null;
-			const yaziyor = document.activeElement && document.activeElement.id === "mkb-sohbet-yaz";
-			if (sayfaAd && $("mkb-onay").hidden && sayfaAd !== "gorunus" && !yaziyor) ciz();
+			if (sayfaAd && $("mkb-onay").hidden && sayfaAd !== "gorunus") ciz();
 		}
 	}, 500);
 	window.addEventListener("resize", arayuz);
@@ -2912,7 +3010,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611180637.pck","fileSizes":{"index-v202611180637.pck":9295600,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611181623.pck","fileSizes":{"index-v202611181623.pck":9320704,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
