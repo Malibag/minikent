@@ -2,7 +2,7 @@
 <html lang="tr">
 	<head>
 <base href="../">
-<meta name="robots" content="noindex">
+<meta name="robots" content="noindex, nofollow">
 <script>window.miniakentKiyafetYol = "kiyafet_deneme"; window.miniakentTest = true;</script>
 		<!-- Oyuncu sistemi canlıda (kullanıcı, 2026-11-11): yeni panel, giriş/kayıt, Kontrolü Al, kıyafet (kayıt yeri "kiyafet").
 		Test sayfası bu dosyadan üretilir; kendi ayarlarını (kiyafet_deneme, miniakentTest) bu betikten önce verir. -->
@@ -1697,7 +1697,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 #mkb .s-bos { margin: auto; color: #5d6680; font-size: 12px; text-align: center; }
 #mkb .s-b { align-self: flex-start; max-width: 80%; padding: 6px 10px 4px; border-radius: 14px 14px 14px 4px; background: #fff6e4; border: 1.5px solid #162132;
 	font-size: 13.5px; line-height: 1.35; overflow-wrap: anywhere; }
-#mkb .s-b b { font-weight: 800; }
+#mkb .s-ad { display: block; font-weight: 800; font-size: 12.5px; margin-bottom: 1px; }
 #mkb .s-b.ben { align-self: flex-end; background: #162132; color: #fbe9cb; border-radius: 14px 14px 4px 14px; }
 #mkb .s-alt { display: flex; justify-content: flex-end; align-items: center; gap: 10px; margin-top: 2px; font-size: 10px; color: #5d6680; }
 #mkb .s-b.ben .s-alt { color: #a9b3c7; }
@@ -2866,6 +2866,9 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	const sikayetEdilen = {};
 	const sEkran = $("mkb-sohbet"), sListe = $("mkb-s-liste"), sYaz = $("mkb-sohbet-yaz"), sPencere = $("mkb-s-pencere");
 	const sAd = (h) => (h.charAt(0) === "@" ? h : "@" + h);
+	// başkalarının adı üst satırda, her kullanıcıya hep aynı renk (WhatsApp grupları gibi)
+	const S_RENK = ["#c2410c", "#15803d", "#1d4ed8", "#7e22ce", "#be123c", "#0f766e", "#92400e", "#a21caf"];
+	const sRenk = (h) => { let n = 0; for (const c of h) n = (n * 31 + c.charCodeAt(0)) >>> 0; return S_RENK[n % S_RENK.length]; };
 	const sSaat = (t) => {
 		const d = new Date(t), hm = d.toLocaleTimeString("tr-TR", { hour: "2-digit", minute: "2-digit" });
 		return d.toDateString() === new Date().toDateString() ? hm : "Dün " + hm;
@@ -2875,7 +2878,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		const altta = sListe.scrollHeight - sListe.scrollTop - sListe.clientHeight < 60;
 		sListe.innerHTML = l.length ? l.map((x) => {
 			const ben = x.h === karakter;
-			return `<div class="s-b${ben ? " ben" : ""}"><b>${esc(sAd(x.h))}:</b> ${esc(suzgec(x.m))}<div class="s-alt">${ben ? ""
+			return `<div class="s-b${ben ? " ben" : ""}">${ben ? "" : `<b class="s-ad" style="color:${sRenk(x.h)}">${esc(sAd(x.h))}</b>`}${esc(suzgec(x.m))}<div class="s-alt">${ben ? ""
 				: `<button type="button" data-sikayet="${esc(x.id)}" ${sikayetEdilen[x.id] ? "disabled" : ""}>${sikayetEdilen[x.id] ? "Şikâyet edildi" : "Şikâyet et"}</button>`}<span>${sSaat(x.t)}</span></div></div>`;
 		}).join("") : `<p class="s-bos">Henüz mesaj yok. İlk sen yaz.</p>`;
 		if (enAlta || altta) sListe.scrollTop = sListe.scrollHeight;
@@ -3010,7 +3013,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611181129.pck","fileSizes":{"test/index-test-v202611181129.pck":9305008,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611181311.pck","fileSizes":{"test/index-test-v202611181311.pck":9305008,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
