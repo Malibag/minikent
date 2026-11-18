@@ -128927,12 +128927,12 @@
    "home": "Batı Banliyö B Blok, Daire 17",
    "home_from": 1793685600,
    "job": [
-    "Komi",
-    "Grand Miniakent Oteli",
-    "hotel",
-    ""
+    "Manav",
+    "Batı Banliyö Marketi · Batı Banliyö E Blok",
+    "shop",
+    "market_bati_e"
    ],
-   "wp": "otel",
+   "wp": "market_bati_e",
    "hobby": "Kuşları izlemek",
    "queue": 0,
    "left": 0,
@@ -196267,12 +196267,12 @@
    "home": "Batı Banliyö B Blok, Daire 139",
    "home_from": 1794808800,
    "job": [
-    "Kalite Kontrol Uzmanı",
-    "Miniakent Fabrikası 3 · Sanayi Bölgesi",
+    "Kasiyer",
+    "Batı Banliyö Marketi · Batı Banliyö E Blok",
     "shop",
-    "fabrika_c"
+    "market_bati_e"
    ],
-   "wp": "fabrika_c",
+   "wp": "market_bati_e",
    "hobby": "Bisiklete binmek",
    "queue": 0,
    "left": 0,
@@ -196677,12 +196677,12 @@
    "home": "Batı Banliyö H Blok, Daire 43",
    "home_from": 1794808800,
    "job": [
-    "Heykeltıraş",
-    "Miniakent Sanat Atölyesi · Miniakent Plaza 3, Kat 10",
-    "office",
-    "plaza3"
+    "Kasap",
+    "Batı Banliyö Marketi · Batı Banliyö E Blok",
+    "shop",
+    "market_bati_e"
    ],
-   "wp": "sanat",
+   "wp": "market_bati_e",
    "hobby": "Fotoğraf çekmek",
    "queue": 0,
    "left": 0
@@ -202577,12 +202577,12 @@
    "home": "Batı Banliyö H Blok, Daire 103",
    "home_from": 1794895200,
    "job": [
-    "Yatırım Danışmanı",
-    "Miniakent Yatırım Danışmanlığı · Miniakent Plaza 4, Kat 10",
-    "office",
-    "plaza4"
+    "Kurye",
+    "Batı Banliyö Marketi · Batı Banliyö E Blok",
+    "shop",
+    "market_bati_e"
    ],
-   "wp": "yatirim",
+   "wp": "market_bati_e",
    "hobby": "Satranç",
    "queue": 0,
    "left": 0
