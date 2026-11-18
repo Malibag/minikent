@@ -177472,12 +177472,12 @@
    "home": "Batı Banliyö F Blok, Daire 12",
    "home_from": 1794290400,
    "job": [
-    "Üretim İşçisi",
-    "Miniakent Fabrikası 4 · Sanayi Bölgesi",
-    "shop",
-    "fabrika_d"
+    "Ekonomist",
+    "Miniakent Bankası",
+    "office",
+    "banka"
    ],
-   "wp": "fabrika_d",
+   "wp": "banka",
    "hobby": "Gitar çalmak",
    "queue": 0,
    "left": 0,
