@@ -1759,6 +1759,21 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	color: var(--yazi); text-align: left; cursor: pointer; }
 #mkb .yer-b span { color: var(--soluk); }
 #mkb .yer-b b { text-align: right; text-decoration: underline dotted; }
+/* Karakterim kısa kart (kullanıcı, 2026-11-20: "daha kolay okunan", sürekli kaydırmak gerekiyor): yan yana kutular,
+   büyük sayı + küçük etiket, ayrıntı kapalı başlar; yalnız test sayfası */
+#mkb .k-ust { display: flex; align-items: center; gap: 10px; }
+#mkb .k-ust .ada { flex: 1; height: 8px; border-bottom-width: 2px; }
+#mkb .k-ust .kucuk { white-space: nowrap; }
+#mkb .k-uc, #mkb .k-iki { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+#mkb .k-iki { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+#mkb .k-k { background: var(--krem2); border: 2px solid var(--kenar); border-radius: 14px; padding: 9px 10px; min-width: 0;
+	display: flex; flex-direction: column; gap: 2px; font: inherit; color: var(--yazi); text-align: left; }
+#mkb button.k-k { cursor: pointer; }
+#mkb .k-k strong { font: 700 17px/1.15 var(--fb); font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+#mkb .k-k em { font-style: normal; font-size: 10.5px; color: var(--soluk); overflow-wrap: anywhere; }
+#mkb .k-k b { font: 600 13px/1.25 var(--fb); overflow-wrap: anywhere; text-decoration: underline dotted; }
+#mkb .k-ac { display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 2px 2px; border: 0;
+	background: none; font: 600 13px var(--fb); color: var(--yazi); cursor: pointer; }
 #mkb .amenu svg { width: 18px; height: 18px; }
 @media (prefers-reduced-motion: reduce) { #mkb .mkb-pano, #mkb .ray, #mkb .sehirde, #mkb .ayarlar { transition: none; } }
 /* bilgisayarda (fare, geniş ekran) ayarlar, ses ve Bölgeler sağ kenarda (kullanıcı, 2026-11-08) */
@@ -2201,14 +2216,22 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		}],
 		gorunus: ["Görünüş", () => kiyafetPanel() + (kostumVar() ? kostumIzgara(karakter) : "")],
 		finans: ["Karakterim", () => {
-			const e = bilgi && bilgi.ekonomi, k = ekoKutu(e, true);
-			// ev ve iş yeri alt alta; dokununca oraya gidilir (kullanıcı, 2026-11-18)
+			const e = bilgi && bilgi.ekonomi;
+			// kısa kart (kullanıcı, 2026-11-20): üstte durum + ince mesai şeridi; Bakiye · Bu ay maaş · Kıdem; İş · Ev yan yana
+			// (dokununca oraya gidilir, 2026-11-18); bu ayın ayrıntısı kapalı başlar
+			const [dy, iste] = durumYazi(), m = mesai(bilgi && bilgi.mesai);
 			const evAd = (bilgi && bilgi.ev) || "", isAd = (bilgi && bilgi.isyeri) || "";
-			const yer = `<div class="kutu"><button class="yer-b" data-kendiev="1"><span>Ev</span><b>${esc(evAd || "—")}</b></button>${isAd
-				? `<button class="yer-b" data-kendiis="1"><span>İş yeri</span><b>${esc(isAd)}</b></button>` : ""}</div>`;
-			if (!k) return yer + `<p class="bilgi">Finans bilgileri bu hesap için açık değil.</p>`;
+			const kk = (et, deger, alt) => `<div class="k-k"><span class="etiket">${et}</span><strong>${deger}</strong>${alt ? `<em>${alt}</em>` : ""}</div>`;
+			const yerK = (et, ad, veri) => `<button class="k-k" ${veri}><span class="etiket">${et}</span><b>${esc(ad || "—")}</b></button>`;
+			let h = `<div class="k-ust"><span class="durum ${iste ? "" : "evde"}">${esc(dy)}</span>${ada(m.oran)}<span class="kucuk">${m.yazi}</span></div>`;
+			if (window.miniakentEkonomi && e) h += `<div class="k-uc">${kk(e.bakiye < 0 ? "Borç" : "Bakiye", sayi(Math.round(Math.abs(e.bakiye || 0))), "papel")}${kk("Bu ay maaş", sayi(Math.round(e.maas || 0)), "papel")}${kk("Kıdem", ekoYuzde(e.kidem), "maaşa ek")}</div>`;
+			h += `<div class="k-iki">${isAd ? yerK("İş", isAd, `data-kendiis="1"`) : ""}${yerK("Ev", evAd, `data-kendiev="1"`)}</div>`;
+			if (!window.miniakentEkonomi || !e) return h + `<p class="bilgi">Finans bilgileri bu hesap için açık değil.</p>`;
 			const ek = [["Fazla mesai kazancı", e.fazla], ["Etkinlik ve taksi", e.etkinlik], ["Hastane", e.hastane], ["İzin / hastane kesintisi", e.kesinti]].filter((x) => x[1]);
-			let h = yer + k + (ek.length ? `<div class="kutu"><span class="etiket">Bu ay ayrıca</span>${ek.map((x) => `<div class="satir"><span>${x[0]}</span><b>${papel(x[1])}</b></div>`).join("")}</div>` : "");
+			h += `<button class="k-ac" data-ayrinti="1"><span>Bu ayın ayrıntısı</span><span>${ayrintiAcik ? "▴" : "▾"}</span></button>`;
+			if (ayrintiAcik) h += `<div class="kutu"><div class="satir"><span>Vergi</span><b>${papel(e.vergi)}</b></div><div class="satir"><span>Geçim</span><b>${papel(e.gecim)}</b></div>
+				<div class="satir"><span>Kira</span><b>${papel(e.kira)}</b></div><div class="satir"><span>Ustalık</span><b>${ekoYuzde(e.ustalik)}</b></div>
+				${ek.map((x) => `<div class="satir"><span>${x[0]}</span><b>${papel(x[1])}</b></div>`).join("")}</div>`;
 			const d = dur();
 			if (d) {   // fazla mesai (kullanıcı, 2026-11-17): hafta içi mesaiden sonra en çok 2, tatil günü en çok 4 saat; saatlik ücretin 1,5 katı
 				const f = d.fazla, sec = (n, s, a, b2) => `<button class="${s === n ? "secili" : ""}" data-fmsec="${a}|${b2}">${n ? n + " saat" : "Yok"}</button>`;
@@ -2267,6 +2290,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		}],
 	};
 	let secilen = null, kostumAcik = false, bina = null, binaTum = {};
+	let ayrintiAcik = false;   // Karakterim'de "Bu ayın ayrıntısı" (kapalı başlar; kullanıcı, 2026-11-20)
 	// "Girlband Ol" evde ve işte kapalı (kullanıcı, 2026-11-19): oyun window.miniakentDansOlur'u karakter dışarıdaysa true
 	// yazar (scripts/dans.gd). Üye seçimi kaldırıldı (kullanıcı: "Sadece tuş olsun").
 	let sonDansOlur = null;
@@ -2817,6 +2841,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			const f = d.kendiev ? window.miniakentEvGoster : window.miniakentIsGoster;
 			f && f();
 		}
+		else if (d.ayrinti) { ayrintiAcik = !ayrintiAcik; ciz(); }
 		else if (d.fmsec) { const [a, b2] = d.fmsec.split("|"); window.miniakentFazla && window.miniakentFazla(+a, +b2); }
 		else if (d.kostumac) { kostumAcik = true; ciz(); }
 		else if (b.id === "mkb-sifirla") { st = yeni(); kaydet(); ciz(); }
@@ -3169,7 +3194,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611192322.pck","fileSizes":{"test/index-test-v202611192322.pck":9788836,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611200049.pck","fileSizes":{"test/index-test-v202611200049.pck":9788836,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
