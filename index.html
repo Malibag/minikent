@@ -652,6 +652,10 @@ try {
 			const k = h || karakter;
 			return k && auth.currentUser ? set(ref(db, "bogulma/" + anahtar(k)), serverTimestamp()) : Promise.resolve();
 		};
+		// "Girlband Ol" (kullanıcı, 2026-11-19; aynı gün canlıya): kendi karakteri ve en yakın 5 kişi (grup 6) Manifest "Snap" ile dans
+		// eder; herkes görür (oyun dans/'a 3 sn'de bir bakar: scripts/dans.gd). Kural: yalnız karakterin sahibi, sunucu zamanı.
+		window.miniakentGirlband = () => karakter && auth.currentUser
+			? set(ref(db, "dans/" + anahtar(karakter)), serverTimestamp()) : Promise.resolve();
 		// Etkinliğe katılanlar (kullanıcı, 2026-11-17; test sayfası): katilim/<ad anahtarı> = {y, b, d}; herkes okur, oyun
 		// karakteri her ekranda o etkinliğe götürür (scripts/durum.gd)
 		if (window.miniakentTest) onValue(ref(db, "katilim"), (s) => {
@@ -700,10 +704,12 @@ try {
 			// sayfa içeriksiz sohbet_zaman listesinden son 1 günü alır, mesajları tek tek okur. 1 günden eskisi kimseye açılmaz.
 			// Mesajlar ve şikâyetler 1 yıl saklanır; 1 yılı dolanlar açılışta silinir. Şikâyet: sikayet/<id> (yalnız yönetici okur).
 			const GUN = 86400000, YIL = 365 * GUN;
-			window.miniakentSohbetYaz = (m) => {
+			// y (isteğe bağlı, 2026-11-18): yanıtlanan mesaj {h: sahibi, m: ilk 60 harfi}
+			window.miniakentSohbetYaz = (m, y) => {
 				if (!karakter) return Promise.resolve();
-				const id = push(ref(db, "sehir_sohbet")).key;
-				return update(ref(db), { ["sehir_sohbet/" + id]: { k: anahtar(karakter), h: karakter, m: m, t: serverTimestamp() },
+				const id = push(ref(db, "sehir_sohbet")).key, v = { k: anahtar(karakter), h: karakter, m: m, t: serverTimestamp() };
+				if (y && y.h) v.y = { h: String(y.h).slice(0, 40), m: String(y.m || "").slice(0, 60) };
+				return update(ref(db), { ["sehir_sohbet/" + id]: v,
 					["sohbet_zaman/" + id]: serverTimestamp() }).catch((e) => console.warn("sohbet", e));
 			};
 			window.miniakentSikayet = (x, neden, aciklama) => {
@@ -718,7 +724,7 @@ try {
 			};
 			const sohbetOku = (id, kez) => get(ref(db, "sehir_sohbet/" + id)).then((sn) => {
 				const v = sn.val();
-				if (v && v.m) { sohbetler[id] = { id: id, h: v.h || "", m: v.m, t: v.t || 0 }; sohbetYay(); }
+				if (v && v.m) { sohbetler[id] = { id: id, h: v.h || "", m: v.m, t: v.t || 0, y: v.y && v.y.h ? { h: v.y.h, m: v.y.m || "" } : null }; sohbetYay(); }
 				else if (kez < 3) setTimeout(() => sohbetOku(id, kez + 1), 1500);   // yeni yazılan mesaj sunucuya henüz ulaşmamış olabilir
 			}).catch(() => { if (kez < 3) setTimeout(() => sohbetOku(id, kez + 1), 1500); });
 			let sohbetBirak2 = null;
@@ -1679,7 +1685,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	background: transparent; color: var(--yazi); white-space: nowrap; }
 #mkb .etk-s button.koyu { background: var(--yazi); color: var(--krem2); }
 #mkb .etk-s button:disabled, #mkb .kucuk-d:disabled { opacity: .4; }
-#mkb .etk-ust { display: flex; justify-content: flex-end; }
+#mkb .etk-ust { display: flex; flex-direction: column; align-items: flex-end; gap: 16px; }
 #mkb .takip .kim-ad { cursor: pointer; }
 /* şehir sohbeti (kullanıcı, 2026-11-18): arama satırındaki düğmeyle alttan açılır; bilgisayarda sağda 9:16 ince uzun, telefonda ekranı kaplar; gece de bej */
 #mkb .sohbet-ekran { position: absolute; top: 0; bottom: 0; right: 0; width: min(100%, calc(100dvh * 9 / 16)); border-left: 2px solid #162132; z-index: 20; display: flex; flex-direction: column; background: #fbe9cb; color: #162132; color-scheme: light;
@@ -1698,7 +1704,28 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 #mkb .s-b.ben { align-self: flex-end; background: #162132; color: #fbe9cb; border-radius: 14px 14px 4px 14px; }
 #mkb .s-alt { display: flex; justify-content: flex-end; align-items: center; gap: 10px; margin-top: 2px; font-size: 10px; color: #5d6680; }
 #mkb .s-b.ben .s-alt { color: #a9b3c7; }
-#mkb .s-alt button { margin-right: auto; padding: 0; border: 0; background: none; font-size: 10px; font-weight: 700; color: #5d6680; text-decoration: underline; }
+#mkb .s-alt button { padding: 0; border: 0; background: none; font-size: 10px; font-weight: 700; color: #5d6680; text-decoration: underline; }
+#mkb .s-alt > span { margin-left: auto; }
+#mkb .s-b.ben .s-alt button { color: #a9b3c7; }
+/* @ etiketi, yanıt, "Şu an şehirde" (kullanıcı, 2026-11-18) */
+#mkb .s-b { cursor: pointer; }
+#mkb .s-b.etiket { background: #ffe2b8; border-color: #c2410c; border-width: 2px; }
+#mkb .s-et { font-weight: 800; }
+#mkb .s-ynt { display: block; margin: 2px 0 4px; padding: 3px 8px; border-left: 3px solid; border-radius: 6px; background: rgba(22, 33, 50, .07); font-size: 12px; color: #5d6680; }
+#mkb .s-b.ben .s-ynt { background: rgba(251, 233, 203, .12); color: #a9b3c7; }
+#mkb .s-ynt b { display: block; font-size: 11.5px; }
+#mkb .s-kimler { padding: 5px 10px; border-radius: 999px; border: 2px solid #162132; background: #fff6e4; color: #162132; font-weight: 700; font-size: 11px; }
+#mkb .s-kimler-l { display: flex; flex-wrap: wrap; gap: 4px 10px; padding: 8px 16px; border-bottom: 2px solid #162132; background: #fff6e4; font-size: 12.5px; font-weight: 700; max-height: 30%; overflow-y: auto; }
+#mkb .s-kimler-l .s-bos { margin: 0; }
+#mkb .s-yanit { display: flex; align-items: center; gap: 8px; margin: 0 12px; padding: 5px 8px 5px 10px; border-left: 3px solid #c2410c; border-radius: 8px; background: #fff6e4; font-size: 12px; }
+#mkb .s-yanit div { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #5d6680; }
+#mkb .s-yanit b { color: #162132; margin-right: 6px; }
+#mkb .s-yanit button { width: 26px; height: 26px; padding: 0; border-radius: 50%; border: 2px solid #162132; background: transparent; color: #162132; font-weight: 800; }
+#mkb .s-oneri { display: flex; flex-direction: column; margin: 0 12px; border: 2px solid #162132; border-radius: 12px; background: #fff6e4; overflow: hidden; }
+#mkb .s-oneri button { padding: 7px 12px; border: 0; border-bottom: 1px solid rgba(22, 33, 50, .15); background: none; color: #162132; text-align: left; font-weight: 700; font-size: 13px; }
+#mkb .s-oneri button:last-child { border-bottom: 0; }
+#mkb .cip.nokta { position: relative; }
+#mkb .cip.nokta::after { content: ""; position: absolute; top: -4px; right: -4px; width: 10px; height: 10px; border-radius: 50%; background: #e01b24; border: 2px solid #fbe9cb; }
 #mkb .s-yaz { display: flex; gap: 8px; padding: 10px 12px; border-top: 2px solid #162132; }
 #mkb .s-yaz input { flex: 1; min-width: 0; font: 16px var(--fg); padding: 7px 14px; border-radius: 999px; border: 2px solid #162132; background: #fff6e4; color: #162132; outline: 0; }
 #mkb .s-yaz button { padding: 0 16px; border-radius: 999px; border: 2px solid #162132; background: #162132; color: #fbe9cb; font-weight: 800; font-size: 12px; }
@@ -1765,8 +1792,12 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	<button class="ikon" id="mkb-sehirde-kapat" aria-label="Kapat">${SVG.kapat}</button></div>
 	<div class="liste" id="mkb-sehirde-liste"></div><small id="mkb-sehirde-anonim"></small></section>
 <section class="sohbet-ekran" id="mkb-sohbet" aria-hidden="true"><div class="s-bas"><h2>Şehir sohbeti</h2>
+	<button class="s-kimler" id="mkb-s-kimler" aria-expanded="false">Şu an şehirde 0 kişi</button>
 	<button class="s-kapat" id="mkb-sohbet-kapat" aria-label="Kapat">${SVG.kapat}</button></div>
+	<div class="s-kimler-l" id="mkb-s-kimler-l" hidden></div>
 	<div class="s-liste" id="mkb-s-liste"></div>
+	<div class="s-oneri" id="mkb-s-oneri" hidden></div>
+	<div class="s-yanit" id="mkb-s-yanit" hidden><div><b id="mkb-s-yanit-ad"></b><span id="mkb-s-yanit-m"></span></div><button type="button" id="mkb-s-yanit-kapat" aria-label="Yanıtı kaldır">×</button></div>
 	<form class="s-yaz" id="mkb-s-form"><input id="mkb-sohbet-yaz" maxlength="120" placeholder="Şehre yaz…" autocomplete="off" enterkeyhint="send" aria-label="Mesaj"><button type="submit">Gönder</button></form>
 	<div class="s-pencere" id="mkb-s-pencere" hidden><div class="s-kutu" role="dialog" aria-label="Şikâyet et"><h3>Şikâyet et</h3><p class="s-alinti" id="mkb-s-alinti"></p>
 		<label><input type="radio" name="mkb-neden" value="hakaret">Hakaret / Taciz</label>
@@ -2111,7 +2142,9 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			// teşhis (yalnız test sayfası, geçici): ekonomi izni ve oyundan gelen hesap
 			const ekoTeshis = window.miniakentTest ? `<p class="bilgi">Ekonomi: izin ${window.miniakentEkonomi ? "var" : "yok"} · hesap ${bilgi && bilgi.ekonomi ? "var" : "yok"}</p>` : "";
 			return kart({ handle: karakter, meslek: is.meslek, yer: is.yer, ev: ev.adres }, dy, iste) + ekoKutu(bilgi && bilgi.ekonomi, true) + ekoTeshis
-				+ `<div class="ikili"><button class="evet" data-bogul="1" ${iste ? "disabled" : ""}>Boğulmaya git</button></div>`;
+				+ `<div class="ikili"><button class="evet" data-bogul="1" ${iste ? "disabled" : ""}>Boğulmaya git</button></div>`
+				// "Girlband Ol" (kullanıcı, 2026-11-19): altında, yanlışlıkla basılmasın diye arada boşluk; evde/işte kapalı
+				+ `<div class="ikili" style="margin-top:16px"><button class="evet" data-girlband="1" ${gbKapali(iste) ? "disabled" : ""}>Girlband Ol</button></div>`;
 		}],
 		is: ["İş", () => {
 			const is = isim(), l = acikIlan(IS_ILAN);
@@ -2177,7 +2210,9 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			if (!d) return DURUM_YOK;
 			const adi = (id) => (d.yerler.find((y) => y.id === id) || {}).ad || id;
 			const iste = durumYazi()[1];
-			let h = `<div class="etk-ust"><button class="kucuk-d" data-bogul="1" ${iste ? "disabled" : ""}>Boğulmaya git</button></div>`;
+			// "Girlband Ol" (kullanıcı, 2026-11-19): Boğulmaya git'in altında, yanlışlıkla basılmasın diye arada boşluk
+			let h = `<div class="etk-ust"><button class="kucuk-d" data-bogul="1" ${iste ? "disabled" : ""}>Boğulmaya git</button>
+				<button class="kucuk-d" data-girlband="1" ${gbKapali(iste) ? "disabled" : ""}>Girlband Ol</button></div>`;
 			if (d.aktif) {
 				const a = d.aktif, sur = a.asama === "suruyor";
 				const as = a.asama === "yol" ? "Yolda" : a.asama === "bekliyor" ? `Kalkışı bekliyor · ${a.kalan} sn` : `Katılıyor · ${Math.max(1, Math.ceil(a.kalan / 60))} dakika kaldı`;
@@ -2210,6 +2245,10 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		}],
 	};
 	let secilen = null, kostumAcik = false, bina = null, binaTum = {};
+	// "Girlband Ol" evde ve işte kapalı (kullanıcı, 2026-11-19): oyun window.miniakentDansOlur'u karakter dışarıdaysa true
+	// yazar (scripts/dans.gd). Üye seçimi kaldırıldı (kullanıcı: "Sadece tuş olsun").
+	let sonDansOlur = null;
+	const gbKapali = (iste) => iste || window.miniakentDansOlur !== true;
 
 	function ciz() {
 		const s = SAYFA[sayfaAd];
@@ -2735,6 +2774,10 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			window.miniakentBogul && window.miniakentBogul().catch((e) => console.warn("bogulma", e));
 			window.minikentSearch && window.minikentSearch(karakter);
 		}
+		else if (d.girlband) {   // dans başlar, kamera karakteri izler (kullanıcı, 2026-11-19)
+			window.miniakentGirlband && window.miniakentGirlband().catch((e) => console.warn("dans", e));
+			window.minikentSearch && window.minikentSearch(karakter);
+		}
 		else if (d.bogulsakin && secilen) {   // başkasının karakteri (kullanıcı, 2026-11-15); kamera onu izler
 			const h = secilen.handle;
 			window.miniakentBogul && window.miniakentBogul(h).catch((e) => console.warn("bogulma", e));
@@ -2870,15 +2913,58 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		const d = new Date(t), hm = d.toLocaleTimeString("tr-TR", { hour: "2-digit", minute: "2-digit" });
 		return d.toDateString() === new Date().toDateString() ? hm : "Dün " + hm;
 	};
+	// @ etiketi ve yanıt (kullanıcı, 2026-11-18): etiketlenen ya da yanıtlanan kişinin Sohbet düğmesinde kırmızı nokta, mesajı vurgulu
+	let sSecili = "", yanit = null, sOkundu = 0;
+	try { sOkundu = +localStorage.getItem("mkb_sohbet_okundu") || 0; } catch (e) {}
+	const sNorm = (h) => String(h || "").replace(/^@/, "").toLowerCase();
+	const S_ET = /@[\w.çğıöşüÇĞİÖŞÜ]*[\wçğıöşüÇĞİÖŞÜ]/g;
+	const sEtiketli = (x) => {
+		if (!karakter || x.h === karakter) return false;
+		const ben = sNorm(karakter);
+		return (x.y && sNorm(x.y.h) === ben) || (x.m.match(S_ET) || []).some((e) => sNorm(e) === ben);
+	};
+	const sMetin = (m) => esc(m).replace(S_ET, (e) => `<span class="s-et">${e}</span>`);
+	const sOkunduYap = () => {
+		const l = window.miniakentSohbet || [];
+		const t = l.length ? l[l.length - 1].t : 0;
+		if (t > sOkundu) { sOkundu = t; try { localStorage.setItem("mkb_sohbet_okundu", String(t)); } catch (e) {} }
+	};
+	const sNokta = () => {
+		const sinir = Math.max(sOkundu, miniakentSimdi() - 86400000);
+		$("mkb-sohbet-ac").classList.toggle("nokta", !sohbetAcik && (window.miniakentSohbet || []).some((x) => x.t > sinir && sEtiketli(x)));
+	};
+	// "Şu an şehirde" (2026-11-18): oyunda "Çevrimiçi" görünen herkes (aynı liste: profil > Görünürlük)
+	const sKimler = () => {
+		const v = window.miniakentSehirde || {}, simdi = miniakentSimdi();
+		return Object.keys(v).filter((k) => typeof v[k] === "number" && simdi - v[k] < 180000)
+			.map((k) => "@" + k.replace(/,/g, ".")).sort((a, b) => a.localeCompare(b, "tr"));
+	};
+	let sonKimler = "";
+	const sKimlerCiz = () => {
+		const l = sKimler(), imza = l.join("|") + (!$("mkb-s-kimler-l").hidden);
+		if (imza === sonKimler) return;
+		sonKimler = imza;
+		$("mkb-s-kimler").textContent = "Şu an şehirde " + l.length + " kişi";
+		$("mkb-s-kimler-l").innerHTML = l.length ? l.map((h) => `<span style="color:${sRenk(h)}">${esc(h)}</span>`).join("") : `<p class="s-bos">Şu an çevrimiçi görünen kimse yok.</p>`;
+	};
+	$("mkb-s-kimler").addEventListener("click", () => {
+		const l = $("mkb-s-kimler-l");
+		l.hidden = !l.hidden;
+		$("mkb-s-kimler").setAttribute("aria-expanded", String(!l.hidden));
+		sKimlerCiz();
+	});
 	function sohbetCiz(enAlta) {
 		const l = (window.miniakentSohbet || []).filter((x) => x.t > miniakentSimdi() - 86400000).slice(-200);
 		const altta = sListe.scrollHeight - sListe.scrollTop - sListe.clientHeight < 60;
 		sListe.innerHTML = l.length ? l.map((x) => {
 			const ben = x.h === karakter;
-			return `<div class="s-b${ben ? " ben" : ""}">${ben ? "" : `<b class="s-ad" style="color:${sRenk(x.h)}">${esc(sAd(x.h))}</b>`}${esc(suzgec(x.m))}<div class="s-alt">${ben ? ""
+			const ynt = x.y ? `<span class="s-ynt" style="border-color:${sRenk(x.y.h)}"><b style="color:${ben ? "#fbe9cb" : sRenk(x.y.h)}">${esc(sAd(x.y.h))}</b>${esc(suzgec(x.y.m))}</span>` : "";
+			return `<div class="s-b${ben ? " ben" : ""}${sEtiketli(x) ? " etiket" : ""}" data-id="${esc(x.id)}">${ben ? "" : `<b class="s-ad" style="color:${sRenk(x.h)}">${esc(sAd(x.h))}</b>`}${ynt}${sMetin(suzgec(x.m))}<div class="s-alt">${
+				sSecili === x.id ? `<button type="button" data-yanitla="${esc(x.id)}">Yanıtla</button>` : ""}${ben ? ""
 				: `<button type="button" data-sikayet="${esc(x.id)}" ${sikayetEdilen[x.id] ? "disabled" : ""}>${sikayetEdilen[x.id] ? "Şikâyet edildi" : "Şikâyet et"}</button>`}<span>${sSaat(x.t)}</span></div></div>`;
 		}).join("") : `<p class="s-bos">Henüz mesaj yok. İlk sen yaz.</p>`;
 		if (enAlta || altta) sListe.scrollTop = sListe.scrollHeight;
+		if (sohbetAcik) sOkunduYap();
 	}
 	function sohbetAc(ac) {
 		if (ac) {
@@ -2886,11 +2972,12 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			if (ayarlarAcik) ayarlarAc(false);
 			if (sehirdeAcik) sehirdeAc(false);
 			oneri.hidden = true; bolge.hidden = true;
-		} else { sYaz.blur(); sPencere.hidden = true; }
+		} else { sYaz.blur(); sPencere.hidden = true; $("mkb-s-oneri").hidden = true; sSecili = ""; }
 		sohbetAcik = ac;
 		sEkran.classList.toggle("acik", ac);
 		sEkran.setAttribute("aria-hidden", String(!ac));
-		if (ac) { sonSohbet = window.miniakentSohbetSurum; sohbetCiz(true); }
+		if (ac) { sonSohbet = window.miniakentSohbetSurum; sonKimler = ""; sKimlerCiz(); sohbetCiz(true); }
+		sNokta();
 	}
 	$("mkb-sohbet-ac").addEventListener("click", () => sohbetAc(true));
 	$("mkb-sohbet-kapat").addEventListener("click", () => sohbetAc(false));
@@ -2899,9 +2986,35 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		const m = suzgec(sYaz.value.trim()).slice(0, 120);
 		if (!m || !window.miniakentSohbetYaz || Date.now() - sonGonder < 3000) return;
 		sonGonder = Date.now();
-		window.miniakentSohbetYaz(m);
+		window.miniakentSohbetYaz(m, yanit);
 		sYaz.value = "";
+		yanitKoy(null);
+		$("mkb-s-oneri").hidden = true;
 		sListe.scrollTop = sListe.scrollHeight;
+	});
+	const sOneri = $("mkb-s-oneri");
+	const sEtiketParca = () => {
+		const once = sYaz.value.slice(0, sYaz.selectionStart == null ? sYaz.value.length : sYaz.selectionStart);
+		const m = once.match(/(^|\s)@([^\s@]*)$/);
+		return m ? { bas: once.length - m[2].length - 1, q: m[2].toLowerCase() } : null;
+	};
+	sYaz.addEventListener("input", () => {
+		const p = sEtiketParca();
+		const l = !p ? [] : (window.minikentHandles || []).filter((h) => sNorm(h).indexOf(p.q) >= 0)
+			.sort((a, b) => (sNorm(b).startsWith(p.q) - sNorm(a).startsWith(p.q)) || a.localeCompare(b, "tr")).slice(0, 6);
+		sOneri.innerHTML = l.map((h) => `<button type="button" data-h="${esc(sAd(h))}">${esc(sAd(h))}</button>`).join("");
+		sOneri.hidden = !l.length;
+	});
+	sOneri.addEventListener("click", (e) => {
+		const b = e.target.closest("button[data-h]"), p = sEtiketParca();
+		if (!b || !p) return;
+		const son = sYaz.selectionStart == null ? sYaz.value.length : sYaz.selectionStart;
+		const ek = b.dataset.h + " ";
+		sYaz.value = (sYaz.value.slice(0, p.bas) + ek + sYaz.value.slice(son)).slice(0, 120);
+		const yer = Math.min(p.bas + ek.length, sYaz.value.length);
+		sOneri.hidden = true;
+		sYaz.focus();
+		sYaz.setSelectionRange(yer, yer);
 	});
 	const sNeden = () => (sPencere.querySelector('input[name="mkb-neden"]:checked') || {}).value || "";
 	const sDenetle = () => {
@@ -2909,7 +3022,25 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		ac.hidden = n !== "diger";
 		$("mkb-s-gonder").disabled = !n || (n === "diger" && ac.value.trim().length < 3);
 	};
+	function yanitKoy(x) {
+		yanit = x ? { h: x.h, m: suzgec(x.m).slice(0, 60) } : null;
+		$("mkb-s-yanit").hidden = !yanit;
+		if (yanit) { $("mkb-s-yanit-ad").textContent = sAd(yanit.h); $("mkb-s-yanit-m").textContent = yanit.m; }
+	}
+	$("mkb-s-yanit-kapat").addEventListener("click", () => yanitKoy(null));
 	sListe.addEventListener("click", (e) => {
+		const yb = e.target.closest("button[data-yanitla]");
+		if (yb) {
+			const x = (window.miniakentSohbet || []).find((m) => m.id === yb.dataset.yanitla);
+			sSecili = ""; sohbetCiz(false);
+			if (x) { yanitKoy(x); sYaz.focus(); }
+			return;
+		}
+		if (!e.target.closest("button")) {
+			const bl = e.target.closest(".s-b");
+			if (bl) { sSecili = sSecili === bl.dataset.id ? "" : bl.dataset.id; sohbetCiz(false); }
+			return;
+		}
 		const b = e.target.closest("button[data-sikayet]");
 		if (!b || sikayetEdilen[b.dataset.sikayet]) return;
 		const x = (window.miniakentSohbet || []).find((m) => m.id === b.dataset.sikayet);
@@ -2996,9 +3127,15 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			arayuz();
 		}
 		$("mkb-sohbet-ac").hidden = !window.miniakentSohbetYaz;   // şehir sohbeti yalnız izinli hesapta
-		if (sohbetAcik && window.miniakentSohbetSurum !== sonSohbet) { sonSohbet = window.miniakentSohbetSurum; sohbetCiz(false); }
+		if (window.miniakentSohbetSurum !== sonSohbet) { sonSohbet = window.miniakentSohbetSurum; if (sohbetAcik) sohbetCiz(false); sNokta(); }
+		if (sohbetAcik) sKimlerCiz();
 		const b = JSON.stringify(window.miniakentKarakterBilgi || null);
 		const dk = new Date().getMinutes();
+		const dansOlur = window.miniakentDansOlur === true;   // "Girlband Ol" evde/işte kapalı (scripts/dans.gd)
+		if (dansOlur !== sonDansOlur) {
+			sonDansOlur = dansOlur;
+			if ((sayfaAd === "etkinlik" || sayfaAd === "kisi") && $("mkb-onay").hidden) ciz();
+		}
 		if (b !== sonBilgi || dk !== sonDk) {
 			sonBilgi = b; sonDk = dk;
 			bilgi = window.miniakentKarakterBilgi || null;
@@ -3010,7 +3147,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611181623.pck","fileSizes":{"index-v202611181623.pck":9320704,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611191125.pck","fileSizes":{"index-v202611191125.pck":9780536,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
