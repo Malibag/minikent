@@ -1689,10 +1689,13 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 #mkb .etk-s button.koyu { background: var(--yazi); color: var(--krem2); }
 #mkb .etk-s button:disabled, #mkb .kucuk-d:disabled { opacity: .4; }
 #mkb .etk-ust { display: flex; flex-direction: column; align-items: flex-end; gap: 16px; }
-#mkb .gb-liste { display: flex; flex-direction: column; gap: 6px; width: 130px; margin-top: -8px; }
-#mkb .gb { font: inherit; font-size: 12px; font-weight: 800; padding: 7px 10px; border-radius: 999px; border: 2px solid var(--kenar);
-	color: #fff; cursor: pointer; }
-#mkb .gb-vaz { background: transparent; color: inherit; }
+/* üye seçimi: küçük, renksiz açılır liste (kullanıcı, 2026-11-19) */
+#mkb .gb-liste { display: flex; flex-direction: column; min-width: 96px; margin-top: -11px; border: 2px solid var(--kenar);
+	border-radius: 10px; overflow: hidden; }
+#mkb .gb { font: inherit; font-size: 11px; font-weight: 700; padding: 5px 10px; border: 0; border-bottom: 1px solid var(--kenar);
+	background: transparent; color: inherit; text-align: left; cursor: pointer; }
+#mkb .gb:last-child { border-bottom: 0; }
+#mkb .gb-vaz { opacity: .6; }
 #mkb .takip .kim-ad { cursor: pointer; }
 /* şehir sohbeti (kullanıcı, 2026-11-18): arama satırındaki düğmeyle alttan açılır; bilgisayarda sağda 9:16 ince uzun, telefonda ekranı kaplar; gece de bej */
 #mkb .sohbet-ekran { position: absolute; top: 0; bottom: 0; right: 0; width: min(100%, calc(100dvh * 9 / 16)); border-left: 2px solid #162132; z-index: 20; display: flex; flex-direction: column; background: #fbe9cb; color: #162132; color-scheme: light;
@@ -2225,7 +2228,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			const iste = durumYazi()[1];
 			// "Girlband Ol" (kullanıcı, 2026-11-19): Boğulmaya git'in altında, yanlışlıkla basılmasın diye arada boşluk
 			let h = `<div class="etk-ust"><button class="kucuk-d" data-bogul="1" ${iste ? "disabled" : ""}>Boğulmaya git</button>
-				<button class="kucuk-d" data-girlband="1" ${iste ? "disabled" : ""}>Girlband Ol</button>${gbAcik && !iste ? gbListe() : ""}</div>`;
+				<button class="kucuk-d" data-girlband="1" ${gbKapali(iste) ? "disabled" : ""}>Girlband Ol</button>${gbAcik && !gbKapali(iste) ? gbListe() : ""}</div>`;
 			if (d.aktif) {
 				const a = d.aktif, sur = a.asama === "suruyor";
 				const as = a.asama === "yol" ? "Yolda" : a.asama === "bekliyor" ? `Kalkışı bekliyor · ${a.kalan} sn` : `Katılıyor · ${Math.max(1, Math.ceil(a.kalan / 60))} dakika kaldı`;
@@ -2259,12 +2262,12 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	};
 	let secilen = null, kostumAcik = false, bina = null, binaTum = {};
 	// "Girlband Ol" üye seçimi (kullanıcı, 2026-11-19: "Alta açılır seçim ekranı çıksın"): düğmenin altında açılır;
-	// seçilen üyenin renginde kostüm (scripts/dans.gd RENK ile aynı renkler)
-	let gbAcik = false;
-	const GB_UYE = [["hilal", "Hilal", "#7d2fc4"], ["mina", "Mina", "#d4102c"], ["zeynep", "Zeynep", "#1f50d8"],
-		["lidya", "Lidya", "#ff4fa6"], ["esin", "Esin", "#f5c518"], ["sueda", "Sueda", "#36b84a"]];
-	const gbListe = () => `<div class="gb-liste">${GB_UYE.map(([k, ad, r]) =>
-		`<button class="gb" data-gbuye="${k}" style="background:${r}${k === "esin" ? ";color:#162132" : ""}">${ad}</button>`).join("")}
+	// seçilen üyenin renginde kostüm (renkler scripts/dans.gd RENK); evde ve işte kapalı (oyun window.miniakentDansOlur:
+	// karakter dışarıdaysa true; kullanıcı, 2026-11-19)
+	let gbAcik = false, sonDansOlur = null;
+	const GB_UYE = [["hilal", "Hilal"], ["mina", "Mina"], ["zoktay", "Zoktay"], ["lidya", "Lidya"], ["esin", "Esin"], ["sueda", "Sueda"]];
+	const gbKapali = (iste) => iste || window.miniakentDansOlur !== true;
+	const gbListe = () => `<div class="gb-liste">${GB_UYE.map(([k, ad]) => `<button class="gb" data-gbuye="${k}">${ad}</button>`).join("")}
 		<button class="gb gb-vaz" data-gbvazgec="1">Vazgeç</button></div>`;
 
 	function ciz() {
@@ -3151,6 +3154,12 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		if (sohbetAcik) sKimlerCiz();
 		const b = JSON.stringify(window.miniakentKarakterBilgi || null);
 		const dk = new Date().getMinutes();
+		const dansOlur = window.miniakentDansOlur === true;   // "Girlband Ol" evde/işte kapalı (scripts/dans.gd)
+		if (dansOlur !== sonDansOlur) {
+			sonDansOlur = dansOlur;
+			if (!dansOlur) gbAcik = false;
+			if (sayfaAd === "etkinlik" && $("mkb-onay").hidden) ciz();
+		}
 		if (b !== sonBilgi || dk !== sonDk) {
 			sonBilgi = b; sonDk = dk;
 			bilgi = window.miniakentKarakterBilgi || null;
@@ -3162,7 +3171,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611190953.pck","fileSizes":{"test/index-test-v202611190953.pck":9775624,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611191010.pck","fileSizes":{"test/index-test-v202611191010.pck":9776440,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
