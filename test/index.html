@@ -655,10 +655,10 @@ try {
 			const k = h || karakter;
 			return k && auth.currentUser ? set(ref(db, "bogulma/" + anahtar(k)), serverTimestamp()) : Promise.resolve();
 		};
-		// "Girlband Ol" (kullanıcı, 2026-11-19; test sayfası): kendi karakteri ve en yakın 6 kişi Manifest "Snap" ile dans
-		// eder; herkes görür (oyun dans/'a 3 sn'de bir bakar: scripts/dans.gd). Kural: yalnız karakterin sahibi, sunucu zamanı.
-		window.miniakentGirlband = () => karakter && auth.currentUser
-			? set(ref(db, "dans/" + anahtar(karakter)), serverTimestamp()) : Promise.resolve();
+		// "Girlband Ol" (kullanıcı, 2026-11-19; test sayfası): kendi karakteri ve en yakın 5 kişi (grup 6) Manifest "Snap" ile dans
+		// eder, seçilen üyenin renginde kostüm; herkes görür (oyun dans/ = {t, u} okur: scripts/dans.gd). Kural: yalnız sahibi.
+		window.miniakentGirlband = (u) => karakter && auth.currentUser
+			? set(ref(db, "dans/" + anahtar(karakter)), { t: serverTimestamp(), u: u }) : Promise.resolve();
 		// Etkinliğe katılanlar (kullanıcı, 2026-11-17; test sayfası): katilim/<ad anahtarı> = {y, b, d}; herkes okur, oyun
 		// karakteri her ekranda o etkinliğe götürür (scripts/durum.gd)
 		if (window.miniakentTest) onValue(ref(db, "katilim"), (s) => {
@@ -1689,6 +1689,10 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 #mkb .etk-s button.koyu { background: var(--yazi); color: var(--krem2); }
 #mkb .etk-s button:disabled, #mkb .kucuk-d:disabled { opacity: .4; }
 #mkb .etk-ust { display: flex; flex-direction: column; align-items: flex-end; gap: 16px; }
+#mkb .gb-liste { display: flex; flex-direction: column; gap: 6px; width: 130px; margin-top: -8px; }
+#mkb .gb { font: inherit; font-size: 12px; font-weight: 800; padding: 7px 10px; border-radius: 999px; border: 2px solid var(--kenar);
+	color: #fff; cursor: pointer; }
+#mkb .gb-vaz { background: transparent; color: inherit; }
 #mkb .takip .kim-ad { cursor: pointer; }
 /* şehir sohbeti (kullanıcı, 2026-11-18): arama satırındaki düğmeyle alttan açılır; bilgisayarda sağda 9:16 ince uzun, telefonda ekranı kaplar; gece de bej */
 #mkb .sohbet-ekran { position: absolute; top: 0; bottom: 0; right: 0; width: min(100%, calc(100dvh * 9 / 16)); border-left: 2px solid #162132; z-index: 20; display: flex; flex-direction: column; background: #fbe9cb; color: #162132; color-scheme: light;
@@ -2221,7 +2225,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			const iste = durumYazi()[1];
 			// "Girlband Ol" (kullanıcı, 2026-11-19): Boğulmaya git'in altında, yanlışlıkla basılmasın diye arada boşluk
 			let h = `<div class="etk-ust"><button class="kucuk-d" data-bogul="1" ${iste ? "disabled" : ""}>Boğulmaya git</button>
-				<button class="kucuk-d" data-girlband="1" ${iste ? "disabled" : ""}>Girlband Ol</button></div>`;
+				<button class="kucuk-d" data-girlband="1" ${iste ? "disabled" : ""}>Girlband Ol</button>${gbAcik && !iste ? gbListe() : ""}</div>`;
 			if (d.aktif) {
 				const a = d.aktif, sur = a.asama === "suruyor";
 				const as = a.asama === "yol" ? "Yolda" : a.asama === "bekliyor" ? `Kalkışı bekliyor · ${a.kalan} sn` : `Katılıyor · ${Math.max(1, Math.ceil(a.kalan / 60))} dakika kaldı`;
@@ -2254,6 +2258,14 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		}],
 	};
 	let secilen = null, kostumAcik = false, bina = null, binaTum = {};
+	// "Girlband Ol" üye seçimi (kullanıcı, 2026-11-19: "Alta açılır seçim ekranı çıksın"): düğmenin altında açılır;
+	// seçilen üyenin renginde kostüm (scripts/dans.gd RENK ile aynı renkler)
+	let gbAcik = false;
+	const GB_UYE = [["hilal", "Hilal", "#7d2fc4"], ["mina", "Mina", "#d4102c"], ["zeynep", "Zeynep", "#1f50d8"],
+		["lidya", "Lidya", "#ff4fa6"], ["esin", "Esin", "#f5c518"], ["sueda", "Sueda", "#36b84a"]];
+	const gbListe = () => `<div class="gb-liste">${GB_UYE.map(([k, ad, r]) =>
+		`<button class="gb" data-gbuye="${k}" style="background:${r}${k === "esin" ? ";color:#162132" : ""}">${ad}</button>`).join("")}
+		<button class="gb gb-vaz" data-gbvazgec="1">Vazgeç</button></div>`;
 
 	function ciz() {
 		const s = SAYFA[sayfaAd];
@@ -2779,8 +2791,11 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			window.miniakentBogul && window.miniakentBogul().catch((e) => console.warn("bogulma", e));
 			window.minikentSearch && window.minikentSearch(karakter);
 		}
-		else if (d.girlband) {   // kamera karakteri izler (kullanıcı, 2026-11-19)
-			window.miniakentGirlband && window.miniakentGirlband().catch((e) => console.warn("dans", e));
+		else if (d.girlband) { gbAcik = !gbAcik; ciz(); }   // üye listesi açılır/kapanır (kullanıcı, 2026-11-19)
+		else if (d.gbvazgec) { gbAcik = false; ciz(); }
+		else if (d.gbuye) {   // üye seçildi: dans başlar, kamera karakteri izler
+			gbAcik = false; ciz();
+			window.miniakentGirlband && window.miniakentGirlband(d.gbuye).catch((e) => console.warn("dans", e));
 			window.minikentSearch && window.minikentSearch(karakter);
 		}
 		else if (d.bogulsakin && secilen) {   // başkasının karakteri (kullanıcı, 2026-11-15); kamera onu izler
@@ -3147,7 +3162,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611190939.pck","fileSizes":{"test/index-test-v202611190939.pck":9774264,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611190953.pck","fileSizes":{"test/index-test-v202611190953.pck":9775624,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
