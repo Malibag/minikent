@@ -656,9 +656,9 @@ try {
 			return k && auth.currentUser ? set(ref(db, "bogulma/" + anahtar(k)), serverTimestamp()) : Promise.resolve();
 		};
 		// "Girlband Ol" (kullanıcı, 2026-11-19; test sayfası): kendi karakteri ve en yakın 5 kişi (grup 6) Manifest "Snap" ile dans
-		// eder, seçilen üyenin renginde kostüm; herkes görür (oyun dans/ = {t, u} okur: scripts/dans.gd). Kural: yalnız sahibi.
-		window.miniakentGirlband = (u) => karakter && auth.currentUser
-			? set(ref(db, "dans/" + anahtar(karakter)), { t: serverTimestamp(), u: u }) : Promise.resolve();
+		// eder; herkes görür (oyun dans/'a 3 sn'de bir bakar: scripts/dans.gd). Kural: yalnız karakterin sahibi, sunucu zamanı.
+		window.miniakentGirlband = () => karakter && auth.currentUser
+			? set(ref(db, "dans/" + anahtar(karakter)), serverTimestamp()) : Promise.resolve();
 		// Etkinliğe katılanlar (kullanıcı, 2026-11-17; test sayfası): katilim/<ad anahtarı> = {y, b, d}; herkes okur, oyun
 		// karakteri her ekranda o etkinliğe götürür (scripts/durum.gd)
 		if (window.miniakentTest) onValue(ref(db, "katilim"), (s) => {
@@ -1689,13 +1689,6 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 #mkb .etk-s button.koyu { background: var(--yazi); color: var(--krem2); }
 #mkb .etk-s button:disabled, #mkb .kucuk-d:disabled { opacity: .4; }
 #mkb .etk-ust { display: flex; flex-direction: column; align-items: flex-end; gap: 16px; }
-/* üye seçimi: küçük, renksiz açılır liste (kullanıcı, 2026-11-19) */
-#mkb .gb-liste { display: flex; flex-direction: column; min-width: 96px; margin-top: -11px; border: 2px solid var(--kenar);
-	border-radius: 10px; overflow: hidden; }
-#mkb .gb { font: inherit; font-size: 11px; font-weight: 700; padding: 5px 10px; border: 0; border-bottom: 1px solid var(--kenar);
-	background: transparent; color: inherit; text-align: left; cursor: pointer; }
-#mkb .gb:last-child { border-bottom: 0; }
-#mkb .gb-vaz { opacity: .6; }
 #mkb .takip .kim-ad { cursor: pointer; }
 /* şehir sohbeti (kullanıcı, 2026-11-18): arama satırındaki düğmeyle alttan açılır; bilgisayarda sağda 9:16 ince uzun, telefonda ekranı kaplar; gece de bej */
 #mkb .sohbet-ekran { position: absolute; top: 0; bottom: 0; right: 0; width: min(100%, calc(100dvh * 9 / 16)); border-left: 2px solid #162132; z-index: 20; display: flex; flex-direction: column; background: #fbe9cb; color: #162132; color-scheme: light;
@@ -2228,7 +2221,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			const iste = durumYazi()[1];
 			// "Girlband Ol" (kullanıcı, 2026-11-19): Boğulmaya git'in altında, yanlışlıkla basılmasın diye arada boşluk
 			let h = `<div class="etk-ust"><button class="kucuk-d" data-bogul="1" ${iste ? "disabled" : ""}>Boğulmaya git</button>
-				<button class="kucuk-d" data-girlband="1" ${gbKapali(iste) ? "disabled" : ""}>Girlband Ol</button>${gbAcik && !gbKapali(iste) ? gbListe() : ""}</div>`;
+				<button class="kucuk-d" data-girlband="1" ${gbKapali(iste) ? "disabled" : ""}>Girlband Ol</button></div>`;
 			if (d.aktif) {
 				const a = d.aktif, sur = a.asama === "suruyor";
 				const as = a.asama === "yol" ? "Yolda" : a.asama === "bekliyor" ? `Kalkışı bekliyor · ${a.kalan} sn` : `Katılıyor · ${Math.max(1, Math.ceil(a.kalan / 60))} dakika kaldı`;
@@ -2261,14 +2254,10 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		}],
 	};
 	let secilen = null, kostumAcik = false, bina = null, binaTum = {};
-	// "Girlband Ol" üye seçimi (kullanıcı, 2026-11-19: "Alta açılır seçim ekranı çıksın"): düğmenin altında açılır;
-	// seçilen üyenin renginde kostüm (renkler scripts/dans.gd RENK); evde ve işte kapalı (oyun window.miniakentDansOlur:
-	// karakter dışarıdaysa true; kullanıcı, 2026-11-19)
-	let gbAcik = false, sonDansOlur = null;
-	const GB_UYE = [["hilal", "Hilal"], ["mina", "Mina"], ["zoktay", "Zoktay"], ["lidya", "Lidya"], ["esin", "Esin"], ["sueda", "Sueda"]];
+	// "Girlband Ol" evde ve işte kapalı (kullanıcı, 2026-11-19): oyun window.miniakentDansOlur'u karakter dışarıdaysa true
+	// yazar (scripts/dans.gd). Üye seçimi kaldırıldı (kullanıcı: "Sadece tuş olsun").
+	let sonDansOlur = null;
 	const gbKapali = (iste) => iste || window.miniakentDansOlur !== true;
-	const gbListe = () => `<div class="gb-liste">${GB_UYE.map(([k, ad]) => `<button class="gb" data-gbuye="${k}">${ad}</button>`).join("")}
-		<button class="gb gb-vaz" data-gbvazgec="1">Vazgeç</button></div>`;
 
 	function ciz() {
 		const s = SAYFA[sayfaAd];
@@ -2794,11 +2783,8 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			window.miniakentBogul && window.miniakentBogul().catch((e) => console.warn("bogulma", e));
 			window.minikentSearch && window.minikentSearch(karakter);
 		}
-		else if (d.girlband) { gbAcik = !gbAcik; ciz(); }   // üye listesi açılır/kapanır (kullanıcı, 2026-11-19)
-		else if (d.gbvazgec) { gbAcik = false; ciz(); }
-		else if (d.gbuye) {   // üye seçildi: dans başlar, kamera karakteri izler
-			gbAcik = false; ciz();
-			window.miniakentGirlband && window.miniakentGirlband(d.gbuye).catch((e) => console.warn("dans", e));
+		else if (d.girlband) {   // dans başlar, kamera karakteri izler (kullanıcı, 2026-11-19)
+			window.miniakentGirlband && window.miniakentGirlband().catch((e) => console.warn("dans", e));
 			window.minikentSearch && window.minikentSearch(karakter);
 		}
 		else if (d.bogulsakin && secilen) {   // başkasının karakteri (kullanıcı, 2026-11-15); kamera onu izler
@@ -3157,7 +3143,6 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		const dansOlur = window.miniakentDansOlur === true;   // "Girlband Ol" evde/işte kapalı (scripts/dans.gd)
 		if (dansOlur !== sonDansOlur) {
 			sonDansOlur = dansOlur;
-			if (!dansOlur) gbAcik = false;
 			if (sayfaAd === "etkinlik" && $("mkb-onay").hidden) ciz();
 		}
 		if (b !== sonBilgi || dk !== sonDk) {
@@ -3171,7 +3156,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611191010.pck","fileSizes":{"test/index-test-v202611191010.pck":9776440,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611191037.pck","fileSizes":{"test/index-test-v202611191037.pck":9775176,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
