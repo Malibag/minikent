@@ -1924,7 +1924,15 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	// iş, öğle arası yok; başlangıç kişiye göre 08:00, 09:00 ya da 10:00 (kullanıcı, 2026-11-15; clock.gd mesai ile
 	// aynı); 6 günde bir herkes tatilde (2026-11-07). Başkasının kartında saat yazılmaz (gizli), durum onun saatiyle.
 	const MESAI_SURE = 6;
-	const oyunSaat = () => (miniakentSimdi() - Date.UTC(2026, 9, 17)) / 1000 % 3600 / 150;
+	// Zaman düzeni (kullanıcı, 2026-11-19; clock.gd DENEY ile aynı): uyku 00–06 ve iş 08–14 2 kat hızlı (7,5 dk), sabah ve
+	// eğlence 45 dk. [saat içindeki gerçek sn, oyun saati]
+	const DENEY = [[0, 0], [450, 6], [900, 8], [1350, 14], [3600, 24]];
+	const oyunSaat = () => {
+		const sn = (miniakentSimdi() - Date.UTC(2026, 9, 17)) / 1000 % 3600;
+		for (let i = 0; i < DENEY.length - 1; i++)
+			if (sn < DENEY[i + 1][0] || i === DENEY.length - 2)
+				return DENEY[i][1] + (sn - DENEY[i][0]) / (DENEY[i + 1][0] - DENEY[i][0]) * (DENEY[i + 1][1] - DENEY[i][1]);
+	};
 	const saatYaz = (h) => String(Math.floor(h)).padStart(2, "0") + ":" + String(Math.round(h % 1 * 60)).padStart(2, "0");
 	// Takvim (kullanıcı, 2026-11-15; uygulamada ana_ekran.gd _takvim): 1 oyun ayı = 1 gerçek gün, Türkiye saatiyle
 	// 12:00'de başlar; 1 oyun yılı = 1 takvim ayı (Ekim 2026 = 1. yıl). Saat oyunun kendi saati (hud.saat'in sonu).
@@ -3147,7 +3155,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611191125.pck","fileSizes":{"index-v202611191125.pck":9780536,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611191144.pck","fileSizes":{"index-v202611191144.pck":9780536,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
