@@ -655,7 +655,7 @@ try {
 			const k = h || karakter;
 			return k && auth.currentUser ? set(ref(db, "bogulma/" + anahtar(k)), serverTimestamp()) : Promise.resolve();
 		};
-		// "Girlband Ol" (kullanıcı, 2026-11-19; test sayfası): kendi karakteri ve en yakın 5 kişi (grup 6) Manifest "Snap" ile dans
+		// "Girlband Ol" (kullanıcı, 2026-11-19; aynı gün canlıya): kendi karakteri ve en yakın 5 kişi (grup 6) Manifest "Snap" ile dans
 		// eder; herkes görür (oyun dans/'a 3 sn'de bir bakar: scripts/dans.gd). Kural: yalnız karakterin sahibi, sunucu zamanı.
 		window.miniakentGirlband = () => karakter && auth.currentUser
 			? set(ref(db, "dans/" + anahtar(karakter)), serverTimestamp()) : Promise.resolve();
@@ -665,6 +665,17 @@ try {
 			window.miniakentKatilimAkis = JSON.stringify(s.val() || {});
 			window.miniakentKatilimSurum = (window.miniakentKatilimSurum || 0) + 1;
 		}, (e) => console.warn("katilim", e));
+		// Jetski sürüşü (kullanıcı, 2026-11-19; test sayfası): sürerken oyun saniyede 4 kez yazar, bitince siler;
+		// jetski_surus/<ad anahtarı> = {x, z, y, h, d, t}; herkes okur, başka ekranlarda aynı sürüş (scripts/surus.gd)
+		if (window.miniakentTest) {
+			window.miniakentSurusYaz = (j) => karakter && auth.currentUser
+				? set(ref(db, "jetski_surus/" + anahtar(karakter)), j ? Object.assign(JSON.parse(j), { t: serverTimestamp() }) : null)
+					.catch((e) => console.warn("surus", e)) : Promise.resolve();
+			onValue(ref(db, "jetski_surus"), (s) => {
+				window.miniakentSurusAkis = JSON.stringify(s.val() || {});
+				window.miniakentSurusSurum = (window.miniakentSurusSurum || 0) + 1;
+			}, (e) => console.warn("surus", e));
+		}
 		const oturum = () => {
 			const u = auth.currentUser;
 			window.miniakentOturum = u ? JSON.stringify({ eposta: u.email, dogrulandi: u.emailVerified, karakter: karakter,
@@ -1927,7 +1938,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	// iş, öğle arası yok; başlangıç kişiye göre 08:00, 09:00 ya da 10:00 (kullanıcı, 2026-11-15; clock.gd mesai ile
 	// aynı); 6 günde bir herkes tatilde (2026-11-07). Başkasının kartında saat yazılmaz (gizli), durum onun saatiyle.
 	const MESAI_SURE = 6;
-	// Zaman deneyi (kullanıcı, 2026-11-19; clock.gd DENEY ile aynı): uyku 00–06 ve iş 08–14 2 kat hızlı (7,5 dk), sabah ve
+	// Zaman düzeni (kullanıcı, 2026-11-19; clock.gd DENEY ile aynı): uyku 00–06 ve iş 08–14 2 kat hızlı (7,5 dk), sabah ve
 	// eğlence 45 dk. [saat içindeki gerçek sn, oyun saati]
 	const DENEY = [[0, 0], [450, 6], [900, 8], [1350, 14], [3600, 24]];
 	const oyunSaat = () => {
@@ -2153,7 +2164,9 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			// teşhis (yalnız test sayfası, geçici): ekonomi izni ve oyundan gelen hesap
 			const ekoTeshis = window.miniakentTest ? `<p class="bilgi">Ekonomi: izin ${window.miniakentEkonomi ? "var" : "yok"} · hesap ${bilgi && bilgi.ekonomi ? "var" : "yok"}</p>` : "";
 			return kart({ handle: karakter, meslek: is.meslek, yer: is.yer, ev: ev.adres }, dy, iste) + ekoKutu(bilgi && bilgi.ekonomi, true) + ekoTeshis
-				+ `<div class="ikili"><button class="evet" data-bogul="1" ${iste ? "disabled" : ""}>Boğulmaya git</button></div>`;
+				+ `<div class="ikili"><button class="evet" data-bogul="1" ${iste ? "disabled" : ""}>Boğulmaya git</button></div>`
+				// "Girlband Ol" (kullanıcı, 2026-11-19): altında, yanlışlıkla basılmasın diye arada boşluk; evde/işte kapalı
+				+ `<div class="ikili" style="margin-top:16px"><button class="evet" data-girlband="1" ${gbKapali(iste) ? "disabled" : ""}>Girlband Ol</button></div>`;
 		}],
 		is: ["İş", () => {
 			const is = isim(), l = acikIlan(IS_ILAN);
@@ -3143,7 +3156,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		const dansOlur = window.miniakentDansOlur === true;   // "Girlband Ol" evde/işte kapalı (scripts/dans.gd)
 		if (dansOlur !== sonDansOlur) {
 			sonDansOlur = dansOlur;
-			if (sayfaAd === "etkinlik" && $("mkb-onay").hidden) ciz();
+			if ((sayfaAd === "etkinlik" || sayfaAd === "kisi") && $("mkb-onay").hidden) ciz();
 		}
 		if (b !== sonBilgi || dk !== sonDk) {
 			sonBilgi = b; sonDk = dk;
@@ -3156,7 +3169,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611191105.pck","fileSizes":{"test/index-test-v202611191105.pck":9778152,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test/index-test-v202611191637.pck","fileSizes":{"test/index-test-v202611191637.pck":9788708,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
