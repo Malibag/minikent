@@ -618,6 +618,8 @@ try {
 		// oyuncu/<uid>/izin {reklam, bildirim: verildiği an (ms)}; hepsi isteğe bağlı, oyuncu istediği an siler
 		let profil = {}, izin = {};
 		const anahtar = (h) => h.replace(/^@/, "").toLowerCase().replace(/\./g, ",");
+		// /test802/ (kullanıcı, 2026-11-18): hesap ortak, oyun verisi (durum, etkinlik katılımı, jetski) ve şehir sohbeti t802/ altında ayrı
+		const V8 = window.miniakent802 ? "t802/" : "";
 		// onaylar (kullanıcı, 2026-11-11; 6563 s. Kanun, Ticari İletişim Yönetmeliği m.7 ve m.13): güncel durum oyuncu/<uid>/izin/<tür>
 		// (verildiği an ya da yok); her açma ve kapatma izin_gecmis/<uid>'e tarih, e-posta ve kaynakla ayrı satır olarak eklenir.
 		// Geçmiş yalnız eklenir, değiştirilemez ve hesap silinse de kalır (ispat için, onay bittikten sonra 3 yıl).
@@ -658,10 +660,21 @@ try {
 			? set(ref(db, "dans/" + anahtar(karakter)), serverTimestamp()) : Promise.resolve();
 		// Etkinliğe katılanlar (kullanıcı, 2026-11-17; test sayfası): katilim/<ad anahtarı> = {y, b, d}; herkes okur, oyun
 		// karakteri her ekranda o etkinliğe götürür (scripts/durum.gd)
-		if (window.miniakentTest) onValue(ref(db, "katilim"), (s) => {
+		if (window.miniakentTest) onValue(ref(db, V8 + "katilim"), (s) => {
 			window.miniakentKatilimAkis = JSON.stringify(s.val() || {});
 			window.miniakentKatilimSurum = (window.miniakentKatilimSurum || 0) + 1;
 		}, (e) => console.warn("katilim", e));
+		// Jetski sürüşü (kullanıcı, 2026-11-19; test sayfası): sürerken oyun saniyede 4 kez yazar, bitince siler;
+		// jetski_surus/<ad anahtarı> = {x, z, y, h, d, t}; herkes okur, başka ekranlarda aynı sürüş (scripts/surus.gd)
+		if (window.miniakentTest) {
+			window.miniakentSurusYaz = (j) => karakter && auth.currentUser
+				? set(ref(db, V8 + "jetski_surus/" + anahtar(karakter)), j ? Object.assign(JSON.parse(j), { t: serverTimestamp() }) : null)
+					.catch((e) => console.warn("surus", e)) : Promise.resolve();
+			onValue(ref(db, V8 + "jetski_surus"), (s) => {
+				window.miniakentSurusAkis = JSON.stringify(s.val() || {});
+				window.miniakentSurusSurum = (window.miniakentSurusSurum || 0) + 1;
+			}, (e) => console.warn("surus", e));
+		}
 		const oturum = () => {
 			const u = auth.currentUser;
 			window.miniakentOturum = u ? JSON.stringify({ eposta: u.email, dogrulandi: u.emailVerified, karakter: karakter,
@@ -686,17 +699,87 @@ try {
 		// oyuncunun girdiği oyun ayı (12:00'de döner) ustalık için kaydedilir; herkesin ustalık günleri oyuna verilir.
 		let ekoBirak = null, sohbetBirak = null;
 		const ayGun = (ms) => new Date(ms - 9 * 3600 * 1000).toISOString().slice(0, 10).replace(/-/g, "");
+		// Test802 (kullanıcı, 2026-11-20; kurallar window.M802): t802/ altında, anahtar = karakter adı ("@"sız, "." yerine ",").
+		// is/<k> {m, b, n}: kazanılan kadro (b: ilanın kapandığı an, ms) · basvuru/g<gün>/i<ilan>/<k> = sunucu zamanı ·
+		// uzm/<k>/a<alan>/<YYYYMMDD> = true (kadroluyken günün ilk girişi) · kurs/<k> {y, b, u, g: {YYYYMMDD: true}} ·
+		// yet/<k>/<kurs> = true (tamamlanan) · gider/<k>/<id> {n, ne, t} (kurs ücreti; iptal iadesi eksi).
+		// Oyuna window.miniakent802Veri (ekonomi.gd: kadro, alan günleri, gider), ekrana window.m802 verilir.
+		const t802Ac = () => {
+			const M8 = window.M802, K = anahtar(karakter), P = "t802/";
+			const v = { is: {}, uzm: {}, basvuru: {}, gider: {}, kurs: null, yet: {} }, gelen = new Set();
+			const yay = () => {
+				const oyun = { is: {}, uzm: {}, gider: M8.giderler(v.basvuru, v.gider, M8.gunNo(miniakentSimdi())) };
+				for (const [k, r] of Object.entries(v.is)) {
+					const m = r && M8.M[r.m];
+					if (m) oyun.is[k] = { b: r.b / 1000, u: M8.UCRET[m[0]], a: m[1] };
+				}
+				for (const [k, r] of Object.entries(v.uzm)) {
+					oyun.uzm[k] = {};
+					for (const a in r || {}) oyun.uzm[k][a] = Object.keys(r[a] || {});
+				}
+				window.miniakent802Veri = JSON.stringify(oyun);
+				window.m802 = Object.assign({ K: K, gider: oyun.gider, hazir: gelen.size >= 6 }, v);
+				window.m802Surum = (window.m802Surum || 0) + 1;
+			};
+			let isleniyor = false;
+			const isle = async () => {
+				if (gelen.size < 6 || isleniyor) return;
+				isleniyor = true;
+				try {
+					const now = miniakentSimdi(), n = M8.gunNo(now), bugun = M8.gunAnah(now);
+					// 1) biten günün kurası: kazanılan başlangıç ilanı → kadro (ilanın kapandığı andan)
+					if (!v.is[K]) for (const [gn, gunB] of Object.entries(v.basvuru)) {
+						const g = +gn.slice(1);
+						if (!(g >= M8.ILK) || g >= n) continue;
+						const s = M8.kura(g, gunB), b = s.kisi[K];
+						if (b && s.ilan[b.i].kazanan.has(K)) {
+							await set(ref(db, P + "is/" + K), { m: M8.ilanlar(g)[b.i], b: M8.AY0 + (g + 1) * M8.GUN, n: g });
+							break;
+						}
+					}
+					// 2) kariyer alanı uzmanlığı: kadroluyken gerçek günün ilk girişi
+					const ki = v.is[K], km = ki && M8.M[ki.m];
+					if (km && ki.b <= now && !((v.uzm[K] || {})["a" + km[1]] || {})[bugun])
+						await set(ref(db, P + "uzm/" + K + "/a" + km[1] + "/" + bugun), true);
+					// 3) kurs: günün ilk girişi 1 kurs günü; süre dolunca yeterlilik kalıcı, kurs biter
+					const ks = v.kurs, kr = ks && M8.KURS.find((x) => x[0] === ks.y);
+					if (kr) {
+						const g = Object.assign({}, ks.g || {}, { [bugun]: true });
+						if (Object.keys(g).length >= M8.TUR[kr[2]][2]) await update(ref(db), { [P + "yet/" + K + "/" + ks.y]: true, [P + "kurs/" + K]: null });
+						else if (!(ks.g || {})[bugun]) await set(ref(db, P + "kurs/" + K + "/g/" + bugun), true);
+					}
+				} catch (e) { console.warn("802", e); }
+				isleniyor = false;
+			};
+			for (const [yol, ad] of [["is", "is"], ["uzm", "uzm"], ["basvuru", "basvuru"], ["gider", "gider"], ["kurs/" + K, "kurs"], ["yet/" + K, "yet"]])
+				onValue(ref(db, P + yol), (s) => { v[ad] = s.val() || (ad === "kurs" ? null : {}); gelen.add(ad); yay(); isle(); }, (e) => console.warn("802 " + ad, e));
+			setInterval(() => { yay(); isle(); }, 30000);   // gün dönümü (12:00): kura, uzmanlık ve kurs günü
+			window.m802Basvur = (i) => set(ref(db, P + "basvuru/g" + M8.gunNo(miniakentSimdi()) + "/i" + i + "/" + K), serverTimestamp());
+			window.m802KursBasla = (id) => {
+				const kr = M8.KURS.find((x) => x[0] === id);
+				if (!kr || v.kurs) return Promise.resolve();
+				const u = M8.TUR[kr[2]][1], gid = push(ref(db, P + "gider/" + K)).key;
+				return update(ref(db), { [P + "kurs/" + K]: { y: id, b: serverTimestamp(), u: u, g: { [M8.gunAnah(miniakentSimdi())]: true } },
+					[P + "gider/" + K + "/" + gid]: { n: u, ne: "kurs", t: serverTimestamp() } });
+			};
+			window.m802KursIptal = () => {   // birikmiş günler silinir, ödenenin yarısı geri verilir
+				if (!v.kurs) return Promise.resolve();
+				const gid = push(ref(db, P + "gider/" + K)).key;
+				return update(ref(db), { [P + "kurs/" + K]: null,
+					[P + "gider/" + K + "/" + gid]: { n: -Math.round((v.kurs.u || 0) / 2), ne: "kurs iptal", t: serverTimestamp() } });
+			};
+		};
 		const ekonomiAc = async (uid) => {
 			let izinli = false;
 			try { izinli = (await get(ref(db, "ekonomi_izin/" + uid))).val() === true; } catch (e) {}
 			window.miniakentEkonomi = izinli;
 			if (!izinli || !karakter) return;
-			set(ref(db, "ustalik/" + anahtar(karakter) + "/" + ayGun(miniakentSimdi())), true).catch((e) => console.warn("ustalik", e));
+			if (!V8) set(ref(db, "ustalik/" + anahtar(karakter) + "/" + ayGun(miniakentSimdi())), true).catch((e) => console.warn("ustalik", e));
 			// Durum çubukları (kullanıcı, 2026-11-17; scripts/durum.gd): kayıt durum/<uid>; oyun okur ve yazar
-			window.miniakentDurumYaz = (j) => set(ref(db, "durum/" + uid), JSON.parse(j)).catch((e) => console.warn("durum", e));
-			window.miniakentKatilimYaz = (y, d) => karakter ? set(ref(db, "katilim/" + anahtar(karakter)),
+			window.miniakentDurumYaz = (j) => set(ref(db, V8 + "durum/" + uid), JSON.parse(j)).catch((e) => console.warn("durum", e));
+			window.miniakentKatilimYaz = (y, d) => karakter ? set(ref(db, V8 + "katilim/" + anahtar(karakter)),
 				y ? { y: y, b: serverTimestamp(), d: d ? 1 : 0 } : null).catch((e) => console.warn("katilim", e)) : Promise.resolve();
-			try { window.miniakentDurumKayit = JSON.stringify((await get(ref(db, "durum/" + uid))).val() || {}); }
+			try { window.miniakentDurumKayit = JSON.stringify((await get(ref(db, V8 + "durum/" + uid))).val() || {}); }
 			catch (e) { console.warn("durum", e); }
 			// Şehir sohbeti (kullanıcı, 2026-11-18; test sayfası, izinli hesap). sehir_sohbet/<id> = {k, h, m (≤120), t}; aynı anahtarla
 			// sohbet_zaman/<id> = t (içeriksiz; 1 yılı dolanları bulmak için). Kullanıcı yalnız son 1 günü görür.
@@ -707,10 +790,10 @@ try {
 			// y (isteğe bağlı, 2026-11-18): yanıtlanan mesaj {h: sahibi, m: ilk 60 harfi}
 			window.miniakentSohbetYaz = (m, y) => {
 				if (!karakter) return Promise.resolve();
-				const id = push(ref(db, "sehir_sohbet")).key, v = { k: anahtar(karakter), h: karakter, m: m, t: serverTimestamp() };
+				const id = push(ref(db, V8 + "sehir_sohbet")).key, v = { k: anahtar(karakter), h: karakter, m: m, t: serverTimestamp() };
 				if (y && y.h) v.y = { h: String(y.h).slice(0, 40), m: String(y.m || "").slice(0, 60) };
-				return update(ref(db), { ["sehir_sohbet/" + id]: v,
-					["sohbet_zaman/" + id]: serverTimestamp() }).catch((e) => console.warn("sohbet", e));
+				return update(ref(db), { [V8 + "sehir_sohbet/" + id]: v,
+					[V8 + "sohbet_zaman/" + id]: serverTimestamp() }).catch((e) => console.warn("sohbet", e));
 			};
 			window.miniakentSikayet = (x, neden, aciklama) => {
 				const id = push(ref(db, "sikayet")).key, v = { mesaj_id: x.id, h: x.h, m: x.m, mt: x.t || 0, kim: uid, neden: neden, t: serverTimestamp() };
@@ -722,7 +805,7 @@ try {
 				window.miniakentSohbet = Object.values(sohbetler).sort((x, y) => x.t - y.t);
 				window.miniakentSohbetSurum = (window.miniakentSohbetSurum || 0) + 1;
 			};
-			const sohbetOku = (id, kez) => get(ref(db, "sehir_sohbet/" + id)).then((sn) => {
+			const sohbetOku = (id, kez) => get(ref(db, V8 + "sehir_sohbet/" + id)).then((sn) => {
 				const v = sn.val();
 				if (v && v.m) { sohbetler[id] = { id: id, h: v.h || "", m: v.m, t: v.t || 0, y: v.y && v.y.h ? { h: v.y.h, m: v.y.m || "" } : null }; sohbetYay(); }
 				else if (kez < 3) setTimeout(() => sohbetOku(id, kez + 1), 1500);   // yeni yazılan mesaj sunucuya henüz ulaşmamış olabilir
@@ -731,20 +814,21 @@ try {
 			const sohbetDinle = () => {
 				if (sohbetBirak) sohbetBirak();
 				if (sohbetBirak2) sohbetBirak2();
-				const q = query(ref(db, "sohbet_zaman"), orderByValue(), startAt(miniakentSimdi() - GUN + 60000), limitToLast(200));
+				const q = query(ref(db, V8 + "sohbet_zaman"), orderByValue(), startAt(miniakentSimdi() - GUN + 60000), limitToLast(200));
 				sohbetBirak = onChildAdded(q, (c) => { if (!sohbetler[c.key]) sohbetOku(c.key, 0); },
 					(e) => { console.warn("sohbet", e); setTimeout(sohbetDinle, 5000); });
 				sohbetBirak2 = onChildRemoved(q, (c) => { if (sohbetler[c.key]) { delete sohbetler[c.key]; sohbetYay(); } });
 			};
 			sohbetDinle();
-			for (const [yer, zaman] of [["sehir_sohbet", "sohbet_zaman"], ["sikayet", "sikayet_zaman"]])   // 1 yılı dolanlar silinir
+			for (const [yer, zaman] of [[V8 + "sehir_sohbet", V8 + "sohbet_zaman"], ["sikayet", "sikayet_zaman"]])   // 1 yılı dolanlar silinir
 				get(query(ref(db, zaman), orderByValue(), endAt(miniakentSimdi() - YIL - 60000), limitToFirst(100))).then((sn) => {
 					const sil = {};
 					sn.forEach((c) => { sil[yer + "/" + c.key] = null; sil[zaman + "/" + c.key] = null; });
 					if (Object.keys(sil).length) return update(ref(db), sil);
 				}).catch(() => {});
 			if (ekoBirak) ekoBirak();
-			ekoBirak = onValue(ref(db, "ustalik"), (s) => { window.miniakentUstalik = s.val() || {}; });
+			ekoBirak = V8 ? null : onValue(ref(db, "ustalik"), (s) => { window.miniakentUstalik = s.val() || {}; });
+			if (V8 && window.M802) t802Ac();
 		};
 		// telefonda Instagram'a geçince sayfanın bağlantısı kopabilir: sayfaya dönülünce bağlantı yeniden kurulur ve
 		// oyuncu kaydı baştan dinlenir, doğrulama yenilemeden görünür (kullanıcı, 2026-11-09)
@@ -1374,6 +1458,113 @@ try {
 }
 		</script>
 		<script>
+// Test802 (kullanıcı, 2026-11-18…20; malibag.github.io/minikent/test802/, window.miniakent802): kesin kararların kuralları.
+// Meslek tablosu: 298 meslek (00_OKU_BENI/kariyer_alani_eslestirme_onerisi.md A bölümü + kariyer_uzmanlik_basamaklari_onerisi.md).
+// - Bütün kadrolar boş başlar; herkes temel ücretle "Geçici" (26. karar). Başlangıç ilanını kazanan "Kadrolu".
+// - Başlangıç ilanları: her gerçek gün (12:00 TR'de döner, ekonomi.gd ay dönümüyle aynı) 12 ilan = maaş grubu 1/2/3'ün
+//   başlangıç havuzundan 4'er meslek; havuz bitmeden aynı meslek yeniden çıkmaz, her turda sıra değişir. İlan başına
+//   20 kadro, başvuru 250 papel; uygun başvuran ≤ 20 ise hepsi, fazlaysa eşit kura; kazanamayana bedel geri verilir.
+//   Gün bitince her cihaz aynı kurayı hesaplar (başvuranlar adlarına göre sıralanır, karıştırma o gün ve ilana bağlı).
+//   Bir oyuncunun bir günde yalnız ilk başvurusu geçerli; başvuru yalnız geçicilere açık (ilk gerçek işe geçiş).
+// - Kariyer alanı uzmanlığı: kadroluyken gerçek günün ilk girişi mesleğin alanına +%0,1, tavan %15; Başlangıç %0–0,9 ·
+//   Deneyimli %1 · Usta %3 · Efsane %9 (10 / 30 / 90 aktif gün). Maaşa yalnız çalışılan alanın uzmanlığı (ekonomi.gd).
+// - Kurs (25. karar): aynı anda tek kurs, ücret başlarken peşin, günün ilk girişi 1 kurs günü, iptalde %50 iade, sınav yok.
+//   Test kullanıcıları Premium sayılır (kullanıcı, 2026-11-20); üyelik ekranı yok. Listede yalnız türü kesin olan yeterlilikler.
+if (window.miniakent802) window.M802 = (function () {
+	const ALAN = ["Temizlik ve tesis hizmetleri", "Yiyecek ve içecek", "Konaklama ve turizm", "Perakende ve satış", "Ulaşım, lojistik ve depo", "Üretim ve fabrika", "İnşaat ve yapı", "Tarım, balıkçılık ve hayvanlar", "Güvenlik ve kamu düzeni", "Sağlık", "Hukuk ve adalet", "Finans, bankacılık ve sigorta", "Büro, yönetim ve insan kaynakları", "Eğitim", "Spor ve fitness", "Sanat, müzik ve sahne", "Medya, yayıncılık ve dil", "Tasarım, reklam ve pazarlama", "Bilişim ve yazılım", "Mühendislik, enerji ve Ar-Ge", "Güzellik, bakım ve moda"];
+	// ad: [maaş grubu, kariyer alanı no, başlangıç ilanı (0 değil · 1 uygun · 2 ehliyet şartıyla), minimum uzmanlık (0–3; −1 açık), ek yeterlilik]
+	const M = {"Temizlik Görevlisi":[1,0,1,0,"Yok"],"Temizlikçi":[1,0,1,0,"Yok"],"Hizmetli":[1,0,1,0,"Yok"],"Sokak Temizlik Görevlisi":[1,0,0,0,"Özel kadro"],"Çöp Toplama Görevlisi":[1,0,0,0,"Özel kadro"],"Bulaşıkçı":[1,1,1,0,"Yok"],"Komi":[1,1,1,0,"Yok"],"Çaycı":[1,1,1,0,"Yok"],"Kantinci":[1,1,0,0,"Özel kadro"],"Vagon Temizlik Görevlisi":[1,0,1,0,"Yok"],"Çamaşırhane Görevlisi":[1,0,1,0,"Yok"],"Şezlong Görevlisi":[1,2,1,0,"Yok"],"Otopark Görevlisi":[1,4,1,0,"Yok"],"Paketleme Görevlisi":[1,5,1,0,"Yok"],"İnşaat Çırağı":[1,6,1,0,"Yok"],"Stajyer Avukat":[1,10,0,0,"Eğitim"],"Stajyer Hemşire":[1,9,0,0,"Birden fazla şart"],"Grafiti Ustası Yardımcısı":[1,15,1,0,"Yok"],"Sokak Müzisyeni":[1,15,0,0,"Yok"],"Sokak Şarkıcısı":[1,15,0,0,"Yok"],"Sokak Dansçısı":[1,15,0,0,"Yok"],"Profesyonel Boğulan":[1,14,0,0,"Yok"],"Bellboy":[2,2,1,0,"Yok"],"Valeci":[2,2,2,0,"Ehliyet"],"Bagaj Görevlisi":[2,4,1,0,"Yok"],"Peron Görevlisi":[2,4,1,0,"Yok"],"Kat Görevlisi":[2,2,1,0,"Yok"],"Reyon Görevlisi":[2,3,1,0,"Yok"],"Kasiyer":[2,3,1,0,"Yok"],"Garson":[2,1,1,0,"Yok"],"Barista":[2,1,1,0,"Yok"],"Büfeci":[2,1,1,0,"Yok"],"Kokoreççi":[2,1,0,0,"Yok"],"Balık satıcısı":[2,3,1,0,"Yok"],"Çiçekçi":[2,3,0,0,"Yok"],"Danışma Görevlisi":[2,12,1,0,"Yok"],"Havuz Görevlisi":[2,2,1,0,"Yok"],"Spa Görevlisi":[2,20,1,0,"Yok"],"Sıpa Görevlisi":[2,7,0,0,"Yok"],"Kurye":[2,4,2,0,"Ehliyet"],"Postacı":[2,4,1,0,"Yok"],"Bekçi":[2,8,1,0,"Yok"],"Park Bekçisi":[2,8,1,0,"Yok"],"Gece Koruyucusu":[2,8,1,0,"Yok"],"Makas Görevlisi":[2,4,1,0,"Yok"],"İnşaat İşçisi":[2,6,1,0,"Yok"],"Spor Salonu Resepsiyonisti":[2,14,1,0,"Yok"],"Animatör":[2,15,1,0,"Yok"],"Manav":[2,3,1,0,"Yok"],"Üretim İşçisi":[3,5,1,0,"Yok"],"Depo Görevlisi":[3,4,1,0,"Yok"],"Soğuk Depo Görevlisi":[3,4,1,0,"Yok"],"Liman İşçisi":[3,4,1,0,"Yok"],"Ton Balığı İşçisi":[3,5,1,0,"Yok"],"Palamar Görevlisi":[3,4,1,0,"Yok"],"Liman Görevlisi":[3,4,0,0,"Yok"],"Güvenlik Görevlisi":[3,8,0,0,"Sertifika"],"Banka Gişe Görevlisi":[3,11,1,0,"Yok"],"Bilet Gişe Görevlisi":[3,4,1,0,"Yok"],"Çağrı Merkezi Görevlisi":[3,12,1,0,"Yok"],"Bahçıvan":[3,7,1,0,"Yok"],"Çiftçi":[3,7,0,0,"Yok"],"Balıkçı":[3,7,0,0,"Yok"],"Ormancı":[3,7,0,0,"Eğitim"],"Kasap":[3,1,0,0,"Mesleki eğitim"],"Pastacı":[3,1,0,0,"Mesleki eğitim"],"Barmen":[3,1,1,0,"Yok"],"Resepsiyonist":[3,2,1,0,"Yok"],"Rezervasyon Görevlisi":[3,2,1,0,"Yok"],"Betoncu":[3,6,1,0,"Yok"],"Kalıpçı":[3,6,1,0,"Yok"],"Puantör":[3,6,1,0,"Yok"],"İnşaat Ustası":[4,6,0,1,"Yok"],"Duvar Ustası":[4,6,0,1,"Yok"],"Tesisat Ustası":[4,6,0,1,"Yok"],"Mekanik Tesisat Ustası":[4,6,0,1,"Mesleki sertifika"],"Elektrik Ustası":[4,6,0,1,"Mesleki sertifika"],"Hat Bakım Ustası":[4,4,0,1,"Yok"],"Demirci":[4,6,0,1,"Yok"],"Kaynakçı":[4,5,0,1,"Mesleki sertifika"],"Terzi":[4,20,0,1,"Yok"],"Terzi ve Eğitmen":[4,20,0,2,"Yok"],"Kuaför":[4,20,0,0,"Mesleki eğitim"],"Makyöz":[4,20,0,0,"Mesleki eğitim"],"Masör":[4,20,0,0,"Mesleki eğitim"],"Bisiklet Tamircisi":[4,4,0,1,"Yok"],"Kamyon Şoförü":[4,4,0,0,"Ehliyet"],"Tır Şoförü":[4,4,0,0,"Birden fazla şart"],"Balık Kamyonu Şoförü":[4,4,0,0,"Ehliyet"],"Ambulans Şoförü":[4,4,0,0,"Ehliyet + ilk yardım/ambulans kullanma sertifikası"],"Kondüktör":[4,4,0,1,"Yok"],"Aşçı":[4,1,0,1,"Yok"],"Teknik Servis Görevlisi":[4,0,0,1,"Yok"],"Grafiti Ustası":[4,15,0,1,"Yok"],"Protez Tırnak Uzmanı":[4,20,0,1,"Yok"],"Güzellik Uzmanı":[4,20,0,0,"Mesleki eğitim"],"İstasyon Görevlisi":[4,4,0,1,"Yok"],"Hareket Memuru":[4,4,0,1,"Yok"],"Forklift Operatörü":[5,4,0,1,"Sertifika"],"Makine Operatörü":[5,5,0,1,"Mesleki sertifika"],"Vinç Operatörü":[5,6,0,1,"Sertifika"],"Rıhtım Vinci Operatörü":[5,4,0,1,"Sertifika"],"Ekskavatör Operatörü":[5,6,0,1,"Sertifika"],"Makinist":[5,4,0,2,"Birden fazla şart"],"Asansör Teknisyeni":[5,0,0,0,"Teknik eğitim"],"Bakım Teknisyeni":[5,5,0,0,"Teknik eğitim"],"Ses Teknisyeni":[5,16,0,0,"Yok"],"Laboratuvar Teknisyeni":[5,19,0,0,"Eğitim"],"Gıda Teknisyeni":[5,5,0,0,"Teknik eğitim"],"Kalite Kontrol Teknisyeni":[5,5,0,0,"Teknik eğitim"],"Diş Teknisyeni":[5,9,0,0,"Eğitim"],"Laborant":[5,9,0,0,"Birden fazla şart"],"Cankurtaran":[5,8,0,0,"Sertifika"],"Su Sporları Eğitmeni":[5,14,0,0,"Eğitmenlik veya antrenörlük sertifikası"],"Sörf Eğitmeni":[5,14,0,0,"Eğitmenlik veya antrenörlük sertifikası"],"Sörfçü":[5,14,0,1,"Yok"],"Tur Rehberi":[5,2,0,0,"Sertifika"],"Turizm Rehberi":[5,2,0,0,"Sertifika"],"Stüdyo Asistanı":[5,16,0,0,"Yok"],"Arşiv Görevlisi":[5,12,0,0,"Yok"],"Sekreter":[6,12,0,1,"Yok"],"Büro Memuru":[6,12,0,1,"Özel kadro"],"Postane Memuru":[6,4,0,1,"Yok"],"Veznedar":[6,11,0,1,"Yok"],"Tıbbi Sekreter":[6,12,0,0,"Mesleki eğitim"],"Zabıt Kâtibi":[6,10,0,0,"Birden fazla şart"],"Mübaşir":[6,10,0,0,"Birden fazla şart"],"İcra Memuru":[6,10,0,0,"Birden fazla şart"],"Yönetici Asistanı":[6,12,0,1,"Yok"],"Klinik Asistanı":[6,9,0,0,"Mesleki eğitim"],"Müşteri Temsilcisi":[6,3,0,1,"Yok"],"Müşteri Hizmetleri Uzmanı":[6,3,0,1,"Yok"],"Rezervasyon Uzmanı":[6,2,0,1,"Yok"],"Seyahat Danışmanı":[6,2,0,1,"Yok"],"Satış Uzmanı":[6,3,0,1,"Yok"],"Konsiyerj":[6,2,0,2,"Yok"],"Reklam ve Pazarlama Personeli":[6,17,0,0,"Yok"],"Banka Memuru":[6,11,0,1,"Yok"],"Gümrük Memuru":[6,4,0,1,"Kamu personeli yeterliliği"],"Stilist":[6,20,0,2,"Yok"],"Polis":[7,8,0,0,"Birden fazla şart"],"Trafik Polisi":[7,8,0,0,"Birden fazla şart"],"Zabıta":[7,8,0,0,"Özel kadro"],"Paramedik":[7,9,0,0,"Birden fazla şart"],"Acil Tıp Teknisyeni":[7,9,0,0,"Birden fazla şart"],"Anestezi Teknikeri":[7,9,0,0,"Birden fazla şart"],"Hemşire Yardımcısı":[7,9,0,0,"Mesleki eğitim"],"Vardiya Amiri":[7,5,0,2,"Yok"],"Yoga Eğitmeni":[8,14,0,0,"Eğitmenlik veya antrenörlük sertifikası"],"Pilates Eğitmeni":[8,14,0,0,"Eğitmenlik veya antrenörlük sertifikası"],"Fitness Eğitmeni":[8,14,0,0,"Eğitmenlik veya antrenörlük sertifikası"],"Spor Hocası":[8,14,0,0,"Eğitmenlik veya antrenörlük sertifikası"],"Dans Eğitmeni":[8,15,0,2,"Yok"],"Bale Eğitmeni":[8,15,0,2,"Yok"],"Bilişim Eğitmeni":[8,13,0,0,"Yok"],"Taekwondocu":[8,14,0,2,"Yok"],"Voleybol Oyuncusu":[8,14,0,2,"Yok"],"At Antrenörü":[8,7,0,1,"Yok"],"Kameraman":[8,16,0,1,"Yok"],"Fotoğrafçı":[8,16,0,1,"Yok"],"Ürün Fotoğrafçısı":[8,17,0,1,"Yok"],"Rötuş Uzmanı":[8,17,0,1,"Yok"],"Ressam":[8,15,0,1,"Yok"],"Resim Sanatçısı":[8,15,0,1,"Yok"],"Seramik Sanatçısı":[8,15,0,1,"Yok"],"Heykeltıraş":[8,15,0,1,"Yok"],"DJ":[8,15,0,1,"Yok"],"Müzisyen":[8,15,0,1,"Yok"],"Gitarist":[8,15,0,1,"Yok"],"Solist":[8,15,0,1,"Yok"],"Şarkıcı":[8,15,0,1,"Yok"],"Rock Müzik Sanatçısı":[8,15,0,1,"Yok"],"Doğaçlama Tiyatrocu":[8,15,0,1,"Yok"],"Oryantal Dans Hocası":[8,15,0,2,"Yok"],"Muhasebeci":[9,11,0,0,"Mesleki eğitim"],"Satın Alma Sorumlusu":[9,12,0,2,"Yok"],"Emlak Danışmanı":[9,3,0,0,"Mesleki sertifika"],"Sigorta Uzmanı":[9,11,0,0,"Mesleki eğitim"],"Hasar Uzmanı":[9,11,0,1,"Mesleki sertifika"],"Kredi Uzmanı":[9,11,0,1,"Yok"],"İK Uzmanı":[9,12,0,2,"Yok"],"İnsan Kaynakları Uzmanı":[9,12,0,2,"Yok"],"İşe Alım Uzmanı":[9,12,0,2,"Yok"],"İdari İşler Uzmanı":[9,12,0,2,"Yok"],"Lojistik Uzmanı":[9,4,0,2,"Yok"],"Lojistik Operasyon Uzmanı":[9,4,0,2,"Yok"],"Lojistik Planlama Uzmanı":[9,4,0,2,"Yok"],"Konteyner Planlama Uzmanı":[9,4,0,2,"Yok"],"Teknik Destek Uzmanı":[9,18,0,0,"Yok"],"Bilgi İşlem Uzmanı":[9,18,0,0,"Yok"],"IT Uzmanı":[9,18,0,0,"Yok"],"Sosyal Medya Uzmanı":[9,17,0,1,"Yok"],"E-Ticaret Uzmanı":[9,3,0,2,"Yok"],"Organizasyon Uzmanı":[9,17,0,1,"Yok"],"Etkinlik Koordinatörü":[9,17,0,2,"Yok"],"Mühendislik Proje Uzmanı":[9,19,0,1,"Yok"],"Kalite Kontrol Uzmanı":[9,5,0,2,"Yok"],"Değerleme Uzmanı":[9,11,0,1,"Mesleki sertifika"],"Halkla İlişkiler Uzmanı":[9,17,0,1,"Yok"],"Pazarlama Uzmanı":[9,17,0,1,"Yok"],"Reklamcı":[9,17,0,1,"Yok"],"İçerik Yazarı":[9,16,0,1,"Yok"],"Metin Yazarı":[9,17,0,1,"Yok"],"Redaktör":[9,16,0,1,"Yok"],"Çevirmen":[9,16,0,1,"Yok"],"Tercüman":[9,16,0,0,"Mesleki sertifika"],"Reklam Pazarlama Sorumlusu":[9,17,0,2,"Yok"],"Öğretmen":[10,13,0,0,"Eğitim"],"Rehber Öğretmen":[10,13,0,0,"Eğitim"],"İngilizce Öğretmeni":[10,13,0,0,"Eğitim"],"Almanca Öğretmeni":[10,13,0,0,"Eğitim"],"Edebiyat Öğretmeni":[10,13,0,0,"Eğitim"],"Matematik Öğretmeni":[10,13,0,0,"Eğitim"],"Resim Öğretmeni":[10,13,0,0,"Eğitim"],"Müzik Öğretmeni":[10,13,0,0,"Eğitim"],"Beden Eğitimi Öğretmeni":[10,13,0,0,"Eğitim"],"Okul Öncesi Öğretmeni":[10,13,0,0,"Eğitim"],"Anasınıfı Öğretmeni":[10,13,0,0,"Eğitim"],"Gitar Öğretmeni":[10,13,0,0,"Mesleki eğitim"],"Piyano Öğretmeni":[10,13,0,0,"Mesleki eğitim"],"Şan Öğretmeni":[10,13,0,0,"Mesleki eğitim"],"Yazılım Eğitmeni":[10,13,0,1,"Yok"],"Eğitim Danışmanı":[10,13,0,2,"Yok"],"Hemşire":[10,9,0,0,"Eğitim"],"Ebe":[10,9,0,0,"Birden fazla şart"],"Fizyoterapist":[10,9,0,0,"Eğitim"],"Diyetisyen":[10,9,0,0,"Eğitim"],"Çocuk Gelişimi Uzmanı":[10,9,0,0,"Üniversite veya ileri eğitim: çocuk gelişimi eğitimi"],"Koreograf":[10,15,0,3,"Yok"],"Spiker":[10,16,0,2,"Yok"],"Radyo Programcısı":[10,16,0,1,"Yok"],"Muhabir":[10,16,0,1,"Yok"],"Gazeteci":[10,16,0,2,"Yok"],"Editör":[10,16,0,2,"Yok"],"Kurgucu":[10,16,0,1,"Yok"],"Haber Spikeri":[10,16,0,2,"Yok"],"Haber Sunucusu":[10,16,0,2,"Yok"],"Grafik Tasarımcı":[11,17,0,2,"Yok"],"Web Tasarımcı":[11,18,0,1,"Yok"],"3B Sanatçı":[11,17,0,2,"Yok"],"Oyun Tasarımcısı":[11,18,0,1,"Yok"],"Moda Tasarımcısı":[11,20,0,3,"Yok"],"Modacı":[11,20,0,3,"Yok"],"İç Mimar":[11,6,0,0,"Eğitim"],"İş Analisti":[11,12,0,2,"Yok"],"Veri Analisti":[11,18,0,1,"Yok"],"Finans Uzmanı":[11,11,0,2,"Yok"],"Ağ Uzmanı":[11,18,0,1,"Yok"],"Yazılım Test Uzmanı":[11,18,0,1,"Yok"],"Araştırmacı":[11,19,0,2,"Yok"],"Biyolog":[11,19,0,0,"Üniversite veya ileri eğitim: biyoloji eğitimi"],"İş Güvenliği Uzmanı":[11,6,0,2,"Sertifika"],"Başmuhabir":[11,16,0,3,"Yok"],"Liman Koordinatörü":[11,4,0,3,"Yok"],"Banka Koordinatörü":[11,11,0,3,"Yok"],"Kafe Sahibi":[11,1,0,-1,"Yok"],"Yazılımcı":[12,18,0,2,"Yok"],"Oyun Geliştirici":[12,18,0,2,"Yok"],"Mobil Uygulama Geliştirici":[12,18,0,2,"Yok"],"Bilişim Uzmanı":[12,18,0,2,"Yok"],"Endüstri Mühendisi":[12,19,0,0,"Eğitim"],"Üretim Mühendisi":[12,19,0,0,"Eğitim"],"Makine Mühendisi":[12,19,0,0,"Eğitim"],"İnşaat Mühendisi":[12,19,0,0,"Eğitim"],"Elektrik Mühendisi":[12,19,0,0,"Eğitim"],"Elektrik-Elektronik Mühendisi":[12,19,0,0,"Eğitim"],"Harita Mühendisi":[12,19,0,0,"Eğitim"],"Mimar":[12,6,0,0,"Eğitim"],"Kılavuz Kaptan":[12,4,0,3,"Birden fazla şart"],"Komiser Yardımcısı":[12,8,0,2,"Birden fazla şart"],"Veri Bilimci":[13,18,0,3,"Yok"],"Siber Güvenlik Uzmanı":[13,18,0,3,"Yok"],"Finans Analisti":[13,11,0,2,"Yok"],"Yatırım Danışmanı":[13,11,0,2,"Sertifika"],"Borsa Brokeri":[13,11,0,2,"Sertifika"],"Mali Müşavir":[13,11,0,2,"Birden fazla şart"],"Kurumsal Proje Yöneticisi":[13,12,0,3,"Yok"],"Yönetim Danışmanı":[13,12,0,3,"Yok"],"Hukuk Danışmanı":[13,10,0,2,"Eğitim"],"Psikolog":[13,9,0,0,"Eğitim"],"Adli Psikolog":[13,9,0,1,"Üniversite veya ileri eğitim: psikoloji eğitimi + adli psikoloji uzmanlığı"],"Veteriner":[13,7,0,0,"Eğitim"],"Koordinatör Veteriner":[13,7,0,3,"Eğitim"],"Eczacı":[13,9,0,0,"Birden fazla şart"],"Ekonomist":[13,11,0,0,"Eğitim"],"Avukat":[14,10,0,1,"Birden fazla şart"],"Diş Hekimi":[14,9,0,0,"Eğitim"],"Doktor":[15,9,0,0,"Eğitim"],"Çocuk Doktoru":[15,9,0,2,"Birden fazla şart"],"Göz Doktoru":[15,9,0,2,"Birden fazla şart"],"Acil Doktoru":[15,9,0,2,"Birden fazla şart"],"Kadın Doğum Doktoru":[15,9,0,2,"Birden fazla şart"],"Psikiyatrist":[15,9,0,2,"Birden fazla şart"],"Hâkim":[16,10,0,3,"Birden fazla şart"],"Savcı":[16,10,0,3,"Birden fazla şart"],"Cerrah":[17,9,0,2,"Birden fazla şart"],"Beyin Cerrahı":[18,9,0,3,"Birden fazla şart"],"Kalp Cerrahı":[18,9,0,3,"Birden fazla şart"]};
+	const UCRET = [72, 96, 108, 120, 138, 150, 162, 180, 192, 210, 228, 252, 288, 324, 360, 408, 456, 504, 552];   // [0] temel; saatlik
+	const AY0 = 1792659600000, GUN = 86400000;   // 22 Ekim 2026 12:00 TR
+	const ILK = 29;   // ilk ilan günü: 20 Kasım 2026 12:00 TR
+	const KADRO = 20, BEDEL = 250;
+	const SEVIYE = [["Başlangıç", 0], ["Deneyimli", 10], ["Usta", 30], ["Efsane", 90]];   // aktif gün
+	const TUR = { eh: ["Ehliyet ve sürüş eğitimi", 17280, 5], ms: ["Mesleki sertifika", 25920, 7], ea: ["Eğitmenlik/antrenörlük sertifikası", 34560, 10],
+		me: ["Mesleki eğitim", 43200, 14], te: ["Teknik eğitim", 60480, 21], un: ["Üniversite eğitimi", 103680, 30], ie: ["İleri eğitim veya uzmanlık", 129600, 30] };
+	// [kimlik, ad, tür, önce tamamlanması gereken]
+	const KURS = [["eh", "Ehliyet", "eh", ""]];
+	const YTUR = { "Mesleki eğitim": "me", "Mesleki sertifika": "ms", "Eğitmenlik veya antrenörlük sertifikası": "ea", "Teknik eğitim": "te" };
+	for (const m of Object.keys(M).sort()) if (YTUR[M[m][4]]) KURS.push([YTUR[M[m][4]] + ":" + m, m, YTUR[M[m][4]], ""]);
+	KURS.push(["ms:Ambulans Şoförü", "Ambulans Şoförü · ilk yardım ve ambulans kullanma", "ms", "eh"],
+		["un:cocuk", "Çocuk Gelişimi Uzmanı · çocuk gelişimi eğitimi", "un", ""], ["un:biyoloji", "Biyolog · biyoloji eğitimi", "un", ""],
+		["un:psikoloji", "Adli Psikolog · psikoloji eğitimi", "un", ""], ["ie:adli", "Adli Psikolog · adli psikoloji uzmanlığı", "ie", "un:psikoloji"]);
+	const gunNo = (ms) => Math.floor((ms - AY0) / GUN);
+	const gunAnah = (ms) => new Date(ms - 9 * 3600e3).toISOString().slice(0, 10).replace(/-/g, "");
+	function rastgele(s) {
+		let a = 2166136261;
+		for (let i = 0; i < s.length; i++) a = Math.imul(a ^ s.charCodeAt(i), 16777619);
+		return () => {
+			a = (a + 0x6D2B79F5) | 0;
+			let t = Math.imul(a ^ (a >>> 15), 1 | a);
+			t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+			return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+		};
+	}
+	function karistir(l, s) {
+		const r = rastgele(s), x = l.slice();
+		for (let i = x.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [x[i], x[j]] = [x[j], x[i]]; }
+		return x;
+	}
+	const _il = {};
+	function ilanlar(n) {   // n. günün 12 ilanı (meslek adları; 0–3 grup 1, 4–7 grup 2, 8–11 grup 3)
+		if (n < ILK) return [];
+		if (_il[n]) return _il[n];
+		const l = [];
+		for (const g of [1, 2, 3]) {
+			const havuz = Object.keys(M).filter((m) => M[m][0] === g && M[m][2] > 0).sort();
+			let kuyruk = [], tur = 0, gun = [];
+			for (let d = ILK; d <= n; d++) {
+				gun = [];
+				while (gun.length < 4) {
+					// yeni tur: havuzun hepsi bir kez; o gün zaten çıkanlar turun sonuna
+					if (!kuyruk.length) kuyruk = karistir(havuz.filter((m) => !gun.includes(m)), "802|" + g + "|" + tur++).concat(gun);
+					gun.push(kuyruk.shift());
+				}
+			}
+			l.push(...gun);
+		}
+		return (_il[n] = l);
+	}
+	// n. günün geçerli başvuruları: kişi -> {i, t} (süresi içinde, kişinin o gün ilk başvurusu)
+	function gecerli(n, gunB) {
+		const bas = AY0 + n * GUN, son = bas + GUN, ilk = {};
+		for (const [ii, kl] of Object.entries(gunB || {})) {
+			const i = +String(ii).slice(1);
+			if (!(i >= 0 && i < 12) || !kl) continue;
+			for (const [k, t] of Object.entries(kl)) {
+				if (!(t >= bas && t < son)) continue;
+				if (!ilk[k] || t < ilk[k].t || (t === ilk[k].t && i < ilk[k].i)) ilk[k] = { i, t };
+			}
+		}
+		return ilk;
+	}
+	function kura(n, gunB) {   // {ilan: [{basvuran, kazanan (Set)}], kisi}
+		const ilk = gecerli(n, gunB), ilan = [];
+		for (let i = 0; i < 12; i++) {
+			const l = Object.keys(ilk).filter((k) => ilk[k].i === i).sort();
+			ilan.push({ basvuran: l, kazanan: new Set(l.length <= KADRO ? l : karistir(l, "kura|" + n + "|" + i).slice(0, KADRO)) });
+		}
+		return { ilan, kisi: ilk };
+	}
+	// kişi başına harcama: süren ya da kazanılan başvurunun bedeli (kaybedilen iade) + kurs kayıtları (iptal iadesi eksi)
+	function giderler(basvuru, gider, simdiN) {
+		const g = {};
+		for (const [gn, gunB] of Object.entries(basvuru || {})) {
+			const n = +String(gn).slice(1);
+			if (!(n >= ILK) || n > simdiN) continue;
+			const s = kura(n, gunB);
+			for (const [k, b] of Object.entries(s.kisi))
+				if (n === simdiN || s.ilan[b.i].kazanan.has(k)) g[k] = (g[k] || 0) + BEDEL;
+		}
+		for (const [k, l] of Object.entries(gider || {}))
+			for (const x of Object.values(l || {})) g[k] = (g[k] || 0) + (Number(x && x.n) || 0);
+		return g;
+	}
+	const seviye = (gun) => { let s = 0; for (let i = 1; i < 4; i++) if (gun >= SEVIYE[i][1]) s = i; return s; };
+	return { ALAN, M, UCRET, AY0, GUN, ILK, KADRO, BEDEL, SEVIYE, TUR, KURS, gunNo, gunAnah, ilanlar, kura, giderler, seviye };
+})();
+		</script>
+		<script>
 // Beta (kullanıcı, 2026-11-05; miniakent.com/beta/, window.miniakentBeta): onaylı taslağın ana ekranı sayfada çizilir
 // (renkler açılış ekranının logosu ve ada çubuğundan). 2026-11-06 taslak 2: sol kenarda sekmeler (M, İş, Ev, Ne yapsın?,
 // Görünüş) panelleri soldan açar; Ayarlar dişlide (Kumanda, Ayrıl); bir kişi takip edilirken altta "Gözünden gör" ve
@@ -1745,6 +1936,21 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	color: var(--yazi); text-align: left; cursor: pointer; }
 #mkb .yer-b span { color: var(--soluk); }
 #mkb .yer-b b { text-align: right; text-decoration: underline dotted; }
+/* Karakterim kısa kart (kullanıcı, 2026-11-20: "daha kolay okunan", sürekli kaydırmak gerekiyor): yan yana kutular,
+   büyük sayı + küçük etiket, ayrıntı kapalı başlar; yalnız test sayfası */
+#mkb .k-ust { display: flex; align-items: center; gap: 10px; }
+#mkb .k-ust .ada { flex: 1; height: 8px; border-bottom-width: 2px; }
+#mkb .k-ust .kucuk { white-space: nowrap; }
+#mkb .k-uc, #mkb .k-iki { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+#mkb .k-iki { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+#mkb .k-k { background: var(--krem2); border: 2px solid var(--kenar); border-radius: 14px; padding: 9px 10px; min-width: 0;
+	display: flex; flex-direction: column; gap: 2px; font: inherit; color: var(--yazi); text-align: left; }
+#mkb button.k-k { cursor: pointer; }
+#mkb .k-k strong { font: 700 17px/1.15 var(--fb); font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+#mkb .k-k em { font-style: normal; font-size: 10.5px; color: var(--soluk); overflow-wrap: anywhere; }
+#mkb .k-k b { font: 600 13px/1.25 var(--fb); overflow-wrap: anywhere; text-decoration: underline dotted; }
+#mkb .k-ac { display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 2px 2px; border: 0;
+	background: none; font: 600 13px var(--fb); color: var(--yazi); cursor: pointer; }
 #mkb .amenu svg { width: 18px; height: 18px; }
 @media (prefers-reduced-motion: reduce) { #mkb .mkb-pano, #mkb .ray, #mkb .sehirde, #mkb .ayarlar { transition: none; } }
 /* bilgisayarda (fare, geniş ekran) ayarlar, ses ve Bölgeler sağ kenarda (kullanıcı, 2026-11-08) */
@@ -2187,14 +2393,22 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		}],
 		gorunus: ["Görünüş", () => kiyafetPanel() + (kostumVar() ? kostumIzgara(karakter) : "")],
 		finans: ["Karakterim", () => {
-			const e = bilgi && bilgi.ekonomi, k = ekoKutu(e, true);
-			// ev ve iş yeri alt alta; dokununca oraya gidilir (kullanıcı, 2026-11-18)
+			const e = bilgi && bilgi.ekonomi;
+			// kısa kart (kullanıcı, 2026-11-20): üstte durum + ince mesai şeridi; Bakiye · Bu ay maaş · Kıdem; İş · Ev yan yana
+			// (dokununca oraya gidilir, 2026-11-18); bu ayın ayrıntısı kapalı başlar
+			const [dy, iste] = durumYazi(), m = mesai(bilgi && bilgi.mesai);
 			const evAd = (bilgi && bilgi.ev) || "", isAd = (bilgi && bilgi.isyeri) || "";
-			const yer = `<div class="kutu"><button class="yer-b" data-kendiev="1"><span>Ev</span><b>${esc(evAd || "—")}</b></button>${isAd
-				? `<button class="yer-b" data-kendiis="1"><span>İş yeri</span><b>${esc(isAd)}</b></button>` : ""}</div>`;
-			if (!k) return yer + `<p class="bilgi">Finans bilgileri bu hesap için açık değil.</p>`;
+			const kk = (et, deger, alt) => `<div class="k-k"><span class="etiket">${et}</span><strong>${deger}</strong>${alt ? `<em>${alt}</em>` : ""}</div>`;
+			const yerK = (et, ad, veri) => `<button class="k-k" ${veri}><span class="etiket">${et}</span><b>${esc(ad || "—")}</b></button>`;
+			let h = `<div class="k-ust"><span class="durum ${iste ? "" : "evde"}">${esc(dy)}</span>${ada(m.oran)}<span class="kucuk">${m.yazi}</span></div>`;
+			if (window.miniakentEkonomi && e) h += `<div class="k-uc">${kk(e.bakiye < 0 ? "Borç" : "Bakiye", sayi(Math.round(Math.abs(e.bakiye || 0))), "papel")}${kk("Bu ay maaş", sayi(Math.round(e.maas || 0)), "papel")}${kk("Kıdem", ekoYuzde(e.kidem), "maaşa ek")}</div>`;
+			h += `<div class="k-iki">${isAd ? yerK("İş", isAd, `data-kendiis="1"`) : ""}${yerK("Ev", evAd, `data-kendiev="1"`)}</div>`;
+			if (!window.miniakentEkonomi || !e) return h + `<p class="bilgi">Finans bilgileri bu hesap için açık değil.</p>`;
 			const ek = [["Fazla mesai kazancı", e.fazla], ["Etkinlik ve taksi", e.etkinlik], ["Hastane", e.hastane], ["İzin / hastane kesintisi", e.kesinti]].filter((x) => x[1]);
-			let h = yer + k + (ek.length ? `<div class="kutu"><span class="etiket">Bu ay ayrıca</span>${ek.map((x) => `<div class="satir"><span>${x[0]}</span><b>${papel(x[1])}</b></div>`).join("")}</div>` : "");
+			h += `<button class="k-ac" data-ayrinti="1"><span>Bu ayın ayrıntısı</span><span>${ayrintiAcik ? "▴" : "▾"}</span></button>`;
+			if (ayrintiAcik) h += `<div class="kutu"><div class="satir"><span>Vergi</span><b>${papel(e.vergi)}</b></div><div class="satir"><span>Geçim</span><b>${papel(e.gecim)}</b></div>
+				<div class="satir"><span>Kira</span><b>${papel(e.kira)}</b></div><div class="satir"><span>Ustalık</span><b>${ekoYuzde(e.ustalik)}</b></div>
+				${ek.map((x) => `<div class="satir"><span>${x[0]}</span><b>${papel(x[1])}</b></div>`).join("")}</div>`;
 			const d = dur();
 			if (d) {   // fazla mesai (kullanıcı, 2026-11-17): hafta içi mesaiden sonra en çok 2, tatil günü en çok 4 saat; saatlik ücretin 1,5 katı
 				const f = d.fazla, sec = (n, s, a, b2) => `<button class="${s === n ? "secili" : ""}" data-fmsec="${a}|${b2}">${n ? n + " saat" : "Yok"}</button>`;
@@ -2253,6 +2467,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		}],
 	};
 	let secilen = null, kostumAcik = false, bina = null, binaTum = {};
+	let ayrintiAcik = false;   // Karakterim'de "Bu ayın ayrıntısı" (kapalı başlar; kullanıcı, 2026-11-20)
 	// "Girlband Ol" evde ve işte kapalı (kullanıcı, 2026-11-19): oyun window.miniakentDansOlur'u karakter dışarıdaysa true
 	// yazar (scripts/dans.gd). Üye seçimi kaldırıldı (kullanıcı: "Sadece tuş olsun").
 	let sonDansOlur = null;
@@ -2803,6 +3018,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			const f = d.kendiev ? window.miniakentEvGoster : window.miniakentIsGoster;
 			f && f();
 		}
+		else if (d.ayrinti) { ayrintiAcik = !ayrintiAcik; ciz(); }
 		else if (d.fmsec) { const [a, b2] = d.fmsec.split("|"); window.miniakentFazla && window.miniakentFazla(+a, +b2); }
 		else if (d.kostumac) { kostumAcik = true; ciz(); }
 		else if (b.id === "mkb-sifirla") { st = yeni(); kaydet(); ciz(); }
@@ -3155,7 +3371,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611191200.pck","fileSizes":{"index-v202611191200.pck":9782344,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611201001.pck","fileSizes":{"index-v202611201001.pck":9790676,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
