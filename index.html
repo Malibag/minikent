@@ -675,6 +675,32 @@ try {
 				window.miniakentSurusSurum = (window.miniakentSurusSurum || 0) + 1;
 			}, (e) => console.warn("surus", e));
 		}
+		// Jetski Parkur Challenge sıralaması (kullanıcı, 2026-11-20; test802): oyun ayı başına (12:00 TR'de döner) kişinin en
+		// iyi puanı t802/jetski_parkur/a<gün no>/<ad anahtarı> = {p, t}; kural yalnız daha yüksek puanı kabul eder
+		if (V8 && window.M802) {
+			let pDonem = "", pBirak = null;
+			const pDinle = () => {
+				const d = "a" + window.M802.gunNo(Date.now());
+				if (d === pDonem) return;
+				pDonem = d;
+				if (pBirak) pBirak();
+				window.miniakentParkurSira = {};
+				pBirak = onValue(ref(db, "t802/jetski_parkur/" + d), (s) => {
+					window.miniakentParkurSira = s.val() || {};
+					window.miniakentParkurSurum = (window.miniakentParkurSurum || 0) + 1;
+				}, (e) => console.warn("parkur", e));
+			};
+			pDinle();
+			setInterval(pDinle, 60000);
+			window.miniakentParkurYaz = (p) => {
+				if (!karakter || !auth.currentUser || !(p > 0)) return Promise.resolve();
+				pDinle();
+				const k = anahtar(karakter), eski = (window.miniakentParkurSira || {})[k];
+				if (eski && +eski.p >= p) return Promise.resolve();
+				return set(ref(db, "t802/jetski_parkur/" + pDonem + "/" + k), { p: p, t: serverTimestamp() })
+					.catch((e) => console.warn("parkur", e));
+			};
+		}
 		const oturum = () => {
 			const u = auth.currentUser;
 			window.miniakentOturum = u ? JSON.stringify({ eposta: u.email, dogrulandi: u.emailVerified, karakter: karakter,
@@ -1654,6 +1680,9 @@ body.mk-foto #mk-cerez, body.mk-foto #kontrol, body.mk-foto #yk-ilk, body.mk-fot
 #mkb .arama { display: flex; gap: 6px; flex: 1; min-width: 0; }
 #mkb .arama input { flex: 1; min-width: 0; padding: 7px 12px; border-radius: 999px; border: 2px solid var(--kenar); background: var(--krem2); color: var(--yazi); font: 12px var(--fg); outline: 0; }
 #mkb .cip { padding: 6px 12px; border-radius: 999px; background: var(--krem); border: 2px solid var(--kenar); font-weight: 700; font-size: 11px; }
+/* jetski sürerken puan paneli (kullanıcı, 2026-11-20; test802) */
+#mkb .js-pano { position: absolute; top: calc(96px + env(safe-area-inset-top, 0px)); left: 50%; transform: translateX(-50%); max-width: calc(100% - 32px); background: rgba(20,22,28,.74); color: #fff; border-radius: 14px; padding: 6px 12px; font-size: 13px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; pointer-events: none; }
+#mkb .js-pano b { color: #ffd23a; }
 #mkb .cevrim { position: absolute; top: calc(60px + env(safe-area-inset-top, 0px)); left: 16px; font-size: 10px; font-weight: 700; color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,.6); }
 #mkb .mkb-liste { position: absolute; top: calc(98px + env(safe-area-inset-top, 0px)); z-index: 9; display: flex; flex-direction: column; gap: 4px; max-height: 60vh; overflow-y: auto;
 	padding: 6px; border-radius: 14px; background: var(--krem); border: 2px solid var(--kenar); }
@@ -1718,6 +1747,15 @@ body.mk-foto #mk-cerez, body.mk-foto #kontrol, body.mk-foto #yk-ilk, body.mk-fot
 #mkb .bilgi { margin: 0; font-size: 11px; line-height: 1.45; color: var(--soluk); }
 #mkb .bolum { margin: 6px 0 -4px; font: 600 13.5px var(--fb); }
 #mkb .ilan { border-color: var(--kiremit); }
+/* Test802 (2026-11-20): "Doktor · Geçici" gri, "Doktor · Kadrolu" yeşil; başlangıç ilanları, uzmanlık, kurs */
+#mkb .kd { display: inline-block; padding: 1px 8px; border-radius: 999px; background: var(--kum); color: #162132; font: 800 10.5px var(--fg); font-style: normal; }
+#mkb .kd.kadrolu { background: #2fa35a; color: #fff; }
+#mkb .i8 { display: grid; grid-template-columns: 1fr auto; gap: 2px 10px; align-items: center; padding: 10px 12px; border: 2px solid var(--kenar); border-radius: 14px; background: var(--krem2); }
+#mkb .i8 b { font: 600 14px var(--fb); }
+#mkb .i8 small { grid-column: 1; color: var(--soluk); font-size: 10.5px; font-weight: 700; }
+#mkb .i8 button { grid-column: 2; grid-row: 1 / span 2; padding: 8px 12px; border-radius: 12px; border: 2px solid var(--kenar); background: var(--deniz); color: #fff6e4; font-weight: 800; font-size: 11.5px; box-shadow: 0 3px 0 var(--golge); }
+#mkb .i8 button:disabled { background: var(--kum); color: #5d6680; box-shadow: none; cursor: default; }
+#mkb .i8.secili { border-color: #2fa35a; }
 #mkb .kadro { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; align-items: center; padding-top: 10px; border-top: 2px dashed var(--kum); }
 #mkb .kadro b { font-size: 12px; }
 #mkb .kadro p { grid-column: 1; margin: 0; font-size: 10.5px; color: var(--soluk); line-height: 1.4; }
@@ -2023,6 +2061,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	<div class="fo-renkler" id="mkb-fo-renkler"><button data-r="krem" style="background:#fbf0dc" aria-label="Krem"></button><button data-r="pembe" style="background:#f7b7cf" aria-label="Pembe"></button><button data-r="mavi" style="background:#a9d8f5" aria-label="Gök mavisi"></button><button data-r="limon" style="background:#ffe36e" aria-label="Limon"></button><button data-r="nane" style="background:#a8e6c5" aria-label="Nane"></button><button data-r="lavanta" style="background:#cdb8f2" aria-label="Lavanta"></button><button data-r="gece" style="background:#1f2a4d" aria-label="Gece mavisi"></button></div>
 	<div class="fo-eylem"><button id="mkb-fo-tekrar">Tekrar çek</button><button id="mkb-fo-kaydet">Kaydet</button><button class="paylas" id="mkb-fo-paylas">Paylaş</button></div></div>
 <div class="cevrim" id="mkb-fps" style="top: calc(76px + env(safe-area-inset-top, 0px))" hidden></div>
+<div class="js-pano" id="mkb-js" hidden></div>
 <div class="mkb-liste" id="mkb-oneri" hidden></div>
 <div class="mkb-liste" id="mkb-bolge" hidden></div>
 <div class="ray" id="mkb-ray" role="tablist" aria-label="Karakterim" hidden>
@@ -2204,7 +2243,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			: mesai(secilen && secilen.handle === k.handle ? secilen.bas : null, true);
 		return `<button class="kim" data-takip="${esc(k.handle)}" style="border:0;background:none;padding:0;text-align:left">
 				<span class="avatar">${esc(k.handle.replace(/^@/, "").charAt(0).toUpperCase())}</span><div>
-				<b>${esc(k.handle)}${rozet(k.handle)}</b><span>${esc(k.meslek)}${k.yer ? " · " + esc(k.yer.split(" · ")[0]) : ""}</span><span>${esc(k.ev)}</span></div></button>
+				<b>${esc(k.handle)}${rozet(k.handle)}</b><span>${T8 ? meslekCip(k.handle, k.meslek) : esc(k.meslek)}${k.yer && !kadrosu(k.handle) ? " · " + esc(k.yer.split(" · ")[0]) : ""}</span><span>${esc(k.ev)}</span></div></button>
 			<span class="durum ${iste ? "" : "evde"}">${esc(dy)}</span>
 			<div class="kutu"><div class="gosterge"><span>Mesai</span>${ada(m.oran)}<span class="kucuk">${m.yazi}</span></div></div>`;
 	}
@@ -2328,6 +2367,98 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			<em class="deger" style="left:${50 + v}%">${isaret(v) || "0"}</em></div></div>`;
 	}
 	const DURUM_YOK = `<p class="bilgi">Durum bilgileri bu hesap için açık değil.</p>`;
+	// Test802 (kullanıcı, 2026-11-20): kurallar window.M802, kayıtlar window.m802 (modül: t802Ac). Bütün kadrolar boş başlar:
+	// bugünkü işler "Geçici" (gri), başlangıç ilanını kazanan "Kadrolu" (yeşil); açıklama yazısı yok.
+	const T8 = !!window.miniakent802;
+	const m8 = () => (T8 && window.M802 && window.m802 && window.m802.hazir ? window.m802 : null);
+	const anah8 = (h) => String(h || "").replace(/^@/, "").toLowerCase().replace(/\./g, ",");
+	// Jetski Parkur Challenge sıralaması (kullanıcı, 2026-11-20): bu oyun ayının en iyi puanları
+	const parkurSira = () => Object.entries(window.miniakentParkurSira || {}).map(([k, v]) => [k, +(v && v.p) || 0])
+		.sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? -1 : 1));
+	const dakSn = (n) => Math.floor(n / 60) + ":" + String(n % 60).padStart(2, "0");
+	function jsPano(hud) {
+		const el = $("mkb-js"), j = hud.js, sn = hud.js_son;
+		let h = "";
+		if (j && j.mod === "parkur") h = `Puan <b>${sayi(j.puan)}</b> · Altın ${j.altin} · Rotada %${j.yuzde} · ${dakSn(j.kalan)}`;
+		else if (j) h = `Serbest gezi · ${dakSn(j.kalan)}`;
+		else if (sn) {
+			const l = parkurSira(), i = l.findIndex((x) => x[0] === anah8(karakter));
+			h = `Parkur bitti · <b>${sayi(sn.p)}</b> puan · ${sn.a} altın${i >= 0 ? ` · bu ay ${i + 1}.` : ""}`;
+		}
+		el.hidden = !h;
+		if (el.innerHTML !== h) el.innerHTML = h;
+	}
+	function parkurKutu() {
+		const l = parkurSira();
+		if (!l.length) return `<p class="bilgi">Parkur sıralaması: bu ay henüz puan yok.</p>`;
+		const ben = anah8(karakter), bi = l.findIndex((x) => x[0] === ben);
+		const satir = (x, i) => `<div class="satir"><span>${i + 1}. @${esc(x[0].replace(/,/g, "."))}</span><b>${sayi(x[1])}</b></div>`;
+		return `<div class="kutu"><span class="etiket">Parkur sıralaması · bu ay</span>${l.slice(0, 5).map(satir).join("")}${bi >= 5 ? satir(l[bi], bi) : ""}</div>`;
+	}
+	const kadrosu = (h) => { const v = m8(); return v ? v.is[anah8(h)] || null : null; };
+	function meslekCip(h, meslek) {
+		const r = kadrosu(h), m = r ? r.m : meslek && meslek !== "—" ? meslek : "";
+		return `<em class="kd ${r ? "kadrolu" : ""}">${m ? esc(m) + " · " : ""}${r ? "Kadrolu" : "Geçici"}</em>`;
+	}
+	let kurslarAcik = false;
+	function ilan802() {
+		const v = m8(), M8 = window.M802;
+		if (!v) return `<p class="bilgi">Yükleniyor…</p>`;
+		const now = miniakentSimdi(), n = M8.gunNo(now), K = v.K, il = M8.ilanlar(n), e = bilgi && bilgi.ekonomi;
+		const para = e ? e.bakiye : 0, benim = v.is[K], s = M8.kura(n, v.basvuru["g" + n]), bas = s.kisi[K];
+		let h = "";
+		const dun = v.basvuru["g" + (n - 1)], sd = dun && M8.kura(n - 1, dun), db = sd && sd.kisi[K];   // dünün sonucu
+		if (db) h += `<div class="kutu"><p class="bilgi">${sd.ilan[db.i].kazanan.has(K)
+			? `<b>${esc(M8.ilanlar(n - 1)[db.i])}</b> ilanını kazandın.`
+			: `<b>${esc(M8.ilanlar(n - 1)[db.i])}</b> ilanında kura sana çıkmadı. ${papel(M8.BEDEL)} geri verildi.`}</p></div>`;
+		if (!benim) {
+			h += `<div class="bolum">Başlangıç ilanları</div><p class="bilgi">Kalan süre ${sure(M8.AY0 + (n + 1) * M8.GUN - now)} · başvuru ${papel(M8.BEDEL)} · kazanamazsan geri verilir</p>`;
+			il.forEach((m, i) => {
+				const r = M8.M[m], kac = s.ilan[i].basvuran.length, ehl = r[2] === 2 && !v.yet.eh, ben = bas && bas.i === i;
+				const yaz = ben ? "Başvurdun" : ehl ? "Ehliyet gerekir" : "Başvur";
+				h += `<div class="i8 ${ben ? "secili" : ""}"><b>${esc(m)}</b><small>Saatlik ${papel(M8.UCRET[r[0]])} · ${esc(M8.ALAN[r[1]])}</small>
+					<small>${kac} başvuru · ${M8.KADRO} kadro</small>
+					<button data-b802="${i}" ${bas || ehl || para < M8.BEDEL ? "disabled" : ""}>${yaz}</button></div>`;
+			});
+		}
+		// kariyer alanı uzmanlığı: yalnız kazanılmış alanlar ve şu anki işin alanı
+		const uz = v.uzm[K] || {}, alanlar = new Set(Object.keys(uz).map((a) => +a.slice(1)));
+		if (benim && M8.M[benim.m]) alanlar.add(M8.M[benim.m][1]);
+		if (alanlar.size) {
+			h += `<div class="bolum">Uzmanlık</div>`;
+			for (const a of alanlar) {
+				const g = Object.keys(uz["a" + a] || {}).length, sv = M8.seviye(g), sonra = M8.SEVIYE[sv + 1];
+				h += `<div class="kutu"><div class="satir"><span>${esc(M8.ALAN[a])}</span><b>${M8.SEVIYE[sv][0]} · ${yuzde(Math.min(150, g) / 10)}</b></div>${ada(Math.min(150, g) / 150)}
+					${sonra ? `<span class="kucuk">${sonra[0]} seviyesine ${sonra[1] - g} aktif gün kaldı.</span>` : ""}</div>`;
+			}
+		}
+		// kurs (25. karar): tek kurs, peşin, aktif günle; test kullanıcıları Premium sayılır
+		h += `<div class="bolum">Kurs</div>`;
+		const kad = (id) => (M8.KURS.find((x) => x[0] === id) || [id, id])[1];
+		if (v.kurs) {
+			const kr = M8.KURS.find((x) => x[0] === v.kurs.y), sure8 = kr ? M8.TUR[kr[2]][2] : 1, g = Object.keys(v.kurs.g || {}).length;
+			h += `<div class="kutu"><div class="satir"><span>${esc(kad(v.kurs.y))}</span><b>${g} / ${sure8} gün</b></div>${ada(g / sure8)}
+				<div class="ikili"><button class="hayir" data-k802iptal="1">İptal et</button></div></div>`;
+		}
+		const biten = Object.keys(v.yet || {});
+		if (biten.length) h += `<p class="bilgi">Tamamlanan: ${biten.map((x) => esc(kad(x))).join(", ")}</p>`;
+		h += `<button class="k-ac" data-kurslar="1"><span>Kurslar</span><span>${kurslarAcik ? "▴" : "▾"}</span></button>`;
+		if (kurslarAcik) for (const [id, ad, tur, once] of M8.KURS) {
+			if (v.yet[id]) continue;
+			const [tad, ucret, gun] = M8.TUR[tur], kapali = !!v.kurs || (once && !v.yet[once]) || para < ucret;
+			h += `<div class="i8"><b>${esc(ad)}</b><small>${esc(tad)} · ${gun} gün</small><small>${papel(ucret)}</small>
+				<button data-k802="${esc(id)}" ${kapali ? "disabled" : ""}>${once && !v.yet[once] ? esc(kad(once)) + " gerekir" : "Başla"}</button></div>`;
+		}
+		return h;
+	}
+	function onay802(baslik, yazi, dugme, kapali, f) {
+		bekleyen = { f802: f };
+		$("mkb-onay-baslik").textContent = baslik;
+		$("mkb-onay-yazi").textContent = yazi;
+		$("mkb-ode").textContent = dugme;
+		$("mkb-ode").disabled = !!kapali;
+		$("mkb-onay").hidden = false;
+	}
 	// Şehir sohbeti (kullanıcı, 2026-11-18): küfür süzgeci (yıldızla gizlenir), 3 sn ara, 120 harf, gerekçeli şikâyet
 	const KUFUR = [/orospu\S*/giu, /(?<!\p{L})o[cç](?!\p{L})/giu, /(?<!\p{L})pi[cç](?!\p{L})\S*/giu, /(?<!\p{L})sik(?!ayet|ke|lon)\S*/giu, /siktir\S*/giu,
 		/(?<!\p{L})yarr?ak\S*/giu, /(?<!\p{L})g[oö]t(?!\p{L})/giu, /(?<!\p{L})am[iı]na\S*/giu, /am[cç][iı]k\S*/giu, /(?<!\p{L})anan[iı](?!\p{L})/giu,
@@ -2402,12 +2533,13 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			const yerK = (et, ad, veri) => `<button class="k-k" ${veri}><span class="etiket">${et}</span><b>${esc(ad || "—")}</b></button>`;
 			let h = `<div class="k-ust"><span class="durum ${iste ? "" : "evde"}">${esc(dy)}</span>${ada(m.oran)}<span class="kucuk">${m.yazi}</span></div>`;
 			if (window.miniakentEkonomi && e) h += `<div class="k-uc">${kk(e.bakiye < 0 ? "Borç" : "Bakiye", sayi(Math.round(Math.abs(e.bakiye || 0))), "papel")}${kk("Bu ay maaş", sayi(Math.round(e.maas || 0)), "papel")}${kk("Kıdem", ekoYuzde(e.kidem), "maaşa ek")}</div>`;
+			if (T8) h += `<div>${meslekCip(karakter, bilgi && bilgi.meslek)}</div>`;   // "Doktor · Geçici" / "· Kadrolu" (802)
 			h += `<div class="k-iki">${isAd ? yerK("İş", isAd, `data-kendiis="1"`) : ""}${yerK("Ev", evAd, `data-kendiev="1"`)}</div>`;
 			if (!window.miniakentEkonomi || !e) return h + `<p class="bilgi">Finans bilgileri bu hesap için açık değil.</p>`;
 			const ek = [["Fazla mesai kazancı", e.fazla], ["Etkinlik ve taksi", e.etkinlik], ["Hastane", e.hastane], ["İzin / hastane kesintisi", e.kesinti]].filter((x) => x[1]);
 			h += `<button class="k-ac" data-ayrinti="1"><span>Bu ayın ayrıntısı</span><span>${ayrintiAcik ? "▴" : "▾"}</span></button>`;
 			if (ayrintiAcik) h += `<div class="kutu"><div class="satir"><span>Vergi</span><b>${papel(e.vergi)}</b></div><div class="satir"><span>Geçim</span><b>${papel(e.gecim)}</b></div>
-				<div class="satir"><span>Kira</span><b>${papel(e.kira)}</b></div><div class="satir"><span>Ustalık</span><b>${ekoYuzde(e.ustalik)}</b></div>
+				<div class="satir"><span>Kira</span><b>${papel(e.kira)}</b></div><div class="satir"><span>${T8 ? "Uzmanlık" : "Ustalık"}</span><b>${ekoYuzde(e.ustalik)}</b></div>
 				${ek.map((x) => `<div class="satir"><span>${x[0]}</span><b>${papel(x[1])}</b></div>`).join("")}</div>`;
 			const d = dur();
 			if (d) {   // fazla mesai (kullanıcı, 2026-11-17): hafta içi mesaiden sonra en çok 2, tatil günü en çok 4 saat; saatlik ücretin 1,5 katı
@@ -2449,9 +2581,10 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			h += `<div class="etk-l">${d.yerler.map((y) => `<div class="etk-s"><div class="ad">${esc(y.ad)}<small>${esc(y.alt)} · Enerji ${isaret(y.enerji) || "0"} · Huzur ${isaret(y.huzur) || "0"}</small></div>
 				<span class="fiyat">${y.ucret ? papel(y.ucret) : "Ücretsiz"}</span>
 				<button data-etk="${y.id}|0" ${kapali || !y.yeter ? "disabled" : ""}>Yürü</button><button class="koyu" data-etk="${y.id}|1" ${kapali || !y.taksi ? "disabled" : ""}>Taksi</button></div>`).join("")}</div>`;
-			return h + `<p class="bilgi">Bir etkinlik 1 oyun saati sürer, ücreti varınca ödenir. Taksi ${papel(20)}; yürümek ücretsiz. Değerler oyun saati başına.</p>`;
+			if (T8) h += parkurKutu();
+		return h + `<p class="bilgi">Bir etkinlik 1 oyun saati sürer, ücreti varınca ödenir. Taksi ${papel(20)}; yürümek ücretsiz. Değerler oyun saati başına.</p>`;
 		}],
-		ilan: ["Karakterim", () => `<div class="kutu bos"><p class="bilgi">Şu an açık ilan yok. İlanlar gün içinde farklı saatlerde çıkar.</p></div>`],
+		ilan: ["Karakterim", () => T8 ? ilan802() : `<div class="kutu bos"><p class="bilgi">Şu an açık ilan yok. İlanlar gün içinde farklı saatlerde çıkar.</p></div>`],
 		bina: [() => bina.baslik, () => `${bina.kasa && bina.kasa.toplam != null && window.miniakentEkonomi ? `<div class="kutu"><span class="etiket">Belediye kasası</span><h3>${papel(bina.kasa.toplam)}</h3>
 			<div class="satir"><span>Son ay vergi</span><b>${papel(bina.kasa.vergi)}</b></div><div class="satir"><span>Son ay kira</span><b>${papel(bina.kasa.kira)}</b></div></div>` : ""}${bina.alt ? `<p class="bilgi">${esc(bina.alt)}</p>` : ""}${bina.is ? binaGrup("is") : ""}${bina.ev ? binaGrup("ev") : ""}`],
 		// başka sakinin kartı: para ve göstergeler, Evini/İş yerini göster; kostüm yalnız etkinlik süresince (kullanıcı, 2026-11-05)
@@ -3031,6 +3164,22 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			setTimeout(ciz, 600);
 		}
 		else if (d.al || d.basvur) onay(d.al ? "al" : "basvur", d.al || d.basvur);
+		// Test802 (2026-11-20): başvuru, kurs
+		else if (d.kurslar) { kurslarAcik = !kurslarAcik; ciz(); }
+		else if (d.b802 !== undefined && m8()) {
+			const M8 = window.M802, m = M8.ilanlar(M8.gunNo(miniakentSimdi()))[+d.b802], para = bilgi && bilgi.ekonomi ? bilgi.ekonomi.bakiye : 0;
+			onay802(m, papel(M8.BEDEL) + " ödenecek. Kura gün bitince çekilir; kazanamazsan geri verilir. Bugün yalnız bir ilana başvurabilirsin.",
+				"Başvur", para < M8.BEDEL, () => window.m802Basvur(+d.b802));
+		}
+		else if (d.k802 && m8()) {
+			const M8 = window.M802, kr = M8.KURS.find((x) => x[0] === d.k802), [tad, ucret, gun] = M8.TUR[kr[2]];
+			const para = bilgi && bilgi.ekonomi ? bilgi.ekonomi.bakiye : 0;
+			onay802(kr[1], `${tad}: ${papel(ucret)} şimdi ödenir, ${gun} gün sürer. Her gün oyuna ilk girişin 1 gün sayılır. İptal edersen yarısı geri verilir.`,
+				"Başla", para < ucret, () => window.m802KursBasla(d.k802));
+		}
+		else if (d.k802iptal && m8() && window.m802.kurs) {
+			onay802("Kursu iptal et", `Biriken günler silinir, ${papel(Math.round((window.m802.kurs.u || 0) / 2))} geri verilir.`, "İptal et", false, () => window.m802KursIptal());
+		}
 	});
 	function onay(tur, id) {
 		const il = IS_ILAN.concat(EV_ILAN).find((x) => x.id === id), fiyat = tur === "al" ? il.hemen : il.basvuru;
@@ -3041,10 +3190,16 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			: il.meslek ? sayi(fiyat) + " ödenecek. " + il.meslek + " işine hemen geçeceksin. 7 gün yeniden iş değiştiremezsin."
 			: sayi(fiyat) + " ödenecek. " + il.adres + " hemen senin olur.";
 		$("mkb-ode").disabled = st.para < fiyat;
+		$("mkb-ode").textContent = "Öde";
 		$("mkb-onay").hidden = false;
 	}
 	$("mkb-vazgec").addEventListener("click", () => { $("mkb-onay").hidden = true; });
 	$("mkb-ode").addEventListener("click", () => {
+		if (bekleyen && bekleyen.f802) {   // Test802: başvuru / kurs
+			$("mkb-onay").hidden = true;
+			Promise.resolve(bekleyen.f802()).then(() => setTimeout(ciz, 300)).catch((e) => console.warn("802", e));
+			return;
+		}
 		const { tur, il, fiyat } = bekleyen;
 		$("mkb-onay").hidden = true;
 		st.para -= fiyat;
@@ -3289,7 +3444,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	});
 
 	// oyunun durumu: yarım saniyede bir (oyun açılınca ana ekran görünür)
-	let sonBilgi = "", sonOturum = null, sonDk = -1, sonSecim = 0, sonBina = 0, sonSohbet = 0;
+	let sonBilgi = "", sonOturum = null, sonDk = -1, sonSecim = 0, sonBina = 0, sonSohbet = 0, son802 = 0, sonParkur = 0;
 	setInterval(() => {
 		const hud = window.miniakentHud;
 		if (!hud) return;
@@ -3323,8 +3478,10 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		$("mkb-takip").hidden = !takipVar;
 		kok.classList.toggle("takipli", takipVar);
 		$("mkb-takip-ad").textContent = (hud.takip || "") + " takipte";
-		$("mkb-goz").textContent = hud.goz ? "Yukarıdan bak" : "Gözünden gör";
-		$("mkb-goz").hidden = !!hud.hayvan || YENI;   // hayvanda zaten arkasından bakılır; test sayfasında kalktı (kullanıcı, 2026-11-17: işlevsiz)
+		$("mkb-goz").textContent = (hud.js ? hud.js.kam === "goz" : hud.goz) ? "Yukarıdan bak" : "Gözünden gör";
+		// hayvanda zaten arkasından bakılır; test sayfasında kalktı (kullanıcı, 2026-11-17: işlevsiz); jetski sürerken var (2026-11-20)
+		$("mkb-goz").hidden = !!hud.hayvan || (YENI && !hud.js);
+		jsPano(hud);
 		// Hızlı yürü (kullanıcı, 2026-11-17; kendi karakteri takipteyken): 30 sn 2 kat hız, düğme bar gibi boşalır, 30 sn'de dolar
 		const hz = hud.hizli;
 		$("mkb-hizli").hidden = !hz;
@@ -3360,8 +3517,12 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			sonDansOlur = dansOlur;
 			if ((sayfaAd === "etkinlik" || sayfaAd === "kisi") && $("mkb-onay").hidden) ciz();
 		}
-		if (b !== sonBilgi || dk !== sonDk) {
-			sonBilgi = b; sonDk = dk;
+		if (window.miniakentParkurSurum !== sonParkur) {   // parkur sıralaması (test802)
+			sonParkur = window.miniakentParkurSurum;
+			if (sayfaAd === "etkinlik" && $("mkb-onay").hidden) ciz();
+		}
+		if (b !== sonBilgi || dk !== sonDk || window.m802Surum !== son802) {
+			sonBilgi = b; sonDk = dk; son802 = window.m802Surum;   // Test802 kayıtları değişince de
 			bilgi = window.miniakentKarakterBilgi || null;
 			if (sayfaAd && $("mkb-onay").hidden && sayfaAd !== "gorunus") ciz();
 		}
@@ -3371,7 +3532,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611201001.pck","fileSizes":{"index-v202611201001.pck":9790676,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611210229.pck","fileSizes":{"index-v202611210229.pck":9830480,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
