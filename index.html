@@ -732,24 +732,31 @@ try {
 		// Oyuna window.miniakent802Veri (ekonomi.gd: kadro, alan günleri, gider), ekrana window.m802 verilir.
 		const t802Ac = () => {
 			const M8 = window.M802, K = anahtar(karakter), P = "t802/";
-			const v = { is: {}, uzm: {}, basvuru: {}, gider: {}, kurs: null, yet: {} }, gelen = new Set();
+			// Panel (2026-11-21): panel/<k>/<id> {s görev, c yol, b başlangıç, bit bitiş (ms), e enerji, u uzmanlık %, r sonuç
+			// {ok, bg, p}} · sef/<iş yeri> {k, b, n} (tek koltuk) · sef_aday/g<gün>/<iş yeri>/<k> {bg, t}
+			const v = { is: {}, uzm: {}, basvuru: {}, gider: {}, kurs: null, yet: {}, panel: {}, sef: {}, sefAday: {} }, gelen = new Set();
+			const YUK = 9;   // dinlenen kayıt sayısı
 			const yay = () => {
 				const oyun = { is: {}, uzm: {}, gider: M8.giderler(v.basvuru, v.gider, M8.gunNo(miniakentSimdi())) };
 				for (const [k, r] of Object.entries(v.is)) {
 					const m = r && M8.M[r.m];
 					if (m) oyun.is[k] = { b: r.b / 1000, u: M8.UCRET[m[0]], a: m[1] };
 				}
+				for (const s of Object.values(v.sef || {})) {   // Şef: koltuğa oturduğu andan bir üst maaş grubunun ücreti
+					const r = s && oyun.is[s.k], m = r && M8.M[v.is[s.k].m];
+					if (m && +s.b >= v.is[s.k].b) Object.assign(r, { sb: s.b / 1000, su: M8.sefUcret(m[0]) });
+				}
 				for (const [k, r] of Object.entries(v.uzm)) {
 					oyun.uzm[k] = {};
 					for (const a in r || {}) oyun.uzm[k][a] = Object.keys(r[a] || {});
 				}
 				window.miniakent802Veri = JSON.stringify(oyun);
-				window.m802 = Object.assign({ K: K, gider: oyun.gider, hazir: gelen.size >= 6 }, v);
+				window.m802 = Object.assign({ K: K, gider: oyun.gider, hazir: gelen.size >= YUK }, v);
 				window.m802Surum = (window.m802Surum || 0) + 1;
 			};
 			let isleniyor = false;
 			const isle = async () => {
-				if (gelen.size < 6 || isleniyor) return;
+				if (gelen.size < YUK || isleniyor) return;
 				isleniyor = true;
 				try {
 					const now = miniakentSimdi(), n = M8.gunNo(now), bugun = M8.gunAnah(now);
@@ -774,12 +781,42 @@ try {
 						if (Object.keys(g).length >= M8.TUR[kr[2]][2]) await update(ref(db), { [P + "yet/" + K + "/" + ks.y]: true, [P + "kurs/" + K]: null });
 						else if (!(ks.g || {})[bugun]) await set(ref(db, P + "kurs/" + K + "/g/" + bugun), true);
 					}
+					// 4) Panel: süresi dolan görevin sonucu (bir kez yazılır; kural: bitiş anından sonra)
+					for (const [id, o] of Object.entries(v.panel || {}))
+						if (o && !o.r && +o.bit <= now - 2000) {
+							const h = M8.panelHesap(o);
+							await set(ref(db, P + "panel/" + K + "/" + id + "/r"), { ok: h.ok, bg: h.bg, p: h.p });
+						}
+					// 5) Şef: biten günün adaylığında koltuk boşsa ve en yüksek beğeni bendeyse koltuğa otur
+					if (v.is[K]) for (const [gn, yerler] of Object.entries(v.sefAday || {})) {
+						const g = +gn.slice(1);
+						if (!(g < n)) continue;
+						for (const [yer, adaylar] of Object.entries(yerler || {}))
+							if ((adaylar || {})[K] && !v.sef[yer] && M8.sefKazanan(adaylar) === K)
+								await set(ref(db, P + "sef/" + yer), { k: K, b: M8.AY0 + (g + 1) * M8.GUN, n: g });
+					}
 				} catch (e) { console.warn("802", e); }
 				isleniyor = false;
 			};
-			for (const [yol, ad] of [["is", "is"], ["uzm", "uzm"], ["basvuru", "basvuru"], ["gider", "gider"], ["kurs/" + K, "kurs"], ["yet/" + K, "yet"]])
+			for (const [yol, ad] of [["is", "is"], ["uzm", "uzm"], ["basvuru", "basvuru"], ["gider", "gider"], ["kurs/" + K, "kurs"], ["yet/" + K, "yet"],
+				["panel/" + K, "panel"], ["sef", "sef"], ["sef_aday", "sefAday"]])
 				onValue(ref(db, P + yol), (s) => { v[ad] = s.val() || (ad === "kurs" ? null : {}); gelen.add(ad); yay(); isle(); }, (e) => console.warn("802 " + ad, e));
 			setInterval(() => { yay(); isle(); }, 30000);   // gün dönümü (12:00): kura, uzmanlık ve kurs günü
+			setInterval(() => {   // Panel görevi bitince sonuç hemen gelsin
+				if (Object.values(v.panel || {}).some((o) => o && !o.r && +o.bit <= miniakentSimdi() - 2000)) isle();
+			}, 5000);
+			// Panel görevi: e = başlarken enerji (sayfada −50..+50), u = alan uzmanlığı (%); enerji oyunda düşülür (durum.gd)
+			window.m802PanelBasla = (s, c, e, u) => {
+				const y = M8.YOL[c];
+				if (!y || !M8.gorevBul(s)) return Promise.resolve();
+				const id = push(ref(db, P + "panel/" + K)).key;
+				return set(ref(db, P + "panel/" + K + "/" + id), { s: s, c: c, b: serverTimestamp(), bit: miniakentSimdi() + y[1] * 60000,
+					e: Math.max(-50, Math.min(50, Math.round(e || 0))), u: Math.max(0, Math.min(15, +u || 0)) })
+					.then(() => { if (window.miniakentPanelEnerji) window.miniakentPanelEnerji(y[2]); })
+					.catch((x) => console.warn("panel", x));
+			};
+			window.m802SefAday = (yer, bg) => set(ref(db, P + "sef_aday/g" + M8.gunNo(miniakentSimdi()) + "/" + yer + "/" + K),
+				{ bg: bg, t: serverTimestamp() }).catch((x) => console.warn("sef", x));
 			window.m802Basvur = (i) => set(ref(db, P + "basvuru/g" + M8.gunNo(miniakentSimdi()) + "/i" + i + "/" + K), serverTimestamp());
 			window.m802KursBasla = (id) => {
 				const kr = M8.KURS.find((x) => x[0] === id);
@@ -1587,7 +1624,94 @@ if (window.miniakent802) window.M802 = (function () {
 		return g;
 	}
 	const seviye = (gun) => { let s = 0; for (let i = 1; i < 4; i++) if (gun >= SEVIYE[i][1]) s = i; return s; };
-	return { ALAN, M, UCRET, AY0, GUN, ILK, KADRO, BEDEL, SEVIYE, TUR, KURS, gunNo, gunAnah, ilanlar, kura, giderler, seviye };
+	// PANEL (kullanıcı, 2026-11-21: "kararları sonra verip ekleyelim, 802'de hayata geçir"): oyun ile oyuncunun konuştuğu yer.
+	// Oyuncu bir görev ve nasıl yapacağını seçer, GERÇEK süreli sayaç başlar (sunucu saati), bitince sonuç gerekçesiyle gelir.
+	// Sonuç rastgele değil: hazırlık + alan uzmanlığı + başlarken enerji, görevin zorluğuyla karşılaştırılır. Sonuçlar
+	// patronun beğenisini (0–100) değiştirir; başta bütün patronlar oyunun kendisi. Beğeni eşiği geçen kadrolu, iş yerinin
+	// tek Şef koltuğuna aday olur; gün dönümünde (12:00) en yüksek beğenili aday Şef olur, ücreti bir üst maaş grubu.
+	// SAYILAR GEÇİCİ (kullanıcı kararı bekliyor): süre, enerji, beğeni, günlük sınır, eşik, Şef ücreti.
+	// Görev: [kimlik, alan (−1 hepsi), başlık, metin, hızlı yol, özenli yol, zorluk]
+	const GOREV = [
+		["g1", -1, "Haftalık rapor", "Yönetim bu haftanın çalışma raporunu istiyor.", "Kısa bir özet yaz", "Ayrıntılı, rakamlı bir rapor hazırla", 40],
+		["g2", -1, "Hastalanan arkadaş", "Bir iş arkadaşınız hastalandı. Yönetim bugün onun işini de sizin üstlenmenizi istiyor.", "Yalnız acil kısmını bitir", "İşinin hepsini eksiksiz tamamla", 50],
+		["g3", -1, "Yeni çalışan", "İşe yeni biri başladı. Yönetim ona işi öğretmenizi istiyor.", "Temel şeyleri kısaca göster", "Bütün işi adım adım öğret", 45],
+		["g4", -1, "Şikâyet", "Yönetime bölümünüzle ilgili bir şikâyet geldi. Konuyu çözmeniz isteniyor.", "Şikâyet edene hemen dönüş yap", "Sorunun kaynağını bul ve düzelt", 55],
+		["a0a", 0, "Denetim günü", "Yarın binaya denetim gelecek. Yönetim her yerin pırıl pırıl olmasını istiyor.", "Göze görünen yerleri temizle", "Köşe bucak her yeri elden geçir", 45],
+		["a0b", 0, "Su baskını", "Bodrumdaki boru patladı, zemin su altında.", "Suyu çek, kurulamayı sonraya bırak", "Suyu çek, zemini kurula ve dezenfekte et", 50],
+		["a1a", 1, "Kalabalık öğle", "Öğle saatinde mekân doldu taştı. Patron hızlı ama düzgün servis istiyor.", "Siparişleri hızla çıkar", "Her masayla tek tek ilgilen", 45],
+		["a1b", 1, "Yeni ürün", "Patron menüye yeni bir ürün eklemek istiyor, denemeyi sizden bekliyor.", "Tarifi aynen uygula", "Birkaç deneme yap, en iyisini seç", 50],
+		["a2a", 2, "Grup rezervasyonu", "40 kişilik bir tur grubu geliyor. Yönetim karşılamanın kusursuz olmasını istiyor.", "Odaları sırayla dağıt", "Odaları önceden hazırla, herkesi adıyla karşıla", 50],
+		["a2b", 2, "Memnuniyetsiz misafir", "Bir misafir odasından memnun değil ve yüksek sesle şikâyet ediyor.", "Özür dile, oda değiştir", "Sorunu dinle, odayı değiştir, küçük bir ikram sun", 45],
+		["a3a", 3, "Kampanya haftası", "Bu hafta büyük indirim var. Patron rafların hep dolu olmasını istiyor.", "Boşalan rafları doldur", "Rafları yeniden düzenle, öne çıkan ürünleri göster", 45],
+		["a3b", 3, "Sayım günü", "Ay sonu stok sayımı yapılacak, rakamların tutması gerekiyor.", "Kabaca say, yaz", "Her ürünü tek tek say, kayıtla karşılaştır", 50],
+		["a4a", 4, "Acil teslimat", "Önemli bir müşterinin gönderisi bugün mutlaka yetişmeli.", "Kestirme yoldan hemen çık", "Rotayı planla, gönderiyi sağlam paketle, sonra çık", 45],
+		["a4b", 4, "Depo düzeni", "Depo karıştı. Yönetim her şeyin yerli yerinde olmasını istiyor.", "Ortadaki yığınları kaldır", "Rafları etiketle, her şeyi yerine yerleştir", 50],
+		["a5a", 5, "Arızalı hat", "Üretim hattında bir makine durdu, sipariş bekliyor.", "Makineyi geçici olarak çalıştır", "Arızanın kaynağını bul, kalıcı onar", 55],
+		["a5b", 5, "Kalite kontrol", "Son partide hatalı ürün çıktı. Yönetim kontrol istiyor.", "Rastgele birkaçına bak", "Partinin tamamını tek tek kontrol et", 45],
+		["a6a", 6, "Teslim tarihi", "Şantiyede teslim tarihi yaklaştı, iş geride.", "Hızlı çalış, ayrıntıları sonra düzelt", "Ölçüleri kontrol ederek düzgün çalış", 50],
+		["a6b", 6, "İş güvenliği", "Şantiyeye iş güvenliği denetimi gelecek.", "Eksik kaskları dağıt", "İskeleleri ve donanımı tek tek kontrol et", 45],
+		["a7a", 7, "Fırtına uyarısı", "Akşam fırtına bekleniyor, her şeyin güvenceye alınması gerekiyor.", "En önemlilerini bağla, içeri al", "Her şeyi sağlamlaştır, hayvanları ve tekneleri güvenceye al", 50],
+		["a7b", 7, "Pazar günü", "Yarın pazar kuruluyor, ürünlerin hazır olması gerekiyor.", "Ürünleri topla, kasalara koy", "Ürünleri ayıkla, en iyilerini seç, güzelce diz", 45],
+		["a8a", 8, "Kalabalık etkinlik", "Şehirde büyük bir etkinlik var, düzenin korunması gerekiyor.", "Girişte bekle, gözünü dört aç", "Alanı dolaş, riskli noktaları önceden belirle", 50],
+		["a8b", 8, "Kayıp eşya", "Bir sakin değerli bir eşyasını kaybettiğini bildirdi.", "Tutanak tut, haber bekle", "Son görüldüğü yerleri dolaş, kayıtlara bak", 45],
+		["a9a", 9, "Yoğun nöbet", "Acil servis bugün çok kalabalık. Başhekim hastalara aksamadan bakılmasını istiyor.", "Hastaları hızla sıraya koy", "Her hastayı dikkatle değerlendir, öncelikleri belirle", 55],
+		["a9b", 9, "Hasta dosyaları", "Hasta kayıtlarında eksikler var, denetimden önce tamamlanmalı.", "Eksik alanları doldur", "Her dosyayı baştan sona kontrol et", 45],
+		["a10a", 10, "Dava dosyası", "Bugün görülecek önemli bir davanın dosyası size verildi.", "Dosyaya hızla göz at", "Bütün belgeleri tek tek incele", 55],
+		["a10b", 10, "Sözleşme", "Bir şirket sözleşmesinin bugün gözden geçirilmesi gerekiyor.", "Önemli maddelere bak", "Her maddeyi satır satır incele", 45],
+		["a11a", 11, "Ay sonu kapanışı", "Ay sonu hesaplar kapanacak, rakamlar tutmalı.", "Toplamları kontrol et", "Her kalemi tek tek karşılaştır", 50],
+		["a11b", 11, "Önemli başvuru", "Önemli bir müşterinin başvurusu değerlendirilecek.", "Temel belgelere bakıp karar ver", "Bütün geçmişini incele, riskleri yaz", 45],
+		["a12a", 12, "Toplantı hazırlığı", "Yarın yönetim toplantısı var, her şeyin hazır olması gerekiyor.", "Salonu ve listeyi ayarla", "Sunumları, belgeleri ve ikramı tek tek hazırla", 45],
+		["a12b", 12, "Kayıp belge", "Eski dosyalar karışmış, bir belge acil aranıyor.", "İlgili dolaba bak", "Arşivi düzenleyerek belgeyi bul", 50],
+		["a13a", 13, "Sınav haftası", "Sınavlar yaklaşıyor, öğrencilerin hazır olması gerekiyor.", "Konuları kısaca tekrar et", "Eksikleri tek tek belirle, ek çalışma yap", 50],
+		["a13b", 13, "Veli toplantısı", "Bu akşam veli toplantısı var.", "Genel bir konuşma yap", "Her öğrenci için ayrı not hazırla", 45],
+		["a14a", 14, "Yeni üyeler", "Bir grup yeni üye katıldı.", "Herkese aynı programı ver", "Her biri için ayrı program hazırla", 45],
+		["a14b", 14, "Turnuva", "Hafta sonu bir turnuva var, hazırlık sizde.", "Kısa bir ısınma programı yap", "Rakipleri incele, ayrıntılı plan hazırla", 55],
+		["a15a", 15, "Gösteri gecesi", "Bu akşam önemli bir gösteri var, salon dolu olacak.", "Bildiğin parçalarla çık", "Saatlerce prova yap, yeni bir şey hazırla", 50],
+		["a15b", 15, "Yeni çalışma", "Yönetim yeni bir çalışmanızı sergilemek istiyor.", "Eski bir çalışmayı düzenle", "Baştan yeni bir çalışma hazırla", 45],
+		["a16a", 16, "Son dakika", "Şehirde önemli bir gelişme oldu, haber hemen çıkmalı.", "Elindeki bilgiyle hemen yayınla", "Kaynakları doğrula, sonra yayınla", 50],
+		["a16b", 16, "Röportaj", "Tanınmış bir sakinle röportaj ayarlandı.", "Hazır sorularla git", "Kişiyi araştır, özel sorular hazırla", 45],
+		["a17a", 17, "Yeni kampanya", "Bir müşteri yeni kampanyası için fikir istiyor.", "Hazır bir şablonu uyarla", "Müşteriyi araştır, özgün bir fikir geliştir", 50],
+		["a17b", 17, "Açılış etkinliği", "Bir firmanın açılış etkinliği size verildi.", "Standart bir düzen kur", "Her ayrıntıyı planla, yeri önceden gez", 45],
+		["a18a", 18, "Sistem çöktü", "Şirketin sistemi çöktü, herkes bekliyor.", "Yeniden başlat, çalıştır", "Hatanın kaynağını bul, kalıcı çöz", 55],
+		["a18b", 18, "Yeni özellik", "Yönetim yazılıma yeni bir özellik eklenmesini istiyor.", "Çalışan ilk hâlini teslim et", "Deneyerek hatasız teslim et", 45],
+		["a19a", 19, "Proje teslimi", "Bir projenin hesapları yarın teslim edilmeli.", "Ana hesapları bitir", "Her hesabı iki kez kontrol et", 50],
+		["a19b", 19, "Beklenmedik sonuç", "Laboratuvarda beklenmedik bir sonuç çıktı.", "Sonucu olduğu gibi raporla", "Deneyi tekrarla, sonra raporla", 45],
+		["a20a", 20, "Özel davet", "Bir müşteri bu akşamki özel bir davete hazırlanmak istiyor.", "Bilinen bir modeli uygula", "Müşteriyle konuş, ona özel bir görünüm hazırla", 50],
+		["a20b", 20, "Yoğun gün", "Bugün randevular üst üste.", "Her müşteriyi hızla bitir", "Sırayı ayarla, her müşteriye özen göster", 45],
+	];
+	// yol: [ad, süre (dk, gerçek), enerji, hazırlık puanı, başarıda beğeni, başarısızlıkta beğeni] — GEÇİCİ
+	const YOL = [["Hızlı", 30, 5, 10, 4, -5], ["Özenli", 120, 12, 25, 7, -3]];
+	const PANEL = { TABAN: 30, GUNLUK: 6, ESIK: 40 };
+	const gorevBul = (id) => GOREV.find((g) => g[0] === id) || null;
+	// sıradaki iki görev: kişinin alanınınkiler ve hepsine açık olanlar, yaptığı görev sayısına göre sırayla
+	function gorevler(alan, yapilan) {
+		const h = GOREV.filter((g) => g[1] === -1 || g[1] === alan);
+		return [h[yapilan % h.length], h[(yapilan + 1) % h.length]];
+	}
+	// sonuç: puan = taban + hazırlık + uzmanlık % × 3 + başlarken enerji (−50..+50) × 0,5; zorluğa eşit ya da yüksekse başarı
+	function panelHesap(o) {
+		const g = gorevBul(o.s), y = YOL[o.c] || YOL[0];
+		const uz = Math.round((+o.u || 0) * 3), en = Math.round((+o.e || 0) * 0.5);
+		const p = PANEL.TABAN + y[3] + uz + en, z = g ? g[6] : 50, ok = p >= z;
+		return { ok, p, z, haz: y[3], uz, en, bg: ok ? y[4] : y[5] };
+	}
+	// beğeni: sonuçların zaman sırasıyla toplamı, 0–100 arasında
+	function begeni(olaylar) {
+		let b = 0;
+		for (const o of Object.values(olaylar || {}).filter((x) => x && x.r).sort((x, y) => x.b - y.b))
+			b = Math.max(0, Math.min(100, b + (+o.r.bg || 0)));
+		return b;
+	}
+	// Şef seçimi (gün sonu): koltuk boşsa eşiği geçen adaylardan en yüksek beğenili (eşitse önce aday olan, sonra ad)
+	function sefKazanan(adaylar) {
+		const l = Object.entries(adaylar || {}).filter(([, a]) => a && +a.bg >= PANEL.ESIK)
+			.sort((x, y) => (+y[1].bg - +x[1].bg) || (+x[1].t - +y[1].t) || (x[0] < y[0] ? -1 : 1));
+		return l.length ? l[0][0] : "";
+	}
+	const yerAnah = (s) => String(s || "").toLowerCase().replace(/[.#$\[\]\/]/g, ",").slice(0, 80);
+	const sefUcret = (grup) => UCRET[Math.min(UCRET.length - 1, grup + 1)];
+	return { ALAN, M, UCRET, AY0, GUN, ILK, KADRO, BEDEL, SEVIYE, TUR, KURS, gunNo, gunAnah, ilanlar, kura, giderler, seviye,
+		GOREV, YOL, PANEL, gorevBul, gorevler, panelHesap, begeni, sefKazanan, yerAnah, sefUcret };
 })();
 		</script>
 		<script>
@@ -2356,6 +2480,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		para: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/></svg>',
 		ilan: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9zM8.5 11h7M8.5 15h5"/></svg>',
 		durum: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg>',
+		panel: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>',
 	};
 	// Durum çubukları (kullanıcı, 2026-11-17; scripts/durum.gd): iki uçlu terazi, ortada 0; iyi tarafa yeşil (+50), kötüye kırmızı (−50)
 	const dur = () => (bilgi && bilgi.durum && bilgi.durum.yerler ? bilgi.durum : null);
@@ -2398,7 +2523,72 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	const kadrosu = (h) => { const v = m8(); return v ? v.is[anah8(h)] || null : null; };
 	function meslekCip(h, meslek) {
 		const r = kadrosu(h), m = r ? r.m : meslek && meslek !== "—" ? meslek : "";
-		return `<em class="kd ${r ? "kadrolu" : ""}">${m ? esc(m) + " · " : ""}${r ? "Kadrolu" : "Geçici"}</em>`;
+		const sef = r && Object.values((m8() || {}).sef || {}).some((s) => s && s.k === anah8(h));   // Panel: Şef koltuğu
+		return `<em class="kd ${r ? "kadrolu" : ""}">${m ? esc(m) + " · " : ""}${r ? (sef ? "Kadrolu · Şef" : "Kadrolu") : "Geçici"}</em>`;
+	}
+	// PANEL (kullanıcı, 2026-11-21; kurallar window.M802 GOREV/YOL/PANEL): oyun ile oyuncunun konuştuğu yer
+	const kalanYaz = (ms) => {
+		const s = Math.max(0, Math.ceil(ms / 1000)), dk = String(Math.floor((s % 3600) / 60)).padStart(2, "0"), sn = String(s % 60).padStart(2, "0");
+		return s >= 3600 ? Math.floor(s / 3600) + ":" + dk + ":" + sn : Math.floor(s / 60) + ":" + sn;
+	};
+	function panelBilgi() {
+		const v = m8(), M8 = window.M802;
+		if (!v) return null;
+		const K = v.K, benim = v.is[K], mr = M8.M[benim ? benim.m : (bilgi && bilgi.meslek) || ""];
+		const uzG = benim && mr ? Object.keys((v.uzm[K] || {})["a" + mr[1]] || {}).length : 0;
+		const yer = (bilgi && bilgi.isyeri) || "";
+		return { v, M8, K, benim, mr, alan: mr ? mr[1] : -1, uz: Math.min(150, uzG) / 10, yer, yk: M8.yerAnah(yer), bg: M8.begeni(v.panel) };
+	}
+	function panel802() {
+		const pb = panelBilgi(), d = dur();
+		if (!pb) return `<p class="bilgi">Yükleniyor…</p>`;
+		if (!d) return DURUM_YOK;
+		const { v, M8, K, benim, mr, alan, yer, yk, bg } = pb, P = M8.PANEL, now = miniakentSimdi(), n = M8.gunNo(now);
+		const ol = Object.entries(v.panel || {}).map(([id, o]) => Object.assign({ id }, o)).filter((o) => o && o.b).sort((a, b) => b.b - a.b);
+		let h = `<div class="kutu"><span class="etiket">Patronun beğenisi</span><div class="satir"><span>${esc(yer || "İş yeri")} · Yönetim</span><b>${bg} / 100</b></div>${ada(bg / 100)}
+			<span class="kucuk">Görevlerin sonucu beğeniyi artırır ya da azaltır. Şeflik için ${P.ESIK} beğeni ve kadro gerekir.</span></div>`;
+		// Şef koltuğu: iş yerinde tek; gün dönümünde en yüksek beğenili aday oturur
+		const sefYer = v.sef[yk], sefim = sefYer && sefYer.k === K, dun = (v.sefAday["g" + (n - 1)] || {})[yk], bugunA = (v.sefAday["g" + n] || {})[yk];
+		if (sefim && mr) h += `<div class="kutu"><span class="etiket">Şef</span><p class="bilgi"><b>${esc(yer)}</b> Şefisin. Saatlik ücretin ${papel(M8.sefUcret(mr[0]))}.</p></div>`;
+		else if (sefYer) h += `<p class="bilgi">Bu iş yerinin Şefi: <b>@${esc(sefYer.k.replace(/,/g, "."))}</b></p>`;
+		else if (dun && dun[K]) {
+			const kz = M8.sefKazanan(dun);
+			h += `<div class="kutu"><p class="bilgi">${kz && kz !== K ? `Şefliğe <b>@${esc(kz.replace(/,/g, "."))}</b> seçildi: onun beğenisi ${dun[kz].bg}, seninki ${dun[K].bg}.`
+				: kz === K ? "Şefliğe sen seçildin. Koltuğun hazırlanıyor…" : `Şefliğe kimse seçilmedi: ${P.ESIK} beğeniye ulaşan aday yoktu.`}</p></div>`;
+		}
+		if (!sefYer && bugunA && bugunA[K]) h += `<div class="kutu"><p class="bilgi">Şeflik adaylığın alındı (beğenin ${bugunA[K].bg}). Değerlendirme ${sure(M8.AY0 + (n + 1) * M8.GUN - now)} sonra · ${Object.keys(bugunA).length} aday.</p></div>`;
+		else if (!sefYer && bg >= P.ESIK) h += !benim ? `<div class="kutu"><p class="bilgi">Yönetimde adınız geçiyor. Şeflik için önce kadrolu olmalısınız.</p></div>`
+			: yer ? `<div class="kutu"><b>Yönetimde adınız Şeflik için geçiyor.</b><p class="bilgi">Aday olursanız değerlendirme gün dönümünde (12:00) yapılır; aynı iş yerindeki adaylardan beğenisi en yüksek olan Şef olur.</p>
+				<div class="ikili"><button class="evet" data-p802sef="1">Şefliğe aday ol</button></div></div>` : "";
+		// süren görev ya da yeni görevler
+		const aktif = ol.find((o) => !o.r);
+		if (aktif) {
+			const g = M8.gorevBul(aktif.s), y = M8.YOL[aktif.c] || M8.YOL[0], kalan = +aktif.bit - now;
+			h += `<div class="bolum">Süren görev</div><div class="kutu"><b>${esc(g ? g[2] : "Görev")}</b><p class="bilgi">${esc(g ? g[4 + aktif.c] : "")}</p>
+				<div class="satir"><span>${kalan > 0 ? "Sonuca kalan" : "Sonuç hesaplanıyor…"}</span><b ${kalan > 0 ? `data-p802bit="${aktif.bit}"` : ""}>${kalan > 0 ? kalanYaz(kalan) : ""}</b></div>
+				${ada(1 - Math.max(0, kalan) / (y[1] * 60000))}<span class="kucuk">Sayfayı kapatabilirsin; süre gerçek zamanla işler.</span></div>`;
+		} else {
+			const bugun = ol.filter((o) => M8.gunNo(o.b) === n).length;
+			h += `<div class="bolum">Yeni görevler</div><p class="bilgi">Bugün ${bugun} / ${P.GUNLUK} görev · sonuç süre bitince gelir</p>`;
+			if (bugun >= P.GUNLUK) h += `<p class="bilgi">Bugünkü görev hakkın bitti. Yeni görevler 12:00'de.</p>`;
+			else for (const g of M8.gorevler(alan, ol.length))
+				h += `<div class="kutu"><b>${esc(g[2])}</b><p class="bilgi">${esc(g[3])}</p>${M8.YOL.map((y, c) => `<button class="git" data-p802="${g[0]}|${c}"><b>${esc(g[4 + c])}</b>
+					<span>${y[0]} · ${y[1] >= 60 ? y[1] / 60 + " saat" : y[1] + " dakika"} · Enerji −${y[2]}</span></button>`).join("")}</div>`;
+		}
+		// sonuçlar: gerekçesiyle
+		const biten = ol.filter((o) => o.r).slice(0, 5);
+		if (biten.length) {
+			h += `<div class="bolum">Sonuçlar</div>`;
+			for (const o of biten) {
+				const g = M8.gorevBul(o.s), x = M8.panelHesap(o), ok = !!o.r.ok, bgd = +o.r.bg || 0;
+				const neden = ok ? (o.c === 1 ? "Özenli hazırlığın işe yaradı." : "Hızlı ve yeterli oldun.")
+					: x.en < 0 ? "Yorgundun." : o.c === 0 ? "Acele ettin." : "Uzmanlığın yetmedi.";
+				const ii = (k, t) => `${k} ${t >= 0 ? "+" : "−"}${Math.abs(t)}`;
+				h += `<div class="kutu"><div class="satir"><span>${esc(g ? g[2] : "")}</span><b>${ok ? "Başarılı" : "Başarısız"} · ${bgd >= 0 ? "+" : "−"}${Math.abs(bgd)} beğeni</b></div>
+					<span class="kucuk">${esc(g ? g[4 + o.c] : "")}. ${neden} Puan ${x.p} (taban ${P.TABAN}, ${ii("hazırlık", x.haz)}, ${ii("uzmanlık", x.uz)}, ${ii("enerji", x.en)}), gereken ${x.z}.</span></div>`;
+			}
+		}
+		return h;
 	}
 	let kurslarAcik = false;
 	function ilan802() {
@@ -2467,6 +2657,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	const suzgec = (m) => KUFUR.reduce((a, r) => a.replace(r, (w) => "*".repeat(w.length)), String(m || ""));
 	function altMenu() {
 		const m = [["durum", "Durum", MENU_SVG.durum], ["gorunus", "Görünüş", SVG.gorunus], ["finans", "Finans", MENU_SVG.para], ["ilan", "İlanlar", MENU_SVG.ilan]];
+		if (T8) m.push(["panel", "Panel", MENU_SVG.panel]);   // Panel (kullanıcı, 2026-11-21)
 		return `<nav class="amenu">${m.map((x) => `<button data-menu="${x[0]}" aria-selected="${sayfaAd === x[0]}">${x[2]}<span>${x[1]}</span></button>`).join("")}
 			<button class="etk" data-menu="etkinlik" aria-selected="${sayfaAd === "etkinlik"}">Etkinlikler</button></nav>`;
 	}
@@ -2585,6 +2776,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		return h + `<p class="bilgi">Bir etkinlik 1 oyun saati sürer, ücreti varınca ödenir. Taksi ${papel(20)}; yürümek ücretsiz. Değerler oyun saati başına.</p>`;
 		}],
 		ilan: ["Karakterim", () => T8 ? ilan802() : `<div class="kutu bos"><p class="bilgi">Şu an açık ilan yok. İlanlar gün içinde farklı saatlerde çıkar.</p></div>`],
+		panel: ["Karakterim", () => T8 ? panel802() : ""],
 		bina: [() => bina.baslik, () => `${bina.kasa && bina.kasa.toplam != null && window.miniakentEkonomi ? `<div class="kutu"><span class="etiket">Belediye kasası</span><h3>${papel(bina.kasa.toplam)}</h3>
 			<div class="satir"><span>Son ay vergi</span><b>${papel(bina.kasa.vergi)}</b></div><div class="satir"><span>Son ay kira</span><b>${papel(bina.kasa.kira)}</b></div></div>` : ""}${bina.alt ? `<p class="bilgi">${esc(bina.alt)}</p>` : ""}${bina.is ? binaGrup("is") : ""}${bina.ev ? binaGrup("ev") : ""}`],
 		// başka sakinin kartı: para ve göstergeler, Evini/İş yerini göster; kostüm yalnız etkinlik süresince (kullanıcı, 2026-11-05)
@@ -2608,7 +2800,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 
 	function ciz() {
 		const s = SAYFA[sayfaAd];
-		const yeniDuzen = YENI && karakter && ["finans", "ilan", "gorunus", "durum", "etkinlik"].includes(sayfaAd);
+		const yeniDuzen = YENI && karakter && ["finans", "ilan", "gorunus", "durum", "etkinlik", "panel"].includes(sayfaAd);
 		// başlıkta oyuncunun adı; dokununca karakteri bulunur ve takip edilir (kullanıcı, 2026-11-18)
 		$("mkb-baslik").textContent = yeniDuzen ? karakter : typeof s[0] === "function" ? s[0]() : s[0];
 		$("mkb-baslik").classList.toggle("kendim", !!yeniDuzen);
@@ -2647,7 +2839,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	try { sonSekme = localStorage.getItem("mkb_sekme") || "finans"; } catch (e) {}
 	function ac(ad) {
 		if (YENI && ad === "kisi") ad = sonSekme;
-		if (["durum", "gorunus", "finans", "ilan", "etkinlik"].includes(ad)) {
+		if (["durum", "gorunus", "finans", "ilan", "etkinlik", "panel"].includes(ad)) {
 			sonSekme = ad;
 			try { localStorage.setItem("mkb_sekme", ad); } catch (e) {}
 		}
@@ -3180,6 +3372,17 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		else if (d.k802iptal && m8() && window.m802.kurs) {
 			onay802("Kursu iptal et", `Biriken günler silinir, ${papel(Math.round((window.m802.kurs.u || 0) / 2))} geri verilir.`, "İptal et", false, () => window.m802KursIptal());
 		}
+		// Panel (2026-11-21): görev başlat, Şefliğe aday ol
+		else if (d.p802 && m8()) {
+			const [s, c] = d.p802.split("|"), pb = panelBilgi(), g = pb.M8.gorevBul(s), y = pb.M8.YOL[+c], du = dur();
+			if (g && y) onay802(g[2], `${g[4 + +c]}. ${y[1] >= 60 ? y[1] / 60 + " saat" : y[1] + " dakika"} sürer, enerjin ${y[2]} düşer. Sonuç süre bitince Panel'e gelir.`,
+				"Başla", !du || !window.miniakentPanelEnerji, () => window.m802PanelBasla(s, +c, du ? du.enerji : 0, pb.uz));
+		}
+		else if (d.p802sef && m8()) {
+			const pb = panelBilgi();
+			onay802("Şefliğe aday ol", `Değerlendirme gün dönümünde (12:00). Aynı iş yerinde beğenisi en yüksek aday Şef olur; şimdiki beğenin ${pb.bg}.`
+				+ (pb.mr ? ` Şefin saatlik ücreti ${papel(pb.M8.sefUcret(pb.mr[0]))}.` : ""), "Aday ol", !pb.yk, () => window.m802SefAday(pb.yk, pb.bg));
+		}
 	});
 	function onay(tur, id) {
 		const il = IS_ILAN.concat(EV_ILAN).find((x) => x.id === id), fiyat = tur === "al" ? il.hemen : il.basvuru;
@@ -3521,6 +3724,10 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			sonParkur = window.miniakentParkurSurum;
 			if (sayfaAd === "etkinlik" && $("mkb-onay").hidden) ciz();
 		}
+		for (const el of document.querySelectorAll("[data-p802bit]")) {   // Panel görevinin geri sayımı
+			const t = kalanYaz(+el.dataset.p802bit - miniakentSimdi());
+			if (el.textContent !== t) el.textContent = t;
+		}
 		if (b !== sonBilgi || dk !== sonDk || window.m802Surum !== son802) {
 			sonBilgi = b; sonDk = dk; son802 = window.m802Surum;   // Test802 kayıtları değişince de
 			bilgi = window.miniakentKarakterBilgi || null;
@@ -3532,7 +3739,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611211243.pck","fileSizes":{"index-v202611211243.pck":9847200,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611211538.pck","fileSizes":{"index-v202611211538.pck":9849760,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
