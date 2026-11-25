@@ -805,7 +805,8 @@ try {
 				["panel/" + K, "panel"], ["sef", "sef"], ["sef_aday", "sefAday"]])
 				onValue(ref(db, P + yol), (s) => { v[ad] = s.val() || (ad === "kurs" ? null : {}); gelen.add(ad); yay(); isle(); }, (e) => console.warn("802 " + ad, e));
 			// Kişisel veriler kullanıcının kendi klasöründe (kullanıcı, 2026-11-25): kullanici/<karakter>/…
-			onValue(ref(db, "kullanici/" + K + "/favori"), (s) => { v.favori = s.val() || {}; gelen.add("favori"); yay(); isle(); }, (e) => console.warn("favori", e));
+			onValue(ref(db, "kullanici/" + K + "/favori"), (s) => { v.favori = s.val() || {}; gelen.add("favori"); yay(); isle(); },
+				(e) => { console.warn("favori", e); v.favori = {}; gelen.add("favori"); yay(); isle(); });   // izin yoksa da hazır say, 802 işleyişi durmasın
 			setInterval(() => { yay(); isle(); }, 30000);   // gün dönümü (12:00): kura, uzmanlık ve kurs günü
 			setInterval(() => {   // Panel görevi bitince sonuç hemen gelsin
 				if (Object.values(v.panel || {}).some((o) => o && !o.r && +o.bit <= miniakentSimdi() - 2000)) isle();
