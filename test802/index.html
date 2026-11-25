@@ -2853,7 +2853,7 @@ ${window.miniakent802 ? `<div class="ust"><div class="serit"><span id="mkb-nufus
 		$("mkb-baslik").textContent = yeniDuzen ? karakter : typeof s[0] === "function" ? s[0]() : s[0];
 		$("mkb-baslik").classList.toggle("kendim", !!yeniDuzen);
 		const ic = $("mkb-icerik"), y = ic.scrollTop;
-		ic.innerHTML = yeniDuzen ? s[1]() + altMenu() : s[1]();
+		ic.innerHTML = yeniDuzen && !(T8 && sayfaAd === "panel") ? s[1]() + altMenu() : s[1]();   // Panel'de alt menü yok (kullanıcı, 2026-11-25)
 		ic.scrollTop = y;
 	}
 	// sekmeler panel açıkken panelin sağ kenarına yapışır; tam ekranda gizlenir. Kumanda panel tam ekranken gizli,
