@@ -737,8 +737,8 @@ try {
 			const M8 = window.M802, K = anahtar(karakter), P = "t802/";
 			// Panel (2026-11-21): panel/<k>/<id> {s görev, c yol, b başlangıç, bit bitiş (ms), e enerji, u uzmanlık %, r sonuç
 			// {ok, bg, p}} · sef/<iş yeri> {k, b, n} (tek koltuk) · sef_aday/g<gün>/<iş yeri>/<k> {bg, t}
-			const v = { is: {}, uzm: {}, basvuru: {}, gider: {}, kurs: null, yet: {}, panel: {}, sef: {}, sefAday: {} }, gelen = new Set();
-			const YUK = 9;   // dinlenen kayıt sayısı
+			const v = { is: {}, uzm: {}, basvuru: {}, gider: {}, kurs: null, yet: {}, panel: {}, sef: {}, sefAday: {}, favori: {} }, gelen = new Set();
+			const YUK = 10;   // dinlenen kayıt sayısı
 			const yay = () => {
 				const oyun = { is: {}, uzm: {}, gider: M8.giderler(v.basvuru, v.gider, M8.gunNo(miniakentSimdi())) };
 				for (const [k, r] of Object.entries(v.is)) {
@@ -802,7 +802,7 @@ try {
 				isleniyor = false;
 			};
 			for (const [yol, ad] of [["is", "is"], ["uzm", "uzm"], ["basvuru", "basvuru"], ["gider", "gider"], ["kurs/" + K, "kurs"], ["yet/" + K, "yet"],
-				["panel/" + K, "panel"], ["sef", "sef"], ["sef_aday", "sefAday"]])
+				["panel/" + K, "panel"], ["sef", "sef"], ["sef_aday", "sefAday"], ["favori/" + K, "favori"]])
 				onValue(ref(db, P + yol), (s) => { v[ad] = s.val() || (ad === "kurs" ? null : {}); gelen.add(ad); yay(); isle(); }, (e) => console.warn("802 " + ad, e));
 			setInterval(() => { yay(); isle(); }, 30000);   // gün dönümü (12:00): kura, uzmanlık ve kurs günü
 			setInterval(() => {   // Panel görevi bitince sonuç hemen gelsin
@@ -820,6 +820,8 @@ try {
 			};
 			window.m802SefAday = (yer, bg) => set(ref(db, P + "sef_aday/g" + M8.gunNo(miniakentSimdi()) + "/" + yer + "/" + K),
 				{ bg: bg, t: serverTimestamp() }).catch((x) => console.warn("sef", x));
+			// Favoriler hesaba bağlı (kullanıcı, 2026-11-25): t802/favori/<karakter>/<ad> = true
+			window.m802FavoriYaz = (h, ekle) => set(ref(db, P + "favori/" + K + "/" + anahtar(h)), ekle ? true : null).catch((x) => console.warn("favori", x));
 			window.m802Basvur = (i) => set(ref(db, P + "basvuru/g" + M8.gunNo(miniakentSimdi()) + "/i" + i + "/" + K), serverTimestamp());
 			window.m802KursBasla = (id) => {
 				const kr = M8.KURS.find((x) => x[0] === id);
@@ -3356,11 +3358,16 @@ ${window.miniakent802 ? `<div class="ust"><div class="serit"><span id="mkb-nufus
 
 	// Favoriler (kullanıcı, 2026-11-25): sol üstteki yıldız; liste bu tarayıcıda saklanır, dokununca o karakter takip edilir
 	let favoriAcik = false;
-	function favoriListe() { try { return JSON.parse(localStorage.getItem("m802_favori") || "[]"); } catch (e) { return []; } }
-	function favoriMi(h) { return favoriListe().includes(h); }
+	function favoriListe() {
+		const v = window.m802;
+		if (v && v.K && window.m802FavoriYaz) return Object.keys(v.favori || {}).map((k) => k.replace(/,/g, "."));
+		try { return JSON.parse(localStorage.getItem("m802_favori") || "[]"); } catch (e) { return []; }
+	}
+	function favoriMi(h) { const a = String(h || "").toLowerCase(); return favoriListe().some((x) => x.toLowerCase() === a); }
 	function favoriDegis(h) {
-		const l = favoriListe(), i = l.indexOf(h);
-		if (i < 0) l.push(h); else l.splice(i, 1);
+		const l = favoriListe(), ekle = l.indexOf(h) < 0;
+		if (window.m802 && window.m802.K && window.m802FavoriYaz) { window.m802FavoriYaz(h, ekle); return; }
+		if (ekle) l.push(h); else l.splice(l.indexOf(h), 1);
 		try { localStorage.setItem("m802_favori", JSON.stringify(l)); } catch (e) {}
 	}
 	function favoriCiz() {
@@ -3869,6 +3876,7 @@ ${window.miniakent802 ? `<div class="ust"><div class="serit"><span id="mkb-nufus
 		}
 		if (b !== sonBilgi || dk !== sonDk || window.m802Surum !== son802) {
 			sonBilgi = b; sonDk = dk; son802 = window.m802Surum;   // Test802 kayıtları değişince de
+			if (favoriAcik) favoriCiz();   // favori listesi hesaptan gelir (kullanıcı, 2026-11-25)
 			bilgi = window.miniakentKarakterBilgi || null;
 			if (sayfaAd && $("mkb-onay").hidden && sayfaAd !== "gorunus") ciz();
 		}
