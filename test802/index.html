@@ -2144,6 +2144,8 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	transform: translateY(-105%); }
 #mkb.t802 .mkb-pano.ustten.acik { transform: none; }
 #mkb.t802 .mkb-pano.ustten.genis { height: calc(100% - 76px - env(safe-area-inset-bottom, 0px)); }
+/* "Tam ekran" düğmesi de Panel'de arama satırına kadar indirir (kullanıcı, 2026-11-25) */
+#mkb.t802 .mkb-pano.ustten.tam { top: 0; left: 0; width: 100%; height: calc(100% - 76px - env(safe-area-inset-bottom, 0px)); border-radius: 0 0 24px 24px; }
 @media (hover: hover) and (pointer: fine) and (min-width: 700px) {
 	/* geniş ekran (kullanıcı, 2026-11-25): Nüfus solda, Panel ortada, takvim ve yuvarlaklar en sağda */
 	#mkb.t802 .ust { width: calc(100% - 24px); justify-content: space-between; }
