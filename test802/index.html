@@ -7,8 +7,9 @@
 		<!-- Oyuncu sistemi canlıda (kullanıcı, 2026-11-11): yeni panel, giriş/kayıt, Kontrolü Al, kıyafet (kayıt yeri "kiyafet").
 		Test sayfası bu dosyadan üretilir; kendi ayarlarını (kiyafet_deneme, miniakentTest) bu betikten önce verir. -->
 		<script>window.miniakentKontrolDeneme = true; window.miniakentBeta = true; window.miniakentKiyafetYol = window.miniakentKiyafetYol || "kiyafet";
-		// Zamana bağlı yürüme denemesi (kullanıcı, 2026-11-25): ?zaman=1 ile açılır, ev-iş yolunda konum saatten hesaplanır
-		try { window.miniakentZamanYurume = new URLSearchParams(location.search).get("zaman") === "1"; } catch (e) {}
+		// Zamana bağlı yürüme (kullanıcı, 2026-11-26): test802'de VARSAYILAN AÇIK — ev-iş yolunda konum saatten hesaplanır,
+		// sekme arkaya düşüp dönünce kişi olması gereken yerde belirir. Kapatmak için ?zaman=0. Canlı sitede kapalı.
+		try { window.miniakentZamanYurume = new URLSearchParams(location.search).get("zaman") !== "0" && !!window.miniakent802; } catch (e) {}
 		// Lite sürüm (kullanıcı, 2026-11-09): seçim bu tarayıcıda saklanır; ilk açılışta telefonda açık, bilgisayarda kapalı.
 		// Oyun açılışta window.miniakentLiteAcik'i okur; Ayarlar'daki anahtar window.miniakentLiteSec(bool) çağırır.
 		(function () {
