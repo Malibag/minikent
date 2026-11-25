@@ -2171,6 +2171,13 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 #mkb.t802 .favori-p.acik { transform: none; }
 #mkb.t802 .ayarlar { width: 50%; max-width: none; }
 #mkb.t802 .sohbet-ekran { width: 50%; }
+/* Sohbet (kullanıcı, 2026-11-25): yazma alanına dokununca tam ekran olur; yazı alanı alt satıra geçip genişler,
+   mesaj yazısı küçülür (yarım ekranda yazacak yer kalmıyordu) */
+#mkb.t802 .sohbet-ekran.yazarken { width: 100%; }
+#mkb.t802 .sohbet-ekran .s-liste { font-size: 12.5px; gap: 5px; padding: 10px; }
+#mkb.t802 .sohbet-ekran .s-yaz { flex-wrap: wrap; row-gap: 6px; }
+#mkb.t802 .sohbet-ekran .s-yaz input { flex: 1 1 100%; font-size: 15px; padding: 9px 14px; }
+#mkb.t802 .sohbet-ekran .s-yaz button { margin-left: auto; padding: 7px 18px; }
 /* Panel üstten iner: ekranı sağdan sola kaplar, boyu yarım; parmakla aşağı çekilince arama satırına kadar */
 #mkb.t802 .mkb-pano.ustten { left: 0; top: 0; width: 100%; max-width: none; height: 50%; border-radius: 0 0 24px 24px; border-top: 0;
 	transform: translateY(-105%); }
@@ -3742,6 +3749,8 @@ ${window.miniakent802 ? `<div class="ust"><div class="serit"><span id="mkb-nufus
 		if (ac) { sonSohbet = window.miniakentSohbetSurum; sonKimler = ""; sKimlerCiz(); sohbetCiz(true); }
 		sNokta();
 	}
+	$("mkb-sohbet-yaz").addEventListener("focus", () => $("mkb-sohbet").classList.add("yazarken"));   // yazarken tam ekran (2026-11-25)
+	$("mkb-sohbet-yaz").addEventListener("blur", () => $("mkb-sohbet").classList.remove("yazarken"));
 	$("mkb-sohbet-ac").addEventListener("click", () => sohbetAc(true));
 	$("mkb-sohbet-kapat").addEventListener("click", () => sohbetAc(false));
 	$("mkb-s-form").addEventListener("submit", (e) => {
@@ -4088,7 +4097,5 @@ const engine = new Engine(GODOT_CONFIG);
 	}
 }());
 		</script>
-	
-<!-- yayin tetikleme 2026-11-25 20:57 -->
-</body>
+	</body>
 </html>
