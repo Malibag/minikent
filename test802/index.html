@@ -678,6 +678,31 @@ try {
 				window.miniakentSurusSurum = (window.miniakentSurusSurum || 0) + 1;
 			}, (e) => console.warn("surus", e));
 		}
+		// Oyuncunun karakterinin yeri (kullanıcı, 2026-11-25; test802): kendi karakteri saniyede bir yazar, bütün
+		// oturumlar okur; başka cihazda açık olan aynı karakter orada da aynı yerde yürür (scripts/resident_ui.gd).
+		// konum/<ad anahtarı> = {x, z, y, r, t}; 12 saniye yeni kayıt gelmezse oyun kendi yürüyüşüne döner.
+		if (window.miniakent802) {
+			// Aynı karakter iki cihazda açıksa biri yazar, öbürü izler: kayıttaki oturum kimliği (s) sahibi belirler,
+			// 8 saniye yenilenmezse sahiplik boşalır. window.miniakentKonumSahip false ise oyun kendi karakterini de
+			// gelen konuma koyar (scripts/resident_ui.gd).
+			const kSid = Math.random().toString(36).slice(2, 10);
+			let kVeri = {};
+			window.miniakentKonumSahip = true;
+			window.miniakentKonumYaz = (j) => {
+				if (!karakter || !auth.currentUser) return Promise.resolve();
+				const k = anahtar(karakter), v = kVeri[k], simdi = Date.now();
+				const bos = !v || !v.t || simdi - v.t > 8000, benim = !!v && v.s === kSid;
+				window.miniakentKonumSahip = bos || benim;
+				if (!j) return window.miniakentKonumSahip ? set(ref(db, V8 + "konum/" + k), null).catch((e) => console.warn("konum", e)) : Promise.resolve();
+				if (!window.miniakentKonumSahip) return Promise.resolve();
+				return set(ref(db, V8 + "konum/" + k), Object.assign(JSON.parse(j), { s: kSid, t: serverTimestamp() })).catch((e) => console.warn("konum", e));
+			};
+			onValue(ref(db, V8 + "konum"), (s) => {
+				kVeri = s.val() || {};
+				window.miniakentKonumAkis = JSON.stringify(kVeri);
+				window.miniakentKonumSurum = (window.miniakentKonumSurum || 0) + 1;
+			}, (e) => console.warn("konum", e));
+		}
 		// Jetski Parkur Challenge sıralaması (kullanıcı, 2026-11-20; test802): oyun ayı başına (12:00 TR'de döner) kişinin en
 		// iyi puanı t802/jetski_parkur/a<gün no>/<ad anahtarı> = {p, t}; kural yalnız daha yüksek puanı kabul eder
 		if (V8 && window.M802) {
@@ -3900,7 +3925,7 @@ ${window.miniakent802 ? `<div class="ust"><div class="serit"><span id="mkb-nufus
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test802/index-802-v202611251713.pck","fileSizes":{"test802/index-802-v202611251713.pck":9936160,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test802/index-802-v202611251844.pck","fileSizes":{"test802/index-802-v202611251844.pck":9937552,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
