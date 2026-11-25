@@ -2144,6 +2144,11 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	transform: translateY(-105%); }
 #mkb.t802 .mkb-pano.ustten.acik { transform: none; }
 #mkb.t802 .mkb-pano.ustten.genis { height: calc(100% - 76px - env(safe-area-inset-bottom, 0px)); }
+/* Başkasının kartı sağdan gelir ve sağda kalır (kullanıcı, 2026-11-25) */
+#mkb.t802 .mkb-pano.sagdan { left: auto; right: 0; width: 50%; max-width: none; border-left: 3px solid var(--kenar); border-right: 0;
+	border-radius: 24px 0 0 24px; transform: translateX(105%); }
+#mkb.t802 .mkb-pano.sagdan.acik { transform: none; }
+#mkb.t802 .mkb-pano.sagdan.tam { right: 0; left: 0; width: 100%; border-radius: 0; }
 /* "Tam ekran" düğmesi de Panel'de arama satırına kadar indirir (kullanıcı, 2026-11-25) */
 #mkb.t802 .mkb-pano.ustten.tam { top: 0; left: 0; width: 100%; height: calc(100% - 76px - env(safe-area-inset-bottom, 0px)); border-radius: 0 0 24px 24px; }
 @media (hover: hover) and (pointer: fine) and (min-width: 700px) {
@@ -2901,6 +2906,7 @@ ${window.miniakent802 ? `<div class="ust"><div class="serit"><span id="mkb-nufus
 		if (ayarlarAcik) ayarlarAc(false);   // kart, profil ve "Şu an şehirde" aynı anda açık kalmaz (kullanıcı, 2026-11-17)
 		if (sehirdeAcik) sehirdeAc(false);
 		$("mkb-pano").classList.toggle("ustten", T8 && ad === "panel");   // Panel üstten iner (kullanıcı, 2026-11-25)
+		$("mkb-pano").classList.toggle("sagdan", T8 && ad === "sakin");   // başkasının kartı sağdan (kullanıcı, 2026-11-25)
 		if (!(T8 && ad === "panel")) $("mkb-pano").classList.remove("genis");
 		$("mkb-pano").classList.add("acik");
 		$("mkb-pano").setAttribute("aria-hidden", "false");
@@ -3786,7 +3792,7 @@ ${window.miniakent802 ? `<div class="ust"><div class="serit"><span id="mkb-nufus
 			bolge.hidden = true;
 			rozetGetir(secilen.handle);
 			// test sayfasında dokunuş yalnız seçer ve takip eder; kart "@ad takipte" yazısından (kullanıcı, 2026-11-17)
-			if (!YENI || kartIste) ac(secilen.handle === karakter ? "kisi" : "sakin");
+			if (!YENI || kartIste || (T8 && secilen.handle !== karakter)) ac(secilen.handle === karakter ? "kisi" : "sakin");   // 802: başkasına dokununca kartı açılır (kullanıcı, 2026-11-25)
 			kartIste = false;
 		}
 		// oyunda bir binaya dokunuldu: bina kartı
