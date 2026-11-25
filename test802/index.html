@@ -2145,9 +2145,12 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 #mkb.t802 .mkb-pano.ustten.acik { transform: none; }
 #mkb.t802 .mkb-pano.ustten.genis { height: calc(100% - 76px - env(safe-area-inset-bottom, 0px)); }
 @media (hover: hover) and (pointer: fine) and (min-width: 700px) {
-	#mkb.t802 #mkb-disli { position: absolute; right: auto; left: calc(12px + var(--en) - 38px); top: calc(80px + env(safe-area-inset-top, 0px)); }
-	#mkb.t802 .foto-alt { left: calc(12px + var(--en) - 84px); right: auto; }
-	#mkb.t802 .sehirde-alt, #mkb.t802 .sohbet-alt { left: calc(12px + var(--en) - 38px); right: auto; }
+	/* geniş ekran (kullanıcı, 2026-11-25): Nüfus solda, Panel ortada, takvim ve yuvarlaklar en sağda */
+	#mkb.t802 .ust { width: calc(100% - 24px); justify-content: space-between; }
+	#mkb.t802 .ust .serit { flex: 0 0 min(230px, 28%); }
+	#mkb.t802 #mkb-disli { position: absolute; left: auto; right: 12px; top: calc(80px + env(safe-area-inset-top, 0px)); }
+	#mkb.t802 .foto-alt { left: auto; right: 58px; }
+	#mkb.t802 .sehirde-alt, #mkb.t802 .sohbet-alt { left: auto; right: 12px; }
 }
 /* bilgisayarda (fare, geniş ekran) ayarlar, ses ve Bölgeler sağ kenarda (kullanıcı, 2026-11-08) */
 @media (hover: hover) and (pointer: fine) and (min-width: 700px) {
