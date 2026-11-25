@@ -2888,9 +2888,10 @@ ${window.miniakent802 ? `<div class="ust"><div class="serit"><span id="mkb-nufus
 	// Karakterim en son açık kalan sekmeyle açılır (kullanıcı, 2026-11-17); ilk kez Finans
 	var sonSekme = "finans";   // var: ac() erken çağrılırsa da hata vermesin
 	try { sonSekme = localStorage.getItem("mkb_sekme") || "finans"; } catch (e) {}
+	if (sonSekme === "panel") sonSekme = "durum";   // Panel ayrı bölüm (kullanıcı, 2026-11-25): kişi kartı Panel'de açılmaz
 	function ac(ad) {
 		if (YENI && ad === "kisi") ad = sonSekme;
-		if (["durum", "gorunus", "finans", "ilan", "etkinlik", "panel"].includes(ad)) {
+		if (["durum", "gorunus", "finans", "ilan", "etkinlik"].includes(ad)) {   // Panel hatırlanmaz (kullanıcı, 2026-11-25)
 			sonSekme = ad;
 			try { localStorage.setItem("mkb_sekme", ad); } catch (e) {}
 		}
