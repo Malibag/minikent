@@ -2150,7 +2150,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 #mkb.t802 .mkb-pano.ustten.acik { transform: none; }
 #mkb.t802 .mkb-pano.ustten.genis { height: calc(100% - 76px - env(safe-area-inset-bottom, 0px)); }
 /* Başkasının kartı sağdan gelir ve sağda kalır (kullanıcı, 2026-11-25) */
-#mkb.t802 .mkb-pano.sagdan { left: auto; right: 0; width: 50%; max-width: none; border-left: 3px solid var(--kenar); border-right: 0;
+#mkb.t802 .mkb-pano.sagdan { left: auto; right: 0; width: min(85%, 420px); max-width: none; border-left: 3px solid var(--kenar); border-right: 0;
 	border-radius: 24px 0 0 24px; transform: translateX(105%); }
 #mkb.t802 .mkb-pano.sagdan.acik { transform: none; }
 #mkb.t802 .mkb-pano.sagdan.tam { right: 0; left: 0; width: 100%; border-radius: 0; }
@@ -2163,6 +2163,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	#mkb.t802 #mkb-disli { position: absolute; left: auto; right: 12px; top: calc(80px + env(safe-area-inset-top, 0px)); }
 	#mkb.t802 .foto-alt { left: auto; right: 58px; }
 	#mkb.t802 .sehirde-alt, #mkb.t802 .sohbet-alt { left: auto; right: 12px; }
+	#mkb.t802 .mkb-pano.sagdan { width: min(50%, 520px); }   /* geniş ekranda yarım, telefonda dar kalmasın (kullanıcı, 2026-11-25) */
 }
 /* bilgisayarda (fare, geniş ekran) ayarlar, ses ve Bölgeler sağ kenarda (kullanıcı, 2026-11-08) */
 @media (hover: hover) and (pointer: fine) and (min-width: 700px) {
@@ -3368,8 +3369,15 @@ ${window.miniakent802 ? `<div class="ust"><div class="serit"><span id="mkb-nufus
 	}
 	function favoriMi(h) { const a = String(h || "").toLowerCase(); return favoriListe().some((x) => x.toLowerCase() === a); }
 	function favoriDegis(h) {
-		const l = favoriListe(), ekle = l.indexOf(h) < 0;
-		if (window.m802 && window.m802.K && window.m802FavoriYaz) { window.m802FavoriYaz(h, ekle); return; }
+		const l = favoriListe(), ekle = !favoriMi(h);
+		if (window.m802 && window.m802.K && window.m802FavoriYaz) {
+			const anah = String(h || "").replace(/^@/, "").toLowerCase().replace(/\./g, ",");
+			const y = Object.assign({}, window.m802.favori || {});   // ekranda hemen görünsün, sunucu yanıtı beklenmesin
+			if (ekle) y[anah] = true; else delete y[anah];
+			window.m802.favori = y;
+			window.m802FavoriYaz(h, ekle);
+			return;
+		}
 		if (ekle) l.push(h); else l.splice(l.indexOf(h), 1);
 		try { localStorage.setItem("m802_favori", JSON.stringify(l)); } catch (e) {}
 	}
@@ -3410,9 +3418,12 @@ ${window.miniakent802 ? `<div class="ust"><div class="serit"><span id="mkb-nufus
 	if (T8) {
 		$("mkb-favori").addEventListener("click", () => favoriAc(!favoriAcik));
 		$("mkb-favori-kapat").addEventListener("click", () => favoriAc(false));
-		$("mkb-favori-liste").addEventListener("click", (e) => {
+		$("mkb-favori-liste").addEventListener("click", (e) => {   // favoriye dokununca o kişi seçilir ve kartı açılır
 			const b = e.target.closest("button[data-takip]");
-			if (b) window.miniakentTakip && window.miniakentTakip(b.dataset.takip);
+			if (!b) return;
+			favoriAc(false);
+			if (secilen && secilen.handle === b.dataset.takip) ac("sakin");
+			else { kartIste = true; if (window.minikentSearch) window.minikentSearch(b.dataset.takip); else if (window.miniakentTakip) window.miniakentTakip(b.dataset.takip); }
 		});
 		$("mkb-panel-ac").addEventListener("click", () => { if (sayfaAd === "panel") kapat(); else { ac("panel"); panelGoruldu(); } });
 		$("mkb-sohbet-yuv").addEventListener("click", () => sohbetAc(true));
