@@ -2118,6 +2118,37 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	background: none; font: 600 13px var(--fb); color: var(--yazi); cursor: pointer; }
 #mkb .amenu svg { width: 18px; height: 18px; }
 @media (prefers-reduced-motion: reduce) { #mkb .mkb-pano, #mkb .ray, #mkb .sehirde, #mkb .ayarlar { transition: none; } }
+/* Test802 düzeni (kullanıcı, 2026-11-25): üstte ortada Panel, sağda alt alta yuvarlaklar, sol üstte Favoriler, ses Profil'de */
+#mkb.t802 .ust { align-items: stretch; }
+#mkb.t802 .ust .serit { flex: 1 1 0; min-width: 0; justify-content: center; text-align: center; white-space: pre-line; }
+#mkb.t802 .ust .serit span { white-space: pre-line; }
+#mkb.t802 .ust .saatk .saat { margin-left: 0; text-align: center; }
+#mkb.t802 .panelk { position: relative; background: #f3c04a; font-weight: 800; }
+#mkb.t802 .panelk .rozet { position: absolute; top: -9px; right: -9px; min-width: 21px; height: 21px; border-radius: 11px; background: #d22630; color: #fff;
+	font-size: 12px; font-weight: 800; display: grid; place-items: center; padding: 0 5px; border: 2px solid var(--krem); }
+#mkb.t802 .favori-alt { position: absolute; top: calc(80px + env(safe-area-inset-top, 0px)); left: 12px; }
+#mkb.t802 .cevrim { top: calc(90px + env(safe-area-inset-top, 0px)); left: 60px; }   /* yıldızın yanına */
+#mkb.t802 .disli-alt { position: absolute; top: calc(80px + env(safe-area-inset-top, 0px)); left: calc(12px + var(--en) - 38px); }
+#mkb.t802 .foto-alt { top: calc(80px + env(safe-area-inset-top, 0px)); left: calc(12px + var(--en) - 84px); }
+#mkb.t802 .sehirde-alt { top: calc(126px + env(safe-area-inset-top, 0px)); left: calc(12px + var(--en) - 38px); }
+#mkb.t802 .sohbet-alt { position: absolute; top: calc(172px + env(safe-area-inset-top, 0px)); left: calc(12px + var(--en) - 38px); }
+#mkb.t802 .ses-alt, #mkb.t802 #mkb-sohbet-ac { display: none; }
+#mkb.t802 .sehirde { top: calc(126px + env(safe-area-inset-top, 0px)); width: 50%; max-height: calc(100% - 200px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px)); }
+#mkb.t802 .favori-p { left: 0; right: auto; top: calc(80px + env(safe-area-inset-top, 0px)); border-right: 3px solid var(--kenar); border-left: 0;
+	border-radius: 0 24px 24px 0; transform: translateX(-105%); }
+#mkb.t802 .favori-p.acik { transform: none; }
+#mkb.t802 .ayarlar { width: 50%; max-width: none; }
+#mkb.t802 .sohbet-ekran { width: 50%; }
+/* Panel üstten iner: ekranı sağdan sola kaplar, boyu yarım; parmakla aşağı çekilince arama satırına kadar */
+#mkb.t802 .mkb-pano.ustten { left: 0; top: 0; width: 100%; max-width: none; height: 50%; border-radius: 0 0 24px 24px; border-top: 0;
+	transform: translateY(-105%); }
+#mkb.t802 .mkb-pano.ustten.acik { transform: none; }
+#mkb.t802 .mkb-pano.ustten.genis { height: calc(100% - 76px - env(safe-area-inset-bottom, 0px)); }
+@media (hover: hover) and (pointer: fine) and (min-width: 700px) {
+	#mkb.t802 #mkb-disli { position: absolute; right: auto; left: calc(12px + var(--en) - 38px); top: calc(80px + env(safe-area-inset-top, 0px)); }
+	#mkb.t802 .foto-alt { left: calc(12px + var(--en) - 84px); right: auto; }
+	#mkb.t802 .sehirde-alt, #mkb.t802 .sohbet-alt { left: calc(12px + var(--en) - 38px); right: auto; }
+}
 /* bilgisayarda (fare, geniş ekran) ayarlar, ses ve Bölgeler sağ kenarda (kullanıcı, 2026-11-08) */
 @media (hover: hover) and (pointer: fine) and (min-width: 700px) {
 	#mkb #mkb-disli { position: fixed; right: 12px; top: calc(12px + env(safe-area-inset-top, 0px)); }
@@ -2130,6 +2161,8 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	document.head.appendChild(css);
 
 	const SVG = {
+		yildiz: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.6l2.9 5.9 6.5.95-4.7 4.6 1.1 6.45L12 17.5l-5.8 3 1.1-6.45-4.7-4.6 6.5-.95z"/></svg>',
+		sohbet: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M5.5 3.5h13A2.5 2.5 0 0121 6v8a2.5 2.5 0 01-2.5 2.5H9.8L5 20.4V16.5A2.5 2.5 0 013 14V6a2.5 2.5 0 012.5-2.5z"/></svg>',
 		foto: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"><path d="M3.5 8h3.5l2-3h6l2 3h3.5v11h-17z"/><circle cx="12" cy="13" r="3.6"/></svg>',
 		// çevrimiçi (kullanıcının gönderdiği simge, 2026-11-16): dört kişi, biri önde
 		kisiler: '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="16" cy="7.5" r="2.8"/><path d="M11.8 15.2a4.6 4.6 0 0 1 8.4 0"/><circle cx="8.6" cy="13.8" r="2.8"/><path d="M3.4 23a5.6 5.6 0 0 1 8.9-4.2"/><circle cx="23.4" cy="13.8" r="2.8"/><path d="M28.6 23a5.6 5.6 0 0 0-8.9-4.2"/><circle cx="16" cy="18.2" r="3.2"/><path d="M9.6 28.5a6.4 6.4 0 0 1 12.8 0"/></svg>',
@@ -2149,10 +2182,19 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	};
 	const kok = document.createElement("div");
 	kok.id = "mkb";
+	if (window.miniakent802) kok.classList.add("t802");   // test802 düzeni (kullanıcı, 2026-11-25)
 	kok.hidden = true;
 	kok.innerHTML = `
-<div class="ust"><div class="serit"><span id="mkb-nufus"></span><span class="saat" id="mkb-saat"></span></div>
-	<button class="yuvarlak" id="mkb-disli" aria-label="Profil" aria-expanded="false">${SVG.kisi}</button></div>
+${window.miniakent802 ? `<div class="ust"><div class="serit"><span id="mkb-nufus"></span></div>
+	<button class="serit panelk" id="mkb-panel-ac"><b>Panel</b><span class="rozet" id="mkb-panel-sayi" hidden></span></button>
+	<div class="serit saatk"><span class="saat" id="mkb-saat"></span></div></div>
+<button class="yuvarlak favori-alt" id="mkb-favori" aria-label="Favoriler" aria-expanded="false">${SVG.yildiz}</button>
+<button class="yuvarlak disli-alt" id="mkb-disli" aria-label="Profil" aria-expanded="false">${SVG.kisi}</button>
+<button class="yuvarlak sohbet-alt" id="mkb-sohbet-yuv" aria-label="Şehir sohbeti" hidden>${SVG.sohbet}</button>
+<section class="sehirde favori-p" id="mkb-favori-p" aria-hidden="true"><div class="bas"><h2>Favoriler</h2>
+	<button class="ikon" id="mkb-favori-kapat" aria-label="Kapat">${SVG.kapat}</button></div>
+	<div class="liste" id="mkb-favori-liste"></div><small id="mkb-favori-not"></small></section>` : `<div class="ust"><div class="serit"><span id="mkb-nufus"></span><span class="saat" id="mkb-saat"></span></div>
+	<button class="yuvarlak" id="mkb-disli" aria-label="Profil" aria-expanded="false">${SVG.kisi}</button></div>`}
 <div class="ust2"><form class="arama" id="mkb-arama"><input id="mkb-ara" type="search" placeholder="Sakinini bul: @kullanıcıadı" autocomplete="off"
 	autocapitalize="none" spellcheck="false" enterkeyhint="search" aria-label="Sakinini bul"><button class="cip" type="submit">Bul</button></form>
 	<button class="cip" id="mkb-sohbet-ac" hidden>Sohbet</button><button class="cip" id="mkb-bolgeler">Bölgeler</button></div>
@@ -2215,6 +2257,8 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	<button class="anahtar" role="switch" aria-checked="false" id="mkb-a-kumanda"><b>Kumanda</b><small>Ekranın sağ altında yön kumandası</small><i></i></button>
 	<hr id="mkb-a-cizgi">
 	<button class="anahtar" role="switch" aria-checked="false" id="mkb-a-lite"><b>Lite sürüm</b><small>Telefon için hafif görünüm</small><i></i></button>
+	<hr id="mkb-a-cizgi3" hidden>
+	<button class="anahtar" role="switch" aria-checked="true" id="mkb-a-ses" hidden><b>Ses</b><small>Şehrin sesleri</small><i></i></button>
 	<hr id="mkb-a-cizgi2">
 	<button class="ayril" id="mkb-ayril"><b>Çıkış Yap</b><small id="mkb-ayril-not">Karakterin otomatik moda döner</small></button>
 	<button class="p-dugme kirmizi" id="mkb-p-sil">Hesabımı sil</button>
@@ -2660,7 +2704,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	const suzgec = (m) => KUFUR.reduce((a, r) => a.replace(r, (w) => "*".repeat(w.length)), String(m || ""));
 	function altMenu() {
 		const m = [["durum", "Durum", MENU_SVG.durum], ["gorunus", "Görünüş", SVG.gorunus], ["finans", "Finans", MENU_SVG.para], ["ilan", "İlanlar", MENU_SVG.ilan]];
-		if (T8) m.push(["panel", "Panel", MENU_SVG.panel]);   // Panel (kullanıcı, 2026-11-21)
+		// Panel üst satıra taşındı (kullanıcı, 2026-11-25): alt menüde yok
 		return `<nav class="amenu">${m.map((x) => `<button data-menu="${x[0]}" aria-selected="${sayfaAd === x[0]}">${x[2]}<span>${x[1]}</span></button>`).join("")}
 			<button class="etk" data-menu="etkinlik" aria-selected="${sayfaAd === "etkinlik"}">Etkinlikler</button></nav>`;
 	}
@@ -2779,7 +2823,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		return h + `<p class="bilgi">Bir etkinlik 1 oyun saati sürer, ücreti varınca ödenir. Taksi ${papel(20)}; yürümek ücretsiz. Değerler oyun saati başına.</p>`;
 		}],
 		ilan: ["Karakterim", () => T8 ? ilan802() : `<div class="kutu bos"><p class="bilgi">Şu an açık ilan yok. İlanlar gün içinde farklı saatlerde çıkar.</p></div>`],
-		panel: ["Karakterim", () => T8 ? panel802() : ""],
+		panel: ["Panel", () => T8 ? panel802() : ""],   // üstten iner (kullanıcı, 2026-11-25)
 		bina: [() => bina.baslik, () => `${bina.kasa && bina.kasa.toplam != null && window.miniakentEkonomi ? `<div class="kutu"><span class="etiket">Belediye kasası</span><h3>${papel(bina.kasa.toplam)}</h3>
 			<div class="satir"><span>Son ay vergi</span><b>${papel(bina.kasa.vergi)}</b></div><div class="satir"><span>Son ay kira</span><b>${papel(bina.kasa.kira)}</b></div></div>` : ""}${bina.alt ? `<p class="bilgi">${esc(bina.alt)}</p>` : ""}${bina.is ? binaGrup("is") : ""}${bina.ev ? binaGrup("ev") : ""}`],
 		// başka sakinin kartı: para ve göstergeler, Evini/İş yerini göster; kostüm yalnız etkinlik süresince (kullanıcı, 2026-11-05)
@@ -2789,6 +2833,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			return kart({ handle: s.handle, meslek: s.meslek || "—", yer: s.isyeri, ev: s.ev || "—" },
 				m.tatil ? "Tatilde" : m.iste ? "İşte" : "Evde", m.iste) + ekoKutu(s.ekonomi, false) + `
 			<div class="ikili"><button class="hayir" data-evgoster="1">Evini göster</button>${s.is_var ? `<button class="hayir" data-isgoster="1">İş yerini göster</button>` : ""}</div>
+			${T8 ? `<div class="ikili"><button class="hayir" data-fav="${esc(s.handle)}">${favoriMi(s.handle) ? "Favoriden çıkar" : "Favorilere al"}</button></div>` : ""}
 			${dogrulandiMi ? `<div class="ikili"><button class="evet" data-bogulsakin="1" ${m.iste ? "disabled" : ""}>Boğulmaya gönder</button></div>` : ""}
 			${karakter ? "" : rozetler[s.handle] ? `<p class="bilgi">Bu karakterin kontrolü sahibinde.</p>` : `<div class="ikili"><button class="evet" data-kontrol="1">Kontrolü Al</button></div>`}
 			${kostumVar() ? (kostumAcik ? kostumIzgara(s.handle) : `<button class="git" data-kostumac="1"><b>Kostüm giydir</b><span>Cadılar Bayramı kostümleri</span><em>40 kostüm</em></button>`) : ""}`;
@@ -2849,6 +2894,8 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		sayfaAd = ad; kostumAcik = false; binaTum = {};
 		if (ayarlarAcik) ayarlarAc(false);   // kart, profil ve "Şu an şehirde" aynı anda açık kalmaz (kullanıcı, 2026-11-17)
 		if (sehirdeAcik) sehirdeAc(false);
+		$("mkb-pano").classList.toggle("ustten", T8 && ad === "panel");   // Panel üstten iner (kullanıcı, 2026-11-25)
+		if (!(T8 && ad === "panel")) $("mkb-pano").classList.remove("genis");
 		$("mkb-pano").classList.add("acik");
 		$("mkb-pano").setAttribute("aria-hidden", "false");
 		ciz(); arayuz();
@@ -3295,6 +3342,75 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		if (b) window.miniakentTakip && window.miniakentTakip(b.dataset.takip);
 	});
 
+	// Favoriler (kullanıcı, 2026-11-25): sol üstteki yıldız; liste bu tarayıcıda saklanır, dokununca o karakter takip edilir
+	let favoriAcik = false;
+	function favoriListe() { try { return JSON.parse(localStorage.getItem("m802_favori") || "[]"); } catch (e) { return []; } }
+	function favoriMi(h) { return favoriListe().includes(h); }
+	function favoriDegis(h) {
+		const l = favoriListe(), i = l.indexOf(h);
+		if (i < 0) l.push(h); else l.splice(i, 1);
+		try { localStorage.setItem("m802_favori", JSON.stringify(l)); } catch (e) {}
+	}
+	function favoriCiz() {
+		const l = favoriListe();
+		$("mkb-favori-liste").innerHTML = l.map((h) => `<button data-takip="${esc(h)}">@${esc(h)}</button>`).join("");
+		$("mkb-favori-not").textContent = l.length ? "" : "Bir sakine dokun, kartından Favorilere al.";
+	}
+	function favoriAc(a) {
+		favoriAcik = a;
+		$("mkb-favori-p").classList.toggle("acik", a);
+		$("mkb-favori-p").setAttribute("aria-hidden", String(!a));
+		$("mkb-favori").setAttribute("aria-expanded", String(a));
+		if (a) favoriCiz();
+	}
+	// Panel rozeti (kullanıcı, 2026-11-25): biten görevlerin sonucu + o gün çıkan yeni görevler; Panel açılınca sıfırlanır
+	function panelGorulen() { try { return JSON.parse(localStorage.getItem("m802_panel_gor") || "{}"); } catch (e) { return {}; } }
+	function panelSayi() {
+		const M8 = window.M802, v = window.m802;
+		if (!M8 || !v || !v.hazir) return 0;
+		const ol = Object.entries(v.panel || {}).map(([id, o]) => Object.assign({ id: id }, o)).filter((o) => o && o.b);
+		const g = panelGorulen(), gor = g.ids || [], now = miniakentSimdi(), gn = M8.gunNo(now);
+		let sayi = ol.filter((o) => o.r && gor.indexOf(o.id) < 0).length;
+		if (!ol.some((o) => !o.r) && g.gun !== gn) {
+			const pb = panelBilgi(), bugun = ol.filter((o) => M8.gunNo(o.b) === gn).length;
+			if (pb && bugun < M8.PANEL.GUNLUK) sayi += (M8.gorevler(pb.alan, ol.length) || []).length;
+		}
+		return sayi;
+	}
+	function panelGoruldu() {
+		const M8 = window.M802, v = window.m802;
+		if (!M8 || !v) return;
+		const ids = Object.entries(v.panel || {}).filter((x) => x[1] && x[1].r).map((x) => x[0]);
+		try { localStorage.setItem("m802_panel_gor", JSON.stringify({ gun: M8.gunNo(miniakentSimdi()), ids: ids })); } catch (e) {}
+		const r = $("mkb-panel-sayi");
+		if (r) { r.hidden = true; r.textContent = ""; }
+	}
+	if (T8) {
+		$("mkb-favori").addEventListener("click", () => favoriAc(!favoriAcik));
+		$("mkb-favori-kapat").addEventListener("click", () => favoriAc(false));
+		$("mkb-favori-liste").addEventListener("click", (e) => {
+			const b = e.target.closest("button[data-takip]");
+			if (b) window.miniakentTakip && window.miniakentTakip(b.dataset.takip);
+		});
+		$("mkb-panel-ac").addEventListener("click", () => { if (sayfaAd === "panel") kapat(); else { ac("panel"); panelGoruldu(); } });
+		$("mkb-sohbet-yuv").addEventListener("click", () => sohbetAc(true));
+		$("mkb-a-cizgi3").hidden = false;
+		$("mkb-a-ses").hidden = false;
+		$("mkb-a-ses").addEventListener("click", () => window.miniakentSes && window.miniakentSes());
+		// Panel üstten: parmakla aşağı çekilince arama satırına kadar uzar, yukarı çekilince toplanır
+		let pY = null;
+		$("mkb-pano").addEventListener("pointerdown", (e) => {
+			pY = $("mkb-pano").classList.contains("ustten") && !e.target.closest("button, input, a") ? e.clientY : null;
+		});
+		$("mkb-pano").addEventListener("pointerup", (e) => {
+			if (pY === null) return;
+			const dy = e.clientY - pY;
+			pY = null;
+			if (dy > 40) $("mkb-pano").classList.add("genis");
+			else if (dy < -40) { if ($("mkb-pano").classList.contains("genis")) $("mkb-pano").classList.remove("genis"); else kapat(); }
+		});
+	}
+
 	// takip düğmeleri
 	$("mkb-goz").addEventListener("click", () => window.miniakentGoz && window.miniakentGoz());
 	$("mkb-hizli").addEventListener("click", () => window.miniakentHizli && window.miniakentHizli());
@@ -3375,6 +3491,8 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		else if (d.k802iptal && m8() && window.m802.kurs) {
 			onay802("Kursu iptal et", `Biriken günler silinir, ${papel(Math.round((window.m802.kurs.u || 0) / 2))} geri verilir.`, "İptal et", false, () => window.m802KursIptal());
 		}
+		// Favoriler (kullanıcı, 2026-11-25): sakin kartından ekle/çıkar
+		else if (d.fav) { favoriDegis(d.fav); ciz(); if (favoriAcik) favoriCiz(); }
 		// Panel (2026-11-21): görev başlat, Şefliğe aday ol
 		else if (d.p802 && m8()) {
 			const [s, c] = d.p802.split("|"), pb = panelBilgi(), g = pb.M8.gorevBul(s), y = pb.M8.YOL[+c], du = dur();
@@ -3672,9 +3790,10 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			bolge.hidden = true;
 			ac("bina");
 		}
-		$("mkb-nufus").textContent = "Nüfus: " + sayi(hud.nufus) + " · Bekleyen: " + sayi(hud.bekleyen);
+		$("mkb-nufus").textContent = "Nüfus: " + sayi(hud.nufus) + (window.miniakent802 ? "\n" : " · ") + "Bekleyen: " + sayi(hud.bekleyen);
 		$("mkb-saat").textContent = takvim(hud.saat);
 		$("mkb-ses").innerHTML = hud.sessiz ? SVG.sessiz : SVG.ses;
+		$("mkb-a-ses").setAttribute("aria-checked", String(!hud.sessiz));   // ses anahtarı Profil'de (2026-11-25)
 		if (sehirdeAcik) sehirdeCiz();
 		// kare hızı (yalnız test sayfası; kullanıcı, 2026-11-09: Lite açık/kapalı farkı telefonda görülsün)
 		$("mkb-fps").hidden = !(window.miniakentTest && hud.fps >= 0);  // yalnız test sayfasında
@@ -3714,6 +3833,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			arayuz();
 		}
 		$("mkb-sohbet-ac").hidden = !window.miniakentSohbetYaz;   // şehir sohbeti yalnız izinli hesapta
+		if (T8) $("mkb-sohbet-yuv").hidden = !window.miniakentSohbetYaz;
 		if (window.miniakentSohbetSurum !== sonSohbet) { sonSohbet = window.miniakentSohbetSurum; if (sohbetAcik) sohbetCiz(false); sNokta(); }
 		if (sohbetAcik) sKimlerCiz();
 		const b = JSON.stringify(window.miniakentKarakterBilgi || null);
@@ -3726,6 +3846,10 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		if (window.miniakentParkurSurum !== sonParkur) {   // parkur sıralaması (test802)
 			sonParkur = window.miniakentParkurSurum;
 			if (sayfaAd === "etkinlik" && $("mkb-onay").hidden) ciz();
+		}
+		if (T8) {   // Panel rozeti
+			const sy = panelSayi(), r = $("mkb-panel-sayi");
+			if (r) { r.hidden = !sy; r.textContent = sy ? String(sy) : ""; }
 		}
 		for (const el of document.querySelectorAll("[data-p802bit]")) {   // Panel görevinin geri sayımı
 			const t = kalanYaz(+el.dataset.p802bit - miniakentSimdi());
@@ -3905,4 +4029,3 @@ const engine = new Engine(GODOT_CONFIG);
 		</script>
 	</body>
 </html>
-
