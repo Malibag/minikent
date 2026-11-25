@@ -802,8 +802,10 @@ try {
 				isleniyor = false;
 			};
 			for (const [yol, ad] of [["is", "is"], ["uzm", "uzm"], ["basvuru", "basvuru"], ["gider", "gider"], ["kurs/" + K, "kurs"], ["yet/" + K, "yet"],
-				["panel/" + K, "panel"], ["sef", "sef"], ["sef_aday", "sefAday"], ["favori/" + K, "favori"]])
+				["panel/" + K, "panel"], ["sef", "sef"], ["sef_aday", "sefAday"]])
 				onValue(ref(db, P + yol), (s) => { v[ad] = s.val() || (ad === "kurs" ? null : {}); gelen.add(ad); yay(); isle(); }, (e) => console.warn("802 " + ad, e));
+			// Kişisel veriler kullanıcının kendi klasöründe (kullanıcı, 2026-11-25): kullanici/<karakter>/…
+			onValue(ref(db, "kullanici/" + K + "/favori"), (s) => { v.favori = s.val() || {}; gelen.add("favori"); yay(); isle(); }, (e) => console.warn("favori", e));
 			setInterval(() => { yay(); isle(); }, 30000);   // gün dönümü (12:00): kura, uzmanlık ve kurs günü
 			setInterval(() => {   // Panel görevi bitince sonuç hemen gelsin
 				if (Object.values(v.panel || {}).some((o) => o && !o.r && +o.bit <= miniakentSimdi() - 2000)) isle();
@@ -820,8 +822,8 @@ try {
 			};
 			window.m802SefAday = (yer, bg) => set(ref(db, P + "sef_aday/g" + M8.gunNo(miniakentSimdi()) + "/" + yer + "/" + K),
 				{ bg: bg, t: serverTimestamp() }).catch((x) => console.warn("sef", x));
-			// Favoriler hesaba bağlı (kullanıcı, 2026-11-25): t802/favori/<karakter>/<ad> = true
-			window.m802FavoriYaz = (h, ekle) => set(ref(db, P + "favori/" + K + "/" + anahtar(h)), ekle ? true : null).catch((x) => console.warn("favori", x));
+			// Favoriler hesaba bağlı (kullanıcı, 2026-11-25): kullanici/<karakter>/favori/<ad> = true
+			window.m802FavoriYaz = (h, ekle) => set(ref(db, "kullanici/" + K + "/favori/" + anahtar(h)), ekle ? true : null).catch((x) => console.warn("favori", x));
 			window.m802Basvur = (i) => set(ref(db, P + "basvuru/g" + M8.gunNo(miniakentSimdi()) + "/i" + i + "/" + K), serverTimestamp());
 			window.m802KursBasla = (id) => {
 				const kr = M8.KURS.find((x) => x[0] === id);
