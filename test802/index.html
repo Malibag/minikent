@@ -705,22 +705,74 @@ try {
 			// 8 saniye yenilenmezse sahiplik boşalır. window.miniakentKonumSahip false ise oyun kendi karakterini de
 			// gelen konuma koyar (scripts/resident_ui.gd).
 			const kSid = Math.random().toString(36).slice(2, 10);
-			let kVeri = {};
+			let kVeri = {};            // yalnız dinlenen kayıtlar: ad -> {x, y, z, r, s, t}
+			let kBolge = {};           // dizin (konum_b): ad -> hücre; küçüktür, herkes indirir
+			let kHucre = null;         // oyunun istediği hücreler (null: oyun henüz bildirmedi)
+			let kSonHucre = "";        // kendi hücrem: değişince dizine yazılır
+			const kAbone = {};         // ad -> dinlemeyi bırakma işlevi
 			window.miniakentKonumSahip = true;
+			const kHata = (e) => console.warn("konum", e);
+			const kBildir = () => {
+				window.miniakentKonumAkis = JSON.stringify(kVeri);
+				window.miniakentKonumSurum = (window.miniakentKonumSurum || 0) + 1;
+			};
+			// Oyun hücre bildirmeden önce (eski paket) eski davranış: bütün dalı dinler.
+			let kTum = onValue(ref(db, V8 + "konum"), (s) => { kVeri = s.val() || {}; kBildir(); }, kHata);
+			const kBenim = () => karakter ? anahtar(karakter) : "";
+			const kAc = (ad) => {
+				if (kAbone[ad]) return;
+				kAbone[ad] = onValue(ref(db, V8 + "konum/" + ad), (s) => {
+					const v = s.val();
+					if (v) kVeri[ad] = v; else delete kVeri[ad];
+					kBildir();
+				}, kHata);
+			};
+			const kKapa = (ad) => {
+				if (!kAbone[ad]) return;
+				kAbone[ad]();
+				delete kAbone[ad];
+				delete kVeri[ad];
+				kBildir();
+			};
+			// Yalnız yakındakiler iner (kullanıcı, 2026-11-26): oyun kameranın gördüğü hücreleri söyler, sayfa o
+			// hücrelerdeki kişilerin kaydını dinler; kendi karakteri her zaman dinlenir (sahiplik için gerekli).
+			const kEsle = () => {
+				if (kHucre === null) return;
+				const istenen = new Set(Object.keys(kBolge).filter((ad) => kHucre.has(String(kBolge[ad] || ""))));
+				if (kBenim()) istenen.add(kBenim());
+				for (const ad of Object.keys(kAbone)) if (!istenen.has(ad)) kKapa(ad);
+				for (const ad of istenen) kAc(ad);
+				window.miniakentKonumDinlenen = Object.keys(kAbone).length;   // tanı: kaç kişinin kaydı iniyor
+			};
+			window.miniakentKonumHucre = (s) => {
+				const y = new Set(String(s || "").split(",").filter(Boolean));
+				if (kHucre && y.size === kHucre.size && [...y].every((c) => kHucre.has(c))) return;
+				kHucre = y;
+				if (kTum) { kTum(); kTum = null; kVeri = {}; }   // artık bütün dal değil, yalnız yakındakiler
+				kEsle();
+			};
+			onValue(ref(db, V8 + "konum_b"), (s) => { kBolge = s.val() || {}; kEsle(); }, kHata);
 			window.miniakentKonumYaz = (j) => {
 				if (!karakter || !auth.currentUser) return Promise.resolve();
 				const k = anahtar(karakter), v = kVeri[k], simdi = Date.now();
 				const bos = !v || !v.t || simdi - v.t > 8000, benim = !!v && v.s === kSid;
 				window.miniakentKonumSahip = bos || benim;
-				if (!j) return window.miniakentKonumSahip ? set(ref(db, V8 + "konum/" + k), null).catch((e) => console.warn("konum", e)) : Promise.resolve();
+				if (kHucre !== null && !kAbone[k]) kEsle();   // kendi kaydım dinlenmeli (sahiplik)
+				if (!j) {
+					if (!window.miniakentKonumSahip) return Promise.resolve();
+					kSonHucre = "";
+					set(ref(db, V8 + "konum_b/" + k), null).catch(kHata);
+					return set(ref(db, V8 + "konum/" + k), null).catch(kHata);
+				}
 				if (!window.miniakentKonumSahip) return Promise.resolve();
-				return set(ref(db, V8 + "konum/" + k), Object.assign(JSON.parse(j), { s: kSid, t: serverTimestamp() })).catch((e) => console.warn("konum", e));
+				const o = JSON.parse(j), huc = String(o.b || "");
+				delete o.b;
+				if (huc && huc !== kSonHucre) {   // hücre değişti: dizine yazılır (seyrek)
+					kSonHucre = huc;
+					set(ref(db, V8 + "konum_b/" + k), huc).catch(kHata);
+				}
+				return set(ref(db, V8 + "konum/" + k), Object.assign(o, { s: kSid, t: serverTimestamp() })).catch(kHata);
 			};
-			onValue(ref(db, V8 + "konum"), (s) => {
-				kVeri = s.val() || {};
-				window.miniakentKonumAkis = JSON.stringify(kVeri);
-				window.miniakentKonumSurum = (window.miniakentKonumSurum || 0) + 1;
-			}, (e) => console.warn("konum", e));
 		}
 		// Jetski Parkur Challenge sıralaması (kullanıcı, 2026-11-20; test802): oyun ayı başına (12:00 TR'de döner) kişinin en
 		// iyi puanı t802/jetski_parkur/a<gün no>/<ad anahtarı> = {p, t}; kural yalnız daha yüksek puanı kabul eder
@@ -3953,7 +4005,7 @@ ${window.miniakent802 ? `<div class="ust"><div class="serit"><span id="mkb-nufus
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test802/index-802-v202611261308.pck","fileSizes":{"test802/index-802-v202611261308.pck":9953200,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test802/index-802-v202611261348.pck","fileSizes":{"test802/index-802-v202611261348.pck":9954304,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
