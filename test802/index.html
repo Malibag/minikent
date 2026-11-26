@@ -748,7 +748,7 @@ try {
 				const y = new Set(String(s || "").split(",").filter(Boolean));
 				if (kHucre && y.size === kHucre.size && [...y].every((c) => kHucre.has(c))) return;
 				kHucre = y;
-				if (kTum) { kTum(); kTum = null; kVeri = {}; }   // artık bütün dal değil, yalnız yakındakiler
+				if (kTum) { kTum(); kTum = null; kVeri = {}; kBildir(); }   // artık bütün dal değil, yalnız yakındakiler
 				kEsle();
 			};
 			onValue(ref(db, V8 + "konum_b"), (s) => { kBolge = s.val() || {}; kEsle(); }, kHata);
