@@ -676,10 +676,24 @@ try {
 			window.miniakentSurusYaz = (j) => karakter && auth.currentUser
 				? set(ref(db, V8 + "jetski_surus/" + anahtar(karakter)), j ? Object.assign(JSON.parse(j), { t: serverTimestamp() }) : null)
 					.catch((e) => console.warn("surus", e)) : Promise.resolve();
-			onValue(ref(db, V8 + "jetski_surus"), (s) => {
+			// Yalnız yakındakiler indirir (kullanıcı, 2026-11-26): oyun kamera sürülebilen denizden uzaklaşınca
+			// miniakentSurusDinle(0) ile dinlemeyi kapatır, yaklaşınca (1) ile açar (scripts/surus.gd). Başlangıçta
+			// açık: eski oyun paketi hiç çağırmasa da sürüşler eskisi gibi görünür.
+			const surusAkis = (s) => {
 				window.miniakentSurusAkis = JSON.stringify(s.val() || {});
 				window.miniakentSurusSurum = (window.miniakentSurusSurum || 0) + 1;
-			}, (e) => console.warn("surus", e));
+			};
+			const surusHata = (e) => console.warn("surus", e);
+			let surusBirak = onValue(ref(db, V8 + "jetski_surus"), surusAkis, surusHata);
+			window.miniakentSurusDinle = (v) => {
+				const ac = !!v;
+				if (ac === !!surusBirak) return;
+				if (ac) { surusBirak = onValue(ref(db, V8 + "jetski_surus"), surusAkis, surusHata); return; }
+				surusBirak();
+				surusBirak = null;
+				window.miniakentSurusAkis = "{}";
+				window.miniakentSurusSurum = (window.miniakentSurusSurum || 0) + 1;
+			};
 		}
 		// Oyuncunun karakterinin yeri (kullanıcı, 2026-11-25; test802): kendi karakteri saniyede bir yazar, bütün
 		// oturumlar okur; başka cihazda açık olan aynı karakter orada da aynı yerde yürür (scripts/resident_ui.gd).
@@ -3937,7 +3951,7 @@ ${window.miniakent802 ? `<div class="ust"><div class="serit"><span id="mkb-nufus
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test802/index-802-v202611260055.pck","fileSizes":{"test802/index-802-v202611260055.pck":9940112,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"test802/index-802-v202611261214.pck","fileSizes":{"test802/index-802-v202611261214.pck":9952544,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
