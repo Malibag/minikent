@@ -10,6 +10,11 @@
 		// Zamana bağlı yürüme (kullanıcı, 2026-11-26): test802'de VARSAYILAN AÇIK — ev-iş yolunda konum saatten hesaplanır,
 		// sekme arkaya düşüp dönünce kişi olması gereken yerde belirir. Kapatmak için ?zaman=0. Canlı sitede kapalı.
 		try { window.miniakentZamanYurume = new URLSearchParams(location.search).get("zaman") !== "0" && !!window.miniakent802; } catch (e) {}
+		// 1. Sezon anahtarı (kullanıcı, 2026-11-26): Panel'in içeriği ile ev ve iş ilanları CANLIDA GÖRÜNMEZ, 1. Sezon
+		// başlayınca açılır; duygu durumu ve etkinlikler bu anahtara bağlı değildir. Şimdilik yalnız test802'de açık
+		// (?sezon=0 kapatır, ?sezon=1 açar).
+		try { const sz = new URLSearchParams(location.search).get("sezon");
+			window.miniakentSezon1 = sz === "1" || (sz !== "0" && !!window.miniakent802); } catch (e) {}
 		// Lite sürüm (kullanıcı, 2026-11-09): seçim bu tarayıcıda saklanır; ilk açılışta telefonda açık, bilgisayarda kapalı.
 		// Oyun açılışta window.miniakentLiteAcik'i okur; Ayarlar'daki anahtar window.miniakentLiteSec(bool) çağırır.
 		(function () {
@@ -1637,7 +1642,7 @@ try {
 //   Deneyimli %1 · Usta %3 · Efsane %9 (10 / 30 / 90 aktif gün). Maaşa yalnız çalışılan alanın uzmanlığı (ekonomi.gd).
 // - Kurs (25. karar): aynı anda tek kurs, ücret başlarken peşin, günün ilk girişi 1 kurs günü, iptalde %50 iade, sınav yok.
 //   Test kullanıcıları Premium sayılır (kullanıcı, 2026-11-20); üyelik ekranı yok. Listede yalnız türü kesin olan yeterlilikler.
-if (window.miniakent802) window.M802 = (function () {
+if (window.miniakentSezon1) window.M802 = (function () {   // 1. Sezon kapalıyken hiç kurulmaz (kullanıcı, 2026-11-26)
 	const ALAN = ["Temizlik ve tesis hizmetleri", "Yiyecek ve içecek", "Konaklama ve turizm", "Perakende ve satış", "Ulaşım, lojistik ve depo", "Üretim ve fabrika", "İnşaat ve yapı", "Tarım, balıkçılık ve hayvanlar", "Güvenlik ve kamu düzeni", "Sağlık", "Hukuk ve adalet", "Finans, bankacılık ve sigorta", "Büro, yönetim ve insan kaynakları", "Eğitim", "Spor ve fitness", "Sanat, müzik ve sahne", "Medya, yayıncılık ve dil", "Tasarım, reklam ve pazarlama", "Bilişim ve yazılım", "Mühendislik, enerji ve Ar-Ge", "Güzellik, bakım ve moda"];
 	// ad: [maaş grubu, kariyer alanı no, başlangıç ilanı (0 değil · 1 uygun · 2 ehliyet şartıyla), minimum uzmanlık (0–3; −1 açık), ek yeterlilik]
 	const M = {"Temizlik Görevlisi":[1,0,1,0,"Yok"],"Temizlikçi":[1,0,1,0,"Yok"],"Hizmetli":[1,0,1,0,"Yok"],"Sokak Temizlik Görevlisi":[1,0,0,0,"Özel kadro"],"Çöp Toplama Görevlisi":[1,0,0,0,"Özel kadro"],"Bulaşıkçı":[1,1,1,0,"Yok"],"Komi":[1,1,1,0,"Yok"],"Çaycı":[1,1,1,0,"Yok"],"Kantinci":[1,1,0,0,"Özel kadro"],"Vagon Temizlik Görevlisi":[1,0,1,0,"Yok"],"Çamaşırhane Görevlisi":[1,0,1,0,"Yok"],"Şezlong Görevlisi":[1,2,1,0,"Yok"],"Otopark Görevlisi":[1,4,1,0,"Yok"],"Paketleme Görevlisi":[1,5,1,0,"Yok"],"İnşaat Çırağı":[1,6,1,0,"Yok"],"Stajyer Avukat":[1,10,0,0,"Eğitim"],"Stajyer Hemşire":[1,9,0,0,"Birden fazla şart"],"Grafiti Ustası Yardımcısı":[1,15,1,0,"Yok"],"Sokak Müzisyeni":[1,15,0,0,"Yok"],"Sokak Şarkıcısı":[1,15,0,0,"Yok"],"Sokak Dansçısı":[1,15,0,0,"Yok"],"Profesyonel Boğulan":[1,14,0,0,"Yok"],"Bellboy":[2,2,1,0,"Yok"],"Valeci":[2,2,2,0,"Ehliyet"],"Bagaj Görevlisi":[2,4,1,0,"Yok"],"Peron Görevlisi":[2,4,1,0,"Yok"],"Kat Görevlisi":[2,2,1,0,"Yok"],"Reyon Görevlisi":[2,3,1,0,"Yok"],"Kasiyer":[2,3,1,0,"Yok"],"Garson":[2,1,1,0,"Yok"],"Barista":[2,1,1,0,"Yok"],"Büfeci":[2,1,1,0,"Yok"],"Kokoreççi":[2,1,0,0,"Yok"],"Balık satıcısı":[2,3,1,0,"Yok"],"Çiçekçi":[2,3,0,0,"Yok"],"Danışma Görevlisi":[2,12,1,0,"Yok"],"Havuz Görevlisi":[2,2,1,0,"Yok"],"Spa Görevlisi":[2,20,1,0,"Yok"],"Sıpa Görevlisi":[2,7,0,0,"Yok"],"Kurye":[2,4,2,0,"Ehliyet"],"Postacı":[2,4,1,0,"Yok"],"Bekçi":[2,8,1,0,"Yok"],"Park Bekçisi":[2,8,1,0,"Yok"],"Gece Koruyucusu":[2,8,1,0,"Yok"],"Makas Görevlisi":[2,4,1,0,"Yok"],"İnşaat İşçisi":[2,6,1,0,"Yok"],"Spor Salonu Resepsiyonisti":[2,14,1,0,"Yok"],"Animatör":[2,15,1,0,"Yok"],"Manav":[2,3,1,0,"Yok"],"Üretim İşçisi":[3,5,1,0,"Yok"],"Depo Görevlisi":[3,4,1,0,"Yok"],"Soğuk Depo Görevlisi":[3,4,1,0,"Yok"],"Liman İşçisi":[3,4,1,0,"Yok"],"Ton Balığı İşçisi":[3,5,1,0,"Yok"],"Palamar Görevlisi":[3,4,1,0,"Yok"],"Liman Görevlisi":[3,4,0,0,"Yok"],"Güvenlik Görevlisi":[3,8,0,0,"Sertifika"],"Banka Gişe Görevlisi":[3,11,1,0,"Yok"],"Bilet Gişe Görevlisi":[3,4,1,0,"Yok"],"Çağrı Merkezi Görevlisi":[3,12,1,0,"Yok"],"Bahçıvan":[3,7,1,0,"Yok"],"Çiftçi":[3,7,0,0,"Yok"],"Balıkçı":[3,7,0,0,"Yok"],"Ormancı":[3,7,0,0,"Eğitim"],"Kasap":[3,1,0,0,"Mesleki eğitim"],"Pastacı":[3,1,0,0,"Mesleki eğitim"],"Barmen":[3,1,1,0,"Yok"],"Resepsiyonist":[3,2,1,0,"Yok"],"Rezervasyon Görevlisi":[3,2,1,0,"Yok"],"Betoncu":[3,6,1,0,"Yok"],"Kalıpçı":[3,6,1,0,"Yok"],"Puantör":[3,6,1,0,"Yok"],"İnşaat Ustası":[4,6,0,1,"Yok"],"Duvar Ustası":[4,6,0,1,"Yok"],"Tesisat Ustası":[4,6,0,1,"Yok"],"Mekanik Tesisat Ustası":[4,6,0,1,"Mesleki sertifika"],"Elektrik Ustası":[4,6,0,1,"Mesleki sertifika"],"Hat Bakım Ustası":[4,4,0,1,"Yok"],"Demirci":[4,6,0,1,"Yok"],"Kaynakçı":[4,5,0,1,"Mesleki sertifika"],"Terzi":[4,20,0,1,"Yok"],"Terzi ve Eğitmen":[4,20,0,2,"Yok"],"Kuaför":[4,20,0,0,"Mesleki eğitim"],"Makyöz":[4,20,0,0,"Mesleki eğitim"],"Masör":[4,20,0,0,"Mesleki eğitim"],"Bisiklet Tamircisi":[4,4,0,1,"Yok"],"Kamyon Şoförü":[4,4,0,0,"Ehliyet"],"Tır Şoförü":[4,4,0,0,"Birden fazla şart"],"Balık Kamyonu Şoförü":[4,4,0,0,"Ehliyet"],"Ambulans Şoförü":[4,4,0,0,"Ehliyet + ilk yardım/ambulans kullanma sertifikası"],"Kondüktör":[4,4,0,1,"Yok"],"Aşçı":[4,1,0,1,"Yok"],"Teknik Servis Görevlisi":[4,0,0,1,"Yok"],"Grafiti Ustası":[4,15,0,1,"Yok"],"Protez Tırnak Uzmanı":[4,20,0,1,"Yok"],"Güzellik Uzmanı":[4,20,0,0,"Mesleki eğitim"],"İstasyon Görevlisi":[4,4,0,1,"Yok"],"Hareket Memuru":[4,4,0,1,"Yok"],"Forklift Operatörü":[5,4,0,1,"Sertifika"],"Makine Operatörü":[5,5,0,1,"Mesleki sertifika"],"Vinç Operatörü":[5,6,0,1,"Sertifika"],"Rıhtım Vinci Operatörü":[5,4,0,1,"Sertifika"],"Ekskavatör Operatörü":[5,6,0,1,"Sertifika"],"Makinist":[5,4,0,2,"Birden fazla şart"],"Asansör Teknisyeni":[5,0,0,0,"Teknik eğitim"],"Bakım Teknisyeni":[5,5,0,0,"Teknik eğitim"],"Ses Teknisyeni":[5,16,0,0,"Yok"],"Laboratuvar Teknisyeni":[5,19,0,0,"Eğitim"],"Gıda Teknisyeni":[5,5,0,0,"Teknik eğitim"],"Kalite Kontrol Teknisyeni":[5,5,0,0,"Teknik eğitim"],"Diş Teknisyeni":[5,9,0,0,"Eğitim"],"Laborant":[5,9,0,0,"Birden fazla şart"],"Cankurtaran":[5,8,0,0,"Sertifika"],"Su Sporları Eğitmeni":[5,14,0,0,"Eğitmenlik veya antrenörlük sertifikası"],"Sörf Eğitmeni":[5,14,0,0,"Eğitmenlik veya antrenörlük sertifikası"],"Sörfçü":[5,14,0,1,"Yok"],"Tur Rehberi":[5,2,0,0,"Sertifika"],"Turizm Rehberi":[5,2,0,0,"Sertifika"],"Stüdyo Asistanı":[5,16,0,0,"Yok"],"Arşiv Görevlisi":[5,12,0,0,"Yok"],"Sekreter":[6,12,0,1,"Yok"],"Büro Memuru":[6,12,0,1,"Özel kadro"],"Postane Memuru":[6,4,0,1,"Yok"],"Veznedar":[6,11,0,1,"Yok"],"Tıbbi Sekreter":[6,12,0,0,"Mesleki eğitim"],"Zabıt Kâtibi":[6,10,0,0,"Birden fazla şart"],"Mübaşir":[6,10,0,0,"Birden fazla şart"],"İcra Memuru":[6,10,0,0,"Birden fazla şart"],"Yönetici Asistanı":[6,12,0,1,"Yok"],"Klinik Asistanı":[6,9,0,0,"Mesleki eğitim"],"Müşteri Temsilcisi":[6,3,0,1,"Yok"],"Müşteri Hizmetleri Uzmanı":[6,3,0,1,"Yok"],"Rezervasyon Uzmanı":[6,2,0,1,"Yok"],"Seyahat Danışmanı":[6,2,0,1,"Yok"],"Satış Uzmanı":[6,3,0,1,"Yok"],"Konsiyerj":[6,2,0,2,"Yok"],"Reklam ve Pazarlama Personeli":[6,17,0,0,"Yok"],"Banka Memuru":[6,11,0,1,"Yok"],"Gümrük Memuru":[6,4,0,1,"Kamu personeli yeterliliği"],"Stilist":[6,20,0,2,"Yok"],"Polis":[7,8,0,0,"Birden fazla şart"],"Trafik Polisi":[7,8,0,0,"Birden fazla şart"],"Zabıta":[7,8,0,0,"Özel kadro"],"Paramedik":[7,9,0,0,"Birden fazla şart"],"Acil Tıp Teknisyeni":[7,9,0,0,"Birden fazla şart"],"Anestezi Teknikeri":[7,9,0,0,"Birden fazla şart"],"Hemşire Yardımcısı":[7,9,0,0,"Mesleki eğitim"],"Vardiya Amiri":[7,5,0,2,"Yok"],"Yoga Eğitmeni":[8,14,0,0,"Eğitmenlik veya antrenörlük sertifikası"],"Pilates Eğitmeni":[8,14,0,0,"Eğitmenlik veya antrenörlük sertifikası"],"Fitness Eğitmeni":[8,14,0,0,"Eğitmenlik veya antrenörlük sertifikası"],"Spor Hocası":[8,14,0,0,"Eğitmenlik veya antrenörlük sertifikası"],"Dans Eğitmeni":[8,15,0,2,"Yok"],"Bale Eğitmeni":[8,15,0,2,"Yok"],"Bilişim Eğitmeni":[8,13,0,0,"Yok"],"Taekwondocu":[8,14,0,2,"Yok"],"Voleybol Oyuncusu":[8,14,0,2,"Yok"],"At Antrenörü":[8,7,0,1,"Yok"],"Kameraman":[8,16,0,1,"Yok"],"Fotoğrafçı":[8,16,0,1,"Yok"],"Ürün Fotoğrafçısı":[8,17,0,1,"Yok"],"Rötuş Uzmanı":[8,17,0,1,"Yok"],"Ressam":[8,15,0,1,"Yok"],"Resim Sanatçısı":[8,15,0,1,"Yok"],"Seramik Sanatçısı":[8,15,0,1,"Yok"],"Heykeltıraş":[8,15,0,1,"Yok"],"DJ":[8,15,0,1,"Yok"],"Müzisyen":[8,15,0,1,"Yok"],"Gitarist":[8,15,0,1,"Yok"],"Solist":[8,15,0,1,"Yok"],"Şarkıcı":[8,15,0,1,"Yok"],"Rock Müzik Sanatçısı":[8,15,0,1,"Yok"],"Doğaçlama Tiyatrocu":[8,15,0,1,"Yok"],"Oryantal Dans Hocası":[8,15,0,2,"Yok"],"Muhasebeci":[9,11,0,0,"Mesleki eğitim"],"Satın Alma Sorumlusu":[9,12,0,2,"Yok"],"Emlak Danışmanı":[9,3,0,0,"Mesleki sertifika"],"Sigorta Uzmanı":[9,11,0,0,"Mesleki eğitim"],"Hasar Uzmanı":[9,11,0,1,"Mesleki sertifika"],"Kredi Uzmanı":[9,11,0,1,"Yok"],"İK Uzmanı":[9,12,0,2,"Yok"],"İnsan Kaynakları Uzmanı":[9,12,0,2,"Yok"],"İşe Alım Uzmanı":[9,12,0,2,"Yok"],"İdari İşler Uzmanı":[9,12,0,2,"Yok"],"Lojistik Uzmanı":[9,4,0,2,"Yok"],"Lojistik Operasyon Uzmanı":[9,4,0,2,"Yok"],"Lojistik Planlama Uzmanı":[9,4,0,2,"Yok"],"Konteyner Planlama Uzmanı":[9,4,0,2,"Yok"],"Teknik Destek Uzmanı":[9,18,0,0,"Yok"],"Bilgi İşlem Uzmanı":[9,18,0,0,"Yok"],"IT Uzmanı":[9,18,0,0,"Yok"],"Sosyal Medya Uzmanı":[9,17,0,1,"Yok"],"E-Ticaret Uzmanı":[9,3,0,2,"Yok"],"Organizasyon Uzmanı":[9,17,0,1,"Yok"],"Etkinlik Koordinatörü":[9,17,0,2,"Yok"],"Mühendislik Proje Uzmanı":[9,19,0,1,"Yok"],"Kalite Kontrol Uzmanı":[9,5,0,2,"Yok"],"Değerleme Uzmanı":[9,11,0,1,"Mesleki sertifika"],"Halkla İlişkiler Uzmanı":[9,17,0,1,"Yok"],"Pazarlama Uzmanı":[9,17,0,1,"Yok"],"Reklamcı":[9,17,0,1,"Yok"],"İçerik Yazarı":[9,16,0,1,"Yok"],"Metin Yazarı":[9,17,0,1,"Yok"],"Redaktör":[9,16,0,1,"Yok"],"Çevirmen":[9,16,0,1,"Yok"],"Tercüman":[9,16,0,0,"Mesleki sertifika"],"Reklam Pazarlama Sorumlusu":[9,17,0,2,"Yok"],"Öğretmen":[10,13,0,0,"Eğitim"],"Rehber Öğretmen":[10,13,0,0,"Eğitim"],"İngilizce Öğretmeni":[10,13,0,0,"Eğitim"],"Almanca Öğretmeni":[10,13,0,0,"Eğitim"],"Edebiyat Öğretmeni":[10,13,0,0,"Eğitim"],"Matematik Öğretmeni":[10,13,0,0,"Eğitim"],"Resim Öğretmeni":[10,13,0,0,"Eğitim"],"Müzik Öğretmeni":[10,13,0,0,"Eğitim"],"Beden Eğitimi Öğretmeni":[10,13,0,0,"Eğitim"],"Okul Öncesi Öğretmeni":[10,13,0,0,"Eğitim"],"Anasınıfı Öğretmeni":[10,13,0,0,"Eğitim"],"Gitar Öğretmeni":[10,13,0,0,"Mesleki eğitim"],"Piyano Öğretmeni":[10,13,0,0,"Mesleki eğitim"],"Şan Öğretmeni":[10,13,0,0,"Mesleki eğitim"],"Yazılım Eğitmeni":[10,13,0,1,"Yok"],"Eğitim Danışmanı":[10,13,0,2,"Yok"],"Hemşire":[10,9,0,0,"Eğitim"],"Ebe":[10,9,0,0,"Birden fazla şart"],"Fizyoterapist":[10,9,0,0,"Eğitim"],"Diyetisyen":[10,9,0,0,"Eğitim"],"Çocuk Gelişimi Uzmanı":[10,9,0,0,"Üniversite veya ileri eğitim: çocuk gelişimi eğitimi"],"Koreograf":[10,15,0,3,"Yok"],"Spiker":[10,16,0,2,"Yok"],"Radyo Programcısı":[10,16,0,1,"Yok"],"Muhabir":[10,16,0,1,"Yok"],"Gazeteci":[10,16,0,2,"Yok"],"Editör":[10,16,0,2,"Yok"],"Kurgucu":[10,16,0,1,"Yok"],"Haber Spikeri":[10,16,0,2,"Yok"],"Haber Sunucusu":[10,16,0,2,"Yok"],"Grafik Tasarımcı":[11,17,0,2,"Yok"],"Web Tasarımcı":[11,18,0,1,"Yok"],"3B Sanatçı":[11,17,0,2,"Yok"],"Oyun Tasarımcısı":[11,18,0,1,"Yok"],"Moda Tasarımcısı":[11,20,0,3,"Yok"],"Modacı":[11,20,0,3,"Yok"],"İç Mimar":[11,6,0,0,"Eğitim"],"İş Analisti":[11,12,0,2,"Yok"],"Veri Analisti":[11,18,0,1,"Yok"],"Finans Uzmanı":[11,11,0,2,"Yok"],"Ağ Uzmanı":[11,18,0,1,"Yok"],"Yazılım Test Uzmanı":[11,18,0,1,"Yok"],"Araştırmacı":[11,19,0,2,"Yok"],"Biyolog":[11,19,0,0,"Üniversite veya ileri eğitim: biyoloji eğitimi"],"İş Güvenliği Uzmanı":[11,6,0,2,"Sertifika"],"Başmuhabir":[11,16,0,3,"Yok"],"Liman Koordinatörü":[11,4,0,3,"Yok"],"Banka Koordinatörü":[11,11,0,3,"Yok"],"Kafe Sahibi":[11,1,0,-1,"Yok"],"Yazılımcı":[12,18,0,2,"Yok"],"Oyun Geliştirici":[12,18,0,2,"Yok"],"Mobil Uygulama Geliştirici":[12,18,0,2,"Yok"],"Bilişim Uzmanı":[12,18,0,2,"Yok"],"Endüstri Mühendisi":[12,19,0,0,"Eğitim"],"Üretim Mühendisi":[12,19,0,0,"Eğitim"],"Makine Mühendisi":[12,19,0,0,"Eğitim"],"İnşaat Mühendisi":[12,19,0,0,"Eğitim"],"Elektrik Mühendisi":[12,19,0,0,"Eğitim"],"Elektrik-Elektronik Mühendisi":[12,19,0,0,"Eğitim"],"Harita Mühendisi":[12,19,0,0,"Eğitim"],"Mimar":[12,6,0,0,"Eğitim"],"Kılavuz Kaptan":[12,4,0,3,"Birden fazla şart"],"Komiser Yardımcısı":[12,8,0,2,"Birden fazla şart"],"Veri Bilimci":[13,18,0,3,"Yok"],"Siber Güvenlik Uzmanı":[13,18,0,3,"Yok"],"Finans Analisti":[13,11,0,2,"Yok"],"Yatırım Danışmanı":[13,11,0,2,"Sertifika"],"Borsa Brokeri":[13,11,0,2,"Sertifika"],"Mali Müşavir":[13,11,0,2,"Birden fazla şart"],"Kurumsal Proje Yöneticisi":[13,12,0,3,"Yok"],"Yönetim Danışmanı":[13,12,0,3,"Yok"],"Hukuk Danışmanı":[13,10,0,2,"Eğitim"],"Psikolog":[13,9,0,0,"Eğitim"],"Adli Psikolog":[13,9,0,1,"Üniversite veya ileri eğitim: psikoloji eğitimi + adli psikoloji uzmanlığı"],"Veteriner":[13,7,0,0,"Eğitim"],"Koordinatör Veteriner":[13,7,0,3,"Eğitim"],"Eczacı":[13,9,0,0,"Birden fazla şart"],"Ekonomist":[13,11,0,0,"Eğitim"],"Avukat":[14,10,0,1,"Birden fazla şart"],"Diş Hekimi":[14,9,0,0,"Eğitim"],"Doktor":[15,9,0,0,"Eğitim"],"Çocuk Doktoru":[15,9,0,2,"Birden fazla şart"],"Göz Doktoru":[15,9,0,2,"Birden fazla şart"],"Acil Doktoru":[15,9,0,2,"Birden fazla şart"],"Kadın Doğum Doktoru":[15,9,0,2,"Birden fazla şart"],"Psikiyatrist":[15,9,0,2,"Birden fazla şart"],"Hâkim":[16,10,0,3,"Birden fazla şart"],"Savcı":[16,10,0,3,"Birden fazla şart"],"Cerrah":[17,9,0,2,"Birden fazla şart"],"Beyin Cerrahı":[18,9,0,3,"Birden fazla şart"],"Kalp Cerrahı":[18,9,0,3,"Birden fazla şart"]};
@@ -2304,9 +2309,9 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	if (window.miniakent802) kok.classList.add("t802");   // test802 düzeni (kullanıcı, 2026-11-25)
 	kok.hidden = true;
 	kok.innerHTML = `
-${window.miniakent802 ? `<div class="ust"><div class="serit"><span id="mkb-nufus"></span></div>
+${window.miniakent802 ? `<div class="ust"><div class="serit"><span id="mkb-nufus"></span>${window.miniakentSezon1 ? "" : `<span class="saat" id="mkb-saat"></span>`}</div>${window.miniakentSezon1 ? `
 	<button class="serit panelk" id="mkb-panel-ac"><b>Panel</b><span class="rozet" id="mkb-panel-sayi" hidden></span></button>
-	<div class="serit saatk"><span class="saat" id="mkb-saat"></span></div></div>
+	<div class="serit saatk"><span class="saat" id="mkb-saat"></span></div>` : ""}</div>
 <button class="yuvarlak favori-alt" id="mkb-favori" aria-label="Favoriler" aria-expanded="false">${SVG.yildiz}</button>
 <button class="yuvarlak disli-alt" id="mkb-disli" aria-label="Profil" aria-expanded="false">${SVG.kisi}</button>
 <button class="yuvarlak sohbet-alt" id="mkb-sohbet-yuv" aria-label="Şehir sohbeti" hidden>${SVG.sohbet}</button>
@@ -2533,7 +2538,7 @@ ${window.miniakent802 ? `<div class="ust"><div class="serit"><span id="mkb-nufus
 			: mesai(secilen && secilen.handle === k.handle ? secilen.bas : null, true);
 		return `<button class="kim" data-takip="${esc(k.handle)}" style="border:0;background:none;padding:0;text-align:left">
 				<span class="avatar">${esc(k.handle.replace(/^@/, "").charAt(0).toUpperCase())}</span><div>
-				<b>${esc(k.handle)}${rozet(k.handle)}</b><span>${T8 ? meslekCip(k.handle, k.meslek) : esc(k.meslek)}${k.yer && !kadrosu(k.handle) ? " · " + esc(k.yer.split(" · ")[0]) : ""}</span><span>${esc(k.ev)}</span></div></button>
+				<b>${esc(k.handle)}${rozet(k.handle)}</b><span>${S8 ? meslekCip(k.handle, k.meslek) : esc(k.meslek)}${k.yer && !kadrosu(k.handle) ? " · " + esc(k.yer.split(" · ")[0]) : ""}</span><span>${esc(k.ev)}</span></div></button>
 			<span class="durum ${iste ? "" : "evde"}">${esc(dy)}</span>
 			<div class="kutu"><div class="gosterge"><span>Mesai</span>${ada(m.oran)}<span class="kucuk">${m.yazi}</span></div></div>`;
 	}
@@ -2661,7 +2666,8 @@ ${window.miniakent802 ? `<div class="ust"><div class="serit"><span id="mkb-nufus
 	// Test802 (kullanıcı, 2026-11-20): kurallar window.M802, kayıtlar window.m802 (modül: t802Ac). Bütün kadrolar boş başlar:
 	// bugünkü işler "Geçici" (gri), başlangıç ilanını kazanan "Kadrolu" (yeşil); açıklama yazısı yok.
 	const T8 = !!window.miniakent802;
-	const m8 = () => (T8 && window.M802 && window.m802 && window.m802.hazir ? window.m802 : null);
+	const S8 = !!window.miniakentSezon1;   // 1. Sezon: Panel içeriği + ilanlar (canlıda kapalı)
+	const m8 = () => (S8 && window.M802 && window.m802 && window.m802.hazir ? window.m802 : null);
 	const anah8 = (h) => String(h || "").replace(/^@/, "").toLowerCase().replace(/\./g, ",");
 	// Jetski Parkur Challenge sıralaması (kullanıcı, 2026-11-20): bu oyun ayının en iyi puanları
 	const parkurSira = () => Object.entries(window.miniakentParkurSira || {}).map(([k, v]) => [k, +(v && v.p) || 0])
@@ -2890,13 +2896,13 @@ ${window.miniakent802 ? `<div class="ust"><div class="serit"><span id="mkb-nufus
 			const yerK = (et, ad, veri) => `<button class="k-k" ${veri}><span class="etiket">${et}</span><b>${esc(ad || "—")}</b></button>`;
 			let h = `<div class="k-ust"><span class="durum ${iste ? "" : "evde"}">${esc(dy)}</span>${ada(m.oran)}<span class="kucuk">${m.yazi}</span></div>`;
 			if (window.miniakentEkonomi && e) h += `<div class="k-uc">${kk(e.bakiye < 0 ? "Borç" : "Bakiye", sayi(Math.round(Math.abs(e.bakiye || 0))), "papel")}${kk("Bu ay maaş", sayi(Math.round(e.maas || 0)), "papel")}${kk("Kıdem", ekoYuzde(e.kidem), "maaşa ek")}</div>`;
-			if (T8) h += `<div>${meslekCip(karakter, bilgi && bilgi.meslek)}</div>`;   // "Doktor · Geçici" / "· Kadrolu" (802)
+			if (S8) h += `<div>${meslekCip(karakter, bilgi && bilgi.meslek)}</div>`;   // "Doktor · Geçici" / "· Kadrolu" (802)
 			h += `<div class="k-iki">${isAd ? yerK("İş", isAd, `data-kendiis="1"`) : ""}${yerK("Ev", evAd, `data-kendiev="1"`)}</div>`;
 			if (!window.miniakentEkonomi || !e) return h + `<p class="bilgi">Finans bilgileri bu hesap için açık değil.</p>`;
 			const ek = [["Fazla mesai kazancı", e.fazla], ["Etkinlik ve taksi", e.etkinlik], ["Hastane", e.hastane], ["İzin / hastane kesintisi", e.kesinti]].filter((x) => x[1]);
 			h += `<button class="k-ac" data-ayrinti="1"><span>Bu ayın ayrıntısı</span><span>${ayrintiAcik ? "▴" : "▾"}</span></button>`;
 			if (ayrintiAcik) h += `<div class="kutu"><div class="satir"><span>Vergi</span><b>${papel(e.vergi)}</b></div><div class="satir"><span>Geçim</span><b>${papel(e.gecim)}</b></div>
-				<div class="satir"><span>Kira</span><b>${papel(e.kira)}</b></div><div class="satir"><span>${T8 ? "Uzmanlık" : "Ustalık"}</span><b>${ekoYuzde(e.ustalik)}</b></div>
+				<div class="satir"><span>Kira</span><b>${papel(e.kira)}</b></div><div class="satir"><span>${S8 ? "Uzmanlık" : "Ustalık"}</span><b>${ekoYuzde(e.ustalik)}</b></div>
 				${ek.map((x) => `<div class="satir"><span>${x[0]}</span><b>${papel(x[1])}</b></div>`).join("")}</div>`;
 			const d = dur();
 			if (d) {   // fazla mesai (kullanıcı, 2026-11-17): hafta içi mesaiden sonra en çok 2, tatil günü en çok 4 saat; saatlik ücretin 1,5 katı
@@ -2941,8 +2947,8 @@ ${window.miniakent802 ? `<div class="ust"><div class="serit"><span id="mkb-nufus
 			if (T8) h += parkurKutu();
 		return h + `<p class="bilgi">Bir etkinlik 1 oyun saati sürer, ücreti varınca ödenir. Taksi ${papel(20)}; yürümek ücretsiz. Değerler oyun saati başına.</p>`;
 		}],
-		ilan: ["Karakterim", () => T8 ? ilan802() : `<div class="kutu bos"><p class="bilgi">Şu an açık ilan yok. İlanlar gün içinde farklı saatlerde çıkar.</p></div>`],
-		panel: ["Panel", () => T8 ? panel802() : ""],   // üstten iner (kullanıcı, 2026-11-25)
+		ilan: ["Karakterim", () => S8 ? ilan802() : `<div class="kutu bos"><p class="bilgi">Şu an açık ilan yok. İlanlar gün içinde farklı saatlerde çıkar.</p></div>`],
+		panel: ["Panel", () => S8 ? panel802() : ""],   // üstten iner (kullanıcı, 2026-11-25)
 		bina: [() => bina.baslik, () => `${bina.kasa && bina.kasa.toplam != null && window.miniakentEkonomi ? `<div class="kutu"><span class="etiket">Belediye kasası</span><h3>${papel(bina.kasa.toplam)}</h3>
 			<div class="satir"><span>Son ay vergi</span><b>${papel(bina.kasa.vergi)}</b></div><div class="satir"><span>Son ay kira</span><b>${papel(bina.kasa.kira)}</b></div></div>` : ""}${bina.alt ? `<p class="bilgi">${esc(bina.alt)}</p>` : ""}${bina.is ? binaGrup("is") : ""}${bina.ev ? binaGrup("ev") : ""}`],
 		// başka sakinin kartı: para ve göstergeler, Evini/İş yerini göster; kostüm yalnız etkinlik süresince (kullanıcı, 2026-11-05)
@@ -2972,7 +2978,7 @@ ${window.miniakent802 ? `<div class="ust"><div class="serit"><span id="mkb-nufus
 		$("mkb-baslik").textContent = yeniDuzen ? karakter : typeof s[0] === "function" ? s[0]() : s[0];
 		$("mkb-baslik").classList.toggle("kendim", !!yeniDuzen);
 		const ic = $("mkb-icerik"), y = ic.scrollTop;
-		ic.innerHTML = yeniDuzen && !(T8 && sayfaAd === "panel") ? s[1]() + altMenu() : s[1]();   // Panel'de alt menü yok (kullanıcı, 2026-11-25)
+		ic.innerHTML = yeniDuzen && !(S8 && sayfaAd === "panel") ? s[1]() + altMenu() : s[1]();   // Panel'de alt menü yok (kullanıcı, 2026-11-25)
 		ic.scrollTop = y;
 	}
 	// sekmeler panel açıkken panelin sağ kenarına yapışır; tam ekranda gizlenir. Kumanda panel tam ekranken gizli,
@@ -3014,9 +3020,9 @@ ${window.miniakent802 ? `<div class="ust"><div class="serit"><span id="mkb-nufus
 		sayfaAd = ad; kostumAcik = false; binaTum = {};
 		if (ayarlarAcik) ayarlarAc(false);   // kart, profil ve "Şu an şehirde" aynı anda açık kalmaz (kullanıcı, 2026-11-17)
 		if (sehirdeAcik) sehirdeAc(false);
-		$("mkb-pano").classList.toggle("ustten", T8 && ad === "panel");   // Panel üstten iner (kullanıcı, 2026-11-25)
+		$("mkb-pano").classList.toggle("ustten", S8 && ad === "panel");   // Panel üstten iner (kullanıcı, 2026-11-25)
 		$("mkb-pano").classList.toggle("sagdan", T8 && ad === "sakin");   // başkasının kartı sağdan (kullanıcı, 2026-11-25)
-		if (!(T8 && ad === "panel")) $("mkb-pano").classList.remove("genis");
+		if (!(S8 && ad === "panel")) $("mkb-pano").classList.remove("genis");
 		$("mkb-pano").classList.add("acik");
 		$("mkb-pano").setAttribute("aria-hidden", "false");
 		ciz(); arayuz();
@@ -3528,7 +3534,7 @@ ${window.miniakent802 ? `<div class="ust"><div class="serit"><span id="mkb-nufus
 			if (secilen && secilen.handle === b.dataset.takip) ac("sakin");
 			else { kartIste = true; if (window.minikentSearch) window.minikentSearch(b.dataset.takip); else if (window.miniakentTakip) window.miniakentTakip(b.dataset.takip); }
 		});
-		$("mkb-panel-ac").addEventListener("click", () => { if (sayfaAd === "panel") kapat(); else { ac("panel"); panelGoruldu(); } });
+		if ($("mkb-panel-ac")) $("mkb-panel-ac").addEventListener("click", () => { if (sayfaAd === "panel") kapat(); else { ac("panel"); panelGoruldu(); } });
 		$("mkb-sohbet-yuv").addEventListener("click", () => sohbetAc(true));
 		$("mkb-a-cizgi3").hidden = false;
 		$("mkb-a-ses").hidden = false;
@@ -3985,7 +3991,7 @@ ${window.miniakent802 ? `<div class="ust"><div class="serit"><span id="mkb-nufus
 			sonParkur = window.miniakentParkurSurum;
 			if (sayfaAd === "etkinlik" && $("mkb-onay").hidden) ciz();
 		}
-		if (T8) {   // Panel rozeti
+		if (S8) {   // Panel rozeti
 			const sy = panelSayi(), r = $("mkb-panel-sayi");
 			if (r) { r.hidden = !sy; r.textContent = sy ? String(sy) : ""; }
 		}
