@@ -4,6 +4,14 @@
 		<!-- Oyuncu sistemi canlıda (kullanıcı, 2026-11-11): yeni panel, giriş/kayıt, Kontrolü Al, kıyafet (kayıt yeri "kiyafet").
 		Test sayfası bu dosyadan üretilir; kendi ayarlarını (kiyafet_deneme, miniakentTest) bu betikten önce verir. -->
 		<script>window.miniakentKontrolDeneme = true; window.miniakentBeta = true; window.miniakentKiyafetYol = window.miniakentKiyafetYol || "kiyafet";
+		// Zamana bağlı yürüme (kullanıcı, 2026-11-26): test802'de VARSAYILAN AÇIK — ev-iş yolunda konum saatten hesaplanır,
+		// sekme arkaya düşüp dönünce kişi olması gereken yerde belirir. Kapatmak için ?zaman=0. Canlı sitede kapalı.
+		try { window.miniakentZamanYurume = new URLSearchParams(location.search).get("zaman") !== "0" && !!window.miniakent802; } catch (e) {}
+		// 1. Sezon anahtarı (kullanıcı, 2026-11-26): Panel'in içeriği ile ev ve iş ilanları CANLIDA GÖRÜNMEZ, 1. Sezon
+		// başlayınca açılır; duygu durumu ve etkinlikler bu anahtara bağlı değildir. Şimdilik yalnız test802'de açık
+		// (?sezon=0 kapatır, ?sezon=1 açar).
+		try { const sz = new URLSearchParams(location.search).get("sezon");
+			window.miniakentSezon1 = sz === "1" || (sz !== "0" && !!window.miniakent802); } catch (e) {}
 		// Lite sürüm (kullanıcı, 2026-11-09): seçim bu tarayıcıda saklanır; ilk açılışta telefonda açık, bilgisayarda kapalı.
 		// Oyun açılışta window.miniakentLiteAcik'i okur; Ayarlar'daki anahtar window.miniakentLiteSec(bool) çağırır.
 		(function () {
@@ -670,10 +678,93 @@ try {
 			window.miniakentSurusYaz = (j) => karakter && auth.currentUser
 				? set(ref(db, V8 + "jetski_surus/" + anahtar(karakter)), j ? Object.assign(JSON.parse(j), { t: serverTimestamp() }) : null)
 					.catch((e) => console.warn("surus", e)) : Promise.resolve();
-			onValue(ref(db, V8 + "jetski_surus"), (s) => {
+			// Yalnız yakındakiler indirir (kullanıcı, 2026-11-26): oyun kamera sürülebilen denizden uzaklaşınca
+			// miniakentSurusDinle(0) ile dinlemeyi kapatır, yaklaşınca (1) ile açar (scripts/surus.gd). Başlangıçta
+			// açık: eski oyun paketi hiç çağırmasa da sürüşler eskisi gibi görünür.
+			const surusAkis = (s) => {
 				window.miniakentSurusAkis = JSON.stringify(s.val() || {});
 				window.miniakentSurusSurum = (window.miniakentSurusSurum || 0) + 1;
-			}, (e) => console.warn("surus", e));
+			};
+			const surusHata = (e) => console.warn("surus", e);
+			let surusBirak = onValue(ref(db, V8 + "jetski_surus"), surusAkis, surusHata);
+			window.miniakentSurusDinle = (v) => {
+				const ac = !!v;
+				window.miniakentSurusIlgi = ac;   // oyunun en son bildirdiği: denize yakın mı (tanı için)
+				window.miniakentSurusIlgiSayi = (window.miniakentSurusIlgiSayi || 0) + 1;
+				if (ac === !!surusBirak) return;
+				if (ac) { surusBirak = onValue(ref(db, V8 + "jetski_surus"), surusAkis, surusHata); return; }
+				surusBirak();
+				surusBirak = null;
+				window.miniakentSurusAkis = "{}";
+				window.miniakentSurusSurum = (window.miniakentSurusSurum || 0) + 1;
+			};
+		}
+		// Oyuncunun karakterinin yeri (kullanıcı, 2026-11-25; test802): kendi karakteri saniyede bir yazar, bütün
+		// oturumlar okur; başka cihazda açık olan aynı karakter orada da aynı yerde yürür (scripts/resident_ui.gd).
+		// konum/<ad anahtarı> = {x, z, y, r, t}; 12 saniye yeni kayıt gelmezse oyun kendi yürüyüşüne döner.
+		// Konum (kullanıcı, 2026-11-27): BÖLGE DÜZENİ. Kayıt canli/<mahalle>/<ad>. Yalnız programından
+		// çıkan (jetski, etkinlik, hızlı yürü) yayın yapar; programında yürüyeni her istemci saatten
+		// kendisi hesaplar, onun için hiç veri inmez. Sayfa yalnız oyunun bildirdiği mahalleleri dinler.
+		// Aynı karakter iki cihazda açıksa biri yazar, öbürü izler: kayıttaki oturum kimliği (s) sahibi
+		// belirler, 8 saniye yenilenmezse sahiplik boşalır.
+		// Canlı sitede KAPALI (kullanıcı, 2026-11-27): kod hazır, yalnız 802 düzeninde çalışır.
+		if (window.miniakent802) {
+			const kSid = Math.random().toString(36).slice(2, 10);
+			let kHucreler = {};        // mahalle -> {ad: kayıt}
+			const kAbone = {};         // mahalle -> dinlemeyi bırakma işlevi
+			let kSonHucre = "";        // kendi mahallem
+			window.miniakentKonumSahip = true;
+			const kHata = (e) => console.warn("konum", e);
+			const kBildir = () => {
+				const hepsi = {};
+				for (const h of Object.keys(kHucreler)) Object.assign(hepsi, kHucreler[h]);
+				window.miniakentKonumAkis = JSON.stringify(hepsi);
+				window.miniakentKonumSurum = (window.miniakentKonumSurum || 0) + 1;
+			};
+			const kBul = (ad) => {
+				for (const h of Object.keys(kHucreler)) if (kHucreler[h][ad]) return kHucreler[h][ad];
+				return null;
+			};
+			const kAc = (h) => {
+				if (kAbone[h]) return;
+				kAbone[h] = onValue(ref(db, V8 + "canli/" + h), (s) => { kHucreler[h] = s.val() || {}; kBildir(); }, kHata);
+			};
+			const kKapa = (h) => {
+				if (!kAbone[h]) return;
+				kAbone[h]();
+				delete kAbone[h];
+				delete kHucreler[h];
+				kBildir();
+			};
+			// Oyun kameranın gördüğü mahalleleri söyler; sayfa yalnız onları dinler (kendi mahallem hep açık).
+			window.miniakentKonumHucre = (s) => {
+				const y = new Set(String(s || "").split(",").filter(Boolean));
+				if (kSonHucre) y.add(kSonHucre);
+				for (const h of Object.keys(kAbone)) if (!y.has(h)) kKapa(h);
+				for (const h of y) kAc(h);
+				window.miniakentKonumDinlenen = Object.keys(kAbone).length;   // tanı
+			};
+			window.miniakentKonumYaz = (j) => {
+				if (!karakter || !auth.currentUser) return Promise.resolve();
+				const k = anahtar(karakter), v = kBul(k), simdi = Date.now();
+				const bos = !v || !v.t || simdi - v.t > 8000, benim = !!v && v.s === kSid;
+				window.miniakentKonumSahip = bos || benim;
+				if (!j) {   // programa dönüldü: kayıt silinir, kişi yeniden saatten yürütülür
+					const eski = kSonHucre;
+					kSonHucre = "";
+					return eski ? set(ref(db, V8 + "canli/" + eski + "/" + k), null).catch(kHata) : Promise.resolve();
+				}
+				if (!window.miniakentKonumSahip) return Promise.resolve();
+				const o = JSON.parse(j), huc = String(o.b || "");
+				delete o.b;
+				if (!huc) return Promise.resolve();
+				if (huc !== kSonHucre) {   // mahalle değişti: eski mahalleden silinir
+					if (kSonHucre) set(ref(db, V8 + "canli/" + kSonHucre + "/" + k), null).catch(kHata);
+					kSonHucre = huc;
+					kAc(huc);
+				}
+				return set(ref(db, V8 + "canli/" + huc + "/" + k), Object.assign(o, { s: kSid, t: serverTimestamp() })).catch(kHata);
+			};
 		}
 		// Jetski Parkur Challenge sıralaması (kullanıcı, 2026-11-20; test802): oyun ayı başına (12:00 TR'de döner) kişinin en
 		// iyi puanı t802/jetski_parkur/a<gün no>/<ad anahtarı> = {p, t}; kural yalnız daha yüksek puanı kabul eder
@@ -734,8 +825,8 @@ try {
 			const M8 = window.M802, K = anahtar(karakter), P = "t802/";
 			// Panel (2026-11-21): panel/<k>/<id> {s görev, c yol, b başlangıç, bit bitiş (ms), e enerji, u uzmanlık %, r sonuç
 			// {ok, bg, p}} · sef/<iş yeri> {k, b, n} (tek koltuk) · sef_aday/g<gün>/<iş yeri>/<k> {bg, t}
-			const v = { is: {}, uzm: {}, basvuru: {}, gider: {}, kurs: null, yet: {}, panel: {}, sef: {}, sefAday: {} }, gelen = new Set();
-			const YUK = 9;   // dinlenen kayıt sayısı
+			const v = { is: {}, uzm: {}, basvuru: {}, gider: {}, kurs: null, yet: {}, panel: {}, sef: {}, sefAday: {}, favori: {} }, gelen = new Set();
+			const YUK = 10;   // dinlenen kayıt sayısı
 			const yay = () => {
 				const oyun = { is: {}, uzm: {}, gider: M8.giderler(v.basvuru, v.gider, M8.gunNo(miniakentSimdi())) };
 				for (const [k, r] of Object.entries(v.is)) {
@@ -801,6 +892,9 @@ try {
 			for (const [yol, ad] of [["is", "is"], ["uzm", "uzm"], ["basvuru", "basvuru"], ["gider", "gider"], ["kurs/" + K, "kurs"], ["yet/" + K, "yet"],
 				["panel/" + K, "panel"], ["sef", "sef"], ["sef_aday", "sefAday"]])
 				onValue(ref(db, P + yol), (s) => { v[ad] = s.val() || (ad === "kurs" ? null : {}); gelen.add(ad); yay(); isle(); }, (e) => console.warn("802 " + ad, e));
+			// Kişisel veriler kullanıcının kendi klasöründe (kullanıcı, 2026-11-25): kullanici/<karakter>/…
+			onValue(ref(db, "kullanici/" + K + "/favori"), (s) => { v.favori = s.val() || {}; gelen.add("favori"); yay(); isle(); },
+				(e) => { console.warn("favori", e); v.favori = {}; gelen.add("favori"); yay(); isle(); });   // izin yoksa da hazır say, 802 işleyişi durmasın
 			setInterval(() => { yay(); isle(); }, 30000);   // gün dönümü (12:00): kura, uzmanlık ve kurs günü
 			setInterval(() => {   // Panel görevi bitince sonuç hemen gelsin
 				if (Object.values(v.panel || {}).some((o) => o && !o.r && +o.bit <= miniakentSimdi() - 2000)) isle();
@@ -817,6 +911,8 @@ try {
 			};
 			window.m802SefAday = (yer, bg) => set(ref(db, P + "sef_aday/g" + M8.gunNo(miniakentSimdi()) + "/" + yer + "/" + K),
 				{ bg: bg, t: serverTimestamp() }).catch((x) => console.warn("sef", x));
+			// Favoriler hesaba bağlı (kullanıcı, 2026-11-25): kullanici/<karakter>/favori/<ad> = true
+			window.m802FavoriYaz = (h, ekle) => set(ref(db, "kullanici/" + K + "/favori/" + anahtar(h)), ekle ? true : null).catch((x) => console.warn("favori", x));
 			window.m802Basvur = (i) => set(ref(db, P + "basvuru/g" + M8.gunNo(miniakentSimdi()) + "/i" + i + "/" + K), serverTimestamp());
 			window.m802KursBasla = (id) => {
 				const kr = M8.KURS.find((x) => x[0] === id);
@@ -1533,7 +1629,7 @@ try {
 //   Deneyimli %1 · Usta %3 · Efsane %9 (10 / 30 / 90 aktif gün). Maaşa yalnız çalışılan alanın uzmanlığı (ekonomi.gd).
 // - Kurs (25. karar): aynı anda tek kurs, ücret başlarken peşin, günün ilk girişi 1 kurs günü, iptalde %50 iade, sınav yok.
 //   Test kullanıcıları Premium sayılır (kullanıcı, 2026-11-20); üyelik ekranı yok. Listede yalnız türü kesin olan yeterlilikler.
-if (window.miniakent802) window.M802 = (function () {
+if (window.miniakentSezon1) window.M802 = (function () {   // 1. Sezon kapalıyken hiç kurulmaz (kullanıcı, 2026-11-26)
 	const ALAN = ["Temizlik ve tesis hizmetleri", "Yiyecek ve içecek", "Konaklama ve turizm", "Perakende ve satış", "Ulaşım, lojistik ve depo", "Üretim ve fabrika", "İnşaat ve yapı", "Tarım, balıkçılık ve hayvanlar", "Güvenlik ve kamu düzeni", "Sağlık", "Hukuk ve adalet", "Finans, bankacılık ve sigorta", "Büro, yönetim ve insan kaynakları", "Eğitim", "Spor ve fitness", "Sanat, müzik ve sahne", "Medya, yayıncılık ve dil", "Tasarım, reklam ve pazarlama", "Bilişim ve yazılım", "Mühendislik, enerji ve Ar-Ge", "Güzellik, bakım ve moda"];
 	// ad: [maaş grubu, kariyer alanı no, başlangıç ilanı (0 değil · 1 uygun · 2 ehliyet şartıyla), minimum uzmanlık (0–3; −1 açık), ek yeterlilik]
 	const M = {"Temizlik Görevlisi":[1,0,1,0,"Yok"],"Temizlikçi":[1,0,1,0,"Yok"],"Hizmetli":[1,0,1,0,"Yok"],"Sokak Temizlik Görevlisi":[1,0,0,0,"Özel kadro"],"Çöp Toplama Görevlisi":[1,0,0,0,"Özel kadro"],"Bulaşıkçı":[1,1,1,0,"Yok"],"Komi":[1,1,1,0,"Yok"],"Çaycı":[1,1,1,0,"Yok"],"Kantinci":[1,1,0,0,"Özel kadro"],"Vagon Temizlik Görevlisi":[1,0,1,0,"Yok"],"Çamaşırhane Görevlisi":[1,0,1,0,"Yok"],"Şezlong Görevlisi":[1,2,1,0,"Yok"],"Otopark Görevlisi":[1,4,1,0,"Yok"],"Paketleme Görevlisi":[1,5,1,0,"Yok"],"İnşaat Çırağı":[1,6,1,0,"Yok"],"Stajyer Avukat":[1,10,0,0,"Eğitim"],"Stajyer Hemşire":[1,9,0,0,"Birden fazla şart"],"Grafiti Ustası Yardımcısı":[1,15,1,0,"Yok"],"Sokak Müzisyeni":[1,15,0,0,"Yok"],"Sokak Şarkıcısı":[1,15,0,0,"Yok"],"Sokak Dansçısı":[1,15,0,0,"Yok"],"Profesyonel Boğulan":[1,14,0,0,"Yok"],"Bellboy":[2,2,1,0,"Yok"],"Valeci":[2,2,2,0,"Ehliyet"],"Bagaj Görevlisi":[2,4,1,0,"Yok"],"Peron Görevlisi":[2,4,1,0,"Yok"],"Kat Görevlisi":[2,2,1,0,"Yok"],"Reyon Görevlisi":[2,3,1,0,"Yok"],"Kasiyer":[2,3,1,0,"Yok"],"Garson":[2,1,1,0,"Yok"],"Barista":[2,1,1,0,"Yok"],"Büfeci":[2,1,1,0,"Yok"],"Kokoreççi":[2,1,0,0,"Yok"],"Balık satıcısı":[2,3,1,0,"Yok"],"Çiçekçi":[2,3,0,0,"Yok"],"Danışma Görevlisi":[2,12,1,0,"Yok"],"Havuz Görevlisi":[2,2,1,0,"Yok"],"Spa Görevlisi":[2,20,1,0,"Yok"],"Sıpa Görevlisi":[2,7,0,0,"Yok"],"Kurye":[2,4,2,0,"Ehliyet"],"Postacı":[2,4,1,0,"Yok"],"Bekçi":[2,8,1,0,"Yok"],"Park Bekçisi":[2,8,1,0,"Yok"],"Gece Koruyucusu":[2,8,1,0,"Yok"],"Makas Görevlisi":[2,4,1,0,"Yok"],"İnşaat İşçisi":[2,6,1,0,"Yok"],"Spor Salonu Resepsiyonisti":[2,14,1,0,"Yok"],"Animatör":[2,15,1,0,"Yok"],"Manav":[2,3,1,0,"Yok"],"Üretim İşçisi":[3,5,1,0,"Yok"],"Depo Görevlisi":[3,4,1,0,"Yok"],"Soğuk Depo Görevlisi":[3,4,1,0,"Yok"],"Liman İşçisi":[3,4,1,0,"Yok"],"Ton Balığı İşçisi":[3,5,1,0,"Yok"],"Palamar Görevlisi":[3,4,1,0,"Yok"],"Liman Görevlisi":[3,4,0,0,"Yok"],"Güvenlik Görevlisi":[3,8,0,0,"Sertifika"],"Banka Gişe Görevlisi":[3,11,1,0,"Yok"],"Bilet Gişe Görevlisi":[3,4,1,0,"Yok"],"Çağrı Merkezi Görevlisi":[3,12,1,0,"Yok"],"Bahçıvan":[3,7,1,0,"Yok"],"Çiftçi":[3,7,0,0,"Yok"],"Balıkçı":[3,7,0,0,"Yok"],"Ormancı":[3,7,0,0,"Eğitim"],"Kasap":[3,1,0,0,"Mesleki eğitim"],"Pastacı":[3,1,0,0,"Mesleki eğitim"],"Barmen":[3,1,1,0,"Yok"],"Resepsiyonist":[3,2,1,0,"Yok"],"Rezervasyon Görevlisi":[3,2,1,0,"Yok"],"Betoncu":[3,6,1,0,"Yok"],"Kalıpçı":[3,6,1,0,"Yok"],"Puantör":[3,6,1,0,"Yok"],"İnşaat Ustası":[4,6,0,1,"Yok"],"Duvar Ustası":[4,6,0,1,"Yok"],"Tesisat Ustası":[4,6,0,1,"Yok"],"Mekanik Tesisat Ustası":[4,6,0,1,"Mesleki sertifika"],"Elektrik Ustası":[4,6,0,1,"Mesleki sertifika"],"Hat Bakım Ustası":[4,4,0,1,"Yok"],"Demirci":[4,6,0,1,"Yok"],"Kaynakçı":[4,5,0,1,"Mesleki sertifika"],"Terzi":[4,20,0,1,"Yok"],"Terzi ve Eğitmen":[4,20,0,2,"Yok"],"Kuaför":[4,20,0,0,"Mesleki eğitim"],"Makyöz":[4,20,0,0,"Mesleki eğitim"],"Masör":[4,20,0,0,"Mesleki eğitim"],"Bisiklet Tamircisi":[4,4,0,1,"Yok"],"Kamyon Şoförü":[4,4,0,0,"Ehliyet"],"Tır Şoförü":[4,4,0,0,"Birden fazla şart"],"Balık Kamyonu Şoförü":[4,4,0,0,"Ehliyet"],"Ambulans Şoförü":[4,4,0,0,"Ehliyet + ilk yardım/ambulans kullanma sertifikası"],"Kondüktör":[4,4,0,1,"Yok"],"Aşçı":[4,1,0,1,"Yok"],"Teknik Servis Görevlisi":[4,0,0,1,"Yok"],"Grafiti Ustası":[4,15,0,1,"Yok"],"Protez Tırnak Uzmanı":[4,20,0,1,"Yok"],"Güzellik Uzmanı":[4,20,0,0,"Mesleki eğitim"],"İstasyon Görevlisi":[4,4,0,1,"Yok"],"Hareket Memuru":[4,4,0,1,"Yok"],"Forklift Operatörü":[5,4,0,1,"Sertifika"],"Makine Operatörü":[5,5,0,1,"Mesleki sertifika"],"Vinç Operatörü":[5,6,0,1,"Sertifika"],"Rıhtım Vinci Operatörü":[5,4,0,1,"Sertifika"],"Ekskavatör Operatörü":[5,6,0,1,"Sertifika"],"Makinist":[5,4,0,2,"Birden fazla şart"],"Asansör Teknisyeni":[5,0,0,0,"Teknik eğitim"],"Bakım Teknisyeni":[5,5,0,0,"Teknik eğitim"],"Ses Teknisyeni":[5,16,0,0,"Yok"],"Laboratuvar Teknisyeni":[5,19,0,0,"Eğitim"],"Gıda Teknisyeni":[5,5,0,0,"Teknik eğitim"],"Kalite Kontrol Teknisyeni":[5,5,0,0,"Teknik eğitim"],"Diş Teknisyeni":[5,9,0,0,"Eğitim"],"Laborant":[5,9,0,0,"Birden fazla şart"],"Cankurtaran":[5,8,0,0,"Sertifika"],"Su Sporları Eğitmeni":[5,14,0,0,"Eğitmenlik veya antrenörlük sertifikası"],"Sörf Eğitmeni":[5,14,0,0,"Eğitmenlik veya antrenörlük sertifikası"],"Sörfçü":[5,14,0,1,"Yok"],"Tur Rehberi":[5,2,0,0,"Sertifika"],"Turizm Rehberi":[5,2,0,0,"Sertifika"],"Stüdyo Asistanı":[5,16,0,0,"Yok"],"Arşiv Görevlisi":[5,12,0,0,"Yok"],"Sekreter":[6,12,0,1,"Yok"],"Büro Memuru":[6,12,0,1,"Özel kadro"],"Postane Memuru":[6,4,0,1,"Yok"],"Veznedar":[6,11,0,1,"Yok"],"Tıbbi Sekreter":[6,12,0,0,"Mesleki eğitim"],"Zabıt Kâtibi":[6,10,0,0,"Birden fazla şart"],"Mübaşir":[6,10,0,0,"Birden fazla şart"],"İcra Memuru":[6,10,0,0,"Birden fazla şart"],"Yönetici Asistanı":[6,12,0,1,"Yok"],"Klinik Asistanı":[6,9,0,0,"Mesleki eğitim"],"Müşteri Temsilcisi":[6,3,0,1,"Yok"],"Müşteri Hizmetleri Uzmanı":[6,3,0,1,"Yok"],"Rezervasyon Uzmanı":[6,2,0,1,"Yok"],"Seyahat Danışmanı":[6,2,0,1,"Yok"],"Satış Uzmanı":[6,3,0,1,"Yok"],"Konsiyerj":[6,2,0,2,"Yok"],"Reklam ve Pazarlama Personeli":[6,17,0,0,"Yok"],"Banka Memuru":[6,11,0,1,"Yok"],"Gümrük Memuru":[6,4,0,1,"Kamu personeli yeterliliği"],"Stilist":[6,20,0,2,"Yok"],"Polis":[7,8,0,0,"Birden fazla şart"],"Trafik Polisi":[7,8,0,0,"Birden fazla şart"],"Zabıta":[7,8,0,0,"Özel kadro"],"Paramedik":[7,9,0,0,"Birden fazla şart"],"Acil Tıp Teknisyeni":[7,9,0,0,"Birden fazla şart"],"Anestezi Teknikeri":[7,9,0,0,"Birden fazla şart"],"Hemşire Yardımcısı":[7,9,0,0,"Mesleki eğitim"],"Vardiya Amiri":[7,5,0,2,"Yok"],"Yoga Eğitmeni":[8,14,0,0,"Eğitmenlik veya antrenörlük sertifikası"],"Pilates Eğitmeni":[8,14,0,0,"Eğitmenlik veya antrenörlük sertifikası"],"Fitness Eğitmeni":[8,14,0,0,"Eğitmenlik veya antrenörlük sertifikası"],"Spor Hocası":[8,14,0,0,"Eğitmenlik veya antrenörlük sertifikası"],"Dans Eğitmeni":[8,15,0,2,"Yok"],"Bale Eğitmeni":[8,15,0,2,"Yok"],"Bilişim Eğitmeni":[8,13,0,0,"Yok"],"Taekwondocu":[8,14,0,2,"Yok"],"Voleybol Oyuncusu":[8,14,0,2,"Yok"],"At Antrenörü":[8,7,0,1,"Yok"],"Kameraman":[8,16,0,1,"Yok"],"Fotoğrafçı":[8,16,0,1,"Yok"],"Ürün Fotoğrafçısı":[8,17,0,1,"Yok"],"Rötuş Uzmanı":[8,17,0,1,"Yok"],"Ressam":[8,15,0,1,"Yok"],"Resim Sanatçısı":[8,15,0,1,"Yok"],"Seramik Sanatçısı":[8,15,0,1,"Yok"],"Heykeltıraş":[8,15,0,1,"Yok"],"DJ":[8,15,0,1,"Yok"],"Müzisyen":[8,15,0,1,"Yok"],"Gitarist":[8,15,0,1,"Yok"],"Solist":[8,15,0,1,"Yok"],"Şarkıcı":[8,15,0,1,"Yok"],"Rock Müzik Sanatçısı":[8,15,0,1,"Yok"],"Doğaçlama Tiyatrocu":[8,15,0,1,"Yok"],"Oryantal Dans Hocası":[8,15,0,2,"Yok"],"Muhasebeci":[9,11,0,0,"Mesleki eğitim"],"Satın Alma Sorumlusu":[9,12,0,2,"Yok"],"Emlak Danışmanı":[9,3,0,0,"Mesleki sertifika"],"Sigorta Uzmanı":[9,11,0,0,"Mesleki eğitim"],"Hasar Uzmanı":[9,11,0,1,"Mesleki sertifika"],"Kredi Uzmanı":[9,11,0,1,"Yok"],"İK Uzmanı":[9,12,0,2,"Yok"],"İnsan Kaynakları Uzmanı":[9,12,0,2,"Yok"],"İşe Alım Uzmanı":[9,12,0,2,"Yok"],"İdari İşler Uzmanı":[9,12,0,2,"Yok"],"Lojistik Uzmanı":[9,4,0,2,"Yok"],"Lojistik Operasyon Uzmanı":[9,4,0,2,"Yok"],"Lojistik Planlama Uzmanı":[9,4,0,2,"Yok"],"Konteyner Planlama Uzmanı":[9,4,0,2,"Yok"],"Teknik Destek Uzmanı":[9,18,0,0,"Yok"],"Bilgi İşlem Uzmanı":[9,18,0,0,"Yok"],"IT Uzmanı":[9,18,0,0,"Yok"],"Sosyal Medya Uzmanı":[9,17,0,1,"Yok"],"E-Ticaret Uzmanı":[9,3,0,2,"Yok"],"Organizasyon Uzmanı":[9,17,0,1,"Yok"],"Etkinlik Koordinatörü":[9,17,0,2,"Yok"],"Mühendislik Proje Uzmanı":[9,19,0,1,"Yok"],"Kalite Kontrol Uzmanı":[9,5,0,2,"Yok"],"Değerleme Uzmanı":[9,11,0,1,"Mesleki sertifika"],"Halkla İlişkiler Uzmanı":[9,17,0,1,"Yok"],"Pazarlama Uzmanı":[9,17,0,1,"Yok"],"Reklamcı":[9,17,0,1,"Yok"],"İçerik Yazarı":[9,16,0,1,"Yok"],"Metin Yazarı":[9,17,0,1,"Yok"],"Redaktör":[9,16,0,1,"Yok"],"Çevirmen":[9,16,0,1,"Yok"],"Tercüman":[9,16,0,0,"Mesleki sertifika"],"Reklam Pazarlama Sorumlusu":[9,17,0,2,"Yok"],"Öğretmen":[10,13,0,0,"Eğitim"],"Rehber Öğretmen":[10,13,0,0,"Eğitim"],"İngilizce Öğretmeni":[10,13,0,0,"Eğitim"],"Almanca Öğretmeni":[10,13,0,0,"Eğitim"],"Edebiyat Öğretmeni":[10,13,0,0,"Eğitim"],"Matematik Öğretmeni":[10,13,0,0,"Eğitim"],"Resim Öğretmeni":[10,13,0,0,"Eğitim"],"Müzik Öğretmeni":[10,13,0,0,"Eğitim"],"Beden Eğitimi Öğretmeni":[10,13,0,0,"Eğitim"],"Okul Öncesi Öğretmeni":[10,13,0,0,"Eğitim"],"Anasınıfı Öğretmeni":[10,13,0,0,"Eğitim"],"Gitar Öğretmeni":[10,13,0,0,"Mesleki eğitim"],"Piyano Öğretmeni":[10,13,0,0,"Mesleki eğitim"],"Şan Öğretmeni":[10,13,0,0,"Mesleki eğitim"],"Yazılım Eğitmeni":[10,13,0,1,"Yok"],"Eğitim Danışmanı":[10,13,0,2,"Yok"],"Hemşire":[10,9,0,0,"Eğitim"],"Ebe":[10,9,0,0,"Birden fazla şart"],"Fizyoterapist":[10,9,0,0,"Eğitim"],"Diyetisyen":[10,9,0,0,"Eğitim"],"Çocuk Gelişimi Uzmanı":[10,9,0,0,"Üniversite veya ileri eğitim: çocuk gelişimi eğitimi"],"Koreograf":[10,15,0,3,"Yok"],"Spiker":[10,16,0,2,"Yok"],"Radyo Programcısı":[10,16,0,1,"Yok"],"Muhabir":[10,16,0,1,"Yok"],"Gazeteci":[10,16,0,2,"Yok"],"Editör":[10,16,0,2,"Yok"],"Kurgucu":[10,16,0,1,"Yok"],"Haber Spikeri":[10,16,0,2,"Yok"],"Haber Sunucusu":[10,16,0,2,"Yok"],"Grafik Tasarımcı":[11,17,0,2,"Yok"],"Web Tasarımcı":[11,18,0,1,"Yok"],"3B Sanatçı":[11,17,0,2,"Yok"],"Oyun Tasarımcısı":[11,18,0,1,"Yok"],"Moda Tasarımcısı":[11,20,0,3,"Yok"],"Modacı":[11,20,0,3,"Yok"],"İç Mimar":[11,6,0,0,"Eğitim"],"İş Analisti":[11,12,0,2,"Yok"],"Veri Analisti":[11,18,0,1,"Yok"],"Finans Uzmanı":[11,11,0,2,"Yok"],"Ağ Uzmanı":[11,18,0,1,"Yok"],"Yazılım Test Uzmanı":[11,18,0,1,"Yok"],"Araştırmacı":[11,19,0,2,"Yok"],"Biyolog":[11,19,0,0,"Üniversite veya ileri eğitim: biyoloji eğitimi"],"İş Güvenliği Uzmanı":[11,6,0,2,"Sertifika"],"Başmuhabir":[11,16,0,3,"Yok"],"Liman Koordinatörü":[11,4,0,3,"Yok"],"Banka Koordinatörü":[11,11,0,3,"Yok"],"Kafe Sahibi":[11,1,0,-1,"Yok"],"Yazılımcı":[12,18,0,2,"Yok"],"Oyun Geliştirici":[12,18,0,2,"Yok"],"Mobil Uygulama Geliştirici":[12,18,0,2,"Yok"],"Bilişim Uzmanı":[12,18,0,2,"Yok"],"Endüstri Mühendisi":[12,19,0,0,"Eğitim"],"Üretim Mühendisi":[12,19,0,0,"Eğitim"],"Makine Mühendisi":[12,19,0,0,"Eğitim"],"İnşaat Mühendisi":[12,19,0,0,"Eğitim"],"Elektrik Mühendisi":[12,19,0,0,"Eğitim"],"Elektrik-Elektronik Mühendisi":[12,19,0,0,"Eğitim"],"Harita Mühendisi":[12,19,0,0,"Eğitim"],"Mimar":[12,6,0,0,"Eğitim"],"Kılavuz Kaptan":[12,4,0,3,"Birden fazla şart"],"Komiser Yardımcısı":[12,8,0,2,"Birden fazla şart"],"Veri Bilimci":[13,18,0,3,"Yok"],"Siber Güvenlik Uzmanı":[13,18,0,3,"Yok"],"Finans Analisti":[13,11,0,2,"Yok"],"Yatırım Danışmanı":[13,11,0,2,"Sertifika"],"Borsa Brokeri":[13,11,0,2,"Sertifika"],"Mali Müşavir":[13,11,0,2,"Birden fazla şart"],"Kurumsal Proje Yöneticisi":[13,12,0,3,"Yok"],"Yönetim Danışmanı":[13,12,0,3,"Yok"],"Hukuk Danışmanı":[13,10,0,2,"Eğitim"],"Psikolog":[13,9,0,0,"Eğitim"],"Adli Psikolog":[13,9,0,1,"Üniversite veya ileri eğitim: psikoloji eğitimi + adli psikoloji uzmanlığı"],"Veteriner":[13,7,0,0,"Eğitim"],"Koordinatör Veteriner":[13,7,0,3,"Eğitim"],"Eczacı":[13,9,0,0,"Birden fazla şart"],"Ekonomist":[13,11,0,0,"Eğitim"],"Avukat":[14,10,0,1,"Birden fazla şart"],"Diş Hekimi":[14,9,0,0,"Eğitim"],"Doktor":[15,9,0,0,"Eğitim"],"Çocuk Doktoru":[15,9,0,2,"Birden fazla şart"],"Göz Doktoru":[15,9,0,2,"Birden fazla şart"],"Acil Doktoru":[15,9,0,2,"Birden fazla şart"],"Kadın Doğum Doktoru":[15,9,0,2,"Birden fazla şart"],"Psikiyatrist":[15,9,0,2,"Birden fazla şart"],"Hâkim":[16,10,0,3,"Birden fazla şart"],"Savcı":[16,10,0,3,"Birden fazla şart"],"Cerrah":[17,9,0,2,"Birden fazla şart"],"Beyin Cerrahı":[18,9,0,3,"Birden fazla şart"],"Kalp Cerrahı":[18,9,0,3,"Birden fazla şart"]};
@@ -2115,6 +2211,55 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	background: none; font: 600 13px var(--fb); color: var(--yazi); cursor: pointer; }
 #mkb .amenu svg { width: 18px; height: 18px; }
 @media (prefers-reduced-motion: reduce) { #mkb .mkb-pano, #mkb .ray, #mkb .sehirde, #mkb .ayarlar { transition: none; } }
+/* Test802 düzeni (kullanıcı, 2026-11-25): üstte ortada Panel, sağda alt alta yuvarlaklar, sol üstte Favoriler, ses Profil'de */
+#mkb.t802 .ust { align-items: stretch; }
+#mkb.t802 .ust .serit { flex: 1 1 0; min-width: 0; justify-content: center; text-align: center; white-space: pre-line; }
+#mkb.t802 .ust .serit span { white-space: pre-line; }
+#mkb.t802 .ust .saatk .saat { margin-left: 0; text-align: center; }
+#mkb.t802 .panelk { position: relative; background: #f3c04a; font-weight: 800; }
+#mkb.t802 .panelk .rozet { position: absolute; top: -9px; right: -9px; min-width: 21px; height: 21px; border-radius: 11px; background: #d22630; color: #fff;
+	font-size: 12px; font-weight: 800; display: grid; place-items: center; padding: 0 5px; border: 2px solid var(--krem); }
+#mkb.t802 .favori-alt { position: absolute; top: calc(80px + env(safe-area-inset-top, 0px)); left: 12px; }
+#mkb.t802 .cevrim { top: calc(90px + env(safe-area-inset-top, 0px)); left: 60px; }   /* yıldızın yanına */
+#mkb.t802 .disli-alt { position: absolute; top: calc(80px + env(safe-area-inset-top, 0px)); left: calc(12px + var(--en) - 38px); }
+#mkb.t802 .foto-alt { top: calc(80px + env(safe-area-inset-top, 0px)); left: calc(12px + var(--en) - 84px); }
+#mkb.t802 .sehirde-alt { top: calc(126px + env(safe-area-inset-top, 0px)); left: calc(12px + var(--en) - 38px); }
+#mkb.t802 .sohbet-alt { position: absolute; top: calc(172px + env(safe-area-inset-top, 0px)); left: calc(12px + var(--en) - 38px); }
+#mkb.t802 .ses-alt, #mkb.t802 #mkb-sohbet-ac { display: none; }
+#mkb.t802 .sehirde { top: calc(126px + env(safe-area-inset-top, 0px)); width: 50%; max-height: calc(100% - 200px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px)); }
+#mkb.t802 .favori-p { left: 0; right: auto; top: calc(80px + env(safe-area-inset-top, 0px)); border-right: 3px solid var(--kenar); border-left: 0;
+	border-radius: 0 24px 24px 0; transform: translateX(-105%); }
+#mkb.t802 .favori-p.acik { transform: none; }
+#mkb.t802 .ayarlar { width: 50%; max-width: none; }
+#mkb.t802 .sohbet-ekran { width: 50%; }
+/* Sohbet (kullanıcı, 2026-11-25): yazma alanına dokununca tam ekran olur; yazı alanı alt satıra geçip genişler,
+   mesaj yazısı küçülür (yarım ekranda yazacak yer kalmıyordu) */
+#mkb.t802 .sohbet-ekran.yazarken { width: 100%; }
+#mkb.t802 .sohbet-ekran .s-liste { font-size: 12.5px; gap: 5px; padding: 10px; }
+#mkb.t802 .sohbet-ekran .s-yaz { flex-wrap: wrap; row-gap: 6px; }
+#mkb.t802 .sohbet-ekran .s-yaz input { flex: 1 1 100%; font-size: 15px; padding: 9px 14px; }
+#mkb.t802 .sohbet-ekran .s-yaz button { margin-left: auto; padding: 7px 18px; }
+/* Panel üstten iner: ekranı sağdan sola kaplar, boyu yarım; parmakla aşağı çekilince arama satırına kadar */
+#mkb.t802 .mkb-pano.ustten { left: 0; top: 0; width: 100%; max-width: none; height: 50%; border-radius: 0 0 24px 24px; border-top: 0;
+	transform: translateY(-105%); }
+#mkb.t802 .mkb-pano.ustten.acik { transform: none; }
+#mkb.t802 .mkb-pano.ustten.genis { height: calc(100% - 76px - env(safe-area-inset-bottom, 0px)); }
+/* Başkasının kartı sağdan gelir ve sağda kalır (kullanıcı, 2026-11-25) */
+#mkb.t802 .mkb-pano.sagdan { left: auto; right: 0; width: min(85%, 420px); max-width: none; border-left: 3px solid var(--kenar); border-right: 0;
+	border-radius: 24px 0 0 24px; transform: translateX(105%); }
+#mkb.t802 .mkb-pano.sagdan.acik { transform: none; }
+#mkb.t802 .mkb-pano.sagdan.tam { right: 0; left: 0; width: 100%; border-radius: 0; }
+/* "Tam ekran" düğmesi de Panel'de arama satırına kadar indirir (kullanıcı, 2026-11-25) */
+#mkb.t802 .mkb-pano.ustten.tam { top: 0; left: 0; width: 100%; height: calc(100% - 76px - env(safe-area-inset-bottom, 0px)); border-radius: 0 0 24px 24px; }
+@media (hover: hover) and (pointer: fine) and (min-width: 700px) {
+	/* geniş ekran (kullanıcı, 2026-11-25): Nüfus solda, Panel ortada, takvim ve yuvarlaklar en sağda */
+	#mkb.t802 .ust { width: calc(100% - 24px); justify-content: space-between; }
+	#mkb.t802 .ust .serit { flex: 0 0 min(230px, 28%); }
+	#mkb.t802 #mkb-disli { position: absolute; left: auto; right: 12px; top: calc(80px + env(safe-area-inset-top, 0px)); }
+	#mkb.t802 .foto-alt { left: auto; right: 58px; }
+	#mkb.t802 .sehirde-alt, #mkb.t802 .sohbet-alt { left: auto; right: 12px; }
+	#mkb.t802 .mkb-pano.sagdan { width: min(50%, 520px); }   /* geniş ekranda yarım, telefonda dar kalmasın (kullanıcı, 2026-11-25) */
+}
 /* bilgisayarda (fare, geniş ekran) ayarlar, ses ve Bölgeler sağ kenarda (kullanıcı, 2026-11-08) */
 @media (hover: hover) and (pointer: fine) and (min-width: 700px) {
 	#mkb #mkb-disli { position: fixed; right: 12px; top: calc(12px + env(safe-area-inset-top, 0px)); }
@@ -2127,6 +2272,8 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	document.head.appendChild(css);
 
 	const SVG = {
+		yildiz: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.6l2.9 5.9 6.5.95-4.7 4.6 1.1 6.45L12 17.5l-5.8 3 1.1-6.45-4.7-4.6 6.5-.95z"/></svg>',
+		sohbet: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M5.5 3.5h13A2.5 2.5 0 0121 6v8a2.5 2.5 0 01-2.5 2.5H9.8L5 20.4V16.5A2.5 2.5 0 013 14V6a2.5 2.5 0 012.5-2.5z"/></svg>',
 		foto: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"><path d="M3.5 8h3.5l2-3h6l2 3h3.5v11h-17z"/><circle cx="12" cy="13" r="3.6"/></svg>',
 		// çevrimiçi (kullanıcının gönderdiği simge, 2026-11-16): dört kişi, biri önde
 		kisiler: '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="16" cy="7.5" r="2.8"/><path d="M11.8 15.2a4.6 4.6 0 0 1 8.4 0"/><circle cx="8.6" cy="13.8" r="2.8"/><path d="M3.4 23a5.6 5.6 0 0 1 8.9-4.2"/><circle cx="23.4" cy="13.8" r="2.8"/><path d="M28.6 23a5.6 5.6 0 0 0-8.9-4.2"/><circle cx="16" cy="18.2" r="3.2"/><path d="M9.6 28.5a6.4 6.4 0 0 1 12.8 0"/></svg>',
@@ -2146,10 +2293,19 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	};
 	const kok = document.createElement("div");
 	kok.id = "mkb";
+	if (window.miniakent802) kok.classList.add("t802");   // test802 düzeni (kullanıcı, 2026-11-25)
 	kok.hidden = true;
 	kok.innerHTML = `
-<div class="ust"><div class="serit"><span id="mkb-nufus"></span><span class="saat" id="mkb-saat"></span></div>
-	<button class="yuvarlak" id="mkb-disli" aria-label="Profil" aria-expanded="false">${SVG.kisi}</button></div>
+${window.miniakent802 ? `<div class="ust"><div class="serit"><span id="mkb-nufus"></span>${window.miniakentSezon1 ? "" : `<span class="saat" id="mkb-saat"></span>`}</div>${window.miniakentSezon1 ? `
+	<button class="serit panelk" id="mkb-panel-ac"><b>Panel</b><span class="rozet" id="mkb-panel-sayi" hidden></span></button>
+	<div class="serit saatk"><span class="saat" id="mkb-saat"></span></div>` : ""}</div>
+<button class="yuvarlak favori-alt" id="mkb-favori" aria-label="Favoriler" aria-expanded="false">${SVG.yildiz}</button>
+<button class="yuvarlak disli-alt" id="mkb-disli" aria-label="Profil" aria-expanded="false">${SVG.kisi}</button>
+<button class="yuvarlak sohbet-alt" id="mkb-sohbet-yuv" aria-label="Şehir sohbeti" hidden>${SVG.sohbet}</button>
+<section class="sehirde favori-p" id="mkb-favori-p" aria-hidden="true"><div class="bas"><h2>Favoriler</h2>
+	<button class="ikon" id="mkb-favori-kapat" aria-label="Kapat">${SVG.kapat}</button></div>
+	<div class="liste" id="mkb-favori-liste"></div><small id="mkb-favori-not"></small></section>` : `<div class="ust"><div class="serit"><span id="mkb-nufus"></span><span class="saat" id="mkb-saat"></span></div>
+	<button class="yuvarlak" id="mkb-disli" aria-label="Profil" aria-expanded="false">${SVG.kisi}</button></div>`}
 <div class="ust2"><form class="arama" id="mkb-arama"><input id="mkb-ara" type="search" placeholder="Sakinini bul: @kullanıcıadı" autocomplete="off"
 	autocapitalize="none" spellcheck="false" enterkeyhint="search" aria-label="Sakinini bul"><button class="cip" type="submit">Bul</button></form>
 	<button class="cip" id="mkb-sohbet-ac" hidden>Sohbet</button><button class="cip" id="mkb-bolgeler">Bölgeler</button></div>
@@ -2212,6 +2368,8 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	<button class="anahtar" role="switch" aria-checked="false" id="mkb-a-kumanda"><b>Kumanda</b><small>Ekranın sağ altında yön kumandası</small><i></i></button>
 	<hr id="mkb-a-cizgi">
 	<button class="anahtar" role="switch" aria-checked="false" id="mkb-a-lite"><b>Lite sürüm</b><small>Telefon için hafif görünüm</small><i></i></button>
+	<hr id="mkb-a-cizgi3" hidden>
+	<button class="anahtar" role="switch" aria-checked="true" id="mkb-a-ses" hidden><b>Ses</b><small>Şehrin sesleri</small><i></i></button>
 	<hr id="mkb-a-cizgi2">
 	<button class="ayril" id="mkb-ayril"><b>Çıkış Yap</b><small id="mkb-ayril-not">Karakterin otomatik moda döner</small></button>
 	<button class="p-dugme kirmizi" id="mkb-p-sil">Hesabımı sil</button>
@@ -2367,7 +2525,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			: mesai(secilen && secilen.handle === k.handle ? secilen.bas : null, true);
 		return `<button class="kim" data-takip="${esc(k.handle)}" style="border:0;background:none;padding:0;text-align:left">
 				<span class="avatar">${esc(k.handle.replace(/^@/, "").charAt(0).toUpperCase())}</span><div>
-				<b>${esc(k.handle)}${rozet(k.handle)}</b><span>${T8 ? meslekCip(k.handle, k.meslek) : esc(k.meslek)}${k.yer && !kadrosu(k.handle) ? " · " + esc(k.yer.split(" · ")[0]) : ""}</span><span>${esc(k.ev)}</span></div></button>
+				<b>${esc(k.handle)}${rozet(k.handle)}</b><span>${S8 ? meslekCip(k.handle, k.meslek) : esc(k.meslek)}${k.yer && !kadrosu(k.handle) ? " · " + esc(k.yer.split(" · ")[0]) : ""}</span><span>${esc(k.ev)}</span></div></button>
 			<span class="durum ${iste ? "" : "evde"}">${esc(dy)}</span>
 			<div class="kutu"><div class="gosterge"><span>Mesai</span>${ada(m.oran)}<span class="kucuk">${m.yazi}</span></div></div>`;
 	}
@@ -2495,7 +2653,8 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	// Test802 (kullanıcı, 2026-11-20): kurallar window.M802, kayıtlar window.m802 (modül: t802Ac). Bütün kadrolar boş başlar:
 	// bugünkü işler "Geçici" (gri), başlangıç ilanını kazanan "Kadrolu" (yeşil); açıklama yazısı yok.
 	const T8 = !!window.miniakent802;
-	const m8 = () => (T8 && window.M802 && window.m802 && window.m802.hazir ? window.m802 : null);
+	const S8 = !!window.miniakentSezon1;   // 1. Sezon: Panel içeriği + ilanlar (canlıda kapalı)
+	const m8 = () => (S8 && window.M802 && window.m802 && window.m802.hazir ? window.m802 : null);
 	const anah8 = (h) => String(h || "").replace(/^@/, "").toLowerCase().replace(/\./g, ",");
 	// Jetski Parkur Challenge sıralaması (kullanıcı, 2026-11-20): bu oyun ayının en iyi puanları
 	const parkurSira = () => Object.entries(window.miniakentParkurSira || {}).map(([k, v]) => [k, +(v && v.p) || 0])
@@ -2657,7 +2816,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	const suzgec = (m) => KUFUR.reduce((a, r) => a.replace(r, (w) => "*".repeat(w.length)), String(m || ""));
 	function altMenu() {
 		const m = [["durum", "Durum", MENU_SVG.durum], ["gorunus", "Görünüş", SVG.gorunus], ["finans", "Finans", MENU_SVG.para], ["ilan", "İlanlar", MENU_SVG.ilan]];
-		if (T8) m.push(["panel", "Panel", MENU_SVG.panel]);   // Panel (kullanıcı, 2026-11-21)
+		// Panel üst satıra taşındı (kullanıcı, 2026-11-25): alt menüde yok
 		return `<nav class="amenu">${m.map((x) => `<button data-menu="${x[0]}" aria-selected="${sayfaAd === x[0]}">${x[2]}<span>${x[1]}</span></button>`).join("")}
 			<button class="etk" data-menu="etkinlik" aria-selected="${sayfaAd === "etkinlik"}">Etkinlikler</button></nav>`;
 	}
@@ -2724,13 +2883,13 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			const yerK = (et, ad, veri) => `<button class="k-k" ${veri}><span class="etiket">${et}</span><b>${esc(ad || "—")}</b></button>`;
 			let h = `<div class="k-ust"><span class="durum ${iste ? "" : "evde"}">${esc(dy)}</span>${ada(m.oran)}<span class="kucuk">${m.yazi}</span></div>`;
 			if (window.miniakentEkonomi && e) h += `<div class="k-uc">${kk(e.bakiye < 0 ? "Borç" : "Bakiye", sayi(Math.round(Math.abs(e.bakiye || 0))), "papel")}${kk("Bu ay maaş", sayi(Math.round(e.maas || 0)), "papel")}${kk("Kıdem", ekoYuzde(e.kidem), "maaşa ek")}</div>`;
-			if (T8) h += `<div>${meslekCip(karakter, bilgi && bilgi.meslek)}</div>`;   // "Doktor · Geçici" / "· Kadrolu" (802)
+			if (S8) h += `<div>${meslekCip(karakter, bilgi && bilgi.meslek)}</div>`;   // "Doktor · Geçici" / "· Kadrolu" (802)
 			h += `<div class="k-iki">${isAd ? yerK("İş", isAd, `data-kendiis="1"`) : ""}${yerK("Ev", evAd, `data-kendiev="1"`)}</div>`;
 			if (!window.miniakentEkonomi || !e) return h + `<p class="bilgi">Finans bilgileri bu hesap için açık değil.</p>`;
 			const ek = [["Fazla mesai kazancı", e.fazla], ["Etkinlik ve taksi", e.etkinlik], ["Hastane", e.hastane], ["İzin / hastane kesintisi", e.kesinti]].filter((x) => x[1]);
 			h += `<button class="k-ac" data-ayrinti="1"><span>Bu ayın ayrıntısı</span><span>${ayrintiAcik ? "▴" : "▾"}</span></button>`;
 			if (ayrintiAcik) h += `<div class="kutu"><div class="satir"><span>Vergi</span><b>${papel(e.vergi)}</b></div><div class="satir"><span>Geçim</span><b>${papel(e.gecim)}</b></div>
-				<div class="satir"><span>Kira</span><b>${papel(e.kira)}</b></div><div class="satir"><span>${T8 ? "Uzmanlık" : "Ustalık"}</span><b>${ekoYuzde(e.ustalik)}</b></div>
+				<div class="satir"><span>Kira</span><b>${papel(e.kira)}</b></div><div class="satir"><span>${S8 ? "Uzmanlık" : "Ustalık"}</span><b>${ekoYuzde(e.ustalik)}</b></div>
 				${ek.map((x) => `<div class="satir"><span>${x[0]}</span><b>${papel(x[1])}</b></div>`).join("")}</div>`;
 			const d = dur();
 			if (d) {   // fazla mesai (kullanıcı, 2026-11-17): hafta içi mesaiden sonra en çok 2, tatil günü en çok 4 saat; saatlik ücretin 1,5 katı
@@ -2775,8 +2934,8 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			if (T8) h += parkurKutu();
 		return h + `<p class="bilgi">Bir etkinlik 1 oyun saati sürer, ücreti varınca ödenir. Taksi ${papel(20)}; yürümek ücretsiz. Değerler oyun saati başına.</p>`;
 		}],
-		ilan: ["Karakterim", () => T8 ? ilan802() : `<div class="kutu bos"><p class="bilgi">Şu an açık ilan yok. İlanlar gün içinde farklı saatlerde çıkar.</p></div>`],
-		panel: ["Karakterim", () => T8 ? panel802() : ""],
+		ilan: ["Karakterim", () => S8 ? ilan802() : `<div class="kutu bos"><p class="bilgi">Şu an açık ilan yok. İlanlar gün içinde farklı saatlerde çıkar.</p></div>`],
+		panel: ["Panel", () => S8 ? panel802() : ""],   // üstten iner (kullanıcı, 2026-11-25)
 		bina: [() => bina.baslik, () => `${bina.kasa && bina.kasa.toplam != null && window.miniakentEkonomi ? `<div class="kutu"><span class="etiket">Belediye kasası</span><h3>${papel(bina.kasa.toplam)}</h3>
 			<div class="satir"><span>Son ay vergi</span><b>${papel(bina.kasa.vergi)}</b></div><div class="satir"><span>Son ay kira</span><b>${papel(bina.kasa.kira)}</b></div></div>` : ""}${bina.alt ? `<p class="bilgi">${esc(bina.alt)}</p>` : ""}${bina.is ? binaGrup("is") : ""}${bina.ev ? binaGrup("ev") : ""}`],
 		// başka sakinin kartı: para ve göstergeler, Evini/İş yerini göster; kostüm yalnız etkinlik süresince (kullanıcı, 2026-11-05)
@@ -2786,6 +2945,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			return kart({ handle: s.handle, meslek: s.meslek || "—", yer: s.isyeri, ev: s.ev || "—" },
 				m.tatil ? "Tatilde" : m.iste ? "İşte" : "Evde", m.iste) + ekoKutu(s.ekonomi, false) + `
 			<div class="ikili"><button class="hayir" data-evgoster="1">Evini göster</button>${s.is_var ? `<button class="hayir" data-isgoster="1">İş yerini göster</button>` : ""}</div>
+			${T8 ? `<div class="ikili"><button class="hayir" data-fav="${esc(s.handle)}">${favoriMi(s.handle) ? "Favoriden çıkar" : "Favorilere al"}</button></div>` : ""}
 			${dogrulandiMi ? `<div class="ikili"><button class="evet" data-bogulsakin="1" ${m.iste ? "disabled" : ""}>Boğulmaya gönder</button></div>` : ""}
 			${karakter ? "" : rozetler[s.handle] ? `<p class="bilgi">Bu karakterin kontrolü sahibinde.</p>` : `<div class="ikili"><button class="evet" data-kontrol="1">Kontrolü Al</button></div>`}
 			${kostumVar() ? (kostumAcik ? kostumIzgara(s.handle) : `<button class="git" data-kostumac="1"><b>Kostüm giydir</b><span>Cadılar Bayramı kostümleri</span><em>40 kostüm</em></button>`) : ""}`;
@@ -2805,7 +2965,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		$("mkb-baslik").textContent = yeniDuzen ? karakter : typeof s[0] === "function" ? s[0]() : s[0];
 		$("mkb-baslik").classList.toggle("kendim", !!yeniDuzen);
 		const ic = $("mkb-icerik"), y = ic.scrollTop;
-		ic.innerHTML = yeniDuzen ? s[1]() + altMenu() : s[1]();
+		ic.innerHTML = yeniDuzen && !(S8 && sayfaAd === "panel") ? s[1]() + altMenu() : s[1]();   // Panel'de alt menü yok (kullanıcı, 2026-11-25)
 		ic.scrollTop = y;
 	}
 	// sekmeler panel açıkken panelin sağ kenarına yapışır; tam ekranda gizlenir. Kumanda panel tam ekranken gizli,
@@ -2837,15 +2997,19 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 	// Karakterim en son açık kalan sekmeyle açılır (kullanıcı, 2026-11-17); ilk kez Finans
 	var sonSekme = "finans";   // var: ac() erken çağrılırsa da hata vermesin
 	try { sonSekme = localStorage.getItem("mkb_sekme") || "finans"; } catch (e) {}
+	if (sonSekme === "panel") sonSekme = "durum";   // Panel ayrı bölüm (kullanıcı, 2026-11-25): kişi kartı Panel'de açılmaz
 	function ac(ad) {
 		if (YENI && ad === "kisi") ad = sonSekme;
-		if (["durum", "gorunus", "finans", "ilan", "etkinlik", "panel"].includes(ad)) {
+		if (["durum", "gorunus", "finans", "ilan", "etkinlik"].includes(ad)) {   // Panel hatırlanmaz (kullanıcı, 2026-11-25)
 			sonSekme = ad;
 			try { localStorage.setItem("mkb_sekme", ad); } catch (e) {}
 		}
 		sayfaAd = ad; kostumAcik = false; binaTum = {};
 		if (ayarlarAcik) ayarlarAc(false);   // kart, profil ve "Şu an şehirde" aynı anda açık kalmaz (kullanıcı, 2026-11-17)
 		if (sehirdeAcik) sehirdeAc(false);
+		$("mkb-pano").classList.toggle("ustten", S8 && ad === "panel");   // Panel üstten iner (kullanıcı, 2026-11-25)
+		$("mkb-pano").classList.toggle("sagdan", T8 && ad === "sakin");   // başkasının kartı sağdan (kullanıcı, 2026-11-25)
+		if (!(S8 && ad === "panel")) $("mkb-pano").classList.remove("genis");
 		$("mkb-pano").classList.add("acik");
 		$("mkb-pano").setAttribute("aria-hidden", "false");
 		ciz(); arayuz();
@@ -3292,6 +3456,90 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		if (b) window.miniakentTakip && window.miniakentTakip(b.dataset.takip);
 	});
 
+	// Favoriler (kullanıcı, 2026-11-25): sol üstteki yıldız; liste bu tarayıcıda saklanır, dokununca o karakter takip edilir
+	let favoriAcik = false;
+	function favoriListe() {
+		const v = window.m802;
+		if (v && v.K && window.m802FavoriYaz) return Object.keys(v.favori || {}).map((k) => k.replace(/,/g, "."));
+		try { return JSON.parse(localStorage.getItem("m802_favori") || "[]"); } catch (e) { return []; }
+	}
+	function favoriMi(h) { const a = String(h || "").toLowerCase(); return favoriListe().some((x) => x.toLowerCase() === a); }
+	function favoriDegis(h) {
+		const l = favoriListe(), ekle = !favoriMi(h);
+		if (window.m802 && window.m802.K && window.m802FavoriYaz) {
+			const anah = String(h || "").replace(/^@/, "").toLowerCase().replace(/\./g, ",");
+			const y = Object.assign({}, window.m802.favori || {});   // ekranda hemen görünsün, sunucu yanıtı beklenmesin
+			if (ekle) y[anah] = true; else delete y[anah];
+			window.m802.favori = y;
+			window.m802FavoriYaz(h, ekle);
+			return;
+		}
+		if (ekle) l.push(h); else l.splice(l.indexOf(h), 1);
+		try { localStorage.setItem("m802_favori", JSON.stringify(l)); } catch (e) {}
+	}
+	function favoriCiz() {
+		const l = favoriListe();
+		$("mkb-favori-liste").innerHTML = l.map((h) => `<button data-takip="${esc(h)}">@${esc(h)}</button>`).join("");
+		$("mkb-favori-not").textContent = l.length ? "" : "Bir sakine dokun, kartından Favorilere al.";
+	}
+	function favoriAc(a) {
+		favoriAcik = a;
+		$("mkb-favori-p").classList.toggle("acik", a);
+		$("mkb-favori-p").setAttribute("aria-hidden", String(!a));
+		$("mkb-favori").setAttribute("aria-expanded", String(a));
+		if (a) favoriCiz();
+	}
+	// Panel rozeti (kullanıcı, 2026-11-25): biten görevlerin sonucu + o gün çıkan yeni görevler; Panel açılınca sıfırlanır
+	function panelGorulen() { try { return JSON.parse(localStorage.getItem("m802_panel_gor") || "{}"); } catch (e) { return {}; } }
+	function panelSayi() {
+		const M8 = window.M802, v = window.m802;
+		if (!M8 || !v || !v.hazir) return 0;
+		const ol = Object.entries(v.panel || {}).map(([id, o]) => Object.assign({ id: id }, o)).filter((o) => o && o.b);
+		const g = panelGorulen(), gor = g.ids || [], now = miniakentSimdi(), gn = M8.gunNo(now);
+		let sayi = ol.filter((o) => o.r && gor.indexOf(o.id) < 0).length;
+		if (!ol.some((o) => !o.r) && g.gun !== gn) {
+			const pb = panelBilgi(), bugun = ol.filter((o) => M8.gunNo(o.b) === gn).length;
+			if (pb && bugun < M8.PANEL.GUNLUK) sayi += (M8.gorevler(pb.alan, ol.length) || []).length;
+		}
+		return sayi;
+	}
+	function panelGoruldu() {
+		const M8 = window.M802, v = window.m802;
+		if (!M8 || !v) return;
+		const ids = Object.entries(v.panel || {}).filter((x) => x[1] && x[1].r).map((x) => x[0]);
+		try { localStorage.setItem("m802_panel_gor", JSON.stringify({ gun: M8.gunNo(miniakentSimdi()), ids: ids })); } catch (e) {}
+		const r = $("mkb-panel-sayi");
+		if (r) { r.hidden = true; r.textContent = ""; }
+	}
+	if (T8) {
+		$("mkb-favori").addEventListener("click", () => favoriAc(!favoriAcik));
+		$("mkb-favori-kapat").addEventListener("click", () => favoriAc(false));
+		$("mkb-favori-liste").addEventListener("click", (e) => {   // favoriye dokununca o kişi seçilir ve kartı açılır
+			const b = e.target.closest("button[data-takip]");
+			if (!b) return;
+			favoriAc(false);
+			if (secilen && secilen.handle === b.dataset.takip) ac("sakin");
+			else { kartIste = true; if (window.minikentSearch) window.minikentSearch(b.dataset.takip); else if (window.miniakentTakip) window.miniakentTakip(b.dataset.takip); }
+		});
+		if ($("mkb-panel-ac")) $("mkb-panel-ac").addEventListener("click", () => { if (sayfaAd === "panel") kapat(); else { ac("panel"); panelGoruldu(); } });
+		$("mkb-sohbet-yuv").addEventListener("click", () => sohbetAc(true));
+		$("mkb-a-cizgi3").hidden = false;
+		$("mkb-a-ses").hidden = false;
+		$("mkb-a-ses").addEventListener("click", () => window.miniakentSes && window.miniakentSes());
+		// Panel üstten: parmakla aşağı çekilince arama satırına kadar uzar, yukarı çekilince toplanır
+		let pY = null;
+		$("mkb-pano").addEventListener("pointerdown", (e) => {
+			pY = $("mkb-pano").classList.contains("ustten") && !e.target.closest("button, input, a") ? e.clientY : null;
+		});
+		$("mkb-pano").addEventListener("pointerup", (e) => {
+			if (pY === null) return;
+			const dy = e.clientY - pY;
+			pY = null;
+			if (dy > 40) $("mkb-pano").classList.add("genis");
+			else if (dy < -40) { if ($("mkb-pano").classList.contains("genis")) $("mkb-pano").classList.remove("genis"); else kapat(); }
+		});
+	}
+
 	// takip düğmeleri
 	$("mkb-goz").addEventListener("click", () => window.miniakentGoz && window.miniakentGoz());
 	$("mkb-hizli").addEventListener("click", () => window.miniakentHizli && window.miniakentHizli());
@@ -3372,6 +3620,8 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		else if (d.k802iptal && m8() && window.m802.kurs) {
 			onay802("Kursu iptal et", `Biriken günler silinir, ${papel(Math.round((window.m802.kurs.u || 0) / 2))} geri verilir.`, "İptal et", false, () => window.m802KursIptal());
 		}
+		// Favoriler (kullanıcı, 2026-11-25): sakin kartından ekle/çıkar
+		else if (d.fav) { favoriDegis(d.fav); ciz(); if (favoriAcik) favoriCiz(); }
 		// Panel (2026-11-21): görev başlat, Şefliğe aday ol
 		else if (d.p802 && m8()) {
 			const [s, c] = d.p802.split("|"), pb = panelBilgi(), g = pb.M8.gorevBul(s), y = pb.M8.YOL[+c], du = dur();
@@ -3561,6 +3811,8 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		if (ac) { sonSohbet = window.miniakentSohbetSurum; sonKimler = ""; sKimlerCiz(); sohbetCiz(true); }
 		sNokta();
 	}
+	$("mkb-sohbet-yaz").addEventListener("focus", () => $("mkb-sohbet").classList.add("yazarken"));   // yazarken tam ekran (2026-11-25)
+	$("mkb-sohbet-yaz").addEventListener("blur", () => $("mkb-sohbet").classList.remove("yazarken"));
 	$("mkb-sohbet-ac").addEventListener("click", () => sohbetAc(true));
 	$("mkb-sohbet-kapat").addEventListener("click", () => sohbetAc(false));
 	$("mkb-s-form").addEventListener("submit", (e) => {
@@ -3659,7 +3911,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			bolge.hidden = true;
 			rozetGetir(secilen.handle);
 			// test sayfasında dokunuş yalnız seçer ve takip eder; kart "@ad takipte" yazısından (kullanıcı, 2026-11-17)
-			if (!YENI || kartIste) ac(secilen.handle === karakter ? "kisi" : "sakin");
+			if (!YENI || kartIste || (T8 && secilen.handle !== karakter)) ac(secilen.handle === karakter ? "kisi" : "sakin");   // 802: başkasına dokununca kartı açılır (kullanıcı, 2026-11-25)
 			kartIste = false;
 		}
 		// oyunda bir binaya dokunuldu: bina kartı
@@ -3669,9 +3921,10 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			bolge.hidden = true;
 			ac("bina");
 		}
-		$("mkb-nufus").textContent = "Nüfus: " + sayi(hud.nufus) + " · Bekleyen: " + sayi(hud.bekleyen);
+		$("mkb-nufus").textContent = "Nüfus: " + sayi(hud.nufus) + (window.miniakent802 ? "\n" : " · ") + "Bekleyen: " + sayi(hud.bekleyen);
 		$("mkb-saat").textContent = takvim(hud.saat);
 		$("mkb-ses").innerHTML = hud.sessiz ? SVG.sessiz : SVG.ses;
+		$("mkb-a-ses").setAttribute("aria-checked", String(!hud.sessiz));   // ses anahtarı Profil'de (2026-11-25)
 		if (sehirdeAcik) sehirdeCiz();
 		// kare hızı (yalnız test sayfası; kullanıcı, 2026-11-09: Lite açık/kapalı farkı telefonda görülsün)
 		$("mkb-fps").hidden = !(window.miniakentTest && hud.fps >= 0);  // yalnız test sayfasında
@@ -3711,6 +3964,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			arayuz();
 		}
 		$("mkb-sohbet-ac").hidden = !window.miniakentSohbetYaz;   // şehir sohbeti yalnız izinli hesapta
+		if (T8) $("mkb-sohbet-yuv").hidden = !window.miniakentSohbetYaz;
 		if (window.miniakentSohbetSurum !== sonSohbet) { sonSohbet = window.miniakentSohbetSurum; if (sohbetAcik) sohbetCiz(false); sNokta(); }
 		if (sohbetAcik) sKimlerCiz();
 		const b = JSON.stringify(window.miniakentKarakterBilgi || null);
@@ -3724,12 +3978,17 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 			sonParkur = window.miniakentParkurSurum;
 			if (sayfaAd === "etkinlik" && $("mkb-onay").hidden) ciz();
 		}
+		if (S8) {   // Panel rozeti
+			const sy = panelSayi(), r = $("mkb-panel-sayi");
+			if (r) { r.hidden = !sy; r.textContent = sy ? String(sy) : ""; }
+		}
 		for (const el of document.querySelectorAll("[data-p802bit]")) {   // Panel görevinin geri sayımı
 			const t = kalanYaz(+el.dataset.p802bit - miniakentSimdi());
 			if (el.textContent !== t) el.textContent = t;
 		}
 		if (b !== sonBilgi || dk !== sonDk || window.m802Surum !== son802) {
 			sonBilgi = b; sonDk = dk; son802 = window.m802Surum;   // Test802 kayıtları değişince de
+			if (favoriAcik) favoriCiz();   // favori listesi hesaptan gelir (kullanıcı, 2026-11-25)
 			bilgi = window.miniakentKarakterBilgi || null;
 			if (sayfaAd && $("mkb-onay").hidden && sayfaAd !== "gorunus") ciz();
 		}
@@ -3739,7 +3998,7 @@ body.gece #mkb .ikili .hayir, body.gece #mkb .sekmeler button { border-color: va
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611240126.pck","fileSizes":{"index-v202611240126.pck":9917920,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611271558.pck","fileSizes":{"index-v202611271558.pck":10103948,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
