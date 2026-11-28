@@ -2554,6 +2554,8 @@ ${window.miniakent802 ? `<div class="ust"><div class="serit"><span id="mkb-nufus
 			["Mont", [["sisme", "Şişme mont"], ["deri", "Deri ceket"], ["kotceket", "Kot ceket"], ["yagmur", "Yağmurluk"]]]]],
 		["Ayakkabı", "y", false, [["", [["spor", "Spor ayakkabı"], ["klasik", "Klasik ayakkabı"], ["bot", "Bot"], ["cizme", "Uzun çizme"], ["sandalet", "Sandalet"], ["topuklu", "Topuklu"]]]]],
 		["Aksesuar", "x", true, [["", [["gunes", "Güneş gözlüğü"], ["gozluk", "Çerçeveli gözlük"], ["atki", "Atkı"], ["kravat", "Kravat"], ["sirt", "Sırt çantası"], ["canta", "El çantası"]]]]],
+		// ten rengi (kullanıcı, 2026-11-28: "beyaz kumral ve esmer ten seçimi"); kiyafet.gd TEN_RENK ile aynı
+		["Ten", "t", true, [["", [["ten", "Ten rengi"]]]], [["Beyaz", "#f2d3b8"], ["Kumral", "#c68a5e"], ["Esmer", "#8d5a3b"]]],
 	];
 	const RENKLER = [["Siyah", "#1c1c1f"], ["Beyaz", "#f7f7f4"], ["Kırmızı", "#e01b24"], ["Sarı", "#f5c400"], ["Mavi", "#1d5fd6"], ["Yeşil", "#22a03c"]];
 	const GOZ = ["gunes", "gozluk"];
@@ -2570,7 +2572,7 @@ ${window.miniakent802 ? `<div class="ust"><div class="serit"><span id="mkb-nufus
 		}
 		return d;
 	}
-	const kiyYaz = (d) => ["h", "k", "b", "u", "a", "s", "d", "y"].filter((k) => d[k]).map((k) => k + ":" + d[k]).concat(d.x.length ? ["x:" + d.x.join(",")] : []).join("|");
+	const kiyYaz = (d) => ["h", "k", "b", "u", "a", "s", "d", "y", "t"].filter((k) => d[k]).map((k) => k + ":" + d[k]).concat(d.x.length ? ["x:" + d.x.join(",")] : []).join("|");
 	const kiyBu = () => kiyCoz((window.miniakentKiyafetler || {})[karakter.toLowerCase()]);
 	function kiyafetPanel() {
 		const d = kiyBu(), t = KIY[kSekme];
@@ -3998,7 +4000,7 @@ ${window.miniakent802 ? `<div class="ust"><div class="serit"><span id="mkb-nufus
 		</script>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611271558.pck","fileSizes":{"index-v202611271558.pck":10103948,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"mainPack":"index-v202611281700.pck","fileSizes":{"index-v202611281700.pck":10126076,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
